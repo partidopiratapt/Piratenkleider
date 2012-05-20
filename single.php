@@ -1,7 +1,7 @@
 <?php get_header();    
   $options = get_option( 'piratenkleider_theme_options' );  
 ?> 
-<div class="section content" id="main-content">
+<div class="section content">
   <div class="row">
     <div class="content-primary">
       <div class="skin">
@@ -49,7 +49,7 @@
           </ul>
             
            <?php if (has_filter( 'related_posts_by_category')) { ?>   
-          <h3><?php _e("Weitere Artikel in diesem Themenkreis:", 'piratenkleider'); ?></h3>
+          <h3>Das k&ouml;nnte dich auch interessieren:</h3>
           <ul class="related">
             <?php do_action(
             'related_posts_by_category',
@@ -78,7 +78,7 @@
 
     <div class="content-aside">
       <div class="skin">
-       <h1 class="skip"><?php _e( 'Weitere Informationen', 'piratenkleider' ); ?></h1>
+       <h1 class="skip">Weitere Informationen</h1>
       <?php get_sidebar(); ?>
       </div>
     </div>

@@ -9,11 +9,11 @@
         if (!isset($options['src-default-symbolbild'])) 
             $options['src-default-symbolbild'] = $defaultoptions['src-default-symbolbild'];
 ?>
-<div class="section content" id="main-content">
+<div class="section content">
   <div class="row">
     <div class="content-primary">
       <div class="content-header">
-        <h1 id="page-title"><span><?php _e( 'Spenden', 'piratenkleider' ); ?></span></h1>   
+        <h1 id="page-title"><span>Spenden</span></h1>   
         <?php if (has_post_thumbnail()) { 
             echo '<div class="symbolbild">';
               the_post_thumbnail(); 
@@ -35,41 +35,41 @@
         <?php endwhile; ?>
           
           
-     <?php if ((isset($kontaktinfos['spendenkonto'])) && (strlen(trim($kontaktinfos['spendenkonto']))>1)
-          && (isset($kontaktinfos['spendenempfaenger']))&& (strlen(trim($kontaktinfos['spendenempfaenger']))>1)
-         && (isset($kontaktinfos['spendenblz']))&& (strlen(trim($kontaktinfos['spendenblz']))>1)) { ?>
-          <h2><?php _e( 'Per &Uuml;berweisung spenden', 'piratenkleider' ); ?></h2>
+     <?php if ((isset($kontaktinfos['spendenkonto']))
+          && (isset($kontaktinfos['spendenempfaenger']))
+         && (isset($kontaktinfos['spendenblz']))) { ?>
+          <h2>Per &Uuml;berweisung spenden</h2>
           
         <table>            
         <tbody>
         <tr>
-           <th><?php _e('Empf&auml;nger', 'piratenkleider' ); ?></th>
+           <th>Empf&auml;nger</th>
          <td><?php esc_attr_e( $kontaktinfos['spendenempfaenger'] ); ?></td>
         </tr>
         <tr>
-            <th><?php _e('Kontonummer', 'piratenkleider' ); ?></th>
+            <th>Kontonummer</th>
          <td><?php esc_attr_e( $kontaktinfos['spendenkonto'] ); ?></td>
         </tr>
         <tr>
-           <th><?php _e('Bankleitzahl', 'piratenkleider' ); ?></th>
+           <th>Bankleitzahl</th>
             <td><?php esc_attr_e( $kontaktinfos['spendenblz'] ); ?></td>
         </tr>
         <tr>
-          <th><?php _e('Bank', 'piratenkleider' ); ?></th>
+          <th>Bank</th>
            <td><?php esc_attr_e( $kontaktinfos['spendenbank'] ); ?></td>
         </tr>
         <tr>
-            <th><?php _e('IBAN', 'piratenkleider' ); ?></th>
+            <th>IBAN</th>
            <td><?php esc_attr_e( $kontaktinfos['spendeniban'] ); ?></td>
         </tr>
         <tr>
-           <th><?php _e('BIC', 'piratenkleider' ); ?></th>
+           <th>BIC</th>
             <td><?php esc_attr_e( $kontaktinfos['spendenbic'] ); ?></td>
         </tr>
         <tr>
-           <th><?php _e('Verwendungszweck', 'piratenkleider' ); ?></th>
-           <td><?php _e('Spende von Name, Vorname, Anschrift (ggf. mit Zusatz "Stichwort" 
-            und einem konkreten Verwendungszweck)', 'piratenkleider' ); ?></td>
+           <th>Verwendungszweck</th>
+           <td>Spende von Name, Vorname, Anschrift (ggf. mit Zusatz "Stichwort" 
+            und einem konkreten Verwendungszweck)</td>
         </tr>
         </tbody>
         </table>
@@ -134,7 +134,7 @@
     <div class="content-aside">
       <div class="skin">
 
-        <h1 class="skip"><?php _e( 'Weitere Informationen', 'piratenkleider' ); ?></h1>   
+        <h1 class="skip"><?php echo $defaultoptions['default_text_title_sidebar']; ?></h1>   
             <?php
             if (!isset($options['zeige_subpagesonly'])) 
             $options['zeige_subpagesonly'] = $defaultoptions['zeige_subpagesonly'];
@@ -150,7 +150,7 @@
                     //collect ancestor pages
                     $relations = get_post_ancestors($post->ID);
                     //get child pages
-                    $result = $wpdb->get_results( "SELECT ID FROM wp_posts WHERE post_parent = $post->ID AND post_type='page'" );
+                    $result = $wpdb->get_results( "SELECT ID FROM fog_posts WHERE post_parent = $post->ID AND post_type='page'" );
                     if ($result){
                         foreach($result as $pageID){
                             array_push($relations, $pageID->ID);

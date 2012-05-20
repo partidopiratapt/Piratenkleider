@@ -6,10 +6,12 @@ if (!isset($options['aktiv-defaultseitenbild']))
 
 ?>
 
-<div class="section content" id="main-content">
+<div class="section content">
   <div class="row">
-    <div class="content-primary">     
-        <div class="content-header">            
+    <div class="content-primary">
+     
+        <div class="content-header">
+            
           <h1 id="page-title"><span><?php the_title(); ?></span></h1>
         
         <?php if (has_post_thumbnail()) { 
@@ -40,7 +42,7 @@ if (!isset($options['aktiv-defaultseitenbild']))
     <div class="content-aside">
       <div class="skin">      
           
-          <h1 class="skip"><?php _e( 'Weitere Informationen', 'piratenkleider' ); ?></h1>
+          <h1 class="skip"><?php echo $defaultoptions['default_text_title_sidebar']; ?></h1>
           
             <?php
             
@@ -58,7 +60,7 @@ if (!isset($options['aktiv-defaultseitenbild']))
                     //collect ancestor pages
                     $relations = get_post_ancestors($post->ID);
                     //get child pages
-                    $result = $wpdb->get_results( "SELECT ID FROM wp_posts WHERE post_parent = $post->ID AND post_type='page'" );
+                    $result = $wpdb->get_results( "SELECT ID FROM fog_posts WHERE post_parent = $post->ID AND post_type='page'" );
                     if ($result){
                         foreach($result as $pageID){
                             array_push($relations, $pageID->ID);

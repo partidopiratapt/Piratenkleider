@@ -3,11 +3,11 @@
         if (!isset($options['src-default-symbolbild'])) 
             $options['src-default-symbolbild'] = $defaultoptions['src-default-symbolbild'];
 ?> 
-<div class="section content" id="main-content">
+<div class="section content">
   <div class="row">
     <div class="content-primary">
       <div class="content-header">
-            <h1><?php printf( __( 'Kategorie %s', 'piratenkleider' ), '' . single_cat_title( '', false ) . '' ); ?></h1>           
+            <h1><?php printf( __( '%s', 'piratenkleider' ), '' .$defaultoptions['default_text_pretitle_category']. single_cat_title( '', false ) . '' ); ?></h1>           
           <?php if ($options['aktiv-platzhalterbilder-indexseiten']) { ?>         
           <div class="symbolbild"> 
               <img src="<?php echo $options['src-default-symbolbild']?>" alt="" >           
@@ -27,7 +27,7 @@
 
     <div class="content-aside">
       <div class="skin">  
-          <h1 class="skip"><?php _e( 'Weitere Informationen', 'piratenkleider' ); ?></h1>
+          <h1 class="skip"><?php echo $defaultoptions['default_text_title_sidebar']; ?></h1>
          <?php get_sidebar(); ?>
       </div>
     </div>

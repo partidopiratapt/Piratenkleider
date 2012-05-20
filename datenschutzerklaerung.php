@@ -10,7 +10,7 @@
             $options['src-default-symbolbild'] = $defaultoptions['src-default-symbolbild'];
         ?>
 
-<div class="section content" id="main-content">
+<div class="section content">
   <div class="row">
     <div class="content-primary">
       <div class="content-header">
@@ -99,9 +99,9 @@ In ihren Browsereinstellungen k&ouml;nnen sie die Annahme von Cookies unterbinde
     gespeicherten Daten, deren Herkunft und Empf&auml;nger sowie den Zweck der 
     Speicherung. Auskunft &uuml;ber die gespeicherten Daten gibt Ihnen die 
     Piratenpartei Deutschland. Wenden Sie sich dazu bitte an
-    <?php if ( (isset($kontaktinfos['dsbemail'])) && (strlen(trim($kontaktinfos['dsbemail']))>1)) {
+    <?php if (isset($kontaktinfos['dsbemail'])) {
         echo '<a href="mailto:'.$kontaktinfos['dsbemail'].'">';
-        if ((isset($kontaktinfos['dsbperson'])) && (strlen(trim($kontaktinfos['dsbperson']))>1)) {
+        if (isset($kontaktinfos['dsbperson'])) {
             echo 'den/die Datenschutzbeauftrage/n ';
             echo $kontaktinfos['dsbperson'];
         } else {
@@ -122,9 +122,9 @@ In ihren Browsereinstellungen k&ouml;nnen sie die Annahme von Cookies unterbinde
     beantworten konnte oder wenn Sie zu einem Punkt vertiefte Informationen 
     w&uuml;nschen, wenden Sie sich bitte jederzeit an die Piraten. Sie k&ouml;nnen ihre
     Fragen und Anregungen im Forum oder an 
-    <?php if ((isset($kontaktinfos['dsbemail']))  && (strlen(trim($kontaktinfos['dsbemail']))>1)) {
+    <?php if (isset($kontaktinfos['dsbemail'])) {
         echo '<a href="mailto:'.$kontaktinfos['dsbemail'].'">';
-        if ((isset($kontaktinfos['dsbperson']))  && (strlen(trim($kontaktinfos['dsbperson']))>1)) {
+        if (isset($kontaktinfos['dsbperson'])) {
             echo 'den/die Datenschutzbeauftrage/n ';
             echo $kontaktinfos['dsbperson'];
         } else {
@@ -144,7 +144,7 @@ In ihren Browsereinstellungen k&ouml;nnen sie die Annahme von Cookies unterbinde
     <div class="content-aside">
       <div class="skin">
 
-        <h1 class="skip"><?php _e( 'Weitere Informationen', 'piratenkleider' ); ?></h1>   
+        <h1 class="skip"><?php echo $defaultoptions['default_text_title_sidebar']; ?></h1>   
             <?php
             if (!isset($options['zeige_subpagesonly'])) 
             $options['zeige_subpagesonly'] = $defaultoptions['zeige_subpagesonly'];
@@ -160,7 +160,7 @@ In ihren Browsereinstellungen k&ouml;nnen sie die Annahme von Cookies unterbinde
                     //collect ancestor pages
                     $relations = get_post_ancestors($post->ID);
                     //get child pages
-                    $result = $wpdb->get_results( "SELECT ID FROM wp_posts WHERE post_parent = $post->ID AND post_type='page'" );
+                    $result = $wpdb->get_results( "SELECT ID FROM fog_posts WHERE post_parent = $post->ID AND post_type='page'" );
                     if ($result){
                         foreach($result as $pageID){
                             array_push($relations, $pageID->ID);

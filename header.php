@@ -91,9 +91,6 @@ if ((isset( $options['meta-keywords'] )) && ( strlen(trim($options['meta-keyword
 
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>">
-<?php if ((isset($designspecials['css-colorfile'])) && (strlen(trim($designspecials['css-colorfile']))>1)) { 
-    echo '<link rel="stylesheet" type="text/css" media="all" href="'.get_template_directory_uri().'/css/'.$designspecials['css-colorfile'].'">';
-} ?>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <?php if ( is_singular() && get_option( 'thread_comments' ) )
 		wp_enqueue_script( 'comment-reply' );
@@ -103,7 +100,7 @@ if ((isset( $options['meta-keywords'] )) && ( strlen(trim($options['meta-keyword
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/yaml/core/iehacks.min.css" type="text/css"/>
 <![endif]-->
 
-<?php if ((isset($cssadd)) && (strlen(trim($cssadd))>1)) {
+<?php if (isset($cssadd)) {
   echo "<style type=\"text/css\">\n";  
   echo $cssadd;  
   echo "</style>\n";  
@@ -112,18 +109,11 @@ if ((isset( $options['meta-keywords'] )) && ( strlen(trim($options['meta-keyword
                       
 <body <?php body_class(); ?>>
 
-	<ul role="navigation" class="nav skiplinks">		
-		<li><a class="ym-skip" href="#nav"><?php _e( 'Zur Navigation springen.', 'piratenkleider' ); ?></a></li>
-		<li><a class="ym-skip" href="#main-content"><?php _e( 'Zum Inhalt springen.', 'piratenkleider' ); ?></a></li>
-                <li><a class="ym-skip" href="#searchform"><?php _e( 'Zur Suche springen.', 'piratenkleider' ); ?></a></li>
-	</ul>
-
-
 	<div class="section header">
 		<div class="row">
 			<div class="branding">
                             <?php if ( ! is_home() ) { ?>
-                            <a href="<?php echo home_url( '/' ); ?>" title="<?php echo $defaultoptions['default_text_title_home_backlink']; ?>" rel="home" class="logo">
+                            <a href="<?php echo home_url( '/' ); ?>" title="Zur&uuml;ck zur Startseite" rel="home" class="logo">
                             <?php }                                 
                                function piratenkleider_header_style() {} 
                             ?>                                                             
@@ -132,19 +122,17 @@ if ((isset( $options['meta-keywords'] )) && ( strlen(trim($options['meta-keyword
 			</div>
                       
 			<div class="nav-top" role="navigation">				                                                        
-				<h2 class="skip"><?php _e( 'Service-Navigation', 'piratenkleider' ); ?></h2>
+				<h2 class="skip"><?php echo $defaultoptions['default_text_title_techmenu']; ?></h2>
                                  <?php 
                                     if ( $options['alle-socialmediabuttons'] == "1" ){
                                  ?> 
                                  <ul class="socialmedia">
-					<?php if ( $options['social_facebook'] != "" ){ ?><li class="facebook"><a href="<?php echo$options['social_facebook']; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/social-media/facebook-24x24.png" width="24" height="24" alt="Facebook"></a></li><?php } ?>
-					<?php if ( $options['social_twitter'] != "" ){ ?><li class="twitter"><a href="<?php echo$options['social_twitter']; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/social-media/twitter-24x24.png" width="24" height="24" alt="Twitter"></a></li><?php } ?>
-					<?php if ( $options['social_youtube'] != "" ){ ?><li class="youtube"><a href="<?php echo$options['social_youtube']; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/social-media/youtube-24x24.png" width="24" height="24" alt="YouTube"></a></li><?php } ?>
-					<?php if ( $options['social_gplus'] != "" ){ ?><li class="gplus"><a href="<?php echo$options['social_gplus']; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/social-media/gplus-24x24.png" width="24" height="24" alt="Google+"></a></li><?php } ?>
-					<?php if ( $options['social_diaspora'] != "" ){ ?><li class="diaspora"><a href="<?php echo$options['social_diaspora']; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/social-media/diaspora-24x24.png" width="24" height="24" alt="Diaspora"></a></li><?php } ?>
-					<?php if ( $options['social_identica'] != "" ){ ?><li class="identica"><a href="<?php echo$options['social_identica']; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/social-media/identica-24x24.png" width="24" height="24" alt="identi.ca"></a></li><?php } ?>															
-                                        <?php if ( $options['social_flickr'] != "" ){ ?><li class="flickr"><a href="<?php echo$options['social_flickr']; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/social-media/flickr-24x24.png" width="24" height="24" alt="flickr"></a></li><?php } ?>		
-                                        <?php if ( $options['social_delicious'] != "" ){ ?><li class="delicious"><a href="<?php echo$options['social_delicious']; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/social-media/delicious-24x24.png" width="24" height="24" alt="Delicious"></a></li><?php } ?>		
+					<?php if ( $options['social_facebook'] != "" ){ ?><li class="facebook"><a href="<?php echo$options['social_facebook']; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook.png" width="24" height="24" alt="Facebook"></a></li><?php } ?>
+					<?php if ( $options['social_twitter'] != "" ){ ?><li class="twitter"><a href="<?php echo$options['social_twitter']; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter.png" width="24" height="24" alt="Twitter"></a></li><?php } ?>
+					<?php if ( $options['social_youtube'] != "" ){ ?><li class="youtube"><a href="<?php echo$options['social_youtube']; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/youtube.png" width="24" height="24" alt="YouTube"></a></li><?php } ?>
+					<?php if ( $options['social_gplus'] != "" ){ ?><li class="gplus"><a href="<?php echo$options['social_gplus']; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/gplus.png" width="24" height="24" alt="Google Plus"></a></li><?php } ?>
+					<?php if ( $options['social_diaspora'] != "" ){ ?><li class="diaspora"><a href="<?php echo$options['social_diaspora']; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/diaspora.png" width="24" height="24" alt="Diaspora"></a></li><?php } ?>
+					<?php if ( $options['social_identica'] != "" ){ ?><li class="identica"><a href="<?php echo$options['social_identica']; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/identica.png" width="24" height="24" alt="identi.ca"></a></li><?php } ?>															
 				</ul>
                                 
 				<?php
@@ -157,8 +145,7 @@ if ((isset( $options['meta-keywords'] )) && ( strlen(trim($options['meta-keyword
                                         <ul id="menu-topmenu" class="menu">
                                             <li><a href="https://wiki.piratenpartei.de">Wiki</a></li>
                                             <li><a href="https://lqfb.piratenpartei.de">Liquid Feedback</a></li>                                           
-                                            <li><a href="http://news.piratenpartei.de">Forum</a></li>
-                                            <li><a href="http://flaschenpost.piratenpartei.de/">Flaschenpost</a></li>
+                                            <li><a href="http://<?php ?>">Forum</a></li>
                                         </ul>
                                     </div>                                                                                
                                  <?php } } 
@@ -170,7 +157,6 @@ if ((isset( $options['meta-keywords'] )) && ( strlen(trim($options['meta-keyword
 			</div>
                    
 			<div class="nav-main" role="navigation" id="nav">
-				<h2 class="skip"><?php _e( 'Navigation', 'piratenkleider' ); ?></h2>
 				<?php 
                                 if ( has_nav_menu( 'primary' ) ) {
                                     wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary', 'walker'  => new My_Walker_Nav_Menu()) );      
@@ -191,7 +177,7 @@ if ((isset( $options['meta-keywords'] )) && ( strlen(trim($options['meta-keyword
          
 			<div class="sticker">
                             <div class="skin">   
-                               <h2 class="skip"><?php _e( 'Sticker', 'piratenkleider' ); ?></h2>
+                               <h2 class="skip"><?php echo $defaultoptions['default_text_title_sticker']; ?></h2>
                                <?php 
                                
                                

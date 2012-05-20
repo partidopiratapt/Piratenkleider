@@ -14,7 +14,7 @@
     <div class="content-primary">
       <div class="skin">
 
-          <h1 class="skip"><?php _e("Aktuelle Artikel", 'piratenkleider'); ?></h1>
+          <h1 class="skip"><?php echo $defaultoptions['default_text_home_title_articles']; ?></h1>
           
       <?php
       $i = 0; 
@@ -83,13 +83,8 @@
       
       
       <?php if ( ! have_posts() ) : ?>
-       <h2><?php _e("Nichts gefunden", 'piratenkleider'); ?></h2>
-                        <p>
-                            <?php _e("Es konnten keine Artikel gefunden werden.
-                            Bitte versuchen Sie es nochmal mit einer 
-                            Suche.", 'piratenkleider'); ?>
-                            
-                        </p>
+        <h2>Nichts gefunden</h2>
+        <p>Entschuldigung, aber es wurde nichts gefunden. :(</p>
         <?php get_search_form(); ?>
         <hr>
       <?php endif; ?>
@@ -98,7 +93,7 @@
         
       
       <div class="startpage-widget-area">
-          <h2 class="skip"><?php _e("Weitere Artikel", 'piratenkleider'); ?></h2>
+          <h2 class="skip">Weitere Artikel</h2>
         <div class="first-startpage-widget-area">
           <div class="skin">
             <?php if ( is_active_sidebar( 'first-startpage-widget-area' ) ) { ?>
@@ -106,27 +101,27 @@
             <?php } else { ?>
               
                 <div class="widget">
+                
 
                 <ul>
                 <?php 
                 $postslist = get_posts("numberposts=5&order=DESC&offset=$numentries"); 
-                if (isset($postslist)) { ?>
-                    <h3><?php _e("&Auml;ltere Artikel", 'piratenkleider'); ?></h3>
-                    <?php 
+                if (isset($postslist)) {
+                    echo '<h3>'.$defaultoptions['default_text_home_title_prevarticle'].'</h3>';
                 }
                 foreach ($postslist as $post) : setup_postdata($post); 
                 ?>
-                    <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                    <span class="date"><?php the_time('d.m.Y') ?></span></li>
-                    <?php endforeach; ?>
-                    </ul>
-                    </div>
-                    <div class="widget">
-                    <h3><?php _e("Kategorien", 'piratenkleider'); ?></h3>
-                    <ul>
-                        <?php wp_list_categories('title_li='); ?>
-                    </ul>
-
+                <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                <span class="date"><?php the_time('d.m.Y') ?></span></li>
+                <?php endforeach; ?>
+                </ul>
+                </div>
+                <div class="widget">
+                <h3><?php echo $defaultoptions['default_text_home_title_categories']; ?></h3>
+                <ul>
+                    <?php wp_list_categories('title_li='); ?>
+                </ul>
+                
 
                 </div>
              <?php } ?>
@@ -140,9 +135,8 @@
             <?php } else { ?>    
                 <div  class="widget">
                     <?php $tags = get_tags();
-                        if (isset($tags)) { ?>
-                              <h3><?php _e("Schlagworte", 'piratenkleider'); ?></h3>
-                            <?php    
+                        if (isset($tags)) {
+                            echo '<h3>'.$defaultoptions['default_text_home_title_tags'].'</h3>';
                         }
                      ?>
                       <div class="tagcloud">            
@@ -159,7 +153,7 @@
 
     <div class="content-aside">
       <div class="skin">
-          <h1 class="skip"><?php _e( 'Weitere Informationen', 'piratenkleider' ); ?></h1>
+          <h1 class="skip"><?php echo $defaultoptions['default_text_title_sidebar']; ?></h1>
             <?php get_sidebar(); ?>
       </div>
     </div>

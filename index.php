@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="section content" id="main-content">
+<div class="section content">
   <div class="row">
     <div class="content-primary">
       <div class="content-header">
@@ -24,7 +24,7 @@
 
     <div class="content-aside">
       <div class="skin">       
-          <h1 class="skip"><?php _e( 'Weitere Informationen', 'piratenkleider' ); ?></h1>
+          <h1 class="skip"><?php echo $defaultoptions['default_text_title_sidebar']; ?></h1>
         <?php 
        if ( has_nav_menu( 'primary' ) ) {
             wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary', 'walker'  => new My_Walker_Nav_Menu()) );      

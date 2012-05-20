@@ -3,7 +3,7 @@
     if (!isset($options['src-default-symbolbild'])) 
             $options['src-default-symbolbild'] = $defaultoptions['src-default-symbolbild'];
 ?> 
-<div class="section content" id="main-content">
+<div class="section content">
   <div class="row">
     <div class="content-primary">
       <div class="content-header">   
@@ -28,12 +28,15 @@
 <?php rewind_posts(); get_template_part( 'loop', 'author' ); ?>
 
 
+            
+
+
        </div>
     </div>
 
     <div class="content-aside">
       <div class="skin">      
-          <h1 class="skip"><?php _e( 'Weitere Informationen', 'piratenkleider' ); ?></h1>
+          <h1 class="skip"><?php echo $defaultoptions['default_text_title_sidebar']; ?></h1>
          <?php get_sidebar(); ?>
       </div>
     </div>
