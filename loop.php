@@ -55,7 +55,7 @@
                         <?php if ( is_archive() || is_search() ) : // Display excerpts for archives and search. ?>
                                 <?php the_excerpt(); ?>
                         <?php else : ?>
-                                <?php the_content( __( 'Weiterlesen', 'piratenkleider' ) ); ?>
+                                <?php the_content( __( 'Ler mais', 'piratenkleider' ) ); ?>
                         <?php endif; ?>
 
                                         <?php piratenkleider_post_pubdateinfo(); ?>
@@ -72,7 +72,7 @@
                 <?php if ( is_archive() || is_search() ) : // Only display excerpts for archives and search. ?>
                                 <?php the_excerpt(); ?>
                 <?php else : ?>
-                                <?php the_content( __( 'Weiterlesen', 'piratenkleider' ) ); ?>
+                                <?php the_content( __( 'Ler mais', 'piratenkleider' ) ); ?>
                                 <?php wp_link_pages( array( 'before' => '' . __( 'Seiten:', 'piratenkleider' ), 'after' => '' ) ); ?>
                 <?php endif; ?>
 

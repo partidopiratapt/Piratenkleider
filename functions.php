@@ -69,25 +69,25 @@ $defaultoptions = array(
     'stickerlink2-url' => 'https://www.piratenpartei.de/mitmachen/spenden/',
     'stickerlink3-content' => '',
     'stickerlink3-url' => '',
-    'default_text_title_slider' => 'Topthemen',
-    'default_text_pretitle_category' => 'Kategorie: ',
-    'default_text_pretitle_tags' => 'Schlagwort: ',
-    'default_text_pretitle_search' => 'Suchergebnisse f&uuml;r: ',
-    'default_text_search_placeholder' => 'Suchbegriff eingeben',
-    'default_text_breadcrumb_home' => 'Startseite',
+    'default_text_title_slider' => 'Destaques',
+    'default_text_pretitle_category' => 'Categoria: ',
+    'default_text_pretitle_tags' => 'Slogan: ',
+    'default_text_pretitle_search' => 'Resultados da pesquisa para: ',
+    'default_text_search_placeholder' => 'Pesquisa',
+    'default_text_breadcrumb_home' => 'Home',
     'default_text_breadcrumb_category' => 'Artikel der Kategorie ',
     'default_text_breadcrumb_tags' => 'Artikel mit dem Tag ',
     'default_text_breadcrumb_search' => 'Suche ',
     'default_text_breadcrumb_author' => 'Artikel von ',
-    'default_text_home_title_prevarticle' => '&Auml;ltere Artikel',
-    'default_text_home_title_categories' => 'Kategorien',
-    'default_text_home_title_tags' => 'Schlagworte',
-    'default_text_home_title_articles' => 'Aktuelle Artikel',
+    'default_text_home_title_prevarticle' => 'Artigos mais antigos',
+    'default_text_home_title_categories' => 'Categorias',
+    'default_text_home_title_tags' => 'Tags',
+    'default_text_home_title_articles' => '&Uacute;ltimos artigos',
     'default_text_title_mainnav' => 'Navigation',
     'default_text_title_techmenu' => 'Service-Navigation',
     'default_text_title_sticker' => 'Sticker',
-    'default_text_title_search' => 'Suche',
-    'default_text_title_sidebar' => 'Weitere Informationen'
+    'default_text_title_search' => 'Procura',
+    'default_text_title_sidebar' => 'Para mais informação'
 );
 /**
  * Liste der Defaultbilder fuer Seiten und Slider
@@ -413,7 +413,7 @@ function piratenkleider_excerpt_length($length) {
 add_filter('excerpt_length', 'piratenkleider_excerpt_length');
 
 function piratenkleider_continue_reading_link() {
-    return ' <a title="Zum Artikel ' . strip_tags(get_the_title()) . '" href="' . get_permalink() . '">' . __('Weiterlesen <span class="meta-nav">&rarr;</span>', 'piratenkleider') . '</a>';
+    return ' <a title="Zum Artikel ' . strip_tags(get_the_title()) . '" href="' . get_permalink() . '">' . __('Ler mais <span class="meta-nav">&rarr;</span>', 'piratenkleider') . '</a>';
 }
 
 function piratenkleider_auto_excerpt_more($more) {
@@ -745,7 +745,7 @@ if (!function_exists('piratenkleider_comment')) :
                     //collect ancestor pages
                     $relations = get_post_ancestors($post->ID);
                     //get child pages
-                    $result = $wpdb->get_results("SELECT ID FROM fog_posts WHERE post_parent = $post->ID AND post_type='page'");
+                    $result = $wpdb->get_results('SELECT ID FROM '.$wpdb->prefix.'posts WHERE post_parent = '.$post->ID.' AND post_type=\'page\'');
                     if ($result) {
                         foreach ($result as $pageID) {
                             array_push($relations, $pageID->ID);

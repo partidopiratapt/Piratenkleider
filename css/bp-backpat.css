@@ -47,13 +47,6 @@ ul.item-list li {
     position: relative;
     clear: left;
 }
-ul.item-list div.item-avatar {
-    float: left;
-}
-
-ul.item-list div.item {
-    margin-left: 65px;
-}
 
 ul.item-list div.action {
     position: absolute;
@@ -61,7 +54,6 @@ ul.item-list div.action {
     right: 15px;
     text-align: right;
 }
-
 
 /***
  * Content Object Headers

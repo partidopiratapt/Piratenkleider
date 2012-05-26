@@ -167,18 +167,23 @@ right: 0;
 left: -999em;
 }
 
-
+#wp-admin-bar ul.item-list div.action {
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 20px;
+}
 /* Menu item css */
 #wp-admin-bar img.avatar {
 float: left;
 margin-right: 8px;
 }
-#wp-admin-bar span.activity {
+span.activity {
 display: block;
 margin-left: 34px;
 padding: 0;
 }
-#wp-admin-bar ul.author-list li a {
+ul.author-list li a {
 height: 17px;
 }
 #wp-admin-bar ul li#bp-adminbar-notifications-menu a span {
@@ -308,13 +313,13 @@ div.item-list-tabs ul li.last { float: right; }
 
 
 /* Object Lists (groups/members/forums/blogs) */
-ul.item-list {
+.content ul.item-list {
 margin: 10px 0 20px 0;
 padding: 0;
 list-style: none;
 width: 100%;
 }
-ul.item-list li { position: relative; }
+.content ul.item-list li { position: relative; }
 ul.item-list div.item-avatar {
 float: left;
 }

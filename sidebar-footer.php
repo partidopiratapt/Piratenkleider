@@ -4,25 +4,19 @@
             <?php dynamic_sidebar( 'first-footer-widget-area' ); ?>
         <?php } else { ?>
             
-        <h2>Piratenpartei Deutschland</h2>
-        <p class="titelurl"><a href="http://www.piratenpartei.de">www.piratenpartei.de</a></p>
-            <ul>
-                <li><a href="http://www.piratenpartei-bw.de/">Baden-W&uuml;rttemberg</a></li>   
-                <li><a href="http://www.piratenpartei-bayern.de/">Bayern</a></li>   
-                <li><a href="http://berlin.piratenpartei.de/">Berlin</a></li>   
-                <li><a href="http://www.piratenbrandenburg.de/">Brandenburg</a></li>   
-                <li><a href="http://bremen.piratenpartei.de/">Bremen </a></li>   
-                <li><a href="http://www.piratenpartei-hamburg.de">Hamburg</a></li>   
-                <li><a href="http://www.piratenpartei-hessen.de/">Hessen</a></li>   
-                <li><a href="http://www.piratenpartei-mv.de/">Mecklenburg-Vorpommern</a></li>   
-                <li><a href="http://www.piratenpartei-niedersachsen.de/">Niedersachsen</a></li>   
-                <li><a href="http://www.piratenpartei-nrw.de/">Nordrhein-Westfalen</a></li>   
-                <li><a href="http://www.piraten-rlp.de/">Rheinland-Pfalz</a></li>   
-                <li><a href="http://www.piratenpartei-saarland.de/">Saarland</a></li>   
-                <li><a href="http://www.piraten-sachsen.de/">Sachsen</a></li>   
-                <li><a href="http://www.piraten-lsa.de/">Sachsen-Anhalt</a></li>   
-                <li><a href="http://www.piratenpartei-sh.de/">Schleswig-Holstein</a></li>   
-                <li><a href="http://www.piraten-thueringen.de/">Th&uuml;ringen</a></li>   
+        <h2>Movimento Partido Pirata Português</h2>
+        <p class="titelurl"><a href="http://www.partidopiratapt.eu">www.partidopiratapt.eu</a></p>
+            <ul>            
+            <?php 
+            $args = array(
+    'orderby'          => 'name',
+    'order'            => 'ASC',
+    'show_images '     => 1,
+    'category_orderby' => 'name',
+    'category_order'   => 'ASC',
+    'category_before'  => '<li>',
+    'category_after'   => '</li>' );
+            wp_list_bookmarks( $args ); ?>   
             </ul>
         <?php } ?>    
     </div>

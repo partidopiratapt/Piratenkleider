@@ -276,7 +276,7 @@ der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.</
                     //collect ancestor pages
                     $relations = get_post_ancestors($post->ID);
                     //get child pages
-                    $result = $wpdb->get_results( "SELECT ID FROM fog_posts WHERE post_parent = $post->ID AND post_type='page'" );
+                    $result = $wpdb->get_results( 'SELECT ID FROM '.$wpdb->prefix.'posts WHERE post_parent = '.$post->ID.' AND post_type=\'page\'' );
                     if ($result){
                         foreach($result as $pageID){
                             array_push($relations, $pageID->ID);

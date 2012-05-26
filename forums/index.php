@@ -154,8 +154,6 @@ if (!isset($options['aktiv-defaultseitenbild']))
         <div class="content-aside">
             <div class="skin">      
 
-                <h1 class="skip"><?php echo $defaultoptions['default_text_title_sidebar']; ?></h1>
-
                 <?php
                 if (!isset($options['zeige_subpagesonly']))
                     $options['zeige_subpagesonly'] = $defaultoptions['zeige_subpagesonly'];
@@ -171,7 +169,7 @@ if (!isset($options['aktiv-defaultseitenbild']))
                             //collect ancestor pages
                             $relations = get_post_ancestors($post->ID);
                             //get child pages
-                            $result = $wpdb->get_results("SELECT ID FROM fog_posts WHERE post_parent = $post->ID AND post_type='page'");
+                            $result = $wpdb->get_results('SELECT ID FROM '.$wpdb->prefix.'posts WHERE post_parent = '.$post->ID.' AND post_type=\'page\'');
                             if ($result) {
                                 foreach ($result as $pageID) {
                                     array_push($relations, $pageID->ID);

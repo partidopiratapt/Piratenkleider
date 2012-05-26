@@ -140,10 +140,10 @@
   }
   .nav-main ul.menu li:hover ul li a,
   .nav-main ul.menu li.hover ul li a {
-          font-family: Helvetica, Arial, sans-serif;
+          font-family: "BebasNeueRegular", Helvetica, Arial, sans-serif;
           letter-spacing: 0;
-          font-size: 12px;
-          padding: 2px 18px;
+          font-size: 15px;
+          padding: 5px 18px;
           -moz-border-radius-topleft: 0;
           -moz-border-radius-topright: 0;
           -moz-border-radius-bottomright: 0;
