@@ -6,14 +6,15 @@
 <?php get_header();
  $options = get_option( 'piratenkleider_theme_options' );  
  $kontaktinfos = get_option( 'piratenkleider_theme_kontaktinfos' );  
-        if (!isset($options['src-default-symbolbild'])) 
-            $options['src-default-symbolbild'] = $defaultoptions['src-default-symbolbild'];
+ $bilderoptions = get_option( 'piratenkleider_theme_defaultbilder' ); 
+   if (!isset($bilderoptions['src-default-symbolbild'])) 
+            $bilderoptions['src-default-symbolbild'] = $defaultoptions['src-default-symbolbild'];
 ?>
-<div class="section content">
+<div class="section content" id="main-content">
   <div class="row">
     <div class="content-primary">
       <div class="content-header">
-        <h1 id="page-title"><span>Spenden</span></h1>   
+        <h1 id="page-title"><span><?php _e( 'Spenden', 'piratenkleider' ); ?></span></h1>   
         <?php if (has_post_thumbnail()) { 
             echo '<div class="symbolbild">';
               the_post_thumbnail(); 
@@ -21,7 +22,7 @@
         } else {            
            if ($options['aktiv-platzhalterbilder-indexseiten']) { ?>         
             <div class="symbolbild"> 
-              <img src="<?php echo $options['src-default-symbolbild']?>" alt="" >
+              <img src="<?php echo $bilderoptions['src-default-symbolbild']?>" alt="" >
            </div>                                 
           <?php }     
             }   
@@ -35,41 +36,41 @@
         <?php endwhile; ?>
           
           
-     <?php if ((isset($kontaktinfos['spendenkonto']))
-          && (isset($kontaktinfos['spendenempfaenger']))
-         && (isset($kontaktinfos['spendenblz']))) { ?>
-          <h2>Per &Uuml;berweisung spenden</h2>
+     <?php if ((isset($kontaktinfos['spendenkonto'])) && (strlen(trim($kontaktinfos['spendenkonto']))>1)
+          && (isset($kontaktinfos['spendenempfaenger']))&& (strlen(trim($kontaktinfos['spendenempfaenger']))>1)
+         && (isset($kontaktinfos['spendenblz']))&& (strlen(trim($kontaktinfos['spendenblz']))>1)) { ?>
+          <h2><?php _e( 'Per &Uuml;berweisung spenden', 'piratenkleider' ); ?></h2>
           
         <table>            
         <tbody>
         <tr>
-           <th>Empf&auml;nger</th>
+           <th><?php _e('Empf&auml;nger', 'piratenkleider' ); ?></th>
          <td><?php esc_attr_e( $kontaktinfos['spendenempfaenger'] ); ?></td>
         </tr>
         <tr>
-            <th>Kontonummer</th>
+            <th><?php _e('Kontonummer', 'piratenkleider' ); ?></th>
          <td><?php esc_attr_e( $kontaktinfos['spendenkonto'] ); ?></td>
         </tr>
         <tr>
-           <th>Bankleitzahl</th>
+           <th><?php _e('Bankleitzahl', 'piratenkleider' ); ?></th>
             <td><?php esc_attr_e( $kontaktinfos['spendenblz'] ); ?></td>
         </tr>
         <tr>
-          <th>Bank</th>
+          <th><?php _e('Bank', 'piratenkleider' ); ?></th>
            <td><?php esc_attr_e( $kontaktinfos['spendenbank'] ); ?></td>
         </tr>
         <tr>
-            <th>IBAN</th>
+            <th><?php _e('IBAN', 'piratenkleider' ); ?></th>
            <td><?php esc_attr_e( $kontaktinfos['spendeniban'] ); ?></td>
         </tr>
         <tr>
-           <th>BIC</th>
+           <th><?php _e('BIC', 'piratenkleider' ); ?></th>
             <td><?php esc_attr_e( $kontaktinfos['spendenbic'] ); ?></td>
         </tr>
         <tr>
-           <th>Verwendungszweck</th>
-           <td>Spende von Name, Vorname, Anschrift (ggf. mit Zusatz "Stichwort" 
-            und einem konkreten Verwendungszweck)</td>
+           <th><?php _e('Verwendungszweck', 'piratenkleider' ); ?></th>
+           <td><?php _e('Spende von Name, Vorname, Anschrift (ggf. mit Zusatz "Stichwort" 
+            und einem konkreten Verwendungszweck)', 'piratenkleider' ); ?></td>
         </tr>
         </tbody>
         </table>
@@ -134,59 +135,15 @@
     <div class="content-aside">
       <div class="skin">
 
-        <h1 class="skip"><?php echo $defaultoptions['default_text_title_sidebar']; ?></h1>   
+        <h1 class="skip"><?php _e( 'Weitere Informationen', 'piratenkleider' ); ?></h1>   
             <?php
             if (!isset($options['zeige_subpagesonly'])) 
             $options['zeige_subpagesonly'] = $defaultoptions['zeige_subpagesonly'];
   
             if (!isset($options['zeige_sidebarpagemenu'])) 
             $options['zeige_sidebarpagemenu'] = $defaultoptions['zeige_sidebarpagemenu'];
+            get_piratenkleider_seitenmenu($options['zeige_sidebarpagemenu'],$options['zeige_subpagesonly']);
 
-          if ($options['zeige_sidebarpagemenu']==1) {   
-           if ($options['zeige_subpagesonly']==1) {
-                //if the post has a parent
-
-                if($post->post_parent){
-                    //collect ancestor pages
-                    $relations = get_post_ancestors($post->ID);
-                    //get child pages
-                    $result = $wpdb->get_results( 'SELECT ID FROM '.$wpdb->prefix.'posts WHERE post_parent = '.$post->ID.' AND post_type=\'page\'' );
-                    if ($result){
-                        foreach($result as $pageID){
-                            array_push($relations, $pageID->ID);
-                        }
-                    }
-                    //add current post to pages
-                    array_push($relations, $post->ID);
-                    //get comma delimited list of children and parents and self
-                    $relations_string = implode(",",$relations);
-                    //use include to list only the collected pages. 
-                    $sidelinks = wp_list_pages("sort_column=menu_order&title_li=&echo=0&include=".$relations_string);
-                }else{
-                    // display only main level and children
-                    $sidelinks = wp_list_pages("sort_column=menu_order&title_li=&echo=0&depth=1&child_of=".$post->ID);
-                }
-
-                if ($sidelinks) { ?>
-                <ul class="menu">
-                    <?php //links in <li> tags
-                    echo $sidelinks; ?>
-                </ul>         
-                <?php } 
-                             
-             } else {
-          
-                if ( has_nav_menu( 'primary' ) ) {
-                    wp_nav_menu( array('depth' => 0, 'container_class' => 'menu-header', 'theme_location' => 'primary', 'walker'  => new My_Walker_Nav_Menu()) );      
-                } else { 
-                ?>
-                <ul class="menu">
-                    <?php  wp_page_menu( ); ?>
-                </ul> 
-                <?php 
-                } 
-             }
-          }
         
             get_sidebar(); ?>
       </div>

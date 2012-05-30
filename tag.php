@@ -1,17 +1,18 @@
 <?php get_header();    
   $options = get_option( 'piratenkleider_theme_options' );  
-   if (!isset($options['src-default-symbolbild'])) 
-            $options['src-default-symbolbild'] = $defaultoptions['src-default-symbolbild'];
+  $bilderoptions = get_option( 'piratenkleider_theme_defaultbilder' ); 
+   if (!isset($bilderoptions['src-default-symbolbild-tag'])) 
+            $bilderoptions['src-default-symbolbild-tag'] = $defaultoptions['src-default-symbolbild-tag'];
 ?> 
-<div class="section content">
+<div class="section content" id="main-content">
   <div class="row">
     <div class="content-primary">
       <div class="content-header">
-           <h1 id="page-title"><span><?php printf( __( '%s', 'piratenkleider' ), '' .$defaultoptions['default_text_pretitle_tags']. single_cat_title( '', false ) . '' ); ?></span></h1>
+           <h1 id="page-title"><span><?php printf( __( 'Schlagwort %s', 'piratenkleider' ), '' . single_cat_title( '', false ) . '' ); ?></span></h1>
           
           <?php if ($options['aktiv-platzhalterbilder-indexseiten']) { ?>         
           <div class="symbolbild"> 
-              <img src="<?php echo $options['src-default-symbolbild']?>" alt="" >  
+              <img src="<?php echo $bilderoptions['src-default-symbolbild-tag']?>" alt="" >  
            </div>                                 
           <?php } ?>                  
       </div>
@@ -20,7 +21,7 @@
              
              
               <div class="widget">
-                <h2>&Uuml;bersicht aller Tags</h2>
+                <h2><?php _e( '&Uuml;bersicht &uuml;ber die Schlagworte', 'piratenkleider' ); ?></h2>
                 <div class="tagcloud">                   
                   <?php wp_tag_cloud(array('smallest'  => 14, 'largest'   => 28)); ?>                  
                 </div>    
@@ -30,7 +31,7 @@
 
     <div class="content-aside">
       <div class="skin">       
-          <h1 class="skip"><?php echo $defaultoptions['default_text_title_sidebar']; ?></h1>
+          <h1 class="skip"><?php _e( 'Weitere Informationen', 'piratenkleider' ); ?></h1>
          <?php get_sidebar(); ?>
       </div>
     </div>

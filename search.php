@@ -1,17 +1,18 @@
 <?php get_header();    
   $options = get_option( 'piratenkleider_theme_options' );  
-        if (!isset($options['src-default-symbolbild'])) 
-            $options['src-default-symbolbild'] = $defaultoptions['src-default-symbolbild'];
+  $bilderoptions = get_option( 'piratenkleider_theme_defaultbilder' ); 
+   if (!isset($bilderoptions['src-default-symbolbild-search'])) 
+            $bilderoptions['src-default-symbolbild-search'] = $defaultoptions['src-default-symbolbild-search'];
 ?> 
-<div class="section content">
+<div class="section content" id="main-content">
   <div class="row">
     <div class="content-primary">
       <div class="content-header">
-          <h1><?php printf( __( '%s', 'piratenkleider' ), '' . $defaultoptions['default_text_pretitle_search'].get_search_query() . '' ); ?></h1>                
+          <h1><?php printf( __( 'Suchergebnisse f&uuml;r %s', 'piratenkleider' ), '' .get_search_query() . '' ); ?></h1>                
           
           <?php if ($options['aktiv-platzhalterbilder-indexseiten']) { ?>         
           <div class="symbolbild"> 
-                    <img src="<?php echo $options['src-default-symbolbild']?>" alt="" >              
+                    <img src="<?php echo $bilderoptions['src-default-symbolbild-search'] ?>" alt="" >              
            </div>                                 
           <?php } ?>           
       </div>
@@ -26,32 +27,34 @@
                  get_template_part( 'loop', 'search' );
                 ?>
              <?php else : ?>
-                        <h2>Nichts gefunden</h2>
+                        <h2><?php _e("Nichts gefunden", 'piratenkleider'); ?></h2>
                         <p>
-                            Es konnten keine Seiten oder Artikel gefunden werden, 
-                            die zu der Sucheingaben passten.
+                            <?php _e("Es konnten keine Seiten oder Artikel gefunden werden, 
+                            die zu der Sucheingabe passten.
                             Bitte versuchen Sie es nochmal mit einer 
-                            anderen Suche.
+                            anderen Suche.", 'piratenkleider'); ?>
+                            
                         </p>
                         <?php get_search_form(); ?>
                         
                         <p>
-                            Alternativ verwenden Sie einen der folgenden Links.                     
+                            <?php _e("Alternativ verwenden Sie einen der folgenden Links.", 'piratenkleider'); ?>
+                                      
                         </p>
                         
                         <div class="widget">
-                            <h3>Archiv nach Monaten</h3>                           
+                            <h3><?php _e("Archiv nach Monaten", 'piratenkleider'); ?></h3>                           
                             <?php wp_get_archives('type=monthly'); ?>               
                         </div>
                                                                         
                          <div  class="widget">
-                            <h3>Artikel nach Schlagworten</h3>    
+                            <h3><?php _e("Artikel nach Schlagworten", 'piratenkleider'); ?></h3>    
                             <div class="tagcloud">
                              <?php wp_tag_cloud(array('smallest'  => 12, 'largest'   => 28)); ?>
                              </div>
                         </div>
                         <div class="widget">
-                        <h3>&Uuml;bersicht aller Kategorien</h3>
+                        <h3><?php _e("&Uuml;bersicht aller Kategorien", 'piratenkleider'); ?></h3>
                         <ul>                            
                           <?php wp_list_categories('title_li='); ?>                               
                         </ul>
@@ -65,7 +68,7 @@
 
     <div class="content-aside">
       <div class="skin">        
-          <h1 class="skip">Weitere Informationen</h1>
+          <h1 class="skip"><?php _e( 'Weitere Informationen', 'piratenkleider' ); ?></h1>
          <?php get_sidebar(); ?>
       </div>
     </div>

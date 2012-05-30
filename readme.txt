@@ -2,7 +2,7 @@ Piratenkleider
 - Wordpress-Theme für Webauftritte der Piratenpartei 
 =================================================
 
-Version 2.4 von Wolfgang Wiese (xwolf), 11. Mai 2012
+Version 2.6 von Wolfgang Wiese (xwolf), 18. Mai 2012
 
 
 DOWNLOADS
@@ -20,6 +20,7 @@ AUTOREN / ENTWICKLER
    Wolfgang Wiese (xwolf), http://www.xwolf.de 
 
    Mit Hilfe von 
+     Andre Sendowski, http://www.iphone-notes.de/
      Heiko Philippski, http://www.phindie.de/
      Kerstin Probiesch, http://www.barrierefreie-informationskultur.de
 
@@ -163,6 +164,9 @@ THEME-OPTION "Segel setzen"
    wird, kann im Wiki unter der Seite http://wiki.piratenpartei.de/Plakate
    gefunden werden.
 
+   Weiterhin können die Symbolbilder für die Metaseiten Suche, Tags, Kategorien,
+   Autoren, Archiv und Templateseiten über die EIngabe einer eigenen Bild-URL
+   geändert werden. 
 
 THEME-OPTION "Captn & Crew"
 
@@ -175,6 +179,8 @@ THEME-OPTION "Klüverbaum"
 
    Diese Option ermöglicht die Änderungen spezieller CSS-Anweisungen im
    Kopfteil der Seite, sowie das Einfügen eigener CSS-Anweisungen.
+   Ausserdem können hier die bekannten Farbcodes anderer Länder aktiviert 
+   werden.
    So ist es hier bspw. möglich anstelle der Wellen und dem Schiff
    eine eigene Skyline als Hintergrundgrafik zu wählen.
    Diese Optionenseite sollte nun vor erfahrenen Webadmins geändert werden,
@@ -266,11 +272,17 @@ Administrative Hinweise für Wordpress Theme-Editoren:
    des Sticker sund die Ziel-Adresse eingeben.
    Als Content kann HTML eingegeben werden um Bilder direkt einzublenden.
    Es kann aber auch nur ein Text als COntent eingegeben werden.
-   Optisch ist es derzeit aufgrund der Verbreitung von CSS3 zu empfehlen,
-   ein Bild (wie in der Defaulteinstellung vorgegeben) einzugeben.
+   Hierbei können über CSS-Klassen auch Farben und eine 5 Grad Drehung
+   für die Texte bestimmt werden.
+   Siehe hier zu die FAQ der Dokumentation für Beispiele.
 
-     Beispiel für den Content:
-    <img src="'http://www.piratenpartei.de/images/werde-pirat.png" width="88" height="56" alt="Werde Pirat!">
+    Vorhandene CSS-Klassen für Texte:
+     cicolor =  setzt die Farbe die jeweils als Grundfarbe des Designs 
+                definiert ist. (Default: orange)
+     gedreht = Dreht den ganzen Text um 5 Grad
+     animate = Lässt den Text bei einem Hover sich drehen und skalieren
+     shadow  = Gibt den Text einen Schattenwurf
+               (Bei gedrehten Text wird ein Schattenwurf automatisch gesetzt) 
 
 5.  Die Teaserlinks rechts neben dem Bildslider auf der Startseite können
     individuell über die Theme-Option "Takelage setzen" gesetzt
@@ -295,4 +307,18 @@ Administrative Hinweise für Wordpress Theme-Editoren:
    kann auch die Klasse  .nolinkicon  gesetzt werden.
    Linkicons werden nur für den Inhaltsbereich gesetzt.
 
+7. Farbcodes und Sprache der Texte
+   Laenderspezifische Farbcodes werden in den Dateien
+       /css/colors_tk.css  (für Türkei)
+       /css/colors_lu.css (für Luxemburg)
+       /css/colors_de.css (für Deutschland, jedoch nicht notwendig da Default)
+   abgelegt.
+   Diese greifen teilweise auf eigene Bilder zu. 
+   Diese Bilder sollten in /images/ liegen wenn sie allgemein sind und
+   in /images/int/ wenn es um Bilder geht, die länderspezifisch sind.
 
+   Hinsichtlich der Sprachübersetzung von Texten können eigene Language-Dateien
+   in einem Verzeichnis  /laguages/ abgelegt werden. Das Theme berücksichtigt
+   diese, wenn solche Sprachdateien vorhanden sind.
+   Zur Nutzung und Erstellung von Sprachdateien siehe
+    http://www.catswhocode.com/blog/how-to-make-a-translatable-wordpress-theme
