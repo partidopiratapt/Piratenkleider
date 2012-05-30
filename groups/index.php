@@ -1,5 +1,6 @@
 <?php
 get_header();
+//echo "sghjk";
 global $defaultoptions;
 $options = get_option('piratenkleider_theme_options');
 if (!isset($options['aktiv-defaultseitenbild']))

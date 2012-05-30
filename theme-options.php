@@ -17,10 +17,10 @@ function theme_options_init(){
  * Load up the menu page
  */
 function theme_options_add_page() {
-	add_theme_page( __( 'Takelage einstellen', 'piratenkleider' ), __( 'Takelage einstellen', 'piratenkleider' ), 'edit_theme_options', 'theme_options', 'theme_options_do_page' );
-        add_theme_page( __( 'Segel setzen', 'piratenkleider' ), __( 'Segel setzen', 'piratenkleider' ), 'edit_theme_options', 'theme_defaultbilder', 'theme_defaultbilder_do_page' );
+	add_theme_page( __( 'Options Set', 'piratenkleider' ), __( 'Options Set', 'piratenkleider' ), 'edit_theme_options', 'theme_options', 'theme_options_do_page' );
+        add_theme_page( __( 'Nav Options', 'piratenkleider' ), __( 'Nav Options', 'piratenkleider' ), 'edit_theme_options', 'theme_defaultbilder', 'theme_defaultbilder_do_page' );
         add_theme_page( __( 'Captn & Crew', 'piratenkleider' ), __( 'Captn & Crew', 'piratenkleider' ), 'edit_theme_options', 'theme_kontaktinfos', 'theme_kontaktinfos_do_page' );
-        add_theme_page( __( 'Kl&uuml;verbaum', 'piratenkleider' ), __( 'Kl&uuml;verbaum', 'piratenkleider' ), 'edit_theme_options', 'theme_designspecials', 'theme_designspecials_do_page' );
+        add_theme_page( __( 'Design Options', 'piratenkleider' ), __( 'Design Options', 'piratenkleider' ), 'edit_theme_options', 'theme_designspecials', 'theme_designspecials_do_page' );
 }
 
 
@@ -69,7 +69,7 @@ function theme_options_do_page() {
 		<?php screen_icon(); echo "<h2>" . get_current_theme() . __( ' Takelage einstellen: Konfiguration ', 'piratenkleider' ) . "</h2>"; ?>
 
 		<?php if ( false !== $_REQUEST['settings-updated'] ) : ?>
-		<div class="updated fade"><p><strong><?php _e( 'Optionen wurden gespeichert.', 'piratenkleider' ); ?></strong></p></div>
+		<div class="updated fade"><p><strong><?php _e( 'Options have been saved.', 'piratenkleider' ); ?></strong></p></div>
 		<?php endif; ?>
 
 		<form method="post" action="options.php">
@@ -180,40 +180,40 @@ function theme_options_do_page() {
                         ?>
 			<table class="form-table">
                               
-                                <tr valign="top"><th scope="row"><?php _e( 'Defaultbilder f&uuml;r Seiten', 'piratenkleider' ); ?></th>
+                                <tr valign="top"><th scope="row"><?php _e( 'Default images for pages', 'piratenkleider' ); ?></th>
 					<td>
 						<input id="piratenkleider_theme_options[aktiv-defaultseitenbild]" name="piratenkleider_theme_options[aktiv-defaultseitenbild]" type="checkbox" value="1" <?php checked( '1', $options['aktiv-defaultseitenbild'] ); ?> />
 						<label  for="piratenkleider_theme_options[aktiv-defaultseitenbild]">
-                                                    <?php _e( 'Bilder f&uuml;r Seiten erzwingen, die von sich aus kein Artikelbild definiert haben. Wenn kein Artikelbild vorhanden ist, wird ein Defaultbild gezeigt.', 'piratenkleider' ); ?>
+                                                    <?php _e( 'Pictures pages for force, who have defined themselves there is no article image. If no article image exists, a default image is shown.', 'piratenkleider' ); ?>
                                                 </label>
 					</td>
 				</tr>
-                                <tr valign="top"><th scope="row"><?php _e( 'Platzhalterbilder', 'piratenkleider' ); ?></th>
+                                <tr valign="top"><th scope="row"><?php _e( 'Placeholder images', 'piratenkleider' ); ?></th>
 					<td>
 						<input id="piratenkleider_theme_options[aktiv-platzhalterbilder-indexseiten]" name="piratenkleider_theme_options[aktiv-platzhalterbilder-indexseiten]" type="checkbox" value="1" <?php checked( '1', $options['aktiv-platzhalterbilder-indexseiten'] ); ?> />
 						<label  for="piratenkleider_theme_options[aktiv-platzhalterbilder-indexseiten]">
-                                                    <?php _e( 'Platzhalterbilder bei Indexseiten zu Kategorien, Tags, Suche und Archiv anzeigen', 'piratenkleider' ); ?>
+                                                    <?php _e( 'Placeholder images for index pages to categories, tags, search and archive ',' pirate clothes' ); ?>
                                                     </label>
 					</td>
 				</tr>
 				
                                <tr valign="top">
-                                    <th scope="row"><?php _e( 'Kopfteil', 'piratenkleider' ); ?></th>
+                                    <th scope="row"><?php _e( 'headboard', 'piratenkleider' ); ?></th>
                                     <td>
                                         <table>
                                               <tr valign="top"><th scope="row"><?php _e( 'Linkmenu', 'piratenkleider' ); ?></th>
                                                 <td>
 						<input id="piratenkleider_theme_options[aktiv-linkmenu]" name="piratenkleider_theme_options[aktiv-linkmenu]" type="checkbox" value="1" <?php checked( '1', $options['aktiv-linkmenu'] ); ?> />
 						<label  for="piratenkleider_theme_options[aktiv-linkmenu]">
-                                                    <?php _e( 'Linkmenu oben rechts, zwischen Social Media Icons und Suchmaske anzeigen', 'piratenkleider' ); ?>
+                                                    <?php _e( 'Linkmenu top right, show between search and social media icons', 'piratenkleider' ); ?>
                                                     </label>
                                                 </td>
                                     	</tr>
-                                             <tr valign="top"><th scope="row"><?php _e( 'Suchmaske', 'piratenkleider' ); ?></th>
+                                             <tr valign="top"><th scope="row"><?php _e( 'Search', 'piratenkleider' ); ?></th>
                                                 <td>
 						<input id="piratenkleider_theme_options[aktiv-suche]" name="piratenkleider_theme_options[aktiv-suche]" type="checkbox" value="1" <?php checked( '1', $options['aktiv-suche'] ); ?> />
 						<label  for="piratenkleider_theme_options[aktiv-suche]">
-                                                    <?php _e( 'Eingabemaske f&uuml;r Suche oben rechts anzeigen', 'piratenkleider' ); ?>
+                                                    <?php _e( 'Show input mask for the top right search', 'piratenkleider' ); ?>
                                                     </label>
                                                 </td>
                                             </tr>
@@ -221,7 +221,7 @@ function theme_options_do_page() {
                                                 <td>
 						<input id="piratenkleider_theme_options[defaultwerbesticker]" name="piratenkleider_theme_options[defaultwerbesticker]" type="checkbox" value="1" <?php checked( '1', $options['defaultwerbesticker'] ); ?> />
 						<label  for="piratenkleider_theme_options[defaultwerbesticker]">
-                                                    <?php _e( 'Sticker anzeigen', 'piratenkleider' ); ?>
+                                                    <?php _e( 'Show Sitcker', 'piratenkleider' ); ?>
                                                     </label>
                                                 </td>
                                           </tr>
@@ -291,17 +291,17 @@ function theme_options_do_page() {
                                     <th scope="row"><?php _e( 'Sidebar', 'piratenkleider' ); ?></th>
                                     <td>
                                         <table>                                             
-                                            <tr valign="top"><th scope="row"><?php _e( 'Seitenmenu', 'piratenkleider' ); ?></th>
+                                            <tr valign="top"><th scope="row"><?php _e( 'side box', 'piratenkleider' ); ?></th>
                                                     <td>
                                                             <input id="piratenkleider_theme_options[zeige_subpagesonly]" name="piratenkleider_theme_options[zeige_subpagesonly]" type="checkbox" value="1" <?php checked( '1', $options['zeige_subpagesonly'] ); ?> />
                                                             <label  for="piratenkleider_theme_options[zeige_subpagesonly]">
-                                                                <?php _e( ' Bei der Anzeige von Seiten rechts in der Sidebar nur das aktuelle Submenu zeigen. Bei Deaktivierung wird das vollst&auml;ndige Men&uuml; gezeigt. Dies ist f&uuml;r Webauftritte mit vielen Seiten nicht geeignet.', 'piratenkleider' ); ?>
+                                                                <?php _e( ' Show in the display of pages in the sidebar to the right, only the current submenu. When disabled, the full menu is shown. This is for websites with many pages not suitable.', 'piratenkleider' ); ?>
                                                                </label>
 
                                                             <p><?php _e( 'Alternative Option:', 'piratenkleider' ); ?>:</p>
                                                             <input id="piratenkleider_theme_options[zeige_sidebarpagemenu]" name="piratenkleider_theme_options[zeige_sidebarpagemenu]" type="checkbox" value="1" <?php checked( '1', $options['zeige_sidebarpagemenu'] ); ?> />
                                                             <label  for="piratenkleider_theme_options[zeige_sidebarpagemenu]">
-                                                                <?php _e( 'Seitenmen&uuml; in der Sidebar anzeigen.', 'piratenkleider' ); ?>                                                                
+                                                                <?php _e( 'View page in the sidebar menu.', 'piratenkleider' ); ?>                                                                
                                                             </label>
 
                                                     </td>
@@ -311,22 +311,22 @@ function theme_options_do_page() {
                                                     <td>
                                                             <input id="piratenkleider_theme_options[newsletter]" name="piratenkleider_theme_options[newsletter]" type="checkbox" value="1" <?php checked( '1', $options['newsletter'] ); ?> />
                                                             <label  for="piratenkleider_theme_options[newsletter]">
-                                                                <?php _e( 'Eingabemaske anzeigen', 'piratenkleider' ); ?>
+                                                                <?php _e( 'Input Mask Show', 'piratenkleider' ); ?>
                                                                 </label>
                                                     </td>
                                             </tr>
                                             
-                                            <tr valign="top"><th scope="row"><?php _e( 'Plakatslider aktivieren', 'piratenkleider' ); ?></th>
+                                            <tr valign="top"><th scope="row"><?php _e( 'Poster Slider activate', 'piratenkleider' ); ?></th>
                                         	<td>
                                             	<input id="piratenkleider_theme_options[slider-defaultwerbeplakate]" name="piratenkleider_theme_options[slider-defaultwerbeplakate]" type="checkbox" value="1" <?php checked( '1', $options['slider-defaultwerbeplakate'] ); ?> />
 						<label for="piratenkleider_theme_options[slider-defaultwerbeplakate]">
-                                                    <?php _e( 'Slider der Werbeplakate (rechte Sidebar-Spalte) werden angezeigt. 
-                                                    <br>Die Auswahl der Plakatbilder kann unter den Defaultbildern angepasst werden.', 'piratenkleider' ); ?>
+                                                    <?php _e( 'Slider, the advertising posters (Sidebar right column) are shown.
+                                                     <br> selection of poster images can be adjusted to the default images. ',' pirate clothes' ); ?>
                                                     </label>
                                                 </td>
                                             </tr>
                                             
-                                         <tr valign="top"><th scope="row"><?php _e( 'Teaserlink 1', 'piratenkleider' ); ?></th>
+                                         <tr valign="top"><th scope="row"><?php _e( 'Teaser link 1', 'piratenkleider' ); ?></th>
                                              <td>
 
                                                 <table>
@@ -345,14 +345,14 @@ function theme_options_do_page() {
                                                     </select></td>               
                                                     </tr>
                                                     <tr>
-                                                    <th><label for="piratenkleider_theme_options[teaserlink1-title]"> <?php _e( 'Titel', 'piratenkleider' ); ?>:</label></th>
+                                                    <th><label for="piratenkleider_theme_options[teaserlink1-title]"> <?php _e( 'Title', 'piratenkleider' ); ?>:</label></th>
                                                     <td><input  style="width: 20em;" id="piratenkleider_theme_options[teaserlink1-title]" maxlength="40"
                                                     type="text" name="piratenkleider_theme_options[teaserlink1-title]" 
                                                     value="<?php esc_attr_e( $options['teaserlink1-title'] ); ?>" /></td>               
                                                     </tr>
                                                     <tr>
                                                     <th><label  for="piratenkleider_theme_options[teaserlink1-untertitel]">
-                                                    <?php _e( 'Untertitel', 'piratenkleider' ); ?>:
+                                                    <?php _e( 'Subtitle', 'piratenkleider' ); ?>:
                                                     </label></th>
                                                     <td> <input style="width: 20em;" id="piratenkleider_theme_options[teaserlink1-untertitel]" maxlength="40"
                                                     type="text" name="piratenkleider_theme_options[teaserlink1-untertitel]" 
@@ -368,7 +368,7 @@ function theme_options_do_page() {
                                              </td>                                                 
                                          </tr>     
 
-                                          <tr valign="top"><th scope="row"><?php _e( 'Teaserlink 2', 'piratenkleider' ); ?></th>
+                                          <tr valign="top"><th scope="row"><?php _e( 'Teaser link 2', 'piratenkleider' ); ?></th>
                                              <td>
 
                                                 <table>
@@ -387,14 +387,14 @@ function theme_options_do_page() {
                                                     </select></td>               
                                                     </tr>
                                                     <tr>
-                                                    <th><label for="piratenkleider_theme_options[teaserlink2-title]"> <?php _e( 'Titel', 'piratenkleider' ); ?>:</label></th>
+                                                    <th><label for="piratenkleider_theme_options[teaserlink2-title]"> <?php _e( 'Title', 'piratenkleider' ); ?>:</label></th>
                                                     <td><input style="width: 20em;" id="piratenkleider_theme_options[teaserlink2-title]" maxlength="40"
                                                     type="text" name="piratenkleider_theme_options[teaserlink2-title]" 
                                                     value="<?php esc_attr_e( $options['teaserlink2-title'] ); ?>" /></td>               
                                                     </tr>
                                                     <tr>
                                                     <th><label  for="piratenkleider_theme_options[teaserlink2-untertitel]">
-                                                    <?php _e( 'Untertitel', 'piratenkleider' ); ?>:
+                                                    <?php _e( 'Subtitle', 'piratenkleider' ); ?>:
                                                     </label></th>
                                                     <td> <input style="width: 20em;" id="piratenkleider_theme_options[teaserlink2-untertitel]"  maxlength="40"
                                                     type="text" name="piratenkleider_theme_options[teaserlink2-untertitel]" 
@@ -409,7 +409,7 @@ function theme_options_do_page() {
                                                 </table>
                                              </td>                                                 
                                          </tr> 
-                                          <tr valign="top"><th scope="row"><?php _e( 'Teaserlink 3', 'piratenkleider' ); ?></th>
+                                          <tr valign="top"><th scope="row"><?php _e( 'Teaser link 3', 'piratenkleider' ); ?></th>
                                              <td>
 
                                                 <table>
@@ -428,14 +428,14 @@ function theme_options_do_page() {
                                                     </select></td>               
                                                     </tr>
                                                     <tr>
-                                                    <th><label for="piratenkleider_theme_options[teaserlink3-title]"> <?php _e( 'Titel', 'piratenkleider' ); ?>:</label></th>
+                                                    <th><label for="piratenkleider_theme_options[teaserlink3-title]"> <?php _e( 'Title', 'piratenkleider' ); ?>:</label></th>
                                                     <td><input style="width: 20em;" id="piratenkleider_theme_options[teaserlink3-title]" maxlength="40"
                                                     type="text" name="piratenkleider_theme_options[teaserlink3-title]" 
                                                     value="<?php esc_attr_e( $options['teaserlink3-title'] ); ?>" /></td>               
                                                     </tr>
                                                     <tr>
                                                     <th><label  for="piratenkleider_theme_options[teaserlink3-untertitel]">
-                                                    <?php _e( 'Untertitel', 'piratenkleider' ); ?>:
+                                                    <?php _e( 'Subtitle', 'piratenkleider' ); ?>:
                                                     </label></th>
                                                     <td> <input  style="width: 20em;" id="piratenkleider_theme_options[teaserlink3-untertitel]"  maxlength="40"
                                                     type="text" name="piratenkleider_theme_options[teaserlink3-untertitel]" 
@@ -459,10 +459,10 @@ function theme_options_do_page() {
                                 
                                 
 				<tr valign="top">
-                                    <th scope="row"><?php _e( 'Startseite', 'piratenkleider' ); ?></th>
+                                    <th scope="row"><?php _e( 'Home', 'piratenkleider' ); ?></th>
                                     <td>
                                         <table>
-                                            <tr valign="top"><th scope="row"><?php _e( 'Beitr&auml;ge &uuml;ber ganze Breite', 'piratenkleider' ); ?></th>
+                                            <tr valign="top"><th scope="row"><?php _e( 'Contributions over full width', 'piratenkleider' ); ?></th>
                                             <td>
                                                     <select name="piratenkleider_theme_options[num-article-startpage-fullwidth]">
                                                         <?php
@@ -477,11 +477,11 @@ function theme_options_do_page() {
                                                        						
                                                     </select>
                                                     <label class="description" for="piratenkleider_theme_options[num-article-startpage-fullwidth]">
-                                                       <?php _e( 'Zahl der Beitr&auml;ge, die &uuml;ber die gesamte Inhaltsbreite gehen.', 'piratenkleider' ); ?> 
+                                                       <?php _e( 'Number of posts that go over the entire width of content.', 'piratenkleider' ); ?> 
                                                     </label>
                                             </td>
                                             </tr>
-                                            <tr valign="top"><th scope="row"><?php _e( 'Beitr&auml;ge &uuml;ber halbe Breite', 'piratenkleider' ); ?></th>
+                                            <tr valign="top"><th scope="row"><?php _e( 'Posts about half the width', 'piratenkleider' ); ?></th>
                                             <td>
                                                     <select name="piratenkleider_theme_options[num-article-startpage-halfwidth]">
                                                         <?php
@@ -494,7 +494,7 @@ function theme_options_do_page() {
                                                         <option style="padding-right: 10px;" value="8" <?php if ($selected == '8') { echo 'selected="selected"'; }?>>8</option>                                                       					
                                                     </select>
                                                     <label class="description" for="piratenkleider_theme_options[num-article-startpage-halfwidth]">
-                                                        <?php _e( 'Zahl der Beitr&auml;ge, die in Spalten mit je zwei Beitr&auml;gen nebeneinander, angezeigt werden.', 'piratenkleider' ); ?>
+                                                        <?php _e( 'Number of posts that are displayed in columns, each with two articles side by side.', 'piratenkleider' ); ?>
                                                         
                                                     </label>
                                             </td>
@@ -510,7 +510,7 @@ function theme_options_do_page() {
                                         	<td>
 						<input id="piratenkleider_theme_options[alle-socialmediabuttons]" name="piratenkleider_theme_options[alle-socialmediabuttons]" type="checkbox" value="1" <?php checked( '1', $options['alle-socialmediabuttons'] ); ?> />
 						<label for="piratenkleider_theme_options[alle-socialmediabuttons]">
-                                                    <?php _e( ' Buttons anzeigen. <br>Hinweis: Es werden nur die Buttons gezeigt, bei denen in den folgenden Eingabefeldern Adressen definiert sind.', 'piratenkleider' ); ?>                                                   
+                                                    <?php _e( ' Show buttons. <br> Note: It will be shown only the buttons are defined for which the following entry fields addresses.', 'piratenkleider' ); ?>                                                   
                                                 </label>
                                                 </td>
                                             </tr>  
@@ -520,7 +520,7 @@ function theme_options_do_page() {
                                           <td>
 						<input id="piratenkleider_theme_options[social_facebook]" class="regular-text" type="text" length="5" name="piratenkleider_theme_options[social_facebook]" value="<?php esc_attr_e( $options['social_facebook'] ); ?>" />
 						<label class="description" for="piratenkleider_theme_options[social_facebook]">
-                                                <?php _e( 'URL inkl. http:// zur Facebook Seite<br>Zum Beispiel: <code>http://www.facebook.com/PiratenparteiDeutschland</code>', 'piratenkleider' ); ?>
+                                                <?php _e( 'URL including http:// for Facebook <br> For example: <code> http://www.facebook.com/PiratenparteiDeutschland </code>', 'piratenkleider' ); ?>
                                    
                                                     
                                                 </label>
@@ -533,7 +533,7 @@ function theme_options_do_page() {
                                           <td>
 						<input id="piratenkleider_theme_options[social_twitter]" class="regular-text" type="text" length="5" name="piratenkleider_theme_options[social_twitter]" value="<?php esc_attr_e( $options['social_twitter'] ); ?>" />
 						<label class="description" for="piratenkleider_theme_options[social_twitter]">
-                                                <?php _e( 'URL inkl. http:// zur Twitter Seite<br>Zum Beispiel: <code>https://twitter.com/#!/piratenpartei</code>', 'piratenkleider' ); ?>
+                                                <?php _e( 'URL including http:// Twitter page for <br> For example: # <code> https://twitter.com/ / pirate party </code>', 'piratenkleider' ); ?>
                                                     
                                                 </label>
 					</td>					
@@ -543,7 +543,7 @@ function theme_options_do_page() {
                                           <td>
 						<input id="piratenkleider_theme_options[social_youtube]" class="regular-text" type="text" length="5" name="piratenkleider_theme_options[social_youtube]" value="<?php esc_attr_e( $options['social_youtube'] ); ?>" />
 						<label class="description" for="piratenkleider_theme_options[social_youtube]">
-                                                <?php _e( 'URL inkl. http:// zur YouTube Seite<br>Zum Beispiel: <code>http://www.youtube.com/user/piratenpartei</code>', 'piratenkleider' ); ?>
+                                                <?php _e( 'URL including http:// YouTube page to <br> For example: <code> http://www.youtube.com/user/piratenpartei </code>', 'piratenkleider' ); ?>
                                                     
                                                 </label>
 					</td>					
@@ -553,7 +553,7 @@ function theme_options_do_page() {
                                           <td>
 						<input id="piratenkleider_theme_options[social_gplus]" class="regular-text" type="text" length="5" name="piratenkleider_theme_options[social_gplus]" value="<?php esc_attr_e( $options['social_gplus'] ); ?>" />
 						<label class="description" for="piratenkleider_theme_options[social_gplus]">
-                                                <?php _e( 'URL inkl. http:// zur G+ Seite <br>Zum Beispiel: <code>https://plus.google.com/u/0/107862983960150496076/posts</code>', 'piratenkleider' ); ?>
+                                                <?php _e( 'URL including http:// for G + page <br> For example: <code> https://plus.google.com/u/0/107862983960150496076/posts </code>', 'piratenkleider' ); ?>
                                                
                                                 </label>
 					</td>					
@@ -563,7 +563,7 @@ function theme_options_do_page() {
                                           <td>
 						<input id="piratenkleider_theme_options[social_diaspora]" class="regular-text" type="text" length="5" name="piratenkleider_theme_options[social_diaspora]" value="<?php esc_attr_e( $options['social_diaspora'] ); ?>" />
 						<label class="description" for="piratenkleider_theme_options[social_diaspora]">
-                                                <?php _e( 'URL inkl. http:// zur Diaspora Seite <br>Zum Beispiel: <code>https://joindiaspora.com/u/piratenpartei</code>', 'piratenkleider' ); ?>
+                                                <?php _e( 'URL including http:// diaspora to page <br> For example: <code> https://joindiaspora.com/u/piratenpartei </code>', 'piratenkleider' ); ?>
                                                    
                                                 </label>
                                             </td>					
@@ -573,7 +573,7 @@ function theme_options_do_page() {
                                             <td>
                                             <input id="piratenkleider_theme_options[social_identica]" class="regular-text" type="text" length="5" name="piratenkleider_theme_options[social_identica]" value="<?php esc_attr_e( $options['social_identica'] ); ?>" />
                                             <label class="description" for="piratenkleider_theme_options[social_identica]">
-                                            <?php _e( 'URL inkl. http:// zur Identica Seite <br>Zum Beispiel:  <code>http://identi.ca/piratenpartei</code>   ', 'piratenkleider' ); ?>
+                                            <?php _e( 'URL including http:// Identica on page <br> For example: <code> http://identi.ca/piratenpartei </code>   ', 'piratenkleider' ); ?>
                                                
                                             </label>
                                             </td>					
@@ -582,7 +582,7 @@ function theme_options_do_page() {
                                             <td>
                                             <input id="piratenkleider_theme_options[social_flickr]" class="regular-text" type="text" length="5" name="piratenkleider_theme_options[social_flickr]" value="<?php esc_attr_e( $options['social_flickr'] ); ?>" />
                                             <label class="description" for="piratenkleider_theme_options[social_flickr]">
-                                            <?php _e( 'URL inkl. http:// zur Flickr Seite', 'piratenkleider' ); ?>                                                
+                                            <?php _e( 'URL including http:// to Flickr page', 'piratenkleider' ); ?>                                                
                                             </label>
                                             </td>					
                                              </tr>
@@ -590,7 +590,7 @@ function theme_options_do_page() {
                                             <td>
                                             <input id="piratenkleider_theme_options[social_delicious]" class="regular-text" type="text" length="5" name="piratenkleider_theme_options[social_delicious]" value="<?php esc_attr_e( $options['social_delicious'] ); ?>" />
                                             <label class="description" for="piratenkleider_theme_options[social_delicious]">
-                                            <?php _e( 'URL inkl. http:// zur Delicious Seite', 'piratenkleider' ); ?>
+                                            <?php _e( 'URL including http:// page to Delicious', 'piratenkleider' ); ?>
                                             </label>
                                             </td>					
                                              </tr>
@@ -603,13 +603,13 @@ function theme_options_do_page() {
                                         <table>
 			
                                         
-                                         <tr valign="top"><th scope="row"><?php _e( 'Twitter Benutzername', 'piratenkleider' ); ?></th>
+                                         <tr valign="top"><th scope="row"><?php _e( 'Twitter Username', 'piratenkleider' ); ?></th>
                                           <td>
 						<input id="piratenkleider_theme_options[feed_twitter]" class="regular-text" type="text" length="5" name="piratenkleider_theme_options[feed_twitter]" value="<?php esc_attr_e( $options['feed_twitter'] ); ?>" />
-						<label class="description" for="piratenkleider_theme_options[feed_twitter]"><?php _e( 'Der reine Twitter Benutzername', 'piratenkleider' ); ?></label>
+						<label class="description" for="piratenkleider_theme_options[feed_twitter]"><?php _e( 'The pure Twitter username', 'piratenkleider' ); ?></label>
 					</td>					
                                         </tr>
-                                         <tr valign="top"><th scope="row"><?php _e( 'Maximale Anzahl der Twittermeldungen', 'piratenkleider' ); ?></th>
+                                         <tr valign="top"><th scope="row"><?php _e( 'Maximum number of Twitter messages', 'piratenkleider' ); ?></th>
                                             <td>
                                                     <select name="piratenkleider_theme_options[feed_twitter_numberarticle]">
                                                         <?php
@@ -621,7 +621,7 @@ function theme_options_do_page() {
                                                         <option style="padding-right: 10px;" value="5" <?php if ($selected ==5) { echo 'selected="selected"'; }?>>5</option>
                                                         <option style="padding-right: 10px;" value="6" <?php if ($selected ==6) { echo 'selected="selected"'; }?>>6</option>							
                                                     </select>
-                                                    <label class="description" for="piratenkleider_theme_options[feed_twitter_numberarticle]"><?php _e( 'Wieviele Twittermeldungen sollen maximal gezeigt werden', 'piratenkleider' ); ?></label>
+                                                    <label class="description" for="piratenkleider_theme_options[feed_twitter_numberarticle]"><?php _e( 'How many Twitter messages are to be shown up', 'piratenkleider' ); ?></label>
                                             </td>
                                             </tr>             
 
@@ -633,17 +633,17 @@ function theme_options_do_page() {
                                     <th scope="row"><?php _e( 'Slider', 'piratenkleider' ); ?></th>
                                     <td>
                                         <table>
-                                             <tr valign="top"><th scope="row"><?php _e( 'Slider aktivieren', 'piratenkleider' ); ?></th>
+                                             <tr valign="top"><th scope="row"><?php _e( 'Slider activate', 'piratenkleider' ); ?></th>
                                         	<td>
                                             	<input id="piratenkleider_theme_options[slider-aktiv]" name="piratenkleider_theme_options[slider-aktiv]" type="checkbox" value="1" <?php checked( '1', $options['slider-aktiv'] ); ?> />
 						<label for="piratenkleider_theme_options[slider-aktiv]">
-                                                    <?php _e( ' Slider im Teaserbereich auf der Startseite aktivieren.
-                                                  <br>Die Auswahl der Plakatbilder kann unter den Defaultbildern angepasst werden.', 'piratenkleider' ); ?>
+                                                    <?php _e( ' Slider in the teaser section on the home turn.
+                                                   <br> selection of poster images can be adjusted to the default images.', 'piratenkleider' ); ?>
                                                    </label>
                                                 </td>
                                             </tr>
                                              
-                                             <tr valign="top"><th scope="row"><?php _e( 'Kategorie', 'piratenkleider' ); ?></th>
+                                             <tr valign="top"><th scope="row"><?php _e( 'Category', 'piratenkleider' ); ?></th>
                                             <td>
                                                     <select name="piratenkleider_theme_options[slider-catid]">
                                                         <?php
@@ -664,11 +664,11 @@ function theme_options_do_page() {
                                                         } 
                                                         ?>
                                                     </select>
-                                                    <label class="description" for="piratenkleider_theme_options[slider-catid]"><?php _e( 'Aus welcher Artikelkategorie sollen die Slider genommen werden', 'piratenkleider' ); ?></label>
+                                                    <label class="description" for="piratenkleider_theme_options[slider-catid]"><?php _e( 'The slider which category is to be taken', 'piratenkleider' ); ?></label>
                                             </td>
                                             </tr>
 
-                                            <tr valign="top"><th scope="row"><?php _e( 'Maximale Anzahl der Artikel', 'piratenkleider' ); ?></th>
+                                            <tr valign="top"><th scope="row"><?php _e( 'Maximum number of items', 'piratenkleider' ); ?></th>
                                             <td>
                                                     <select name="piratenkleider_theme_options[slider-numberarticle]">
                                                         <?php
@@ -681,10 +681,10 @@ function theme_options_do_page() {
                                                         <option style="padding-right: 10px;" value="6" <?php if ($selected ==6) { echo 'selected="selected"'; }?>>6</option>							
                                                     </select>
                                                     <label class="description" for="piratenkleider_theme_options[slider-numberarticle]">
-                                                        <?php _e( 'Wieviele Slides sollen maximal gezeigt werden', 'piratenkleider' ); ?></label>
+                                                        <?php _e( 'How many slides are to be shown up', 'piratenkleider' ); ?></label>
                                             </td>
                                             </tr>
-                                            <tr valign="top"><th scope="row"><?php _e( 'Animationstyp', 'piratenkleider' ); ?></th>
+                                            <tr valign="top"><th scope="row"><?php _e( 'Animation type', 'piratenkleider' ); ?></th>
                                             <td>
                                                     <select name="piratenkleider_theme_options[slider-animationType]">
                                                         <?php
@@ -695,10 +695,10 @@ function theme_options_do_page() {
                                                        						
                                                     </select>
                                                     <label class="description" for="piratenkleider_theme_options[slider-animationType]">
-                                                        <?php _e( 'Wie soll der Slidewechsel optisch aussehen', 'piratenkleider' ); ?></label>
+                                                        <?php _e( 'How to change the slideshow look visually', 'piratenkleider' ); ?></label>
                                             </td>
                                             </tr>
-                                            <tr valign="top"><th scope="row"><?php _e( 'Richtung', 'piratenkleider' ); ?></th>
+                                            <tr valign="top"><th scope="row"><?php _e( 'Direction', 'piratenkleider' ); ?></th>
                                             <td>
                                                     <select name="piratenkleider_theme_options[slider-Direction]">
                                                         <?php
@@ -708,40 +708,40 @@ function theme_options_do_page() {
                                                         <option style="padding-right: 10px;" value="vertical" <?php if ($selected == 'vertical') { echo 'selected="selected"'; }?>>vertical</option>
                                                        						
                                                     </select>
-                                                    <label class="description" for="piratenkleider_theme_options[slider-Direction]"><?php _e( 'Von wo sollen Bilder erscheinen', 'piratenkleider' ); ?></label>
+                                                    <label class="description" for="piratenkleider_theme_options[slider-Direction]"><?php _e( 'Where images are to appear', 'piratenkleider' ); ?></label>
                                             </td>
                                             </tr>                                            
-                                            <tr valign="top"><th scope="row"><?php _e( 'Dauer Bildwechsel', 'piratenkleider' ); ?></th>
+                                            <tr valign="top"><th scope="row"><?php _e( 'Time frame rates', 'piratenkleider' ); ?></th>
                                                   <td>
                                                             <input style="width: 5em;"  id="piratenkleider_theme_options[slider-slideshowSpeed]" class="regular-text" type="text" length="5" name="piratenkleider_theme_options[slider-slideshowSpeed]" value="<?php esc_attr_e( $options['slider-slideshowSpeed'] ); ?>" />
-                                                            <label class="description" for="piratenkleider_theme_options[slider-slideshowSpeed]"><?php _e( 'Geschwindigkeit des Bildwechsels in Milisekunden', 'piratenkleider' ); ?></label>
+                                                            <label class="description" for="piratenkleider_theme_options[slider-slideshowSpeed]"><?php _e( 'Speed of the image change in milliseconds', 'piratenkleider' ); ?></label>
                                                     </td>
 
                                             </tr>
-                                            <tr valign="top"><th scope="row"><?php _e( 'Animationsdauer', 'piratenkleider' ); ?></th>
+                                            <tr valign="top"><th scope="row"><?php _e( 'Animation duration', 'piratenkleider' ); ?></th>
                                                   <td>
                                                             <input style="width: 5em;" id="piratenkleider_theme_options[slider-animationDuration]" class="regular-text" type="text" length="5" name="piratenkleider_theme_options[slider-animationDuration]" value="<?php esc_attr_e( $options['slider-animationDuration'] ); ?>" />
-                                                            <label class="description" for="piratenkleider_theme_options[slider-animationDuration]"><?php _e( 'Geschwindigkeit der Animation/Fading beim Bild&uuml;bergang in Milisekunden', 'piratenkleider' ); ?></label>
+                                                            <label class="description" for="piratenkleider_theme_options[slider-animationDuration]"><?php _e( 'Speed of the animation / image fading during transition in milliseconds', 'piratenkleider' ); ?></label>
                                                     </td>					
                                             </tr>
 
                                             
-                                            <tr valign="top"><th scope="row"><?php _e( 'Bezeichnender Titel f&uuml;r Teaser', 'piratenkleider' ); ?></th>
+                                            <tr valign="top"><th scope="row"><?php _e( 'Significantly title for teaser', 'piratenkleider' ); ?></th>
                                                   <td>
                                                             <input style="width: 15em;" id="piratenkleider_theme_options[teaser-subtitle]" class="regular-text" type="text" length="5" name="piratenkleider_theme_options[teaser-subtitle]" value="<?php esc_attr_e( $options['teaser-subtitle'] ); ?>" />
-                                                            <label class="description" for="piratenkleider_theme_options[teaser-subtitle]"><?php _e( 'Dieser Text wird oberhalb der Titel angezeigt', 'piratenkleider' ); ?></label>
+                                                            <label class="description" for="piratenkleider_theme_options[teaser-subtitle]"><?php _e( 'This text appears above the title', 'piratenkleider' ); ?></label>
                                                     </td>					
                                             </tr>
-                                            <tr valign="top"><th scope="row"><?php _e( 'Maximale Textl&auml;nge des Titels im Teaser', 'piratenkleider' ); ?></th>
+                                            <tr valign="top"><th scope="row"><?php _e( 'Maximum text length of the song in the teaser', 'piratenkleider' ); ?></th>
                                                   <td>
                                                             <input style="width: 3em;" id="piratenkleider_theme_options[teaser-title-maxlength]" class="regular-text" type="text" length="5" name="piratenkleider_theme_options[teaser-title-maxlength]" value="<?php esc_attr_e( $options['teaser-title-maxlength'] ); ?>" />
-                                                            <label class="description" for="piratenkleider_theme_options[teaser-title-maxlength]"><?php _e( 'Wie lang darf der Titel insgesamt sein, bevor er gek&uuml;rzt wird', 'piratenkleider' ); ?></label>
+                                                            <label class="description" for="piratenkleider_theme_options[teaser-title-maxlength]"><?php _e( 'As the title may be long in total, before being cut', 'piratenkleider' ); ?></label>
                                                     </td>					
                                             </tr>
-                                            <tr valign="top"><th scope="row"><?php _e( 'Wortzahl des Titels im Teaser', 'piratenkleider' ); ?></th>
+                                            <tr valign="top"><th scope="row"><?php _e( 'Number of words in the title Teaser', 'piratenkleider' ); ?></th>
                                                   <td>
                                                             <input style="width: 3em;" id="piratenkleider_theme_options[teaser-title-words]" class="regular-text" type="text" length="5" name="piratenkleider_theme_options[teaser-title-words]" value="<?php esc_attr_e( $options['teaser-title-words'] ); ?>" />
-                                                            <label class="description" for="piratenkleider_theme_options[teaser-title-words]"><?php _e( 'Zahl der Worte im Teaser; Die maximale Textl&auml;nge begrenzt diesen Wert jedoch.', 'piratenkleider' ); ?></label>
+                                                            <label class="description" for="piratenkleider_theme_options[teaser-title-words]"><?php _e( 'Number of words in the teaser, the maximum text length limits this value.', 'piratenkleider' ); ?></label>
                                                     </td>					
                                             </tr>
                                             
@@ -751,7 +751,7 @@ function theme_options_do_page() {
                                     </td>                                    
                                 </tr>    
                                 <tr valign="top">
-                                    <th scope="row"><?php _e( 'Spezialseiten', 'piratenkleider' ); ?></th>
+                                    <th scope="row"><?php _e( 'Special', 'piratenkleider' ); ?></th>
                                     <td>
 
                                         <table>                                
@@ -760,7 +760,7 @@ function theme_options_do_page() {
                                           <td>
 						<input style="width: 40em;" id="piratenkleider_theme_options[url-newsletteranmeldung]" class="regular-text" type="text"  name="piratenkleider_theme_options[url-newsletteranmeldung]" value="<?php esc_attr_e( $options['url-newsletteranmeldung'] ); ?>" />
 						<label class="description" for="piratenkleider_theme_options[url-newsletteranmeldung]">                                                   
-                                                    <?php _e( ' URL, inkl. http://, zur Seite auf der man sich in Newsletter eingetragen werden kann.', 'piratenkleider' ); ?>
+                                                    <?php _e( ' URL, including http://, to the side on which one can be added to newsletter.', 'piratenkleider' ); ?>
                                                     Default: <code><?php echo $defaultoptions['url-newsletteranmeldung']; ?></code>
                                                 </label>
 					</td>					
@@ -772,58 +772,58 @@ function theme_options_do_page() {
                                     </td>                                    
                                 </tr>
                                 <tr valign="top">
-                                    <th scope="row"><?php _e( 'Meta-Angaben', 'piratenkleider' ); ?></th>
+                                    <th scope="row"><?php _e( 'Meta-data', 'piratenkleider' ); ?></th>
                                     <td>
 
                                         <table>                                
                                          <tr valign="top"><th scope="row"><?php _e( 'Author', 'piratenkleider' ); ?></th>
                                               <td>
                                                         <input id="piratenkleider_theme_options[meta-author]" class="regular-text" type="text"  name="piratenkleider_theme_options[meta-author]" value="<?php esc_attr_e( $options['meta-author'] ); ?>" />
-                                                        <label class="description" for="piratenkleider_theme_options[meta-author]"><?php _e( 'Optionale Autor-Angabe in dem Meta-Tag jeder Seite', 'piratenkleider' ); ?></label>
+                                                        <label class="description" for="piratenkleider_theme_options[meta-author]"><?php _e( 'Optional author-specified in the meta tag of each page', 'piratenkleider' ); ?></label>
                                                 </td>					
                                         </tr>
                                          <tr valign="top"><th scope="row"><?php _e( 'Description', 'piratenkleider' ); ?></th>
                                               <td>
                                                         <input id="piratenkleider_theme_options[meta-description]" class="regular-text" type="text"  name="piratenkleider_theme_options[meta-description]" value="<?php esc_attr_e( $options['meta-description'] ); ?>" />
-                                                        <label class="description" for="piratenkleider_theme_options[meta-description]"><?php _e( 'Optionale Beschreibungstext in dem Meta-Tag jeder Seite (f&uuml;r alle gleich). Sollte nicht mehr als 140 Zeichen lang sein, wenn gesetzt.', 'piratenkleider' ); ?></label>
+                                                        <label class="description" for="piratenkleider_theme_options[meta-description]"><?php _e( 'Optional description text in the meta tag of each page (for all). If more than 140 characters long, if set.', 'piratenkleider' ); ?></label>
                                                 </td>					
                                         </tr>
                                         <tr valign="top"><th scope="row"><?php _e( 'Keywords', 'piratenkleider' ); ?></th>
                                           <td>
 						<input id="piratenkleider_theme_options[meta-keywords]" class="regular-text" type="text" name="piratenkleider_theme_options[meta-keywords]" value="<?php esc_attr_e( $options['meta-keywords'] ); ?>" />
-						<label class="description" for="piratenkleider_theme_options[meta-keywords]"><?php _e( 'Optionale Schl&uuml;sselworte in dem Meta-Tag jeder Seite (f&uuml;r alle gleich). Durch Komma getrennt. Schl&uuml;sselworte sollten tats&auml;chlich vorkommen.', 'piratenkleider' ); ?></label>
+						<label class="description" for="piratenkleider_theme_options[meta-keywords]"><?php _e( 'Optional key words in the Meta tag of each page (for all). Separated by commas. Key words should actually occur.', 'piratenkleider' ); ?></label>
 					</td>					
                                         </tr>
                                        </table>  
                                         <p>
-                                            <?php _e(  'Hinweis: Diese Angaben wirken auf alle Seiten und Artikel der Site. Dies
-                                            ist jedoch nicht immer sinnvoll (insbes. bei Keywords und Description). 
-                                            Sollten zudem SEO-Plugins, wie bspw. wpSEO o.a. im Einsatz sein,
-                                            sollten diese Angaben ebenfalls unausgef&uuml;llt bleiben.  ', 'piratenkleider' ); ?>
+                                            <?php _e(  'Note: These figures appear on all pages and articles from the site. this
+                                             is not always useful (especially for keywords and description).
+                                             Should also SEO plug-ins, such as wpSEO o.a. be in use,
+                                             These figures should also remain unfilled.  ', 'piratenkleider' ); ?>
                                                                                                                                                                              
                                         </p>
                                     </td>                                    
                                 </tr>    
                                 <tr valign="top">
-                                    <th scope="row"><?php _e( 'Sicherheit &amp; Anonymit&auml;t', 'piratenkleider' ); ?></th>
+                                    <th scope="row"><?php _e( 'Security & Anonymity', 'piratenkleider' ); ?></th>
                                     <td>
                                         <table>
-                                        <tr valign="top"><th scope="row"><?php _e( 'Autoren anzeigen', 'piratenkleider' ); ?></th>
+                                        <tr valign="top"><th scope="row"><?php _e( 'Authors show', 'piratenkleider' ); ?></th>
 					<td>
 						<input id="piratenkleider_theme_options[aktiv-autoren]" name="piratenkleider_theme_options[aktiv-autoren]" type="checkbox" value="1" <?php checked( '1', $options['aktiv-autoren'] ); ?> />
-						<label  for="piratenkleider_theme_options[aktiv-autoren]"><?php _e( 'Bei der Anzeige von Artikeln den Autoren anzeigen und verlinken.', 'piratenkleider' ); ?></label>
+						<label  for="piratenkleider_theme_options[aktiv-autoren]"><?php _e( 'n the display of articles and the authors show link.', 'piratenkleider' ); ?></label>
 					</td>
                                         </tr>
-                                        <tr valign="top"><th scope="row"><?php _e( 'Kommentarbenutzer anonymisieren', 'piratenkleider' ); ?></th>
+                                        <tr valign="top"><th scope="row"><?php _e( 'Anonymous user comments', 'piratenkleider' ); ?></th>
 					<td>
 						<input id="piratenkleider_theme_options[anonymize-user]" name="piratenkleider_theme_options[anonymize-user]" type="checkbox" value="1" <?php checked( '1', $options['anonymize-user'] ); ?> />
-						<label  for="piratenkleider_theme_options[anonymize-user]"><?php _e( 'IP-Adresse und der User-Agent-String geleert, die Eingabe von E-Mail-Adressen wird verhindert', 'piratenkleider' ); ?></label>
+						<label  for="piratenkleider_theme_options[anonymize-user]"><?php _e( 'IP address and user agent string empty, the entry of e-mail addresses will be prevented', 'piratenkleider' ); ?></label>
 
-                                                <p> <?php _e( '<b>Achtung:</b> Diese Option deaktiviert auch die Avatar-Anzeige und
-                                                    setzt die Kommentareinstellung unter Einstellungen-Diskussion so,
-                                                    dass Benutzer keinen Namen und E-Mail-Adressen mehr eingeben m&uuml;ssen.', 'piratenkleider' ); ?></p>
+                                                <p> <?php _e( '<b> Note: </ b> This option also disables the Avatar and Display
+                                                     sets the comment setting in Settings-talk so
+                                                     users to enter a name and e-mail addresses have more.', 'piratenkleider' ); ?></p>
                                                 
-                                                <p><?php _e( 'In diesem Fall angebotene Kommentarfelder:', 'piratenkleider' ); ?>
+                                                <p><?php _e( 'In this case, offered comment fields:', 'piratenkleider' ); ?>
                                                   
                                                 </p>   
                                                 <select name="piratenkleider_theme_options[anonymize-user-commententries]">
@@ -835,27 +835,27 @@ function theme_options_do_page() {
                                                         <option style="padding-right: 10px;" value="2" <?php if ($selected == '2') { echo 'selected="selected"'; }?>>Name, URL</option>
                                                        	
                                                     </select>
-                                                    <label class="description" for="piratenkleider_theme_options[anonymize-user-commententries]"><?php _e( 'Angebote Kommentarfelder zur freiwilligen Eingabe', 'piratenkleider' ); ?></label>
+                                                    <label class="description" for="piratenkleider_theme_options[anonymize-user-commententries]"><?php _e( 'Offers commentary on voluntary input fields', 'piratenkleider' ); ?></label>
 
 					</td>
                                         </tr>
                                         <tr valign="top"><th scope="row">Avatare anzeigen</th>
 					<td>
 						<input id="piratenkleider_theme_options[aktiv-avatar]" name="piratenkleider_theme_options[aktiv-avatar]" type="checkbox" value="1" <?php checked( '1', $options['aktiv-avatar'] ); ?> />
-						<label  for="piratenkleider_theme_options[aktiv-avatar]"><?php _e( 'Bei Kommentaren werden Avatar-Bilder mit Hilfe von Gravatar oder anderen Diensten abgerufen. Dies erm&ouml;glicht allerdings theoretisch ein Tracking durch diese Dienste', 'piratenkleider' ); ?></label>
+						<label  for="piratenkleider_theme_options[aktiv-avatar]"><?php _e( 'If you have comments avatar images are retrieved using Gravatar and other services. However, theoretically this allows a tracking of these services', 'piratenkleider' ); ?></label>
 					</td>
                                         </tr>                                        
                                        </table>                                         
                                     </td>                                    
                                 </tr>    
                                   <tr valign="top">
-                                    <th scope="row"><?php _e( 'Sonstiges', 'piratenkleider' ); ?></th>
+                                    <th scope="row"><?php _e( 'Other', 'piratenkleider' ); ?></th>
                                     <td>
                                         <table>
-                                        <tr valign="top"><th scope="row"><?php _e( 'Antwortlinks auf Kommentare', 'piratenkleider' ); ?></th>
+                                        <tr valign="top"><th scope="row"><?php _e( 'Reply to comments Links', 'piratenkleider' ); ?></th>
 					<td>
 						<input id="piratenkleider_theme_options[aktiv-commentreplylink]" name="piratenkleider_theme_options[aktiv-commentreplylink]" type="checkbox" value="1" <?php checked( '1', $options['aktiv-commentreplylink'] ); ?> />
-						<label  for="piratenkleider_theme_options[aktiv-commentreplylink]"><?php _e( 'Bei der Anzeige von Kommentaren, wird unter diesen ein eigener Kommentarlink eingebaut, der das Antworten auf den Kommentar erlaubt. Dies kann zu einer Nutzung des Kommentarbereiches wie bei einem Forum f&uuml;hren, bei dem es zuletzt aber nicht mehr um den eigentlichen Beitrag geht.', 'piratenkleider' ); ?></label>
+						<label  for="piratenkleider_theme_options[aktiv-commentreplylink]"><?php _e( 'In the display of comments, among them a separate comment link is added, which allows the answers to the comment. This can lead to use of this area as a forum in which it is last but not about the actual post.', 'piratenkleider' ); ?></label>
 					</td>
                                         </tr>
                                 </table>                                         
@@ -865,7 +865,7 @@ function theme_options_do_page() {
 			</table>
 
 			<p class="submit">
-				<input type="submit" class="button-primary" value="<?php _e( 'Optionen speichern', 'piratenkleider' ); ?>" />
+				<input type="submit" class="button-primary" value="<?php _e( 'Save Options', 'piratenkleider' ); ?>" />
 			</p>
 		</form>               
 	</div>
@@ -1092,7 +1092,7 @@ function theme_defaultbilder_do_page() {
 		<?php screen_icon(); echo "<h2>" . get_current_theme() . __( ' Segel setzen: Defaultbilder ', 'piratenkleider' ) . "</h2>"; ?>
 
 		<?php if ( false !== $_REQUEST['settings-updated'] ) : ?>
-		<div class="updated fade"><p><strong><?php _e( 'Defaultbilder wurden gespeichert.', 'piratenkleider' ); ?></strong></p></div>
+		<div class="updated fade"><p><strong><?php _e( 'Default images were stored.', 'piratenkleider' ); ?></strong></p></div>
 		<?php endif; ?>
 
 		<form method="post" action="options.php">
@@ -1108,7 +1108,7 @@ function theme_defaultbilder_do_page() {
                     ?>
                     <table class="form-table">
                      <tr valign="top">
-                        <th scope="row"><?php _e( 'Defaultbilder f&uuml;r Slider', 'piratenkleider' ); ?></th>
+                        <th scope="row"><?php _e( 'Default images for slider', 'piratenkleider' ); ?></th>
                         <td>
 
                             <?php 
@@ -1132,12 +1132,12 @@ function theme_defaultbilder_do_page() {
                                         </label>
                                 <?php } ?>        
                                 <br style="clear: left;">     
-                                <h3><?php _e( 'Alternatives Sliderbild als URL', 'piratenkleider' ); ?></h3>
+                                <h3><?php _e( 'Alternate Slider image as a URL', 'piratenkleider' ); ?></h3>
                                  <input id="piratenkleider_theme_defaultbilder[slider-alternativesrc]" class="regular-text" type="text" name="piratenkleider_theme_defaultbilder[slider-alternativesrc]" value="<?php esc_attr_e( $options['slider-alternativesrc'] ); ?>" />
                             <label class="description" for="piratenkleider_theme_defaultbilder[slider-alternativesrc]">
-                                <?php _e( 'URL inkl. http:// zum Bild. Dieses kann auch vorher &uuml;ber den Mediendialog hochgeladen worden sein.', 'piratenkleider' ); ?>
+                                <?php _e( 'URL including http:// to the image. This may also have been previously uploaded to the media dialogue.', 'piratenkleider' ); ?>
                                 <br>
-                                       <?php _e( 'Die Bilder sollten folgende Dimension haben: ', 'piratenkleider' ); ?>
+                                       <?php _e( 'The images should have the following dimensions: ', 'piratenkleider' ); ?>
                                     <?php echo $defaultoptions['thumb-width'].'x'.$defaultoptions['thumb-height'].' Pixel' ?>
                             </label>
                                  <br />
@@ -1145,7 +1145,7 @@ function theme_defaultbilder_do_page() {
                         </tr>  
                     
                      <tr valign="top">
-                        <th scope="row"><?php _e( 'Defaultbilder f&uuml;r Seiten', 'piratenkleider' ); ?></th>
+                        <th scope="row"><?php _e( 'Default images for pages', 'piratenkleider' ); ?></th>
                         <td>
 
                             <?php 
@@ -1168,13 +1168,13 @@ function theme_defaultbilder_do_page() {
                                         </label>
                                 <?php } ?>        
                                 <br style="clear: left;">   
-                                <h3><?php _e( 'Alternatives Seitenbild als URL', 'piratenkleider' ); ?></h3>
+                                <h3><?php _e( 'Alternative page image as the URL', 'piratenkleider' ); ?></h3>
                                 <input id="piratenkleider_theme_defaultbilder[seiten-alternativesrc]" class="regular-text" type="text" name="piratenkleider_theme_defaultbilder[seiten-alternativesrc]" value="<?php esc_attr_e( $options['seiten-alternativesrc'] ); ?>" />
                                <label class="description" for="piratenkleider_theme_defaultbilder[seiten-alternativesrc]">
-                                   <?php _e( 'URL inkl. http:// zum Bild. Dieses kann auch vorher &uuml;ber den Mediendialog hochgeladen worden sein. ', 'piratenkleider' ); ?>                              
+                                   <?php _e( 'URL including http:// to the image. This may also have been previously uploaded to the media dialogue. ', 'piratenkleider' ); ?>                              
                                 <br>
 
-                                <?php _e( 'Die Bilder sollten folgende Dimension haben: ', 'piratenkleider' ); ?>
+                                <?php _e( 'The images should have the following dimensions: ', 'piratenkleider' ); ?>
                                     <?php echo $defaultoptions['thumb-width'].'x'.$defaultoptions['thumb-height'].' Pixel' ?>
                                    
                               </label>
@@ -1182,7 +1182,7 @@ function theme_defaultbilder_do_page() {
                             </td>
                         </tr>
                         <tr valign="top">
-                        <th scope="row"><?php _e( 'Defaultplakate f&uuml;r Sidebar', 'piratenkleider' ); ?></th>
+                        <th scope="row"><?php _e( 'Default posters for Sidebar', 'piratenkleider' ); ?></th>
                         <td>                                                      
                             <?php                                                                                     
                                 if ( ! isset( $checked ) ) $checked = '';
@@ -1208,47 +1208,47 @@ function theme_defaultbilder_do_page() {
                                     </label>
                                <?php } ?>        
                                 <br style="clear: left;"> 
-                                <p><?php _e( ' Diese Bilder werden in der Sidebar rechts gezeigt, sofern dieses &uuml;ber die Optionen (vgl. Slider) auch eingeschaltet ist.', 'piratenkleider' ); ?></p>
+                                <p><?php _e( ' These images are shown in the sidebar to the right, if this is about the options (see Slider) also turned on.', 'piratenkleider' ); ?></p>
                                 <table>
                                     <tr>
-                                        <th><?php _e( 'Optionaler Ersatztitel', 'piratenkleider' ); ?></th>
+                                        <th><?php _e( 'Optional replacement title', 'piratenkleider' ); ?></th>
                                         <td> <input id="piratenkleider_theme_defaultbilder[plakate-title]" class="regular-text" type="text" name="piratenkleider_theme_defaultbilder[plakate-title]" value="<?php esc_attr_e( $options['plakate-title'] ); ?>" />
                                         <label class="description" for="piratenkleider_theme_defaultbilder[plakate-title]">
-                                           <?php _e( 'Dieser Titel wird als Alternativ-Text verwendet. <br>
-                                       Solange keine Verlinkung erfolgt, ist diese Angabe optional, da die Plakatbilder dann
-                                       nur "Schmuckbilder" sind und keinen auf die Seite bezogenen Inhalt mitliefern.', 'piratenkleider' ); ?>
+                                           <?php _e( 'This title is used as an alternate text. <br>
+                                        As long as no linking occurs, this information is optional, as the poster images then
+                                        only "jewelry pictures" and is included on the no side-related content.', 'piratenkleider' ); ?>
                                          </label></td>
                                     </tr>
                                     <tr>
-                                        <th><?php _e( 'Optionale URL', 'piratenkleider' ); ?></th>
+                                        <th><?php _e( 'Optional URL', 'piratenkleider' ); ?></th>
                                         <td> <input id="piratenkleider_theme_defaultbilder[plakate-url]" class="regular-text" type="text" name="piratenkleider_theme_defaultbilder[plakate-url]" value="<?php esc_attr_e( $options['plakate-url'] ); ?>" />
                                         <label class="description" for="piratenkleider_theme_defaultbilder[plakate-url]">
-                                           <?php _e( 'Optionale Webadresse zur Verlinkung der Plakate mit einer Informationsseite', 'piratenkleider' ); ?>
+                                           <?php _e( 'Optional web address to link the posters with an information page', 'piratenkleider' ); ?>
                                          </label></td>
                                     </tr>
                                 </table>    
                                 
                                 
-                                <h3><?php _e( 'Eigene Plaktbilder:', 'piratenkleider' ); ?></h3>
+                                <h3><?php _e( 'Own Design Specials:', 'piratenkleider' ); ?></h3>
                                 
                                 <textarea id="piratenkleider_theme_defaultbilder[plakate-altadressen]" class="large-text" cols="30" rows="5" name="piratenkleider_theme_defaultbilder[plakate-altadressen]"><?php echo esc_textarea( $options['plakate-altadressen'] ); ?></textarea>
-				<label class="description" for="piratenkleider_theme_defaultbilder[plakate-altadressen]"><?php _e( 'Adressen alternativer Plakatbilder', 'piratenkleider' ); ?></label>
+				<label class="description" for="piratenkleider_theme_defaultbilder[plakate-altadressen]"><?php _e( 'Addresses alternative poster images', 'piratenkleider' ); ?></label>
 
                                 <p>    
-                                    <?php _e( 'Angabe der URLs inkl. http:// zum Bild. Wenn es mehrere sind, werden
-                                die einzelnen Adressen durch Zeilenumbruch getrennt. ', 'piratenkleider' ); ?>
+                                    <?php _e( 'Specifying the URL to the image including http://. If there are several, are
+                                  each address separated by line breaks. ', 'piratenkleider' ); ?>
                                     <br>
-                                    <?php _e( 'Die Bilder sollten folgende Dimension haben: ', 'piratenkleider' ); ?>
+                                    <?php _e( 'The images should have the following dimensions: ', 'piratenkleider' ); ?>
                                     <?php echo $defaultoptions['plakate-width'].'x'.$defaultoptions['plakate-height'].' Pixel' ?>
                                    </p><p>
-                                 <?php _e( 'Sollen die Bilder zus&auml;tzlich mit einem eigenen Titel und einer Webadresse versehen werden
-                                     werden diese Angabe durch ein "|" zeichen in folgender Reihenfolge getrennt: <code>Bild URL|Titel|URL Webpage</code>', 'piratenkleider' ); ?>
+                                 <?php _e( 'If the images are also provided with a separate title and a web address
+                                      This will appear with the "|" character separately in the following order: <code> image URL | Title | Url Webpage </code>', 'piratenkleider' ); ?>
                                 <br>
-                                    <?php _e( 'Beispiel: ', 'piratenkleider' ); ?></p>
+                                    <?php _e( 'example: ', 'piratenkleider' ); ?></p>
                                     <pre>http://www.piratenpartei.de/wp-content/uploads/2012/05/UrheberplakatSH283.jpg|Rechte f&uuml;r Urheber und Nutzer|http://www.kein-programm.de</pre>
                                     <p>
-                                <?php _e( 'Wenn oben Defaultplakate angeklickt sind, erscheinen diese Bilder zus&auml;tzlich.
-                                Diese Bilder k&ouml;nnen auch vorher &uuml;ber den Mediendialog hochgeladen worden sein.', 'piratenkleider' ); ?>
+                                <?php _e( 'Default If above posters are clicked, these images also appear.
+                                 These images may also have been previously uploaded to the media dialogue.', 'piratenkleider' ); ?>
                                 
                                  </p>      
                               </label>
@@ -1256,11 +1256,11 @@ function theme_defaultbilder_do_page() {
                             </td>                            
                         </tr>
                         <tr valign="top">
-                        <th scope="row"><?php _e( 'Symbolbild f&uuml;r 404 Seite', 'piratenkleider' ); ?></th>
+                        <th scope="row"><?php _e( 'Icon image for 404 page', 'piratenkleider' ); ?></th>
                         <td>
                             <input id="piratenkleider_theme_defaultbilder[src-default-symbolbild-404]" class="regular-text" type="text" name="piratenkleider_theme_defaultbilder[src-default-symbolbild-404]" value="<?php esc_attr_e( $options['src-default-symbolbild-404'] ); ?>" />
                             <label class="description" for="piratenkleider_theme_defaultbilder[src-default-symbolbild-404]">
-                              <?php _e( 'URL f&uuml;r ein eigenes 404-Seitenbild.', 'piratenkleider' ); ?>
+                              <?php _e( 'URL for its own 404-page image.', 'piratenkleider' ); ?>
                                <br>
                                <?php _e( 'Default:', 'piratenkleider' ); ?><br>
                                <code><?php echo $defaultoptions['src-default-symbolbild-404']?></code>
@@ -1269,11 +1269,11 @@ function theme_defaultbilder_do_page() {
                         </td>
                         </tr>
                         <tr valign="top">
-                        <th scope="row"><?php _e( 'Symbolbild f&uuml;r Kategorie Seite', 'piratenkleider' ); ?></th>
+                        <th scope="row"><?php _e( 'Symbol for category page', 'piratenkleider' ); ?></th>
                         <td>
                             <input id="piratenkleider_theme_defaultbilder[src-default-symbolbild-category]" class="regular-text" type="text" name="piratenkleider_theme_defaultbilder[src-default-symbolbild-category]" value="<?php esc_attr_e( $options['src-default-symbolbild-category'] ); ?>" />
                             <label class="description" for="piratenkleider_theme_defaultbilder[src-default-symbolbild-category]">
-                              <?php _e( 'URL f&uuml;r ein eigenes Kategorien-Seitenbild.', 'piratenkleider' ); ?>
+                              <?php _e( 'URL for a separate category page image.', 'piratenkleider' ); ?>
                                <br>
                                <?php _e( 'Default:', 'piratenkleider' ); ?><br>
                                <code><?php echo $defaultoptions['src-default-symbolbild-category']?></code>
@@ -1282,11 +1282,11 @@ function theme_defaultbilder_do_page() {
                         </td>
                         </tr>
                         <tr valign="top">
-                        <th scope="row"><?php _e( 'Symbolbild f&uuml;r Tag Seite', 'piratenkleider' ); ?></th>
+                        <th scope="row"><?php _e( 'Symbolic day side', 'piratenkleider' ); ?></th>
                         <td>
                             <input id="piratenkleider_theme_defaultbilder[src-default-symbolbild-tag]" class="regular-text" type="text" name="piratenkleider_theme_defaultbilder[src-default-symbolbild-tag]" value="<?php esc_attr_e( $options['src-default-symbolbild-tag'] ); ?>" />
                             <label class="description" for="piratenkleider_theme_defaultbilder[src-default-symbolbild-tag]">
-                              <?php _e( 'URL f&uuml;r ein eigenes Tag-Seitenbild.', 'piratenkleider' ); ?>
+                              <?php _e( 'URL for a custom tag page image.', 'piratenkleider' ); ?>
                                <br>
                                <?php _e( 'Default:', 'piratenkleider' ); ?><br>
                                <code><?php echo $defaultoptions['src-default-symbolbild-tag']?></code>
@@ -1295,11 +1295,11 @@ function theme_defaultbilder_do_page() {
                         </td>
                         </tr>
                         <tr valign="top">
-                        <th scope="row"><?php _e( 'Symbolbild f&uuml;r Autoren Seite', 'piratenkleider' ); ?></th>
+                        <th scope="row"><?php _e( 'Symbol for authors page', 'piratenkleider' ); ?></th>
                         <td>
                             <input id="piratenkleider_theme_defaultbilder[src-default-symbolbild-author]" class="regular-text" type="text" name="piratenkleider_theme_defaultbilder[src-default-symbolbild-author]" value="<?php esc_attr_e( $options['src-default-symbolbild-author'] ); ?>" />
                             <label class="description" for="piratenkleider_theme_defaultbilder[src-default-symbolbild-author]">
-                              <?php _e( 'URL f&uuml;r ein eigenes Autoren-Seitenbild.', 'piratenkleider' ); ?>
+                              <?php _e( 'URL for its own author page image.', 'piratenkleider' ); ?>
                                <br>
                                <?php _e( 'Default:', 'piratenkleider' ); ?><br>
                                <code><?php echo $defaultoptions['src-default-symbolbild-author']?></code>
@@ -1308,11 +1308,11 @@ function theme_defaultbilder_do_page() {
                         </td>
                         </tr>
                         <tr valign="top">
-                        <th scope="row"><?php _e( 'Symbolbild f&uuml;r Archiv Seite', 'piratenkleider' ); ?></th>
+                        <th scope="row"><?php _e( 'Symbol for archive page', 'piratenkleider' ); ?></th>
                         <td>
                             <input id="piratenkleider_theme_defaultbilder[src-default-symbolbild-archive]" class="regular-text" type="text" name="piratenkleider_theme_defaultbilder[src-default-symbolbild-archive]" value="<?php esc_attr_e( $options['src-default-symbolbild-archive'] ); ?>" />
                             <label class="description" for="piratenkleider_theme_defaultbilder[src-default-symbolbild-archive]">
-                              <?php _e( 'URL f&uuml;r ein eigenes Archiv-Seitenbild.', 'piratenkleider' ); ?>
+                              <?php _e( 'URL for an archive page image.', 'piratenkleider' ); ?>
                                <br>
                                <?php _e( 'Default:', 'piratenkleider' ); ?><br>
                                <code><?php echo $defaultoptions['src-default-symbolbild-archive']?></code>
@@ -1321,11 +1321,11 @@ function theme_defaultbilder_do_page() {
                         </td>
                         </tr>
                         <tr valign="top">
-                        <th scope="row"><?php _e( 'Symbolbild f&uuml;r Suchergebnis-Seite', 'piratenkleider' ); ?></th>
+                        <th scope="row"><?php _e( 'Symbol for search results page', 'piratenkleider' ); ?></th>
                         <td>
                             <input id="piratenkleider_theme_defaultbilder[src-default-symbolbild-search]" class="regular-text" type="text" name="piratenkleider_theme_defaultbilder[src-default-symbolbild-search]" value="<?php esc_attr_e( $options['src-default-symbolbild-search'] ); ?>" />
                             <label class="description" for="piratenkleider_theme_defaultbilder[src-default-symbolbild-search]">
-                              <?php _e( 'URL f&uuml;r ein eigenes Suchergebnis-Seitenbild.', 'piratenkleider' ); ?>
+                              <?php _e( 'URL for a custom search result page image.', 'piratenkleider' ); ?>
                                <br>
                                <?php _e( 'Default:', 'piratenkleider' ); ?><br>
                                <code><?php echo $defaultoptions['src-default-symbolbild-search']?></code>
@@ -1334,11 +1334,11 @@ function theme_defaultbilder_do_page() {
                         </td>
                         </tr>
                         <tr valign="top">
-                        <th scope="row"><?php _e( 'Symbolbild f&uuml;r Tenmplate-Seiten', 'piratenkleider' ); ?></th>
+                        <th scope="row"><?php _e( 'Symbol for Template sites', 'piratenkleider' ); ?></th>
                         <td>
                             <input id="piratenkleider_theme_defaultbilder[src-default-symbolbild]" class="regular-text" type="text" name="piratenkleider_theme_defaultbilder[src-default-symbolbild]" value="<?php esc_attr_e( $options['src-default-symbolbild'] ); ?>" />
                             <label class="description" for="piratenkleider_theme_defaultbilder[src-default-symbolbild]">
-                              <?php _e( 'URL f&uuml;r ein Template-Seitenbild.', 'piratenkleider' ); ?>
+                              <?php _e( 'URL for a page template image.', 'piratenkleider' ); ?>
                                <br>
                                <?php _e( 'Default:', 'piratenkleider' ); ?><br>
                                <code><?php echo $defaultoptions['src-default-symbolbild']?></code>
@@ -1349,7 +1349,7 @@ function theme_defaultbilder_do_page() {
              </table>
 
             <p class="submit">
-                    <input type="submit" class="button-primary" value="<?php _e( 'Optionen speichern', 'piratenkleider' ); ?>" />
+                    <input type="submit" class="button-primary" value="<?php _e( 'Save Options', 'piratenkleider' ); ?>" />
             </p>
         </form>               
 	</div>
@@ -1484,7 +1484,7 @@ function theme_kontaktinfos_do_page() {
 		<?php screen_icon(); echo "<h2>" . get_current_theme() . __( ' Captn & Crew: Kontaktinformationen setzen ', 'piratenkleider' ) . "</h2>"; ?>
 
 		<?php if ( false !== $_REQUEST['settings-updated'] ) : ?>
-		<div class="updated fade"><p><strong><?php _e( 'Kontaktinformationen wurden gespeichert.', 'piratenkleider' ); ?></strong></p></div>
+		<div class="updated fade"><p><strong><?php _e( 'Contact information has been saved.', 'piratenkleider' ); ?></strong></p></div>
 		<?php endif; ?>
 
 		<form method="post" action="options.php">
@@ -1494,26 +1494,26 @@ function theme_kontaktinfos_do_page() {
                         
                     ?>
                     <table class="form-table">
-                       <tr valign="top"><th scope="row"><?php _e( 'Impressumsangaben', 'piratenkleider' ); ?></th>
+                       <tr valign="top"><th scope="row"><?php _e( 'Legal information', 'piratenkleider' ); ?></th>
 			<td>
                             <table>                                
-                            <tr valign="top"><th scope="row"><?php _e( 'Verantwortliche/r', 'piratenkleider' ); ?></th>
+                            <tr valign="top"><th scope="row"><?php _e( 'Responsible', 'piratenkleider' ); ?></th>
                                 <td>
                                     <input id="piratenkleider_theme_kontaktinfos[impressumperson]" class="regular-text" type="text" name="piratenkleider_theme_kontaktinfos[impressumperson]" value="<?php esc_attr_e( $options['impressumperson'] ); ?>" />
                                     <label class="description" for="piratenkleider_theme_kontaktinfos[impressumperson]">
-                                        <?php _e( 'Verantwortliche/r gem&auml;&szlig; &sect; 5 TMG. <br>
-                                       Zum Beispiel: <code>Martin Mustermann</code>', 'piratenkleider' ); ?>
+                                        <?php _e( 'Responsible in accordance with 5 TMG. <br>
+                                        For example: <code> Martin Smith </ code>', 'piratenkleider' ); ?>
                                         
                                     </label>
                                 </td>					
                             </tr>
-                            <tr valign="top"><th scope="row"><?php _e( 'Textbezeichnung Dienstanbieter', 'piratenkleider' ); ?></th>
+                            <tr valign="top"><th scope="row"><?php _e( 'Text label service provider', 'piratenkleider' ); ?></th>
                                 <td>
                                     <input id="piratenkleider_theme_kontaktinfos[impressumdienstanbieter]" class="regular-text" type="text" name="piratenkleider_theme_kontaktinfos[impressumdienstanbieter]" value="<?php esc_attr_e( $options['impressumdienstanbieter'] ); ?>" />
                                     <label class="description" for="piratenkleider_theme_kontaktinfos[impressumdienstanbieter]">
-                                        <?php _e( 'Textbezeichnung des Dienstanbieter des Webauftritts.<br>
-                                        Beispiel: <code>Kreisverband Musterstadt der Piratenpartei Deutschland 
-                                            vertreten durch den Vorstand Martin Mustermann, Doris Fischer und Florian Meister.</code>', 'piratenkleider' ); ?>
+                                        <?php _e( 'Text description of the service provider of the website. <br>
+                                         Example: <code> Kreisverband model city of the Pirate Party of Germany
+                                             represented by the Board Martin Smith, Doris Fischer and Florian Meister. </code>', 'piratenkleider' ); ?>
                                         
                                     </label>
                                 </td>					
@@ -1521,46 +1521,46 @@ function theme_kontaktinfos_do_page() {
                             </table>
 			</td>
 		       </tr>
-                       <tr valign="top"><th scope="row"><?php _e( 'Offizielle Postanschrift', 'piratenkleider' ); ?></th>
+                       <tr valign="top"><th scope="row"><?php _e( 'Official Mailing Address', 'piratenkleider' ); ?></th>
 			<td>
                             
                         <table>                                
-                            <tr valign="top"><th scope="row"><?php _e( 'Name oder Titel', 'piratenkleider' ); ?></th>
+                            <tr valign="top"><th scope="row"><?php _e( 'Name or Title', 'piratenkleider' ); ?></th>
                                 <td>
                                     <input id="piratenkleider_theme_kontaktinfos[posttitel]" class="regular-text" type="text" name="piratenkleider_theme_kontaktinfos[posttitel]" value="<?php esc_attr_e( $options['posttitel'] ); ?>" />
                                     <label class="description" for="piratenkleider_theme_kontaktinfos[posttitel]">
-                                        ><?php _e( ' Anschrift: Titel (1. Zeile). <br>
-                                        Zum Beispiel: <code>Piratenpartei</code>', 'piratenkleider' ); ?>
+                                        ><?php _e( ' Address: Title (first row). <br>
+                                         For example: <code> Pirate Party </code>', 'piratenkleider' ); ?>
                                        
                                     </label>
                                 </td>					
                             </tr>
-                            <tr valign="top"><th scope="row"><?php _e( 'zu H&auml;nden', 'piratenkleider' ); ?></th>
+                            <tr valign="top"><th scope="row"><?php _e( 'The attention', 'piratenkleider' ); ?></th>
                                 <td>
                                     <input id="piratenkleider_theme_kontaktinfos[postperson]" class="regular-text" type="text" name="piratenkleider_theme_kontaktinfos[postperson]" value="<?php esc_attr_e( $options['postperson'] ); ?>" />
                                     <label class="description" for="piratenkleider_theme_kontaktinfos[postperson]">
-                                        <?php _e( 'Anschrift: Optionale Personenangabe ("zu H&auml;nden") <br>
-                                        Zum Beispiel: <code>Martin Mustermann</code>', 'piratenkleider' ); ?>
+                                        <?php _e( 'Address: Optional personal information ("hands on") <br>
+                                         For example: <code> Martin Smith </ code>', 'piratenkleider' ); ?>
                                        
                                     </label>
                                 </td>					
                             </tr>
-                             <tr valign="top"><th scope="row"><?php _e( 'Strasse oder Postfach', 'piratenkleider' ); ?></th>
+                             <tr valign="top"><th scope="row"><?php _e( 'Street or PO Box', 'piratenkleider' ); ?></th>
                                 <td>
                                     <input id="piratenkleider_theme_kontaktinfos[poststrasse]" class="regular-text" type="text" name="piratenkleider_theme_kontaktinfos[poststrasse]" value="<?php esc_attr_e( $options['poststrasse'] ); ?>" />
                                     <label class="description" for="piratenkleider_theme_kontaktinfos[poststrasse]">
-                                        <?php _e( 'Anschrift: Strassenname und Nummer oder Postfachangabe oder freilassen <br>
-                                        Zum Beispiel: <code>Unbesonnenheitsweg 123b</code>', 'piratenkleider' ); ?>
+                                        <?php _e( 'Address: Street name and number or post office box, or giving free <br>
+                                         For example: <code> Unbesonnenheitsweg 123b </ code>', 'piratenkleider' ); ?>
                                         
                                     </label>
                                 </td>					
                             </tr>
-                            <tr valign="top"><th scope="row"><?php _e( 'PLZ und Stadt', 'piratenkleider' ); ?></th>
+                            <tr valign="top"><th scope="row"><?php _e( 'Postal code and city', 'piratenkleider' ); ?></th>
                                 <td>
                                     <input id="piratenkleider_theme_kontaktinfos[poststadt]" class="regular-text" type="text" name="piratenkleider_theme_kontaktinfos[poststadt]" value="<?php esc_attr_e( $options['poststadt'] ); ?>" />
                                     <label class="description" for="piratenkleider_theme_kontaktinfos[poststadt]">
-                                        <?php _e( 'Anschrift: Postleitzahl gefolgt von Stadt<br>
-                                        Zum Beispiel: <code>12345  Ankh-Morpork</code>', 'piratenkleider' ); ?>
+                                        <?php _e( 'Address: Zip <br> followed by city
+                                         For example: Ankh-Morpork <code> 12 345 </code>', 'piratenkleider' ); ?>
                                         
                                     </label>
                                 </td>					
@@ -1570,48 +1570,48 @@ function theme_kontaktinfos_do_page() {
                             
 			</td>
 		       </tr>
-                       <tr valign="top"><th scope="row"><?php _e( 'Ladungsf&auml;hige Anschrift', 'piratenkleider' ); ?></th>
+                       <tr valign="top"><th scope="row"><?php _e( 'Address for service charge', 'piratenkleider' ); ?></th>
 			<td>
                             
-				<p><?php _e( 'Optionale Angaben f&uuml;r Rechtssachen. Werden diese Angaben frei gelassen, werden die
-                                    Daten der Postanschrift verwendet.', 'piratenkleider' ); ?></p>
+				<p><?php _e( 'Optional information for cases. If this information is released, the
+                                     Data used in the mailing address.', 'piratenkleider' ); ?></p>
                                  <table>                                
-                            <tr valign="top"><th scope="row"><?php _e( 'Name oder Titel', 'piratenkleider' ); ?></th>
+                            <tr valign="top"><th scope="row"><?php _e( 'Name or Title', 'piratenkleider' ); ?></th>
                                 <td>
                                     <input id="piratenkleider_theme_kontaktinfos[ladungtitel]" class="regular-text" type="text" name="piratenkleider_theme_kontaktinfos[ladungtitel]" value="<?php esc_attr_e( $options['ladungtitel'] ); ?>" />
                                     <label class="description" for="piratenkleider_theme_kontaktinfos[ladungtitel]">
-                                        <?php _e( 'Anschrift: Titel (1. Zeile). <br>
-                                        Zum Beispiel: <code>Piratenpartei</code>', 'piratenkleider' ); ?>
+                                        <?php _e( 'Address: Title (first row). <br>
+                                         For example: <code> Pirate Party </code>', 'piratenkleider' ); ?>
                                         
                                     </label>
                                 </td>					
                             </tr>
-                            <tr valign="top"><th scope="row"><?php _e( 'zu H&auml;nden', 'piratenkleider' ); ?></th>
+                            <tr valign="top"><th scope="row"><?php _e( 'The attention', 'piratenkleider' ); ?></th>
                                 <td>
                                     <input id="piratenkleider_theme_kontaktinfos[ladungperson]" class="regular-text" type="text" name="piratenkleider_theme_kontaktinfos[ladungperson]" value="<?php esc_attr_e( $options['ladungperson'] ); ?>" />
                                     <label class="description" for="piratenkleider_theme_kontaktinfos[ladungperson]">
-                                        <?php _e( ' Anschrift: Optionale Personenangabe ("zu H&auml;nden"). SOllte in der Regel dieselbe Person sein,
-                                        die oben als verantwortliche Person f&uuml;r das Impressum definiert ist.<br>
-                                        Zum Beispiel: <code>Martin Mustermann</code>', 'piratenkleider' ); ?>
+                                        <?php _e( ' Address: Optional personal information ("hands on"). Should be the same person, as a rule,
+                                         the above is defined as the person responsible for the imprint. <br>
+                                         For example: <code> Martin Smith </code>', 'piratenkleider' ); ?>
                                        
                                     </label>
                                 </td>					
                             </tr>
-                             <tr valign="top"><th scope="row"><?php _e( 'Strasse oder Postfach', 'piratenkleider' ); ?></th>
+                             <tr valign="top"><th scope="row"><?php _e( 'Street or PO Box', 'piratenkleider' ); ?></th>
                                 <td>
                                     <input id="piratenkleider_theme_kontaktinfos[ladungstrasse]" class="regular-text" type="text" name="piratenkleider_theme_kontaktinfos[ladungstrasse]" value="<?php esc_attr_e( $options['ladungstrasse'] ); ?>" />
                                     <label class="description" for="piratenkleider_theme_kontaktinfos[ladungstrasse]">
-                                        <?php _e( ' Anschrift: Strassenname und Nummer oder Postfachangabe oder freilassen <br>
-                                        Zum Beispiel: <code>Unbesonnenheitsweg 123b</code>', 'piratenkleider' ); ?>
+                                        <?php _e( ' Address: Street name and number or post office box, or giving free <br>
+                                         For example: <code> Unbesonnenheitsweg 123b </code>', 'piratenkleider' ); ?>
                                        
                                     </label>
                                 </td>					
                             </tr>
-                            <tr valign="top"><th scope="row"><?php _e( 'PLZ und Stadt', 'piratenkleider' ); ?></th>
+                            <tr valign="top"><th scope="row"><?php _e( 'Postal code and city', 'piratenkleider' ); ?></th>
                                 <td>
                                     <input id="piratenkleider_theme_kontaktinfos[ladungstadt]" class="regular-text" type="text" name="piratenkleider_theme_kontaktinfos[ladungstadt]" value="<?php esc_attr_e( $options['ladungstadt'] ); ?>" />
                                     <label class="description" for="piratenkleider_theme_kontaktinfos[ladungstadt]">
-                                        <?php _e( 'Anschrift: Postleitzahl gefolgt von Stadt<br>Zum Beispiel: <code>12345  Ankh-Morpork</code>', 'piratenkleider' ); ?>
+                                        <?php _e( 'Address: Zip code followed by city <br> For example: Ankh-Morpork <code> 12 345 </code>', 'piratenkleider' ); ?>
                                        
                                     </label>
                                 </td>					
@@ -1619,36 +1619,36 @@ function theme_kontaktinfos_do_page() {
                         </table>  
 			</td>
 		       </tr>
-                        <tr valign="top"><th scope="row"><?php _e( 'Offizielle E-Mailadresse', 'piratenkleider' ); ?></th>
+                        <tr valign="top"><th scope="row"><?php _e( 'Official e-mail address', 'piratenkleider' ); ?></th>
 			<td>
 				<input id="piratenkleider_theme_kontaktinfos[kontaktemail]" class="regular-text" type="text" length="5" name="piratenkleider_theme_kontaktinfos[kontaktemail]" value="<?php esc_attr_e( $options['kontaktemail'] ); ?>" />
 				<label class="description" for="piratenkleider_theme_kontaktinfos[kontaktemail]">
-                                    <?php _e( 'Feste Mailadresse f&uuml;r offizielle Kontakte.<br>Zum Beispiel: ', 'piratenkleider' ); ?>
+                                    <?php _e( 'Fixed mail address for official contacts <br> For example.: ', 'piratenkleider' ); ?>
                                     <code><?php echo bloginfo('admin_email'); ?></code>
                                 </label>
 			</td>
 		       </tr>
                        
-                       <tr valign="top"><th scope="row"><?php _e( 'Datenschutzbeauftragter', 'piratenkleider' ); ?></th>
+                       <tr valign="top"><th scope="row"><?php _e( 'Data Protection Officer', 'piratenkleider' ); ?></th>
 			<td>
 				<p>
-                                    <?php _e( 'Optionale Angaben zu einem Datenschutzbeauftragten. Wenn dieser nicht angegeben wird, wird die E-Mail-Adresse des Bundesdatenschutzbeauftragten angegeben.', 'piratenkleider' ); ?></p>
+                                    <?php _e( 'Optional information to a data protection officer. If this is not specified, the e-mail address of the Federal Privacy Commissioner is given.', 'piratenkleider' ); ?></p>
                                  <table>                                
 
                             <tr valign="top"><th scope="row"><?php _e( 'Name', 'piratenkleider' ); ?></th>
                                 <td>
                                     <input id="piratenkleider_theme_kontaktinfos[dsbperson]" class="regular-text" type="text" name="piratenkleider_theme_kontaktinfos[dsbperson]" value="<?php esc_attr_e( $options['dsbperson'] ); ?>" />
                                     <label class="description" for="piratenkleider_theme_kontaktinfos[dsbperson]">
-                                        <?php _e( 'Name des DSB<br>Zum Beispiel: <code>Martin Mustermann</code>', 'piratenkleider' ); ?>
+                                        <?php _e( 'Name of the DSB <br> For example: <code> Martin Smith </code>', 'piratenkleider' ); ?>
                                        
                                     </label>
                                 </td>					
                             </tr>
-                             <tr><th scope="row"><?php _e( 'E-Mailadresse', 'piratenkleider' ); ?></th>
+                             <tr><th scope="row"><?php _e( 'E-mail Address', 'piratenkleider' ); ?></th>
                             <td>
 				<input id="piratenkleider_theme_kontaktinfos[dsbemail]" class="regular-text" type="text" length="5" name="piratenkleider_theme_kontaktinfos[dsbemail]" value="<?php esc_attr_e( $options['dsbemail'] ); ?>" />
 				<label class="description" for="piratenkleider_theme_kontaktinfos[dsbemail]">
-                                    <?php _e( 'Feste Mailadresse f&uuml;r offizielle Kontakte.<br>Zum Beispiel:  <code>bundesbeauftragter@piraten-dsb.de</code>', 'piratenkleider' ); ?>
+                                    <?php _e( 'Fixed mail address for official contacts <br> For example:. <code> Bundesbeauftragter@piraten-dsb.de </code>', 'piratenkleider' ); ?>
                                     
                                 </label>
 			</td>
@@ -1658,31 +1658,31 @@ function theme_kontaktinfos_do_page() {
 			</td>
 		       </tr>
                        
-                       <tr valign="top"><th scope="row"><?php _e( 'Spendenformulare', 'piratenkleider' ); ?></th>
+                       <tr valign="top"><th scope="row"><?php _e( 'Donation forms', 'piratenkleider' ); ?></th>
 			<td>
-				<p><?php _e( 'Optionale Angaben f&uuml;r Spendenformulare, die mit dem Seiten-Template "Spenden" erstellt werden.', 'piratenkleider' ); ?>
+				<p><?php _e( 'Optional information for donation forms that are created with the page template "donations".', 'piratenkleider' ); ?>
                                     <br>
-                                    <?php _e( '<strong>Achtung:</strong> Dies ersetzt nicht das richtige Eingabeformular. Das Formular wird
-                                    z.B.mit dem Plugin <em>Contact Form 7</em> erstellt und dann als Makro in den Textbereich der Seite hinzugef&uuml;gt.
-                                    <br>
-                                    Die folgenden Daten werden nur dazu verwendet, die Tabelle f&uuml;r die  feststehenden Informationen aufzubauen.', 'piratenkleider' ); ?>
+                                    <?php _e( '<strong> Note: </ strong> This does not replace the correct entry form. The form is
+                                     zBmit <em> the plugin Contact Form 7 </ em> created and then added as a macro in the text of the page.
+                                     <br>
+                                     The following information is only used to build the table for the fixed information.', 'piratenkleider' ); ?>
                                     
                                 </p>
                                  <table>                                
 
-                            <tr valign="top"><th scope="row"><?php _e( 'Empf&auml;nger', 'piratenkleider' ); ?></th>
+                            <tr valign="top"><th scope="row"><?php _e( 'Receiver', 'piratenkleider' ); ?></th>
                                 <td>
                                     <input id="piratenkleider_theme_kontaktinfos[spendenempfaenger]" class="regular-text" type="text" name="piratenkleider_theme_kontaktinfos[spendenempfaenger]" value="<?php esc_attr_e( $options['spendenempfaenger'] ); ?>" />
                                     <label class="description" for="piratenkleider_theme_kontaktinfos[spendenempfaenger]">
-                                        <?php _e( ' Name des Empf&auml;ngers/Konto der Spenden f&uuml;r &Uuml;berweisungen. ', 'piratenkleider' ); ?>                                     
+                                        <?php _e( ' Name of recipient / donations account for the transfers. ', 'piratenkleider' ); ?>                                     
                                     </label>
                                 </td>					
                             </tr>
-                              <tr valign="top"><th scope="row"><?php _e( 'Kontonummer', 'piratenkleider' ); ?></th>
+                              <tr valign="top"><th scope="row"><?php _e( 'Account number', 'piratenkleider' ); ?></th>
                                 <td>
                                     <input id="piratenkleider_theme_kontaktinfos[spendenkonto]" class="regular-text" type="text" name="piratenkleider_theme_kontaktinfos[spendenkonto]" value="<?php esc_attr_e( $options['spendenkonto'] ); ?>" />
                                     <label class="description" for="piratenkleider_theme_kontaktinfos[spendenkonto]">
-                                        <?php _e( ' Kontonummer des Empf&auml;ngers', 'piratenkleider' ); ?>
+                                        <?php _e( ' Account number of recipient', 'piratenkleider' ); ?>
                                      
                                     </label>
                                 </td>					
@@ -1691,7 +1691,7 @@ function theme_kontaktinfos_do_page() {
                                 <td>
                                     <input id="piratenkleider_theme_kontaktinfos[spendenblz]" class="regular-text" type="text" name="piratenkleider_theme_kontaktinfos[spendenblz]" value="<?php esc_attr_e( $options['spendenblz'] ); ?>" />
                                     <label class="description" for="piratenkleider_theme_kontaktinfos[spendenblz]">
-                                        <?php _e( ' Die Bankleitzahl.', 'piratenkleider' ); ?>
+                                        <?php _e( ' The bank routing number.', 'piratenkleider' ); ?>
                                     
                                     </label>
                                 </td>					
@@ -1700,7 +1700,7 @@ function theme_kontaktinfos_do_page() {
                                 <td>
                                     <input id="piratenkleider_theme_kontaktinfos[spendenbank]" class="regular-text" type="text" name="piratenkleider_theme_kontaktinfos[spendenbank]" value="<?php esc_attr_e( $options['spendenbank'] ); ?>" />
                                     <label class="description" for="piratenkleider_theme_kontaktinfos[spendenbank]">
-                                        <?php _e( 'Ausgeschriebener Name der Bank', 'piratenkleider' ); ?>                                     
+                                        <?php _e( 'A full textual name of the bank', 'piratenkleider' ); ?>                                     
                                     </label>
                                 </td>					
                             </tr>
@@ -1726,7 +1726,7 @@ function theme_kontaktinfos_do_page() {
                     </table>
 
             <p class="submit">
-                    <input type="submit" class="button-primary" value="<?php _e( 'Speichern', 'piratenkleider' ); ?>" />
+                    <input type="submit" class="button-primary" value="<?php _e( 'Save', 'piratenkleider' ); ?>" />
             </p>
         </form>               
 	</div>
@@ -1824,11 +1824,11 @@ function theme_designspecials_do_page() {
 		<?php screen_icon(); echo "<h2>" . get_current_theme() . __( ' Kl&uuml;verbaum: Erweiterte Designeinstellungen ', 'piratenkleider' ) . "</h2>"; ?>
 
 		<?php if ( false !== $_REQUEST['settings-updated'] ) : ?>
-		<div class="updated fade"><p><strong><?php _e( 'Designeinstellungen wurden gespeichert.', 'piratenkleider' ); ?></strong></p></div>
+		<div class="updated fade"><p><strong><?php _e( 'Design settings have been saved.', 'piratenkleider' ); ?></strong></p></div>
 		<?php endif; ?>
                 
-                <p> <?php _e( '<b>Achtung:</b> Diese Einstellungen sollten nur in Ausnahmef&auml;llen ge&auml;ndert werden. Bei einer 
-                falschen Nutzung k&ouml;nnen Eingaben die Gestaltung des Webauftritts sch&auml;digen.', 'piratenkleider' ); ?>           
+                <p> <?php _e( '<b> Note: </ b> These settings should be changed only in exceptional cases. in one
+                 improper use can damage the input design of the website.', 'piratenkleider' ); ?>           
                 </p>
                 
 		<form method="post" action="options.php">
@@ -1843,7 +1843,7 @@ function theme_designspecials_do_page() {
 
                     ?>
                     <table class="form-table">
-                        <tr valign="top"><th scope="row"><?php _e( 'L&auml;nderfarbe aktivieren', 'piratenkleider' ); ?></th>
+                        <tr valign="top"><th scope="row"><?php _e( 'Countries to enable color', 'piratenkleider' ); ?></th>
                         <td>
                 
                                 
@@ -1851,53 +1851,56 @@ function theme_designspecials_do_page() {
                             <option value="" <?php if ( $options['css-colorfile'] == '') echo ' selected="selected"'; ?>><?php _e( 'Deutschland (Orange)', 'piratenkleider' ); ?></option>
                             <option value="colors_lu.css" <?php if ( $options['css-colorfile'] == 'colors_lu.css') echo ' selected="selected"'; ?>><?php _e( 'Luxemburg (Violett)', 'piratenkleider' ); ?></option>
                             <option value="colors_tk.css" <?php if ( $options['css-colorfile'] == 'colors_tk.css') echo ' selected="selected"'; ?>><?php _e( 'T&uuml;rkei (Cyan)', 'piratenkleider' ); ?></option>
+							<option value="colors_pt.css" <?php if ( $options['css-colorfile'] == 'colors_pt.css') echo ' selected="selected"'; ?>><?php _e( 'Portuguese (Green)', 'piratenkleider' ); ?></option>
                         </select>   
 
 
                         <label class="description" for="piratenkleider_theme_designspecials[css-colorfile]">
-                            <?php _e( 'Auswahl, welche l&auml;nderbezogene Farbvariante aktiviert werden soll.', 'piratenkleider' ); ?>
+                            <?php _e( 'Choice of which country-specific color variation is to be activated.', 'piratenkleider' ); ?>
                         </label>
 
                         </td>					                           
 		       </tr>
                        
-                       <tr valign="top"><th scope="row">Höhe des Kopfbereiches ( .header )</th>
+                       <tr valign="top"><th scope="row">Height of the head region (. Header)</th>
                         <td>
                             <input id="piratenkleider_theme_designspecials[css-default-header-height]" type="text" 
                                    name="piratenkleider_theme_designspecials[css-default-header-height]" 
                                     style="width: 5em;"
                                    value="<?php esc_attr_e( $options['css-default-header-height'] ); ?>" />
                             <label class="description" for="piratenkleider_theme_designspecials[css-default-header-height]">
-                               Wenn dieser Wert sich von der Defaulteinstellung von
-                               <?php echo $defaultoptions['css-default-header-height']; ?> Pixel aus 
-                               der CSS Datei piratenkleider.css (Zeile 1926) 
-                               unterscheidet, wird er &uuml;ber ein Inline-CSS nachträglich
-                               im Kopfteil des HTML-Documents ge&auml;ndert.<br>
-                               <b>Achtung:</b> Die Verkleinerung der Höhe des Kopfteils ist
-                               nicht ungef&auml;hrlich. Zu beachten ist, dass der Kopfteil
-                               auch bei einer Vergr&ouml;&szlig;erung des Textes auf 200% noch
-                               gen&uuml;gend Platz haben muss!
+                               If this value from the default setting of
+                               <?php echo $defaultoptions['css-default-header-height']; ?> pixels from
+                                The CSS file piratenkleider.css (line 1926)
+                                differs, it is a later inline CSS
+                                in the header of the HTML Documents changed. <br>
+                                <b> Note: </ b> The reduction of the height of the header is
+                                not harmless. It should be noted that the head part
+                                also at a magnification of the text to 200% even
+                                must have enough space!
+
                             </label>
                         </td>					                           
 		       </tr>
-                        <tr valign="top"><th scope="row">Abstand des Brandingbereiches (=Logo) nach oben ( .header .branding )</th>
+                        <tr valign="top"><th scope="row">Distance of the branding area (=) top (. Header. Branding)</th>
                         <td>
                             <input id="piratenkleider_theme_designspecials[css-default-branding-padding-top]" type="text" 
                                    name="piratenkleider_theme_designspecials[css-default-branding-padding-top]" 
                                    style="width: 5em;"
                                    value="<?php esc_attr_e( $options['css-default-branding-padding-top'] ); ?>" />
                             <label class="description" for="piratenkleider_theme_designspecials[css-default-branding-padding-top]">
-                               Das Logo hat einen Abstand nach oben. Diese kann &uuml;ber diese Angabe reduziert werden.
-                                                              Wenn dieser Wert sich von der Defaulteinstellung von
-                               <?php echo $defaultoptions['css-default-branding-padding-top']; ?> Pixel aus 
-                               der CSS Datei piratenkleider.css 
-                               unterscheidet, wird er &uuml;ber ein Inline-CSS nachträglich
-                               im Kopfteil des HTML-Documents ge&auml;ndert.<br>
+                               The logo has a distance to the top. This can be reduced by this specification.
+                                                               If this value from the default setting of
+                               <?php echo $defaultoptions['css-default-branding-padding-top']; ?> pixels from
+                                The CSS file piratenkleider.css
+                                differs, it is a later inline CSS
+                                in the header of the HTML Documents changed. <br>
                                
-                               <br><b>Achtung:</b> Wenn Socialmedia-Icons und Linkmenu oben auch erscheinen,
-                                sollte dieser Abstand nicht zu klein sein, da diese Icons und  der Text der Links
-                                bei steigender Gr&ouml;&szlig;e nach Links zum Logo wandert und es so zu &Uuml;berlapplungen
-                                kommen k&ouml;nnte.
+                                <b> Note: </ b> If social media icons and Linkmenu above also appear
+                                 this distance should not be too small because these icons and the text of links
+                                 with increasing size of the logo to the left and it moves so Überlapplungen
+                                 could occur.
+
                             </label>
                         </td>					                           
 		       </tr>
@@ -1914,7 +1917,7 @@ function theme_designspecials_do_page() {
                                           style="width: 35em;"
                                            value="<?php esc_attr_e( $options['css-default-header-background-color'] ); ?>" />
                                            <label class="description" for="piratenkleider_theme_designspecials[css-default-header-background-color]">
-                                                   Wenn gesetzt, &auml;ndert die Default-Hintergrundfarbe ab.
+                                                  If set, change the background image.
                                             </label>
                                        </td>                                                                              
                                    </tr>
@@ -1939,7 +1942,7 @@ function theme_designspecials_do_page() {
                                           style="width: 35em;"
                                            value="<?php esc_attr_e( $options['css-default-header-background-position'] ); ?>" />
                                            <label class="description" for="piratenkleider_theme_designspecials[css-default-header-background-position]">
-                                                  Wenn gesetzt, &auml;ndert die Position des Hintergrundbildes .
+                                                  If set, change the position of the background image.
                                             </label>
                                            
                                        </td>                                                                              
@@ -1952,7 +1955,7 @@ function theme_designspecials_do_page() {
                                           style="width: 35em;"
                                            value="<?php esc_attr_e( $options['css-default-header-background-repeat'] ); ?>" />
                                            <label class="description" for="piratenkleider_theme_designspecials[css-default-header-background-repeat]">
-                                                  Wenn gesetzt, &auml;ndert die Repeat-Eigenschaft des Hintergrundbildes.
+                                                  If set, change the repeat feature of the background image.
                                             </label>
                                            
                                        </td>                                                                              
@@ -1964,29 +1967,29 @@ function theme_designspecials_do_page() {
                        </tr>
                       
                        
-                        <tr valign="top"><th scope="row">Eigene CSS-Anweisungen</th>
+                        <tr valign="top"><th scope="row">My CSS instructions</th>
                         <td>
                             <textarea id="piratenkleider_theme_designspecials[css-eigene-anweisungen]" 
                                       class="large-text" cols="30" rows="10" 
                                       name="piratenkleider_theme_designspecials[css-eigene-anweisungen]"><?php echo esc_textarea( $options['css-eigene-anweisungen'] ); ?></textarea>
                             <label class="description" 
                                    for="piratenkleider_theme_designspecials[css-eigene-anweisungen]">
-                                       <?php _e( 'Eigene CSS-Anweisungen, die Inline im Kopfteil der Dokumente erg&auml;nzt werden', 'piratenkleider' ); ?></label>
+                                       <?php _e( 'Be your own CSS statements that line in the header of the documents completed', 'piratenkleider' ); ?></label>
 
                         </td>					                           
 		       </tr>
                        
-                         <tr valign="top"><th scope="row">Eigene HTML-Anweisungen</th>
+                         <tr valign="top"><th scope="row">My HTML instructions</th>
                         <td>
                             <textarea id="piratenkleider_theme_designspecials[html-eigene-anweisungen]" 
                                       class="large-text" cols="30" rows="10" 
                                       name="piratenkleider_theme_designspecials[html-eigene-anweisungen]"><?php echo esc_textarea( $options['html-eigene-anweisungen'] ); ?></textarea>
                             <label class="description" 
                                    for="piratenkleider_theme_designspecials[html-eigene-anweisungen]">
-                                       <?php _e( 'Eigene HTML-Anweisungen,  die am Ende der Webseite, vor dem letzten &lt;/body&Gt;&lt;/html&gt; plaziert werden', 'piratenkleider' ); ?></label>
-                            <p> <b>Achtung:</b> Fehlerhafter HTML-, JavaScript oder CSS-Code an dieser Stelle
-                                kann zu einem Nicht-Funktionieren der gesamt Website f&uuml;hren!<br />
-                                Der hier eingegebene Code wird nicht gefiltert oder kontrolliert.
+                                       <?php _e( 'My HTML instructions that are placed at the end of the site, before the last </ body &gt; </ html>', 'piratenkleider' ); ?></label>
+                            <p> <b> Note: </ b> Invalid HTML, JavaScript or CSS at this point
+                                 can lead to a non-functioning of the whole site! <br />
+                                 The code will not be filtered or monitored.
                             </p>
                         </td>					                           
 		       </tr>
@@ -1994,7 +1997,7 @@ function theme_designspecials_do_page() {
                     </table>
 
             <p class="submit">
-                    <input type="submit" class="button-primary" value="<?php _e( 'Speichern', 'piratenkleider' ); ?>" />
+                    <input type="submit" class="button-primary" value="<?php _e( 'Save', 'piratenkleider' ); ?>" />
             </p>
         </form>               
 	</div>
