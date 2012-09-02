@@ -10,67 +10,99 @@
    if (!isset($bilderoptions['src-default-symbolbild'])) 
             $bilderoptions['src-default-symbolbild'] = $defaultoptions['src-default-symbolbild'];
         ?>
-<div class="section content">
+
+<div class="section content" id="main-content">
     <div class="row">
         <div class="content-primary">
             <div class="content-header">
-                <h1 id="page-title"><span>Pol&iacute;tica de Privacidade</span></h1>   
-                <?php
-                if (has_post_thumbnail()) {
+        <h1 id="page-title"><span>Datenschutzerkl&auml;rung</span></h1>   
+                <?php if (has_post_thumbnail()) {
                     echo '<div class="symbolbild">';
                     the_post_thumbnail();
                     echo '</div>';
                 } else {
-                    if ($options['aktiv-platzhalterbilder-indexseiten']) {
-                        ?>         
+                    if ($options['aktiv-platzhalterbilder-indexseiten']) { ?>         
                         <div class="symbolbild"> 
-                            <img src="<?php echo $options['src-default-symbolbild'] ?>" alt="" >
+              <img src="<?php echo $bilderoptions['src-default-symbolbild']?>" alt="" >
                         </div>                                 
-    <?php
-    }
-}
+    <?php }
+      }
 ?>
             </div>
             <div class="skin">
 
 <?php if (have_posts()) while (have_posts()) : the_post(); ?>
         <?php the_content(); ?>
-        <?php edit_post_link(__('Bearbeiten', 'piratenkleider'), '', ''); ?>
+        <?php edit_post_link( __( 'Bearbeiten', 'piratenkleider' ), '', '' ); ?>
     <?php endwhile; ?>
 
 
-                <p>O Partido Pirata da Alemanha exige não apenas uma protecção de dados mais rigorosa, mas também pôe esta em prática. As informações pessoais recolhidas neste site só são levantados no meio técnica- e absolutamente necessário. Em nenhum caso os dados serão vendidos ou transferidos a terceiros. Se por alguma exceção for necessário divulgar os seus dados a terceiros, então pedimos permissão separadamente para cada apresentação.</p>
-                <p>A declaração a seguir dá uma visão geral de como podemos garantir esta protecção e que tipo de dados são recolhidos e para que finalidade.</p>
+          <p>Die Piratenpartei Deutschland fordert nicht nur strengeren Datenschutz, sie setzt ihn auch selber praktisch um. 
+              Personenbezogene Daten werden auf dieser Webseite nur im technisch unbedingt notwendigen Umfang erhoben.
+              In keinem Fall werden die erhobenen Daten verkauft oder aus anderen Gr&uuml;nden an Dritte weitergegeben. 
+              Sollte es ausnahmsweise doch einmal notwendig werden, ihre Daten an Dritte weiterzugeben, so werden wir sie, 
+              f&uuml;r jede &Uuml;bermittlung einzeln, vorher um Erlaubnis fragen.</p>
+               <p>
+              Die nachfolgende Erkl&auml;rung gibt Ihnen einen &Uuml;berblick dar&uuml;ber, wie wir diesen Schutz gew&auml;hrleisten 
+              und welche Art von Daten zu welchem Zweck erhoben werden.</p>
 
 
-                <h2>Processamento de dados neste site</h2>
-                <p>Diversos são transmitidos para nós do seu computador, e estes diferem, dependendo do seu navegador e tipo, versão e configuração do sistema operativo. Alguns deles podem ser:</p>
+              <h2>Datenverarbeitung auf dieser Internetseite</h2>
+<p>Von ihrem Computer werden verschiedene Daten an uns &uuml;bermittelt, diese sind 
+    je nach Browser- und Betriebssytemtyp, -version und -einstellung unterschiedlich. 
+    Einige davon k&ouml;nnen sein:</p>
                 <ul>
-                    <li>Tipo de navegador / versão</li>
-                    <li>Sistema operativo</li>
-                    <li>Referente URL (a página visitada anteriormente)</li>
-                    <li>Nome do host do computador (endereço IP)</li>
-                    <li>Hora do pedido do servidor.</li>
+<li>Browsertyp/ -version</li>
+<li>verwendetes Betriebssystem</li>
+<li>Referrer URL (die zuvor besuchte Seite)</li>
+<li>Hostname des zugreifenden Rechners (IP Adresse)</li>
+<li>Uhrzeit der Serveranfrage.</li>
                 </ul>
-                <p>O Partido Pirata opõe-se estritamente ao armazenamento de dados deste tipo.<br />
-                    No entanto, se os nossos sistemas possam ser usados indevidamente para o crime, pode acontecer que sejamos obrigados a armazenar os dados destes e de outros, e entregue às autoridades de investigação. Tanto quanto nos é permitido em tal caso o utilizador é avisado. No caso de um processo preliminar deveríamos usar esses dados para enviar às autoridades ou correctores. Na nossa wiki vocês podem aprender como se pode evitar a transmissão de todos os dados deste parágrafo a nós e outros.<a class="extern" href="http://wiki.piratenpartei.de/HowTo">&Uuml;bermittlung aller in diesem 
-                        Absatz genannten Daten an uns und andere unterbinden</a></p>
+<p>Die Piratenpartei lehnt eine Speicherung derartiger Daten strikt ab.<br />
+Sollten unsere Systeme allerdings einmal zu Straftaten missbraucht werden, 
+kann es passieren, das wir dazu verpflichtet werden, diese und andere Daten zu
+speichern und den Ermittlungsbeh&ouml;rden auszuh&auml;ndigen. Soweit es uns erlaubt ist 
+werden wir sie in einem solchen Fall davon unterrichten. Im Falle eines laufenden 
+Ermitlungsverfahrens m&uuml;ssten wir diese Daten an Ermitlungsbeh&ouml;rden oder
+Privatpersonen herausgeben. In unserem Wiki k&ouml;nnen sie nachlesen, wie sie 
+die <a class="extern" href="http://wiki.piratenpartei.de/HowTo">&Uuml;bermittlung aller in diesem 
+    Absatz genannten Daten an uns und andere unterbinden</a> k&ouml;nnen.</p>
 
                 <h2>Cookies</h2>
-                <p>O nosso site usa cookies em vários lugares. Cookies são pequenos arquivos de texto que são armazenados no seu computador pelo seu navegador. Cookies não causam nenhum dano ao seu computador e não contêm vírus. A maioria dos cookies que usamos são "cookies de sessão". Ou seja, eles são automaticamente apagados após a sua visita.<br />
-                   Os cookies também podem habilitá-lo a reconhecê-los depois de sair do site. Infelizmente, esse recurso é abusado por algumas empresas para espionar os hábitos de navegação dos internautas. Os piratas rejeitam esse tipo de comportamento, pois é uma violação da privacidade.<br />
-                   Em detalhe: O Fórum, o site e os cookies wiki usam cookies a fim de identificar o utilizador como o usuário que fez login. No fórum também usamos cookies sem ser necessário fazer login para preparar uma sessão para os utilizadores, para que eles possam ver se houve novas mensagens no fórum.<br />
-                   Nas configurações do navegador pode impedir a aceitação de cookies.</p>
+<p>Die Internetseiten verwenden an mehreren Stellen sogenannte Cookies.
+    Cookies sind kleine Textdateien, die auf Ihrem Rechner abgelegt werden 
+    und die Ihr Browser speichert. Cookies richten auf Ihrem Rechner keinen 
+    Schaden an und enthalten keine Viren. Die meisten der von uns verwendeten 
+    Cookies sind sogenannte "Session-Cookies". Das hei&szlig;t, sie werden nach Ende 
+    Ihres Besuchs automatisch gel&ouml;scht.<br />
+Cookies k&ouml;nnen es auch erm&ouml;glichen, sie nach Verlassen der Website wiederzuerkennen. 
+Leider wird diese Funktion von einigen Firmen dazu missbraucht, das
+Surfverhalten von Internetnutzern auszuspionieren. Die Piraten lehnen ein
+solches Verhalten als datenschutzwidrig ab.<br />
+Im Einzelnen: Das Forum, die Website und das Wiki verwenden Cookies dazu, 
+um sie nach dem Einloggen als der Benutzer zu identifizieren, als der sie sich
+eingeloggt haben. Im Forum verwenden wir Cookies auch ohne Einloggen dazu ihnen
+eine Session bereitstellen zu k&ouml;nnen, so dass sie sehen k&ouml;nnen, ob im Forum 
+neue Beitr&auml;ge geschrieben wurden.<br />
+In ihren Browsereinstellungen k&ouml;nnen sie die Annahme von Cookies unterbinden.</p>
 
                 <h2>Newsletter</h2>
-                <p>Se você deseja receber as listas de discussão que oferecemos, é necessário um email válido. Outros dados não são recolhidos. Não oferecemos o seu endereço de e-mail a terceiros, só tendo acesso apenas o moderador da lista. A sua permissão para armazenar o endereço de e-mail e a sua utilização para enviar a lista(s) de discussão pode ser revogada a qualquer momento. Se você se retirar da lista de discussão, o seu endereço de e-mail é excluído.</p>
+<p>Wenn Sie die von uns angebotenen Mailinglisten empfangen m&ouml;chten, ben&ouml;tigen 
+    wir von Ihnen eine g&uuml;ltige E-Mail-Adresse. Weitere Daten werden nicht 
+    erhoben. Wir geben ihre E-Mailaddresse niemals an Dritte weiter, Einsicht
+    hat nur der Listenmoderator. Ihre Einwilligung zur Speicherung der 
+    E-Mail-Adresse sowie deren Nutzung zum Versand der Mailingliste/n k&ouml;nnen 
+    Sie jederzeit widerrufen. Wenn sie sich aus dem Verteiler austragen, wird 
+    ihre E-Mail-Adresse gel&ouml;scht.</p>
 
-                <h2>Direito à informação</h2>
-                <p>Você tem sempre o direito de receber informações sobre seus dados pessoais, a sua origem e destino e fins de armazenagem. O Partido Pirata da Alemanha fornece-lhe informações sobre os dados armazenados. Para fazer isso, por favor contacte
-                    <?php
-                    if (isset($kontaktinfos['dsbemail'])) {
+<h2>Auskunftsrecht</h2>
+<p>Sie haben jederzeit das Recht auf Auskunft &uuml;ber die bez&uuml;glich Ihrer Person 
+    gespeicherten Daten, deren Herkunft und Empf&auml;nger sowie den Zweck der 
+    Speicherung. Auskunft &uuml;ber die gespeicherten Daten gibt Ihnen die 
+    Piratenpartei Deutschland. Wenden Sie sich dazu bitte an
+    <?php if ( (isset($kontaktinfos['dsbemail'])) && (strlen(trim($kontaktinfos['dsbemail']))>1)) {
                         echo '<a href="mailto:' . $kontaktinfos['dsbemail'] . '">';
-                        if (isset($kontaktinfos['dsbperson'])) {
+        if ((isset($kontaktinfos['dsbperson'])) && (strlen(trim($kontaktinfos['dsbperson']))>1)) {
                             echo 'den/die Datenschutzbeauftrage/n ';
                             echo $kontaktinfos['dsbperson'];
                         } else {
@@ -81,20 +113,19 @@
                         echo '<a href="mailto:bundesbeauftragter@piraten-dsb.de">bundesbeauftragter@piraten-dsb.de</a>.';
                     }
                     ?>
-                    , a comissão de protecção de dados.
+    
                 </p>
 
-                <h2>Informações adicionais</h2>
+<h2>Weitere Informationen</h2>
                 <p>Ihr Vertrauen ist uns wichtig. Daher werden wir Ihnen jederzeit Rede und 
                     Antwort bez&uuml;glich der Verarbeitung Ihrer personenbezogenen Daten stehen. 
                     Wenn Sie Fragen haben, die Ihnen diese Datenschutzerkl&auml;rung nicht 
                     beantworten konnte oder wenn Sie zu einem Punkt vertiefte Informationen 
                     w&uuml;nschen, wenden Sie sich bitte jederzeit an die Piraten. Sie k&ouml;nnen ihre
                     Fragen und Anregungen im Forum oder an 
-                    <?php
-                    if (isset($kontaktinfos['dsbemail'])) {
+    <?php if ((isset($kontaktinfos['dsbemail']))  && (strlen(trim($kontaktinfos['dsbemail']))>1)) {
                         echo '<a href="mailto:' . $kontaktinfos['dsbemail'] . '">';
-                        if (isset($kontaktinfos['dsbperson'])) {
+        if ((isset($kontaktinfos['dsbperson']))  && (strlen(trim($kontaktinfos['dsbperson']))>1)) {
                             echo 'den/die Datenschutzbeauftrage/n ';
                             echo $kontaktinfos['dsbperson'];
                         } else {
@@ -128,6 +159,7 @@
       </div>
     </div>
   </div>
+  <?php get_piratenkleider_socialmediaicons(2); ?>
 </div>
 
 <?php get_footer(); ?>

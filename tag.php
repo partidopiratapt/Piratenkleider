@@ -9,7 +9,7 @@
     <div class="content-primary">
       <div class="content-header">
            <h1 id="page-title"><span><?php printf( __( 'Schlagwort %s', 'piratenkleider' ), '' . single_cat_title( '', false ) . '' ); ?></span></h1>
-          
+
           <?php if ($options['aktiv-platzhalterbilder-indexseiten']) { ?>         
           <div class="symbolbild"> 
               <img src="<?php echo $bilderoptions['src-default-symbolbild-tag']?>" alt="" >  
@@ -18,7 +18,7 @@
       </div>
         <div class="skin">
             <?php get_template_part( 'loop', 'tag' ); ?>
-             
+
              
               <div class="widget">
                 <h2><?php _e( '&Uuml;bersicht &uuml;ber die Schlagworte', 'piratenkleider' ); ?></h2>
@@ -36,6 +36,7 @@
       </div>
     </div>
   </div>
+  <?php  get_piratenkleider_socialmediaicons(2); ?>
 </div>
 
 <?php get_footer(); ?>

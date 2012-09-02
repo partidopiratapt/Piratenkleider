@@ -1,18 +1,6 @@
-<?php
+<?php get_template_part('page-header') ?>
 
-/**
- * BuddyPress Notification Settings
- *
- * @package BuddyPress
- * @subpackage bp-default
- */
-?>
-
-<?php get_header( 'buddypress' ) ?>
-
-	<div id="content">
-		<div class="padder">
-
+<div class="skin">
 			<?php do_action( 'bp_before_member_settings_template' ); ?>
 
 			<div id="item-header">
@@ -49,7 +37,7 @@
 
 				<h3><?php _e( 'Email Notification', 'buddypress' ); ?></h3>
 
-				<?php do_action( 'bp_template_content' ) ?>
+				<?php do_action( 'bp_template_content' ); ?>
 
 				<form action="<?php echo bp_displayed_user_domain() . bp_get_settings_slug() . '/notifications'; ?>" method="post" class="standard-form" id="settings-form">
 					<p><?php _e( 'Send a notification by email when:', 'buddypress' ); ?></p>
@@ -74,9 +62,5 @@
 
 			<?php do_action( 'bp_after_member_settings_template' ); ?>
 
-		</div><!-- .padder -->
-	</div><!-- #content -->
-
-<?php get_sidebar( 'buddypress' ) ?>
-
-<?php get_footer( 'buddypress' ) ?>
+		</div>
+<?php get_template_part('page-footer') ?>

@@ -1,6 +1,3 @@
-/* Load the default admin bar styles */
-@import url( ../buddypress/bp-themes/bp-default/_inc/css/adminbar.css );
-
 /**
  * The following are basic CSS styles to give BuddyPress pages their absolute basic formatting.
  * You should extend/override these styles in your standard theme CSS to match your theme.

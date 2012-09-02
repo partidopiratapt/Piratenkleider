@@ -11,7 +11,7 @@
  .nav-main {
     position: absolute;
     bottom: 0; 
-    max-width: 90%;
+    max-width: 100%;
   }
 
 .nav-main ul.menu {
@@ -49,17 +49,17 @@
       border-bottom-right-radius: 0;
       border-bottom-left-radius: 0;
       color: black;
-      font-family: "BebasNeueRegular", Helvetica, Arial, sans-serif;
+      font-family: "FontPiratenkleiderHeadlines", Helvetica, Arial, sans-serif;
       font-weight: lighter;
       font-size: 21.6px;
       letter-spacing: 1px;
       padding: 12px 10px 10px 10px;
       border-bottom: 0; 
 }
-   
+
 .nav-main ul.menu li a:hover,
 .nav-main ul.menu li a.hover{
-       color: #2d7dc5; 
+	color: #2d7dc5;
  }
     
 .nav-main ul.menu li a[title="Home"],
@@ -70,6 +70,33 @@
         background: url("../assets/home.gif") no-repeat center 10px; 
 }
       
+.nav-main ul.menu li.current-menu-item > a,
+.nav-main ul.menu li.current-page-item > a {
+    background: none repeat scroll 0 0 black;
+    color: white;
+}
+
+
+
+
+.nav-main ul.menu li.current-menu-item > a,
+.nav-main ul.menu li.current-page-ancestor > a,
+.nav-main ul.menu li.current-menu-ancestor > a {
+    background: none repeat scroll 0 0 black;
+    color: white;
+}
+
+.nav-main ul.menu li.current-menu-item:hover ul.sub-menu li.current-menu-item > a,
+.nav-main ul.menu li.current-page-item:hover ul.sub-menu li.current-page-item > a,
+.nav-main ul.menu li.current-page-ancestor:hover ul.sub-menu li.current-page-ancestor > a,
+.nav-main ul.menu li.current-menu-ancestor:hover ul.sub-menu li.current-menu-ancestor > a {
+    background-color: #ccc;
+    color: black;
+}
+
+
+
+
  .nav-main ul.menu li a[title="Home"]:hover,
  .nav-main ul.menu li a[title="Home"].hover,
  .nav-main ul.menu li.menu-item-home a:hover,
@@ -165,7 +192,7 @@
     .nav-main ul.menu li ul li a:hover,
     .nav-main ul.menu li ul li.hover a {
             background: #2d7dc5;
-            color: white; 
+            color: white;
     }
     .nav-main ul.menu li ul li.hover ul li a{
         background: white;
@@ -178,8 +205,8 @@
    
    
    .nav-main ul.menu li:hover ul li.has_children,
-   .nav-main ul.menu li.hover ul li.has_children {
-        background: url("../assets/plus_black.gif") center right no-repeat;
+   .nav-main ul.menu li.hover ul li.has_children {        
+	background: url("../assets/plus_black.gif") center right no-repeat;
    }
 
     
@@ -233,3 +260,4 @@
 .ie7 .nav-main ul.menu li ul {
   display: none !important; 
 }
+/* IE 7 und aelter haben keine Submenus und muessen daher das Seitenmenu nutzen */

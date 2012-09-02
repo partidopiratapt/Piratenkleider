@@ -2,22 +2,45 @@
     <div class="skin">
         <?php if ( is_active_sidebar( 'first-footer-widget-area' ) ) { ?>
             <?php dynamic_sidebar( 'first-footer-widget-area' ); ?>
-        <?php } else { ?>
+        <?php } else { 
             
-        <h2>Movimento Partido Pirata Português</h2>
-        <p class="titelurl"><a href="http://www.partidopiratapt.eu">www.partidopiratapt.eu</a></p>
-            <ul>            
-            <?php 
-            $args = array(
-    'orderby'          => 'name',
-    'order'            => 'ASC',
-    'show_images '     => 1,
-    'category_orderby' => 'name',
-    'category_order'   => 'ASC',
-    'category_before'  => '<li>',
-    'category_after'   => '</li>' );
-            wp_list_bookmarks( $args ); ?>   
-            </ul>
-        <?php } ?>    
+        
+         global $default_footerlink_liste;   
+         global $defaultoptions;
+           $options = get_option( 'piratenkleider_theme_options' );
+           if (!isset($options['default_footerlink_key']))                
+            $options['default_footerlink_key'] = $defaultoptions['default_footerlink_key'];
+           if (!isset($options['default_footerlink_show']))                
+            $options['default_footerlink_show'] = $defaultoptions['default_footerlink_show'];
+           
+           
+            if ((is_array($default_footerlink_liste)) && ($options['default_footerlink_show']==1)) {     
+                  $bereich = $options['default_footerlink_key'];
+                  if (!isset($default_footerlink_liste[$bereich]['sublist'])) {
+                      $bereich =  $defaultoptions['default_footerlink_key'];
+                  }
+                  $title =   $default_footerlink_liste[$bereich]['title'];
+                  $url =   $default_footerlink_liste[$bereich]['url'];
+                  
+                 
+                  if ((isset($url)) && (strlen($url)>5)) {
+                        echo '<h2><a href="'.$url.'">'.$title.'</a></h2>';
+                  } else {
+                  echo "<h2>".$title."</h2>";
+                  }
+                  echo '<ul class="default_footerlinks">';
+                  
+                  foreach($default_footerlink_liste[$bereich]['sublist'] as $i => $value) {
+                       echo '<li><a href="'.$value.'">';                                                                                                        
+                       echo $i.'</a></li>';
+                       echo "\n";
+                 }            
+                 echo '</ul>';                                          
+           }
+        } ?>
+        
+        
+            
+              
     </div>
 </div>

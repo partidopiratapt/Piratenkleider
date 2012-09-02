@@ -3,124 +3,87 @@
 * 
 * @Theme Name: Piratenkleider
 * @Theme URI: https://github.com/xwolfde/Piratenkleider
-* @Description: Allgemeines Wordpress Theme für Webauftritte der Piratenpartei
+* @Description: Allgemeines Wordpress Theme fur Webauftritte der Piratenpartei
 * @Author: Wolfgang Wiese (xwolf)
-* @Author URI: http://www.xwolf.de 
+* @Author URI: http://www.xwolf.de
 */
 
-.flexslider {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  position: relative; 
-  height: 240px;  
-  overflow: hidden;
-    /* Bilder die trotz cropping hoeher als 240 Pixel sind,
-      werden abgeschnitten */
+.flexslider .flex-control-nav {
 }
-.content-aside .flexslider {
-    height: 391px;    
-    margin: 10px auto;
-}
-
-
-.content-aside .flex-control-nav {
-  display: none; 
-}
-
 
 .flexslider img {
-    /* Kommentare entfernen, wenn man möchte dass die Bilder an die 
+    /* Kommentare entfernen, wenn man mochte dass die Bilder an die 
        proportionale Breite angepasst werden und nicht abgeschnitten werden: */
-    
-   /*  max-height: 240px;  
-      width: auto; 
-   */
+    position: relative;
+    height: 240px;  
+    width: 100%; 
+
 }
 
-.flexslider .slides > li {
-  display: none; 
+.flexslider .slides:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0; }
+
+html[xmlns] .flexslider .slides {
+    display: block; }
+
+* html .flexslider .slides {
+    height: 1%;
 }
 
-.slides:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0; }
-
-html[xmlns] .slides {
-  display: block; }
-
-* html .slides {
-  height: 1%;
+.flexslider .slides > li:first-child {
+    display: block;
 }
 
-
-.slides > li:first-child {
-  display: block;
+.flexslider .flex-direction-nav {
 }
 
-.flex-direction-nav {
-  display: none; 
+.flexslider .flex-control-nav {
+    position: absolute;
+    top: 10px;
+    right: 62px;
+    overflow: hidden;
+    z-index: 800; 
 }
-
-.flex-control-nav {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  overflow: hidden;
-  z-index: 800; 
-}
-.flex-control-nav li {
+.flexslider .flex-control-nav li {
     float: left;
     margin-right: 1px; 
 }
-.flex-control-nav li a {
-      display: block;
-      padding: 0px 5px;
-      background: white;
-      background: rgba(255, 255, 255, 0.5);
-      cursor: pointer;
-      color: black;
+.flexslider .flex-control-nav li a {
+    display: block;
+    padding: 0px 5px;
+    background: white;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    color: black;
 }
-.flex-control-nav li a.active {
-        background: white; 
-}
+.flexslider .flex-control-nav li a.active,
+.flexslider .flex-control-nav li a:hover,
+.flexslider .flex-control-nav li a:focus {
+    background: white; 
+}  
 
-
-.content-aside .flexslider .flex-pauseplay,
-.first-teaser-widget-area .flexslider .flex-pauseplay {
+.flexslider .flex-pauseplay {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    text-align: center;
+    padding: 0px 1px 1px 1px;
     overflow: hidden;
     z-index: 800;
-    background: white;
+    background: #CCCCCC;
     cursor: pointer;
     color: black; 
-    padding: 0.2em;
-}
-.content-aside .flexslider .flex-pauseplay {
     bottom: inherit;
-    top: 10px;
 }
-.flexslider .flex-pauseplay:hover {
-        background: #ff8800; 
-}
-.slide .caption  h3 {
-  font-size: 22.8px;
-  line-height: 22px;
-  margin-left: -5px; 
-   margin-bottom: 0; 
-}
-.slide .caption h3 a {
-    background: #2d7dc5;
-    padding: 2px 5px 0px 5px; 
-}
-.slide .caption h3 a:hover {
-      background: #ff8800; 
+.flexslider .flex-pauseplay:hover,
+.flexslider .flex-pauseplay:focus {
+    background: #CCCCCC;
 }
 
 .content-aside .slide .caption,
@@ -150,44 +113,161 @@ html[xmlns] .slides {
     color: white;
     display: inline-block;
     padding: 0 5px; 
+    z-index: 99;
 }
-
+.first-teaser-widget-area .slide .bigslider  {
+    background: none repeat scroll 0 0 #111111;
+}
+ 
+.first-teaser-widget-area .slide .textslider  {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin: 0 5px 5px 5px;
+    height: 235px;       
+}
+.first-teaser-widget-area .slide .textslider img {
+    float: left;    
+    margin: 25px 20px 15px 25px;
+    max-height: 185px;
+}
+.first-teaser-widget-area .slide .textslider h3 {
+    padding-top: 35px;
+    margin-bottom: 15px;
+    color: white;    
+}
+.first-teaser-widget-area .slide .textslider a {
+    color: white;    
+}
 
 
 @media only screen and (max-width: 767px) {  
- .symbolbild, 
-  .flexslider, 
-  .flexslider img {
+    .symbolbild, 
+    .flexslider, 
+    .flexslider img {
         height: 240px;  
         overflow: hidden;
-   }   
-   .content-aside .flexslider {
+    }   
+    .flexslider {
         height: auto;    
         margin-bottom: 10px;
     }
- 
+
 }
 
 @media only screen and (max-width: 479px) {  
-  .symbolbild, 
-  .flexslider, 
-  .flexslider img {
+    .symbolbild, 
+    .flexslider, 
+    .flexslider img {
         height: 240px;  
         overflow: hidden;
-   }   
-   .content-aside .flexslider {
+    }   
+    .flexslider {
         height: auto;    
         margin-bottom: 10px;
     }
 
-  .flexslider .caption {
-    padding: 5px 10px;
-  }
-  .flexslider .caption h2, 
-  .flexslider .caption h3 {
-      font-size: 12px;
-      font-family: Helvetica, Arial, sans-serif;
-      letter-spacing: 0px;
-  }
+    .flexslider .flex-caption {
+        padding: 5px 10px;
+    }
+    .flexslider .flex-caption h2, 
+    .flexslider .flex-caption h3 {
+        font-size: 12px;
+        font-family: Helvetica, Arial, sans-serif;
+        letter-spacing: 0px;
+    }
 
+}
+
+/** Added Flex Slider styles for the widger*/
+.flexslider {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative; 
+    height: 240px;  
+    overflow: hidden;
+    border: none !important;
+    margin-bottom: 38px !important;
+    background: #fff; 
+    border: 1px solid #e0e0e0; 
+    position: relative; 
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px; 
+    -o-border-radius: 3px; 
+    border-radius: 3px; 
+    zoom: 1;
+}
+.flex-control-nav {
+    bottom: -48px !important;
+}
+.flexslider .flex-control-nav {
+    bottom: -10px !important;
+}
+.flexslider a:active,
+.flexslider a:focus  {
+    outline: none;
+}
+.flexslider {
+    width: 100%; 
+    margin: 0; 
+    padding: 0;
+}
+.flexslider .slides > li {
+    display: none; 
+    -webkit-backface-visibility: hidden;
+}
+.flexslider .slides img {
+    max-width: 100%; 
+    display: block;
+}
+
+.flexslider .slides {
+    zoom: 1;
+}
+.flexslider .slides > li {
+    position: relative;
+}
+.flexslider .flex-caption {
+    background:none; 
+    -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+    zoom: 1;
+}
+.flexslider .flex-caption {
+    width: 100%; 
+    padding: 2%; 
+    margin: 0; 
+    position: absolute; 
+    left: 0; 
+    bottom: 0; 
+    background: rgba(0,0,0,.5); 
+    color: white; 
+    text-shadow: 0 -1px 0 rgba(0,0,0,.3); 
+    font-size: 14px; 
+    line-height: 18px;
+    text-align: right; 
+}
+.flexslider .flex-caption h3 {
+    font-size: 22.8px;
+    line-height: 22px;
+    margin-left: -5px; 
+    margin-bottom: 0; 
+}
+.flexslider .flex-caption h3 a {
+    background: #2d7dc5;
+    padding: 2px 5px 0px 5px; 
+}
+.flexslider .flex-caption h3 a:hover {
+    background: #ff8800; 
+}
+.flexslider .flex-caption p {
+    font-size: 12px;
+    margin-bottom: 5px; 
+    display: inline-block;
+    font-size: 18px;
+}
+.flexslider .flex-caption a {
+    background: #2d7dc5;
+    color: white;
+    display: inline-block;
+    padding: 0 5px; 
 }

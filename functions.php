@@ -4,240 +4,13 @@
  *
  * @source http://github.com/xwolfde/Piratenkleider
  * @creator xwolf
- * @version 2.5
+ * @version 2.12
  * @licence CC-BY-SA 3.0 
  */
+add_theme_support( 'bbpress' );
 
 
-$defaultoptions = array(
-    'content-width'                 => 665,
-    'logo'                          => get_template_directory_uri() .'/images/logo.png',
-    'logo-width'                    => 300,
-    'logo-height'                   => 130,
-    'thumb-width'                   => 705,
-    'thumb-height'                  => 240,
-    'plakate-width'                 => 277,
-    'plakate-height'                => 391,
-    'src-jquery'                    => get_template_directory_uri(). "/js/jquery.min.js",
-    'src-layoutjs'                  => get_template_directory_uri(). "/js/layout.js",
-    'src-comment-reply'             => get_template_directory_uri(). "/js/comment-reply.js",
-    'src-yaml-focusfix'             => get_template_directory_uri(). "/yaml/core/js/yaml-focusfix.js",
-    'src-default-symbolbild'        => get_template_directory_uri() .'/images/default-vorlage-705x150.png',
-    'src-default-symbolbild-404'    => get_template_directory_uri() .'/images/default-404.png',
-    'src-default-symbolbild-category'   => get_template_directory_uri() .'/images/default-category.png',
-    'src-default-symbolbild-search' => get_template_directory_uri() .'/images/default-search.png',
-    'src-default-symbolbild-tag'    => get_template_directory_uri() .'/images/default-tag.png',
-    'src-default-symbolbild-author' => get_template_directory_uri() .'/images/default-author.png',
-    'src-default-symbolbild-archive' => get_template_directory_uri() .'/images/default-archive.png',
-    
-    'slider-aktiv'                  => 1,
-    'aktiv-defaultseitenbild'       => 0,
-    'aktiv-suche'                   => 1,
-    'slider-defaultwerbeplakate'    => 1,
-    'slider-numberarticle'          => 3,
-    'slider-slideshowSpeed'         => 8000,
-    'slider-animationDuration'      => 600,
-    'defaultwerbesticker'           => 1,
-    'aktiv-autoren'                 => 1,
-    'newsletter'                    => 1,
-    'alle-socialmediabuttons'       => 1,
-    'aktiv-platzhalterbilder-indexseiten'   => 0,
-    'aktiv-linkmenu'                 => 1,
-    'aktiv-avatar'                   => 1,
-    'src-default-avatar'             =>  get_template_directory_uri(). '/images/avataricon.gif',
-    'zeige_subpagesonly'             => 1,
-    'zeige_sidebarpagemenu'          => 1,
-    'feed_twitter_numberarticle'            => 3,
-    'num-article-startpage-fullwidth'       => 1,
-    'num-article-startpage-halfwidth'       => 4,
-    'url-newsletteranmeldung'       => 'https://service.piratenpartei.de/subscribe/newsletter',
-    'teaser_maxlength'              => 300,
-    'teaser-title-maxlength'        => 50,
-    'teaser-subtitle'               => 'Topthema',
-    'teaser-title-words'            => 10,
-    'css-default-header-height'     => 225,
-    'css-default-branding-padding-top'  => 40,
-    'anonymize-user'                => 0,
-    'anonymize-user-commententries' => 0,
-    'aktiv-commentreplylink'        => 0,
-    
-    
-    'teaserlink1-title'             => 'Informiere dich',
-    'teaserlink1-untertitel'        => '&uuml;ber unsere Themen &amp; Ziele!',            
-    'teaserlink1-url'               => 'https://www.piratenpartei.de/politik/themen/', 
-    'teaserlink1-symbol'            => 'idee',
-    
-    'teaserlink2-title'             => 'Unterst&uuml;tze uns',
-    'teaserlink2-untertitel'        => 'mit deinem Engagement!',            
-    'teaserlink2-url'               => 'http://www.piratenpartei.de/unterstutze-uns/', 
-    'teaserlink2-symbol'            => 'herz',
-    
-    'teaserlink3-title'             => 'Werde Pirat!',
-    'teaserlink3-untertitel'        => 'jetzt Mitglied werden!',            
-    'teaserlink3-url'               => 'https://www.piratenpartei.de/mitmachen/mitglied-werden', 
-    'teaserlink3-symbol'            => 'steuerrad',
-    
-    'stickerlink1-content'          => '<img src="'.get_template_directory_uri().'/images/werde-pirat.png" width="88" height="56" alt="Werde Pirat!">',
-    'stickerlink1-url'              => 'https://www.piratenpartei.de/mitmachen/mitglied-werden/',
-    'stickerlink2-content'          => '<img src="'.get_template_directory_uri().'/images/spenden.png" width="104" height="68" alt="Hilf uns mit einer Spende">',
-    'stickerlink2-url'              => 'https://www.piratenpartei.de/mitmachen/spenden/',
-    'stickerlink3-content'          => '',
-    'stickerlink3-url'              => ''  
-    
-    
-);
-/**
- * Liste der Defaultbilder fuer Seiten und Slider
- */
-$defaultbilder_liste = array(
-	'0' => array(
-		'src' =>	get_template_directory_uri().'/images/defaultbild-grundgesetz.jpg',
-		'label' => __( 'Plakat Grundgesetz', 'piratenkleider' )
-	),
-	'1' => array(
-		'src' =>	get_template_directory_uri().'/images/defaultbild-medien.jpg',
-		'label' => __( 'Medien', 'piratenkleider' )
-	),
-	'2' => array(
-		'src' =>	get_template_directory_uri().'/images/defaultbild-mitmachen.jpg',
-		'label' => __( 'Mitmachen', 'piratenkleider' )
-	),
-        '3' => array(
-		'src' =>	get_template_directory_uri().'/images/defaultbild-piraten.jpg',
-		'label' => __( 'Piraten', 'piratenkleider' )
-	),
-        '4' => array(
-		'src' =>	get_template_directory_uri().'/images/defaultbild-plakate.jpg',
-		'label' => __( 'Plakate', 'piratenkleider' )
-	),
-        '5' => array(
-		'src' =>	get_template_directory_uri().'/images/defaultbild-presse.jpg',
-		'label' => __( 'Presse', 'piratenkleider' )
-	),
-        '6' => array(
-		'src' =>	get_template_directory_uri().'/images/defaultbild-protest.jpg',
-		'label' => __( 'Protest', 'piratenkleider' )
-	),
-         '7' => array(
-		'src' =>	get_template_directory_uri().'/images/defaultbild-datenschutz.jpg',
-		'label' => __( 'Datenschutz', 'piratenkleider' )
-	),
-);
-
-/**
- * Liste der Default-Plakate fer die Sidebar
- */
-$defaultplakate_liste = array(
-	'0' => array(
-		'src' =>	get_template_directory_uri().'/plakate/LTWNRW12_Plakat_A01.jpg',
-		'label' => __( 'Plakat LTWNRW12 A01', 'piratenkleider' )
-	),
-	'1' => array(
-		'src' =>	get_template_directory_uri().'/plakate/LTWNRW12_Plakat_B03.jpg',
-		'label' => __( 'Plakat LTWNRW12_Plakat_B03', 'piratenkleider' )
-	),
-	'2' => array(
-		'src' =>	get_template_directory_uri().'/plakate/LTWNRW12_Plakat_C01.jpg',
-		'label' => __( 'Plakat LTWNRW12_Plakat_C01', 'piratenkleider' )
-	),
-        '3' => array(
-		'src' =>	get_template_directory_uri().'/plakate/LTWNRW12_Plakat_D01.jpg',
-		'label' => __( 'Plakat LTWNRW12_Plakat_D01', 'piratenkleider' )
-	),
-        '4' => array(
-		'src' =>	get_template_directory_uri().'/plakate/LTWNRW12_Plakat_E01.jpg',
-		'label' => __( 'Plakat LTWNRW12_Plakat_E01', 'piratenkleider' )
-	),
-        '5' => array(
-		'src' =>	get_template_directory_uri().'/plakate/LTWNRW12_Plakat_F03.jpg',
-		'label' => __( 'Plakat LTWNRW12_Plakat_F03', 'piratenkleider' )
-	),
-	'6' => array(
-		'src' =>	get_template_directory_uri().'/plakate/LTWSH12_Echte-Mitbestimmung.jpg',
-		'label' => __( 'Plakat LTWSH12_Echte-Mitbestimmung', 'piratenkleider' )
-	),
-	'7' => array(
-		'src' =>	get_template_directory_uri().'/plakate/LTWSH12_Fehmarnbelt.jpg',
-		'label' => __( 'Plakat LTWSH12_Fehmarnbelt', 'piratenkleider' )
-	),
-        '8' => array(
-		'src' =>	get_template_directory_uri().'/plakate/LTWSH12_Freies-Wissen.jpg',
-		'label' => __( 'Plakat LTWSH12_Freies-Wissen', 'piratenkleider' )
-	),
-        '9' => array(
-		'src' =>	get_template_directory_uri().'/plakate/LTWSH12_Ich-will-so-leben.jpg',
-		'label' => __( 'Plakat LTWSH12_Ich-will-so-leben', 'piratenkleider' )
-	),
-       '10' => array(
-		'src' =>	get_template_directory_uri().'/plakate/LTWSH12_Inseln-allgemein.jpg',
-		'label' => __( 'Plakat LTWSH12_Inseln-allgemein', 'piratenkleider' )
-	),
-        '11' => array(
-		'src' =>	get_template_directory_uri().'/plakate/LTWSH12_Naechster-Halt.jpg',
-		'label' => __( 'Plakat LTWSH12_Naechster-Halt', 'piratenkleider' )
-	),
-	'12' => array(
-		'src' =>	get_template_directory_uri().'/plakate/LTWSH12_Orange_isst_gesund.jpg',
-		'label' => __( 'Plakat LTWSH12_Orange_isst_gesund', 'piratenkleider' )
-	),
-	'13' => array(
-		'src' =>	get_template_directory_uri().'/plakate/LTWSH12_Transparenz.jpg',
-		'label' => __( 'Plakat LTWSH12_Transparenz', 'piratenkleider' )
-	),
-        '14' => array(
-		'src' =>	get_template_directory_uri().'/plakate/LTWSH12_Trau-keinem-Plakat.jpg',
-		'label' => __( 'Plakat LTWSH12_Trau-keinem-Plakat', 'piratenkleider' )
-	),
-        '15' => array(
-		'src' =>	get_template_directory_uri().'/plakate/LTWSH12_Warum_haenge_ich_hier.jpg',
-		'label' => __( 'Plakat LTWSH12_Warum_haenge_ich_hier', 'piratenkleider' )
-	),
-       '16' => array(
-		'src' =>	get_template_directory_uri().'/plakate/LTWSH12_Wir_sind_Romantiker.jpg',
-		'label' => __( 'Plakat LTWSH12_Wir_sind_Romantiker', 'piratenkleider' )
-	),    
-        
-);
-
-/* 
- * Auswahlliste fuer Textsymbole fuer den Teaser
- */
-$defaultplakate_textsymbolliste = array(
-    'idee'  => "0021",
-    'person'  => "263A",
-    'herz'  => "2665",
-    'email'  => "2709",
-    'at'  => "0040",
-    'check'  => "2713",
-    'nocheck'  => "2717",
-    'telefon'  => "2706",
-    'anker'  => "2693",
-    'skull'  => "2620",
-    'female'  => "2640",
-    'male'  => "2642",
-    'malefemale'  => "26A5",
-    'schreiben'  => "270D",
-    'rollstuhl'  => "267F",
-    'steuerrad'  => "2638",
-    'musiknote'  => "266B",
-    'paragraph'  => "00A7",
-    'play'  => "25B6",
-    'save'  => "2714",
-    'spark'  => "2737",
-    'star'  => "2605",
-    'eins'  => "2460",
-    'zwei'  => "2461",    
-    'drei'  => "2462", 
-    'euro'  => "20AC",
-    'dollar'  => "0024",
-    'copyright'  => "00A9",
-    
-    
-);
-
-
-// Aus gestalerischen Gr&uuml;nden m&uuml;ssen Plakate auf der Website exakt 277 Pixel breit sein. Die H&ouml;he ist
-// flexibel, sollte jedoch auch gleich sein. In diesem Fall  391 Pixel.
+require( get_template_directory() . '/inc/constants.php' );
 
 $options = get_option( 'piratenkleider_theme_options' );
 if (!isset($options['anonymize-user'])) 
@@ -253,9 +26,28 @@ if ($options['anonymize-user']==1) {
     update_option('require_name_email',0);
 }
 
-if ( ! isset( $content_width ) )   $content_width = $defaultoptions['content-width'];
-require_once ( get_stylesheet_directory() . '/theme-options.php' );
+if (!isset($options['feed_cache_lifetime'])) 
+            $options['feed_cache_lifetime'] = $defaultoptions['feed_cache_lifetime'];
+if (!isset($options['twitter_cache_lifetime'])) 
+            $options['twitter_cache_lifetime'] = $defaultoptions['twitter_cache_lifetime'];
+if ($options['feed_cache_lifetime'] < 600) {
+    $options['feed_cache_lifetime'] = 1800;
+}
+// Das holen von feeds sollte auf keinen Fall haeufiger als alle 10 Minuten erfolgen
+if ($options['twitter_cache_lifetime'] > $options['feed_cache_lifetime']) {
+    $options['twitter_cache_lifetime'] = $options['feed_cache_lifetime'];
+}
+// Twitter Feeds sollten nicht laenger warten als die allgemeine feeds
+ function feed_lifetime_cb( ) {
+            global $options;
+            // change the default feed cache recreation period to 2 hours
+            return $options['feed_cache_lifetime'];
+}
+add_filter( 'wp_feed_cache_transient_lifetime' , 'feed_lifetime_cb' );
+        
 
+if ( ! isset( $content_width ) )   $content_width = $defaultoptions['content-width'];
+require_once ( get_template_directory() . '/theme-options.php' );
 
 /** Tell WordPress to run twentyten_setup() when the 'after_setup_theme' hook is run. */
 add_action( 'after_setup_theme', 'piratenkleider_setup' );
@@ -284,9 +76,11 @@ function piratenkleider_setup() {
         define('HEADER_IMAGE_HEIGHT', $defaultoptions['logo-height'] ); // choose any number you like here         
         define('NO_HEADER_TEXT', true );
     
-         add_custom_image_header('piratenkleider_header_style', 'piratenkleider_admin_header_style');
+        //add_custom_image_header('piratenkleider_header_style', 'piratenkleider_admin_header_style');
         
         /* Folgendes erst ab WP 3.4:
+         * Ich warte aber noch etwas ab, da einige Leute noch 3.3 einsetzen
+         * */
             $args = array(
             'width'         => 279,
               'height'        => 88,
@@ -301,15 +95,15 @@ function piratenkleider_setup() {
                 
             );
             add_theme_support( 'custom-header', $args );
-             */
+             
         
         
         // Make theme available for translation
         // Translations can be filed in the /languages/ directory
-        load_theme_textdomain( 'piratenkleider', TEMPLATEPATH . '/languages' );
+        load_theme_textdomain( 'piratenkleider', get_template_directory() . '/languages' );
 
         $locale = get_locale();
-        $locale_file = TEMPLATEPATH . "/languages/$locale.php";
+        $locale_file = get_template_directory() . "/languages/$locale.php";
         if ( is_readable( $locale_file ) )
                 require_once( $locale_file );
 
@@ -320,7 +114,6 @@ function piratenkleider_setup() {
                 'sub' => __( 'Technische Navigation <br />&nbsp; (Kontakt, Impressunm, etc)', 'piratenkleider' ),
         ) );
 
-        set_post_thumbnail_size( $defaultoptions['thumb-width'], $defaultoptions['thumb-height'], true );
         
         /** Abschalten von Fehlermeldungen auf der Loginseite */      
         // add_filter('login_errors', create_function('$a', "return null;"));
@@ -331,7 +124,8 @@ function piratenkleider_setup() {
 }
 endif;
 
-add_filter( 'avatar_defaults', 'piratenkleider_avatar' );
+require( get_template_directory() . '/inc/widgets.php' );
+
 
 function piratenkleider_avatar ($avatar_defaults) {
     global $defaultoptions;
@@ -339,15 +133,11 @@ function piratenkleider_avatar ($avatar_defaults) {
     $avatar_defaults[$myavatar] = "Piratenkleider";
     return $avatar_defaults;
 }
-
+add_filter( 'avatar_defaults', 'piratenkleider_avatar' );
 
 if ( ! function_exists( 'piratenkleider_admin_header_style' ) ) :
 /**
  * Styles the header image displayed on the Appearance > Header admin panel.
- *
- * Referenced via add_custom_image_header() in twentyten_setup().
- *
- * @since Twenty Ten 1.0
  */
 function piratenkleider_admin_header_style() {
 ?>
@@ -363,7 +153,10 @@ function piratenkleider_admin_header_style() {
 }
 endif;
 
-
+if ( ! function_exists( 'piratenkleider_filter_wp_title' ) ) :   
+/*
+ * Sets the title
+ */
 function piratenkleider_filter_wp_title( $title, $separator ) {
         // Don't affect wp_title() calls in feeds.
         if ( is_feed() )
@@ -379,7 +172,7 @@ function piratenkleider_filter_wp_title( $title, $separator ) {
                 $title = sprintf( __( 'Suchergebnisse f&uuml;r %s', 'piratenkleider' ), '"' . get_search_query() . '"' );
                 // Add a page number if we're on page 2 or more:
                 if ( $paged >= 2 )
-                        $title .= " $separator " . sprintf( __( 'Page %s', 'piratenkleider' ), $paged );
+                        $title .= " $separator " . sprintf( __( 'Seite %s', 'piratenkleider' ), $paged );
                 // Add the site name to the end:
                 $title .= " $separator " . get_bloginfo( 'name', 'display' );
                 // We're done. Let's send the new title back to wp_title():
@@ -396,11 +189,12 @@ function piratenkleider_filter_wp_title( $title, $separator ) {
 
         // Add a page number if necessary:
         if ( $paged >= 2 || $page >= 2 )
-                $title .= " $separator " . sprintf( __( 'Page %s', 'piratenkleider' ), max( $paged, $page ) );
+                $title .= " $separator " . sprintf( __( 'Seite %s', 'piratenkleider' ), max( $paged, $page ) );
 
         // Return the new title to wp_title():
         return $title;
 }
+endif;
 add_filter( 'wp_title', 'piratenkleider_filter_wp_title', 10, 2 );
 
 
@@ -435,18 +229,16 @@ function piratenkleider_remove_gallery_css( $css ) {
 add_filter( 'gallery_style', 'piratenkleider_remove_gallery_css' );
 
 
-
+function honor_ssl_for_attachments($url) {
+	$http = site_url(FALSE, 'http');
+	$https = site_url(FALSE, 'https');
+        return is_ssl() ? str_replace($http, $https, $url) : $url;
+}
+add_filter('wp_get_attachment_url', 'honor_ssl_for_attachments');
 
 if ( ! function_exists( 'piratenkleider_comment' ) ) :
 /**
  * Template for comments and pingbacks.
- *
- * To override this walker in a child theme without modifying the comments template
- * simply create your own twentyten_comment(), and that function will be used instead.
- *
- * Used as a callback by wp_list_comments() for displaying the comments.
- *
- * @since Twenty Ten 1.0
  */
 function piratenkleider_comment( $comment, $args, $depth ) {
         $GLOBALS['comment'] = $comment;
@@ -511,122 +303,6 @@ function piratenkleider_comment( $comment, $args, $depth ) {
 endif;
 
 
-function piratenkleider_widgets_init() {
-
-       // Sidebar
-        register_sidebar( array(
-                'name' => __( 'Sidebar (Rechte Spalte)', 'piratenkleider' ),
-                'id' => 'sidebar-widget-area',
-                'description' => __( 'Dieser Bereich befindet sich rechts vom Inhaltsbereich. 
-                    Er ist geeignet f&uuml;r Werbeplakate, Hinweise und &auml;hnliches.
-                    Wenn leer, werden als Alternative einige der allgemeinen Standardplakate 
-                    gezeigt.', 'piratenkleider' ),
-                'before_widget' => '<div class="widget">',
-                'after_widget' => '</div>',
-                'before_title' => '<h2>',
-                'after_title' => '</h2>',
-        ) );
-       // Sidebar2
-        register_sidebar( array(
-                'name' => __( 'Sidebar 2 (Rechts unter Plakaten)', 'piratenkleider' ),
-                'id' => 'sidebar-widget-area-afterplakate',
-                'description' => __( 'Dieser Bereich befindet sich rechts vom Inhaltsbereich.
-                    Er ist nach den Werbeplakaten positioniert, die &uuml;ber die 
-                    Optionen ein- oder abgeschaltet werden k&ouml;nnen.', 'piratenkleider' ),
-                'before_widget' => '<div class="widget">',
-                'after_widget' => '</div>',
-                'before_title' => '<h2>',
-                'after_title' => '</h2>',
-        ) );
-
-        // Sliderbereich
-        register_sidebar( array(
-                'name' => __( 'Startseite: Sliderbereich', 'piratenkleider' ),
-                'id' => 'first-teaser-widget-area',
-                'description' => __( 'Bereich oberhalb der 3 Artikelbilder.
-                    Wenn leer, erscheinen hier wechselnden Bilder 
-                    und Verlinkung mit Artikeln der Kategorie "Slider". 
-                    Angezeigt werden die Artikelbilder.', 'piratenkleider' ),
-                'before_widget' => '<div class="widget">',
-                'after_widget' => '</div>',
-                'before_title' => '<h3 class="widget-title">',
-                'after_title' => '</h3>',
-        ) );
-
-        // Rechter Aktionlinkbereich, neben Slider
-        register_sidebar( array(
-                'name' => __( 'Startseite: Rechter Aktionlinkbereich', 'piratenkleider' ),
-                'id' => 'second-teaser-widget-area',
-                'description' => __( 'Dieser Bereich ist rechts neben den Slider
-                    und dem Hauptcontent positioniert. Wenn leer, werden hier
-                    die 3 Links zur Piratenwebsite gezeigt zum Mitmachen
-                    oder Spenden', 'piratenkleider' ),
-                'before_widget' => '<div class="widget">',
-                'after_widget' => '</div>',
-                'before_title' => '<h3 class="widget-title">',
-                'after_title' => '</h3>',
-        ) );
-
-        
-
-        // Startseite: Links unterhalb der 3 Artikel, per default Anzeige
-        // der weiteren Artikel 
-        register_sidebar( array(
-                'name' => __( 'Startseite: Links unten', 'piratenkleider' ),
-                'id' => 'first-startpage-widget-area',
-                'description' => __( 'Bereich links unterhalb der 3 Presseartikel. 
-                        Wenn leer, werden hier weitere Artikel aus
-                        der Kategorie "pm" gezeigt. ', 'piratenkleider' ),
-                'before_widget' => '<div class="widget">',
-                'after_widget' => '</div>',
-                'before_title' => '<h3>',
-                'after_title' => '</h3>',
-        ) );
-        // Startseite: Rechts  unterhalb der 3 Artikel, per default Anzeige
-        //  der Schlagwortliste
-        register_sidebar( array(
-                'name' => __( 'Startseite: Rechts unten', 'piratenkleider' ),
-                'id' => 'second-startpage-widget-area',
-                'description' => __( 'Bereich rechts unterhalb der drei Presseartikel.
-                         Wenn leer, wird hier eine Schlagwortliste 
-                         gezeigt.', 'piratenkleider' ),
-                'before_widget' => '<div class="widget">',
-                'after_widget' => '</div>',
-                'before_title' => '<h3 class="widget-title">',
-                'after_title' => '</h3>',
-        ) );
-
-        // Linke Seite der Fu&szlig;zeile
-        register_sidebar( array(
-                'name' => __( 'Fu&szlig;bereich: Linke Seite', 'piratenkleider' ),
-                'id' => 'first-footer-widget-area',
-                'description' => __( 'Bereich im Fu&szlig;teil unter dem Haupttextbereich.
-                   Dieser Bereich eignet sich insbesondere f&uuml;r externe Links zu
-                   anderen Piratenwebsites auf regionaler oder &uuml;beregionaler Ebene.
-                   Diese werden dann als Menu mit externen Links definiert und
-                   dann als Widget dieser Sidebar zugeordnet.
-                   Wenn leer, wird hier nichts angezeigt.', 'piratenkleider' ),
-                'before_widget' => '<div class="widget">',
-                'after_widget' => '</div>',
-                'before_title' => '<h2>',
-                'after_title' => '</h2>',
-        ) );
-
-        // Rechte Seite der Fu&szlig;zeile
-        register_sidebar( array(
-                'name' => __( 'Fu&szlig;bereich: Rechte Spalte', 'piratenkleider' ),
-                'id' => 'second-footer-widget-area',
-                'description' => __( 'Rechte Spalte im Fu&szlig;bereich. Wenn leer, erscheint hier das
-                    technische Menu (siehe Men&uuml;s). Wenn auch dieses nicht definiert ist, wird 
-                    die Blogadresse und dessen RSS-Feedadresse gezeigt', 'piratenkleider' ),
-                'before_widget' => '<div class="widget">',
-                'after_widget' => '</div>',
-                'before_title' => '<h2>',
-                'after_title' => '</h2>',
-        ) );
-
-}
-add_action( 'widgets_init', 'piratenkleider_widgets_init' );
 
 
 function piratenkleider_remove_recent_comments_style() {
@@ -649,6 +325,7 @@ function piratenkleider_post_pubdateinfo() {
         );
 }
 endif;
+
 if ( ! function_exists( 'piratenkleider_post_autorinfo' ) ) :
 /**
  * Fusszeile unter Artikeln: Autorinfo
@@ -692,11 +369,7 @@ endif;
 add_theme_support( 'post-thumbnails' );
 
 
-/**
- * Replaces items with '-' as title with li class="menu_separator"
- *
- * @author Thomas Scholz (toscho)
- */
+
 class My_Walker_Nav_Menu extends Walker_Nav_Menu
 {
     /**
@@ -708,16 +381,13 @@ class My_Walker_Nav_Menu extends Walker_Nav_Menu
      * @param  array $args    Additional strings.
      * @return void
      */
-    public function start_el( &$output, $item, $depth, $args )
-    {
+    public function start_el( &$output, $item, $depth, $args ) {
         if ( '-' === $item->title )
         {
             // you may remove the <hr> here and use plain CSS.
             $output .= '<li class="menu_separator"><hr>';
-        }
-        else
-        {
-            parent::start_el( &$output, $item, $depth, $args );
+        } else{
+            parent::start_el( $output, $item, $depth, $args );
         }
     }
     /* Klasse has_children einfuegen */
@@ -731,6 +401,54 @@ class My_Walker_Nav_Menu extends Walker_Nav_Menu
   }
 }
 
+if ( ! function_exists( 'get_piratenkleider_socialmediaicons' ) ) :
+/**
+     * Displays Social Media Icons
+     */
+function get_piratenkleider_socialmediaicons( $darstellung = 1 ){
+    $options = get_option( 'piratenkleider_theme_options' ); 
+    $zeigeoption = $options['alle-socialmediabuttons'];
+    
+    if ($darstellung ==0) {
+        /* Keine Links */
+        return; 
+    }
+   if ($darstellung!=$zeigeoption) {
+        /* Nichts anzeigen, da wir im falschen Modus sind */
+       return;
+   }
+    if ($zeigeoption==2) {    
+           /* Links an der Seite */
+            echo '<div id="socialmedia_iconbar">';
+    }
+
+    echo '<ul class="socialmedia">';       
+    if ( $options['social_facebook'] != "" ){ echo '<li class="facebook"><a href="'.$options['social_facebook'].'" target="blank"><img src="'.get_template_directory_uri().'/images/social-media/facebook-24x24.png" width="24" height="24" alt="Facebook"></a></li>'; }
+    if ( $options['social_twitter'] != "" ){  echo '<li class="twitter"><a href="'.$options['social_twitter'].'" target="blank"><img src="'.get_template_directory_uri().'/images/social-media/twitter-24x24.png" width="24" height="24" alt="Twitter"></a></li>'; }				
+    if ( $options['social_gplus'] != "" ){  echo '<li class="gplus"><a href="'.$options['social_gplus'].'" target="blank"><img src="'.get_template_directory_uri().'/images/social-media/gplus-24x24.png" width="24" height="24" alt="Google+"></a></li>'; }
+    if ( $options['social_diaspora'] != "" ){  echo '<li class="diaspora"><a href="'.$options['social_diaspora'].'" target="blank"><img src="'.get_template_directory_uri().'/images/social-media/diaspora-24x24.png" width="24" height="24" alt="Diaspora"></a></li>'; }
+    if ( $options['social_identica'] != "" ){  echo '<li class="identica"><a href="'.$options['social_identica'].'" target="blank"><img src="'.get_template_directory_uri().'/images/social-media/identica-24x24.png" width="24" height="24" alt="identi.ca"></a></li>'; }															
+    if ( $options['social_youtube'] != "" ){  echo '<li class="youtube"><a href="'.$options['social_youtube'].'" target="blank"><img src="'.get_template_directory_uri().'/images/social-media/youtube-24x24.png" width="24" height="24" alt="YouTube"></a></li>'; }
+    if ( $options['social_itunes'] != "" ){  echo '<li class="itunes"><a href="'.$options['social_itunes'].'" target="blank"><img src="'.get_template_directory_uri().'/images/social-media/itunes-24x24.png" width="24" height="24" alt="iTunes"></a></li>'; }
+    if ( $options['social_flickr'] != "" ){  echo '<li class="flickr"><a href="'.$options['social_flickr'].'" target="blank"><img src="'.get_template_directory_uri().'/images/social-media/flickr-24x24.png" width="24" height="24" alt="flickr"></a></li>'; }	
+    if ( $options['social_delicious'] != "" ){  echo '<li class="delicious"><a href="'.$options['social_delicious'].'" target="blank"><img src="'.get_template_directory_uri().'/images/social-media/delicious-24x24.png" width="24" height="24" alt="Delicious"></a></li>'; }
+    if ( $options['social_flattr'] != "" ){  echo '<li class="flattr"><a href="'.$options['social_flattr'].'" target="blank"><img src="'.get_template_directory_uri().'/images/social-media/flattr-24x24.png" width="24" height="24" alt="Flattr"></a></li>'; }
+    if ( $options['social_feed'] != "" ){  echo '<li class="feed"><a href="'.$options['social_feed'].'" target="blank"><img src="'.get_template_directory_uri().'/images/social-media/feed-24x24.png" width="24" height="24" alt="RSS/Atom-Feed"></a></li>'; }
+    echo '</ul>';
+       
+        
+    if ($zeigeoption==2) {    
+           /* Links an der Seite */
+            echo '</div>';
+    }
+}
+endif;
+
+
+if ( ! function_exists( 'get_piratenkleider_seitenmenu' ) ) :
+/*
+ * Anzeige des Sidebar-Menus
+ */
 function get_piratenkleider_seitenmenu( $zeige_sidebarpagemenu = 1 , $zeige_subpagesonly =1 ){
   global $defaultoptions;
   global $post;
@@ -770,8 +488,13 @@ function get_piratenkleider_seitenmenu( $zeige_sidebarpagemenu = 1 , $zeige_subp
     }
   
 }
+endif;
 
 
+if ( ! function_exists( 'get_piratenkleider_custom_excerpt' ) ) :
+/*
+ * Erstellen des Extracts
+ */
 function get_piratenkleider_custom_excerpt( ){
   global $defaultoptions;
   global $post;
@@ -782,18 +505,18 @@ function get_piratenkleider_custom_excerpt( ){
   } else {
       $excerpt = get_the_content();
        if (!isset($excerpt)) {
-          $excerpt = 'Kein Inhalt';
+          $excerpt = 'Sem conte&uacute;do';
         }
   }
   
   $excerpt = strip_shortcodes($excerpt);
   $excerpt = strip_tags($excerpt); 
-  if (strlen($excerpt)<5) {
-      $excerpt = 'Kein Inhalt';
+  if (mb_strlen($excerpt)<5) {
+      $excerpt = 'Sem conte&uacute;do';
   }
 // $excerpt =  closetags(strip_html_tags( $excerpt ));
-  if (strlen($excerpt) >  $defaultoptions['teaser_maxlength']) {
-    $the_str = substr($excerpt, 0, $defaultoptions['teaser_maxlength']);
+  if (mb_strlen($excerpt) >  $defaultoptions['teaser_maxlength']) {
+    $the_str = mb_substr($excerpt, 0, $defaultoptions['teaser_maxlength']);
     $the_str .= "...";
   }  else {
       $the_str = $excerpt;
@@ -801,36 +524,96 @@ function get_piratenkleider_custom_excerpt( ){
   $the_str .= piratenkleider_continue_reading_link();
   return $the_str;
 }
+endif;
 
-
-
-function short_title($after = '...', $length = 6, $textlen = 60) {
-   $mytitle = explode(' ', get_the_title(), $length);
-   if (count($mytitle)>=$length) {
-       array_pop($mytitle);
-       $morewords = 1;
+if ( ! function_exists( 'short_title' ) ) :
+/*
+ * Erstellen des Kurztitels
+ */
+function short_title($after = '...', $length = 6, $textlen = 10) {
+   $thistitle =   get_the_title();  
+   $mytitle = explode(' ', get_the_title());
+   if ((count($mytitle)>$length) || (mb_strlen($thistitle)> $textlen)) {
+       while(((count($mytitle)>$length) || (mb_strlen($thistitle)> $textlen)) && (count($mytitle)>1)) {
+           array_pop($mytitle);
+           $thistitle = implode(" ",$mytitle);           
+       }       
+      $morewords = 1;
    } else {       
        $morewords = 0;
    }
-   $mytitle = implode(" ",$mytitle);
-   if (strlen($mytitle)> $textlen) {
-       $mytitle = substr($mytitle, 0, $textlen);
-       $mytitle .= $after;
-   } elseif ($morewords==1) {
-       $mytitle .= $after;
+   if (mb_strlen($thistitle)> $textlen) {
+      $thistitle = mb_substr($thistitle, 0, $textlen);
+      $morewords = 1;     
+   }
+   if ($morewords==1) {
+       $thistitle .= $after;
    }   
-   return $mytitle;
+   return $thistitle;
 }
+endif;
 
-function wpi_linkexternclass($content)
-    {
+if ( ! function_exists( 'piratenkleider_fetch_feed' ) ) :
+/*
+ * Feet holen mit direkter Angabe der SimplePie-Parameter
+ */
+function piratenkleider_fetch_feed($url,$lifetime=0) {
+    global $defaultoptions;
+    $options = get_option( 'piratenkleider_theme_options' );
+    
+ 
+    if (!isset($options['feed_cache_lifetime'])) 
+                $options['feed_cache_lifetime'] = $defaultoptions['feed_cache_lifetime'];
+
+    if ($lifetime==0){
+        $lifetime=  $options['feed_cache_lifetime'];
+    }
+    if ($lifetime < 600) $lifetime = 1800;
+    // Das holen von feeds sollte auf keinen Fall haeufiger als alle 10 Minuten erfolgen
+
+    require_once  (ABSPATH . WPINC . '/class-feed.php');
+
+    $feed = new SimplePie();
+    if ($defaultoptions['use_wp_feed_defaults']) {
+        $feed->set_cache_class('WP_Feed_Cache');
+        $feed->set_file_class('WP_SimplePie_File');
+    } else {
+        if ((isset($defaultoptions['dir_feed_cache'])) && (!empty($defaultoptions['dir_feed_cache']))) {
+            if (is_dir($defaultoptions['dir_feed_cache'])) { 
+                $feed->set_cache_location($defaultoptions['dir_feed_cache']);
+            } else {
+                mkdir($defaultoptions['dir_feed_cache']);
+                if (!is_dir($defaultoptions['dir_feed_cache'])) {
+                    echo "Wasnt able to create Feed-Cache directory";
+                } else {
+                    $feed->set_cache_location($defaultoptions['dir_feed_cache']);
+                }
+            }
+        }  
+    }
+    $feed->set_feed_url($url);
+    $feed->set_cache_duration($lifetime);
+    
+    do_action_ref_array( 'wp_feed_options', array( &$feed, $url ) );
+    $feed->init();
+    $feed->handle_content_type();
+
+    if ( $feed->error() )
+        return new WP_Error('simplepie-error', $feed->error());
+
+    return $feed;
+}
+endif;
+
+
+function wpi_linkexternclass($content) {
         return preg_replace_callback('/<a[^>]+/', 'wpi_linkexternclass_callback', $content);
     }
  
 function wpi_linkexternclass_callback($matches)
     {
         $link = $matches[0];
-        $site_link = get_bloginfo('url');
+        $site_link = home_url();  
  
             if (strpos($link, 'class') === false)
             {
@@ -841,8 +624,47 @@ function wpi_linkexternclass_callback($matches)
 add_filter('the_content', 'wpi_linkexternclass');
 
 
+add_action( 'template_redirect', 'rw_relative_urls' );
+    function rw_relative_urls() {
+        // Don't do anything if:
+        // - In feed
+        // - In sitemap by WordPress SEO plugin
+        if ( is_feed() || get_query_var( 'sitemap' ) )
+        return;
+        $filters = array(
+            'post_link',
+            'post_type_link',
+            'page_link',
+            'attachment_link',
+            'get_shortlink',
+            'post_type_archive_link',
+            'get_pagenum_link',
+            'get_comments_pagenum_link',
+            'term_link',
+            'search_link',
+            'day_link',
+            'month_link',
+            'year_link',
+        );
+        foreach ( $filters as $filter ) {
+         add_filter( $filter, 'wp_make_link_relative' );
+        }
+    }
 
+ function wpi_relativeurl($content){
+        return preg_replace_callback('/<a[^>]+/', 'wpi_relativeurl_callback', $content);
+    }
+ 
+function wpi_relativeurl_callback($matches) {
 
+        $link = $matches[0];
+        $site_link =  home_url();  
+        $link = preg_replace("%href=\"$site_link%i", 'href="', $link); 
+                
+        return $link;
+    }
+add_filter('the_content', 'wpi_relativeurl');
+   
 
 function dimox_breadcrumbs() {
   global $defaultoptions;
@@ -940,7 +762,6 @@ function dimox_breadcrumbs() {
     }
  */
     echo '</div>';
- 
   }
 }
 
@@ -948,33 +769,349 @@ function dimox_breadcrumbs() {
 
  
 if( !is_admin()){
-
         wp_deregister_script('jquery');
-        wp_register_script('jquery', $defaultoptions['src-jquery'] , false);
+        // muss trotz ThemeCheck Warnung drin bleiben, ansonsten wird veraltetes jQuery geladen
+       // und der Slider und anderes mag dann nicht mehr
+       wp_register_script('jquery', $defaultoptions['src-jquery'] , false, "1.7.2");
         wp_enqueue_script('jquery');
 
-        wp_register_script('layoutjs', $defaultoptions['src-layoutjs'] , false);
+       wp_register_script('layoutjs', $defaultoptions['src-layoutjs'] , false, $defaultoptions['js-version']);
         wp_enqueue_script('layoutjs');
-       wp_register_script('yaml-focusfix', $defaultoptions['src-yaml-focusfix'] , false);
+       wp_register_script('yaml-focusfix', $defaultoptions['src-yaml-focusfix'] , false, $defaultoptions['js-version']);
        wp_enqueue_script('yaml-focusfix');
        
-       /* Eigenes comment-reply, welches bei Focus zum Anfang des Formulars 
-        * springt und nicht in das Texteingabefeld, damit Tastaturbenutzer nicht 
-        * umständlich zurücktabben mussen
-        */
-
        wp_deregister_script('comment-reply');
        if (!isset($options['aktiv-commentreplylink'])) 
             $options['aktiv-commentreplylink'] = $defaultoptions['aktiv-commentreplylink'];
        if ($options['aktiv-commentreplylink']==1) {        
-            wp_register_script('comment-reply', $defaultoptions['src-comment-reply'] , false);
+            wp_register_script('comment-reply', $defaultoptions['src-comment-reply'] , false,  $defaultoptions['js-version']);
             wp_enqueue_script('comment-reply');
        }
+      if (!isset($options['aktiv-dynamic-sidebar'])) 
+          $options['aktiv-dynamic-sidebar'] = $defaultoptions['aktiv-dynamic-sidebar'];
+      
+       if ($options['aktiv-dynamic-sidebar']==1) {        
+            wp_register_script('dynamic-sidebar', $defaultoptions['src-dynamic-sidebar'] , false,  $defaultoptions['js-version']);
+            wp_enqueue_script('dynamic-sidebar');
+       }       
+       
+       
+       
+}
        
         
+function piratenkleider_admin_head() {
+    echo '<link rel="stylesheet" type="text/css" href="'.get_template_directory_uri().'/css/admin.css" />'; 
 }
+add_action('admin_head', 'piratenkleider_admin_head');
 
 function custom_login() { 
     echo '<link rel="stylesheet" type="text/css" href="'.get_template_directory_uri().'/css/custom-login.css" />'; 
 }
 add_action('login_head', 'custom_login');
+
+/**
+ * Functions of bbPress's Twenty Ten theme
+ *
+ * @package bbPress
+ * @subpackage BBP_Twenty_Ten
+ * @since Twenty Ten 1.1
+ */
+
+// Exit if accessed directly
+if ( !defined( 'ABSPATH' ) ) exit;
+
+/** Theme Setup ***************************************************************/
+
+if ( !class_exists( 'BBP_Twenty_Ten' ) ) :
+
+/**
+ * Loads bbPress Twenty Ten Theme functionality
+ *
+ * Usually functions.php contains a few functions wrapped in function_exisits()
+ * checks. Since bbp-twenty-ten is intended to be used both as a child theme and
+ * for Theme Compatibility, we've moved everything into one convenient class
+ * that can be copied or extended.
+ *
+ * See @link BBP_Theme_Compat() for more.
+ *
+ * @since bbPress (r3277)
+ * @package bbPress
+ * @subpackage BBP_Twenty_Ten
+ */
+class BBP_Twenty_Ten extends BBP_Theme_Compat {
+
+	/** Functions *************************************************************/
+
+	/**
+	 * The main bbPress (Twenty Ten) Loader
+	 *
+	 * @since bbPress (r3277)
+	 * @uses BBP_Twenty_Ten::setup_globals()
+	 * @uses BBP_Twenty_Ten::setup_actions()
+	 */
+	public function __construct() {
+		$this->setup_globals();
+		$this->setup_actions();
+	}
+
+	/**
+	 * Component global variables
+	 *
+	 * @since bbPress (r2626)
+	 * @access private
+	 * @uses bbp_get_version() To get the bbPress version
+	 * @uses get_stylesheet_directory() To get the stylesheet path
+	 * @uses get_stylesheet_directory_uri() To get the stylesheet uri
+	 */
+	private function setup_globals() {
+		$bbp           = bbpress();
+		$this->id      = 'bbp-twentyten';
+		$this->name    = __( 'Twenty Ten (bbPress)', 'bbpress' ) ;
+		$this->version = bbp_get_version();
+		$this->dir     = trailingslashit( $bbp->themes_dir . 'bbp-twentyten' );
+		$this->url     = trailingslashit( $bbp->themes_url . 'bbp-twentyten' );
+	}
+
+	/**
+	 * Setup the theme hooks
+	 *
+	 * @since bbPress (r3277)
+	 * @access private
+	 * @uses add_filter() To add various filters
+	 * @uses add_action() To add various actions
+	 */
+	private function setup_actions() {
+		add_action( 'bbp_enqueue_scripts',      array( $this, 'enqueue_styles'        ) ); // Enqueue theme CSS
+		add_action( 'bbp_enqueue_scripts',      array( $this, 'enqueue_scripts'       ) ); // Enqueue theme JS
+		add_filter( 'bbp_enqueue_scripts',      array( $this, 'localize_topic_script' ) ); // Enqueue theme script localization
+		add_action( 'bbp_head',                 array( $this, 'head_scripts'          ) ); // Output some extra JS in the <head>
+		add_action( 'wp_ajax_dim-favorite',     array( $this, 'ajax_favorite'         ) ); // Handles the ajax favorite/unfavorite
+		add_action( 'wp_ajax_dim-subscription', array( $this, 'ajax_subscription'     ) ); // Handles the ajax subscribe/unsubscribe
+	}
+
+	/**
+	 * Load the theme CSS
+	 *
+	 * @since bbPress (r2652)
+	 * @uses wp_enqueue_style() To enqueue the styles
+	 */
+	public function enqueue_styles() {
+
+		// Right to left
+		if ( is_rtl() ) {
+
+			// TwentyTen
+			if ( 'twentyten' == get_template() ) {
+				wp_enqueue_style( 'twentyten',     get_template_directory_uri() . '/style.css', '',          $this->version, 'screen' );
+				wp_enqueue_style( 'twentyten-rtl', get_template_directory_uri() . '/rtl.css',   'twentyten', $this->version, 'screen' );
+			}
+
+			// bbPress specific
+			wp_enqueue_style( 'bbp-twentyten-bbpress', $this->url . 'css/bbpress-rtl.css', 'twentyten-rtl', $this->version, 'screen' );
+
+		// Left to right
+		} else {
+
+			// TwentyTen
+			if ( 'twentyten' == get_template() ) {
+				wp_enqueue_style( 'twentyten',     get_template_directory_uri() . '/style.css', '',          $this->version, 'screen' );
+			}
+
+			// bbPress specific
+			wp_enqueue_style( 'bbp-twentyten-bbpress', $this->url . 'css/bbpress.css', 'twentyten', $this->version, 'screen' );
+		}
+	}
+
+	/**
+	 * Enqueue the required Javascript files
+	 *
+	 * @since bbPress (r2652)
+	 * @uses bbp_is_single_topic() To check if it's the topic page
+	 * @uses get_stylesheet_directory_uri() To get the stylesheet directory uri
+	 * @uses bbp_is_single_user_edit() To check if it's the profile edit page
+	 * @uses wp_enqueue_script() To enqueue the scripts
+	 */
+	public function enqueue_scripts() {
+
+		if ( bbp_is_single_topic() )
+			wp_enqueue_script( 'bbp_topic', $this->url . 'js/topic.js', array( 'wp-lists' ), $this->version, true );
+
+		if ( bbp_is_single_user_edit() )
+			wp_enqueue_script( 'user-profile' );
+	}
+
+	/**
+	 * Put some scripts in the header, like AJAX url for wp-lists
+	 *
+	 * @since bbPress (r2652)
+	 * @uses bbp_is_single_topic() To check if it's the topic page
+	 * @uses admin_url() To get the admin url
+	 * @uses bbp_is_single_user_edit() To check if it's the profile edit page
+	 */
+	public function head_scripts() {
+		if ( bbp_is_single_topic() ) : ?>
+
+		<script type='text/javascript'>
+			/* <![CDATA[ */
+			var ajaxurl = '<?php echo admin_url( 'admin-ajax.php' ); ?>';
+			/* ]]> */
+		</script>
+
+		<?php elseif ( bbp_is_single_user_edit() ) : ?>
+
+		<script type="text/javascript" charset="utf-8">
+			if ( window.location.hash == '#password' ) {
+				document.getElementById('pass1').focus();
+			}
+		</script>
+
+		<?php
+		endif;
+	}
+
+	/**
+	 * Load localizations for topic script
+	 *
+	 * These localizations require information that may not be loaded even by init.
+	 *
+	 * @since bbPress (r2652)
+	 * @uses bbp_is_single_topic() To check if it's the topic page
+	 * @uses is_user_logged_in() To check if user is logged in
+	 * @uses bbp_get_current_user_id() To get the current user id
+	 * @uses bbp_get_topic_id() To get the topic id
+	 * @uses bbp_get_favorites_permalink() To get the favorites permalink
+	 * @uses bbp_is_user_favorite() To check if the topic is in user's favorites
+	 * @uses bbp_is_subscriptions_active() To check if the subscriptions are active
+	 * @uses bbp_is_user_subscribed() To check if the user is subscribed to topic
+	 * @uses bbp_get_topic_permalink() To get the topic permalink
+	 * @uses wp_localize_script() To localize the script
+	 */
+	public function localize_topic_script() {
+
+		// Bail if not viewing a single topic
+		if ( !bbp_is_single_topic() )
+			return;
+
+		// Bail if user is not logged in
+		if ( !is_user_logged_in() )
+			return;
+
+		$user_id = bbp_get_current_user_id();
+
+		$localizations = array(
+			'currentUserId' => $user_id,
+			'topicId'       => bbp_get_topic_id(),
+		);
+
+		// Favorites
+		if ( bbp_is_favorites_active() ) {
+			$localizations['favoritesActive'] = 1;
+			$localizations['favoritesLink']   = bbp_get_favorites_permalink( $user_id );
+			$localizations['isFav']           = (int) bbp_is_user_favorite( $user_id );
+			$localizations['favLinkYes']      = __( 'favorites',                                         'bbpress' );
+			$localizations['favLinkNo']       = __( '?',                                                 'bbpress' );
+			$localizations['favYes']          = __( 'This topic is one of your %favLinkYes% [%favDel%]', 'bbpress' );
+			$localizations['favNo']           = __( '%favAdd% (%favLinkNo%)',                            'bbpress' );
+			$localizations['favDel']          = __( '&times;',                                           'bbpress' );
+			$localizations['favAdd']          = __( 'Add this topic to your favorites',                  'bbpress' );
+		} else {
+			$localizations['favoritesActive'] = 0;
+		}
+
+		// Subscriptions
+		if ( bbp_is_subscriptions_active() ) {
+			$localizations['subsActive']   = 1;
+			$localizations['isSubscribed'] = (int) bbp_is_user_subscribed( $user_id );
+			$localizations['subsSub']      = __( 'Subscribe',   'bbpress' );
+			$localizations['subsUns']      = __( 'Unsubscribe', 'bbpress' );
+			$localizations['subsLink']     = bbp_get_topic_permalink();
+		} else {
+			$localizations['subsActive'] = 0;
+		}
+
+		wp_localize_script( 'bbp_topic', 'bbpTopicJS', $localizations );
+	}
+
+	/**
+	 * Add or remove a topic from a user's favorites
+	 *
+	 * @since bbPress (r2652)
+	 * @uses bbp_get_current_user_id() To get the current user id
+	 * @uses current_user_can() To check if the current user can edit the user
+	 * @uses bbp_get_topic() To get the topic
+	 * @uses check_ajax_referer() To verify the nonce & check the referer
+	 * @uses bbp_is_user_favorite() To check if the topic is user's favorite
+	 * @uses bbp_remove_user_favorite() To remove the topic from user's favorites
+	 * @uses bbp_add_user_favorite() To add the topic from user's favorites
+	 */
+	public function ajax_favorite() {
+		$user_id = bbp_get_current_user_id();
+		$id      = intval( $_POST['id'] );
+
+		if ( !current_user_can( 'edit_user', $user_id ) )
+			die( '-1' );
+
+		if ( !$topic = bbp_get_topic( $id ) )
+			die( '0' );
+
+		check_ajax_referer( 'toggle-favorite_' . $topic->ID );
+
+		if ( bbp_is_user_favorite( $user_id, $topic->ID ) ) {
+			if ( bbp_remove_user_favorite( $user_id, $topic->ID ) ) {
+				die( '1' );
+			}
+		} else {
+			if ( bbp_add_user_favorite( $user_id, $topic->ID ) ) {
+				die( '1' );
+			}
+		}
+
+		die( '0' );
+	}
+
+	/**
+	 * Subscribe/Unsubscribe a user from a topic
+	 *
+	 * @since bbPress (r2668)
+	 * @uses bbp_is_subscriptions_active() To check if the subscriptions are active
+	 * @uses bbp_get_current_user_id() To get the current user id
+	 * @uses current_user_can() To check if the current user can edit the user
+	 * @uses bbp_get_topic() To get the topic
+	 * @uses check_ajax_referer() To verify the nonce & check the referer
+	 * @uses bbp_is_user_subscribed() To check if the topic is in user's
+	 *                                 subscriptions
+	 * @uses bbp_remove_user_subscriptions() To remove the topic from user's
+	 *                                        subscriptions
+	 * @uses bbp_add_user_subscriptions() To add the topic from user's subscriptions
+	 */
+	public function ajax_subscription() {
+		if ( !bbp_is_subscriptions_active() )
+			return;
+
+		$user_id = bbp_get_current_user_id();
+		$id      = intval( $_POST['id'] );
+
+		if ( !current_user_can( 'edit_user', $user_id ) )
+			die( '-1' );
+
+		if ( !$topic = bbp_get_topic( $id ) )
+			die( '0' );
+
+		check_ajax_referer( 'toggle-subscription_' . $topic->ID );
+
+		if ( bbp_is_user_subscribed( $user_id, $topic->ID ) ) {
+			if ( bbp_remove_user_subscription( $user_id, $topic->ID ) ) {
+				die( '1' );
+			}
+		} else {
+			if ( bbp_add_user_subscription( $user_id, $topic->ID ) ) {
+				die( '1' );
+			}
+		}
+
+		die( '0' );
+	}
+}
+new BBP_Twenty_Ten();
+endif;

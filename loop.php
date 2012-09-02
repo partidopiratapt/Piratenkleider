@@ -55,12 +55,12 @@
                         <?php if ( is_archive() || is_search() ) : // Display excerpts for archives and search. ?>
                                 <?php the_excerpt(); ?>
                         <?php else : ?>
-                                <?php the_content( __( 'Ler mais', 'piratenkleider' ) ); ?>
+                                <?php the_content( __( 'Weiterlesen', 'piratenkleider' ) ); ?>
                         <?php endif; ?>
 
                                         <?php piratenkleider_post_pubdateinfo(); ?>
                                         |
-                                        <?php comments_popup_link( __( 'Hinterlasse einen Kommentar', 'piratenkleider' ), __( '1 Comment', 'Kommentar' ), __( '% Kommentare', 'piratenkleider' ) ); ?>
+                                        <?php comments_popup_link( __( 'Hinterlasse einen Kommentar', 'piratenkleider' ), __( 'Ein Kommentar', 'piratenkleider' ), __( '% Kommentare', 'piratenkleider' ) ); ?>
                                         <?php edit_post_link( __( 'Bearbeiten', 'piratenkleider' ), '| ', '' ); ?>
 
                 <?php /* How to display all other posts. */ ?>
@@ -72,7 +72,7 @@
                 <?php if ( is_archive() || is_search() ) : // Only display excerpts for archives and search. ?>
                                 <?php the_excerpt(); ?>
                 <?php else : ?>
-                                <?php the_content( __( 'Ler mais', 'piratenkleider' ) ); ?>
+                                <?php the_content( __( 'Weiterlesen', 'piratenkleider' ) ); ?>
                                 <?php wp_link_pages( array( 'before' => '' . __( 'Seiten:', 'piratenkleider' ), 'after' => '' ) ); ?>
                 <?php endif; ?>
 
@@ -100,6 +100,6 @@
 
                 <?php /* Display navigation to next/previous pages when applicable */ ?>
                 <?php if (  $wp_query->max_num_pages > 1 ) : ?>
-                                        <?php next_posts_link( __( '&larr; &Auml;ltere Beitr&auml;ge', 'piratenkleider' ) ); ?>
-                                        <?php previous_posts_link( __( 'Neuere Beitr&auml;ge &rarr;', 'piratenkleider' ) ); ?>
+                            <?php next_posts_link( __( '&larr; &Auml;ltere Beitr&auml;ge', 'piratenkleider' ) ); ?>
+                            <?php previous_posts_link( __( 'Neuere Beitr&auml;ge &rarr;', 'piratenkleider' ) ); ?>
                 <?php endif; ?>

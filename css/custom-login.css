@@ -7,16 +7,21 @@
  
 */
 
+
+
+  
+
+
 body.login  {
     border-top-color:#dff4fc;
-    background: orange url(../images/int/bg-tags.png) 0 0;
+    background: #8F9F00 url("../images/int/bg-tags-pt.png") 0 0;
     padding-top: 20px;
  
 }	/* Top bar background color */
 
 #login {
    width: 500px;
-   background: black url(../images/login-wallpaper.jpg) no-repeat;
+   background: black url("../images/login-wallpaper.jpg") no-repeat;
    padding-top: 20px;
    
 }

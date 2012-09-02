@@ -20,17 +20,25 @@ if (!isset($options['aktiv-defaultseitenbild']))
            if ($options['aktiv-defaultseitenbild']==1) {   
                 $bilderoptions = get_option( 'piratenkleider_theme_defaultbilder' ); 
                 $defaultbildsrc = $bilderoptions['seiten-defaultbildsrc'];     
+ if (isset($defaultbildsrc) && (strlen($defaultbildsrc)>4)) {
                  echo '<div class="symbolbild">';
                  echo '<img src="'.$defaultbildsrc.'"  alt="">';                        
                  echo '</div>';  
            }            
         }   
+}
          ?>
       </div>
       <div class="skin">
         
         <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
         <?php the_content(); ?>
+          
+        <div class="post-comments" id="comments">
+          <?php comments_template( '', true ); ?>
+        </div>
+          
+          
         <?php wp_link_pages( array( 'before' => '' . __( 'Seiten:', 'piratenkleider' ), 'after' => '' ) ); ?>
         <?php edit_post_link( __( 'Bearbeiten', 'piratenkleider' ), '', '' ); ?>
         <?php endwhile; ?>
@@ -60,6 +68,8 @@ if (!isset($options['aktiv-defaultseitenbild']))
       </div>
     </div>
   </div>
+  <?php  get_piratenkleider_socialmediaicons(2); ?>
+
 </div>
 
 <?php get_footer(); ?>

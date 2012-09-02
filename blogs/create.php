@@ -1,46 +1,50 @@
-<?php
+<?php get_template_part('page-header') ?>
+<div class="content-header">            
+    <h1 id="page-title"><span><?php _e('Create a Site', 'buddypress'); ?></span></h1>
 
-/**
- * BuddyPress - Create Blog
- *
- * @package BuddyPress
- * @subpackage bp-default
- */
+    <?php
+    if (has_post_thumbnail()) {
+        echo '<div class="symbolbild">';
+        the_post_thumbnail();
+        echo '</div>';
+    } else {
+        if ($options['aktiv-defaultseitenbild'] == 1) {
+            $bilderoptions = get_option('piratenkleider_theme_defaultbilder');
+            $defaultbildsrc = $bilderoptions['seiten-defaultbildsrc'];
+            if (isset($defaultbildsrc) && (strlen($defaultbildsrc) > 4)) {
+                echo '<div class="symbolbild">';
+                echo '<img src="' . $defaultbildsrc . '"  alt="">';
+                echo '</div>';
+            }
+        }
+    }
+    ?>
+</div>
+<div class="skin">
 
-?>
+    <?php do_action('bp_before_create_blog_content_template'); ?>
 
-<?php get_header( 'buddypress' ); ?>
+    <?php do_action('template_notices'); ?>
 
-	<?php do_action( 'bp_before_directory_blogs_content' ); ?>
+    <h3>&nbsp;<a class="button" href="<?php echo trailingslashit(bp_get_root_domain() . '/' . bp_get_blogs_root_slug()); ?>"><?php _e('Site Directory', 'buddypress'); ?></a></h3>
 
-	<div id="content">
-		<div class="padder" role="main">
+    <?php do_action('bp_before_create_blog_content'); ?>
 
-		<?php do_action( 'template_notices' ); ?>
+    <?php if (bp_blog_signup_enabled()) : ?>
 
-			<h3><?php _e( 'Create a Site', 'buddypress' ); ?> &nbsp;<a class="button" href="<?php echo trailingslashit( bp_get_root_domain() . '/' . bp_get_blogs_root_slug() ) ?>"><?php _e( 'Site Directory', 'buddypress' ); ?></a></h3>
+        <?php bp_show_blog_signup_form(); ?>
 
-		<?php do_action( 'bp_before_create_blog_content' ); ?>
+    <?php else: ?>
 
-		<?php if ( bp_blog_signup_enabled() ) : ?>
+        <div id="message" class="info">
+            <p><?php _e('Site registration is currently disabled', 'buddypress'); ?></p>
+        </div>
 
-			<?php bp_show_blog_signup_form(); ?>
+    <?php endif; ?>
 
-		<?php else: ?>
+    <?php do_action('bp_after_create_blog_content'); ?>
 
-			<div id="message" class="info">
-				<p><?php _e( 'Site registration is currently disabled', 'buddypress' ); ?></p>
-			</div>
+    <?php do_action('bp_after_create_blog_content_template'); ?>
 
-		<?php endif; ?>
-
-		<?php do_action( 'bp_after_create_blog_content' ); ?>
-
-		</div><!-- .padder -->
-	</div><!-- #content -->
-
-	<?php do_action( 'bp_after_directory_blogs_content' ); ?>
-
-<?php get_sidebar( 'buddypress' ); ?>
-<?php get_footer( 'buddypress' ); ?>
-
+</div>
+<?php get_template_part('page-footer') ?>

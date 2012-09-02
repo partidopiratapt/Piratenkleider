@@ -275,6 +275,7 @@ der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.</
       </div>
     </div>
   </div>
+  <?php  get_piratenkleider_socialmediaicons(2); ?>
 </div>
 
 <?php get_footer(); ?>

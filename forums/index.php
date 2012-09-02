@@ -1,225 +1,162 @@
-<?php
-get_header();
-global $defaultoptions;
-$options = get_option('piratenkleider_theme_options');
-if (!isset($options['aktiv-defaultseitenbild']))
-    $options['aktiv-defaultseitenbild'] = $defaultoptions['aktiv-defaultseitenbild'];
-?>
+<?php get_template_part('page-header') ?>
+<div class="content-header">            
+    <h1 id="page-title"><span><?php _e('Forums Directory', 'buddypress'); ?></span></h1>
+    <?php
+    if (has_post_thumbnail()) {
+        echo '<div class="symbolbild">';
+        the_post_thumbnail();
+        echo '</div>';
+    } else {
+        if ($options['aktiv-defaultseitenbild'] == 1) {
+            $bilderoptions = get_option('piratenkleider_theme_defaultbilder');
+            $defaultbildsrc = $bilderoptions['seiten-defaultbildsrc'];
+            echo '<div class="symbolbild">';
+            echo '<img src="' . $defaultbildsrc . '"  alt="">';
+            echo '</div>';
+        }
+    }
+    ?>
+</div>
+<div class="skin">
 
-<?php do_action('bp_before_directory_forums_page'); ?>
-<div class="section content">
-    <div class="row">
-        <div class="content-primary">
-            <div id="content">
-                <div class="padder">
+    <?php do_action('bp_before_directory_forums'); ?>
 
-                    <?php do_action('bp_before_directory_forums'); ?>
-                    <h3><?php _e('Forums Directory', 'buddypress'); ?><?php if (is_user_logged_in()) : ?> &nbsp;<a class="button show-hide-new" href="#new-topic" id="new-topic-button"><?php _e('New Topic', 'buddypress'); ?></a><?php endif; ?></h3>
+    <form action="" method="post" id="forums-search-form" class="dir-form">
 
-                    <form action="" method="post" id="forums-search-form" class="dir-form">
+        <h3><?php if (is_user_logged_in()) : ?> &nbsp;<a class="button show-hide-new" href="#new-topic" id="new-topic-button"><?php _e('New Topic', 'buddypress'); ?></a><?php endif; ?></h3>
 
+        <?php do_action('bp_before_directory_forums_content'); ?>
 
-                        <?php do_action('bp_before_directory_forums_content'); ?>
+        <div id="forums-dir-search" class="dir-search" role="search">
 
-                        <div id="forums-dir-search" class="dir-search" role="search"><?php bp_directory_forums_search_form(); ?></div>
-                    </form>
+            <?php bp_directory_forums_search_form(); ?>
 
-                    <?php do_action('bp_before_topics'); ?>
+        </div>
+    </form>
 
-                    <form action="" method="post" id="forums-directory-form" class="dir-form">
+    <?php do_action('bp_before_topics'); ?>
 
-                        <div class="item-list-tabs" role="navigation">
-                            <ul>
-                                <li class="selected" id="forums-all"><a href="<?php echo trailingslashit(bp_get_root_domain() . '/' . bp_get_forums_root_slug()); ?>"><?php printf(__('All Topics <span>%s</span>', 'buddypress'), bp_get_forum_topic_count()); ?></a></li>
+    <form action="" method="post" id="forums-directory-form" class="dir-form">
 
-                                <?php if (is_user_logged_in() && bp_get_forum_topic_count_for_user(bp_loggedin_user_id())) : ?>
+        <div class="item-list-tabs" role="navigation">
+            <ul>
+                <li class="selected" id="forums-all"><a href="<?php echo trailingslashit(bp_get_root_domain() . '/' . bp_get_forums_root_slug()); ?>"><?php printf(__('All Topics <span>%s</span>', 'buddypress'), bp_get_forum_topic_count()); ?></a></li>
 
-                                    <li id="forums-personal"><a href="<?php echo trailingslashit(bp_loggedin_user_domain() . bp_get_forums_slug() . '/topics'); ?>"><?php printf(__('My Topics <span>%s</span>', 'buddypress'), bp_get_forum_topic_count_for_user(bp_loggedin_user_id())); ?></a></li>
+                <?php if (is_user_logged_in() && bp_get_forum_topic_count_for_user(bp_loggedin_user_id())) : ?>
 
-                                <?php endif; ?>
+                    <li id="forums-personal"><a href="<?php echo trailingslashit(bp_loggedin_user_domain() . bp_get_forums_slug() . '/topics'); ?>"><?php printf(__('My Topics <span>%s</span>', 'buddypress'), bp_get_forum_topic_count_for_user(bp_loggedin_user_id())); ?></a></li>
 
-                                <?php do_action('bp_forums_directory_group_types'); ?>
+                <?php endif; ?>
 
-                            </ul>
-                        </div>
+                <?php do_action('bp_forums_directory_group_types'); ?>
 
-                        <div class="item-list-tabs" id="subnav" role="navigation">
-                            <ul>
+            </ul>
+        </div>
 
-                                <?php do_action('bp_forums_directory_group_sub_types'); ?>
+        <div class="item-list-tabs" id="subnav" role="navigation">
+            <ul>
 
-                                <li id="forums-order-select" class="last filter">
+                <?php do_action('bp_forums_directory_group_sub_types'); ?>
 
-                                    <label for="forums-order-by"><?php _e('Order By:', 'buddypress'); ?></label>
-                                    <select id="forums-order-by">
-                                        <option value="active"><?php _e('Last Active', 'buddypress'); ?></option>
-                                        <option value="popular"><?php _e('Most Posts', 'buddypress'); ?></option>
-                                        <option value="unreplied"><?php _e('Unreplied', 'buddypress'); ?></option>
+                <li id="forums-order-select" class="last filter">
 
-                                        <?php do_action('bp_forums_directory_order_options'); ?>
+                    <label for="forums-order-by"><?php _e('Order By:', 'buddypress'); ?></label>
+                    <select id="forums-order-by">
+                        <option value="active"><?php _e('Last Active', 'buddypress'); ?></option>
+                        <option value="popular"><?php _e('Most Posts', 'buddypress'); ?></option>
+                        <option value="unreplied"><?php _e('Unreplied', 'buddypress'); ?></option>
 
-                                    </select>
-                                </li>
-                            </ul>
-                        </div>
+                        <?php do_action('bp_forums_directory_order_options'); ?>
 
-                        <div id="forums-dir-list" class="forums dir-list" role="main">
+                    </select>
+                </li>
+            </ul>
+        </div>
 
-                            <?php locate_template(array('forums/forums-loop.php'), true); ?>
+        <div id="forums-dir-list" class="forums dir-list" role="main">
 
-                        </div>
+            <?php locate_template(array('forums/forums-loop.php'), true); ?>
 
-                        <?php do_action('bp_directory_forums_content'); ?>
+        </div>
 
-                        <?php wp_nonce_field('directory_forums', '_wpnonce-forums-filter'); ?>
+        <?php do_action('bp_directory_forums_content'); ?>
 
-                    </form>
+        <?php wp_nonce_field('directory_forums', '_wpnonce-forums-filter'); ?>
 
-                    <?php do_action('bp_after_directory_forums'); ?>
+    </form>
 
-                    <?php do_action('bp_before_new_topic_form'); ?>
+    <?php do_action('bp_after_directory_forums'); ?>
 
-                    <div id="new-topic-post">
+    <?php do_action('bp_before_new_topic_form'); ?>
 
-                        <?php if (is_user_logged_in()) : ?>
+    <div id="new-topic-post">
 
-                            <?php if (bp_is_active('groups') && bp_has_groups('user_id=' . bp_loggedin_user_id() . '&type=alphabetical&max=100&per_page=100')) : ?>
+        <?php if (is_user_logged_in()) : ?>
 
-                                <form action="" method="post" id="forum-topic-form" class="standard-form">
+            <?php if (bp_is_active('groups') && bp_has_groups('user_id=' . bp_loggedin_user_id() . '&type=alphabetical&max=100&per_page=100')) : ?>
 
-                                    <?php do_action('groups_forum_new_topic_before') ?>
+                <form action="" method="post" id="forum-topic-form" class="standard-form">
 
-                                    <a name="post-new"></a>
-                                    <h5><?php _e('Create New Topic:', 'buddypress'); ?></h5>
+                    <?php do_action('groups_forum_new_topic_before'); ?>
 
-                                    <?php do_action('template_notices'); ?>
+                    <a name="post-new"></a>
+                    <h5><?php _e('Create New Topic:', 'buddypress'); ?></h5>
 
-                                    <label><?php _e('Title:', 'buddypress'); ?></label>
-                                    <input type="text" name="topic_title" id="topic_title" value="" />
+                    <?php do_action('template_notices'); ?>
 
-                                    <label><?php _e('Content:', 'buddypress'); ?></label>
-                                    <textarea name="topic_text" id="topic_text"></textarea>
+                    <label><?php _e('Title:', 'buddypress'); ?></label>
+                    <input type="text" name="topic_title" id="topic_title" value="" maxlength="100" />
 
-                                    <label><?php _e('Tags (comma separated):', 'buddypress'); ?></label>
-                                    <input type="text" name="topic_tags" id="topic_tags" value="" />
+                    <label><?php _e('Content:', 'buddypress'); ?></label>
+                    <textarea name="topic_text" id="topic_text"></textarea>
 
-                                    <label><?php _e('Post In Group Forum:', 'buddypress'); ?></label>
-                                    <select id="topic_group_id" name="topic_group_id">
+                    <label><?php _e('Tags (comma separated):', 'buddypress'); ?></label>
+                    <input type="text" name="topic_tags" id="topic_tags" value="" />
 
-                                        <option value=""><?php /* translators: no option picked in select box */ _e('----', 'buddypress'); ?></option>
+                    <label><?php _e('Post In Group Forum:', 'buddypress'); ?></label>
+                    <select id="topic_group_id" name="topic_group_id">
 
-                                        <?php while (bp_groups()) : bp_the_group(); ?>
+                        <option value=""><?php /* translators: no option picked in select box */ _e('----', 'buddypress'); ?></option>
 
-                                            <?php if (bp_group_is_forum_enabled() && ( is_super_admin() || 'public' == bp_get_group_status() || bp_group_is_member() )) : ?>
+                        <?php while (bp_groups()) : bp_the_group(); ?>
 
-                                                <option value="<?php bp_group_id(); ?>"><?php bp_group_name(); ?></option>
+                            <?php if (bp_group_is_forum_enabled() && ( bp_current_user_can('bp_moderate') || 'public' == bp_get_group_status() || bp_group_is_member() )) : ?>
 
-                                            <?php endif; ?>
-
-                                        <?php endwhile; ?>
-
-                                    </select><!-- #topic_group_id -->
-
-                                    <?php do_action('groups_forum_new_topic_after'); ?>
-
-                                    <div class="submit">
-                                        <input type="submit" name="submit_topic" id="submit" value="<?php _e('Post Topic', 'buddypress'); ?>" />
-                                        <input type="button" name="submit_topic_cancel" id="submit_topic_cancel" value="<?php _e('Cancel', 'buddypress'); ?>" />
-                                    </div>
-
-                                    <?php wp_nonce_field('bp_forums_new_topic'); ?>
-
-                                </form><!-- #forum-topic-form -->
-
-                            <?php elseif (bp_is_active('groups')) : ?>
-
-                                <div id="message" class="info">
-
-                                    <p><?php printf(__("You are not a member of any groups so you don't have any group forums you can post in. To start posting, first find a group that matches the topic subject you'd like to start. If this group does not exist, why not <a href='%s'>create a new group</a>? Once you have joined or created the group you can post your topic in that group's forum.", 'buddypress'), site_url(bp_get_groups_root_slug() . '/create/')) ?></p>
-
-                                </div>
+                                <option value="<?php bp_group_id(); ?>"><?php bp_group_name(); ?></option>
 
                             <?php endif; ?>
 
-                        <?php endif; ?>
-                    </div><!-- #new-topic-post -->
+                        <?php endwhile; ?>
 
-                    <?php do_action('bp_after_new_topic_form'); ?>
+                    </select><!-- #topic_group_id -->
 
-                    <?php do_action('bp_after_directory_forums_content'); ?>
+                    <?php do_action('groups_forum_new_topic_after'); ?>
 
-                </div><!-- .padder -->
-            </div>
-        </div>
-        <div class="content-aside">
-            <div class="skin">      
+                    <div class="submit">
+                        <input type="submit" name="submit_topic" id="submit" value="<?php _e('Post Topic', 'buddypress'); ?>" />
+                        <input type="button" name="submit_topic_cancel" id="submit_topic_cancel" value="<?php _e('Cancel', 'buddypress'); ?>" />
+                    </div>
 
-                <?php
-                if (!isset($options['zeige_subpagesonly']))
-                    $options['zeige_subpagesonly'] = $defaultoptions['zeige_subpagesonly'];
+                    <?php wp_nonce_field('bp_forums_new_topic'); ?>
 
-                if (!isset($options['zeige_sidebarpagemenu']))
-                    $options['zeige_sidebarpagemenu'] = $defaultoptions['zeige_sidebarpagemenu'];
+                </form><!-- #forum-topic-form -->
 
-                if ($options['zeige_sidebarpagemenu'] == 1) {
-                    if ($options['zeige_subpagesonly'] == 1) {
-                        //if the post has a parent
+            <?php elseif (bp_is_active('groups')) : ?>
 
-                        if ($post->post_parent) {
-                            //collect ancestor pages
-                            $relations = get_post_ancestors($post->ID);
-                            //get child pages
-                            $result = $wpdb->get_results('SELECT ID FROM '.$wpdb->prefix.'posts WHERE post_parent = '.$post->ID.' AND post_type=\'page\'');
-                            if ($result) {
-                                foreach ($result as $pageID) {
-                                    array_push($relations, $pageID->ID);
-                                }
-                            }
-                            //add current post to pages
-                            array_push($relations, $post->ID);
-                            //get comma delimited list of children and parents and self
-                            $relations_string = implode(",", $relations);
-                            //use include to list only the collected pages. 
-                            $sidelinks = wp_list_pages("sort_column=menu_order&title_li=&echo=0&include=" . $relations_string);
-                        } else {
-                            // display only main level and children
-                            $sidelinks = wp_list_pages("sort_column=menu_order&title_li=&echo=0&depth=1&child_of=" . $post->ID);
-                        }
+                <div id="message" class="info">
 
-                        if ($sidelinks) {
-                            ?>
-                            <ul class="menu">
-                                <?php
-                                //links in <li> tags
-                                echo $sidelinks;
-                                ?>
-                            </ul>         
-                            <?php
-                        }
-                    } else {
+                    <p><?php printf(__("You are not a member of any groups so you don't have any group forums you can post in. To start posting, first find a group that matches the topic subject you'd like to start. If this group does not exist, why not <a href='%s'>create a new group</a>? Once you have joined or created the group you can post your topic in that group's forum.", 'buddypress'), site_url(bp_get_groups_root_slug() . '/create/')); ?></p>
 
-                        if (has_nav_menu('primary')) {
-                            wp_nav_menu(array('depth' => 0, 'container_class' => 'menu-header', 'theme_location' => 'primary', 'walker' => new My_Walker_Nav_Menu()));
-                        } else {
-                            ?>
-                            <ul class="menu">
-                            <?php wp_page_menu(); ?>
-                            </ul> 
-                            <?php
-                        }
-                    }
-                }
+                </div>
 
-                $custom_fields = get_post_custom();
-                if ($custom_fields['right_column'][0] <> '') {
-                    echo $custom_fields['right_column'][0];
-                }
-                ?>
-<?php get_sidebar(); ?>
-            </div>
-        </div>
+            <?php endif; ?>
 
-    </div>
-</div><!-- #content -->
-<?php do_action('bp_after_directory_forums_page'); ?>
-<?php get_footer(); ?>
+        <?php endif; ?>
+    </div><!-- #new-topic-post -->
+
+    <?php do_action('bp_after_new_topic_form'); ?>
+
+    <?php do_action('bp_after_directory_forums_content'); ?>
+
+</div>
+<?php get_template_part('page-footer') ?>

@@ -10,7 +10,7 @@
       <div class="content-header">   
             <?php if ( have_posts() ) the_post(); ?>
            <h1><?php printf( __( '%s', 'piratenkleider' ), get_the_author() ); ?></h1>
-          
+
             <?php if ($options['aktiv-platzhalterbilder-indexseiten']) { ?>         
             <div class="symbolbild"> 
               <img src="<?php echo  $bilderoptions['src-default-symbolbild-author']?>" alt="" >
@@ -18,9 +18,9 @@
           <?php } ?>                
       </div>
         <div class="skin">
+
             
 
-        
 <?php if ( get_the_author_meta( 'description' ) ) : ?>   
     <?php the_author_meta( 'description' ); ?>
     <hr>
@@ -39,6 +39,7 @@
       </div>
     </div>
   </div>
+  <?php  get_piratenkleider_socialmediaicons(2); ?>
 </div>
 
 <?php get_footer(); ?>

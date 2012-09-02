@@ -11,8 +11,8 @@
 
 @media only screen and (max-width: 767px) {
   .logo {
-    width: 100%;
-    top: 40px;
+    max-width: 300px;
+    top: 0px;
   }
    .logo img {
       margin: 0 auto;
@@ -37,7 +37,9 @@
    .teaserlinks ul li a {
        padding-left: 10px;
    }
-  
+   .nav-main ul.menu li a {
+       padding: 12px 5px 10px;
+   }
 
 }
 
@@ -303,6 +305,18 @@
     display: none;
    }
    
+   .content-primary .skin {
+       padding: 0;
+   }
+   .content-header,
+   .content-header-big {
+     margin-left: 0px;
+    }
+   
+   
+   .single .post {
+       padding: 10px;
+   }
   .post-comments {
      background: url("../images/int/bg-tags.png") repeat fixed -20% top #FF8800;
      padding: 3px;
@@ -336,7 +350,23 @@
      display: none;
  }
  
-
-
- 
+#socialmedia_iconbar {
+         position: relative;
+         display: block;
+         top: inherit;
+         left: inherit;
+         width: auto;
+         background: black;
+         border-radius: 3px ; 
+         z-index: 10 ;
+         padding: 2px;
+         margin: 0px;
+         text-align: center;
+     }
+#socialmedia_iconbar ul.socialmedia {
+    list-style: none;
+    }
+    #socialmedia_iconbar ul.socialmedia li {
+        width: 34px;
+    }
 }
