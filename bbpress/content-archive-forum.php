@@ -9,11 +9,15 @@
 
 ?>
 
-	<?php do_action( 'bbp_template_before_forums_index' ); ?>
+	<?php
+        
+        do_action( 'bbp_template_before_forums_index' ); ?>
 
 	<?php if ( bbp_has_forums() ) : ?>
 
-		<?php bbp_get_template_part( 'bbpress/loop',     'forums'    ); ?>
+		<?php
+                
+                bbp_get_template_part( 'bbpress/loop',     'forums'    ); ?>
 
 	<?php else : ?>
 

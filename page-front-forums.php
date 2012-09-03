@@ -29,7 +29,7 @@
         <div id="forum-front" class="bbp-forum-front">
             <div class="entry-content">
 
-                <?php the_content(); ?>
+                <?php /*the_content();*/ ?>
 
     <?php bbp_get_template_part('bbpress/content', 'archive-forum'); ?>
 
