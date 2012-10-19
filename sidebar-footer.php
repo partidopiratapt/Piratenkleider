@@ -19,6 +19,7 @@
                   if (!isset($default_footerlink_liste[$bereich]['sublist'])) {
                       $bereich =  $defaultoptions['default_footerlink_key'];
                   }
+                  if (isset($default_footerlink_liste[$bereich]['sublist'])) {
                   $title =   $default_footerlink_liste[$bereich]['title'];
                   $url =   $default_footerlink_liste[$bereich]['url'];
                   
@@ -36,6 +37,7 @@
                        echo "\n";
                  }            
                  echo '</ul>';                                          
+           }
            }
         } ?>
         

@@ -23,12 +23,13 @@ $options = bp_gtm_get_presonal_tasks_option($bp_gtm_p_tasks_pp);
 
         </div>
 
-    
-</div>
+
+    </div>
 </div>
 <?php do_action('bp_before_gtm_personal_tasks_list');
 
-if (count($options['tasks']) > 0) { ?>
+if (count($options['tasks']) > 0) {
+    ?>
     <table class="item-list zebra" id="personal">
         <thead>
             <tr>
@@ -36,7 +37,7 @@ if (count($options['tasks']) > 0) { ?>
                 <th id="th-group"><?php _e('Project', 'bp_gtm') ?></th>
                 <th id="th-poster"><?php _e('Group', 'bp_gtm') ?></th>
                 <th id="th-postcount"><?php _e('Deadline', 'bp_gtm') ?></th>
-                <?php do_action('bp_gtm_personal_tasks_extra_cell_head') ?>
+    <?php do_action('bp_gtm_personal_tasks_extra_cell_head') ?>
             </tr>
         </thead>
 
@@ -50,5 +51,5 @@ if (count($options['tasks']) > 0) { ?>
 } else {
     echo '<div id="message" class="info"><p>' . __('There are no tasks to display.', 'bp_gtm') . '</p></div>';
 }
-
 ?>
+</div>

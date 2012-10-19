@@ -57,12 +57,33 @@ if (!isset($options['slider-aktiv']))
               }
             ?>
                             </div>
-          <?php } ?>  
+          <?php } 
+
+          if ($options['aktiv-images-instead-date']) {                                                    
+            $firstpic = get_piratenkleider_firstpicture();
+            if (!empty($firstpic)) { ?>                       
+                <div class="infoimage">                    
+                        <?php echo $firstpic ?>
+                </div>
+            <?php } else { ?>                        
+                <div class="cal-icon">
+                    <span class="day"><?php the_time('j.'); ?></span>
+                    <span class="month"><?php the_time('m.'); ?></span>
+                    <span class="year"><?php the_time('Y'); ?></span>
+                </div>
+                <?php 
+            }
+          } else { ?>
                             <div class="cal-icon">
                                 <span class="day"><?php the_time('j.'); ?></span>
                                 <span class="month"><?php the_time('m.'); ?></span>
                                 <span class="year"><?php the_time('Y'); ?></span>
                             </div>
+          <?php } ?>  
+            
+            
+            
+         
                         </div>
                         <div class="post-entry">
     <?php echo get_piratenkleider_custom_excerpt(); ?>         

@@ -37,3 +37,4 @@ $options = bp_gtm_get_personal_profile_settings();
     echo '<div id="message" class="info"><p>' . __('You are not responsible for any projects on this site.', 'bp_gtm') . '</p></div>';
 }
 ?>
+</div>

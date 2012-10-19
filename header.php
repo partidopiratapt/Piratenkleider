@@ -89,6 +89,7 @@ if ((isset( $options['meta-keywords'] )) && ( strlen(trim($options['meta-keyword
         <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/apple-touch-icon.png">
         <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
         <link rel="profile" href="http://gmpg.org/xfn/11" />
+        <?php do_action( 'bp_head' ); ?>
         <!-- inicio header wp -->
         <?php wp_head(); ?>
         <!-- fim header wp -->
@@ -100,7 +101,13 @@ if ((isset( $options['meta-keywords'] )) && ( strlen(trim($options['meta-keyword
         $designspecials['css-fontfile'] = $defaultoptions['default-fontset-file'];
     }
     if ((isset($designspecials['css-fontfile'])) && (strlen(trim($designspecials['css-fontfile']))>1)) { 
-        echo '<link rel="stylesheet" type="text/css" media="all" href="'.get_template_directory_uri().'/css/'.$designspecials['css-fontfile'].'">';
+        echo '<link rel="stylesheet" type="text/css" media="all and (min-width:500px)" href="'.get_template_directory_uri().'/css/'.$designspecials['css-fontfile'].'">';
+    } 
+    $custom_fields = get_post_custom();    
+    if ( (($custom_fields['fullsize'][0] == true) && (is_single() || is_page() || is_page_template())) 
+         ||
+        ((isset($options['position_sidebarbottom'])) && ($options['position_sidebarbottom'] ==1))) { 
+        echo '<link rel="stylesheet" type="text/css" media="all" href="'.get_template_directory_uri().'/css/basemod_sidebarbottom.css">';
     } 
         ?>
         <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/bp.css">
@@ -139,11 +146,13 @@ if ((isset( $options['meta-keywords'] )) && ( strlen(trim($options['meta-keyword
                 <div class="branding">
                         <?php if (!is_home()) { ?>
                         <a href="<?php echo home_url('/'); ?>" title="<?php echo $defaultoptions['default_text_title_home_backlink']; ?>" rel="home" class="logo">
-                            <?php }                                 
-                               function piratenkleider_header_style() {} 
+                            <?php } ?>                                                             
+                                <h1><img src="<?php header_image(); ?>" alt="<?php bloginfo( 'name' ); ?>"></h1>
+                            <?php if ( ! is_home() ) { ?> </a>  <?php } 
+                              if (strlen(trim(get_bloginfo( 'description' )))>1) {
 ?>                                                             
-                        <h1><img src="<?php header_image(); ?>" alt="<?php bloginfo('name'); ?>"></h1>
-                    <?php if (!is_home()) { ?> </a>  <?php } ?> 
+                            <p class="description slogan"><?php bloginfo( 'description' ); ?></p>
+                            <?php } ?>
                 </div>
 
                 <div class="nav-top" role="navigation">				                                                        
@@ -233,11 +242,7 @@ if (has_nav_menu('primary')) {
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
+    
+    
+    
 

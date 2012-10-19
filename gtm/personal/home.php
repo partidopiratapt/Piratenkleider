@@ -1,5 +1,6 @@
-<?php
-get_header();
+<?php get_template_part('page-header') ?>
+<div class="skin">
+    <?php
 global $bp;
 $bp_gtm_p_tasks_pp = get_user_meta($bp->loggedin_user->id, 'bp_gtm_tasks_pp', true);
 if(!$bp_gtm_p_tasks_pp)
@@ -7,10 +8,6 @@ if(!$bp_gtm_p_tasks_pp)
 
 $gtm_profile_link = $bp->loggedin_user->domain . $bp->gtm->slug . '/';
 ?>
-
-    <div id="content">
-        <div class="padder">
-
             <?php do_action( 'bp_before_member_home_content' ) ?>
 
             <div id="item-header">
@@ -47,10 +44,5 @@ $gtm_profile_link = $bp->loggedin_user->domain . $bp->gtm->slug . '/';
             </div><!-- #item-body -->
 
             <?php do_action( 'bp_after_member_home_content' ) ?>
-
-        </div><!-- .padder -->
-    </div><!-- #content -->
-
-    <?php locate_template( array( 'sidebar.php' ), true ) ?>
-
-<?php get_footer() ?>
+</div>
+<?php get_template_part('page-footer') ?>

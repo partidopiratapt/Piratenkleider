@@ -128,6 +128,13 @@ function theme_options_do_page($tab = '') {
                                                 value=\"".esc_attr( $options[$name] )."\"><br>\n";
                                         echo "\t\t\t";
                                         echo "<label for=\"piratenkleider_theme_options[$name]\">$label</label>\n"; 
+                                } elseif ($type=='textarea')  {
+                                    echo "\t\t\t";                                                                                                            
+                                    echo "<textarea class=\"large-text\" id=\"piratenkleider_theme_options[$name]\" 
+                                            cols=\"30\" rows=\"10\"  name=\"piratenkleider_theme_options[$name]\">"
+                                            .esc_attr( $options[$name] )."</textarea><br>\n";
+                                    echo "\t\t\t";
+                                    echo "<label for=\"piratenkleider_theme_options[$name]\">$label</label>\n";     
                                     } elseif ($type=='number') {
                                         echo "\t\t\t";
                                         echo "<input class=\"number\" size=\"5\" id=\"piratenkleider_theme_options[$name]\" 
@@ -240,6 +247,8 @@ function theme_options_validate( $input ) {
                             $output[$name]  = ( $input[$name] == 1 ? 1 : 0 );    
                         } elseif ($type=='text') {
                              $output[$name]  =  wp_filter_nohtml_kses( $input[$name] ); 
+                         } elseif ($type=='textarea') {
+                             $output[$name]  =  $input[$name] ;     
                         } elseif ($type=='html') {;    
                             $output[$name] = $input[$name];
                         } elseif ($type=='url') {
@@ -273,6 +282,11 @@ function theme_options_validate( $input ) {
        }               
 
 
+    if ((isset($input['position_sidebarbottom'])) 
+            && ($input['position_sidebarbottom']==1)
+            && ($input['aktiv-dynamic-sidebar']==1)) {   
+           $output['aktiv-dynamic-sidebar'] =0;        
+    }
  
     if (isset($input['anonymize-user'])) {   
         if ($input['anonymize-user']==1) {
@@ -1139,6 +1153,7 @@ function theme_designspecials_validate( $input ) {
         $input['css-default-header-background-position'] = wp_filter_post_kses( $input['css-default-header-background-position'] );
         $input['css-default-header-background-repeat'] = wp_filter_post_kses( $input['css-default-header-background-repeat'] );
         $input['css-colorfile'] = wp_filter_post_kses( $input['css-colorfile'] );
+        $input['css-fontfile'] = wp_filter_post_kses( $input['css-fontfile'] );
    
 	return $input;
 }

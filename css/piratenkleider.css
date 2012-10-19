@@ -4,7 +4,7 @@ Theme URI: http://piratenkleider.xwolf.de
 Description: Allgemeines Theme für Webauftritte der Piratenpartei
 Author: Wolfgang Wiese (xwolf)
 Author URI: http://www.xwolf.de 
-Version: 2.12
+Version: 2.14
 Tags: orange, two-columns, responsive, fluid-width
 License: CC-BY-SA 3.0 
 License URI: http://creativecommons.org/licenses/by-sa/3.0/de/deed.de
@@ -39,7 +39,6 @@ body {
 
 img {
     vertical-align: bottom;
-    height: auto;
     max-width: 100%;
     border: 0;
     -ms-interpolation-mode: bicubic; }
@@ -213,7 +212,6 @@ del {
 
 img {
     vertical-align: bottom;
-    height: auto;
     max-width: 100%;
     border: 0;
     -ms-interpolation-mode: bicubic;
@@ -457,34 +455,6 @@ body {
   background: white url("../images/int/bg-tags_gray.jpg") -20% 0 fixed; 
 }
 
-.sticky {
-    border-radius: 0.3em;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #888;
-    border-color: rgba(0,0,0,.3);
-    -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) inset;
-    -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) inset;
-    -ms-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) inset;
-    -o-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) inset;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) inset;
-    color: #444;
-    color: rgba(0,0,0,.8);
-    background: url("../images/int/bg-tags.png") repeat fixed -20% top #FF8800;
-    padding: 5px 5px 20px 5px;
-    margin: 10px;
-}
-.sticky a {
-    color: black;
-    background: #f38100;
-    padding: 0 2px;
-}      
-.sticky a:hover,
-.sticky a:focus {    
-    color: #000;
-    background: #d97300;
-}      
-
 .section {
     padding: 0 10px; }
 
@@ -494,7 +464,7 @@ body {
 }
 
 .row {
-    max-width: 1058px;
+  max-width: 1052px;
     overflow: hidden;
     margin: 0 auto;
 }
@@ -596,7 +566,7 @@ body {
 }
 
 .error {
-    background:#c88;
+        background:#c88;
 }
 
 .float-left {
@@ -629,14 +599,18 @@ body {
 
 
 .header .branding {
-    padding: 10px 0 0px 0; }
+    padding: 10px 0 0px 0; 
+}
 .header input[type="text"] {
     border-color: silver;
 }
-
+.branding p.slogan {
+    display: none;
+}
 .logo {
     display: inline-block;
-    overflow: hidden; }
+  overflow: hidden; 
+}
 
 .nav-top ul {
     display: none; }
@@ -1547,7 +1521,9 @@ ul.socialmedia li a:focus img  {
 }
 .single .post-edit-link {
     margin-top: 20px; }
-
+.post {
+    display: inline-block;
+}
 .post .post-title {
     position: relative;
     float: left;
@@ -1583,6 +1559,13 @@ ul.socialmedia li a:focus img  {
     -o-border-radius: 14px; 
     border-radius: 14px;
  }
+  .post .post-info .infoimage {
+    width: 130px;
+    height: auto;
+    max-height: 250px;
+    margin: 5px;
+    overflow: hidden;
+  }
 .post .post-info .cal-icon {
     background: #eeeeee;
     padding: 10px;
@@ -1623,6 +1606,46 @@ ul.socialmedia li a:focus img  {
     float: left;
     font-size: 12px; }
 
+.post .disclaimer, 
+.sticky {
+    border-radius: 0.3em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #888;
+    border-color: rgba(0,0,0,.3);
+    -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -ms-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -o-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) inset;
+    color: #444;
+    color: rgba(0,0,0,.8);
+    background: url("../images/int/bg-tags.png") repeat fixed -20% top #FF8800;
+    padding: 5px;
+    margin: 10px 20px 30px;    
+    position: relative;
+}
+.post .disclaimer {
+    clear: both;
+}
+.sticky {
+    padding: 5px 5px 20px 5px;
+    margin: 10px;
+}
+.post .disclaimer a, 
+.sticky a {
+    color: black;
+    background: #f38100;
+    padding: 0 2px;
+}      
+.post .disclaimer a:hover, 
+.post .disclaimer a:focus,
+.sticky a:hover,
+.sticky a:focus {    
+    color: #000;
+    background: #d97300;
+}      
+
 .post-comments #comments-title {
     margin-bottom: 20px; }
 .post-comments ol {
@@ -1645,17 +1668,12 @@ ul.socialmedia li a:focus img  {
     padding-right: 2%;
     font-size: 0.9em; 
 }
-.post-comments ol li .comment-details .comment-author a {
-    /*  color: black; */
-}
+
 .post-comments ol li .comment-details .comment-author img {
     float: left;
     margin: 0 10px 10px 0;
 }
-.post-comments ol li .comment-details .comment-author .avatar {
 
-
-}
 
 .post-comments ol li .comment-body {
     float: left;
@@ -1701,6 +1719,10 @@ ul.socialmedia li a:focus img  {
     display: inline-block;
     margin: -5px 0 0 -10px;
     position: absolute; }
+
+img.wp-smiley {
+  margin: 0 0 5px 0;
+} 
 
 .bypostauthor {}
 
@@ -2060,8 +2082,11 @@ display: inline-block;
 		visibility:hidden;
                 margin-bottom: 10px;
 	}
+.first-footer-widget-area .widget li a img,
+.second-footer-widget-area .widget li a img, 
 .footer ul.default_footerlinks li a img {
     vertical-align: baseline;
+    margin: 0;
 }
  
 .footer .second-footer-widget-area .widget {
@@ -2545,6 +2570,218 @@ ul.social_share_privacy_area {
     border: 2px dotted rgba(0,0,0,0.5);
 }
   
+.post-entry .kraehennestplayer {
+    float: right;
+    width: 185px;
+    padding: 0px 5px;
+  overflow: visible;
+  position: relative;
+background: none repeat scroll 0 0 #EEEEEE;
+    box-shadow: 1px 1px 2px #444444;
+    margin-bottom: 5px;
+}
+.post-entry .kraehennestplayer p,
+.kraehennestplayer p {
+    margin-bottom: 0px;
+}
+.post-entry p.kraehennestplayerTitle {
+  background: url(../images/kraehennest-50.png) 5px 5px no-repeat;
+  padding-left: 60px;
+  min-height: 65px;
+}
+ 
+.kraehennestplayer object {
+    margin: 0 auto;
+}
+
+
+/* Flag Icons     -----------------------------------------------------------*/
+.flagicon-sprite, .flagicon-ar, .flagicon-at, .flagicon-au, .flagicon-be, .flagicon-bg, .flagicon-br, .flagicon-by, .flagicon-ca, .flagicon-ch, .flagicon-cl, .flagicon-co, .flagicon-cy, .flagicon-cz, .flagicon-de, .flagicon-dk, .flagicon-es, .flagicon-fi, .flagicon-fr, .flagicon-gr, .flagicon-gt, .flagicon-it, .flagicon-kr, .flagicon-kz, .flagicon-lt, .flagicon-lu, .flagicon-lv, .flagicon-ma, .flagicon-mx, .flagicon-nl, .flagicon-nz, .flagicon-pe, .flagicon-pl, .flagicon-pt, .flagicon-ro, .flagicon-rs, .flagicon-ru, .flagicon-se, .flagicon-si, .flagicon-sk, .flagicon-tn, .flagicon-tr, .flagicon-ua, .flagicon-uk, .flagicon-us, .flagicon-uy {
+  width: 16px;
+  height: 11px;
+  display: inline-block;
+  background: url('../images/flags/flagicon.png') no-repeat;
+}
+
+.flagicon-ar {
+  background-position: 0 -234px;
+}
+
+.flagicon-at {
+  background-position: 0 -533px;
+}
+
+.flagicon-au {
+  background-position: 0 -13px;
+}
+
+.flagicon-be {
+  background-position: 0 -442px;
+}
+
+.flagicon-bg {
+  background-position: 0 -403px;
+}
+
+.flagicon-br {
+  background-position: 0 -78px;
+}
+
+.flagicon-by {
+  background-position: 0 -195px;
+}
+
+.flagicon-ca {
+  background-position: 0 -39px;
+}
+
+.flagicon-ch {
+  background-position: 0 -572px;
+}
+
+.flagicon-cl {
+  background-position: 0 -429px;
+}
+
+.flagicon-co {
+  background-position: 0 -338px;
+}
+
+.flagicon-cy {
+  background-position: 0 -481px;
+}
+
+.flagicon-cz {
+  background-position: 0 -364px;
+}
+
+.flagicon-de {
+  background-position: 0 -143px;
+}
+
+.flagicon-dk {
+  background-position: 0 -247px;
+}
+
+.flagicon-es {
+  background-position: 0 -377px;
+}
+
+.flagicon-fi {
+  background-position: 0 -312px;
+}
+
+.flagicon-fr {
+  background-position: 0 -156px;
+}
+
+.flagicon-gr {
+  background-position: 0 -325px;
+}
+
+.flagicon-gt {
+  background-position: 0 -286px;
+}
+
+.flagicon-it {
+  background-position: 0 -507px;
+}
+
+.flagicon-kr {
+  background-position: 0 -91px;
+}
+
+.flagicon-kz {
+  background-position: 0 -52px;
+}
+
+.flagicon-lt {
+  background-position: 0 -221px;
+}
+
+.flagicon-lu {
+  background-position: 0 -351px;
+}
+
+.flagicon-lv {
+  background-position: 0 -390px;
+}
+
+.flagicon-ma {
+  background-position: 0 -468px;
+}
+
+.flagicon-mx {
+  background-position: 0 -104px;
+}
+
+.flagicon-nl {
+  background-position: 0 -416px;
+}
+
+.flagicon-nz {
+  background-position: 0 -26px;
+}
+
+.flagicon-pe {
+  background-position: 0 -546px;
+}
+
+.flagicon-pl {
+  background-position: 0 -559px;
+}
+
+.flagicon-pt {
+  background-position: 0 -130px;
+}
+
+.flagicon-ro {
+  background-position: 0 -260px;
+}
+
+.flagicon-rs {
+  background-position: 0 -494px;
+}
+
+.flagicon-ru {
+  background-position: 0 -520px;
+}
+
+.flagicon-se {
+  background-position: 0 -169px;
+}
+
+.flagicon-si {
+  background-position: 0 -208px;
+}
+
+.flagicon-sk {
+  background-position: 0 -117px;
+}
+
+.flagicon-tn {
+  background-position: 0 -273px;
+}
+
+.flagicon-tr {
+  background-position: 0 -299px;
+}
+
+.flagicon-ua {
+  background-position: 0 -455px;
+}
+
+.flagicon-uk {
+  background-position: 0 0;
+}
+
+.flagicon-us {
+  background-position: 0 -65px;
+}
+
+.flagicon-uy {
+  background-position: 0 -182px;
+}
 
 /* IE Anpassungen -----------------------------------------------------------*/
 

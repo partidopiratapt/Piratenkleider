@@ -54,8 +54,7 @@
                 do_action('bp_after_group_details_creation_step');
                 do_action('groups_custom_group_fields_editable'); // @Deprecated
 
-                wp_nonce_field('groups_create_save_group-details');
-                ?>
+					wp_nonce_field( 'groups_create_save_group-details' ); ?>
 
             <?php endif; ?>
 

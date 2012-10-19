@@ -7,18 +7,15 @@ $bilderoptions = get_option('piratenkleider_theme_defaultbilder');
 <div class="first-teaser-widget-area">
     <?php if (is_active_sidebar('first-teaser-widget-area')) { ?>
         <?php dynamic_sidebar('first-teaser-widget-area'); ?>
-    <?php
-    } else {
+    <?php } else {        
 
 
 
         $defaultbildsrc = $bilderoptions['slider-defaultbildsrc'];
         $cat = $options['slider-catid'];
-        if (!isset($cat))
-            $cat = 1;
+         if (!isset($cat) ) $cat = 1;         
         $numberarticle = $options['slider-numberarticle'];
-        if (!isset($numberarticle))
-            $numberarticle = 3;
+         if (!isset($numberarticle) )  $numberarticle =3;   
         if (!isset($options['url-mitgliedwerden']))
             $options['url-mitgliedwerden'] = $defaultoptions['url-mitgliedwerden'];
         if (!isset($options['teaser-subtitle']))
@@ -94,8 +91,7 @@ $bilderoptions = get_option('piratenkleider_theme_defaultbilder');
             <div class="skin">
                 <?php if (is_active_sidebar('second-teaser-widget-area')) { ?>
                     <?php dynamic_sidebar('second-teaser-widget-area'); ?>
-                <?php
-                } else {
+    <?php } else {
                     if (!isset($options['teaserlink1-title']))
                         $options['teaserlink1-title'] = $defaultoptions['teaserlink1-title'];
                     if (!isset($options['teaserlink1-untertitel']))

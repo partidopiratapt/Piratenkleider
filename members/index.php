@@ -43,7 +43,7 @@
 
                 <?php endif; ?>
 
-                <?php do_action('bp_members_directory_member_types'); ?>
+                <?php do_action('bp_members_directory_member_types');?>
 
             </ul>
         </div><!-- .item-list-tabs -->

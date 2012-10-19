@@ -2,7 +2,7 @@ Pirate clothes
 - WordPress Theme for the pirate party websites
 =================================================
 
-Version 2.12 von Wolfgang Wiese (xwolf), 30. August 2012
+Version 2.14 von Wolfgang Wiese (xwolf), 16. Oktober 2012
 
 
 DOWNLOADS

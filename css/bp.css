@@ -6,7 +6,7 @@
 }
 #item-body form#whats-new-form {
 	border-bottom: 1px solid #ddd;
-	margin: 20px 0 10px;
+ 	margin: 20px 0 10px;
 	padding-bottom: 20px;
 }
 .home-page form#whats-new-form {
@@ -527,9 +527,7 @@ ul.button-nav li.current a {
 }
 .standard-form label,
 .standard-form span.label {
-	display: block;
 	font-weight: bold;
-	margin: 15px 0 5px 0;
 }
 .standard-form div.checkbox label,
 .standard-form div.radio label {
@@ -794,7 +792,7 @@ div#sidebar table {
 	width: 117%;
 }
 
-table tr td.label {
+table tr td.labelbp {
 	border-right: 1px solid #eaeaea;
 	font-weight: bold;
 	width: 25%;
@@ -1031,6 +1029,7 @@ div#item-header div#message.info {
 }
 ul.item-list {
 	width: 100%;
+        margin: 0 0 0 0;
 }
 ul.item-list li {
 	border-bottom: 1px solid #eaeaea;
@@ -1092,6 +1091,7 @@ div.item-list-tabs ul li a {
 }
 div.item-list-tabs ul {
 	width: 100%;
+        margin: 0 0 0 0;
 }
 div.item-list-tabs ul li {
 	float: left;
