@@ -34,7 +34,21 @@
     </thead>
 
     <tfoot>
-        <tr><td colspan="2">&nbsp;</td></th>
+			<tr>
+				<th class="bbp-reply-author"><?php  _e( 'Author',  'bbpress' ); ?></th>
+				<th class="bbp-reply-content">
+
+					<?php if ( !bbp_show_lead_topic() ) : ?>
+
+						<?php _e( 'Posts', 'bbpress' ); ?>
+
+					<?php else : ?>
+
+						<?php _e( 'Replies', 'bbpress' ); ?>
+
+					<?php endif; ?>
+
+				</th>
         </tr>
     </tfoot>
 

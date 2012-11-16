@@ -9,9 +9,8 @@
 
 ?>
 
-	<?php
-        
-        do_action( 'bbp_template_before_forums_index' ); ?>
+<div id="bbpress-forums">
+	<?php do_action( 'bbp_template_before_forums_index' ); ?>
 
 	<?php if ( bbp_has_forums() ) : ?>
 
@@ -26,3 +25,5 @@
 	<?php endif; ?>
 
 	<?php do_action( 'bbp_template_after_forums_index' ); ?>
+
+</div>

@@ -104,3 +104,5 @@
 		</div>
 
 	<?php endif; ?>
+
+</div>

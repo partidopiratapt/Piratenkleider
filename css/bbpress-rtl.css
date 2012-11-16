@@ -98,7 +98,7 @@ table.bbp-topic th span, table.bbp-replies th span {
 }
 #content th.bbp-topic-content,
 #content th.bbp-reply-content {
-	text-align: left;
+	text-align: right;
 	padding: 9px 15px 9px 10px;
 }
 #content table.bbp-forums tfoot td, #content table.bbp-topics tfoot td,
@@ -339,7 +339,7 @@ a.bbp-reply-permalink {
 #content fieldset.bbp-form label,
 #container fieldset.bbp-form label,
 #wrapper fieldset.bbp-form label {
-	width: 250px;
+	margin: 0;
 	display: inline-block;
 }
 

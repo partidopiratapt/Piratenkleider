@@ -7,16 +7,14 @@
  * @version 2.12
  * @licence CC-BY-SA 3.0 
  */
+// Make theme available for translation
+// Translations can be filed in the /languages/ directory
+load_theme_textdomain('piratenkleider', get_template_directory() . '/languages');
 
-
-        // Make theme available for translation
-        // Translations can be filed in the /languages/ directory
-        load_theme_textdomain('piratenkleider', get_template_directory() . '/languages');
-
-        $locale = get_locale();
-        $locale_file = get_template_directory() . "/languages/$locale.php";
-        if (is_readable($locale_file))
-            require_once( $locale_file );
+$locale = get_locale();
+$locale_file = get_template_directory() . "/languages/$locale.php";
+if (is_readable($locale_file))
+    require_once( $locale_file );
 
 require( get_template_directory() . '/inc/constants.php' );
 
@@ -45,22 +43,26 @@ if ($options['feed_cache_lifetime'] < 600) {
 if ($options['twitter_cache_lifetime'] > $options['feed_cache_lifetime']) {
     $options['twitter_cache_lifetime'] = $options['feed_cache_lifetime'];
 }
+
 // Twitter Feeds sollten nicht laenger warten als die allgemeine feeds
 function feed_lifetime_cb() {
     global $options;
     // change the default feed cache recreation period to 2 hours
     return $options['feed_cache_lifetime'];
 }
+
 add_filter('wp_feed_cache_transient_lifetime', 'feed_lifetime_cb');
 
 
-if ( ! isset( $content_width ) )   $content_width = $defaultoptions['content-width'];
+if (!isset($content_width))
+    $content_width = $defaultoptions['content-width'];
 require_once ( get_template_directory() . '/theme-options.php' );
 
 /** Tell WordPress to run twentyten_setup() when the 'after_setup_theme' hook is run. */
 add_action('after_setup_theme', 'piratenkleider_setup');
 
 if (!function_exists('piratenkleider_setup')):
+
     function piratenkleider_setup() {
         global $defaultoptions, $bp;
         // bp_core_clear_cache();
@@ -128,7 +130,6 @@ if (!function_exists('piratenkleider_setup')):
             'flex-width' => true,
             'max-width' => 350,
             'suggested-width' => 300,
-                
         );
         add_theme_support('custom-header', $args);
 
@@ -168,36 +169,40 @@ if (!function_exists('piratenkleider_setup')):
         /** Entfernen der Wordpressversionsnr im Header */
         remove_action('wp_head', 'wp_generator');
     }
+
 endif;
 
 require( get_template_directory() . '/inc/widgets.php' );
 /*
-add_action( 'comment_form_after', 'tinyMCE_comment_form' );
-add_action( 'bbp_theme_before_topic_form_content', 'tinyMCE_comment_form' );
-add_action( 'bbp_theme_before_reply_form_content', 'tinyMCE_comment_form' );
-function tinyMCE_comment_form() {
-?>
-    <script type="text/javascript" src="<?php echo includes_url( 'js/tinymce/tiny_mce.js' ); ?>"></script>
-    <script type="text/javascript">
-        tinyMCE.init({
-            theme : "advanced",
-            mode: "specific_textareas",
-            skin: "default",
-            theme_advanced_toolbar_location : "top"
-        });
-    </script>
-<?php
-}
-*/
+  add_action( 'comment_form_after', 'tinyMCE_comment_form' );
+  add_action( 'bbp_theme_before_topic_form_content', 'tinyMCE_comment_form' );
+  add_action( 'bbp_theme_before_reply_form_content', 'tinyMCE_comment_form' );
+  function tinyMCE_comment_form() {
+  ?>
+  <script type="text/javascript" src="<?php echo includes_url( 'js/tinymce/tiny_mce.js' ); ?>"></script>
+  <script type="text/javascript">
+  tinyMCE.init({
+  theme : "advanced",
+  mode: "specific_textareas",
+  skin: "default",
+  theme_advanced_toolbar_location : "top"
+  });
+  </script>
+  <?php
+  }
+ */
+
 function piratenkleider_avatar($avatar_defaults) {
     global $defaultoptions;
     $myavatar = $defaultoptions['src-default-avatar'];
     $avatar_defaults[$myavatar] = "Piratenkleider";
     return $avatar_defaults;
 }
+
 add_filter('avatar_defaults', 'piratenkleider_avatar');
 
 if (!function_exists('piratenkleider_admin_header_style')) :
+
     /**
      * Styles the header image displayed on the Appearance > Header admin panel.
      */
@@ -213,12 +218,14 @@ if (!function_exists('piratenkleider_admin_header_style')) :
         </style>
         <?php
     }
+
 endif;
 
 if (!function_exists('piratenkleider_filter_wp_title')) :
     /*
      * Sets the title
      */
+
     function piratenkleider_filter_wp_title($title, $separator) {
         // Don't affect wp_title() calls in feeds.
         if (is_feed())
@@ -256,13 +263,14 @@ if (!function_exists('piratenkleider_filter_wp_title')) :
         // Return the new title to wp_title():
         return $title;
     }
+
 endif;
 add_filter('wp_title', 'piratenkleider_filter_wp_title', 10, 2);
-
 
 function piratenkleider_excerpt_length($length) {
     return $defaultoptions['teaser_maxlength'];
 }
+
 add_filter('excerpt_length', 'piratenkleider_excerpt_length');
 
 function piratenkleider_continue_reading_link() {
@@ -272,8 +280,8 @@ function piratenkleider_continue_reading_link() {
 function piratenkleider_auto_excerpt_more($more) {
     return ' &hellip;' . piratenkleider_continue_reading_link();
 }
-add_filter( 'excerpt_more', 'piratenkleider_auto_excerpt_more' );
 
+add_filter('excerpt_more', 'piratenkleider_auto_excerpt_more');
 
 function piratenkleider_custom_excerpt_more($output) {
     if (has_excerpt() && !is_attachment()) {
@@ -281,24 +289,25 @@ function piratenkleider_custom_excerpt_more($output) {
     }
     return $output;
 }
-add_filter( 'get_the_excerpt', 'piratenkleider_custom_excerpt_more' );
 
-
+add_filter('get_the_excerpt', 'piratenkleider_custom_excerpt_more');
 
 function piratenkleider_remove_gallery_css($css) {
     return preg_replace("#<style type='text/css'>(.*?)</style>#s", '', $css);
 }
-add_filter( 'gallery_style', 'piratenkleider_remove_gallery_css' );
 
+add_filter('gallery_style', 'piratenkleider_remove_gallery_css');
 
 function honor_ssl_for_attachments($url) {
     $http = site_url(FALSE, 'http');
     $https = site_url(FALSE, 'https');
     return is_ssl() ? str_replace($http, $https, $url) : $url;
 }
+
 add_filter('wp_get_attachment_url', 'honor_ssl_for_attachments');
 
 if (!function_exists('piratenkleider_comment')) :
+
     /**
      * Template for comments and pingbacks.
      */
@@ -320,33 +329,35 @@ if (!function_exists('piratenkleider_comment')) :
                         <div class="comment-details">
 
                             <div class="comment-author vcard">
-                    <?php if ($options['aktiv-avatar']==1) {
-                                    echo '<div class="avatar">';
-                                    echo get_avatar($comment, 48, $defaultoptions['src-default-avatar']);
-                                    echo '</div>';
-                                }
-                                printf(__('%s <span class="says">meinte am</span>', 'piratenkleider'), sprintf('<cite class="fn">%s</cite>', get_comment_author_link()));
-                                ?>
+                <?php
+                if ($options['aktiv-avatar'] == 1) {
+                    echo '<div class="avatar">';
+                    echo get_avatar($comment, 48, $defaultoptions['src-default-avatar']);
+                    echo '</div>';
+                }
+                printf(__('%s <span class="says">meinte am</span>', 'piratenkleider'), sprintf('<cite class="fn">%s</cite>', get_comment_author_link()));
+                ?>
                             </div><!-- .comment-author .vcard -->
-                            <?php if ($comment->comment_approved == '0') : ?>
+                <?php if ($comment->comment_approved == '0') : ?>
                                 <em><?php _e('Der Kommentar wartet auf die Freischaltung.', 'piratenkleider'); ?></em>
                                 <br />
-                            <?php endif; ?>
+                        <?php endif; ?>
 
                             <div class="comment-meta commentmetadata"><a href="<?php echo esc_url(get_comment_link($comment->comment_ID)); ?>">
-                                    <?php
-                                    /* translators: 1: date, 2: time */
-                       printf( __( '%1$s um %2$s', 'piratenkleider' ), get_comment_date(),  get_comment_time() ); ?></a> Folgendes:<?php edit_comment_link( __( '(Edit)', 'piratenkleider' ), ' ' );
-                                    ?>
+                            <?php
+                            /* translators: 1: date, 2: time */
+                            printf(__('%1$s um %2$s', 'piratenkleider'), get_comment_date(), get_comment_time());
+                            ?></a> Folgendes:<?php edit_comment_link(__('(Edit)', 'piratenkleider'), ' ');
+                ?>
                             </div><!-- .comment-meta .commentmetadata -->
                         </div>
 
                         <div class="comment-body"><?php comment_text(); ?></div>
-                        <?php if ($options['aktiv-commentreplylink']) { ?>
+                    <?php if ($options['aktiv-commentreplylink']) { ?>
                             <div class="reply">
-                                <?php comment_reply_link(array_merge($args, array('depth' => $depth, 'max_depth' => $args['max_depth']))); ?>                       
+                        <?php comment_reply_link(array_merge($args, array('depth' => $depth, 'max_depth' => $args['max_depth']))); ?>                       
                             </div> <!-- .reply -->
-                        <?php } ?>
+                    <?php } ?>
 
 
                     </div><!-- #comment-##  -->
@@ -362,48 +373,46 @@ if (!function_exists('piratenkleider_comment')) :
                     break;
             endswitch;
         }
-endif;
 
-
-
+    endif;
 
     function piratenkleider_remove_recent_comments_style() {
         global $wp_widget_factory;
         remove_action('wp_head', array($wp_widget_factory->widgets['WP_Widget_Recent_Comments'], 'recent_comments_style'));
     }
+
     add_action('widgets_init', 'piratenkleider_remove_recent_comments_style');
 
 
 
     if (!function_exists('piratenkleider_post_pubdateinfo')) :
+
         /**
          * Fusszeile unter Artikeln: Ver&ouml;ffentlichungsdatum
          */
         function piratenkleider_post_pubdateinfo() {
-        printf( __( '<span class="meta-prep">Ver&ouml;ffentlicht am</span> %1$s ', 'piratenkleider' ),
-                sprintf( '<span class="entry-date">%1$s</span>',
-                        get_the_date()
+            printf(__('<span class="meta-prep">Ver&ouml;ffentlicht am</span> %1$s ', 'piratenkleider'), sprintf('<span class="entry-date">%1$s</span>', get_the_date()
                     )
             );
         }
+
     endif;
 
     if (!function_exists('piratenkleider_post_autorinfo')) :
+
         /**
          * Fusszeile unter Artikeln: Autorinfo
          */
         function piratenkleider_post_autorinfo() {
-        printf( __( '<span class="meta-prep-author">von</span> %1$s ', 'piratenkleider' ),               
-                sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s">%3$s</a></span> ',
-                        get_author_posts_url( get_the_author_meta( 'ID' ) ),
-                        sprintf( esc_attr__( 'Artikel von %s', 'piratenkleider' ), get_the_author() ),
-                        get_the_author()
+            printf(__('<span class="meta-prep-author">von</span> %1$s ', 'piratenkleider'), sprintf('<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s">%3$s</a></span> ', get_author_posts_url(get_the_author_meta('ID')), sprintf(esc_attr__('Artikel von %s', 'piratenkleider'), get_the_author()), get_the_author()
                     )
             );
         }
+
     endif;
 
     if (!function_exists('piratenkleider_post_taxonominfo')) :
+
         /**
          * Fusszeile unter Artikeln: Taxonomie
          */
@@ -418,35 +427,30 @@ endif;
             }
             // Prints the string, replacing the placeholders.
             printf(
-                $posted_in,
-                get_the_category_list( ', ' ),
-                $tag_list,
-                get_permalink(),
-                the_title_attribute( 'echo=0' )
+                    $posted_in, get_the_category_list(', '), $tag_list, get_permalink(), the_title_attribute('echo=0')
             );
         }
+
     endif;
 
 // this function initializes the iframe elements 
 // maybe wont work on multisite installations. please use plugins instead.
-function piratenkleider_change_mce_options($initArray) {
-    $ext = 'iframe[align|longdesc|name|width|height|frameborder|scrolling|marginheight|marginwidth|src]';
-    if ( isset( $initArray['extended_valid_elements'] ) ) {
-        $initArray['extended_valid_elements'] .= ',' . $ext;
-    } else {
-        $initArray['extended_valid_elements'] = $ext;
+    function piratenkleider_change_mce_options($initArray) {
+        $ext = 'iframe[align|longdesc|name|width|height|frameborder|scrolling|marginheight|marginwidth|src]';
+        if (isset($initArray['extended_valid_elements'])) {
+            $initArray['extended_valid_elements'] .= ',' . $ext;
+        } else {
+            $initArray['extended_valid_elements'] = $ext;
+        }
+        // maybe; set tiny paramter verify_html
+        $initArray['verify_html'] = false;
+        return $initArray;
     }
-    // maybe; set tiny paramter verify_html
-    $initArray['verify_html'] = false;
-    return $initArray;
-}
-add_filter('tiny_mce_before_init', 'piratenkleider_change_mce_options');
 
+    add_filter('tiny_mce_before_init', 'piratenkleider_change_mce_options');
 
+    class My_Walker_Nav_Menu extends Walker_Nav_Menu {
 
-
-class My_Walker_Nav_Menu extends Walker_Nav_Menu
-{
         /**
          * Start the element output.
          *
@@ -457,15 +461,16 @@ class My_Walker_Nav_Menu extends Walker_Nav_Menu
          * @return void
          */
         public function start_el(&$output, $item, $depth, $args) {
-        if ( '-' === $item->title )
-        {
+            if ('-' === $item->title) {
                 // you may remove the <hr> here and use plain CSS.
                 $output .= '<li class="menu_separator"><hr>';
             } else {
                 parent::start_el($output, $item, $depth, $args);
             }
         }
+
         /* Klasse has_children einfuegen */
+
         public function display_element($el, &$children, $max_depth, $depth = 0, $args, &$output) {
             $id = $this->db_fields['id'];
 
@@ -474,9 +479,11 @@ class My_Walker_Nav_Menu extends Walker_Nav_Menu
 
             parent::display_element($el, $children, $max_depth, $depth, $args, $output);
         }
+
     }
 
     if (!function_exists('get_piratenkleider_socialmediaicons')) :
+
         /**
          * Displays Social Media Icons
          */
@@ -539,6 +546,7 @@ class My_Walker_Nav_Menu extends Walker_Nav_Menu
                 echo '</div>';
             }
         }
+
     endif;
 
 
@@ -546,6 +554,7 @@ class My_Walker_Nav_Menu extends Walker_Nav_Menu
         /*
          * Anzeige des Sidebar-Menus
          */
+
         function get_piratenkleider_seitenmenu($zeige_sidebarpagemenu = 1, $zeige_subpagesonly = 1) {
             global $defaultoptions;
             global $post;
@@ -571,7 +580,6 @@ class My_Walker_Nav_Menu extends Walker_Nav_Menu
                         echo $sidelinks;
                         echo '</ul>';
                     }
-
                 } else {
 
                     if (has_nav_menu('primary')) {
@@ -583,35 +591,38 @@ class My_Walker_Nav_Menu extends Walker_Nav_Menu
                     }
                 }
             }
-
         }
+
     endif;
 
-if ( ! function_exists( 'get_piratenkleider_firstpicture' ) ) :
-/*
- * Erstes Bild aus einem Artikel auslesen, wenn dies vorhanden ist
- */
-function get_piratenkleider_firstpicture($postid){
-    global $post, $posts;
-    $first_img = '';
-    ob_start();
-    ob_end_clean();
-    $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
-    $first_img = $matches [1] [0];
-    if (!empty($first_img)){
-        $site_link =  home_url();  
-        $first_img = preg_replace("%$site_link%i",'', $first_img); 
-        $imagehtml = '<img src="'.$first_img.'" alt="" width="130">';
-        return $imagehtml;    
-    }
-}
-endif;
+    if (!function_exists('get_piratenkleider_firstpicture')) :
+        /*
+         * Erstes Bild aus einem Artikel auslesen, wenn dies vorhanden ist
+         */
+
+        function get_piratenkleider_firstpicture($postid) {
+            global $post, $posts;
+            $first_img = '';
+            ob_start();
+            ob_end_clean();
+            $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+            $first_img = $matches [1] [0];
+            if (!empty($first_img)) {
+                $site_link = home_url();
+                $first_img = preg_replace("%$site_link%i", '', $first_img);
+                $imagehtml = '<img src="' . $first_img . '" alt="" width="130">';
+                return $imagehtml;
+            }
+        }
+
+    endif;
 
 
     if (!function_exists('get_piratenkleider_custom_excerpt')) :
         /*
          * Erstellen des Extracts
          */
+
         function get_piratenkleider_custom_excerpt() {
             global $defaultoptions;
             global $post;
@@ -641,12 +652,14 @@ endif;
             $the_str .= piratenkleider_continue_reading_link();
             return $the_str;
         }
+
     endif;
 
     if (!function_exists('short_title')) :
         /*
          * Erstellen des Kurztitels
          */
+
         function short_title($after = '...', $length = 6, $textlen = 10) {
             $thistitle = get_the_title();
             $mytitle = explode(' ', get_the_title());
@@ -668,12 +681,14 @@ endif;
             }
             return $thistitle;
         }
+
     endif;
 
     if (!function_exists('piratenkleider_fetch_feed')) :
         /*
          * Feet holen mit direkter Angabe der SimplePie-Parameter
          */
+
         function piratenkleider_fetch_feed($url, $lifetime = 0) {
             global $defaultoptions;
             $options = get_option('piratenkleider_theme_options');
@@ -685,7 +700,8 @@ endif;
             if ($lifetime == 0) {
                 $lifetime = $options['feed_cache_lifetime'];
             }
-    if ($lifetime < 600) $lifetime = 1800;
+            if ($lifetime < 600)
+                $lifetime = 1800;
             // Das holen von feeds sollte auf keinen Fall haeufiger als alle 10 Minuten erfolgen
 
             require_once (ABSPATH . WPINC . '/class-feed.php');
@@ -720,28 +736,28 @@ endif;
 
             return $feed;
         }
-    endif;
 
+    endif;
 
     function wpi_linkexternclass($content) {
         return preg_replace_callback('/<a[^>]+/', 'wpi_linkexternclass_callback', $content);
     }
 
-function wpi_linkexternclass_callback($matches)
-    {
+    function wpi_linkexternclass_callback($matches) {
         $link = $matches[0];
         $site_link = home_url();
 
-            if (strpos($link, 'class') === false)
-            {
+        if (strpos($link, 'class') === false) {
             $link = preg_replace("%(href=\S(?!$site_link))%i", 'class="extern" $1', $link);
         }
         return $link;
     }
+
     add_filter('the_content', 'wpi_linkexternclass');
 
 
     add_action('template_redirect', 'rw_relative_urls');
+
     function rw_relative_urls() {
         // Don't do anything if:
         // - In feed
@@ -780,8 +796,8 @@ function wpi_linkexternclass_callback($matches)
 
         return $link;
     }
-    add_filter('the_content', 'wpi_relativeurl');
 
+    add_filter('the_content', 'wpi_relativeurl');
 
     function dimox_breadcrumbs() {
         global $defaultoptions;
@@ -804,38 +820,32 @@ function wpi_linkexternclass_callback($matches)
                 $thisCat = $cat_obj->term_id;
                 $thisCat = get_category($thisCat);
                 $parentCat = get_category($thisCat->parent);
-      if ($thisCat->parent != 0) echo(get_category_parents($parentCat, TRUE, ' ' . $delimiter . ' '));
+                if ($thisCat->parent != 0)
+                    echo(get_category_parents($parentCat, TRUE, ' ' . $delimiter . ' '));
                 echo $before . __('Artikel der Kategorie ', 'piratenkleider') . '"' . single_cat_title('', false) . '"' . $after;
- 
             } elseif (is_bbpress()) {
                 echo '<a href="' . $homeLink . '/participa">Participa</a> ' . $delimiter . ' ';
                 echo '<a href="' . $homeLink . '/participa/discussao">Discuss&atilde;o</a> ' . $delimiter . ' ';
                 $defaults = array(
-
-			// HTML
-			'before'          => '',
-			'after'           => '',
-			'sep'             => '/',
-			'pad_sep'         => 1,
-
-			// Home
-			'include_home'    => false,
-			'home_text'       => '$pre_front_text',
-
-		);
+                    // HTML
+                    'before' => '',
+                    'after' => '',
+                    'sep' => '/',
+                    'pad_sep' => 1,
+                    // Home
+                    'include_home' => false,
+                    'home_text' => '$pre_front_text',
+                );
                 bbp_breadcrumb($defaults);
             } elseif (is_day()) {
                 echo '<a href="' . get_year_link(get_the_time('Y')) . '">' . get_the_time('Y') . '</a> ' . $delimiter . ' ';
                 echo '<a href="' . get_month_link(get_the_time('Y'), get_the_time('m')) . '">' . get_the_time('F') . '</a> ' . $delimiter . ' ';
                 echo $before . get_the_time('d') . $after;
- 
             } elseif (is_month()) {
                 echo '<a href="' . get_year_link(get_the_time('Y')) . '">' . get_the_time('Y') . '</a> ' . $delimiter . ' ';
                 echo $before . get_the_time('F') . $after;
- 
             } elseif (is_year()) {
                 echo $before . get_the_time('Y') . $after;
- 
             } elseif (is_single() && !is_attachment()) {
                 if (get_post_type() != 'post') {
                     $post_type = get_post_type_object(get_post_type());
@@ -843,25 +853,23 @@ function wpi_linkexternclass_callback($matches)
                     echo '<a href="' . $homeLink . '/' . $slug['slug'] . '/">' . $post_type->labels->singular_name . '</a> ' . $delimiter . ' ';
                     echo $before . get_the_title() . $after;
                 } else {
-        $cat = get_the_category(); $cat = $cat[0];
+                    $cat = get_the_category();
+                    $cat = $cat[0];
                     echo get_category_parents($cat, TRUE, ' ' . $delimiter . ' ');
                     echo $before . get_the_title() . $after;
                 }
- 
             } elseif (!is_single() && !is_page() && get_post_type() != 'post' && !is_404()) {
                 $post_type = get_post_type_object(get_post_type());
                 echo $before . $post_type->labels->singular_name . $after;
- 
             } elseif (is_attachment()) {
                 $parent = get_post($post->post_parent);
-      $cat = get_the_category($parent->ID); $cat = $cat[0];
+                $cat = get_the_category($parent->ID);
+                $cat = $cat[0];
                 echo get_category_parents($cat, TRUE, ' ' . $delimiter . ' ');
                 echo '<a href="' . get_permalink($parent) . '">' . $parent->post_title . '</a> ' . $delimiter . ' ';
                 echo $before . get_the_title() . $after;
- 
             } elseif (is_page() && !$post->post_parent) {
                 echo $before . get_the_title() . $after;
- 
             } elseif (is_page() && $post->post_parent) {
                 $parent_id = $post->post_parent;
                 $breadcrumbs = array();
@@ -871,20 +879,17 @@ function wpi_linkexternclass_callback($matches)
                     $parent_id = $page->post_parent;
                 }
                 $breadcrumbs = array_reverse($breadcrumbs);
-      foreach ($breadcrumbs as $crumb) echo $crumb . ' ' . $delimiter . ' ';
+                foreach ($breadcrumbs as $crumb)
+                    echo $crumb . ' ' . $delimiter . ' ';
                 echo $before . get_the_title() . $after;
- 
             } elseif (is_search()) {
                 echo $before . __('Suche', 'piratenkleider') . '"' . get_search_query() . '"' . $after;
- 
             } elseif (is_tag()) {
                 echo $before . __('Artikel mit Schlagwort ', 'piratenkleider') . '"' . single_tag_title('', false) . '"' . $after;
- 
             } elseif (is_author()) {
                 global $author;
                 $userdata = get_userdata($author);
                 echo $before . __('Artikel von ', 'piratenkleider') . $userdata->display_name . $after;
- 
             } elseif (is_404()) {
                 echo $before . '404' . $after;
             }
@@ -899,9 +904,6 @@ function wpi_linkexternclass_callback($matches)
         }
     }
 
-
-
- 
     if (!is_admin()) {
         wp_deregister_script('jquery');
         // muss trotz ThemeCheck Warnung drin bleiben, ansonsten wird veraltetes jQuery geladen
@@ -928,20 +930,22 @@ function wpi_linkexternclass_callback($matches)
             wp_register_script('dynamic-sidebar', $defaultoptions['src-dynamic-sidebar'], false, $defaultoptions['js-version']);
             wp_enqueue_script('dynamic-sidebar');
         }
-       
-       
-       
     }
-function piratenkleider_header_style() {} 
+
+    function piratenkleider_header_style() {
+        
+    }
 
     function piratenkleider_admin_head() {
         echo '<link rel="stylesheet" type="text/css" href="' . get_template_directory_uri() . '/css/admin.css" />';
     }
+
     add_action('admin_head', 'piratenkleider_admin_head');
 
     function custom_login() {
         echo '<link rel="stylesheet" type="text/css" href="' . get_template_directory_uri() . '/css/custom-login.css" />';
     }
+
     add_action('login_head', 'custom_login');
 
     /**
@@ -1091,7 +1095,7 @@ function piratenkleider_header_style() {}
                         /* ]]> */
                     </script>
 
-                <?php elseif (bbp_is_single_user_edit()) : ?>
+            <?php elseif (bbp_is_single_user_edit()) : ?>
 
                     <script type="text/javascript" charset="utf-8">
                         if ( window.location.hash == '#password' ) {

@@ -89,10 +89,11 @@ if ((isset( $options['meta-keywords'] )) && ( strlen(trim($options['meta-keyword
         <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/apple-touch-icon.png">
         <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
         <link rel="profile" href="http://gmpg.org/xfn/11" />
-        <?php do_action( 'bp_head' ); ?>
         <!-- inicio header wp -->
         <?php wp_head(); ?>
         <!-- fim header wp -->
+        <?php do_action( 'bp_head' ); ?>
+        <?php do_action( 'bbp_head' ); ?>
         <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>">
 <?php if ((isset($designspecials['css-colorfile'])) && (strlen(trim($designspecials['css-colorfile']))>1)) { 
             echo '<link rel="stylesheet" type="text/css" media="all" href="' . get_template_directory_uri() . '/css/' . $designspecials['css-colorfile'] . '">';
