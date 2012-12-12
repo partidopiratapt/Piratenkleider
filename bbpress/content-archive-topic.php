@@ -9,7 +9,6 @@
 
 ?>
 
-<div id="bbpress-forums">
 	<?php do_action( 'bbp_template_before_topics_index' ); ?>
 
 	<?php if ( bbp_has_topics() ) : ?>
@@ -27,5 +26,3 @@
 	<?php endif; ?>
 
 	<?php do_action( 'bbp_template_after_topics_index' ); ?>
-
-</div>

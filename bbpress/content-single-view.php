@@ -9,7 +9,6 @@
 
 ?>
 
-<div id="bbpress-forums">
 	<?php bbp_set_query_name( 'bbp_view' ); ?>
 
 	<?php if ( bbp_view_query() ) : ?>
@@ -27,5 +26,3 @@
 	<?php endif; ?>
 
 	<?php bbp_reset_query_name(); ?>
-
-</div>

@@ -1,17 +1,17 @@
-Pirate clothes
-- WordPress Theme for the pirate party websites
+Piratenkleider
+- Wordpress-Theme für Webauftritte der Piratenpartei 
 =================================================
 
-Version 2.14 von Wolfgang Wiese (xwolf), 16. Oktober 2012
+Version 2.14.1 von Wolfgang Wiese (xwolf), 7. Dezember 2012
 
 
 DOWNLOADS
 
-    From the GIT repo (last working version and betas)
+    Aus dem GIT-Repo (Letzte Arbeitsversion und Betas):
         https://github.com/xwolfde/Piratenkleider
-        https://github.com/zwitschi/Piratenkleider (Austria)
+        https://github.com/zwitschi/Piratenkleider (Österreich)
     
-    Project website (Release)
+    Projekt-Website (Releases)
         http://piratenkleider.xwolf.de
     
     
@@ -20,154 +20,239 @@ CREDITS & COPYRIGHT
  CC-BY-SA 3.0, http://creativecommons.org/licenses/by-sa/3.0/de/deed.de
 
 
-AUTHORS / DEVELOPER
+AUTOREN / ENTWICKLER
 
-   Wolfgang Wiese (xwolf) http://www.xwolf.de
+   Wolfgang Wiese (xwolf), http://www.xwolf.de 
 
-   With the help of
-     Andre Sendowski, http://www.iphone-notes.de/
-     Heiko Philippski, http://www.phindie.de/
-     Kerstin Probiesch, http://www.barrierefreie-informationskultur.de
-     Fabian Müller, http://www.feals.de
-     George http://zwitschi.net sense,
+   Mit Hilfe und Unterstützung von: 
+     - Andre Sendowski, http://www.iphone-notes.de/
+     - Heiko Philippski, http://www.phindie.de/
+     - Kerstin Probiesch, http://www.barrierefreie-informationskultur.de
+     - Fabian Müller, http://www.feals.de
+     - Georg Sinn, http://zwitschi.net
+     - Ralph Hinterleitner, rcs@deixis.at
+     - Jan Schejbal, http://janschejbal.wordpress.com/
+     - Marc Schieferdecker,  http://thegeek.de 
+     - Benjamin Stöcker, http://freiheitsworte.de 
 
-   Sources for default images and materials, CI (CC-BY 3.0)
-      Default images for slider / side images: Tobias M. Eckrich
-      More pictures: Wiki with different authors
-      Image processing for pirate clothes 2.x: Wolfgang Wiese
+   Quellen für Defaultbilder und CI-Materialen (CC-BY 3.0)
+     - Defaultgrafiken für Slider/Seitenbilder: Tobias M. Eckrich
+     - Weitere Bilder: Piratenwiki mit unterschiedlichen Autoren
+     - Bildbearbeitung für Piratenkleider 2.x: Wolfgang Wiese
 
-   For more content using:
-      Social Media Icons: Paul Robert Lloyd, http://paulrobertlloyd.com/2009/06/social_media_icons
-      YAML CSS Framework (Licensed under the Creative Commons Attribution 2.0 License).
-      JavaScript framework jQuery (GNU General Public License (GPL) version 2)
-      Flex Slider jQuery (MIT License)
-      Font Bebas of Dharmatype (SIL Open Font License 1.1)
-      Droid Sans font from Ascender (http://www.droidfonts.com/), Apache License 2.0 http://www.apache.org/licenses/LICENSE-2.0
+   Weitere verwendete Inhalte:
+     - Social Media Icons: Paul Robert Lloyd, http://paulrobertlloyd.com/2009/06/social_media_icons      
+     - YAML CSS Framework (Lizensiert unter der Creative Commons Attribution 2.0 License).
+     - JavaScript Framework jQuery (GNU General Public License (GPL) Version 2)
+     - jQuery FlexSlider (MIT License)
+     - Schrift Bebas Neue von Dharmatype (SIL Open Font License 1.1)
+     - Schrift Droid Sans von Ascender (http://www.droidfonts.com/), Apache License 2.0 http://www.apache.org/licenses/LICENSE-2.0
+     - Circle Player, https://github.com/maboa/circleplayer (GNU General Public License (GPL) Version 2)
 
-PRE-
+VORVERSION
 
-This theme is based on the WordPress template based on Korbinian Polk.
-Korbinian can be found from the old original on github:
+Dieses Theme basiert auf die Wordpress-Basisvorlage von Korbinian Polk.  
+Das alte Original von korbinian kann auf github gefunden werden: 
  https://github.com/korbinian/Piratenkleider
 
 
 
-MENUS
-   The page consists of three different menus.
+MENÜS
+   Die Seite besteht aus drei verschiedenen Menüs.
 
-    - Main navigation
-        This lists all the static pages of the website, in the main navigation at the top of the page, but below the logo
-        . appear
-        It should be noted that in addition to the pages of the website, the home must be added. Under the option Menuüs we find the home when the box "register" on "show all" button.
+    - Hauptnavigation
+        Hierin werden alle statischen Seiten des Webauftritts aufgeführt, die
+        in der Hauptnavigation im oberen Teil der Seite, aber unter dem Logo
+        erscheinen.
+        Zu beachten ist, daß neben den Seiten des Webauftritts auch die 
+        Startseite hinzugefügt werden muss. Unter der Option Menuüs
+        findet sich die Startseite, wenn man bei der Box
+          "Listen" auf "Zeige alle" klickt.   
     - Linkmenu
-        Here are links to tools, or portals, such as the wiki or the forum.
-        If this menu is not defined, it is filled with the standard links: Wiki, Liquid Feedback, Forum, Message in a Bottle
-    - Technical navigation
-        In the technsiche Menu (static) pages that say something about the website, such as the Contacts, Contact, credits.
-        The technical menu is available in the sidebar "foot: Right column by other content will be overwritten.
+        Hier befinden sich Links zu Werkzeugen oder Arbeitsportalen, wie
+        bspw. das Wiki oder das Forum.
+        Wenn diese Menü nicht definiert ist, wird es mit den Standardlinks
+        besetzt: Wiki, Liquid Feedback, Forum, Flaschenpost
+    - Technische Navigation
+        In das technsiche Menu kommen (statische) Seiten, die etwas über
+        den Webauftritt sagen, wie bspw. das Impressum, Kontakt, Credits.
+        Das technische Menü kann in der Sidebar "Fußbereich: Rechte Spalte"
+        durch anderen Inhalt überschrieben werden.
 
-   The menus themselves have to be created under Design-> menus and the respective sides of the menus are assigned.
-   These self-created menus are then assigned under "arrangement in the theme" the three areas mentioned.
-   In the menu, which is the main navigation is associated with the site's homepage should be included. This is then converted using CSS in a little house icon. If no menu is created and assigned to the main navigation, alternatively, a menu based on the existing site built.
-
-
-
-CONTENT
-
-First All pages and articles should items / page images, since these can be displayed as a teaser.
-Second Which items are presented in the slider, is defined in the Slider class setting.
-Third Specific items may appear on the home page in the slider.
-   This is a varied picture of their own articles with links to an article.
-   In order to do this for an article, the article must be enabled for the slider category. (See point "slider" "Set rigging" in the options) If an item does not have a defined image feature article, the default slider images used.
-
-
-AREAS / WIDGETS
-
-First "Sidebar (right column)"
-    This area is located right of the content. It is suitable for advertising posters, notices and the like. If empty, as an alternative some of the general standard posters are shown.
-Second Sidebar 2 (Right to billboards)
-    This area is located right of the content. It is positioned on the billboards, which the options can be enabled or disabled.
-Third "Home: Slider range"
-    Here, by default the items shown pictures of three items that are classified as "Slider" is assigned.
-    If the widget is filled with a different function, then drop the slider.
-4th "Home: Right Action link area"
-    This area is right next to the slider. On the Pirate main site there are 3 links to donors / Get Involved and become a member.
-    This 3 teaser links may put the theme option rigging are changed. If the widget used, the content will not display these changes and overwrite the widget content.
-5th "Home: Links below"
-    This is on the home field of the right of the list of additional items.
-    It is recommended to fill the widget with the keyword list.
-6th "Top: Bottom right"
-    Area right below the three press articles.
-    If empty, here's a key word list is shown.
-7th "Footer: Left Side"
-   Area in the footer below the main text area. This area is particularly suitable for external links to other pirate sites at the regional level or überegionaler. These are then defined as a menu of external links, and then assigned to this sidebar as a widget. If empty, nothing is displayed.
-8th "Foot: Right column"
- Right column in the foot. If empty, this seems the technical menu (see menu). Although this is not defined, the blog address and the RSS feed address shown
+   Die Menüs müssen unter Design->Menüs selbst angelegt werden und die
+   jeweiligen Seiten den Menus zugeordnet werden.
+   Diese selbst angelegten Menüs werden dann unter dem Punkt
+    "Anordnung im Theme" den drei genannten Bereichen zugeordnet.
+   Bei dem Menü, welches der Hauptnavigation zugeordnet ist, sollte die
+   Startseite der Website enthalten sein. Diese wird mittels CSS dann
+   in ein Häuschensymbol umgewandelt.
+   Sollte kein Menu angelegt und der hauptnavigation zugewiesen werden,
+   wird ersatzweise ein Menü ausgehend von den vorhandenen Seiten aufgebaut.
 
 
-THEME OPTION "set rig"
+
+INHALTE
+
+1. Alle Seiten und Artikel sollten Artikel/Seitenbilder haben, da diese
+   als Teaser angezeigt werden können.
+2. Welche Artikel im Slider vorgestellt werden, wird in der Slider-
+   Kategorie-Einstellung definiert.
+3. Besondere Artikel können auf der Startseite im Slider erscheinen.
+   Dies ist ein von selbst wechselndes Artikelbild mit der Verlinkung
+   zu einem Artikel. 
+   Um dies für einen Artikel zu machen, muss der Artikel in der
+   für den Slider aktivierten Kategorie sein. (Siehe Punkt "Slider" unter den 
+    Optionen "Takelage setzen")
+   Sollte ein Artikel über kein definiertes Artikelbild verfügen, wird
+   das Defaultsliderbilder verwendet.       
+
+
+BEREICHE/WIDGETS
+
+1. "Sidebar (Rechte Spalte)"
+    Dieser Bereich befindet sich rechts vom Inhaltsbereich. Er ist geeignet für
+    Werbeplakate, Hinweise und ähnliches. Wenn leer, werden als Alternative 
+    einige der allgemeinen Standardplakate gezeigt.
+2. Sidebar 2 (Rechts unter Plakaten) 
+    Dieser Bereich befindet sich rechts vom Inhaltsbereich. Er ist nach den 
+    Werbeplakaten positioniert, die über die Optionen ein- oder abgeschaltet 
+    werden können.
+3. "Startseite: Sliderbereich"
+    Hier werden per default die Artikelbilder der 3 Artikel gezeigt, die
+    der Kategorie "Slider" zugeordnet sind.
+    Wenn das Widget mit einer anderer Funktion gefüllt wird, dann
+    entfällt der Slider.
+4. "Startseite: Rechter Aktionlinkbereich"
+    Dieser Bereich ist rechts neben dem Slider. Auf der Piraten-Hauptsite
+    befinden sich dort 3 Links zu Spendern/Mitmachen und Mitglied werden.
+    Dieser 3 Teaserlinks können über die Theme-Option Takelage setzen
+    verändert werden. Wird das Widget genommen, wird dessen Inhalt jedoch
+    diese Änderungen überschreiben und der Widgetinhalt angezeigt.
+5. "Startseite: Links unten" 
+    Dies ist auf der Startseite der Bereich rechts neben der Liste der weiteren
+    Artikel.
+    Es empfiehlt das Widget mit der Schlagwortliste zu füllen.
+6. "Startseite: Rechts unten" 
+    Bereich rechts unterhalb der drei Presseartikel.
+    Wenn leer, wird hier eine Schlagwortliste gezeigt.
+7. "Fußbereich: Linke Seite"
+   Bereich im Fußteil unter dem Haupttextbereich. Dieser Bereich eignet sich 
+   insbesondere für externe Links zu anderen Piratenwebsites auf regionaler oder 
+   überegionaler Ebene. Diese werden dann als Menu mit externen Links definiert 
+   und dann als Widget dieser Sidebar zugeordnet. Wenn leer, wird hier nichts 
+    angezeigt.
+8. "Fußbereich: Rechte Spalte"
+   Rechte Spalte im Fußbereich. Wenn leer, erscheint hier das technische Menu 
+   (siehe Menüs). Wenn auch dieses nicht definiert ist, wird die Blogadresse und 
+   dessen RSS-Feedadresse gezeigt
+
+
+THEME-OPTION "Takelage einstellen"
  
-  Under the option "Set rigging" are the fundamental
-  Options for the Theme set:
-    - Turn off Newsletter Box /
-    - Social Media buttons on / off
-    - Set the number of messages on the home and its location
-    - Slider control
-    - Teaser links set or change
-    - Sticker set or change
-    - Web addresses for newsletters, membership applications and donations adaptable
-    - Change meta-data
-    - Optional display control for page images
-    - Menutyp control for the display of pages and sub pages in the sidebar.
-   And many more ...
+  Unter der Option "Takelage setzen" sind die grundlegenden
+  Optionen für das Theme einstellbar:
+    - Newsletter-Box einschalten/abschalten
+    - Social Media Buttons ein/ausschalten         
+    - Anzahl der Nachrichten auf der Startseite und dessen Anordnung
+      einstellen
+    - Slider steuern     
+    - Teaserlinks ändern oder setzen
+    - Sticker ändern oder setzen
+    - Webadressen für Newsletter, Mitgliederanträge und Spenden anpassbar
+    - Metatag-Angaben ändern
+    - Optionale Anzeige für Seitenbilder steuern
+    - Menutyp  für die Darstellung der Seiten und Unterseiten in der
+      Sidebar steuern.
+   Sowie viele mehr...  
  
 
-THEME OPTION "set sail"
+THEME-OPTION "Segel setzen"
    
-   This option allows to set the replacement images that are displayed when articles or pages have no "product image".
-   Be made no provisions for the slider, by default the first category ("General") used and displayed images at random.
+   Unter dieser Option lassen sich die Ersatzbilder festlegen, die angezeigt
+   werden, wenn  Artikel oder  Seiten kein "Artikelbild" besitzen.
+   Werden für den Slider keine Vorgaben gemacht, wird per Default die erste 
+   Kategorie ("Allgemein") verwendet und Bilder per Zufall ausgegeben.
 
-   Furthermore, can the promotional poster for slider in the right sidebar and selected additional URL information can be defined.
-   No images are pre-selected, all the posters advertising the slider defined.
+   Ausserdem können hier die Werbeposter beim Slider in der rechten Sidebar
+   ausgewählt und über URL-Angaben zusätzliche definiert werden.
+   Werden keine Bilder vorausgewählt, werden alle Werbeposter im
+   Slider definiert.
 
-   The default images in the right sidebar appear as billboards are located in the folder / images /.
-   In another size, the image will be rescaled by the browser. This may be associated with loss of quality.
+   Die Defaultbilder die in der rechten Sidebar als Werbeplakate erscheinen
+   liegen im Ordner /plakate/ . 
+   Bei einem anderen Größe wird das Bild entsprechend durch den Browser
+   umskaliert. Dies kann jedoch mit Qualitätseinbußen verbunden sein.
 
-   A complete list of promotional posters, which is used by the Pirate Party can http://wiki.piratenpartei.de/Plakate the wiki at the site will be found.
+   Eine komplette Liste an Werbeplakaten, die von der Piratenpartei eingesetzt
+   wird, kann im Wiki unter der Seite http://wiki.piratenpartei.de/Plakate
+   gefunden werden.
 
-   Furthermore, the icons for the Metaseiten search, tags, categories, authors, archive and template pages by entering your own image URL changed.
+   Weiterhin können die Symbolbilder für die Metaseiten Suche, Tags, Kategorien,
+   Autoren, Archiv und Templateseiten über die EIngabe einer eigenen Bild-URL
+   geändert werden. 
 
-THEME OPTION "Captn & Crew"
+THEME-OPTION "Captn & Crew"
 
-   This option allows you to record contact information for the template pages for the imprint, the privacy statements and optional form pages.
+   Diese Option dient der Eintragung von Kontaktinformationen für die
+   Templateseiten um das Impressum, die Datenschutzerklärung und
+   optionalen Formularseiten.
      
 
-THEME OPTION "bowsprit"
+THEME-OPTION "Klüverbaum"
 
-   This option allows you to change specific CSS statements in the header of the page, and you can include your own CSS.
-   Furthermore, can the color codes of other countries known to be activated.
-   So it is possible to select, for example, instead of the waves and the ship to its own skyline as a background graphic.
-   This option page should be changed before experienced web administrators who know exactly what they are doing.
+   Diese Option ermöglicht die Änderungen spezieller CSS-Anweisungen im
+   Kopfteil der Seite, sowie das Einfügen eigener CSS-Anweisungen.
+   Ausserdem können hier die bekannten Farbcodes anderer Länder aktiviert 
+   werden.
+   So ist es hier bspw. möglich anstelle der Wellen und dem Schiff
+   eine eigene Skyline als Hintergrundgrafik zu wählen.
+   Diese Optionenseite sollte nun vor erfahrenen Webadmins geändert werden,
+   die genau wissen was sie tun.
    
    
-THEME OPTION "header"
+THEME OPTION "Kopfzeile"   
 
-   This option is used to change the logo and upload your own logo.
-   Important Note:
-   The logo is currently set to a size of 300x130 pixels.
-   The background should be in RGB # eeeeee.
-   Unfortunately, all images will be uploaded in JPG converted if they are not already. The quality of the conversion is not as good.
-   For this reason it is advisable to prepare the logo in the right size and the background on a separate graphics program.
+   Diese Option dient dazu, das Logo zu ändern und ein eigenes Logo 
+   hochzuladen.
+   Wichtiger Hinweis:
+   Das Logo ist derzeit festgelegt auf eine Größe von 300x130 Pixeln.
+   Der Hintergrund sollte  in RGB #eeeeee sein.
+   Leider werden alle Bilder die hochgeladen werden in JPG umgewandelt,
+   wenn sie es nicht schon sind. Die Qualität der Umwandlung ist jedoch
+   nicht so gut.
+   Aus diesem Grund empfiehlt es sich, das Logo in der passenden
+   Größe und dem Hintergrund über einem eigenen Grafikprogramm 
+   vorzubereiten.
 
 
-PLUGINS SUPPORT
-  - If the plugin "Related Posts by Category" is to be installed and activated, when viewing an article link more articles that could possibly be relevant.
- - The plugin "ICS Calendar" can be used to display dates in widgets.
-   Under "Settings ->" ICS Calendar "this should be configured as follows:
+THEME EIGENE WIDGETS
+
+    Das Piratenkleider Theme enthält zwei Widgets, die für die verschiedenen
+    Sidebars eingesetzt werden können:
+    1. Widget "Piraten Linkliste"
+        Das Widget kann eine vorgegebene Liste von Bereichen oder
+        Gliederungen anzeigen. Dies entspricht der Liste die als Default
+        im Fußteil angezeigt werden kann.
+
+    2. Widget "Piraten Newsletter"
+        Das Widget kann ein Eingabeformular für den Newsletter 
+        verwendet werden, zu dem die Adresse unter den Optionen eingegeben
+        wurde.
+
+        
+
+UNTERSTÜTZE PLUGINS
+  - Wenn das Plugin "Related Posts by Category" vorhanden und aktiviert ist,
+    werden bei der Anzeige eines Artikels weitere Artikel verlinkt, die
+    ggf. relevant sein könnten.
+ - Das Plugin "ICS Calendar" kann verwendet werden um Termin in Widgets
+   darzustellen.
+   Unter "Einstellungen -> "ICS Calendar" sollte dieses wie folgt 
+   konfiguriert werden:
 
     General Settings:
         URL to ICS file (s):
-         For example, in Bavaria:
+         zum Beispiel für Bayern:
          1. http://events.piratenpartei-bayern.de/events/ical?gid=&gid[]=10&cid=&subgroups=1&start=&end=
          2. http://events.piratenpartei-bayern.de/index.php/events/ical?gid=&gid[]=13&cid=
 
@@ -176,89 +261,174 @@ PLUGINS SUPPORT
         Date Format:  "j.m."
         Time Format:  "G:i"
         Custom Event Format: (Yes)
-             %date-time%, %start-date%, %start-time%, %end-date%, %end-time%, %event-title%, %description%, %location%   
+             %date-time%, %start-date%, %start-time%, %end-date%, %end-time%, 
+                %event-title%, %description%, %location%   
 
-   The time zone should be set to UTC time.
+   Die Zeitzone sollte auf UTC-Time gestellt werden.     
 
- Advanced Custom Fields
-  With the help of the plugin Advanced Custom Fields to sites and articles about
-  additional fields are added.
-  In this theme is for pages (not articles), supported by the
-  optional parameters "right_column". This allows for additional
-  Information in the right column (the sidebar) to complete.
+ -Advanced Custom Fields
+  Mit Hilfe des Plugins Advanced Custom Fields können Seiten und Artikel um 
+  zusätzliche Felder ergänzt werden.
+  Im Theme wird dies bei Seiten (nicht Artikeln) unterstützt durch den 
+  optionalen Parameter “right_column”. Dieser erlaubt es, zusätzliche 
+  Informationen in der rechte Spalte (der Sidebar) zu ergänzen.
 
-  Advanced Configuration of Custom Fields. See online documentation.
+  Konfiguration von Advanced Custom Fields. Siehe Online Doku.
 
  - The Events Calendar
-   The plugin "The Events Calendar" is often used to allow a calendar view. To this perfectly fitted into the theme, its own template files in the directory / events have been deposited /.
+   Das Plugin "The Events Calendar" wird oft verwendet um eine
+   Terminkalenderansicht zu ermöglichen. Um diese optimal in das Theme
+   einzubauen, wurden eigene Templatefiles im Verzeichnis /events/ hinterlegt.
 
+ - Kraehennest Podcaster
+   (http://thegeek.de/neues-wordpress-plugin-der-krahennest-podcaster/)
+   Dieses Plugin ermöglicht das Einlesen der Krähennest Podcasts. Dabei handelt
+   es sich um vertonte Meldungen (http://kraehennest.piraten-wagen-mehr-demokratie.de/ )
+   Das Plugin erkennt wenn Artikel mit gleichem Titel wie im Podcast 
+   vorhanden sind und bindet in diesem Fall das Embedding für einen
+   Flashplayer ein.
 
+- Fancier Author Box    
+  (http://wordpress.org/support/plugin/fancier-author-box)  
+  Mit Hilfe dieses Plugins können Informationen über den Blogautoren angezeigt 
+  werden. Im Theme wurden einige wenige CSS Anpassungen gemacht um dieses
+  optiomal zu unterstützen.  
 
-RECOMMENDATIONS FOR WIDGETS
+EMPFEHLUNGEN FÜR WIDGETS
  
-First Diary with "ICS Calendar":
-   In the Widget "sidebar (right column)" should ICS calendar for dates to be entered.
-   Including another text widget with the following contents:
-   <a href="http:// .. link-zur-eventseite ..."> View Other dates </ a>
+1. Terminkalender mit "ICS Calendar":
+   Im Widget "Sidebar (Rechte Spalte) " sollte der ICS-Kalender für Termine 
+   eingetragen werden.
+   Darunter folgt eine weitere Text-Widget mit dem Inhalt:
+   <a href="http:// ..  link-zur-eventseite ...">Weitere Termine anzeigen</a>
 
-   (Unfortunately, the ICS has plugin in the current version still does not respect the setting of links to the calendar Sparche system or individual appointments. Therefore, it is currently better from a usability reasons to make this a text widget for it.)
+   (Leider verfügt das ICS Plugin in der aktuellen Version noch  
+    über keine Einstellung hinsichtlich der Sparche des Links zu 
+    dem Kalendersystem oder zu einzelnen Terminen. Daher ist es aus
+    Usability-Gründen derzeit besser, dies mit einem Textwidget danach
+    zu machen.)
    
 
     
 
-Administrative instructions for Wordpress Theme Editors:
+Administrative Hinweise für Wordpress Theme-Editoren:
 
-First Default images
-   The selection of the default-theme-options.php images is in the file stored in arrays. The images are in / images /
-Second Default The default images are billboards appear in the right sidebar as advertising posters in the folder / images /.
-Third Images in the content area, under the menu items in the respective thumbnail images of the items displayed.
-   This is the default size for the article which is defined images in the blog is used. For newly created blogs, the average image size is used, according to the U.S. in the x and y define a maximum of 300 pixels and then.
-   Settings library should, therefore, the average size of the images to 740 pixels wide and 240 pixels height are fixed.
-   For product images, but works bedürften on the width of a higher scale this is not so great. The Y-axis but is then made large.
-   Therefore, you should make sure that only those images will be chosen according to the actually are wide.
-   The best way to edit images before the slider.
-   With the visual presentation of the slider images which are greater than 240 pixels down are cut off.
+1. Default-Bilder
+   Die Auswahl der default-Bilder ist in Arrays in der Datei
+   theme-options.php abgelegt. Die Bilder liegen im Verzeichnis /images/  
+2. Default-Werbeplakate 
+   Die Defaultbilder die in der rechten Sidebar als Werbeplakate erscheinen
+   liegen im Ordner /plakate/ . 
+3. Bilder in Inhaltsbereich, unter dem Menu
+   Bei  Artikeln werden die jeweiligen Thumbnails der Artikelbilder 
+   eingeblendet.
+   Dabei wird die Standardgröße für die Artikelbilder welche im Blog
+   festgelegt ist, verwendet. Bei neu eingerichteten Blogs wird die mittlere
+   Bildgröße verwendet, die in x und y maximal 300 Pixel definieren und
+   dann entsprechend umrechnen. 
+   Unter Einstellungen-Mediathek sollte daher  die mittlere Größe der Bilder 
+   auf 740 Pixel Breite und 240 Pixel Höhe festgesetzt werden.
+   Bei Artikelbilder, die aber auf der Breite eine Höherskalierung bedürften
+   klappt dies nicht so toll. Die Y-Achse wird dann doch gross gemacht.
+   Daher sollte man darauf achten, daß nur solche Bilder gewählt werden die 
+   auch tatsächlich entsprechend Breit sind.
+   Am Besten bearbeitet man die Sliderbilder vor.
+   Bei der optischen Darstellung des Sliders werden Bilder, die höher sind als
+   240 Pixel nach unten abgeschnitten. 
 
-4th It can be placed up to three stickers in the head section of the website.
-   Under the theme options "rigging set" you can enter the content of the sticker sund the destination address.
-   Content can be entered as HTML to display images directly.
-   But it can only be entered as a text COntent.
-   This can be determined using CSS classes and colors, and a 5 degree rotation for the text.
-   See here for the FAQ section of the documentation for examples.
+4. Es können bis zu drei Sticker im Kopfteil der Webseite plaziert werden.
+   Unter der Theme-Optionen "Takelage setzen" kann man den Content
+   des Sticker sund die Ziel-Adresse eingeben.
+   Als Content kann HTML eingegeben werden um Bilder direkt einzublenden.
+   Es kann aber auch nur ein Text als COntent eingegeben werden.
+   Hierbei können über CSS-Klassen auch Farben und eine 5 Grad Drehung
+   für die Texte bestimmt werden.
+   Siehe hier zu die FAQ der Dokumentation für Beispiele.
 
-    Existing CSS classes to text:
-     cicolor = sets the color of each of which is defined as the basic color of the design. (Default: orange)
-     turned the whole text = Turn around 5 degrees
-     = Can animate the text with a hover scale, rotate and
-     shadow = Specifies the text a shadow (a shadow When rotated text will be set automatically)
+    Vorhandene CSS-Klassen für Texte:
+     cicolor =  setzt die Farbe die jeweils als Grundfarbe des Designs 
+                definiert ist. (Default: orange)
+     gedreht = Dreht den ganzen Text um 5 Grad
+     animate = Lässt den Text bei einem Hover sich drehen und skalieren
+     shadow  = Gibt den Text einen Schattenwurf
+               (Bei gedrehten Text wird ein Schattenwurf automatisch gesetzt) 
 
-5th The teaser links to the right of the image slider on the home page can be individually "set rig" on the theme options are set. Again, to be entered to three such links.
-    Symbol, destination address, titles and subtitles can be entered. Title and subtitle, however, should not be longer than 40 characters.
-    The icon can be selected from a predefined list.
+5.  Die Teaserlinks rechts neben dem Bildslider auf der Startseite können
+    individuell über die Theme-Option "Takelage setzen" gesetzt
+    werden. Auch hier können bis zu 3 solcher Links eingegeben werden.
+    Symbol, Zieladresse, Titel und Untertitel sind
+    eingebbar. Titel und Untertitel sollten jedoch nicht länger als
+    40 Zeichen sein.
+    Das Symbol kann aus einer vorgegebenen Liste ausgewählt werden.
     
-    The teaser links can also be disabled as a whole as an option by Text-/Link-Widget in the "Top: Right Action link area" wuird positioned.
+    Die Teaserlinks können als Option auch als ganzes
+    deaktiviert werden indem ein Text-/Link-Widget in der
+       "Startseite: Rechter Aktionlinkbereich"
+    positioniert wuird.
     
 
-6th Link icons for certain documents are controlled by CSS.
-   To this "abszuschalten" must be in the CSS file style.css only the stylesheet @ import url (css / basemod_linkicons.css) are commented out.
-   In particular, the links should not be equipped with an icon, can the class. Nolinkicon be set.
-   Link icons are set only for the content.
+6. Linkicons für bestimmte Dokumente werden über CSS gesteuert.
+   Um dies "abszuschalten", muss in der CSS-Datei style.css lediglich
+   das Stylesheet
+       @import url(css/basemod_linkicons.css);
+   auskommentiert werden.
+   Bei besonderen Links die nicht mit einem Icon ausgestattet werden sollen, 
+   kann auch die Klasse  .nolinkicon  gesetzt werden.
+   Linkicons werden nur für den Inhaltsbereich gesetzt.
 
-7th Color codes and language of texts
-   Specific countries are color-coded in the files
-       /css/colors_pt.css (for Portugal)
-       /css/colors_tk.css (for Turkey)
-       /css/colors_lu.css (for Luxembourg)
-       /css/colors_at.css (for Austria)
-       /css/colors_de.css (for Germany, but not necessarily as default) is stored.
-   This fall partly on their own images.
-   These files should be in / images / if they are general and in / images / int / when it comes to images that are country specific.
+7. Farbcodes und Sprache der Texte
+   Laenderspezifische Farbcodes werden in den Dateien
+    /css/colors_tk.css  (für Türkei)
+    /css/colors_lu.css (für Luxemburg)
+    /css/colors_at.css  (für Österreich)
+    /css/colors_de.css (für Deutschland, jedoch nicht notwendig da Default)
+   abgelegt.
+   Diese greifen teilweise auf eigene Bilder zu. 
+   Diese Bilder sollten in /images/ liegen wenn sie allgemein sind und
+   in /images/int/ wenn es um Bilder geht, die länderspezifisch sind.
 
-   With regard to language translation of texts can create your own language files in a directory / laguages ​​/ are stored. The theme this into account when such language files are present.
-   For the use and creation of voice files, see http://www.catswhocode.com/blog/how-to-make-a-translatable-wordpress-theme
+   Hinsichtlich der Sprachübersetzung von Texten können eigene Language-Dateien
+   in einem Verzeichnis  /laguages/ abgelegt werden. Das Theme berücksichtigt
+   diese, wenn solche Sprachdateien vorhanden sind.
+   Zur Nutzung und Erstellung von Sprachdateien siehe
+    http://www.catswhocode.com/blog/how-to-make-a-translatable-wordpress-theme
 
-   The language files are stored in the form and Sprachcode_Landescode.mo Sprachcode_Landescode.po. For example, en_UK.po, en_UK.mo
+   Die Sprachdateien werden in der Form
+        Sprachcode_Landescode.mo   und
+        Sprachcode_Landescode.po
+   abgelegt. Beispielsweise
+        en_UK.po
+        en_UK.mo
    
-   To switch to another language is the language settings in the backend and switched to the respective language, if the space-dependent version of the WordPress installation is not already.
-   Starting with version 2.7 is already a British English language translation is included.
-   For your own translation file can be edited default.po poedit using the editor.
+   Um auf die andere Sprache zu wechseln wird im Backend und Settings die
+   Sprache auf die jeweilige Sprache gewechselt, sofern dies durch die
+   ortsabhängige Version der Wordpress-Installation nicht bereits geschehen ist.
+   Ab der Version 2.7 ist  bereits eine britisch englische Sprachübersetzung
+   beigelegt.
+   Zur eigenen Übersetzung kann die Datei
+      default.po
+   mit Hilfe des Editors poedit bearbeitet werden.
+
+8. Schriftfonts
+   Da die Standard-BEBAS-Schrift nicht ueberall passt, unterstützt das backend 
+   ab der Version 2.12 die Möglichkeit den Schriftfont zu aendern auf
+   DroidSans oder Standardschrift (Helvetica/Aria/Sans-Serif).
+  
+9. Es werden teilweise Funktionen verwendet, die mit WP 3.4 "deprecated" sind.
+   Da das Theme allerdings noch bei einigen Installationen unter WP 3.4
+   eingesetzt wird, wurden diese Funktionen absichtlich noch nicht umgestellt.
+
+10. Mit der Version 2.13 ist eine optionale Fullsize-Sicht pro Seiten und Artikel
+   aber auch global für die gesamte Website möglich. Dabei wird die Sidebar
+   nach dem Inhaltsbereich positioniert.
+   Vgl: hierzu die FAQ: http://piratenkleider.xwolf.de/faq/artikel-und-seiten-mit-voller-inhaltsbreite-sidebar-verschieben/
+
+11. Mit Version 2.13 ist es möglich mit Hilfe der Takelage-Sonstiges
+   Funktion "Disclaimer für (Gast-)Artikel" einen Text (HTML) zu definieren
+   der mit Hilfe des Custom Fields show-post-disclaimer um den Artikel
+   angezeigt werden kann.
+
+12. Ab Version 2.14 können auf der Startseite Thumbnails für in den Artikeln
+    vorhandene Bilder anstelle des Datums eingeblendet werden. Hierzu gibt es
+    im Backend eine Option: "Thumbnails anstelle Datum" 
+    (Takelage einstellen->Startseite)

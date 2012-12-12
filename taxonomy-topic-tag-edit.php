@@ -25,7 +25,8 @@
 <?php do_action('bbp_template_notices'); ?>
 
     <div id="topic-tag" class="bbp-topic-tag">
-		<div class="entry-content">
+
+        <div class="entry-content">
 
             <?php bbp_topic_tag_description(); ?>
 

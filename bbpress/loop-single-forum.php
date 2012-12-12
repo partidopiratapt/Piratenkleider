@@ -29,17 +29,13 @@ if (get_option('permalink_structure')) {
     </td>
 
     <td class="bbp-forum-info">
-<?php do_action( 'bbp_theme_before_forum_title' ); ?>
         <a class="bbp-forum-title" href="<?php bbp_forum_permalink(); ?>" title="<?php bbp_forum_title(); ?>"><?php bbp_forum_title(); ?></a>&nbsp; <a href="<?php echo $url; ?>">
             <img style="margin: 0 0 0 0;" alt="rss" width="12" height="12" src="<?php echo get_template_directory_uri() ?>/images/social-media/feed-24x24.png">
         </a>
-<?php do_action( 'bbp_theme_after_forum_title' ); ?>
-<?php do_action( 'bbp_theme_before_forum_description' ); ?>
         <p><?php
 $content = get_the_content($more_link_text, $stripteaser);
 echo $content;
 ?></p>
-<?php do_action( 'bbp_theme_after_forum_description' ); ?>
     </td>
     <td class="stats windowbg">
         <p><?php bbp_show_lead_topic() ? bbp_forum_reply_count() : bbp_forum_post_count($id); ?> Mensagens <br />
@@ -86,7 +82,6 @@ if (bbp_forum_get_subforums()) {
     ?>
     <tr id="board_children">
         <td colspan="3" class="children windowbg">
-<?php do_action( 'bbp_theme_before_forum_sub_forums' ); ?>
             <?php
             $defaults = array(
                 'before' => '<strong>Sub-Quadro</strong>: ',
@@ -100,7 +95,7 @@ if (bbp_forum_get_subforums()) {
             );
             bbp_list_forums($defaults);
             ?>
-<?php do_action( 'bbp_theme_after_forum_sub_forums' ); ?>
+
         </td>
     </tr>
     <?php

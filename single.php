@@ -141,6 +141,11 @@
            </div>
            <?php 
         }         
+        if (!isset($options['aktiv-circleplayer'])) 
+            $options['aktiv-circleplayer'] = $defaultoptions['aktiv-circleplayer']; 
+        if ($options['aktiv-circleplayer']==1) {
+            piratenkleider_echo_player();
+        }
         get_sidebar(); 
         ?>
         </div>

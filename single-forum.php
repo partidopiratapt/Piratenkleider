@@ -27,7 +27,7 @@
 
 					<?php if ( bbp_user_can_view_forum() ) : ?>
 
-						<div id="forum-<?php bbp_forum_id(); ?>" class="bbp-forum-content">
+						<div id="forum-<?php bbp_forum_id(); ?>">
 							<div class="entry-content">
 
 								<?php bbp_get_template_part( 'bbpress/content', 'single-forum' ); ?>

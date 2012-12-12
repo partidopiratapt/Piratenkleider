@@ -9,8 +9,6 @@
 
 ?>
 
-<div id="bbpress-forums">
-<?php do_action( 'bbp_template_before_single_forum' ); ?>
 	<?php if ( post_password_required() ) : ?>
 
 		<?php bbp_get_template_part( 'bbpress/form', 'protected' ); ?>
@@ -44,7 +42,3 @@
 		<?php endif; ?>
 
 	<?php endif; ?>
-
-	<?php do_action( 'bbp_template_after_single_forum' ); ?>
-
-</div>

@@ -100,5 +100,3 @@
 		</div>
 
 	<?php endif; ?>
-
-</div>

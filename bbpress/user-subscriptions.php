@@ -9,8 +9,6 @@
 
 ?>
 
-	<?php do_action( 'bbp_template_before_user_subscriptions' ); ?>
-
 	<?php if ( bbp_is_subscriptions_active() ) : ?>
 
 		<?php if ( bbp_is_user_home() || current_user_can( 'edit_users' ) ) : ?>
@@ -42,5 +40,3 @@
 		<?php endif; ?>
 
 	<?php endif; ?>
-
-	<?php do_action( 'bbp_template_after_user_subscriptions' ); ?>

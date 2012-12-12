@@ -9,8 +9,6 @@
 
 ?>
 
-	<?php do_action( 'bbp_template_before_user_details' ); ?>
-
 	<span class="page-title author">
 
 		<?php printf( __( 'Profile: %s', 'bbpress' ), "<span class='vcard'><a class='url fn n' href='" . bbp_get_user_profile_url() . "' title='" . esc_attr( bbp_get_displayed_user_field( 'display_name' ) ) . "' rel='me'>" . bbp_get_displayed_user_field( 'display_name' ) . "</a></span>" ); ?>
@@ -36,5 +34,3 @@
 
 		</div><!-- #author-description	-->
 	</div><!-- #entry-author-info -->
-
-	<?php do_action( 'bbp_template_after_user_details' ); ?>

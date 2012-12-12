@@ -24,7 +24,8 @@
 
     <?php do_action('bbp_template_notices'); ?>
 
-				<?php while ( have_posts() ) the_post(); ?>
+<?php while (have_posts())
+    the_post(); ?>
 
     <div id="bbp-edit-page" class="bbp-edit-page">
         <div class="entry-content">
