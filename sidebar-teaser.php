@@ -16,8 +16,7 @@ $bilderoptions = get_option('piratenkleider_theme_defaultbilder');
          if (!isset($cat) ) $cat = 1;         
         $numberarticle = $options['slider-numberarticle'];
          if (!isset($numberarticle) )  $numberarticle =3;   
-        if (!isset($options['url-mitgliedwerden']))
-            $options['url-mitgliedwerden'] = $defaultoptions['url-mitgliedwerden'];
+
         if (!isset($options['teaser-subtitle']))
             $options['teaser-subtitle'] = $defaultoptions['teaser-subtitle'];
         if (!isset($options['teaser-title-maxlength']))
@@ -29,27 +28,25 @@ $bilderoptions = get_option('piratenkleider_theme_defaultbilder');
 
         query_posts(array('cat' => "$cat", 'posts_per_page' => $numberarticle));
         ?>
-        <div class="flex-container">
             <div class="flexslider">
                 <h2 class="skip"><?php _e('Aktuelle Themen', 'piratenkleider'); ?></h2>
                 <ul class="slides">
                     <?php
-                    if (have_posts())
-                        while (have_posts()) : the_post();
-                            echo "<li>";
+                    if (have_posts()) while (have_posts()) : the_post();
+            echo "<li class='slide'>";
                             if ($options['teaser-type'] == 'big') {
                                 echo '<div class="bigslider">';
                                 if (has_post_thumbnail()) {
                                     the_post_thumbnail(array($defaultoptions['bigslider-thumb-width'], $defaultoptions['bigslider-thumb-height']));
                                 } else {
-                                    if (isset($defaultbildsrc)) {
+                    if ((isset($defaultbildsrc)) && (strlen(trim($defaultbildsrc))>2)) {  
                                         echo '<img src="' . $defaultbildsrc . '" width="' . $defaultoptions['bigslider-thumb-width'] . '" height="' . $defaultoptions['bigslider-thumb-height'] . '" alt="">';
                                     } else {
                                         $randombild = array_rand($defaultbilder_liste, 2);
                                         echo '<img src="' . $defaultbilder_liste[$randombild[0]]['src'] . '" width="' . $defaultoptions['bigslider-thumb-width'] . '" height="' . $defaultoptions['bigslider-thumb-height'] . '" alt="">';
                                     }
                                 }
-                                echo '<div class="flex-caption"><p class="bebas">' . $options['teaser-subtitle'] . '</p>';
+                echo '<div class="caption"><p class="bebas">'.$options['teaser-subtitle'].'</p>';
                                 echo "<h3><a href=";
                                 the_permalink();
                                 echo ">";
@@ -61,7 +58,7 @@ $bilderoptions = get_option('piratenkleider_theme_defaultbilder');
                                 if (has_post_thumbnail()) {
                                     the_post_thumbnail(array($defaultoptions['smallslider-thumb-width'], $defaultoptions['smallslider-thumb-height']));
                                 } else {
-                                    if (isset($defaultbildsrc)) {
+                    if ((isset($defaultbildsrc)) && (strlen(trim($defaultbildsrc))>2)) {
                                         echo '<img src="' . $defaultbildsrc . '" width="' . $defaultoptions['smallslider-thumb-width'] . '" height="' . $defaultoptions['smallslider-thumb-height'] . '" alt="">';
                                     } else {
                                         $randombild = array_rand($defaultbilder_liste, 2);
@@ -81,11 +78,8 @@ $bilderoptions = get_option('piratenkleider_theme_defaultbilder');
                         endwhile;
                     echo "</ul>";
                     echo "</div>";
-                    echo "</div>";
-
                     wp_reset_query();
-                }
-                ?>
+    } ?>
         </div>
         <div class="second-teaser-widget-area">
             <div class="skin">

@@ -7,15 +7,13 @@
 */
 
 
-@media screen, projection
-{
+@media screen, projection {
   
 
 .content-primary a[href ^="mailto:"] {
     background: url(../images/links/mail.gif) top right no-repeat;
     padding-right: 18px;
     margin-right: 4px;
-
 }
 
 .content-primary a[href $=".ogg"], .content-primary a[href $=".OGG"],
@@ -99,10 +97,32 @@
     content: " (ZIP-Datei) ";
 }
 
+
 .content-primary a.extern {
     background: url("../images/links/extern.gif") center left no-repeat;
     padding-left: 10px;
 }
+
+    .content-primary a[href *= "lqfb.piratenpartei.de"] {
+        background: url("../images/links/lqfb.png") center left no-repeat;
+        padding-left: 18px;
+    }
+    .content-primary a[href *= "wiki.piratenpartei.de"] {
+        background: url("../images/links/piratenwiki.png") center left no-repeat;
+        padding-left: 18px;
+    }
+    .content-primary a[href *= "feedback.piratenpartei-bayern.de"] {
+        background: url("../images/links/piratefeedback.png") center left no-repeat;
+        padding-left: 18px;
+    }
+    .content-primary a[href *= "de.wikipedia.org"] {
+        background: url("../images/links/wikipedia.png") center left no-repeat;
+        padding-left: 18px;
+    }
+    .content-primary a[href *= "piratenpad.de"] {
+        background: url("../images/links/piratenpad.png") center left no-repeat;
+        padding-left: 18px;
+    }
 
 .content-primary a.nolinkicon {
 	background: none;

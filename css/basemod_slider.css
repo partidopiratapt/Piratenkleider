@@ -8,20 +8,70 @@
 * @Author URI: http://www.xwolf.de
 */
 
-.flexslider .flex-control-nav {
+ 
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+/* FlexSlider Necessary Styles
+*********************************/ 
+.flexslider {margin: 0; padding: 0;}
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+.flexslider {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative; 
+  height: 240px;  
+  overflow: hidden;
+    /* Bilder die trotz cropping hoeher als 240 Pixel sind,
+      werden abgeschnitten */
+}
+.content-aside .flexslider {
+    height: 391px;    
+    margin: 10px auto 20px;
+    
 }
 
 
-.flexslider img {
+.content-aside .flex-control-nav {
+  display: none; 
+}
+
+
+.flexslider .bigslider img {    
+    min-width: 705px;
+
     /* Kommentare entfernen, wenn man mochte dass die Bilder an die 
        proportionale Breite angepasst werden und nicht abgeschnitten werden: */
-    position: relative;
-    height: 240px;  
-    width: 100%; 
 
+   /*  max-height: 240px;  
+      width: auto; 
+   */
 }
 
-.flexslider .slides:after {
+.flexslider .slides > li {
+  display: none; 
+}
+
+.slides:after {
     content: ".";
     display: block;
     clear: both;
@@ -29,32 +79,34 @@
     line-height: 0;
     height: 0; }
 
-html[xmlns] .flexslider .slides {
+html[xmlns] .slides {
     display: block; }
 
-* html .flexslider .slides {
+* html .slides {
     height: 1%;
 }
 
-.flexslider .slides > li:first-child {
+
+.slides > li:first-child {
     display: block;
 }
 
-.flexslider .flex-direction-nav {
+.flex-direction-nav {
+  display: none; 
 }
 
-.flexslider .flex-control-nav {
+.flex-control-nav {
     position: absolute;
     top: 10px;
     right: 62px;
     overflow: hidden;
     z-index: 800; 
 }
-.flexslider .flex-control-nav li {
+.flex-control-nav li {
     float: left;
     margin-right: 1px; 
 }
-.flexslider .flex-control-nav li a {
+.flex-control-nav li a {
     display: block;
     padding: 0px 5px;
     background: white;
@@ -62,13 +114,16 @@ html[xmlns] .flexslider .slides {
     cursor: pointer;
     color: black;
 }
-.flexslider .flex-control-nav li a.active,
-.flexslider .flex-control-nav li a:hover,
-.flexslider .flex-control-nav li a:focus {
+.flex-control-nav li a.flex-active,
+.flex-control-nav li a.active,
+.flex-control-nav li a:hover,
+.flex-control-nav li a:focus {
     background: white; 
 }  
 
-.flexslider .flex-pauseplay {
+
+.content-aside .flexslider .flex-pauseplay,
+.first-teaser-widget-area .flexslider .flex-pauseplay {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -77,14 +132,33 @@ html[xmlns] .flexslider .slides {
     padding: 0px 1px 1px 1px;
     overflow: hidden;
     z-index: 800;
-    background: #CCCCCC;
+    background: white;
+    background: rgba(255, 255, 255, 0.8);
     cursor: pointer;
     color: black; 
+
+}
+.content-aside .flexslider .flex-pauseplay {
     bottom: inherit;
+    top: 10px;
+    left: 10px;
 }
 .flexslider .flex-pauseplay:hover,
 .flexslider .flex-pauseplay:focus {
-    background: #CCCCCC;
+        background: white;
+}
+.slide .caption  h3 {
+  font-size: 22.8px;
+  line-height: 22px;
+  margin-left: -5px; 
+   margin-bottom: 0; 
+}
+.slide .caption h3 a {
+    background: #2d7dc5;
+    padding: 2px 5px 0px 5px; 
+}
+.slide .caption h3 a:hover {
+      background: #ff8800; 
 }
 
 .content-aside .slide .caption,
@@ -117,13 +191,17 @@ html[xmlns] .flexslider .slides {
     z-index: 99;
 }
 .first-teaser-widget-area .slide .bigslider  {
-    background: none repeat scroll 0 0 #111111;
+  /*  background: none repeat scroll 0 0 #111111; */
+  position: relative;
+  height: 240px;
 }
  
 .first-teaser-widget-area .slide .textslider  {
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     margin: 0 5px 5px 5px;
     height: 235px;       
+    padding: 1em;
+    
 }
 .first-teaser-widget-area .slide .textslider img {
     float: left;    
@@ -138,16 +216,18 @@ html[xmlns] .flexslider .slides {
 .first-teaser-widget-area .slide .textslider a {
     color: white;    
 }
-
+.content-aside .flexslider li.slide a {
+    padding: 0;
+}
 
 @media only screen and (max-width: 767px) {  
     .symbolbild, 
     .flexslider, 
     .flexslider img {
-        height: 240px;  
+       
         overflow: hidden;
     }   
-    .flexslider {
+   .content-aside .flexslider {
         height: auto;    
         margin-bottom: 10px;
     }
@@ -158,117 +238,21 @@ html[xmlns] .flexslider .slides {
     .symbolbild, 
     .flexslider, 
     .flexslider img {
-        height: 240px;  
         overflow: hidden;
     }   
-    .flexslider {
+   .content-aside .flexslider {
         height: auto;    
         margin-bottom: 10px;
     }
 
-    .flexslider .flex-caption {
+  .flexslider .caption {
         padding: 5px 10px;
     }
-    .flexslider .flex-caption h2, 
-    .flexslider .flex-caption h3 {
+  .flexslider .caption h2, 
+  .flexslider .caption h3 {
         font-size: 12px;
         font-family: Helvetica, Arial, sans-serif;
         letter-spacing: 0px;
     }
 
-}
-
-/** Added Flex Slider styles for the widger*/
-.flexslider {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    position: relative; 
-    height: 240px;  
-    overflow: hidden;
-    border: none !important;
-    margin-bottom: 38px !important;
-    background: #fff; 
-    border: 1px solid #e0e0e0; 
-    position: relative; 
-    -webkit-border-radius: 3px; 
-    -moz-border-radius: 3px; 
-    -o-border-radius: 3px; 
-    border-radius: 3px; 
-    zoom: 1;
-}
-.flex-control-nav {
-    bottom: -48px !important;
-}
-.flexslider .flex-control-nav {
-    bottom: -10px !important;
-}
-.flexslider a:active,
-.flexslider a:focus  {
-    outline: none;
-}
-.flexslider {
-    width: 100%; 
-    margin: 0; 
-    padding: 0;
-}
-.flexslider .slides > li {
-    display: none; 
-    -webkit-backface-visibility: hidden;
-}
-.flexslider .slides img {
-    max-width: 100%; 
-    display: block;
-}
-
-.flexslider .slides {
-    zoom: 1;
-}
-.flexslider .slides > li {
-    position: relative;
-}
-.flexslider .flex-caption {
-    background:none; 
-    -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
-    zoom: 1;
-}
-.flexslider .flex-caption {
-    width: 100%; 
-    padding: 2%; 
-    margin: 0; 
-    position: absolute; 
-    left: 0; 
-    bottom: 0; 
-    background: rgba(0,0,0,.5); 
-    color: white; 
-    text-shadow: 0 -1px 0 rgba(0,0,0,.3); 
-    font-size: 14px; 
-    line-height: 18px;
-    text-align: right; 
-}
-.flexslider .flex-caption h3 {
-    font-size: 22.8px;
-    line-height: 22px;
-    margin-left: -5px; 
-    margin-bottom: 0; 
-}
-.flexslider .flex-caption h3 a {
-    background: #2d7dc5;
-    padding: 2px 5px 0px 5px; 
-}
-.flexslider .flex-caption h3 a:hover {
-    background: #ff8800; 
-}
-.flexslider .flex-caption p {
-    font-size: 12px;
-    margin-bottom: 5px; 
-    display: inline-block;
-    font-size: 18px;
-}
-.flexslider .flex-caption a {
-    background: #2d7dc5;
-    color: white;
-    display: inline-block;
-    padding: 0 5px; 
 }

@@ -4,7 +4,7 @@ Theme URI: http://piratenkleider.xwolf.de
 Description: Allgemeines Theme für Webauftritte der Piratenpartei
 Author: Wolfgang Wiese (xwolf)
 Author URI: http://www.xwolf.de 
-Version: 2.14
+Version: 2.14.5
 Tags: orange, two-columns, responsive, fluid-width
 License: CC-BY-SA 3.0 
 License URI: http://creativecommons.org/licenses/by-sa/3.0/de/deed.de
@@ -115,12 +115,12 @@ audio:not([controls]) {
 body {
     font-size: 0.8em;
     font-family: "FontPiratenkleiderDefault", Helvetica, Arial, sans-serif;
-    line-height: 18px;
+    line-height: 1.5em;
 }
 select, input, textarea, button {
   font-family: "FontPiratenkleiderDefault", Helvetica, Arial, sans-serif;
     font-size: 0.8em;
-    line-height: 18px;
+  line-height: 1.5em;
     color: black; 
 }
 
@@ -255,7 +255,7 @@ hr {
     padding: 0;
     margin-bottom: 15px;
     margin-top: 5px;
-    background: url("../assets/jolly.png") no-repeat center center;
+  background: url("../images/jolly.png") no-repeat center center;
     height: 26px; }
 
 ::selection {
@@ -456,9 +456,6 @@ input[type="submit"]:active,
     top: 1px; 
 }
 
-body {
-  background: white url("../images/int/bg-tags_gray.jpg") -20% 0 fixed; 
-}
 
 .section {
     padding: 0 10px; }
@@ -597,10 +594,15 @@ body {
 
 .header {
     position: relative;
+/*
+    * Ueber Custom Header
+
     background-color: #eeeeee;
-    background-image: url("../assets/darkwave.png"), url("../assets/boat.png");
-    background-position: -20% bottom, 56% bottom;
-    background-repeat: repeat-x, no-repeat; }
+  background-image: url("../images/default-header-background.png");
+  background-position: left bottom;
+  background-repeat: repeat-x, no-repeat; 
+*/
+}
 
 
 .header .branding {
@@ -652,14 +654,14 @@ body {
     position: absolute;
     top: 10px;
     right: 8px;
-    background: #2d7dc5 url("../assets/lupe.png") no-repeat center center;
+    background: #2d7dc5 url("../images/lupe.png") no-repeat center center;
     width: 30px;
     height: 30px;
     overflow: hidden;
     text-indent: -999em; 
 }
 .searchform .searchsubmit:hover {
-    background: #24639b url("../assets/lupe.png") no-repeat center center;
+    background: #24639b url("../images/lupe.png") no-repeat center center;
 }
 
 .content .searchform .searchsubmit {
@@ -1103,9 +1105,15 @@ ul.socialmedia li a:focus img  {
     background: #ff8800 url("../images/int/bg-tags.png") -20% top fixed;
 }
 .content .row {
-    overflow: hidden;
+   /*  overflow: hidden; */
     background: #ff8800;
     background: rgba(255, 136, 0, 0.7);
+    -ms-word-break:break-word;
+    -webkit-word-break:  break-word;
+     word-break:  break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+        hyphens:  auto; 
 }
 
 .content p, .content form {
@@ -1268,11 +1276,11 @@ ul.socialmedia li a:focus img  {
 .content-primary .post-nav ul li {
     list-style: none; }
 .content-primary .post-nav .back a {
-    background: url("../assets/bigback.png") no-repeat center left;
+      background: url("../images/bigback.png") no-repeat center left;
     display: block;
     padding-left: 25px; }
 .content-primary .post-nav .forward a {
-    background: url("../assets/bigforward.png") no-repeat center right;
+      background: url("../images/bigforward.png") no-repeat center right;
     display: block;
     padding-right: 25px; }
 .content-primary .post-nav .related {
@@ -1367,7 +1375,9 @@ ul.socialmedia li a:focus img  {
     display: inline-block;
     background: white;
     padding: 3px 5px 1px 5px;
+    line-height: 1.25em;
 }
+
 .content-aside a img {
     margin: 0;
     padding: 0; 
@@ -1517,7 +1527,7 @@ ul.socialmedia li a:focus img  {
 .single .social_share_privacy ul li.facebook, .single .social_share_privacy ul li.twitter {
     width: 120px; }
 .single .social_share_privacy ul .help_info.icon {
-    background: #2d7dc5 url("../assets/info.png") no-repeat center center scroll;
+    background: #2d7dc5 url("../images/info.png") no-repeat center center scroll;
     border: 2px solid;
     width: 0;
     height: 0;
@@ -2008,7 +2018,7 @@ img.wp-smiley {
 
 .content-aside ul.menu li.current_page_item > a,
 .content-aside ul.menu li.current-menu-item > a {
-    background: #2d7dc5 url("../assets/plus-left.gif") center left no-repeat;
+    background: #2d7dc5 url("../images/plus-left.gif") center left no-repeat;
     color: white;
     padding-left: 14px; }
 .content-aside ul.menu ul.children,
@@ -2362,6 +2372,9 @@ div.ics-calendar-holder .ics-calendar-event {
 .header {
     height: 225px; 
     width: 100%;
+    background-color: #eeeeee;
+    background-repeat: repeat-x;
+    background-position: left bottom;
 }
 
 .nav-top ul {
@@ -2486,6 +2499,9 @@ div.ics-calendar-holder .ics-calendar-event {
     background: white;
     font-size: 1em;
     position: relative; 
+    line-height: 1.6em; 
+    display: block;
+   
 }
   .content-primary .skin {
       margin-left: 10px;
@@ -2510,7 +2526,9 @@ div.ics-calendar-holder .ics-calendar-event {
 .content-aside {
     background: #ff8800 url("../images/int/bg-tags.png") -20% top fixed; 
     float: right;
-    width: 33%; }
+    width: 33%; 
+
+  }
 
 .content-aside .skin {
     background: #ff8800;
@@ -2548,13 +2566,18 @@ div.ics-calendar-holder .ics-calendar-event {
     width: 33%; }
 
 
-/* Besondere Tools-----------------------------------------------------------*/
+/* Besondere Tools und Plugin-Unterstuetzung----------------------------------*/
  ul.ts-fab-list li {
     margin-bottom: 0px;
     display: inline-block;
 }
 ul.ts-fab-list li a { 
     height: auto; 
+}
+.content-primary .ts-fab-tabs a.extern,
+.content .ts-fab-tabs a.extern {
+    background: none;
+    padding-left: 0px;
 }
 
 ul.social_share_privacy_area {

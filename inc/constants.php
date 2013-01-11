@@ -11,6 +11,8 @@ $defaultoptions = array(
     'logo'                          => get_template_directory_uri() .'/images/logo.png',
     'logo-width'                    => 500,
     'logo-height'                   => 330,
+    'background-header-image'	    => get_template_directory_uri() .'/images/default-header-background.png',
+    'background-header-color'	    => 'eeeeee',
     'smallslider-thumb-width'       => 220,
     'smallslider-thumb-height'      => 185,
     'bigslider-thumb-width'         => 705,
@@ -24,6 +26,11 @@ $defaultoptions = array(
     'src-comment-reply'             => get_template_directory_uri(). "/js/comment-reply.js",
     'src-yaml-focusfix'             => get_template_directory_uri(). "/yaml/core/js/yaml-focusfix.js",
     'src-dynamic-sidebar'           => get_template_directory_uri(). "/js/dynamic-sidebar.js",
+    'src-jplayer'		    => get_template_directory_uri(). "/js/jquery.jplayer.min.js",
+    'src-transform2d'		    => get_template_directory_uri(). "/js/jquery.transform2d.js",
+    'src-grab'			    => get_template_directory_uri(). "/js/jquery.grab.js",
+    'src-csstransforms'		    => get_template_directory_uri(). "/js/mod.csstransforms.min.js",
+    'src-circleplayer'		    => get_template_directory_uri(). "/js/circle.player.js",
     'src-default-symbolbild'        => get_template_directory_uri() .'/images/default-vorlage-705x150.png',
     'src-default-symbolbild-404'    => get_template_directory_uri() .'/images/default-404.png',
     'src-default-symbolbild-category'   => get_template_directory_uri() .'/images/default-category.png',
@@ -31,7 +38,7 @@ $defaultoptions = array(
     'src-default-symbolbild-tag'    => get_template_directory_uri() .'/images/default-tag.png',
     'src-default-symbolbild-author' => get_template_directory_uri() .'/images/default-author.png',
     'src-default-symbolbild-archive' => get_template_directory_uri() .'/images/default-archive.png',
-    
+    'login_errors'		    => 1,
     'slider-aktiv'                  => 1,
     'aktiv-defaultseitenbild'       => 0,
     'aktiv-suche'                   => 1,
@@ -75,6 +82,7 @@ $defaultoptions = array(
     'anonymize-user-commententries' => 0,
     'aktiv-commentreplylink'        => 0,
     'default_comment_notes_before'  => '<p class="comment-notes">'.__( 'Deine E-Mail-Adresse wird nicht ver&ouml;ffentlicht. Erforderliche Felder sind markiert <span class="required">*</span>', 'piratenkleider' ). '</p>',
+    'disclaimer_post'               => '',
     'twitter_cache_lifetime'        => 14400,
     'feed_cache_lifetime'           => 14400,
     'use_wp_feed_defaults'          => 1,
@@ -100,7 +108,7 @@ $defaultoptions = array(
     'stickerlink2-url'              => 'https://www.piratenpartei.de/mitmachen/spenden/',
     'stickerlink3-content'          => '',
     'stickerlink3-url'              => '',
-    'default_footerlink_key'        => 'Bund',
+    'default_footerlink_key'        => 'International (mit Flaggen)',
     'default_footerlink_show'       => 1,
     
 );
@@ -328,11 +336,11 @@ $default_toplink_liste = array(
               __('Chile', 'piratenkleider' ) => 'http://www.partidopirata.cl/',
               __('D&auml;nemark', 'piratenkleider' ) => 'http://piratpartiet.dk/',
               __('Deutschland', 'piratenkleider' ) => 'http://www.piratenpartei.de/',
-              __('England', 'piratenkleider' ) => 'http://pirateparty.org.uk/',
               __('Finnland', 'piratenkleider' ) => 'http://www.piraattipuolue.fi/',
               __('Frankreich', 'piratenkleider' ) => 'http://partipirate.org/',
               __('Griechenland', 'piratenkleider' ) => 'http://pirateparty.gr/',
               __('Guatemala', 'piratenkleider' ) => 'http://partidopirata.org.gt/',
+              __('Island', 'piratenkleider') => 'http://pirateparty.is/',        
               __('Italien', 'piratenkleider' ) => 'http://www.partito-pirata.it/',
               __('Kanada', 'piratenkleider' ) => 'http://www.piratepartyofcanada.com/',
               __('Kasachstan', 'piratenkleider' ) => 'http://pirateparty.kz/',
@@ -344,7 +352,7 @@ $default_toplink_liste = array(
               __('Mexiko', 'piratenkleider' ) => 'http://www.partidopiratamexicano.org/',
              __('Neuseeland', 'piratenkleider' ) => 'http://pirateparty.org.nz/',
              __('Niederlande', 'piratenkleider' ) => 'http://www.piratenpartij.nl/',
-             __('&ouml;sterreich', 'piratenkleider' ) => 'http://piratenpartei.at/',
+             __('&Ouml;sterreich', 'piratenkleider' ) => 'http://piratenpartei.at/',
              __('Peru', 'piratenkleider' ) => 'http://wiki.freeculture.org/Pirata',
              __('Polen', 'piratenkleider' ) => 'http://www.partiapiratow.org.pl/',
              __('Portugal', 'piratenkleider' ) => 'http://www.partidopiratapt.eu/',
@@ -363,6 +371,7 @@ $default_toplink_liste = array(
              __('Ukraine', 'piratenkleider' ) => 'http://pp-ua.org/',
              __('Uruguay', 'piratenkleider' ) => 'http://partidopirata.org.uy/',
              __('USA', 'piratenkleider' ) => 'http://pirate-party.us/',             
+             __('Vereinigtes K&ouml;nigreich', 'piratenkleider') => 'http://pirateparty.org.uk/', 
              __('Wei&szlig;russland', 'piratenkleider' ) => 'http://belpirat.blog.tut.by/',
              __('Zypern', 'piratenkleider' ) => 'http://www.piratepartycyprus.com/',
 
@@ -415,8 +424,8 @@ $default_toplink_liste = array(
              '<span class="flagicon-ua"></span> '.__('Ukraine', 'piratenkleider') => 'http://pp-ua.org/',
              '<span class="flagicon-uy"></span> '.__('Uruguay', 'piratenkleider') => 'http://partidopirata.org.uy/',
              '<span class="flagicon-us"></span> '.__('USA', 'piratenkleider') => 'http://pirate-party.us/',
-             '<span class="flagicon-by"></span> '.__('Wei&szlig;russland', 'piratenkleider') => 'http://belpirat.blog.tut.by/',
              '<span class="flagicon-uk"></span> '.__('Vereinigtes Königreich', 'piratenkleider') => 'http://pirateparty.org.uk/',              
+             '<span class="flagicon-by"></span> '.__('Wei&szlig;russland', 'piratenkleider') => 'http://belpirat.blog.tut.by/',
              '<span class="flagicon-cy"></span> '.__('Zypern', 'piratenkleider') => 'http://www.piratepartycyprus.com/',
 
 
@@ -449,7 +458,7 @@ $default_toplink_liste = array(
         'title' => 'Piratenpartei Landesverband Brandenburg',
         'url'  => 'http://www.piratenbrandenburg.de/',
         'sublist' => array(
-            '<abbr title="Stadtverband">SV</abbr> Potsdam' => 'http://www.piraten-potsdam.de/',
+            '<abbr title="Stadtverband">SV</abbr> Potsdam' => 'http://potsdam.piratenbrandenburg.de/',
             '<abbr title="Kreisverband">KV</abbr> Brandenburg an der Havel' => 'http://brb.piratenbrandenburg.de/',
             '<abbr title="Kreisverband">KV</abbr> Havelland' => 'http://hvl.piratenbrandenburg.de/',
             '<abbr title="Kreisverband">KV</abbr> M&auml;rkisch-Oderland' => 'http://mol.piratenbrandenburg.de/',
@@ -1241,7 +1250,13 @@ $setoptions = array(
                   'label'   => __( 'Circle Player (HTML5 Player) f&uuml;r MP3/OGG-Dateien in einzelnen Beitr&auml;gen aktivieren.', 'piratenkleider' ),
                   'default' => $defaultoptions['aktiv-circleplayer'],
               ),   
-               
+                'login_errors' => array(
+                  'type'    => 'select',
+                  'title'   => __( 'Fehlermeldung bei Login', 'piratenkleider' ),
+                  'label'   => __( 'Option um die Fehlermeldung beim Login im Backend ein oder abzuschalten, mit der angezeigt wird, warum der Login fehlschlug.', 'piratenkleider' ),
+                  'liste'   => array(1 => __( 'Fehlermeldung zeigen', 'piratenkleider' ), 0 => __( 'Keine Meldung', 'piratenkleider' )),
+                  'default' => 1,
+              ),
                 
                
               'url-newsletteranmeldung' => array(

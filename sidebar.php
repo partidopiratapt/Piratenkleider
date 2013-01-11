@@ -34,34 +34,33 @@
    
    if ( $options['slider-defaultwerbeplakate'] == "1" ) {     
        $plakate = get_option( 'piratenkleider_theme_defaultbilder'); 
-       if ((is_array($plakate['plakate-src'])) || 
-                ((isset($plakate['plakate-altadressen']))
-                 && (strlen(trim($plakate['plakate-altadressen']))>5))
+       if ( ((isset($plakate['plakate-src']) && (is_array($plakate['plakate-src'])))) || 
+            ((isset($plakate['plakate-altadressen'])) && (strlen(trim($plakate['plakate-altadressen']))>5))
            ) {
             echo '<div class="flexslider fs2 no-js" style="width: '.$defaultoptions['plakate-width'].'px;">';         
             echo '<ul class="slides">';                               
                    if (is_array($plakate['plakate-src'])) {              
                      foreach ($plakate['plakate-src'] as $current) {                        
                          echo '<li class="slide">';                         
-                         echo '<img src="'.$current.'" width="'.$defaultoptions['plakate-width'].'" height="'.$defaultoptions['plakate-height'].'" alt="">';                                                      
-                         if ((isset($plakate['plakate-title'])) && (strlen(trim($plakate['plakate-title']))>2)) {                                                                                      
-                             echo '<div class="caption"><p class="bebas">';                             
+                                                
                               if ((isset($plakate['plakate-url'])) && (strlen(trim($plakate['plakate-url']))>2)) {
                                  echo '<a href="'.$plakate['plakate-url'].'">';
+			     echo '<img src="'.$current.'" width="'.$defaultoptions['plakate-width'].'" height="'.$defaultoptions['plakate-height'].'" alt="';                                                      
+			     if ((isset($plakate['plakate-title'])) && (strlen(trim($plakate['plakate-title']))>2)) {   
+				   echo $plakate['plakate-title'];     
                              }
-                             echo $plakate['plakate-title'];                                                   
-                             if ((isset($plakate['plakate-url'])) && (strlen(trim($plakate['plakate-url']))>2)) {
+			     echo '">';                                                      			     
                                  echo '</a>';
+			 } else {
+			      echo '<img src="'.$current.'" width="'.$defaultoptions['plakate-width'].'" height="'.$defaultoptions['plakate-height'].'" alt="">';                                                      
                              }
-                             echo '</p></div>';     
-                         }                           
+			     
+			                           
                          echo '</li>';
-                        
                      }
-                 
                   } 
                
-                  if (isset($plakate['plakate-altadressen'])) {                  
+                  if ((isset($plakate['plakate-altadressen'])) && (strlen(trim($plakate['plakate-altadressen']))>2)) {                  
                         $alturls = preg_split("/[\n\r]+/", $plakate['plakate-altadressen']);
                         if (is_array( $alturls )) {
                             foreach ( $alturls  as $current) {
@@ -70,20 +69,19 @@
                                 $thisweb = esc_url ($thisweb);
                                 
                                 if ($thisurl <> '') {
-                                
                                     echo '<li class="slide">';                         
-                                    echo '<img src="'.$thisurl.'" width="'.$defaultoptions['plakate-width'].'" height="'.$defaultoptions['plakate-height'].'" alt="">';                                                      
-                                    if ((isset($thistitel)) && (strlen(trim($thistitel))>2)) {                                                                                      
-                                        echo '<div class="caption"><p class="bebas">';                             
                                         if ((isset($thisweb)) && (strlen(trim($thisweb))>2)) {
                                             echo '<a href="'.$thisweb.'">';
                                         }
-                                        echo $thistitel;                                                   
+                                    echo '<img src="'.$thisurl.'" width="'.$defaultoptions['plakate-width'].'" height="'.$defaultoptions['plakate-height'].'" alt="';
+				     if ((isset($thistitel)) && (strlen(trim($thistitel))>2)) {  
+					 echo wp_filter_nohtml_kses($thistitel);     
+				     }
+				    echo '">';                                                      
+
                                         if ((isset($thisweb)) && (strlen(trim($thisweb))>2)) {
                                             echo '</a>';
                                         }
-                                        echo '</p></div>';     
-                                    }                           
                                     echo '</li>';
                             
                                  }            
@@ -116,7 +114,7 @@
              if ($options['twitter_cache_lifetime'] <= 0) $options['twitter_cache_lifetime'] = 43200;
          }
          $lifetime = $options['twitter_cache_lifetime'];
-         
+        $maxitems = 0;       
         $rss = piratenkleider_fetch_feed($fetchlink,$lifetime);        
         $name = $options['feed_twitter'];
         if (!is_wp_error( $rss ) ) : // Checks that the object is created correctly 

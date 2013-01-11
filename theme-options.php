@@ -89,14 +89,14 @@ function theme_options_do_page($tab = '') {
                         if (isset($setoptions['piratenkleider_theme_options'][$tab]['fields'])) {
                             foreach($setoptions['piratenkleider_theme_options'][$tab]['fields'] as $i => $value) {
                                 $name = $i;
-                                $title = $value['title'];
-                                $type = $value['type'];
-                                    $label = $value['label'];
-                                    $parent = $value['parent'];
-                                    $liste = $value['liste'];
+                            if (isset($value['title'])) $title = $value['title'];
+                            if (isset($value['type'])) $type = $value['type'];
+                            if (isset($value['label'])) $label = $value['label'];
+                            if (isset($value['parent'])) $parent = $value['parent'];
+                            if (isset($value['liste'])) $liste = $value['liste']; 
                                 
                                 if ($type == 'section') {
-                                    if ($setsection != "") {
+                                if ((isset($setsection)) && ($setsection != "")) {
                                          echo "\t\t\t</table>\n";   
                                          echo "\t\t</td>\n";
                                          echo "\t</tr>\n";
@@ -172,7 +172,7 @@ function theme_options_do_page($tab = '') {
                                      echo "\t</tr>\n";
                                 }     
 
-                                if (($setsection!="") && ($type != 'section') && (!isset($parent))) {
+                            if ((isset($setsection)) && ($setsection!="") && ($type != 'section') && (!isset($parent))) {
                                     /*
                                      * Kein Parent mehr 
                                      */
@@ -416,7 +416,7 @@ function theme_defaultbilder_do_page() {
                                 if ( ! isset( $checked ) ) $checked = '';
                                 foreach ( $defaultplakate_liste as $option ) {    
                                     $checked = '';
-                                    if (is_array($options['plakate-src'])) {
+                                    if ((isset($options['plakate-src'])) && (is_array($options['plakate-src']))) {
                                         foreach ($options['plakate-src'] as $current) {                                                                                      
                                             if ($current == $option['src']) {
                                                  $checked = "checked=\"checked\"";                                                                                            

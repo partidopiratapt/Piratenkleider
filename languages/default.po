@@ -19,7 +19,9 @@ msgid "AAARH!<br>Ihr werdet sie nicht finden!"
 msgstr "AAARH!<br>O tesouro n&atilde;o est&aacute; aqui!"
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/404.php:26
-msgid "Es konnten keine Seiten oder Artikel gefunden werden, die zu eingegebene Adresse passte. Bitte versuchen Sie es nochmal mit einer Suche."
+msgid ""
+"Es konnten keine Seiten oder Artikel gefunden werden, die zu eingegebene "
+"Adresse passte. Bitte versuchen Sie es nochmal mit einer Suche."
 msgstr "N&atilde;o existem p&aacute;ginas ou itens, que correspondam ao endere&ccedil;o digitado. Por favor, tente novamente usando a Pesquisa."
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/404.php:34
@@ -184,17 +186,23 @@ msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/functions.php:349
 #, php-format
-msgid "unter %1$s und tagged %2$s. <br>Hier der permanente <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">Link</a> zu diesem Artikel."
+msgid ""
+"unter %1$s und tagged %2$s. <br>Hier der permanente <a href=\"%3$s\" title="
+"\"Permalink to %4$s\" rel=\"bookmark\">Link</a> zu diesem Artikel."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/functions.php:351
 #, php-format
-msgid "unter %1$s. <br><a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">Permanenter Link</a> zu diesem Artikel."
+msgid ""
+"unter %1$s. <br><a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark"
+"\">Permanenter Link</a> zu diesem Artikel."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/functions.php:353
 #, php-format
-msgid "<a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">Permanenter Link</a> zu diesem Artikel."
+msgid ""
+"<a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">Permanenter "
+"Link</a> zu diesem Artikel."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/functions.php:670
@@ -257,7 +265,9 @@ msgid "Nichts gefunden"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/home.php:103
-msgid "Es konnten keine Artikel gefunden werden. Bitte versuchen Sie es nochmal mit einer Suche."
+msgid ""
+"Es konnten keine Artikel gefunden werden. Bitte versuchen Sie es nochmal mit "
+"einer Suche."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/home.php:114
@@ -555,7 +565,9 @@ msgid "Alternatives Sliderbild als URL"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:361
-msgid "URL inkl. http:// zum Bild. Dieses kann auch vorher &uuml;ber den Mediendialog hochgeladen worden sein."
+msgid ""
+"URL inkl. http:// zum Bild. Dieses kann auch vorher &uuml;ber den "
+"Mediendialog hochgeladen worden sein."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:363
@@ -569,11 +581,15 @@ msgid "Alternatives Seitenbild als URL"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:391
-msgid "URL inkl. http:// zum Bild. Dieses kann auch vorher &uuml;ber den Mediendialog hochgeladen worden sein. "
+msgid ""
+"URL inkl. http:// zum Bild. Dieses kann auch vorher &uuml;ber den "
+"Mediendialog hochgeladen worden sein. "
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:425
-msgid " Diese Bilder werden in der Sidebar rechts gezeigt, sofern dieses &uuml;ber die Optionen (vgl. Slider) auch eingeschaltet ist."
+msgid ""
+" Diese Bilder werden in der Sidebar rechts gezeigt, sofern dieses &uuml;ber "
+"die Optionen (vgl. Slider) auch eingeschaltet ist."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:428
@@ -585,7 +601,10 @@ msgid "Dieser Titel wird als Alternativ-Text verwendet. "
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:432
-msgid "Solange keine Verlinkung erfolgt, ist diese Angabe optional, da die Plakatbilder dann nur \"Schmuckbilder\" sind und keinen auf die Seite bezogenen Inhalt mitliefern."
+msgid ""
+"Solange keine Verlinkung erfolgt, ist diese Angabe optional, da die "
+"Plakatbilder dann nur \"Schmuckbilder\" sind und keinen auf die Seite "
+"bezogenen Inhalt mitliefern."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:436
@@ -593,7 +612,8 @@ msgid "Optionale URL"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:439
-msgid "Optionale Webadresse zur Verlinkung der Plakate mit einer Informationsseite"
+msgid ""
+"Optionale Webadresse zur Verlinkung der Plakate mit einer Informationsseite"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:445
@@ -605,11 +625,16 @@ msgid "Adressen alternativer Plakatbilder"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:451
-msgid "Angabe der URLs inkl. http:// zum Bild. Wenn es mehrere sind, werden die einzelnen Adressen durch Zeilenumbruch getrennt. "
+msgid ""
+"Angabe der URLs inkl. http:// zum Bild. Wenn es mehrere sind, werden die "
+"einzelnen Adressen durch Zeilenumbruch getrennt. "
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:456
-msgid "Sollen die Bilder zus&auml;tzlich mit einem eigenen Titel und einer Webadresse versehen werden werden diese Angabe durch ein \"|\" zeichen in folgender Reihenfolge getrennt: <code>Bild URL|Titel|URL Webpage</code>"
+msgid ""
+"Sollen die Bilder zus&auml;tzlich mit einem eigenen Titel und einer "
+"Webadresse versehen werden werden diese Angabe durch ein \"|\" zeichen in "
+"folgender Reihenfolge getrennt: <code>Bild URL|Titel|URL Webpage</code>"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:458
@@ -617,7 +642,10 @@ msgid "Beispiel: "
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:461
-msgid "Wenn oben Defaultplakate angeklickt sind, erscheinen diese Bilder zus&auml;tzlich. Diese Bilder k&ouml;nnen auch vorher &uuml;ber den Mediendialog hochgeladen worden sein."
+msgid ""
+"Wenn oben Defaultplakate angeklickt sind, erscheinen diese Bilder zus&auml;"
+"tzlich. Diese Bilder k&ouml;nnen auch vorher &uuml;ber den Mediendialog "
+"hochgeladen worden sein."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:469
@@ -703,7 +731,9 @@ msgid "Verantwortliche/r"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:667
-msgid "Verantwortliche/r gem&auml;&szlig; &sect; 5 TMG. <br>Zum Beispiel: <code>Martin Mustermann</code>"
+msgid ""
+"Verantwortliche/r gem&auml;&szlig; &sect; 5 TMG. <br>Zum Beispiel: "
+"<code>Martin Mustermann</code>"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:672
@@ -715,7 +745,10 @@ msgid "Textbezeichnung des Dienstanbieter des Webauftritts."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:677
-msgid "Beispiel: <code>Kreisverband Musterstadt der Piratenpartei Deutschland vertreten durch den Vorstand Martin Mustermann, Doris Fischer und Florian Meister.</code>"
+msgid ""
+"Beispiel: <code>Kreisverband Musterstadt der Piratenpartei Deutschland "
+"vertreten durch den Vorstand Martin Mustermann, Doris Fischer und Florian "
+"Meister.</code>"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:685
@@ -729,7 +762,8 @@ msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:693
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:739
-msgid "Anschrift: Titel (1. Zeile). <br>Zum Beispiel: <code>Piratenpartei</code>"
+msgid ""
+"Anschrift: Titel (1. Zeile). <br>Zum Beispiel: <code>Piratenpartei</code>"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:698
@@ -738,7 +772,9 @@ msgid "zu H&auml;nden"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:702
-msgid "Anschrift: Optionale Personenangabe (\"zu H&auml;nden\") <br>Zum Beispiel: <code>Martin Mustermann</code>"
+msgid ""
+"Anschrift: Optionale Personenangabe (\"zu H&auml;nden\") <br>Zum Beispiel: "
+"<code>Martin Mustermann</code>"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:707
@@ -747,7 +783,9 @@ msgid "Strasse oder Postfach"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:711
-msgid "Anschrift: Strassenname und Nummer oder Postfachangabe oder freilassen <br>Zum Beispiel: <code>Unbesonnenheitsweg 123b</code>"
+msgid ""
+"Anschrift: Strassenname und Nummer oder Postfachangabe oder freilassen "
+"<br>Zum Beispiel: <code>Unbesonnenheitsweg 123b</code>"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:716
@@ -757,7 +795,9 @@ msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:720
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:766
-msgid "Anschrift: Postleitzahl gefolgt von Stadt<br>Zum Beispiel: <code>12345  Ankh-Morpork</code>"
+msgid ""
+"Anschrift: Postleitzahl gefolgt von Stadt<br>Zum Beispiel: <code>12345  Ankh-"
+"Morpork</code>"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:730
@@ -765,15 +805,22 @@ msgid "Ladungsf&auml;hige Anschrift"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:733
-msgid "Optionale Angaben f&uuml;r Rechtssachen. Werden diese Angaben frei gelassen, werden die Daten der Postanschrift verwendet."
+msgid ""
+"Optionale Angaben f&uuml;r Rechtssachen. Werden diese Angaben frei gelassen, "
+"werden die Daten der Postanschrift verwendet."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:748
-msgid " Anschrift: Optionale Personenangabe (\"zu H&auml;nden\"). Sollte in der Regel dieselbe Person sein, die oben als verantwortliche Person f&uuml;r das Impressum definiert ist.<br> Zum Beispiel: <code>Martin Mustermann</code>"
+msgid ""
+" Anschrift: Optionale Personenangabe (\"zu H&auml;nden\"). Sollte in der "
+"Regel dieselbe Person sein, die oben als verantwortliche Person f&uuml;r das "
+"Impressum definiert ist.<br> Zum Beispiel: <code>Martin Mustermann</code>"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:757
-msgid " Anschrift: Strassenname und Nummer oder Postfachangabe oder freilassen <br>Zum Beispiel: <code>Unbesonnenheitsweg 123b</code>"
+msgid ""
+" Anschrift: Strassenname und Nummer oder Postfachangabe oder freilassen "
+"<br>Zum Beispiel: <code>Unbesonnenheitsweg 123b</code>"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:774
@@ -789,7 +836,10 @@ msgid "Datenschutzbeauftragter"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:787
-msgid "Optionale Angaben zu einem Datenschutzbeauftragten. Wenn dieser nicht angegeben wird, wird die E-Mail-Adresse des Bundesdatenschutzbeauftragten angegeben."
+msgid ""
+"Optionale Angaben zu einem Datenschutzbeauftragten. Wenn dieser nicht "
+"angegeben wird, wird die E-Mail-Adresse des Bundesdatenschutzbeauftragten "
+"angegeben."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:794
@@ -801,7 +851,9 @@ msgid "E-Mailadresse"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:803
-msgid "Feste Mailadresse f&uuml;r offizielle Kontakte.<br>Zum Beispiel:  <code>bundesbeauftragter@piraten-dsb.de</code>"
+msgid ""
+"Feste Mailadresse f&uuml;r offizielle Kontakte.<br>Zum Beispiel:  "
+"<code>bundesbeauftragter@piraten-dsb.de</code>"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:813
@@ -809,19 +861,27 @@ msgid "Spendenformulare"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:815
-msgid "Optionale Angaben f&uuml;r Spendenformulare, die mit dem Seiten-Template \"Spenden\" erstellt werden."
+msgid ""
+"Optionale Angaben f&uuml;r Spendenformulare, die mit dem Seiten-Template "
+"\"Spenden\" erstellt werden."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:817
-msgid "<strong>Achtung:</strong> Dies ersetzt nicht das richtige Eingabeformular. Das Formular wird z.B. mit dem Plugin <em>Contact Form 7</em> erstellt und dann als Makro in den Textbereich der Seite hinzugef&uuml;gt."
+msgid ""
+"<strong>Achtung:</strong> Dies ersetzt nicht das richtige Eingabeformular. "
+"Das Formular wird z.B. mit dem Plugin <em>Contact Form 7</em> erstellt und "
+"dann als Makro in den Textbereich der Seite hinzugef&uuml;gt."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:819
-msgid "Die folgenden Daten werden nur dazu verwendet, die Tabelle f&uuml;r die  feststehenden Informationen aufzubauen."
+msgid ""
+"Die folgenden Daten werden nur dazu verwendet, die Tabelle f&uuml;r die  "
+"feststehenden Informationen aufzubauen."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:828
-msgid "Name des Empf&auml;ngers/Konto der Spenden f&uuml;r &Uuml;berweisungen. "
+msgid ""
+"Name des Empf&auml;ngers/Konto der Spenden f&uuml;r &Uuml;berweisungen. "
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:836
@@ -862,7 +922,10 @@ msgid "Designeinstellungen wurden gespeichert."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:947
-msgid "<b>Achtung:</b><br> Diese Einstellungen sollten nur in Ausnahmef&auml;llen ge&auml;ndert werden. <br>Bei einer falschen Nutzung k&ouml;nnen Eingaben die Gestaltung des Webauftritts sch&auml;digen."
+msgid ""
+"<b>Achtung:</b><br> Diese Einstellungen sollten nur in Ausnahmef&auml;llen "
+"ge&auml;ndert werden. <br>Bei einer falschen Nutzung k&ouml;nnen Eingaben "
+"die Gestaltung des Webauftritts sch&auml;digen."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:950
@@ -906,7 +969,8 @@ msgid "Helvetica, Arial, sans-serif"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:978
-msgid "Auswahl, welcher Schriftstil f&uuml;r die Website verwendet werden soll."
+msgid ""
+"Auswahl, welcher Schriftstil f&uuml;r die Website verwendet werden soll."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:985
@@ -914,7 +978,9 @@ msgid "Small Screen Device Sichtbarkeit"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:989
-msgid "F&uuml;r kleine Bildschirmaufl&ouml;sungen auch optionale Teile (Sticker, Slider) anzeigen."
+msgid ""
+"F&uuml;r kleine Bildschirmaufl&ouml;sungen auch optionale Teile (Sticker, "
+"Slider) anzeigen."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:994
@@ -927,11 +993,18 @@ msgid "Vorgabe: "
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:1002
-msgid "Wenn dieser Wert sich von der Defaulteinstellung aus der CSS Datei piratenkleider.css (Zeile 1926) unterscheidet, wird er &uuml;ber ein Inline-CSS nachtr&auml;glich im Kopfteil des HTML-Documents ge&auml;ndert."
+msgid ""
+"Wenn dieser Wert sich von der Defaulteinstellung aus der CSS Datei "
+"piratenkleider.css (Zeile 1926) unterscheidet, wird er &uuml;ber ein Inline-"
+"CSS nachtr&auml;glich im Kopfteil des HTML-Documents ge&auml;ndert."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:1004
-msgid "<b>Achtung:</b> Die Verkleinerung der H&ouml;he des Kopfteils ist nicht ungef&auml;hrlich. Zu beachten ist, dass der Kopfteil auch bei einer Vergr&ouml;&szlig;erung des Textes auf 200% noch gen&uuml;gend Platz haben muss!"
+msgid ""
+"<b>Achtung:</b> Die Verkleinerung der H&ouml;he des Kopfteils ist nicht "
+"ungef&auml;hrlich. Zu beachten ist, dass der Kopfteil auch bei einer "
+"Vergr&ouml;&szlig;erung des Textes auf 200% noch gen&uuml;gend Platz haben "
+"muss!"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:1008
@@ -939,11 +1012,17 @@ msgid "Abstand des Brandingbereiches (=Logo) nach oben ( .header .branding )"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:1015
-msgid "Das Logo hat einen Abstand nach oben. Diese kann &uuml;ber diese Angabe reduziert werden. "
+msgid ""
+"Das Logo hat einen Abstand nach oben. Diese kann &uuml;ber diese Angabe "
+"reduziert werden. "
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:1019
-msgid "<b>Achtung:</b> Wenn Socialmedia-Icons und Linkmenu oben auch erscheinen, sollte dieser Abstand nicht zu klein sein, da diese Icons und  der Text der Links bei steigender Gr&ouml;&szlig;e nach Links zum Logo wandert und es so zu &Uuml;berlapplungen kommen k&ouml;nnte."
+msgid ""
+"<b>Achtung:</b> Wenn Socialmedia-Icons und Linkmenu oben auch erscheinen, "
+"sollte dieser Abstand nicht zu klein sein, da diese Icons und  der Text der "
+"Links bei steigender Gr&ouml;&szlig;e nach Links zum Logo wandert und es so "
+"zu &Uuml;berlapplungen kommen k&ouml;nnte."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:1025
@@ -987,7 +1066,9 @@ msgid "Eigene CSS-Anweisungen"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:1093
-msgid "Eigene CSS-Anweisungen, die Inline im Kopfteil der Dokumente erg&auml;nzt werden"
+msgid ""
+"Eigene CSS-Anweisungen, die Inline im Kopfteil der Dokumente erg&auml;nzt "
+"werden"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:1098
@@ -995,11 +1076,16 @@ msgid "Eigene HTML-Anweisungen"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:1105
-msgid "Eigene HTML-Anweisungen, die am Ende der Webseite, vor dem letzten &lt;/body&Gt;&lt;/html&gt; plaziert werden"
+msgid ""
+"Eigene HTML-Anweisungen, die am Ende der Webseite, vor dem letzten &lt;/"
+"body&Gt;&lt;/html&gt; plaziert werden"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:1106
-msgid "<b>Achtung:</b> Fehlerhafter HTML-, JavaScript oder CSS-Code an dieser Stelle kann zu einem Nicht-Funktionieren der gesamt Website f&uuml;hren!<br />Der hier eingegebene Code wird nicht gefiltert oder kontrolliert."
+msgid ""
+"<b>Achtung:</b> Fehlerhafter HTML-, JavaScript oder CSS-Code an dieser "
+"Stelle kann zu einem Nicht-Funktionieren der gesamt Website f&uuml;hren!<br /"
+">Der hier eingegebene Code wird nicht gefiltert oder kontrolliert."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/events/ecp-single-template.php:52
@@ -1011,7 +1097,9 @@ msgid "Topthema"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:74
-msgid "Deine E-Mail-Adresse wird nicht veröffentlicht. Erforderliche Felder sind markiert <span class=\"required\">*</span>"
+msgid ""
+"Deine E-Mail-Adresse wird nicht veröffentlicht. Erforderliche Felder sind "
+"markiert <span class=\"required\">*</span>"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:79
@@ -1486,7 +1574,8 @@ msgid "Linkmenu"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:587
-msgid "Linkmenu oben rechts, zwischen Social Media Icons und Suchmaske anzeigen"
+msgid ""
+"Linkmenu oben rechts, zwischen Social Media Icons und Suchmaske anzeigen"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:592
@@ -1558,7 +1647,8 @@ msgid "Parteilinks"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:665
-msgid "Im Fu&szlig;teil eine Liste von Links zu Seiten der Piratenpartei anzeigen"
+msgid ""
+"Im Fu&szlig;teil eine Liste von Links zu Seiten der Piratenpartei anzeigen"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:670
@@ -1583,7 +1673,10 @@ msgid "Hierachische Struktur"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:687
-msgid "Bei der Anzeige von Seiten rechts in der Sidebar nur das aktuelle Submenu zeigen. Bei Deaktivierung wird das vollst&auml;ndige Men&uuml; gezeigt. Dies ist f&uuml;r Webauftritte mit vielen Seiten nicht geeignet."
+msgid ""
+"Bei der Anzeige von Seiten rechts in der Sidebar nur das aktuelle Submenu "
+"zeigen. Bei Deaktivierung wird das vollst&auml;ndige Men&uuml; gezeigt. Dies "
+"ist f&uuml;r Webauftritte mit vielen Seiten nicht geeignet."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:693
@@ -1591,11 +1684,14 @@ msgid "Offene Struktur"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:694
-msgid "Men&uuml; mit allen Seiten in der Sidebar anzeigen, auch wenn diese nicht dem Hauptmenu zugeordnet und gegliedert sind"
+msgid ""
+"Men&uuml; mit allen Seiten in der Sidebar anzeigen, auch wenn diese nicht "
+"dem Hauptmenu zugeordnet und gegliedert sind"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:701
-msgid "Eingabemaske f&uuml;r den Eintrag in ein Newsletter (Mailingliste) anzeigen"
+msgid ""
+"Eingabemaske f&uuml;r den Eintrag in ein Newsletter (Mailingliste) anzeigen"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:706
@@ -1603,7 +1699,9 @@ msgid "Plakatslider"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:707
-msgid "Slider der Werbeplakate (rechte Sidebar-Spalte) werden angezeigt.<br>Die Auswahl der Plakatbilder kann unter den Defaultbildern angepasst werden"
+msgid ""
+"Slider der Werbeplakate (rechte Sidebar-Spalte) werden angezeigt.<br>Die "
+"Auswahl der Plakatbilder kann unter den Defaultbildern angepasst werden"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:712
@@ -1673,7 +1771,9 @@ msgid "Beitr&auml;ge &uuml;ber halbe Breite"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:826
-msgid "Zahl der Beitr&auml;ge, die in Spalten mit je zwei Beitr&auml;gen nebeneinander, angezeigt werden."
+msgid ""
+"Zahl der Beitr&auml;ge, die in Spalten mit je zwei Beitr&auml;gen "
+"nebeneinander, angezeigt werden."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:834
@@ -1709,7 +1809,9 @@ msgid "Aktivieren"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:864
-msgid "Slider im Teaserbereich auf der Startseite aktivieren. <br>Die Auswahl der Plakatbilder kann unter den Defaultbildern angepasst werden."
+msgid ""
+"Slider im Teaserbereich auf der Startseite aktivieren. <br>Die Auswahl der "
+"Plakatbilder kann unter den Defaultbildern angepasst werden."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:871
@@ -1757,7 +1859,8 @@ msgid "Animationsdauer"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:911
-msgid "Geschwindigkeit der Animation/Fading beim Bild&uuml;bergang in Milisekunden."
+msgid ""
+"Geschwindigkeit der Animation/Fading beim Bild&uuml;bergang in Milisekunden."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:917
@@ -1789,7 +1892,9 @@ msgid "Wortzahl"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:939
-msgid "Zahl der Worte im Teaser; Die maximale Textl&auml;nge begrenzt diesen Wert jedoch."
+msgid ""
+"Zahl der Worte im Teaser; Die maximale Textl&auml;nge begrenzt diesen Wert "
+"jedoch."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:944
@@ -1797,7 +1902,8 @@ msgid "L&auml;nge des Teasertextes (Artikelauszug)"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:945
-msgid "Maximale Textl&auml;nge f&uuml;r Artikelausz&uuml;ge auf der Startseite."
+msgid ""
+"Maximale Textl&auml;nge f&uuml;r Artikelausz&uuml;ge auf der Startseite."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:953
@@ -1809,7 +1915,11 @@ msgid "Position und Anzeige"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:959
-msgid "Die Auswahl werden die Social Media Buttons angezeigt. Dies kann entweder oben im Kopfteil oder links neben den Inhaltsbereich sein. <br>Hinweis: Es werden nur die Buttons gezeigt, bei denen in den folgenden Eingabefeldern Adressen definiert sind."
+msgid ""
+"Die Auswahl werden die Social Media Buttons angezeigt. Dies kann entweder "
+"oben im Kopfteil oder links neben den Inhaltsbereich sein. <br>Hinweis: Es "
+"werden nur die Buttons gezeigt, bei denen in den folgenden Eingabefeldern "
+"Adressen definiert sind."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:960
@@ -1909,7 +2019,9 @@ msgid "Feed"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1016
-msgid "URL inkl. http:// zu einem RSS oder Atom Feed. Dies muss nicht unbedingt der von dieser Website sein, kann aber."
+msgid ""
+"URL inkl. http:// zu einem RSS oder Atom Feed. Dies muss nicht unbedingt der "
+"von dieser Website sein, kann aber."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1020
@@ -1921,7 +2033,9 @@ msgid "Benutzername"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1025
-msgid "Der Twitter Benutzername. Wird zur Anzeige eines optionalen Twitter-Imports in der Sidebar verwendet."
+msgid ""
+"Der Twitter Benutzername. Wird zur Anzeige eines optionalen Twitter-Imports "
+"in der Sidebar verwendet."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1030
@@ -1945,7 +2059,9 @@ msgid "Twitter Cache"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1046
-msgid "Zeit in Sekunden f&uuml;r den Twitter-Cache. Dieser Wert darf nicht kleiner als 10 Minuten (=600) sein."
+msgid ""
+"Zeit in Sekunden f&uuml;r den Twitter-Cache. Dieser Wert darf nicht kleiner "
+"als 10 Minuten (=600) sein."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1054
@@ -1965,7 +2081,9 @@ msgid "Beschreibung"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1064
-msgid "Optionale Beschreibungstext in dem Meta-Tag jeder Seite (f&uuml;r alle gleich). Sollte nicht mehr als 140 Zeichen lang sein, wenn gesetzt."
+msgid ""
+"Optionale Beschreibungstext in dem Meta-Tag jeder Seite (f&uuml;r alle "
+"gleich). Sollte nicht mehr als 140 Zeichen lang sein, wenn gesetzt."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1068
@@ -1973,7 +2091,10 @@ msgid "Schl&uuml;sselworte"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1069
-msgid "Optionale Schl&uuml;sselworte in dem Meta-Tag jeder Seite (f&uuml;r alle gleich). Durch Komma getrennt. Schl&uuml;sselworte sollten tats&auml;chlich vorkommen."
+msgid ""
+"Optionale Schl&uuml;sselworte in dem Meta-Tag jeder Seite (f&uuml;r alle "
+"gleich). Durch Komma getrennt. Schl&uuml;sselworte sollten tats&auml;chlich "
+"vorkommen."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1074
@@ -1993,7 +2114,11 @@ msgid "Kommentarbenutzer anonymisieren"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1085
-msgid "IP-Adresse und der User-Agent-String geleert, die Eingabe von E-Mail-Adressen wird verhindert.<br> Diese Option deaktiviert auch die Avatar-Anzeige und setzt die Kommentareinstellung unter Einstellungen-Diskussion so, dass Benutzer keinen Namen und E-Mail-Adressen mehr eingeben m&uuml;ssen."
+msgid ""
+"IP-Adresse und der User-Agent-String geleert, die Eingabe von E-Mail-"
+"Adressen wird verhindert.<br> Diese Option deaktiviert auch die Avatar-"
+"Anzeige und setzt die Kommentareinstellung unter Einstellungen-Diskussion "
+"so, dass Benutzer keinen Namen und E-Mail-Adressen mehr eingeben m&uuml;ssen."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1090
@@ -2009,7 +2134,10 @@ msgid "Avatare anzeigen"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1098
-msgid "Bei Kommentaren werden Avatar-Bilder mit Hilfe von Gravatar oder anderen Diensten abgerufen. Dies erm&ouml;glicht allerdings theoretisch ein Tracking durch diese Dienste."
+msgid ""
+"Bei Kommentaren werden Avatar-Bilder mit Hilfe von Gravatar oder anderen "
+"Diensten abgerufen. Dies erm&ouml;glicht allerdings theoretisch ein Tracking "
+"durch diese Dienste."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1104
@@ -2021,7 +2149,12 @@ msgid "Sidebar abblendbar"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1109
-msgid "Benutzern via JavaScript die M&ouml;glichkeit geben, die Sidebar klein zu machen. <br>Hinweis: Der Status wird nicht gespeichert, um keine Cookies anzulegen; Die Funktion ist nicht sichtbnar, wenn man kein JavaScript an hat. Desweiteren ist die Funktion nur aktiv, wenn die Bildschirmbreite gr&ouml;&szlig;er als 600 Pixel ist."
+msgid ""
+"Benutzern via JavaScript die M&ouml;glichkeit geben, die Sidebar klein zu "
+"machen. <br>Hinweis: Der Status wird nicht gespeichert, um keine Cookies "
+"anzulegen; Die Funktion ist nicht sichtbnar, wenn man kein JavaScript an "
+"hat. Desweiteren ist die Funktion nur aktiv, wenn die Bildschirmbreite "
+"gr&ouml;&szlig;er als 600 Pixel ist."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1114
@@ -2029,7 +2162,11 @@ msgid "Antwortlinks auf Kommentare"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1115
-msgid "Bei der Anzeige von Kommentaren, wird unter diesen ein eigener Kommentarlink eingebaut, der das Antworten auf den Kommentar erlaubt. Dies kann zu einer Nutzung des Kommentarbereiches wie bei einem Forum f&uuml;hren, bei dem es zuletzt aber nicht mehr um den eigentlichen Beitrag geht."
+msgid ""
+"Bei der Anzeige von Kommentaren, wird unter diesen ein eigener Kommentarlink "
+"eingebaut, der das Antworten auf den Kommentar erlaubt. Dies kann zu einer "
+"Nutzung des Kommentarbereiches wie bei einem Forum f&uuml;hren, bei dem es "
+"zuletzt aber nicht mehr um den eigentlichen Beitrag geht."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1120
@@ -2045,7 +2182,10 @@ msgid "Defaultbilder f&uuml;r Seiten"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1126
-msgid "Bilder f&uuml;r Seiten erzwingen, die von sich aus kein Artikelbild definiert haben. Wenn kein Artikelbild vorhanden ist, wird ein Defaultbild gezeigt."
+msgid ""
+"Bilder f&uuml;r Seiten erzwingen, die von sich aus kein Artikelbild "
+"definiert haben. Wenn kein Artikelbild vorhanden ist, wird ein Defaultbild "
+"gezeigt."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1131
@@ -2053,7 +2193,9 @@ msgid "Platzhalterbilder"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1132
-msgid "Platzhalterbilder bei Indexseiten zu Kategorien, Tags, Suche und Archiv anzeigen."
+msgid ""
+"Platzhalterbilder bei Indexseiten zu Kategorien, Tags, Suche und Archiv "
+"anzeigen."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1137
@@ -2061,11 +2203,15 @@ msgid "Kommentarbubble"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1138
-msgid "Zeige den Kommentarbubble auch dann, wenn noch keine Kommentare abgegeben wurden"
+msgid ""
+"Zeige den Kommentarbubble auch dann, wenn noch keine Kommentare abgegeben "
+"wurden"
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1144
-msgid "URL, inkl. http://, zur Seite auf der man sich in Newsletter eingetragen werden kann."
+msgid ""
+"URL, inkl. http://, zur Seite auf der man sich in Newsletter eingetragen "
+"werden kann."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:12
@@ -2075,8 +2221,10 @@ msgstr ""
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:14
 msgid ""
 "Dieser Bereich befindet sich rechts vom Inhaltsbereich. \n"
-"                    Er ist geeignet f&uuml;r Werbeplakate, Hinweise und &auml;hnliches.\n"
-"                    Wenn leer, werden als Alternative einige der allgemeinen Standardplakate \n"
+"                    Er ist geeignet f&uuml;r Werbeplakate, Hinweise und "
+"&auml;hnliches.\n"
+"                    Wenn leer, werden als Alternative einige der allgemeinen "
+"Standardplakate \n"
 "                    gezeigt."
 msgstr ""
 
@@ -2087,7 +2235,8 @@ msgstr ""
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:27
 msgid ""
 "Dieser Bereich befindet sich rechts vom Inhaltsbereich.\n"
-"                    Er ist nach den Werbeplakaten positioniert, die &uuml;ber die \n"
+"                    Er ist nach den Werbeplakaten positioniert, die &uuml;"
+"ber die \n"
 "                    Optionen ein- oder abgeschaltet werden k&ouml;nnen."
 msgstr ""
 
@@ -2110,7 +2259,8 @@ msgstr ""
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:54
 msgid ""
 "Dieser Bereich ist rechts neben den Slider\n"
-"                    und dem Hauptcontent positioniert. Wenn leer, werden hier\n"
+"                    und dem Hauptcontent positioniert. Wenn leer, werden "
+"hier\n"
 "                    die 3 Links zur Piratenwebsite gezeigt zum Mitmachen\n"
 "                    oder Spenden"
 msgstr ""
@@ -2144,9 +2294,12 @@ msgstr ""
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:97
 msgid ""
 "Bereich im Fu&szlig;teil unter dem Haupttextbereich.\n"
-"                   Dieser Bereich eignet sich insbesondere f&uuml;r externe Links zu\n"
-"                   anderen Piratenwebsites auf regionaler oder &uuml;beregionaler Ebene.\n"
-"                   Diese werden dann als Menu mit externen Links definiert und\n"
+"                   Dieser Bereich eignet sich insbesondere f&uuml;r externe "
+"Links zu\n"
+"                   anderen Piratenwebsites auf regionaler oder &uuml;"
+"beregionaler Ebene.\n"
+"                   Diese werden dann als Menu mit externen Links definiert "
+"und\n"
 "                   dann als Widget dieser Sidebar zugeordnet.\n"
 "                   Wenn leer, wird hier nichts angezeigt."
 msgstr ""
@@ -2158,7 +2311,8 @@ msgstr ""
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:113
 msgid ""
 "Rechte Spalte im Fu&szlig;bereich. Wenn leer, erscheint hier das\n"
-"                    technische Menu (siehe Men&uuml;s). Wenn auch dieses nicht definiert ist, wird \n"
+"                    technische Menu (siehe Men&uuml;s). Wenn auch dieses "
+"nicht definiert ist, wird \n"
 "                    die Blogadresse und dessen RSS-Feedadresse gezeigt"
 msgstr ""
 
@@ -2172,7 +2326,9 @@ msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:176
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:218
-msgid "Fehler: Adresse des Newsletter-Dienstes ist nicht eingetragen. Bitte geben Sie diese Adresse zun&auml;chst bei den Theme-Optionen an."
+msgid ""
+"Fehler: Adresse des Newsletter-Dienstes ist nicht eingetragen. Bitte geben "
+"Sie diese Adresse zun&auml;chst bei den Theme-Optionen an."
 msgstr ""
 
 #: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:222

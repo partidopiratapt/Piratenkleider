@@ -2,7 +2,7 @@ Piratenkleider
 - Wordpress-Theme für Webauftritte der Piratenpartei 
 =================================================
 
-Version 2.14.1 von Wolfgang Wiese (xwolf), 7. Dezember 2012
+Version 2.14.5 von Wolfgang Wiese (xwolf), 4. Januar 2013
 
 
 DOWNLOADS
@@ -44,10 +44,10 @@ AUTOREN / ENTWICKLER
      - Social Media Icons: Paul Robert Lloyd, http://paulrobertlloyd.com/2009/06/social_media_icons      
      - YAML CSS Framework (Lizensiert unter der Creative Commons Attribution 2.0 License).
      - JavaScript Framework jQuery (GNU General Public License (GPL) Version 2)
-     - jQuery FlexSlider (MIT License)
+     - jQuery FlexSlider 2 (GPL v2)
      - Schrift Bebas Neue von Dharmatype (SIL Open Font License 1.1)
      - Schrift Droid Sans von Ascender (http://www.droidfonts.com/), Apache License 2.0 http://www.apache.org/licenses/LICENSE-2.0
-     - Circle Player, https://github.com/maboa/circleplayer (GNU General Public License (GPL) Version 2)
+     - Circle Player, http://jplayer.org (GNU General Public License (GPL) Version 2)
 
 VORVERSION
 
@@ -251,7 +251,7 @@ UNTERSTÜTZE PLUGINS
    konfiguriert werden:
 
     General Settings:
-        URL to ICS file (s):
+        URL to ICS File(s):
          zum Beispiel für Bayern:
          1. http://events.piratenpartei-bayern.de/events/ical?gid=&gid[]=10&cid=&subgroups=1&start=&end=
          2. http://events.piratenpartei-bayern.de/index.php/events/ical?gid=&gid[]=13&cid=
@@ -293,6 +293,12 @@ UNTERSTÜTZE PLUGINS
   Mit Hilfe dieses Plugins können Informationen über den Blogautoren angezeigt 
   werden. Im Theme wurden einige wenige CSS Anpassungen gemacht um dieses
   optiomal zu unterstützen.  
+
+- xwolf Progress Bar
+  (https://github.com/xwolfde/xw-progressbar)
+  Anzeige von Fortschrittsbalken.
+
+
 
 EMPFEHLUNGEN FÜR WIDGETS
  
@@ -432,3 +438,11 @@ Administrative Hinweise für Wordpress Theme-Editoren:
     vorhandene Bilder anstelle des Datums eingeblendet werden. Hierzu gibt es
     im Backend eine Option: "Thumbnails anstelle Datum" 
     (Takelage einstellen->Startseite)
+
+13. Ab Version 2.14.5 ist der Circleplayer funktionsfähig. Dieser eingebaute 
+    HTML5-Audioplayer basiert auf den jPlayer (http://jplayer.org/download/)
+    und ermöglicht es, im text eingebettete ogg/mp3-Dateien zu erkennen und in 
+    der Sidebar rechts abspielen zu lassen.
+
+14. Ab version 2.14.5 kann der Hintergrund des Kopfteiles über das Backend
+    (fast) frei definiert werden.
