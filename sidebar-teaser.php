@@ -9,22 +9,32 @@ $bilderoptions = get_option('piratenkleider_theme_defaultbilder');
         <?php dynamic_sidebar('first-teaser-widget-area'); ?>
     <?php } else {        
 
-
-
         $defaultbildsrc = $bilderoptions['slider-defaultbildsrc'];
         $cat = $options['slider-catid'];
+	 global $thisCat;
+	 if (isset($thisCat)) {
+	     $cat = $thisCat;
+	 }
          if (!isset($cat) ) $cat = 1;         
         $numberarticle = $options['slider-numberarticle'];
          if (!isset($numberarticle) )  $numberarticle =3;   
 
         if (!isset($options['teaser-subtitle']))
             $options['teaser-subtitle'] = $defaultoptions['teaser-subtitle'];
+	 
+	 global $thisCatName;
+	 
         if (!isset($options['teaser-title-maxlength']))
             $options['teaser-title-maxlength'] = $defaultoptions['teaser-title-maxlength'];
         if (!isset($options['teaser-title-words']))
             $options['teaser-title-words'] = $defaultoptions['teaser-title-words'];
         if (!isset($options['teaser-type']))
             $options['teaser-type'] = $defaultoptions['teaser-type'];
+
+	$subtitle =  $options['teaser-subtitle'];
+        if (isset($thisCatName)) {
+	    $subtitle = $thisCatName;
+	}
 
         query_posts(array('cat' => "$cat", 'posts_per_page' => $numberarticle));
         ?>
@@ -46,7 +56,7 @@ $bilderoptions = get_option('piratenkleider_theme_defaultbilder');
                                         echo '<img src="' . $defaultbilder_liste[$randombild[0]]['src'] . '" width="' . $defaultoptions['bigslider-thumb-width'] . '" height="' . $defaultoptions['bigslider-thumb-height'] . '" alt="">';
                                     }
                                 }
-                echo '<div class="caption"><p class="bebas">'.$options['teaser-subtitle'].'</p>';
+                echo '<div class="caption"><p class="bebas">'.$subtitle.'</p>';
                                 echo "<h3><a href=";
                                 the_permalink();
                                 echo ">";

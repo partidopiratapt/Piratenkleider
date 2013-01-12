@@ -2,7 +2,7 @@ Piratenkleider
 - Wordpress-Theme für Webauftritte der Piratenpartei 
 =================================================
 
-Version 2.14.5 von Wolfgang Wiese (xwolf), 4. Januar 2013
+Version 2.14.6 von Wolfgang Wiese (xwolf), 11. Januar 2013
 
 
 DOWNLOADS
@@ -446,3 +446,9 @@ Administrative Hinweise für Wordpress Theme-Editoren:
 
 14. Ab version 2.14.5 kann der Hintergrund des Kopfteiles über das Backend
     (fast) frei definiert werden.
+
+15. Ab Version 2.14.6 kann die Kategorieseite optisch genauso wie die Startseite
+    gezeigt werden (per Default aktiv). 
+    Als Slider werden dabei dann die letzten Artikel der Kategorie angezeigt.
+    Über das Backend kann wieder  (Takelage einstellen->Sonstiges) kann 
+    alternativ wieder die Listenansicht angezeigt werden.

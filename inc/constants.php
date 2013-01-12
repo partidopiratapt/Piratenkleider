@@ -110,6 +110,8 @@ $defaultoptions = array(
     'stickerlink3-url'              => '',
     'default_footerlink_key'        => 'International (mit Flaggen)',
     'default_footerlink_show'       => 1,
+    'circleplayer-require-mp3fallback'	=> 1,
+    'category-startpageview'	    => 1,
     
 );
 
@@ -341,10 +343,12 @@ $default_toplink_liste = array(
               __('Griechenland', 'piratenkleider' ) => 'http://pirateparty.gr/',
               __('Guatemala', 'piratenkleider' ) => 'http://partidopirata.org.gt/',
               __('Island', 'piratenkleider') => 'http://pirateparty.is/',        
+              __('Israel', 'piratenkleider') => 'http://piratim.org/',       
               __('Italien', 'piratenkleider' ) => 'http://www.partito-pirata.it/',
               __('Kanada', 'piratenkleider' ) => 'http://www.piratepartyofcanada.com/',
               __('Kasachstan', 'piratenkleider' ) => 'http://pirateparty.kz/',
               __('Kolumbien', 'piratenkleider' ) => 'http://pp.interlecto.net/',
+              __('Kroatien', 'piratenkleider' ) => 'http://pirati.hr/',
               __('Lettland', 'piratenkleider' ) => 'http://piratupartija.lv/',
               __('Litauen', 'piratenkleider' ) => 'http://piratupartija.lt/',
               __('Luxemburg', 'piratenkleider' ) => 'http://www.piratepartei.lu/',
@@ -394,10 +398,12 @@ $default_toplink_liste = array(
               '<span class="flagicon-gr"></span> '.__('Griechenland', 'piratenkleider') => 'http://pirateparty.gr/',
               '<span class="flagicon-gt"></span> '.__('Guatemala', 'piratenkleider') => 'http://partidopirata.org.gt/',
               '<span class="flagicon-is"></span> '.__('Island', 'piratenkleider') => 'http://pirateparty.is/',            
+              '<span class="flagicon-il"></span> '.__('Israel', 'piratenkleider') => 'http://piratim.org/',            
               '<span class="flagicon-it"></span> '.__('Italien', 'piratenkleider') => 'http://www.partito-pirata.it/',
               '<span class="flagicon-ca"></span> '.__('Kanada', 'piratenkleider') => 'https://www.pirateparty.ca/',
               '<span class="flagicon-kz"></span> '.__('Kasachstan', 'piratenkleider') => 'http://pirateparty.kz/',
               '<span class="flagicon-co"></span> '.__('Kolumbien', 'piratenkleider') => 'http://pp.interlecto.net/',
+              '<span class="flagicon-hr"></span> '.__('Kroatien', 'piratenkleider') => 'http://pirati.hr/',
               '<span class="flagicon-lv"></span> '.__('Lettland', 'piratenkleider') => 'http://piratupartija.lv/',
               '<span class="flagicon-lt"></span> '.__('Litauen', 'piratenkleider') => 'http://piratupartija.lt/',
               '<span class="flagicon-lu"></span> '.__('Luxemburg', 'piratenkleider') => 'http://www.piratepartei.lu/',
@@ -1272,6 +1278,14 @@ $setoptions = array(
                   'label'   => __( 'Definiere ein Text als Disclaimer der bei Artikeln gezeigt werden kann. Disclaimer wird mit Custom Field show-post-disclaimer (= 0, 1,2,3) aktiviert.', 'piratenkleider' ),
                   'default' => $defaultoptions['disclaimer_post'],
               ),                    
+               
+	       'category-startpageview'   => array(
+                  'type'    => 'bool',
+                  'title'   => __( 'Kategoriedarstellung', 'piratenkleider' ),
+                  'label'   => __( 'Kategorieseiten wie Startseite darstellen', 'piratenkleider' ),
+                  'default' => $defaultoptions['category-startpageview'],
+              ),   
+	       
                
           )
        ),
