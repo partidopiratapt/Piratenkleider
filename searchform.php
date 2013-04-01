@@ -1,7 +1,7 @@
 <?php 
 global $defaultoptions;
 ?>
-<h2 class="skip"><?php _e("Suche", 'piratenkleider'); ?></h2>
+    <h2 name="searchform" class="skip"><?php _e("Suche", 'piratenkleider'); ?></h2>
 
 <form method="get" class="searchform" action="<?php echo home_url(); ?>/">
 	<label class="visuallyhidden" for="s"><?php _e("Suche nach", 'piratenkleider'); ?>:</label>

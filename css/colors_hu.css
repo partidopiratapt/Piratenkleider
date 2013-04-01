@@ -1,6 +1,6 @@
 /* 
-    Document   : colors_tk
-    Created on : 16.05.2012, 11:56:08
+    Document   : colors_hu
+    Created on : 26.02.2013
     Author     : xwolf
     Description:
        Define corporate design colors for the theme.
@@ -11,22 +11,15 @@
        Settings in the color files will override settings in the
        current basemods, which defines the default style (german colors).
 
-       This is the turkey color file.
+       This is the Hungarian color file.
        
-       Base color: #00B5B1 (rgb: 0, 181, 177)
-       Special text font: Bebas Neue
-        
-       NOTICE: This font must be replaced by another font, cause Bebas
-          does not contain all need chars. Please inform 
-          at piratenkleider@xwolf.de  about a possible and useful
-          font that can be used here.  
 
 */
 
+
 @media screen, projection {
-    
     body {
-        background: #00B5B1 url("../images/int/bg-tags-tk.png") -20% top fixed; 
+        background: #4c2582 url("../images/int/bg-tags-hu.png") -20% top fixed; 
     }
     a {     
       color: #06C;
@@ -39,7 +32,7 @@
         color: #111;
       }
     ins, mark {
-        background-color: #00B5B1;
+        background-color: #4c2582;
     }
     ::selection {
       background: #2d7dc5;
@@ -91,11 +84,11 @@
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) inset;
         color: #444;
         color: rgba(0,0,0,.8);
-        background: url("../images/int/bg-tags-tk.png") repeat fixed -20% top #00B5B1;
+        background: url("../images/int/bg-tags-hu.png") repeat fixed -20% top #4c2582;
      }
      .sticky a {
          color: black;
-         background: #00B4B1;
+         background: #993399;
 
      }      
      .sticky a:hover,
@@ -110,7 +103,7 @@
         color: white;
          }
      .skiplinks li a:hover {
-        background: #00B5B1;
+        background: #4c2582;
         color: black; 
     }
     ul.socialmedia li a img {   
@@ -120,11 +113,10 @@
          border-color: white;      
     }
     ul.socialmedia li a:focus img {
-       border-color: #00B5B1;    
+       border-color: #4c2582;    
     }    
     
 .sticker ul li {  
-    font-family: "FontPiratenkleiderHeadlines",Helvetica,Arial,sans-serif; 
     border-color: transparent;     
   }
 
@@ -137,7 +129,7 @@
    } 
    
    .sticker ul li a .cicolor {        
-     color: #00B5B1;    
+     color: #4c2582;    
    }
   
    .sticker ul li a:hover .cicolor,
@@ -156,7 +148,7 @@
 
     .sticker li a:hover img, 
     .sticker li a:focus img {
-       border-color: #00B5B1;
+       border-color: #4c2582;
     }
 
 
@@ -165,19 +157,21 @@
       background: rgba(255, 255, 255, 0.5);
     }
 
+  
   .teaser .row {
-    background: #00B4B1;
-    background: rgba(0, 0, 0, 0.3) -20% 0 fixed; 
+    background: #993399;
+    background: rgba(0, 0, 0, 0.2) -20% 0 fixed; 
   }
   .teaser .first-teaser-widget-area {
     background: #111;
  }
-
-   .first-teaser-widget-area .slide .textslider  {
-    background: #00B4B1;
+  .first-teaser-widget-area .slide .textslider  {
+    background: #4c2582;
+    color: #ddd;
   } 
+  
     .second-teaser-widget-area li {
-      background: #00B5B1;
+      background: #4c2582;
     }
 
 
@@ -189,20 +183,20 @@
     .second-teaser-widget-area li a div {
       color: black;
       font-family: "FontPiratenkleiderHeadlines", Helvetica, Arial, sans-serif;
-      text-shadow: 0 -1px 1px #c36800;
+      text-shadow: 0 -1px 1px #552554;
 
     }
    
 
   .second-teaser-widget-area li a:focus,  
   .second-teaser-widget-area li a:hover {    
-        background: #00B4B1;
-        background: rgba(0, 0, 0, 0.2);  
+        background: #993399;
+        background: rgba(0, 0, 0, 0.5);  
         color: white;
   }
   
   .second-teaser-widget-area .textwidget {      
-        background: #00B5B1;
+        background: #4c2582;
         color: white; 
         text-shadow: 0 0 0; 
   }
@@ -210,33 +204,37 @@
        color: white;
    }
 
- .teaserlinks ul li {
-    background-color: #00B5B1;
+.teaserlinks ul li {
+    background-color: #5C388F;
+	color: white;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
  
   }
+  .teaserlinks .symbol:before {
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.2) !important; 
+  } 
  .teaserlinks ul li a {
-     color: white;
+     color: #EEE;
      font-family: "FontPiratenkleiderHeadlines", Helvetica, Arial, sans-serif;
-     text-shadow: 0 -1px 1px #c36800;
+     text-shadow: 0 -1px 1px #552554;
  }
   .teaserlinks ul li a:hover,
   .teaserlinks ul li a:focus{
       color: white;
-      background: none repeat scroll 0 0 #00B5B1;
+      background: none repeat scroll 0 0 #5C388F;
   }
   .teaserlinks ul li a span {
-      color: black;
      text-shadow: 0 0 0; 
+	 color: #EEE;
   }
     .teaserlinks ul li a:hover span,
     .teaserlinks ul li a:focus span { 
-           color: black;
+           color: white;
      }    
 
     .content .row {
-        background: #00B5B1;
-        background: rgba(0, 181, 177, 0.7); 
+        background: #4c2582;
+        background: rgba(76, 37, 130, 0.2); 
     }
     .content .symbolbild .caption {
       background: transparent;
@@ -260,7 +258,7 @@
       font-family: "FontPiratenkleiderHeadlines", Helvetica, Arial, sans-serif;
      }
       .content-primary .sprungmarken ol li a:hover {
-          background: #00B5B1;
+          background: #4c2582;
           color: black;
         }
   .content-aside .newsletter {     
@@ -269,8 +267,8 @@
  } 
 
   .post .post-info .commentbubble a {
-      background: #00B5B1;
-      color: black;
+      background: #4c2582;
+      color: white;
  }
   .post .post-info .cal-icon {
     background: #eeeeee;
@@ -304,7 +302,7 @@
     }
 
     .post-comments .respond span.required {
-         color: #00B5B1;
+         color: #4c2582;
     }
   .wp-caption  p.wp-caption-text { 
       background: transparent;
@@ -316,7 +314,7 @@
 	border-color: #f1f1f1;
     }
     .gallery img:hover {
-            border-color: #00B5B1;
+            border-color: #4c2582;
     }
      .gallery-caption {
             color: #888;
@@ -345,29 +343,51 @@
       background-image: linear-gradient(top, #2d7dc5, #1a4872);
  }
  
+.content-aside .newsletter {
+	background: none repeat scroll 0 0 rgba(76, 37, 130, 0.5);
+	box-shadow:none;
+}
+
+
+.content-aside .widget li {
+	 background:none;
+ }
+.content-aside .widget li:hover {
+	 background:#5C388F;
+ }
+.content-aside .widget li:hover,
+ .content-aside .widget li:focus,
+#ics-calendar-widget li:hover, 
+#ics-calendar-widget li:focus, 
+ .content-aside .twitterwidget li:hover, 
+ .content-aside .twitterwidget li:focus {
+     background: #5c388f;
+ }
+ .content-aside .twitterwidget li a:hover { color:#FFF; }
  .content-aside a {
-  color: black;
-  background: #00B4B1;
+  color: #EEE;
+  background: rgba(255,255,255, 0.2);
+  padding:0.25em 0.4em;
 }
   .content-aside a:hover {
-    color: #000;
-    background: rgba(0, 0, 0, 0.2); 
+    color: rgba(76, 37, 130, 0.8);
+    background: rgba(255,255,255, 0.8); 
   }
   
   .content-aside table td,
   .content-aside table th {
-    border-top-color: #00B5B1; 
+    border-top-color: #4c2582; 
   }
 .content-aside blockquote {
   border: 0 solid;
-  background: #00B4B1;
-  background: rgba(0, 0, 0, 0.2);
+  background: #993399;
+  background: rgba(255, 255, 255, 0.2); 
  }
   
  
  .content-aside ul.menu {
-  background: #00B4B1;
-  background: rgba(0, 0, 0, 0.2);
+  background: #993399;
+ background: rgba(255, 255, 255, 0.2); 
 }
 
 .content-aside ul.menu li a {
@@ -429,12 +449,12 @@
   color: white;
 }
  .content-aside .widget li a.rsswidget {
-    background: #00B4B1;
+    background: #993399;
     background: rgba(0, 0, 0, 0.2);
  }
  .content-aside .widget li a.rsswidget:hover,
  .content-aside .widget li a.rsswidget:focus {
-       background: #00B5B1;
+       background: #4c2582;
  }
  .content-aside .widget li .rssSummary {
     color:#333333;  
@@ -442,8 +462,8 @@
 
 #ics-calendar-widget li {
     color: black;
-    background: #00B4B1;
-    background: rgba(0, 0, 0, 0.2);
+    background: #993399;
+    background: rgba(255, 255, 255, 0.2);
  }
 
 #ics-calendar-widget-next, 
@@ -500,7 +520,7 @@ div.ics-calendar-holder .ics-calendar-table td .old-date-holder {
   color: #999999;
 }
 div.ics-calendar-holder .ics-calendar-table td .ics-calendar-today {
-  background-color: #00B5B1;
+  background-color: #4c2582;
   color: black;
 }
 div.ics-calendar-holder .ics-calendar-event {
@@ -514,12 +534,13 @@ div.ics-calendar-holder .ics-calendar-event {
   }        
 
   .content-aside {
-      background: #00B5B1 url("../images/int/bg-tags-tk.png") -20% top fixed; 
+      background: #4c2582 url("../images/int/bg-tags-hu.png") -20% top fixed;
+	  color:#eee;
    }
 
   .content-aside .skin {
-           background: #00B5B1;
-           background: rgba(0, 181, 177, 0.7); 
+           background: #4c2582;
+           background: rgba(76, 37, 130, 0.2);
     }
    
 }
@@ -527,9 +548,9 @@ div.ics-calendar-holder .ics-calendar-event {
    .nav-top ul.menu li a {
         background: #2d7dc5;
         color: white;        
-        border-color: #00B4B1;
-        text-shadow: 0 -1px 0 #00B4B1;
-        background-color: #00B5B1;     
+        border-color: #993399;
+        text-shadow: 0 -1px 0 #993399;
+        background-color: #4c2582;     
    }
     .nav-top ul.menu li a:hover {
       background: #24639b;
@@ -556,7 +577,7 @@ div.ics-calendar-holder .ics-calendar-event {
  }        
            
   .post-comments {
-     background: url("../images/int/bg-tags-tk.png") repeat fixed -20% top #00B5B1;
+     background: url("../images/int/bg-tags-hu.png") repeat fixed -20% top #4c2582;
   }
   .post-comments a {
       color: black;
@@ -573,3 +594,5 @@ div.ics-calendar-holder .ics-calendar-event {
  }
     
  }
+ 
+

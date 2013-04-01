@@ -6,7 +6,7 @@
  
 
 $defaultoptions = array(
-    'js-version'                    => '2.14',
+    'js-version'                    => '2.15',
     'content-width'                 => 665,
     'logo'                          => get_template_directory_uri() .'/images/logo.png',
     'logo-width'                    => 500,
@@ -63,6 +63,7 @@ $defaultoptions = array(
     'aktiv-avatar'                   => 1,
     'aktiv-dynamic-sidebar'                 => 0,
     'src-default-avatar'             =>  get_template_directory_uri(). '/images/avataricon.gif',
+	'seitenmenu_mode'						=> 0,
     'zeige_subpagesonly'             => 1,
     'zeige_sidebarpagemenu'          => 1,
     'zeige_commentbubble_null'              => 0,
@@ -112,6 +113,11 @@ $defaultoptions = array(
     'default_footerlink_show'       => 1,
     'circleplayer-require-mp3fallback'	=> 1,
     'category-startpageview'	    => 1,
+    '1april-prank'                  => 0,
+    '1april-logo'                   => get_template_directory_uri() .'/images/logo-pony.png',
+    '1april-header-image'           => get_template_directory_uri() .'/images/header-pony.png',
+    '1april-css'                    => get_template_directory_uri() .'/css/colors_pony.css',
+    '1april-prank-day'              => '04-01',
     
 );
 
@@ -338,6 +344,7 @@ $default_toplink_liste = array(
               __('Chile', 'piratenkleider' ) => 'http://www.partidopirata.cl/',
               __('D&auml;nemark', 'piratenkleider' ) => 'http://piratpartiet.dk/',
               __('Deutschland', 'piratenkleider' ) => 'http://www.piratenpartei.de/',
+              __('Estland', 'piratenkleider' ) => 'http://piraadipartei.ee/', 
               __('Finnland', 'piratenkleider' ) => 'http://www.piraattipuolue.fi/',
               __('Frankreich', 'piratenkleider' ) => 'http://partipirate.org/',
               __('Griechenland', 'piratenkleider' ) => 'http://pirateparty.gr/',
@@ -373,10 +380,11 @@ $default_toplink_liste = array(
              __('Tunesien', 'piratenkleider' ) => 'http://partipirate-tn.org/',
              __('T&uuml;rkei', 'piratenkleider' ) => 'http://www.korsanpartisi.org/',
              __('Ukraine', 'piratenkleider' ) => 'http://pp-ua.org/',
+             __('Ungarn', 'piratenkleider' ) => 'http://kalozpart.org/', 
              __('Uruguay', 'piratenkleider' ) => 'http://partidopirata.org.uy/',
              __('USA', 'piratenkleider' ) => 'http://pirate-party.us/',             
              __('Vereinigtes K&ouml;nigreich', 'piratenkleider') => 'http://pirateparty.org.uk/', 
-             __('Wei&szlig;russland', 'piratenkleider' ) => 'http://belpirat.blog.tut.by/',
+             __('Wei&szlig;russland', 'piratenkleider' ) => 'http://pirates.by/',            
              __('Zypern', 'piratenkleider' ) => 'http://www.piratepartycyprus.com/',
 
          )
@@ -393,6 +401,7 @@ $default_toplink_liste = array(
               '<span class="flagicon-cl"></span> '.__('Chile', 'piratenkleider') => 'http://www.partidopirata.cl/',
               '<span class="flagicon-dk"></span> '.__('D&auml;nemark', 'piratenkleider') => 'http://piratpartiet.dk/',
               '<span class="flagicon-de"></span> '.__('Deutschland', 'piratenkleider') => 'http://piratenpartei.de/',
+              '<span class="flagicon-ee"></span> '.__('Estland', 'piratenkleider') => 'http://piraadipartei.ee/',    
               '<span class="flagicon-fi"></span> '.__('Finnland', 'piratenkleider') => 'http://www.piraattipuolue.fi/',
               '<span class="flagicon-fr"></span> '.__('Frankreich', 'piratenkleider') => 'http://partipirate.org/',
               '<span class="flagicon-gr"></span> '.__('Griechenland', 'piratenkleider') => 'http://pirateparty.gr/',
@@ -428,23 +437,38 @@ $default_toplink_liste = array(
              '<span class="flagicon-tn"></span> '.__('Tunesien', 'piratenkleider') => 'http://partipirate-tn.org/',
              '<span class="flagicon-tr"></span> '.__('T&uuml;rkei', 'piratenkleider') => 'http://www.korsanpartisi.org/',
              '<span class="flagicon-ua"></span> '.__('Ukraine', 'piratenkleider') => 'http://pp-ua.org/',
+             '<span class="flagicon-hu"></span> '.__('Ungarn', 'piratenkleider') => 'http://kalozpart.org/',             
              '<span class="flagicon-uy"></span> '.__('Uruguay', 'piratenkleider') => 'http://partidopirata.org.uy/',
              '<span class="flagicon-us"></span> '.__('USA', 'piratenkleider') => 'http://pirate-party.us/',
              '<span class="flagicon-uk"></span> '.__('Vereinigtes Königreich', 'piratenkleider') => 'http://pirateparty.org.uk/',              
-             '<span class="flagicon-by"></span> '.__('Wei&szlig;russland', 'piratenkleider') => 'http://belpirat.blog.tut.by/',
+             '<span class="flagicon-by"></span> '.__('Wei&szlig;russland', 'piratenkleider') => 'http://pirates.by/',
              '<span class="flagicon-cy"></span> '.__('Zypern', 'piratenkleider') => 'http://www.piratepartycyprus.com/',
 
 
          )
      ), 
-     'Baden-W&uuml;rttemberg' => array(
+     'Baden-Wuerttemberg' => array(
          'title' => 'Piratenpartei Landesverband Baden-W&uuml;rttemberg',
          'url'  => 'http://www.piratenpartei-bw.de/',
          'sublist' => array(
              '<abbr title="Bezirksverband">BV</abbr> Freiburg' => 'http://bzv-fr.piratenpartei-bw.de/',
-             '<abbr title="Bezirksverband">BV</abbr> Karlsruhe' => 'http://bzv-karlsruhe.piraten-bw.de/',
              '<abbr title="Bezirksverband">BV</abbr> Stuttgart' => 'http://www.piraten-bzv-stuttgart.de/',
              '<abbr title="Bezirksverband">BV</abbr> T&uuml;bingen' => 'http://bzv.piratenpartei-tuebingen.de/',
+             '<abbr title="Kreisverband">KV</abbr> B&ouml;blingen' => 'http://wiki.piratenpartei.de/BW:Landkreis_B%C3%B6blingen/Kreisverband',
+             '<abbr title="Kreisverband">KV</abbr> Calw-Freudenstadt' => 'http://wiki.piratenpartei.de/BW:Kreisverband_Calw-Freudenstadt',
+             '<abbr title="Kreisverband">KV</abbr> Heidenheim' => 'http://www.piraten-heidenheim.de',
+             '<abbr title="Kreisverband">KV</abbr> Heilbronn' => 'http://www.piratenpartei-heilbronn.de',
+             '<abbr title="Kreisverband">KV</abbr> Karlsruhe Land' => 'http://piraten-ka-land.de',
+             '<abbr title="Kreisverband">KV</abbr> Karlsruhe Stadt' => 'http://www.piraten-karlsruhe.de',
+             '<abbr title="Kreisverband">KV</abbr> Ludwigsburg' => 'http://www.piratenpartei-ludwigsburg.de',
+             '<abbr title="Kreisverband">KV</abbr> Mannheim' => 'http://piratenpartei-mannheim.de',
+             '<abbr title="Kreisverband">KV</abbr> Rastatt-Baden-Baden' => 'http://piraten-rastatt.de',
+             '<abbr title="Kreisverband">KV</abbr> Ravensburg-Bodenseekreis' => 'http://www.piraten-rvfn.de',
+             '<abbr title="Kreisverband">KV</abbr> Reutlingen-T&uuml;bingen' => 'http://piratenpartei-reutlingen-tuebingen.de',
+             '<abbr title="Kreisverband">KV</abbr> Rhein-Neckar/Heidelberg' => 'http://piraten-rnhd.de',
+             '<abbr title="Kreisverband">KV</abbr> Schw&auml;bisch Hall' => 'http://www.kocher-jagst-piraten.de',
+             '<abbr title="Kreisverband">KV</abbr> Stuttgart' => 'https://www.piratenpartei-stuttgart.de',
+             '<abbr title="Kreisverband">KV</abbr> Ulm/Alb-Donau-Kreis' => 'http://www.piratenpartei-ulm.de',            
          )
      ),  
      'Bayern' => array(
@@ -503,6 +527,7 @@ $default_toplink_liste = array(
             '<abbr title="Kreisverband">KV</abbr> Main-Kinzig' => 'http://www.kinzigpiraten.de/',
             '<abbr title="Kreisverband">KV</abbr> Main-Taunus' => 'http://www.piraten-mtk.de/',
             '<abbr title="Kreisverband">KV</abbr> Marburg-Biedenkopf' => 'http://www.piratenpartei-marburg.de/',
+            '<abbr title="Kreisverband">KV</abbr> Odenwald' => 'http://www.piratenpartei-odenwald.de/',                                    
             '<abbr title="Kreisverband">KV</abbr> Offenbach-Land' => 'http://www.kreispiraten-of.de/',
             '<abbr title="Kreisverband">KV</abbr> Rheingau-Taunus' => 'http://www.piratenpartei-rtk.de/',
             '<abbr title="Kreisverband">KV</abbr> Schwalm-Eder' => 'http://www.piraten-sek.de/',
@@ -544,6 +569,7 @@ $default_toplink_liste = array(
             '<abbr title="Kreisverband">KV</abbr> Osnabr&uuml;ck' => 'http://www.piraten-osnabrueck.de',   
             '<abbr title="Stadtverband">SV</abbr> Oldenburg' => 'http://www.piratenpartei-oldenburg.de/',   
             '<abbr title="Kreisverband">KV</abbr> Oldenburg Land' => 'http://www.piratenpartei-landkreis-oldenburg.de/',   
+            '<abbr title="Kreisverband">KV</abbr> Osterholz' => 'http://www.piraten-ohz.de/', 	    
             '<abbr title="Kreisverband">KV</abbr> Osterode' => 'http://www.piratenpartei-osterode.de/',   
             '<abbr title="Kreisverband">KV</abbr> Peine' => 'http://wiki.piratenpartei.de/NDS:Kreisverband_Peine',   
             '<abbr title="Kreisverband">KV</abbr> Stade' => 'http://www.piraten-stade.de/',   
@@ -570,7 +596,8 @@ $default_toplink_liste = array(
          '<abbr title="Kreisverband">KV</abbr> Krefeld' =>'http://wiki.piratenpartei.de/NRW:Krefeld/Kreisverband',
          '<abbr title="Kreisverband">KV</abbr> Minden-L&uuml;bbecke' =>'http://wiki.piratenpartei.de/NRW:Kreis_Minden-L%C3%BCbbecke/Kreisverband',
          '<abbr title="Kreisverband">KV</abbr> M&uuml;nster' =>'http://www.piratenpartei-muenster.de/',
-         '<abbr title="Kreisverband">KV</abbr> Rhein-Sieg-Kreis' =>'http://wiki.piratenpartei.de/NRW:Rhein-Sieg-Kreis',
+         '<abbr title="Kreisverband">KV</abbr> Rhein-Erft' =>'http://piratenpartei-rhein-erft.de/',
+         '<abbr title="Kreisverband">KV</abbr> Rhein-Sieg-Kreis' =>'http://www.piratenpartei-rhein-sieg.de/',
          '<abbr title="Kreisverband">KV</abbr> Soest' =>'http://www.piratenpartei-soest.de/',
          '<abbr title="Kreisverband">KV</abbr> Wesel' =>'http://wiki.piratenpartei.de/NRW:Kreis_Wesel',
          '<abbr title="Kreisverband">KV</abbr> Bielefeld' =>'http://wiki.piratenpartei.de/NRW:Bielefeld',
@@ -667,7 +694,9 @@ $defaultplakate_textsymbolliste = array(
  } 
  $categories=get_categories(array('orderby' => 'name','order' => 'ASC'));
  foreach($categories as $category) {
+     if (!is_wp_error( $category )) {
      $currentcatliste[$category->cat_ID] = $category->name.' ('.$category->count.' '.__('Eintr&auml;ge','piratenkleider').')';
+ }        
  }        
         
 
@@ -776,6 +805,14 @@ $setoptions = array(
               'seitenmenu'  => array(
                   'type'    => 'section',
                   'title'   => __( 'Seitenmenu', 'piratenkleider' ),
+              ),
+              'seitenmenu_mode' => array(
+                  'type'    => 'select',
+                  'title'   => __( 'Gliederung', 'piratenkleider' ),
+                  'label'   => __( 'Das Menü kann nach Seiten-Hierarchie oder Menü-Hierarche gegliedert werden.', 'piratenkleider' ),
+                  'default' => $defaultoptions['seitenmenu_mode'],
+				  'liste'   => array(0 => "Menüs", 1 => "Seiten"),
+                  'parent'  => 'seitenmenu',
               ),
               'zeige_subpagesonly' => array(
                   'type'    => 'bool',
@@ -911,10 +948,9 @@ $setoptions = array(
            'tabtitle'   => __('Startseite', 'piratenkleider'),
            'fields' => array(
               'num-article-startpage-fullwidth' => array(
-                  'type'    => 'select',
+                  'type'    => 'number',
                   'title'   => __( 'Beitr&auml;ge &uuml;ber ganze Breite', 'piratenkleider' ),
                   'label'   => __( 'Zahl der Beitr&auml;ge, die &uuml;ber die gesamte Inhaltsbreite gehen.', 'piratenkleider' ),
-                  'liste'   => array(0 => 0, 1 => 1, 2 => 2, 3 => 3, 4 => 4, 5 => 5, 6=> 6),
                   'default' => $defaultoptions['num-article-startpage-fullwidth'],
               ),
               'num-article-startpage-halfwidth' => array(
@@ -955,7 +991,30 @@ $setoptions = array(
                   'label'   => __( 'Wenn vorhanden, wird ein Thumbnail des ersten Bildes anstelle des Datums angezeigt', 'piratenkleider' ),
                   'default' => $defaultoptions['aktiv-images-instead-date'],
               ),
-               
+             'teaser-subtitle' => array(
+                  'type'    => 'text',
+                  'title'   => __( 'Bezeichnender Titel f&uuml;r Teaser', 'piratenkleider' ),
+                  'label'   => __( 'Dieser Text wird oberhalb der Titel angezeigt.', 'piratenkleider' ),
+                  'default' => $defaultoptions['teaser-subtitle'],
+              ),  
+             'teaser-title-maxlength' => array(
+                  'type'    => 'number',
+                  'title'   => __( 'Textl&auml;nge', 'piratenkleider' ),
+                  'label'   => __( 'Maximale Textl&auml;nge des Titels im Teaser.', 'piratenkleider' ),
+                  'default' => $defaultoptions['teaser-title-maxlength'],
+              ),   
+             'teaser-title-words' => array(
+                  'type'    => 'number',
+                  'title'   => __( 'Wortzahl', 'piratenkleider' ),
+                  'label'   => __( 'Zahl der Worte im Teaser; Die maximale Textl&auml;nge begrenzt diesen Wert jedoch.', 'piratenkleider' ),
+                  'default' => $defaultoptions['teaser-title-words'],
+              ),
+             'teaser_maxlength' => array(
+                  'type'    => 'number',
+                  'title'   => __( 'L&auml;nge des Teasertextes (Artikelauszug)', 'piratenkleider' ),
+                  'label'   => __( 'Maximale Textl&auml;nge f&uuml;r Artikelausz&uuml;ge auf der Startseite.', 'piratenkleider' ),
+                  'default' => $defaultoptions['teaser_maxlength'],
+              ),                 
                
 
                
@@ -1026,30 +1085,7 @@ $setoptions = array(
                    'parent'  => 'sliderpars'
               ), 
                
-             'teaser-subtitle' => array(
-                  'type'    => 'text',
-                  'title'   => __( 'Bezeichnender Titel f&uuml;r Teaser', 'piratenkleider' ),
-                  'label'   => __( 'Dieser Text wird oberhalb der Titel angezeigt.', 'piratenkleider' ),
-                  'default' => $defaultoptions['teaser-subtitle'],
-              ),  
-             'teaser-title-maxlength' => array(
-                  'type'    => 'number',
-                  'title'   => __( 'Textl&auml;nge', 'piratenkleider' ),
-                  'label'   => __( 'Maximale Textl&auml;nge des Titels im Teaser.', 'piratenkleider' ),
-                  'default' => $defaultoptions['teaser-title-maxlength'],
-              ),   
-             'teaser-title-words' => array(
-                  'type'    => 'number',
-                  'title'   => __( 'Wortzahl', 'piratenkleider' ),
-                  'label'   => __( 'Zahl der Worte im Teaser; Die maximale Textl&auml;nge begrenzt diesen Wert jedoch.', 'piratenkleider' ),
-                  'default' => $defaultoptions['teaser-title-words'],
-              ),
-             'teaser_maxlength' => array(
-                  'type'    => 'number',
-                  'title'   => __( 'L&auml;nge des Teasertextes (Artikelauszug)', 'piratenkleider' ),
-                  'label'   => __( 'Maximale Textl&auml;nge f&uuml;r Artikelausz&uuml;ge auf der Startseite.', 'piratenkleider' ),
-                  'default' => $defaultoptions['teaser_maxlength'],
-              ),  
+
                
                
           )
@@ -1211,13 +1247,13 @@ $setoptions = array(
                'aktiv-dynamic-sidebar' => array(
                   'type'    => 'bool',
                   'title'   => __( 'Sidebar abblendbar', 'piratenkleider' ),
-                  'label'   => __( 'Benutzern via JavaScript die M&ouml;glichkeit geben, die Sidebar klein zu machen. <br>Hinweis: Der Status wird nicht gespeichert, um keine Cookies anzulegen; Die Funktion ist nicht sichtbnar, wenn man kein JavaScript an hat. Desweiteren ist die Funktion nur aktiv, wenn die Bildschirmbreite gr&ouml;&szlig;er als 600 Pixel ist.', 'piratenkleider' ),
+                  'label'   => __( 'Benutzern via JavaScript die M&ouml;glichkeit geben, die Sidebar klein zu machen. <br>Hinweis: Der Status wird nicht gespeichert, um keine Cookies anzulegen; Die Funktion ist nicht sichtbar, wenn man kein JavaScript an hat. Desweiteren ist die Funktion nur aktiv, wenn die Bildschirmbreite gr&ouml;&szlig;er als 600 Pixel ist.', 'piratenkleider' ),
                   'default' => $defaultoptions['aktiv-dynamic-sidebar'],
               ),                              
               'position_sidebarbottom' => array(
                   'type'    => 'select',
                   'title'   => __( 'Position der Sidebar', 'piratenkleider' ),
-                  'label'   => __( 'Sidebar rechts neben den Inhalt oder darunter positionieren. Wenn die Sidebar unter dem Inhalt positioniert wird, wird der Inhaltsbereich &uuml;ber die gesamte Breite gehen.', 'piratenkleider' ),
+                  'label'   => __( 'Sidebar rechts neben den Inhalt oder darunter positionieren. Wenn die Sidebar unter dem Inhalt positioniert wird, wird der Inhaltsbereich &uuml;ber die gesamte Breite gehen. Alternativ kann ein Custom Field "fullsize" definiert werden. Hat dies den Value 1, wird der Inhaltsbereich auf volle Seitenbreite dargestellt und die Sidebar nach unten verschoben', 'piratenkleider' ),
                   'liste'   => array(0 => __( 'Rechts (Standard)', 'piratenkleider' ), 1 => __( 'Unter dem Inhalt', 'piratenkleider' )),
                   'default' => 0,
               ),
@@ -1256,6 +1292,23 @@ $setoptions = array(
                   'label'   => __( 'Circle Player (HTML5 Player) f&uuml;r MP3/OGG-Dateien in einzelnen Beitr&auml;gen aktivieren.', 'piratenkleider' ),
                   'default' => $defaultoptions['aktiv-circleplayer'],
               ),   
+               
+              '1april-prank'   => array(
+                  'type'    => 'bool',
+                  'title'   => __( 'Aprilscherz', 'piratenkleider' ),
+                  'label'   => __( 'Am 1. April wird das Design um Ponys aufgewertet. Seit ihr mutig genug?', 'piratenkleider' ),
+                  'default' => $defaultoptions['1april-prank'],
+              ),   
+                
+               '1april-prank-day' => array(
+                  'type'    => 'text',
+                  'title'   => __( 'Tag des Aprilscherzes', 'piratenkleider' ),
+                  'label'   => __( 'Optional kann man hier den Tag vom 1. April &auml;ndern. Sollte nat&uuml;rlich als Datum "04-01" haben, damit es sp&auml;ter richtig kommt. (Format: "MM-DD")', 'piratenkleider' ),
+                  'default' => $defaultoptions['1april-prank-day'],
+              ), 
+               
+               
+               
                 'login_errors' => array(
                   'type'    => 'select',
                   'title'   => __( 'Fehlermeldung bei Login', 'piratenkleider' ),
@@ -1286,6 +1339,8 @@ $setoptions = array(
                   'default' => $defaultoptions['category-startpageview'],
               ),   
 	       
+               
+               
                
           )
        ),

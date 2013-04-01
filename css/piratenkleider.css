@@ -4,7 +4,7 @@ Theme URI: http://piratenkleider.xwolf.de
 Description: Allgemeines Theme für Webauftritte der Piratenpartei
 Author: Wolfgang Wiese (xwolf)
 Author URI: http://www.xwolf.de 
-Version: 2.14.5
+Version: 2.15
 Tags: orange, two-columns, responsive, fluid-width
 License: CC-BY-SA 3.0 
 License URI: http://creativecommons.org/licenses/by-sa/3.0/de/deed.de
@@ -21,6 +21,9 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;}
+body {
+	background: #ff8800 url("../images/int/bg-tags.png") -20% top fixed;
+}
 
 blockquote, q {
     quotes: none; }
@@ -588,20 +591,14 @@ input[type="submit"]:active,
     text-align:center;
     margin: 1.5em auto 0 auto;
 }
-
+.nobr {
+    white-space: nowrap;
+}    
 
 
 
 .header {
     position: relative;
-/*
-    * Ueber Custom Header
-
-    background-color: #eeeeee;
-  background-image: url("../images/default-header-background.png");
-  background-position: left bottom;
-  background-repeat: repeat-x, no-repeat; 
-*/
 }
 
 
@@ -638,7 +635,9 @@ input[type="submit"]:active,
     position: absolute;
     top: -999em; 
 }
-
+div#searchform {
+    display: inline; 
+}
 .searchform {
     padding: 10px 10px 5px 10px;
     background: #f7f7f7;
@@ -942,7 +941,7 @@ ul.socialmedia li a:focus img  {
 }
 
 .teaser {
-    background: #ff8800 url("../images/int/bg-tags.png") -20% top fixed; 
+  //background: #ff8800 url("../images/int/bg-tags.png") -20% top fixed; 
     height: 240px;
 }
 .teaser .row {
@@ -1102,7 +1101,7 @@ ul.socialmedia li a:focus img  {
      position: relative;
  } 
 .content {
-    background: #ff8800 url("../images/int/bg-tags.png") -20% top fixed;
+  //background: #ff8800 url("../images/int/bg-tags.png") -20% top fixed;
 }
 .content .row {
    /*  overflow: hidden; */
@@ -1257,7 +1256,7 @@ ul.socialmedia li a:focus img  {
     background-color: beige;
 }
 .content-primary .columns {
-    float: left; 
+    //float: left; 
 }
 .content-primary .columns .column1, .content-primary .columns .column2 {
     margin-bottom: 20px; }
@@ -1537,7 +1536,7 @@ ul.socialmedia li a:focus img  {
 .single .post-edit-link {
     margin-top: 20px; }
 .post {
-    display: inline-block;
+    word-wrap: break-word;
 }
 .post .post-title {
     position: relative;
@@ -2026,8 +2025,15 @@ img.wp-smiley {
     margin: 0 0 0 5px; 
 }
 
+.content-aside .subpagesonly ul li{
+	display: none;
+}
 
-
+.content-aside .subpagesonly ul.menu li.current_page_item .children .children 
+.content-aside .subpagesonly ul.menu li.current_page_ancestor .children .children,
+.content-aside .subpagesonly ul.menu li.current-menu-item .sub-menu .sub-menu, 
+.content-aside .subpagesonly ul.menu li.current-menu-ancestor .sub-menu .sub-menu {
+    display: block; }
 
 .subcontent {
   background: black url("../images/int/bg-tags_gray.jpg") -20% top fixed; }
@@ -2632,7 +2638,13 @@ background: none repeat scroll 0 0 #EEEEEE;
 
 
 /* Flag Icons     -----------------------------------------------------------*/
-.flagicon-sprite, .flagicon-ar, .flagicon-at, .flagicon-au, .flagicon-be, .flagicon-bg, .flagicon-br, .flagicon-by, .flagicon-ca, .flagicon-ch, .flagicon-cl, .flagicon-co, .flagicon-cy, .flagicon-cz, .flagicon-de, .flagicon-dk, .flagicon-es, .flagicon-fi, .flagicon-fr, .flagicon-gr, .flagicon-gt, .flagicon-is, .flagicon-it, .flagicon-kr, .flagicon-kz, .flagicon-lt, .flagicon-lu, .flagicon-lv, .flagicon-ma, .flagicon-mx, .flagicon-nl, .flagicon-nz, .flagicon-pe, .flagicon-pl, .flagicon-pt, .flagicon-ro, .flagicon-rs, .flagicon-ru, .flagicon-se, .flagicon-si, .flagicon-sk, .flagicon-tn, .flagicon-tr, .flagicon-ua, .flagicon-uk, .flagicon-us, .flagicon-uy {
+.flagicon-sprite, .flagicon-ar, .flagicon-at, .flagicon-au, .flagicon-be, .flagicon-bg, .flagicon-br, .flagicon-by, 
+.flagicon-ca, .flagicon-ch, .flagicon-cl, .flagicon-co, .flagicon-cy, .flagicon-cz, .flagicon-de, .flagicon-dk, 
+.flagicon-es, .flagicon-fi, .flagicon-fr, .flagicon-gr, .flagicon-gt, .flagicon-is, .flagicon-it, .flagicon-kr, 
+.flagicon-kz, .flagicon-lt, .flagicon-lu, .flagicon-lv, .flagicon-ma, .flagicon-mx, .flagicon-nl, .flagicon-nz, 
+.flagicon-pe, .flagicon-pl, .flagicon-pt, .flagicon-ro, .flagicon-rs, .flagicon-ru, .flagicon-se, .flagicon-si, 
+.flagicon-sk, .flagicon-tn, .flagicon-tr, .flagicon-ua, .flagicon-uk, .flagicon-us, .flagicon-uy, .flagicon-hr,
+.flagicon-il, .flagicon-hu  { 
   width: 16px;
   height: 11px;
   display: inline-block;
@@ -2718,9 +2730,18 @@ background: none repeat scroll 0 0 #EEEEEE;
 .flagicon-gt {
   background-position: 0 -286px;
 }
+.flagicon-hu {
+  background-position: 0 -624px;
+}
+.flagicon-hr {
+  background-position: 0 -597px;
+}
 
 .flagicon-is {
   background-position: 0 -585px;
+}
+.flagicon-il {
+  background-position: 0 -610px;
 }
 
 .flagicon-it {

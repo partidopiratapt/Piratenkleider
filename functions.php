@@ -57,9 +57,8 @@ require_once ( get_template_directory() . '/theme-options.php' );
 add_action('after_setup_theme', 'piratenkleider_setup');
 
 if (!function_exists('piratenkleider_setup')):
-
     function piratenkleider_setup() {
-        global $defaultoptions, $bp;
+     global $defaultoptions;
         // bp_core_clear_cache();
         //bp_core_clear_member_count_caches();
         // Load the AJAX functions for the theme
@@ -71,48 +70,6 @@ if (!function_exists('piratenkleider_setup')):
         // Add default posts and comments RSS feed links to head
         add_theme_support('automatic-feed-links');
 
-        if (!is_admin()) {
-// Register buttons for the relevant component templates
-// Friends button
-            if (bp_is_active('friends'))
-                    add_action('bp_member_header_actions',
-                        'bp_add_friend_button', 5);
-
-// Activity button
-            if (bp_is_active('activity'))
-                    add_action('bp_member_header_actions',
-                        'bp_send_public_message_button', 20);
-
-// Messages button
-            if (bp_is_active('messages'))
-                    add_action('bp_member_header_actions',
-                        'bp_send_private_message_button', 20);
-
-// Group buttons
-            if (bp_is_active('groups')) {
-                add_action('bp_group_header_actions', 'bp_group_join_button', 5);
-                add_action('bp_group_header_actions',
-                        'bp_group_new_topic_button', 20);
-                add_action('bp_directory_groups_actions', 'bp_group_join_button');
-            }
-
-// Blog button
-            if (bp_is_active('blogs'))
-                    add_action('bp_directory_blogs_actions',
-                        'bp_blogs_visit_blog_button');
-        }
-
-        /*
-         * Header-Kontrolle, bis WP 3.3
-         */
-
-        define('HEADER_TEXTCOLOR', '');
-        define('HEADER_IMAGE', $defaultoptions['logo']);
-        define('HEADER_IMAGE_WIDTH', $defaultoptions['logo-width']); // choose any number you like here
-        define('HEADER_IMAGE_HEIGHT', $defaultoptions['logo-height']); // choose any number you like here         
-        define('NO_HEADER_TEXT', true);
-
-        //add_custom_image_header('piratenkleider_header_style', 'piratenkleider_admin_header_style');
 
         $args = array(
             'width' => 0,
@@ -143,6 +100,8 @@ if (!function_exists('piratenkleider_setup')):
          *
          */
         function piratenkleider_custom_background_cb() {
+                 global $defaultoptions;
+                 global $options;
             // $background is the saved custom image, or the default image.
             $background = set_url_scheme(get_background_image());
 
@@ -152,12 +111,22 @@ if (!function_exists('piratenkleider_setup')):
 
 	        if ( ! $background && ! $color )
 	                return;
+                 if (!isset($options['1april-prank'])) 
+                            $options['1april-prank'] = $defaultoptions['1april-prank'];
+                 if (!isset($options['1april-header-image'])) 
+                            $options['1april-header-image'] = $defaultoptions['1april-header-image'];	                
+                 if (!isset($options['1april-prank-day'])) 
+                            $options['1april-prank-day'] = $defaultoptions['1april-prank-day'];
 
             $style = $color ? "background-color: #$color;" : '';
 
             if ($background) {
                 $image = " background-image: url('$background');";
 
+                        if (($options['1april-prank']=="1") && (date('m-d') == $options['1april-prank-day']))  {
+                            $image = " background-image: url('" . $options['1april-header-image']. "');";
+                            $style = "background-color: #fff; ";
+                        } 
                 $repeat = get_theme_mod('background_repeat', 'repeat-x');
 	                if ( ! in_array( $repeat, array( 'no-repeat', 'repeat-x', 'repeat-y', 'repeat' ) ) )
                         $repeat = 'repeat-x';
@@ -229,6 +198,9 @@ if (!function_exists('piratenkleider_setup')):
 
         /** Entfernen der Wordpressversionsnr im Header */
         remove_action('wp_head', 'wp_generator');
+	
+	/* Zulassen von Shortcodes in Widgets */
+	add_filter('widget_text', 'do_shortcode');
     }
 endif;
 
@@ -273,7 +245,6 @@ function piratenkleider_scripts() {
             $defaultoptions['js-version']
     );
 
-
     if (is_singular() && ($options['aktiv-commentreplylink'] == 1) && get_option('thread_comments')) {
         wp_enqueue_script(
 		'comment-reply',
@@ -282,8 +253,6 @@ function piratenkleider_scripts() {
                 $defaultoptions['js-version']
         );
     }
-
-
     if ($options['aktiv-dynamic-sidebar'] == 1) {
         wp_enqueue_script(
 		'dynamic-sidebar',
@@ -325,9 +294,6 @@ function piratenkleider_scripts() {
                 $defaultoptions['js-version']
         );
     }
-   
-    
-       
 }
 add_action('wp_enqueue_scripts', 'piratenkleider_scripts');
 
@@ -662,10 +628,11 @@ class My_Walker_Nav_Menu extends Walker_Nav_Menu
         /*
          * Anzeige des Sidebar-Menus
          */
-function get_piratenkleider_seitenmenu( $zeige_sidebarpagemenu = 1 , $zeige_subpagesonly =1 ){
+function get_piratenkleider_seitenmenu( $zeige_sidebarpagemenu = 1 , $zeige_subpagesonly =1 , $seitenmenu_mode = 0 ){
             global $post;
             $sidelinks = '';
             if ($zeige_sidebarpagemenu == 1) {
+		if (($seitenmenu_mode == 1) || (!has_nav_menu( 'primary' ))) {
                 if ($zeige_subpagesonly == 1) {
                     //if the post has a parent
 
@@ -688,14 +655,16 @@ function get_piratenkleider_seitenmenu( $zeige_sidebarpagemenu = 1 , $zeige_subp
                     }
 
                 } else {
-
-                    if (has_nav_menu('primary')) {
-                wp_nav_menu( array('depth' => 0, 'container_class' => 'menu-header', 'theme_location' => 'primary', 'walker'  => new My_Walker_Nav_Menu()) );      
-                    } else {
                         echo '<ul class="menu">';
                         wp_page_menu();
                         echo '</ul>';
                     }
+		} else {
+				if ($zeige_subpagesonly==1) {
+					wp_nav_menu( array('depth' => 0, 'container_class' => 'menu-header subpagesonly', 'theme_location' => 'primary', 'walker'  => new My_Walker_Nav_Menu()) );      
+				} else { 
+					wp_nav_menu( array('depth' => 0, 'container_class' => 'menu-header', 'theme_location' => 'primary', 'walker'  => new My_Walker_Nav_Menu()) );      
+				}
                 }
             }
 
@@ -848,6 +817,7 @@ function get_piratenkleider_seitenmenu( $zeige_sidebarpagemenu = 1 , $zeige_subp
         $link = $matches[0];
         $site_link = home_url();
         if ((strpos($link, 'class') === false)
+		   && (strpos($link, 'mailto:') === false)
            && (strpos($link, $site_link) === false)) {
             $link = preg_replace("%(href=\S(?!($site_link|#)))%i", 'class="extern" $1', $link);
         }

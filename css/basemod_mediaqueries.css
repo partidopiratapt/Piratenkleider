@@ -181,7 +181,6 @@
     background-image: -moz-linear-gradient(top, #2d7dc5, #24639b);
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #2d7dc5), color-stop(1, #24639b));
     background-image: linear-gradient(top, #2d7dc5, #24639b); 
-    
  }
  .skiplinks li a:focus, 
  .skiplinks li a:hover {
@@ -296,6 +295,20 @@
     display: block;
     clear: both;
   }
+  .content-primary .columns .column2:before {
+	content: "";
+	display: block;
+	border: 0;
+	padding: 0;
+	margin-bottom: 15px;
+	margin-top: 5px;
+	background: url("../images/jolly.png") no-repeat center center;
+	height: 26px;
+  }
+  .content-primary .columns .column2 .post {
+    padding-left: 0px;
+  }
+  
     .content-primary .first-startpage-widget-area,
     .content-primary .second-startpage-widget-area {
     clear: both;
@@ -316,9 +329,9 @@
      margin-left: 0px;
     }
    
-   
    .single .post {
        padding: 10px;
+       max-width: 100%;
    }
   .post-comments {
      background: url("../images/int/bg-tags.png") repeat fixed -20% top #FF8800;
@@ -353,6 +366,26 @@
      display: none;
  }
  
+.footer .first-footer-widget-area,
+.footer .second-footer-widget-area {
+    clear: both;
+    float: none;
+    padding-top: 10px;
+    width: 100%;
+    display: block;
+}
+   
+    .footer .first-footer-widget-area .skin {
+	padding-bottom: 0px;
+    }
+
+    .footer .second-footer-widget-area {
+	padding-top: 0px;
+    }
+    .footer .second-footer-widget-area .skin {
+	padding-top: 0px;
+    }
+ 
 #socialmedia_iconbar {
          position: relative;
          display: block;
@@ -365,6 +398,9 @@
          padding: 2px;
          margin: 0px;
          text-align: center;
+     }
+    .home #socialmedia_iconbar {
+         top: inherit;
      }
 #socialmedia_iconbar ul.socialmedia {
     list-style: none;

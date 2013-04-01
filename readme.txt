@@ -2,14 +2,13 @@ Piratenkleider
 - Wordpress-Theme für Webauftritte der Piratenpartei 
 =================================================
 
-Version 2.14.6 von Wolfgang Wiese (xwolf), 11. Januar 2013
+Version 2.16 von Wolfgang Wiese (xwolf), 18. Maerz 2013
 
 
 DOWNLOADS
 
     Aus dem GIT-Repo (Letzte Arbeitsversion und Betas):
         https://github.com/xwolfde/Piratenkleider
-        https://github.com/zwitschi/Piratenkleider (Österreich)
     
     Projekt-Website (Releases)
         http://piratenkleider.xwolf.de
@@ -25,6 +24,7 @@ AUTOREN / ENTWICKLER
    Wolfgang Wiese (xwolf), http://www.xwolf.de 
 
    Mit Hilfe und Unterstützung von: 
+     - Martin Stoppler, http://www.stoppe-gp.de/
      - Andre Sendowski, http://www.iphone-notes.de/
      - Heiko Philippski, http://www.phindie.de/
      - Kerstin Probiesch, http://www.barrierefreie-informationskultur.de
@@ -34,6 +34,7 @@ AUTOREN / ENTWICKLER
      - Jan Schejbal, http://janschejbal.wordpress.com/
      - Marc Schieferdecker,  http://thegeek.de 
      - Benjamin Stöcker, http://freiheitsworte.de 
+     - le Grand, http://www.lenz-online.org 
 
    Quellen für Defaultbilder und CI-Materialen (CC-BY 3.0)
      - Defaultgrafiken für Slider/Seitenbilder: Tobias M. Eckrich
@@ -52,8 +53,16 @@ AUTOREN / ENTWICKLER
 VORVERSION
 
 Dieses Theme basiert auf die Wordpress-Basisvorlage von Korbinian Polk.  
-Das alte Original von korbinian kann auf github gefunden werden: 
+Das alte Original von @korbinian kann auf Github gefunden werden: 
  https://github.com/korbinian/Piratenkleider
+
+PIRATENKLEIDER-GP
+
+Martin Stoppler (http://www.stoppe-gp.de/) pflegt einen Branch von
+Piratenkleider 2.x mit eigenen weiteren Modifikationen. Wesentliche
+Funktionen seines Branches werden regelmässig mit diesen Zweig
+gemergt:
+ https://github.com/PiratenGP/Piratenkleider-GP
 
 
 
@@ -452,3 +461,15 @@ Administrative Hinweise für Wordpress Theme-Editoren:
     Als Slider werden dabei dann die letzten Artikel der Kategorie angezeigt.
     Über das Backend kann wieder  (Takelage einstellen->Sonstiges) kann 
     alternativ wieder die Listenansicht angezeigt werden.
+
+16. Farbcodes für Ungarn und USA eingebaut.
+
+17. Aber der Version 2.16 ist ein Aprilscherz enthalten. Dieser ist per Default
+    AUSgeschaltet, da es möglicherweise einigen Mut benötigt, es durchziehen.
+    Um es einzuschalten, wird im Backend unter Takelage eisntellen->Sonstiges
+    die Option "Aprilscherz" eingeschaltet.
+    Seit ihr mutig genug um es einzuschalten, ohne in den Code zu schauen, was
+    passiert?  Und seit ihr Manns und Fraues genug, es am Tag dann anzulassen?
+
+
+

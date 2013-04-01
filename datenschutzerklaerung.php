@@ -131,9 +131,9 @@ In ihren Browsereinstellungen k&ouml;nnen sie die Annahme von Cookies unterbinde
                         } else {
                             echo 'bundesbeauftragter@piraten-dsb.de';
                         }
-                        echo '</a>.';
+       echo '</a>';      
                     } else {
-                        echo '<a href="mailto:bundesbeauftragter@piraten-dsb.de">bundesbeauftragter@piraten-dsb.de</a>.';
+        echo '<a href="mailto:bundesbeauftragter@piraten-dsb.de">bundesbeauftragter@piraten-dsb.de</a>';
                     }
                     ?> 
                     stellen.</p>
@@ -152,7 +152,10 @@ In ihren Browsereinstellungen k&ouml;nnen sie die Annahme von Cookies unterbinde
   
             if (!isset($options['zeige_sidebarpagemenu'])) 
             $options['zeige_sidebarpagemenu'] = $defaultoptions['zeige_sidebarpagemenu'];
-            get_piratenkleider_seitenmenu($options['zeige_sidebarpagemenu'],$options['zeige_subpagesonly']);
+			
+            if (!isset($options['seitenmenu_mode'])) 
+            $options['seitenmenu_mode'] = $defaultoptions['seitenmenu_mode'];
+            get_piratenkleider_seitenmenu($options['zeige_sidebarpagemenu'],$options['zeige_subpagesonly'],$options['seitenmenu_mode']);
           
         
             get_sidebar(); ?>
