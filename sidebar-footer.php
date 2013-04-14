@@ -32,11 +32,10 @@
                   echo '<ul class="default_footerlinks">';
                   
                   foreach($default_footerlink_liste[$bereich]['sublist'] as $i => $value) {
-                       echo '<li><a href="'.$value.'">';                                                                                                        
-                       echo $i.'</a></li>';
+                       echo '<li><a href="'.$value.'">'.$i.'</a></li>';
                        echo "\n";
                  }            
-                 echo '</ul>';                                          
+                 echo '</ul>';
            }
            }
         } ?>

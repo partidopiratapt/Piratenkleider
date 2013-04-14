@@ -1,6 +1,10 @@
 <?php get_template_part('page-header') ?>
 <div class="content-header">            
-    <h1 id="page-title"><span><?php _e( 'Account Activated', 'buddypress' ); ?></span></h1>
+    <h1 id="page-title"><span><?php if ( bp_account_was_activated() ) :
+				_e( 'Account Activated', 'buddypress' );
+			else :
+				_e( 'Activate your Account', 'buddypress' );
+			endif; ?></span></h1>
 
     <?php
     if (has_post_thumbnail()) {
@@ -24,10 +28,11 @@
 		<?php do_action( 'bp_before_activation_page' ); ?>
 
 		<div class="page" id="activate-page">
+			<?php do_action( 'template_notices' ); ?>
+
+			<?php do_action( 'bp_before_activate_content' ); ?>
 
 			<?php if ( bp_account_was_activated() ) : ?>
-
-				<?php do_action( 'bp_before_activate_content' ); ?>
 
 				<?php if ( isset( $_GET['e'] ) ) : ?>
 					<p><?php _e( 'Your account was activated successfully! Your account details have been sent to you in a separate email.', 'buddypress' ); ?></p>
@@ -36,10 +41,6 @@
 				<?php endif; ?>
 
 			<?php else : ?>
-
-				<h3><?php _e( 'Activate your Account', 'buddypress' ); ?></h3>
-
-				<?php do_action( 'bp_before_activate_content' ); ?>
 
 				<p><?php _e( 'Please provide a valid activation key.', 'buddypress' ); ?></p>
 

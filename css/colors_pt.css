@@ -685,7 +685,7 @@
 #new-topic-post textarea{
     width: 100%;
 }
-ul.xoxo.blogroll a {
+ul.default_footerlinks a {
     background: transparent;
     color: #2d7dc5;
     padding: 0 5px; 
@@ -693,7 +693,7 @@ ul.xoxo.blogroll a {
 
 }
 
-ul.xoxo.blogroll li {
+ul.default_footerlinks li {
     clear: none;
     width: auto;
 }

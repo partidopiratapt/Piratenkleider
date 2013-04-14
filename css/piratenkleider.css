@@ -42,9 +42,10 @@ body {
 
 img {
     vertical-align: bottom;
-    max-width: 100%;
+    /*max-width: 100%;*/
     border: 0;
-    -ms-interpolation-mode: bicubic; }
+    -ms-interpolation-mode: bicubic;
+}
 .ie8 img {
     max-width: none; 
 }
@@ -213,12 +214,6 @@ del {
     text-decoration: line-through; 
 }
 
-img {
-    vertical-align: bottom;
-    max-width: 100%;
-    border: 0;
-    -ms-interpolation-mode: bicubic;
-}  
 abbr[title], dfn[title] {
     border-bottom: 1px dotted;
     cursor: help; }

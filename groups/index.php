@@ -20,6 +20,7 @@
                 ?>
             </div>
             <div class="skin">
+<?php do_action( 'bp_before_directory_groups_page' ); ?>
                 <?php do_action('bp_before_directory_groups'); ?>
 
 		<form action="" method="post" id="groups-directory-form" class="dir-form">
@@ -88,4 +89,5 @@
 
                 <?php do_action('bp_after_directory_groups'); ?>
             </div>
+<?php do_action( 'bp_after_directory_groups_page' ); ?>
 <?php get_template_part('page-footer') ?>

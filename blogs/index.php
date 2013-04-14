@@ -20,6 +20,7 @@
     }
     ?>
 </div>
+<?php do_action( 'bp_before_directory_blogs_page' ); ?>
 <div class="skin">
 
     <?php do_action('bp_before_directory_blogs'); ?>
@@ -88,4 +89,5 @@
     <?php do_action('bp_after_directory_blogs'); ?>
 
 </div>
+<?php do_action( 'bp_after_directory_blogs_page' ); ?>
 <?php get_template_part('page-footer') ?>

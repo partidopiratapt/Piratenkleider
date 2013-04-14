@@ -17,13 +17,14 @@
     }
     ?>
 </div>
+<?php do_action( 'bp_before_directory_forums_page' ); ?>
 <div class="skin">
 
     <?php do_action('bp_before_directory_forums'); ?>
 
     <form action="" method="post" id="forums-search-form" class="dir-form">
 
-        <h3><?php if (is_user_logged_in()) : ?> &nbsp;<a class="button show-hide-new" href="#new-topic" id="new-topic-button"><?php _e('New Topic', 'buddypress'); ?></a><?php endif; ?></h3>
+        <h3><?php if ( is_user_logged_in() ) : ?> &nbsp;<a class="button show-hide-new" href="#new-topic" id="new-topic-button"><?php _e( 'New Topic', 'buddypress' ); ?></a><?php endif; ?></h3>
 
         <?php do_action('bp_before_directory_forums_content'); ?>
 
@@ -159,4 +160,5 @@
     <?php do_action('bp_after_directory_forums_content'); ?>
 
 </div>
+<?php do_action( 'bp_after_directory_forums_page' ); ?>
 <?php get_template_part('page-footer') ?>

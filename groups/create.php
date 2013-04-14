@@ -23,7 +23,7 @@
 <div class="skin">
 
     <form action="<?php bp_group_creation_form_action(); ?>" method="post" id="create-group-form" class="standard-form" enctype="multipart/form-data">
-        <h3><a class="button" href="<?php echo trailingslashit(bp_get_root_domain() . '/' . bp_get_groups_root_slug()); ?>"><?php _e('Groups Directory', 'buddypress'); ?></a></h3>
+        <h3><a class="button" href="<?php echo trailingslashit( bp_get_root_domain() . '/' . bp_get_groups_root_slug() ); ?>"><?php _e( 'Groups Directory', 'buddypress' ); ?></a></h3>
 
         <?php do_action('bp_before_create_group'); ?>
 
@@ -93,8 +93,6 @@
                         </ul>
                     </label>
                 </div>
-
-                <hr />
 
                 <h4><?php _e('Group Invitations', 'buddypress'); ?></h4>
 
@@ -253,7 +251,7 @@
     <?php else : ?>
 
                     <div id="message" class="info">
-                        <p><?php _e('Once you have built up friend connections you will be able to invite others to your group. You can send invites any time in the future by selecting the "Send Invites" option when viewing your new group.', 'buddypress'); ?></p>
+							<p><?php _e( 'Once you have built up friend connections you will be able to invite others to your group.', 'buddypress' ); ?></p>
                     </div>
 
                 <?php endif; ?>

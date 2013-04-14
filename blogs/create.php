@@ -20,6 +20,7 @@
     }
     ?>
 </div>
+<?php do_action( 'bp_before_directory_blogs_content' ); ?>
 <div class="skin">
 
     <?php do_action('bp_before_create_blog_content_template'); ?>
@@ -47,4 +48,5 @@
     <?php do_action('bp_after_create_blog_content_template'); ?>
 
 </div>
+<?php do_action( 'bp_after_directory_blogs_content' ); ?>
 <?php get_template_part('page-footer') ?>
