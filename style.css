@@ -5,8 +5,9 @@ Description: Allgemeines Theme für Webauftritte der Piratenpartei Deutschland. 
 Author: xwolf
 Author URI: http://www.xwolf.de 
 Author E-Mail: piratenkleider@xwolf.de
-Version: 2.16
+Version: 2.17.10
 Tags: bbpress, bbpress, orange, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, featured-image-header, featured-images, full-width-template, theme-options, buddypress, black, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style
+Tags: orange, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, featured-image-header, featured-images, full-width-template, theme-options
 Template: piratenkleider
 License: CC-BY-SA 3.0
 License URI: http://creativecommons.org/licenses/by-sa/3.0/de/deed.de
@@ -17,11 +18,14 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/de/deed.de
 
 /* import screen layout | Screen-Layout einbinden */
 @import url(css/piratenkleider.css);
-@import url(css/basemod_navigation.css);
-@import url(css/basemod_slider.css);
+/*@import url(css/piratenkleider.min.css); */
+/*@import url(css/basemod_navigation.css);*/
+/*@import url(css/basemod_slider.css);*/
 @import url(css/basemod_mediaqueries.css);
-@import url(css/basemod_linkicons.css);
-@import url(css/basemod_ymbuttons.css);
+/* @import url(css/basemod_mediaqueries.min.css); */
+/*@import url(css/basemod_linkicons.css);*/
+/*@import url(css/basemod_ymbuttons.css);*/
 
 /* import print layout | Druck-Layout einbinden */
 @import url(css/print.css);
+/*@import url(css/print.min.css);*/

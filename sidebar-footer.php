@@ -7,11 +7,7 @@
         
          global $default_footerlink_liste;   
          global $defaultoptions;
-           $options = get_option( 'piratenkleider_theme_options' );
-           if (!isset($options['default_footerlink_key']))                
-            $options['default_footerlink_key'] = $defaultoptions['default_footerlink_key'];
-           if (!isset($options['default_footerlink_show']))                
-            $options['default_footerlink_show'] = $defaultoptions['default_footerlink_show'];
+         global $options;
            
            
             if ((is_array($default_footerlink_liste)) && ($options['default_footerlink_show']==1)) {     
@@ -32,7 +28,8 @@
                   echo '<ul class="default_footerlinks">';
                   
                   foreach($default_footerlink_liste[$bereich]['sublist'] as $i => $value) {
-                       echo '<li><a href="'.$value.'">'.$i.'</a></li>';
+                        echo '<li><a href="'.$value.'">';                                                                                                        
+                        echo $i.'</a></li>';
                        echo "\n";
                  }            
                  echo '</ul>';

@@ -1,5 +1,6 @@
 <?php 
 global $defaultoptions;
+global $options;
  
 if ( post_password_required() ) : ?>
     <p><?php _e("Dieser Artikel ist Passwortgesch&uuml;tzt. Bitte gib das Passwort ein um die Kommentare zu sehen.", 'piratenkleider'); ?></p>
@@ -24,16 +25,12 @@ if ( have_comments() ) : ?>
              previous_comments_link( __( '&larr; &Auml;ltere Kommentare', 'piratenkleider' ) ); 
              next_comments_link( __( 'Neuere Kommentare &rarr;', 'piratenkleider' ) ); 
      endif; 
-     else : if ( ! comments_open() && ! is_page() && post_type_supports( get_post_type(), 'comments' )  ) : ?>
+     if ( ! comments_open() && ! is_page() && post_type_supports( get_post_type(), 'comments' )  ) : ?>
 	<p><?php _e("Das Kommentieren dieses Artikels ist nicht (mehr) m&ouml;glich.", 'piratenkleider'); ?></p>
 <?php
     endif; 
  endif; 
      
-$options = get_option( 'piratenkleider_theme_options' );
-if (!isset($options['anonymize-user'])) 
-            $options['anonymize-user'] = $defaultoptions['anonymize-user'];
-
 
 if (isset($options['comments_disclaimer'])) {
     $comment_before = '<div class="comment-disclaimer">'.$options['comments_disclaimer'] .'</div>';
@@ -42,8 +39,6 @@ if (isset($options['comments_disclaimer'])) {
 
 if ($options['anonymize-user']==1) {
     // Emailadresse kann/soll weggelassen werden
-    if (!isset($options['anonymize-user-commententries'])) 
-            $options['anonymize-user-commententries'] = $defaultoptions['anonymize-user-commententries'];
     
     if ($options['anonymize-user-commententries']==1) {
         // Nur Autorname        

@@ -10,6 +10,14 @@
 
 
 @media only screen and (max-width: 767px) {
+  .flexslider, 
+  .flexslider img {       
+        overflow: hidden;
+   }   
+   .content-aside .flexslider {
+        height: auto;    
+        margin-bottom: 10px;
+    }
     .logo {
         max-width: 300px;
         top: 0px;
@@ -62,7 +70,9 @@
         padding: 10px;
         text-align: center; 
     }
-
+    .header .branding h1 {
+        margin-bottom: 0px;
+    }
     .logo {
         margin: 0 auto;
     }
@@ -83,37 +93,47 @@
         margin: 0;
         padding: 0;
         width: auto;
-        min-width: 300px;
+         min-width: 320px;
         clear: both;
         text-align: center;
+        height: auto; 
     }
 
     .nav-top form.searchform {
         clear: both;
-        float: none;
         display: block;     
-        width: 250px;
-        background: white;
-        margin: 5px auto;
+        width: 320px;
+        background: transparent;
+        margin: 5px auto 15px auto;
         position: relative;     
+        float: none; 
+        font-size: 1.2em;
+    }
+   .nav-top form.searchform input {    
+       padding: 5px;      
     }
 
-    .nav-top .searchform input#s {       
-        line-height: 1.2em;
-        width: 15em;        
-        float: left;
-
+   .searchform input#s {
+       width: 220px;  
     }
     .nav-top form.searchform .searchsubmit {
         position: relative;       
         width: auto;
-        float: left;
+        float: right;
         text-indent: 0;
         background: #2D7DC5;
         height: inherit;
-        line-height: 1.2em;
+        line-height: 1em;
         overflow: none;
-        height: 1.4em;
+        height: auto;
+        padding: 5px;
+        top: 0px;
+        margin-top: 2px;
+        left: -15px; 
+     }
+    .nav-top form.searchform .searchsubmit:after {
+       content: "a";
+       clear: both; 
     }
 
     .nav-top div.menu-header {
@@ -145,7 +165,12 @@
     .nav-main ul.menu {
         float: none;  
     }
-
+    .nav-top ul.socialmedia {
+        display: inline-block;
+        text-align: center;
+        float: none;
+        clear: both;
+    }
     .skiplinks li {
         list-style: none;
         width: 100%; 
@@ -154,7 +179,7 @@
         position: absolute;
         display: block;
         position: static;
-        /*width: 100%;*/
+        /*width: 100%; verificar se é necessário*/
         display: block;
         border: 0px solid;
         background: #2d7dc5;
@@ -163,7 +188,7 @@
         text-align: center;
         padding: 5px 18px;
         margin-bottom: 2px;
-
+    font-size: 1.4em;
         background: #2d7dc5; 
         color: white;
         border: 1px solid #2d7dc5;
@@ -186,11 +211,18 @@
     .skiplinks li a:hover {
         background: #24639b;
         color: black; }
-
+ #skiplink-nav, 
+ #skiplink-search {
+     display: none;
+ }   
+  .footer ul.skiplinks {
+     height: auto;
+}
 
     .symbolbild {
-        height: 240px;  
         overflow: hidden;
+        z-index: 10;
+       max-width: 100%;
     }   
 
     .nav-top ul.menu li a {
@@ -278,6 +310,9 @@
         float: none;
         min-height: 0;          
     }
+  .content-primary .switchoff, .content-primary .switchon {
+      display: none;
+  }
     .content-aside {
         width: 100%;
         float: none;
@@ -322,21 +357,27 @@
     }
 
     .content-primary .skin {
-        padding: 0;
+       padding: 10px 5px 5px 5px; /*Valor prévio: 0*/
     }
     .content-header,
     .content-header-big {
         margin-left: 0px;
+     height: 11em;
+     overflow: hidden;
     }
-
+   .content-header h1,
+   .content-header-big h1{
+       z-index: 100;
+       top: 10px;
+    }
     .single .post {
         padding: 10px;
         max-width: 100%;
     }
     .post-comments {
-        background: url("../images/int/bg-tags.png") repeat fixed -20% top #FF8800;
+     background: url("../images/int/bg-tags.png") repeat -20% top #FF8800;
         padding: 3px;
-        margin: 10px 0px;
+     margin: 2px 5px 5px 5px;
     }
     .post-comments a {
         color: black;
@@ -354,7 +395,7 @@
         text-align: left;
         max-width: none;
         min-height: 50px;
-        background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.4);
     }
     .post-comments ol li .comment-body {
         float: none;
@@ -388,7 +429,7 @@
 
     #socialmedia_iconbar {
         position: relative;
-        display: block;
+         display: inline-block;
         top: inherit;
         left: inherit;
         width: auto;
@@ -396,16 +437,53 @@
         border-radius: 3px ; 
         z-index: 10 ;
         padding: 2px;
-        margin: 0px;
+         margin: 0px auto;
         text-align: center;
+         width: 100%;
     }
     .home #socialmedia_iconbar {
         top: inherit;
     }
     #socialmedia_iconbar ul.socialmedia {
         list-style: none;
+        display: inline-block;
     }
     #socialmedia_iconbar ul.socialmedia li {
         width: 34px;
     }
+    
 }
+@media only screen and (max-width: 479px) {  
+  .symbolbild, 
+  .flexslider, 
+  .flexslider img {      
+        overflow: hidden;
+   }   
+   .content-aside .flexslider {
+        height: auto;    
+        margin-bottom: 10px;
+    }
+
+  .flexslider .caption {
+    padding: 5px 10px;
+  }
+  .flexslider .caption h2, 
+  .flexslider .caption h3 {
+      font-size: 12px;
+      font-family: Helvetica, Arial, sans-serif;
+      letter-spacing: 0px;
+  }
+}
+
+   
+@media screen, projection and (min-width: 1021px) {
+    .content .row, 
+    .teaser .row {
+   	-webkit-box-shadow: 5px 0 10px rgba(0,0,0,0.3);
+        -moz-box-shadow: 5px 0 10px rgba(0,0,0,0.3);
+        -ms-box-shadow: 5px 0 10px rgba(0,0,0,0.3);
+        -o-box-shadow: 5px 0 10px rgba(0,0,0,0.3);
+	box-shadow: 5px 0 10px rgba(0,0,0,0.3);   
+    }	
+}  
+ 
