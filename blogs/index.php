@@ -1,26 +1,7 @@
-<?php get_template_part('page-header') ?>
-<div class="content-header">            
-    <h1 id="page-title"><span><?php _e('Site Directory', 'buddypress'); ?></span></h1>
-
-    <?php
-    if (has_post_thumbnail()) {
-        echo '<div class="symbolbild">';
-        the_post_thumbnail();
-        echo '</div>';
-    } else {
-        if ($options['aktiv-defaultseitenbild'] == 1) {
-            $bilderoptions = get_option('piratenkleider_theme_defaultbilder');
-            $defaultbildsrc = $bilderoptions['seiten-defaultbildsrc'];
-            if (isset($defaultbildsrc) && (strlen($defaultbildsrc) > 4)) {
-                echo '<div class="symbolbild">';
-                echo '<img src="' . $defaultbildsrc . '"  alt="">';
-                echo '</div>';
-            }
-        }
-    }
-    ?>
-</div>
-<?php do_action( 'bp_before_directory_blogs_page' ); ?>
+<?php get_template_part('page-header');
+do_action( 'bp_before_directory_blogs_page' );
+    $image_url = piratenkleider_get_cover(__('Site Directory', 'buddypress'), get_the_ID());
+?>  
 <div class="skin">
 
     <?php do_action('bp_before_directory_blogs'); ?>
@@ -90,4 +71,21 @@
 
 </div>
 <?php do_action( 'bp_after_directory_blogs_page' ); ?>
-<?php get_template_part('page-footer') ?>
+</div>
+    <div class="content-aside">
+        <div class="skin">      
+            <?php
+            if (!isset($options['aktiv-circleplayer']))
+                $options['aktiv-circleplayer'] = $defaultoptions['aktiv-circleplayer'];
+            if ($options['aktiv-circleplayer'] == 1) {
+                piratenkleider_echo_player();
+            }
+            get_sidebar('buddypress');
+            ?>
+        </div>
+    </div>
+</div>
+<?php get_piratenkleider_socialmediaicons(2); ?>
+</div>
+
+<?php get_footer(); ?>

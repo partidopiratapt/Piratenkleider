@@ -136,7 +136,7 @@ function theme_options_do_page($tab = '') {
 				    if (isset($options[$name])) echo esc_attr( $options[$name] );				
 				    echo "\"><br>\n";
 				    if (isset($options[$name])) {
-					    echo "<img class=\"imgurl\" src=\"".esc_attr( $options[$name] )."\" alt=\"\">\n";
+					    echo "<img class=\"imgurl\" src=\"".esc_attr( $options[$name] )."\" title=\"\">\n";
 				    }    
                                     echo "\t\t\t";
                                     echo "<label for=\"piratenkleider_theme_options[$name]\">$label</label>\n";    
@@ -174,7 +174,7 @@ function theme_options_do_page($tab = '') {
                                             echo ' checked="checked"';
                                         }                                                                                                                                                                
                                         echo '> ';
-                                        echo $label.'<br><img src="'.$src.'" alt="" style="width: 320px; height: auto;">';					                                                                                                                                                                                                      
+                                        echo $label.'<br><img src="'.$src.'" title="" style="width: 320px; height: auto;">';					                                                                                                                                                                                                      
                                         echo "</label>\n";                                          
                                     }                                                                          
                                     echo "<br style=\"clear: left;\">\n";
@@ -267,7 +267,7 @@ function theme_options_do_page($tab = '') {
 							<div style="height: 40px; width: 100%; margin:0 auto; background-color: #F28900; color: white; display: block;">  
 							<input type="checkbox" name="piratenkleider_theme_options[<?php echo $name?>][]" 
 							       value="<?php echo esc_attr( $bildurl ); ?>" <?php echo $checked; ?> />                                                     
-							<?php echo $sub ?>
+							<?php echo $wert ?>
 							</div>
 							<div style="height: 211px; overflow: hidden; margin: 5px auto; width: 150px; padding: 0;">
 							<img src="<?php echo $bildurl ?>" style="width: 150px; height: auto;  ">
@@ -298,7 +298,6 @@ function theme_options_do_page($tab = '') {
 					 if (isset($options[$name][$entry]['active'])) {
 						$active = $options[$name][$entry]['active'];
                                          }
-					
 					 if (($active==1)  
 						 && (filter_var($value, FILTER_VALIDATE_URL))) {
 					    $checked = "checked=\"checked\"";   
@@ -320,6 +319,9 @@ function theme_options_do_page($tab = '') {
 					 <?php    
 					    
 				    }                                                                                                                   
+				    if (isset($label)) {
+					echo "<p>".$label."</p>\n";
+				    }
                                     echo "<br style=\"clear: left;\">\n";
 
 				    
@@ -346,7 +348,6 @@ function theme_options_do_page($tab = '') {
                                         echo "\t\t\t<label for=\"piratenkleider_theme_options[$name]\">$label</label>\n"; 
                                        
                                     }
-
 
                                      echo "\t\t</td>\n";
                                      echo "\t</tr>\n";

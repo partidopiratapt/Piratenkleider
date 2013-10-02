@@ -36,4 +36,21 @@
     <?php do_action('bp_after_blog_links'); ?>
 
 </div>
-<?php get_template_part('page-footer') ?>
+</div>
+    <div class="content-aside">
+        <div class="skin">      
+            <?php
+            if (!isset($options['aktiv-circleplayer']))
+                $options['aktiv-circleplayer'] = $defaultoptions['aktiv-circleplayer'];
+            if ($options['aktiv-circleplayer'] == 1) {
+                piratenkleider_echo_player();
+            }
+            get_sidebar('buddypress');
+            ?>
+        </div>
+    </div>
+</div>
+<?php get_piratenkleider_socialmediaicons(2); ?>
+</div>
+
+<?php get_footer(); ?>

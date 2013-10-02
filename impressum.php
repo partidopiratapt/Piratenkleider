@@ -39,7 +39,7 @@
             }   
          ?>
 		   <h1 class="post-title"><span><?php the_title(); ?></span></h1>
-		   <div class="symbolbild"><img src="<?php echo $image_url ?>" alt="">
+		   <div class="symbolbild"><img src="<?php echo $image_url ?>" title="">
 		   <?php if (isset($image_alt) && (strlen($image_alt)>1)) {
 		     echo '<div class="caption">'.$image_alt.'</div>';  
 		   }  ?>
@@ -215,6 +215,7 @@ haftet allein der jeweilige Anbieter der Seite, auf welche verwiesen wurde.
       
 <h2>Urheberrecht</h2>
 
+<h3>Lizenz</h3>
 <p>
 Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten 
 unterliegen dem deutschen Urheberrecht. 
@@ -223,7 +224,7 @@ stehen s&auml;mtliche Werke dieses Angebots unter einer
 <a class="extern" href="http://creativecommons.org/licenses/by/3.0/de/" rel="license">    
     Creative Commons Namensnennung 3.0 Deutschland Lizenz</a>.
 </p>
-<p style="float:right; display: inline; margin: 1em;"><img src="<?php echo get_template_directory_uri(); ?>/images/cc-88x31.png" alt="" /></p>
+<p style="float:right; display: inline; margin: 1em;"><img src="<?php echo get_template_directory_uri(); ?>/images/cc-88x31.png" title="" /></p>
 <p>
     Sie d&uuml;rfen somit
 </p>
@@ -270,13 +271,13 @@ stehen s&auml;mtliche Werke dieses Angebots unter einer
 
 <h3>Credits</h3>
     <p>
-        Das Wordpress-Theme wurde entwickelt von:     
+        Das Wordpress-Theme <a class="extern" href="http://www.piratenkleider.de">Piratenkleider</a> wurde entwickelt von:     
     </p>
     
    
     <ul>
-        <li><a class="extern" href="http://piratenkleider.xwolf.de">Wolfgang Wiese</a> (Programmierung, Neudesign, CSS, Barrierefreiheit, Dokumentation, Features nach Version 1.1)</li>
-        <li><a class="extern" href="http://www.korbinian-polk.de">Korbinian Polk</a> (Erstes Grunddesign und Erstellung eines Childtheme von TwentyTen)</li>               
+        <li>Wolfgang Wiese</a> (Neuprogrammierung, Neudesign, CSS, Barrierefreiheit, Dokumentation, Features nach Version 1.1)</li>
+        <li>Korbinian Polk, Simon Stützer, Bernd Schreiner (Erstes Grunddesign und Erstellung eines Childtheme von TwentyTen)</li>               
     </ul>
         
 
@@ -293,16 +294,52 @@ stehen s&auml;mtliche Werke dieses Angebots unter einer
 
 <h2>Datenschutz</h2>
 <p>
-Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener 
-Daten m&ouml;glich. Die Speicherung von Verbindungsdaten erfolgt nicht. Soweit auf 
-unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder 
-E-Mail-Adressen) erhoben werden, erfolgt dies, soweit m&ouml;glich, stets auf 
-freiwilliger Basis. Diese Daten werden ohne Ihre ausdr&uuml;ckliche Zustimmung
-nicht an Dritte weitergegeben. 
-</p><p>Wir weisen darauf hin, dass die Daten&uuml;bertragung 
-im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitsl&uuml;cken aufweisen 
+Die Nutzung des Webangebots ist ohne Angabe personenbezogener Daten m&ouml;glich. 
+Eine Speicherung von Verbindungsdaten (beispielsweise die aktuell genutzte 
+IP-Adresse in Kombination mit Zeitpunkt und einer Browseridentifikation) erfolgt 
+nicht.  
+Im System eintreffende IP-Adressen werden noch vor jeglicher Weiterverarbeitung
+anonymisiert.<br>
+Zu statistischen Zwecken werden Zugriffe auf Seiten des Webangebotes 
+verarbeitet. Dies erfolgt jedoch nur ohne personenbeziehbare Verbindungsdaten.
+</p>
+<p>
+Die Nutzung von Kommentaren erfolgt auf freiwilliger Basis. Hier
+werden zur Wiedererkennung der verschiedenen Kommentatoren Name und E-Mailadresse
+abgefragt. Diese Daten werden nicht verifiziert. Es ist jedem Benutzer möglich, 
+hier unzutreffende Daten einzugeben.
+</p>
+<p>Wir weisen darauf hin, dass die Daten&uuml;bertragung 
+im Internet allgemein (z.B. bei der Kommunikation per E-Mail) Sicherheitsl&uuml;cken aufweisen 
 kann. Ein l&uuml;ckenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht 
-m&ouml;glich. Der Nutzung von im Rahmen der Impressumspflicht ver&ouml;ffentlichten 
+m&ouml;glich. 
+</p>
+
+<h3>Einbindung von Diensten und Inhalten Dritter</h3>
+<p>
+Es kann vorkommen, dass innerhalb dieses Webangebots Inhalte Dritter,
+wie zum Beispiel Videos von YouTube, Kartenmaterial von Google-Maps,
+RSS-Feeds oder Grafiken von anderen Webseiten eingebunden werden.
+<br>
+Wir bemühen uns nur solche Inhalte zu verwenden, die direkt auf diesem
+Webauftritt liegen und somit keinem anderen Dienst ein Tracking
+ermöglichen.<br>
+Leider ist dies, insbesondere bei Videostreams und anderen Angeboten,
+die nur auf externen Plattformen bereit gestellt werden, oft
+nicht möglich. In diesen F&auml;llen haben wir keinen Einfluss darauf, falls
+die Dritt-Anbieter die IP-Adresse oder Eigenschaften des verwendeten
+Browsers speichern und auswerten.
+<br>
+Bei der Einbindung von Inhalten, bei denen die Möglichkeit besteht,
+Tracking zu umgehen, wird dieses genutzt. Beispielsweise bei der Nutzung
+von youtube-nocookie.com anstelle von youtube.com für die
+Einbindung von Videos.
+</p>
+
+
+<h2>Sonstiges</h2>
+<p>
+Der Nutzung von im Rahmen der Impressumspflicht ver&ouml;ffentlichten 
 Kontaktdaten durch Dritte zur &Uuml;bersendung von nicht ausdr&uuml;cklich angeforderter 
 Werbung und Informationsmaterialien wird hiermit ausdr&uuml;cklich widersprochen. 
 Die Betreiber der Seiten behalten sich ausdr&uuml;cklich rechtliche Schritte im Falle 

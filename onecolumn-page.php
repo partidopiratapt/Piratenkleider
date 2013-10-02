@@ -24,6 +24,7 @@
 </div>
 <div class="skin">
     <?php do_action('bp_before_blog_page'); ?>
+
     <div class="page" id="blog-page" role="main">
 
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -49,6 +50,24 @@
         ?>
 
     </div><!-- .page -->
-</div>
+
 <?php do_action('bp_after_blog_page'); ?>
-<?php get_template_part('page-footer') ?>
+</div>
+</div>
+    <div class="content-aside">
+        <div class="skin">      
+            <?php
+            if (!isset($options['aktiv-circleplayer']))
+                $options['aktiv-circleplayer'] = $defaultoptions['aktiv-circleplayer'];
+            if ($options['aktiv-circleplayer'] == 1) {
+                piratenkleider_echo_player();
+            }
+            get_sidebar('buddypress');
+            ?>
+        </div>
+    </div>
+</div>
+<?php get_piratenkleider_socialmediaicons(2); ?>
+</div>
+
+<?php get_footer(); ?>

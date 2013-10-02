@@ -1,25 +1,7 @@
-<?php get_template_part('page-header') ?>
-<div class="content-header">            
-    <h1 id="page-title"><span><?php the_title(); ?></span></h1>
-
-    <?php
-    if (has_post_thumbnail()) {
-        echo '<div class="symbolbild">';
-        the_post_thumbnail();
-        echo '</div>';
-    } else {
-        if ($options['aktiv-defaultseitenbild'] == 1) {
-            $bilderoptions = get_option('piratenkleider_theme_defaultbilder');
-            $defaultbildsrc = $bilderoptions['seiten-defaultbildsrc'];
-            if (isset($defaultbildsrc) && (strlen($defaultbildsrc) > 4)) {
-                echo '<div class="symbolbild">';
-                echo '<img src="' . $defaultbildsrc . '"  alt="">';
-                echo '</div>';
-            }
-        }
-    }
-    ?>
-</div>
+<?php get_template_part('page-header');
+do_action( 'bbp_before_main_content' );
+    $image_url = piratenkleider_get_cover(get_the_title(), get_the_ID());
+?>  
 <div class="skin">
     <?php do_action('bp_before_attachment'); ?>
 
@@ -55,7 +37,12 @@
                             <?php
                             if (wp_attachment_is_image()) :
                                 $metadata = wp_get_attachment_metadata();
-                                printf(__('Full size is %s pixels', 'buddypress'), sprintf('<a href="%1$s" title="%2$s">%3$s &times; %4$s</a>', wp_get_attachment_url(), esc_attr(__('Link to full size image', 'buddypress')), $metadata['width'], $metadata['height']
+										printf( __( 'Full size is %s pixels', 'buddypress' ),
+											sprintf( '<a href="%1$s" title="%2$s">%3$s &times; %4$s</a>',
+												wp_get_attachment_url(),
+												esc_attr( __( 'Link to full size image', 'buddypress' ) ),
+												$metadata['width'],
+												$metadata['height']
                                         )
                                 );
                             endif;
@@ -83,4 +70,21 @@
 <?php do_action('bp_after_attachment'); ?>
 
 </div>
-<?php get_template_part('page-footer') ?>
+</div>
+    <div class="content-aside">
+        <div class="skin">      
+            <?php
+            if (!isset($options['aktiv-circleplayer']))
+                $options['aktiv-circleplayer'] = $defaultoptions['aktiv-circleplayer'];
+            if ($options['aktiv-circleplayer'] == 1) {
+                piratenkleider_echo_player();
+            }
+            get_sidebar('buddypress');
+            ?>
+        </div>
+    </div>
+</div>
+<?php get_piratenkleider_socialmediaicons(2); ?>
+</div>
+
+<?php get_footer(); ?>

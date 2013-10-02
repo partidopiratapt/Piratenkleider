@@ -9,14 +9,15 @@
         <?php get_sidebar( 'footer' ); ?>
         <?php get_sidebar( 'footer-secondary' ); ?>  
     </div>
-    <ul role="navigation" class="nav skiplinks">		
+    <nav role="navigation">
+        <ul class="nav skiplinks">		
 		<li><a class="ym-skip" id="skiplink-top" href="#top"><?php _e( 'Nach oben springen.', 'piratenkleider' ); ?></a></li>
 		<li><a class="ym-skip" id="skiplink-content-bottom" href="#main-content"><?php _e( 'Zum Beginn des Inhaltes springen.', 'piratenkleider' ); ?></a></li>
 		<?php if ( $options['aktiv-suche'] == "1" ){ ?>
                 <li><a class="ym-skip" id="skiplink-search-bottom" href="#searchform"><?php _e( 'Zur Suche springen.', 'piratenkleider' ); ?></a></li>
 		<?php } ?>
 	</ul>
-
+    </nav>
   </div>
 
 <?php 
@@ -36,17 +37,49 @@
         if (! isset($animationType)) $animationType = 'slide';
      ?>
        <script src="<?php echo $defaultoptions['src-flexslider'] ?>"></script>      
-       <script type="text/javascript" charset="utf-8">
+       <script type="text/javascript">
         /* <![CDATA[ */
 	jQuery(document).ready(function($) {
+         <?php if ($options['slider-aktiv']==1) { ?>        
        $('.flexslider').flexslider({
          slideshowSpeed: <?php echo $slideshowSpeed ?>,
-         animationDuration: <?php echo $animationDuration ?>,
-         slideDirection: "<?php echo $slideDirection ?>",
+	    animationSpeed: <?php echo $animationDuration ?>,
+	    direction: "<?php echo $slideDirection ?>",
          animation: "<?php echo $animationType ?>",
-         pausePlay: true
+	    pausePlay: true,
+	    keyboard: true,
+	    multipleKeyboard: true,
+	    touch: true,
+            directionNav: false,
+            controlNav: true,     
+            pauseText: "<?php _e('Stop','piratenkleider'); ?>",
+            playText: "<?php _e('Start','piratenkleider'); ?>",            
        });
+         <?php } 
+         if ($options['slider-defaultwerbeplakate']==1) { ?>
+                 
+          var breite = $(window).width();
+          if (breite > 600) {        
+             $('.slidersidebar').flexslider({
+                slideshowSpeed: <?php echo $slideshowSpeed ?>,
+                animationSpeed: <?php echo $animationDuration ?>,
+                animation: "fade",
+                pausePlay: true,
+                keyboard: true,
+                multipleKeyboard: true,
+                touch: true,
+                smoothHeight: true, 
+                directionNav: true,
+                controlNav: false,
+                nextText: "<?php _e('Vor','piratenkleider'); ?>",
+                prevText: "<?php _e('Zur&uuml;ck','piratenkleider'); ?>",
+                pauseText: "<?php _e('Stop','piratenkleider'); ?>",
+                playText: "<?php _e('Start','piratenkleider'); ?>",
     });    
+           }
+	   <?php } ?>
+	});        
+	
     /* ]]> */
     </script> 
     <?php }  
@@ -60,6 +93,11 @@
         /* ]]> */
     </script> 
        <?php }
+    if ((isset($options['aktiv-wombat'])) && ($options['aktiv-wombat']==1)) { ?>
+	<div id="wombat">
+	    <img src="<?php echo get_template_directory_uri() ?>/images/wombat-orange-klein.png" alt="">
+	</div>   
+   <?php }   
     
    if (isset($options['html-eigene-anweisungen'])
         && strlen(trim($options['html-eigene-anweisungen'])) > 0) {

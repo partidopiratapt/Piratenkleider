@@ -29,7 +29,7 @@
 					<p><?php _e( 'Changing the slug affects its permalink. Any links to the old slug will stop working.', 'bbpress' ); ?></p>
 				</div>
 
-				<form id="rename_tag" name="rename_tag" method="post" action="">
+				<form id="rename_tag" name="rename_tag" method="post" action="<?php the_permalink(); ?>">
 
 					<div>
 						<label for="tag-name"><?php _e( 'Name:', 'bbpress' ); ?></label>
@@ -42,7 +42,7 @@
 					</div>
 
 					<div class="bbp-submit-wrapper">
-						<input type="submit" name="submit" tabindex="<?php bbp_tab_index(); ?>" value="<?php esc_attr_e( 'Update', 'bbpress' ); ?>" /><br />
+						<button type="submit" tabindex="<?php bbp_tab_index(); ?>" class="button submit"><?php esc_attr_e( 'Update', 'bbpress' ); ?></button>
 
 						<input type="hidden" name="tag-id" value="<?php bbp_topic_tag_id(); ?>" />
 						<input type="hidden" name="action" value="bbp-update-topic-tag" />
@@ -62,7 +62,7 @@
 					<p><?php _e( 'Merging tags together cannot be undone.', 'bbpress' ); ?></p>
 				</div>
 
-				<form id="merge_tag" name="merge_tag" method="post" action="">
+				<form id="merge_tag" name="merge_tag" method="post" action="<?php the_permalink(); ?>">
 
 					<div>
 						<label for="tag-existing-name"><?php _e( 'Existing tag:', 'bbpress' ); ?></label>
@@ -70,8 +70,7 @@
 					</div>
 
 					<div class="bbp-submit-wrapper">
-						<input type="submit" name="submit" tabindex="<?php bbp_tab_index(); ?>" value="<?php esc_attr_e( 'Merge', 'bbpress' ); ?>"
-							onclick="return confirm('<?php echo esc_js( sprintf( __( 'Are you sure you want to merge the "%s" tag into the tag you specified?', 'bbpress' ), bbp_get_topic_tag_name() ) ); ?>');" />
+						<button type="submit" tabindex="<?php bbp_tab_index(); ?>" class="button submit" onclick="return confirm('<?php echo esc_js( sprintf( __( 'Are you sure you want to merge the "%s" tag into the tag you specified?', 'bbpress' ), bbp_get_topic_tag_name() ) ); ?>');"><?php esc_attr_e( 'Merge', 'bbpress' ); ?></button>
 
 						<input type="hidden" name="tag-id" value="<?php bbp_topic_tag_id(); ?>" />
 						<input type="hidden" name="action" value="bbp-merge-topic-tag" />
@@ -96,11 +95,10 @@
 						<p><?php _e( 'Any links to this tag will no longer function.', 'bbpress' ); ?></p>
 					</div>
 
-					<form id="delete_tag" name="delete_tag" method="post" action="">
+					<form id="delete_tag" name="delete_tag" method="post" action="<?php the_permalink(); ?>">
 
 						<div class="bbp-submit-wrapper">
-							<input type="submit" name="submit" tabindex="<?php bbp_tab_index(); ?>" value="<?php _e( 'Delete', 'bbpress' ); ?>"
-								onclick="return confirm('<?php echo esc_js( sprintf( __( 'Are you sure you want to delete the "%s" tag? This is permanent and cannot be undone.', 'bbpress' ), bbp_get_topic_tag_name() ) ); ?>');" />
+							<button type="submit" tabindex="<?php bbp_tab_index(); ?>" class="button submit" onclick="return confirm('<?php echo esc_js( sprintf( __( 'Are you sure you want to delete the "%s" tag? This is permanent and cannot be undone.', 'bbpress' ), bbp_get_topic_tag_name() ) ); ?>');"><?php esc_attr_e( 'Delete', 'bbpress' ); ?></button>
 
 							<input type="hidden" name="tag-id" value="<?php bbp_topic_tag_id(); ?>" />
 							<input type="hidden" name="action" value="bbp-delete-topic-tag" />

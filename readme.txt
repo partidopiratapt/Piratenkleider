@@ -1,8 +1,8 @@
 Piratenkleider
 - Wordpress-Theme für Webauftritte der Piratenpartei 
-=================================================
+====================================================
 
-Version 2.17.8 von Wolfgang Wiese (xwolf), 14. Juni 2013
+Version 2.19.3 von Wolfgang Wiese (xwolf), 24. September 2013
 
 
 DOWNLOADS
@@ -11,7 +11,9 @@ DOWNLOADS
         https://github.com/xwolfde/Piratenkleider
     
     Projekt-Website (Releases)
-        http://piratenkleider.xwolf.de
+        http://www.piratenkleider.de
+    
+
     
     
 CREDITS & COPYRIGHT
@@ -25,16 +27,18 @@ AUTOREN / ENTWICKLER
 
    Mit Hilfe und Unterstützung von: 
      - Martin Stoppler, http://www.stoppe-gp.de/
-     - Andre Sendowski, http://www.iphone-notes.de/
-     - Heiko Philippski, http://www.phindie.de/
+     - Matthias Kopp, http://piratenkleider.emkay,de 
      - Kerstin Probiesch, http://www.barrierefreie-informationskultur.de
      - Fabian Müller, http://www.feals.de
      - Georg Sinn, http://zwitschi.net
+     - Andre Sendowski, http://www.iphone-notes.de/
+     - Heiko Philippski, http://www.phindie.de/
      - Ralph Hinterleitner, rcs@deixis.at
      - Jan Schejbal, http://janschejbal.wordpress.com/
      - Marc Schieferdecker,  http://thegeek.de 
      - Benjamin Stöcker, http://freiheitsworte.de 
      - le Grand, http://www.lenz-online.org 
+     - Nicole Britz, http://twitter.com/dyfustic
      - und vielen mehr!
 
    Quellen für Defaultbilder und CI-Materialen (CC-BY 3.0)
@@ -42,6 +46,7 @@ AUTOREN / ENTWICKLER
      - Plakatbilder ab Version 2.17: SG Gestaltung, sowie Projekt Piratestarter
      - Weitere Bilder: Piratenwiki mit unterschiedlichen Autoren
      - Bildbearbeitung für Piratenkleider 2.x: Wolfgang Wiese
+     - Comicbild Wombat: CC BY CA, Nicole Britz
 
    Weitere verwendete Inhalte:
      - Social Media Icons: Paul Robert Lloyd, http://paulrobertlloyd.com/2009/06/social_media_icons      
@@ -52,6 +57,15 @@ AUTOREN / ENTWICKLER
      - Schrift Droid Sans von Ascender (http://www.droidfonts.com/), Apache License 2.0 http://www.apache.org/licenses/LICENSE-2.0
      - Schrift Awesome http://fontawesome.io von Dave Gandy (SIL Open Font License 1.1)
      - Circle Player, http://jplayer.org (GNU General Public License (GPL) Version 2)
+
+
+FEEDBACK & BUGS
+
+Feedback, Vorschläge für neue Features aber auch Bugs können im GitHub
+gemeldet werden: https://github.com/xwolfde/Piratenkleider/issues
+Alternativ zum GitHub stehen auch die Kommentarfelder bei http://www.piratenkleider.de
+zur Verfügung.  
+
 
 VORVERSION
 
@@ -113,8 +127,8 @@ INHALTE
    Dies ist ein von selbst wechselndes Artikelbild mit der Verlinkung
    zu einem Artikel. 
    Um dies für einen Artikel zu machen, muss der Artikel in der
-   für den Slider aktivierten Kategorie sein. (Siehe Punkt "Slider" unter den 
-    Optionen "Takelage setzen")
+   für den Slider aktivierten Kategorie sein. (Siehe Punkt "Startseite" unter 
+   den  Optionen)
    Sollte ein Artikel über kein definiertes Artikelbild verfügen, wird
    das Defaultsliderbilder verwendet.       
 
@@ -140,28 +154,36 @@ BEREICHE/WIDGETS
     Dieser 3 Teaserlinks können über die Theme-Option Takelage setzen
     verändert werden. Wird das Widget genommen, wird dessen Inhalt jedoch
     diese Änderungen überschreiben und der Widgetinhalt angezeigt.
-5. "Startseite: Links unten" 
+5. "Startseite: Introbereich"
+    Dieser Bereich befindet sich unter dem SLider bzw. Teaser auf der
+    Startseite und oberhalb des Inhalts. 
+    Es ist eine Möglichkeit, um feststehenden Inhalt unabhängig von den
+    aktuellen Artikeln auf der Startseite zu plazieren. 
+6. "Startseite: Links unten" 
     Dies ist auf der Startseite der Bereich rechts neben der Liste der weiteren
     Artikel.
     Es empfiehlt das Widget mit der Schlagwortliste zu füllen.
-6. "Startseite: Rechts unten" 
+7. "Startseite: Rechts unten" 
     Bereich rechts unterhalb der drei Presseartikel.
     Wenn leer, wird hier eine Schlagwortliste gezeigt.
-7. "Fußbereich: Linke Seite"
+8. "Fußbereich: Linke Seite"
    Bereich im Fußteil unter dem Haupttextbereich. Dieser Bereich eignet sich 
    insbesondere für externe Links zu anderen Piratenwebsites auf regionaler oder 
    überegionaler Ebene. Diese werden dann als Menu mit externen Links definiert 
    und dann als Widget dieser Sidebar zugeordnet. Wenn leer, wird hier nichts 
     angezeigt.
-8. "Fußbereich: Rechte Spalte"
+9. "Fußbereich: Rechte Spalte"
    Rechte Spalte im Fußbereich. Wenn leer, erscheint hier das technische Menu 
    (siehe Menüs). Wenn auch dieses nicht definiert ist, wird die Blogadresse und 
    dessen RSS-Feedadresse gezeigt
+10. "Indexseiten"
+   Dieser Bereich wird bei Indexseiten (Kategorien, Tags, Authorseiten, etc.)
+   unterhalb der jeweiligen Artikelliste plaziert.  
 
 
-THEME-OPTION "Takelage einstellen"
+THEME-OPTION 
  
-  Unter der Option "Takelage setzen" sind die grundlegenden
+  Unter der Optionen sind die grundlegenden
   Optionen für das Theme einstellbar:
     - Newsletter-Box einschalten/abschalten
     - Social Media Buttons ein/ausschalten         
@@ -170,7 +192,7 @@ THEME-OPTION "Takelage einstellen"
     - Slider steuern     
     - Teaserlinks ändern oder setzen
     - Sticker ändern oder setzen
-    - Webadressen für Newsletter, Mitgliederanträge und Spenden anpassbar
+    - Webadressen für Newsletter anpassbar
     - Metatag-Angaben ändern
     - Optionale Anzeige für Seitenbilder steuern
     - Menutyp  für die Darstellung der Seiten und Unterseiten in der
@@ -232,7 +254,7 @@ THEME OPTION "Kopfzeile"
    Größe und dem Hintergrund über einem eigenen Grafikprogramm 
    vorzubereiten.
 
-THEME OPTION "Hinterhgrund"   
+THEME OPTION "Hintergrund"   
     
     Hier ist die Änderung des Hintergrundbildes, dessen Farben und 
     Positionierung möglich.
@@ -311,6 +333,8 @@ UNTERSTÜTZE PLUGINS
   (https://github.com/xwolfde/xw-progressbar)
   Anzeige von Fortschrittsbalken.
 
+- 2 Click Social Media Buttons
+  Anzeige von Social Media Buttons auf Artikelseiten.
 
 
 EMPFEHLUNGEN FÜR WIDGETS
@@ -476,3 +500,30 @@ Administrative Hinweise für Wordpress Theme-Editoren:
     Für die Integration von Twitternachrichten oder Streams sollten stattdessen
     eigene Plugins verwendet werden. 
 
+18. Ab der Version 2.18 ist es möglich, die Darstellung der Artikelauszüge
+    auf Startseite und Spezialseiten zu definieren. So ist angebbar ob die
+    Auszuege ein- oder zwei spaltig nebeneinander sind, ob Überschriften
+    über oder neben der Datumsbox sind, ob eine Datumsbox da ist oder ein
+    Thumbnail usw.
+    Ausserdem lassen sich gleichzweitig ein und zweispalter darstellen
+    wobei diese jeweils unterschiedliche Eigenschaften haben.
+    Es ist somit möglich ganz oben als ersten Artikelauszug 500 Zeichen
+    und ein Bild anzugeben, während alle folgenden zweispalter kürzer sind
+    und nur eine Datumsbox zeigen anstelle des Thumbnails.
+    Ebenso können YouTube-Videos angezeigt werden.
+   (Hinweis: Diese werden per Default auf youtube-nocookie.com umgeschrieben.)
+
+
+19. Ab der Version 2.18.5 werden YouTube-Embeddings optional mit einem eigenen
+    iFRame-Embedding versehen welches aus Gründen der Barrierefreiheit
+    vor dem Embedding einen Link zu YouTube setzt. Ausserdem wird das Embedding
+    selbst über youtube-nocookie.com geholt.
+
+20. Ab der Version 2.18.7 ist ein neues Widget enthalten mit dessen Hilfe
+    auf einfache Weise Bilder oder Logolinks in die Sidebar plaziert werden
+    können. Diese Bilder können via URL oder aus der Mediathek ausgewählt
+    werden und haben dann gleich die korrekten Größe für die Sidebar.
+
+21. Aufgrund der Beliebtheit der Wombat-Bilder wurden zwei Plakate zum
+    Wahlkampf mit Wombats hinzugefügt und ein Wombat-Comicbild, welches
+    zusätzlich und optional eingeschaltet werden kann (Unter "Sonstiges").

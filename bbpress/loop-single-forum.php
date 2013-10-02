@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Forums Loop - Single Forum
  *
@@ -22,30 +23,30 @@ if (get_option('permalink_structure')) {
             )));
 }
 ?>
-<tr id="bbp-forum-<?php bbp_forum_id(); ?>"  class="windowbg2">
-    <td class="icon windowbg" <?php if (bbp_forum_get_subforums()) { ?> rowspan="2" <?php } ?>>
+<tr id="bbp-forum-<?php bbp_forum_id(); ?>">
+    <td class="icon" <?php if (bbp_forum_get_subforums()) { ?> rowspan="2" <?php } ?>>
         
-        <img width="49" height="49" src="<?php echo get_template_directory_uri() ?>/images/Lightbrown-Pirates-icon.png" alt="Não há novas mensagens" title="Não há novas mensagens">
+        <img width="49" height="49" src="<?php echo get_template_directory_uri() ?>/images/Lightbrown-Pirates-icon.png" title="Não há novas mensagens">
     </td>
 
     <td class="bbp-forum-info">
         <a class="bbp-forum-title" href="<?php bbp_forum_permalink(); ?>" title="<?php bbp_forum_title(); ?>"><?php bbp_forum_title(); ?></a>&nbsp; <a href="<?php echo $url; ?>">
-            <img style="margin: 0 0 0 0;" alt="rss" width="12" height="12" src="<?php echo get_template_directory_uri() ?>/images/social-media/feed-24x24.png">
+            <img style="margin: 0 0 0 0;" title="rss" width="12" height="12" src="<?php echo get_template_directory_uri() ?>/images/social-media/feed-24x24.png">
         </a>
         <p><?php
 $content = get_the_content($more_link_text, $stripteaser);
 echo $content;
 ?></p>
     </td>
-    <td class="stats windowbg">
+    <td class="stats">
         <p><?php bbp_show_lead_topic() ? bbp_forum_reply_count() : bbp_forum_post_count($id); ?> Mensagens <br />
-            <?php bbp_forum_topic_count(); ?> Tópicos
+            <?php bbp_forum_topic_count(); ?> T&oacute;picos
         </p>
     </td>
     <td class="lastpost">
         <?php if (bbp_get_forum_topic_count() > 0) { ?>
-            <p><strong>Última mensagem</strong> por <?php bbp_author_link(array('post_id' => bbp_get_forum_last_active_id($id), 'type' => 'name')); ?><br />
-                em <?php $reply_id = bbp_get_forum_last_reply_id(); ?>
+        <p><strong>&Uacute;ltima mensagem</strong> por <?php bbp_author_link(array('post_id' => bbp_get_forum_last_active_id($id), 'type' => 'name')); ?><br />
+                em <?php echo $reply_id = bbp_get_forum_last_reply_id(); ?>
                 <a href="<?php bbp_reply_permalink($reply_id) ?>" title="<?php bbp_reply_title($reply_id); ?>"><?php
         $limit = 22;
         $summary = bbp_get_reply_title($reply_id);

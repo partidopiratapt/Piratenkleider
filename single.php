@@ -7,9 +7,7 @@
 	
         <?php if ( have_posts() ) while ( have_posts() ) : the_post();         
         $custom_fields = get_post_custom();
-        ?>
 
-	<?php
 	    $image_url = '';
 	    $image_alt = '';
 	    if (has_post_thumbnail()) { 
@@ -33,7 +31,7 @@
 		}
 		?>    		    		    		        
 		   <h1 class="post-title"><span><?php the_title(); ?></span></h1>
-		   <div class="symbolbild"><img src="<?php echo $image_url ?>" alt="">
+		   <div class="symbolbild"><img src="<?php echo $image_url ?>" title="">
 		   <?php if (isset($image_alt) && (strlen($image_alt)>1)) {
 		     echo '<div class="caption">'.$image_alt.'</div>';  
 		   }  ?>
@@ -48,8 +46,6 @@
  
         <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
   
-          
-          
            <?php 
             if ( (isset($custom_fields['show-post-disclaimer']))
                  && ($custom_fields['show-post-disclaimer'][0]<>'') 
@@ -60,33 +56,10 @@
                 echo $options['post_disclaimer'];
                 echo '</div>';
                 }
+				
+		piratenkleider_post_datumsbox();		
           ?>  
-          <div class="post-info">
-              <?php 
-                $num_comments = get_comments_number();
-                if (!isset($options['zeige_commentbubble_null'])) 
-                    $options['zeige_commentbubble_null'] = $defaultoptions['zeige_commentbubble_null'];   
-                if (($num_comments>0) || ( $options['zeige_commentbubble_null'])) { ?>
-            <div class="commentbubble">
-            <?php 
-                if ($num_comments>0) {
-                   comments_popup_link( '0<span class="skip"> Kommentar</span>', '1<span class="skip"> Kommentar</span>', '%<span class="skip"> Kommentare</span>', 'comments-link', '%<span class="skip"> Kommentare</span>');           
-                } else {
-                    // Wenn der Zeitraum abgelaufen ist UND keine Kommentare gegeben waren, dann
-                    // liefert die Funktion keinen Link, sondern nur den Text . Daher dieser
-                    // Woraround:
-                    $link = get_comments_link();
-                    echo '<a href="'.$link.'">0<span class="skip"> Kommentar</span></a>';
-              }
-            ?>
-            </div>
-          <?php } ?>                       
-            <div class="cal-icon">
-              <span class="day"><?php the_time('j.'); ?></span>
-              <span class="month"><?php the_time('m.'); ?></span>
-              <span class="year"><?php the_time('Y'); ?></span>
-            </div>
-          </div>
+        
             
           
             
@@ -105,14 +78,14 @@
                 }
           ?>  
 			
-          <div class="post-meta">
-            <div>
+          <div class="post-meta"><p>
                <?php 
                 piratenkleider_post_pubdateinfo();    
                 if ($options['aktiv-autoren']) piratenkleider_post_autorinfo();             
+                echo ' ';  
                  piratenkleider_post_taxonominfo();  
                 ?>        
-            </div>
+              </p>
           </div>
 	  
             <div><?php edit_post_link( __( 'Bearbeiten', 'piratenkleider' ), '', '' ); ?></div>
@@ -125,7 +98,6 @@
 		 ?>
 		</ul>
         </div>
-
         <hr>
 
         <div class="post-comments" id="comments">

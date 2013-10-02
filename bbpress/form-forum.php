@@ -21,7 +21,7 @@
 
 	<div id="new-forum-<?php bbp_forum_id(); ?>" class="bbp-forum-form">
 
-		<form id="new-post" name="new-post" method="post" action="">
+		<form id="new-post" name="new-post" method="post" action="<?php the_permalink(); ?>">
 
 			<?php do_action( 'bbp_theme_before_forum_form' ); ?>
 
@@ -70,22 +70,11 @@
 
 					<?php do_action( 'bbp_theme_before_forum_form_content' ); ?>
 
-					<?php if ( !function_exists( 'wp_editor' ) ) : ?>
-
-						<p>
-							<label for="bbp_forum_content"><?php _e( 'Forum Description:', 'bbpress' ); ?></label><br />
-							<textarea id="bbp_forum_content" tabindex="<?php bbp_tab_index(); ?>" name="bbp_forum_content" cols="60" rows="10"><?php bbp_form_forum_content(); ?></textarea>
-						</p>
-
-					<?php else : ?>
-
 						<?php bbp_the_content( array( 'context' => 'forum' ) ); ?>
-
-					<?php endif; ?>
 
 					<?php do_action( 'bbp_theme_after_forum_form_content' ); ?>
 
-					<?php if ( !current_user_can( 'unfiltered_html' ) ) : ?>
+					<?php if ( ! ( bbp_use_wp_editor() || current_user_can( 'unfiltered_html' ) ) ) : ?>
 
 						<p class="form-allowed-tags">
 							<label><?php _e( 'You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:','bbpress' ); ?></label><br />
@@ -175,7 +164,7 @@
 
 	<div id="no-forum-<?php bbp_forum_id(); ?>" class="bbp-no-forum">
 		<div class="bbp-template-notice">
-			<p><?php is_user_logged_in() ? _e( 'You cannot create new forums at this time.', 'bbpress' ) : _e( 'You must be logged in to create new forums.', 'bbpress' ); ?></p>
+			<p><?php is_user_logged_in() ? _e( 'You cannot create new forums.', 'bbpress' ) : _e( 'You must be logged in to create new forums.', 'bbpress' ); ?></p>
 		</div>
 	</div>
 

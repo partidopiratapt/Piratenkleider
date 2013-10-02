@@ -21,13 +21,10 @@
 		}
 		?>    		    		    		        
 		   <h1 class="post-title"><span><?php _e("Seite nicht gefunden",'piratenkleider'); ?></span></h1>
-		   <div class="symbolbild"><img src="<?php echo $image_url ?>" alt="">		  
+		   <div class="symbolbild"><img src="<?php echo $image_url ?>" title="">		  
 		    <div class="caption">  
 		     <p style="font-size: 2em;" class="bebas">404</p>                  
-		     </div> 
-		   <div class="aaarh">
-		    <p><?php _e("AAARH!<br>Ihr werdet sie nicht finden!",'piratenkleider'); ?></p>
-		    </div>
+		     </div> 		  
 		   </div>
 		</div>  	
 	    <?php } ?>

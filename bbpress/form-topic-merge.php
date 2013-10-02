@@ -9,11 +9,14 @@
 
 ?>
 
+<div id="bbpress-forums">
+
+
 	<?php if ( is_user_logged_in() && current_user_can( 'edit_topic', bbp_get_topic_id() ) ) : ?>
 
 		<div id="merge-topic-<?php bbp_topic_id(); ?>" class="bbp-topic-merge">
 
-			<form id="merge_topic" name="merge_topic" method="post" action="">
+			<form id="merge_topic" name="merge_topic" method="post" action="<?php the_permalink(); ?>">
 
 				<fieldset class="bbp-form">
 
@@ -72,8 +75,12 @@
 								<input name="bbp_topic_favoriters" id="bbp_topic_favoriters" type="checkbox" value="1" checked="checked" tabindex="<?php bbp_tab_index(); ?>" />
 								<label for="bbp_topic_favoriters"><?php _e( 'Merge topic favoriters', 'bbpress' ); ?></label><br />
 
+								<?php if ( bbp_allow_topic_tags() ) : ?>
+
 								<input name="bbp_topic_tags" id="bbp_topic_tags" type="checkbox" value="1" checked="checked" tabindex="<?php bbp_tab_index(); ?>" />
 								<label for="bbp_topic_tags"><?php _e( 'Merge topic tags', 'bbpress' ); ?></label><br />
+
+								<?php endif; ?>
 
 							</div>
 						</fieldset>
@@ -100,3 +107,5 @@
 		</div>
 
 	<?php endif; ?>
+
+</div>

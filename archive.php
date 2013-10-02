@@ -29,7 +29,7 @@
                      <?php else : ?>
                          <?php _e( 'Blogarchiv', 'piratenkleider' ); ?>
                       <?php endif; ?></span></h1>
-		   <div class="symbolbild"><img src="<?php echo $image_url ?>" alt="">		  		    		  
+		   <div class="symbolbild"><img src="<?php echo $image_url ?>" title="">		  		    		  
 		   </div>
 		</div>  	
 	    <?php } ?>

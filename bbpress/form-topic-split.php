@@ -13,7 +13,7 @@
 
 		<div id="split-topic-<?php bbp_topic_id(); ?>" class="bbp-topic-split">
 
-			<form id="split_topic" name="split_topic" method="post" action="">
+			<form id="split_topic" name="split_topic" method="post" action="<?php the_permalink(); ?>">
 
 				<fieldset class="bbp-form">
 
@@ -76,8 +76,12 @@
 								<input name="bbp_topic_favoriters" id="bbp_topic_favoriters" type="checkbox" value="1" checked="checked" tabindex="<?php bbp_tab_index(); ?>" />
 								<label for="bbp_topic_favoriters"><?php _e( 'Copy favoriters to the new topic', 'bbpress' ); ?></label><br />
 
+								<?php if ( bbp_allow_topic_tags() ) : ?>
+
 								<input name="bbp_topic_tags" id="bbp_topic_tags" type="checkbox" value="1" checked="checked" tabindex="<?php bbp_tab_index(); ?>" />
 								<label for="bbp_topic_tags"><?php _e( 'Copy topic tags to the new topic', 'bbpress' ); ?></label><br />
+
+								<?php endif; ?>
 
 							</div>
 						</fieldset>
@@ -104,3 +108,5 @@
 		</div>
 
 	<?php endif; ?>
+
+</div>

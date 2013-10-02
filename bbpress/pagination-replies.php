@@ -25,4 +25,4 @@
 		</div>
 	</div>
 
-	<?php do_action( 'bbp_template_after_pagination_loop' ); ?>
+<?php do_action( 'bbp_template_after_pagination_loop' ); ?>

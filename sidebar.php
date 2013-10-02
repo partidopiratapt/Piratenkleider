@@ -1,9 +1,8 @@
 <?php           
   global $defaultoptions;
   global $options;
-   
-  
-    if ( $options['newsletter'] == "1" ){
+ 
+  if ( $options['newsletter'] == "1" ){
      ?>                   
         <div class="newsletter">
              <h2><?php _e("Newsletter", 'piratenkleider'); ?></h2>
@@ -17,22 +16,17 @@
                         </form>           
         </div>
     <?php }
-
     
   if ( is_active_sidebar( 'sidebar-widget-area' ) )  {
             dynamic_sidebar( 'sidebar-widget-area' );     
-   }    
-   
-
+   }
   
 
-
-   
    if ( $options['slider-defaultwerbeplakate'] == "1" ) {     
        if ( ((isset($options['plakate-src']) && (is_array($options['plakate-src'])))) || 
             ((isset($options['plakate-altadressen'])) && (strlen(trim($options['plakate-altadressen']))>5))
            ) {
-            echo '<div class="flexslider fs2 no-js" style="width: '.$defaultoptions['plakate-width'].'px;">';         
+            echo '<div class="slidersidebar fs2 no-js" style="width: '.$defaultoptions['plakate-width'].'px;">';         
             echo '<ul class="slides">';                               
                    if (is_array($options['plakate-src'])) {              
                      foreach ($options['plakate-src'] as $current) {                        
@@ -40,7 +34,7 @@
                                                 
 			 if ((isset($options['plakate-url'])) && (strlen(trim($options['plakate-url']))>2)) {
 			     echo '<a href="'.$options['plakate-url'].'">';
-			     echo '<img src="'.$current.'" style="max-width: '.$defaultoptions['plakate-width'].';" alt="';                                                      
+			     echo '<img src="'.$current.'" style="max-width: '.$defaultoptions['plakate-width'].';" title="';                                                      
                              // width="'.$defaultoptions['plakate-width'].'" height="'.$defaultoptions['plakate-height'].'" 
 			     if ((isset($options['plakate-title'])) && (strlen(trim($options['plakate-title']))>2)) {   
 				   echo $options['plakate-title'];     
@@ -48,7 +42,7 @@
 			     echo '">';                                                      			     
                                  echo '</a>';
 			 } else {
-			      echo '<img src="'.$current.'" style="max-width: '.$defaultoptions['plakate-width'].';" alt="">';                                                      
+			      echo '<img src="'.$current.'" style="max-width: '.$defaultoptions['plakate-width'].';" title="">';                                                      
                               // width="'.$defaultoptions['plakate-width'].'" height="'.$defaultoptions['plakate-height'].'"
                              }
 			     
@@ -70,7 +64,7 @@
                                         if ((isset($thisweb)) && (strlen(trim($thisweb))>2)) {
                                             echo '<a href="'.$thisweb.'">';
                                         }
-                                    echo '<img src="'.$thisurl.'" style="max-width: '.$defaultoptions['plakate-width'].';" alt="';
+                                    echo '<img src="'.$thisurl.'" style="max-width: '.$defaultoptions['plakate-width'].';" title="';
                                     // width="'.$defaultoptions['plakate-width'].'" height="'.$defaultoptions['plakate-height'].'"
 				     if ((isset($thistitel)) && (strlen(trim($thistitel))>2)) {  
 					 echo wp_filter_nohtml_kses($thistitel);     
@@ -93,7 +87,4 @@
    }
    if ( is_active_sidebar( 'sidebar-widget-area-afterplakate' ) )  {
           dynamic_sidebar( 'sidebar-widget-area-afterplakate' );     
-   }    
-        
-        
-   
+   }

@@ -1,32 +1,38 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Piratenkleider 2.11\n"
+"Project-Id-Version: Piratenkleider v2.19\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-26 16:52+0100\n"
-"PO-Revision-Date: 2013-06-05 18:23-0000\n"
+"POT-Creation-Date: 2013-06-12 21:36+0100\n"
+"PO-Revision-Date: 2013-09-08 11:20-0000\n"
 "Last-Translator: Wolfgang Wiese <xwolf@xwolf.de>\n"
-"Language-Team: Fabian Müller, Wolfgang Wiese\n"
+"Language-Team: Fabian Muller, Wolfgang Wiese\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: pt_PT\n"
-"X-Poedit-KeywordsList: _;gettext;gettext_noop;_e;__\n"
-"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.5.7\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.5.5\n"
-"X-Poedit-SearchPath-0: E:\\work\\WWW\\web\\wordpress-tokenbus.de\\theme-"
-"arbeit\\Piratenkleider\n"
-"X-Poedit-SearchPath-1: F:\\www\\projekte\\WP-Theme-Piratenkleider\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: .\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: E:/work/WWW/web/wordpress-tokenbus.de/theme-arbeit/"
+"Piratenkleider\n"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/404.php:12
+# @ piratenkleider
+#: 404.php:23 404.php:35
+#, fuzzy
 msgid "Seite nicht gefunden"
 msgstr "P&aacute;gina n&atilde;o encontrada"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/404.php:19
+# @ piratenkleider
+#: 404.php:29
 msgid "AAARH!<br>Ihr werdet sie nicht finden!"
 msgstr "AAARH!<br>O tesouro n&atilde;o est&aacute; aqui!"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/404.php:26
+# @ piratenkleider
+#: 404.php:39
 msgid ""
 "Es konnten keine Seiten oder Artikel gefunden werden, die zu eingegebene "
 "Adresse passte. Bitte versuchen Sie es nochmal mit einer Suche."
@@ -34,198 +40,238 @@ msgstr ""
 "N&atilde;o existem p&aacute;ginas ou itens, que correspondam ao "
 "endere&ccedil;o digitado. Por favor, tente novamente usando a Pesquisa."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/404.php:34
-#: F:\www\projekte\WP-Theme-Piratenkleider/archive.php:39
-#: F:\www\projekte\WP-Theme-Piratenkleider/author.php:37
-#: F:\www\projekte\WP-Theme-Piratenkleider/category.php:31
-#: F:\www\projekte\WP-Theme-Piratenkleider/datenschutzerklaerung.php:148
-#: F:\www\projekte\WP-Theme-Piratenkleider/home.php:188
-#: F:\www\projekte\WP-Theme-Piratenkleider/impressum.php:263
-#: F:\www\projekte\WP-Theme-Piratenkleider/index.php:27
-#: F:\www\projekte\WP-Theme-Piratenkleider/page.php:51
-#: F:\www\projekte\WP-Theme-Piratenkleider/search.php:71
-#: F:\www\projekte\WP-Theme-Piratenkleider/single.php:97
-#: F:\www\projekte\WP-Theme-Piratenkleider/spenden.php:138
-#: F:\www\projekte\WP-Theme-Piratenkleider/tag.php:34
-#: F:\www\projekte\WP-Theme-Piratenkleider/events/ecp-page-template.php:54
-#: F:\www\projekte\WP-Theme-Piratenkleider/events/ecp-single-template.php:64
+# @ piratenkleider
+#: 404.php:47 archive.php:58 author.php:115 category.php:128
+#: datenschutzerklaerung.php:212 events/ecp-page-template.php:51
+#: events/ecp-single-template.php:60 home.php:148 impressum.php:353
+#: index.php:46 page.php:68 search.php:150 single.php:139 spenden.php:161
+#: tag.php:112
 msgid "Weitere Informationen"
 msgstr "Mais informa&ccedil;&otilde;es"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/archive.php:12
+# @ piratenkleider
+#: archive.php:24 archive.php:41
 #, php-format
 msgid "Tagesarchiv: %s"
 msgstr "Arquivo di&aacute;rio: %s"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/archive.php:14
+# @ piratenkleider
+#: archive.php:26 archive.php:43
 #, php-format
 msgid "Monatsarchiv: %s"
 msgstr "Arquivo mensal: %s"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/archive.php:16
+# @ piratenkleider
+#: archive.php:28 archive.php:45
 #, php-format
 msgid "Jahresarchiv: %s"
 msgstr "Arquivo anual: %s"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/archive.php:18
+# @ piratenkleider
+#: archive.php:30 archive.php:47
 msgid "Blogarchiv"
 msgstr "Arquivo do blog"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/author.php:12
+# @ piratenkleider
+#: author.php:25 author.php:34
 #, php-format
 msgid "%s"
 msgstr "%s"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/category.php:11
+# @ piratenkleider
+#: category.php:34 home.php:19
+msgid "Aktuelle Artikel"
+msgstr "&Uacute;ltimos artigos"
+
+# @ piratenkleider
+#: category.php:109 home.php:70 loop-category.php:7 loop.php:10 search.php:112
+msgid "Nichts gefunden"
+msgstr "Nada encontrado"
+
+# @ piratenkleider
+#: category.php:111 home.php:72
+msgid ""
+"Es konnten keine Artikel gefunden werden. Bitte versuchen Sie es nochmal mit "
+"einer Suche."
+msgstr "Desculpe, mas nada foi encontrado."
+
+# @ piratenkleider
+#: home.php:80
+msgid "Weitere Artikel"
+msgstr "Outros artigos"
+
+# @ piratenkleider
+#: home.php:93
+msgid "&Auml;ltere Artikel"
+msgstr "Artigos antigos"
+
+# @ piratenkleider
+#: home.php:106 inc/constants.php:911
+msgid "Kategorien"
+msgstr "Categorias"
+
+# @ piratenkleider
+#: home.php:129 inc/constants.php:917
+msgid "Schlagworte"
+msgstr "Tags"
+
+# @ piratenkleider
+#: category.php:30 category.php:35 category.php:73
 #, php-format
 msgid "Kategorie %s"
 msgstr "Categoria %s"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/comments.php:5
+# @ piratenkleider
+#: comments.php:6
 msgid ""
 "Dieser Artikel ist Passwortgesch&uuml;tzt. Bitte gib das Passwort ein um die "
 "Kommentare zu sehen."
 msgstr ""
-"Este artigo &eacute; protegido por senha. Digite a senha para ver os "
-"coment&aacute;rios."
+"Este artigo est&aacute; protegido por password. Digite a password para ver "
+"os coment&aacute;rios."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/comments.php:9
+# @ piratenkleider
+#: comments.php:10 inc/constants.php:1446
 msgid "Kommentare"
 msgstr "Coment&aacute;rios"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/comments.php:9
-msgid "Kommentar"
-msgstr "Coment&aacute;rio"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/comments.php:11
-msgid "Ein Kommentar zu %2$s"
-msgstr "Uma revis&atilde;o de %2$s"
-
-msgid "%1$s Kommentare zu %2$s"
-msgstr "%1$s coment&aacute;rios em %2$s"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/comments.php:15
-#: F:\www\projekte\WP-Theme-Piratenkleider/comments.php:24
+# @ piratenkleider
+#: comments.php:16 comments.php:25
 msgid "&larr; &Auml;ltere Kommentare"
 msgstr "&larr; Coment&aacute;rios mais antigos"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/comments.php:16
-#: F:\www\projekte\WP-Theme-Piratenkleider/comments.php:25
+# @ piratenkleider
+#: comments.php:17 comments.php:26
 msgid "Neuere Kommentare &rarr;"
 msgstr "Coment&aacute;rios mais recentes &rarr;"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/comments.php:28
+# @ piratenkleider
+#: comments.php:29
 msgid "Das Kommentieren dieses Artikels ist nicht (mehr) m&ouml;glich."
 msgstr ""
-"Os coment&aacute;rios neste artigo n&atilde;o s&atilde;o (ou j%aacute; "
-"n&atilde;o s&atilde;o) poss&iacute;veis."
+"Coment&aacute;r neste artigo n&atilde;o &eacute; (ou j%aacute; n&atilde;o "
+"&eacute;) poss&iacute;vel."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/comments.php:51
-#: F:\www\projekte\WP-Theme-Piratenkleider/comments.php:60
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:790
+# @ piratenkleider
+#: comments.php:46 comments.php:55 inc/constants.php:1996
 msgid "Name"
 msgstr "Nome"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/comments.php:62
+# @ piratenkleider
+#: comments.php:57
 msgid "Website"
 msgstr "Website"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/datenschutzerklaerung.php:36
-#: F:\www\projekte\WP-Theme-Piratenkleider/impressum.php:37
-#: F:\www\projekte\WP-Theme-Piratenkleider/index.php:20
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop.php:49
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop.php:64
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop.php:91
-#: F:\www\projekte\WP-Theme-Piratenkleider/page.php:43
-#: F:\www\projekte\WP-Theme-Piratenkleider/single.php:51
-#: F:\www\projekte\WP-Theme-Piratenkleider/spenden.php:35
+# @ piratenkleider
+#: datenschutzerklaerung.php:60 events/ecp-single-template.php:48
+#: impressum.php:58 index.php:39 loop.php:51 page.php:60 single.php:90
+#: spenden.php:58
 msgid "Bearbeiten"
 msgstr "Editar"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/footer.php:61
+# @ piratenkleider
+#: footer.php:14
+#, fuzzy
+msgid "Nach oben springen."
+msgstr "Jump to search."
+
+# @ piratenkleider
+#: footer.php:15
+#, fuzzy
+msgid "Zum Beginn des Inhaltes springen."
+msgstr "Jump to content."
+
+# @ piratenkleider
+#: footer.php:17 header.php:109
+msgid "Zur Suche springen."
+msgstr "Ir para a pesquisa."
+
+# @ piratenkleider
+#: footer.php:59
 msgid "Leiste ausblenden"
-msgstr "Ocultar barra de ferramentas"
+msgstr "Ocultar barra lateral"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/footer.php:62
+# @ piratenkleider
+#: footer.php:60
 msgid "Leiste anzeigen"
-msgstr "Mostrar barra de ferramentas"
+msgstr "Mostrar barra lateral"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/functions.php:110
-msgid "Hauptnavigation <br />&nbsp; (Statische Seiten)"
-msgstr "Navega&ccedil;&atilde;o <br />&nbsp; (P&aacute;ginas est&aacute;ticas)"
+# @ piratenkleider
+#: functions.php:157
+#, fuzzy
+msgid "Hauptnavigation (Statische Seiten)"
+msgstr "Menu principal <br />&nbsp; (P&aacute;ginas est&aacute;ticas)"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/functions.php:111
-msgid "Linkmenu <br />&nbsp; (Links zu Webportalen wie Wiki, Forum, etc)"
-msgstr "Link menu <br /> (Links para portais web, wiki, fórum, etc)"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/functions.php:112
-msgid "Technische Navigation <br />&nbsp; (Kontakt, Impressunm, etc)"
+# @ piratenkleider
+#: functions.php:158
+#, fuzzy
+msgid "Linkmenu (Links zu Webportalen wie Wiki, Forum, etc)"
 msgstr ""
-"Navega&ccedil;&atilde;o T&eacute;cnica <br />&nbsp; (Contactos, Posters, etc)"
+"Link menu <br />&nbsp; (Links para portais web, wiki, f&oacute;rum, etc)"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/functions.php:170
-#: F:\www\projekte\WP-Theme-Piratenkleider/search.php:11
+# @ piratenkleider
+#: functions.php:159
+#, fuzzy
+msgid "Technische Navigation (Kontakt, Impressum, etc)"
+msgstr "Menu T&eacute;cnico <br />&nbsp; (Contactos, Posters, etc)"
+
+# @ piratenkleider
+#: functions.php:388 search.php:28 search.php:37
 #, php-format
 msgid "Suchergebnisse f&uuml;r %s"
 msgstr "Resultados da pesquisa para %s"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/functions.php:173
-#: F:\www\projekte\WP-Theme-Piratenkleider/functions.php:190
+# @ piratenkleider
+#: functions.php:391 functions.php:408
 #, php-format
 msgid "Seite %s"
 msgstr "P&aacute;gina %s"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/functions.php:205
+# @ piratenkleider
+#: functions.php:424
 msgid "Weiterlesen <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Ler mais <span class=\"meta-nav\">&rarr;</span>"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/functions.php:264
+# @ piratenkleider
+#: functions.php:478
 #, php-format
 msgid "%s <span class=\"says\">meinte am</span>"
 msgstr "%s <span class=\"says\">disse</span>"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/functions.php:268
+# @ piratenkleider
+#: functions.php:482
 msgid "Der Kommentar wartet auf die Freischaltung."
 msgstr "O coment&aacute;rio est&aacute; a aguardar aprova&ccedil;&atilde;o."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/functions.php:275
+# @ piratenkleider
+#. translators: 1: date, 2: time
+#: functions.php:489
 #, php-format
 msgid "%1$s um %2$s"
 msgstr "%1$s em %2$s"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/functions.php:275
-#: F:\www\projekte\WP-Theme-Piratenkleider/functions.php:296
+# @ piratenkleider
+#: functions.php:489 functions.php:510
 msgid "(Edit)"
 msgstr "(Editar)"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/functions.php:296
+# @ piratenkleider
+#: functions.php:510
 msgid "Pingback:"
 msgstr "Pingback:"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/functions.php:319
-#, php-format
-msgid "<span class=\"meta-prep\">Ver&ouml;ffentlicht am</span> %1$s "
-msgstr "<span class=\"meta-prep\">Publicado a </span> %1$s  "
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/functions.php:332
-#, php-format
-msgid "<span class=\"meta-prep-author\">von</span> %1$s "
-msgstr "<span class=\"meta-prep-author\">por</span> %1$s "
-
-#: /functions.php:452
-msgid "Artikel von %s"
-msgstr "Artigo por %s"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/functions.php:349
+# @ piratenkleider
+#: functions.php:787
 #, php-format
 msgid ""
 "unter %1$s und tagged %2$s. <br>Hier der permanente <a href=\"%3$s\" title="
 "\"Permalink to %4$s\" rel=\"bookmark\">Link</a> zu diesem Artikel."
 msgstr ""
-"neste  %1$s, tagged %2$s. <br>Este é o <a href=\"%3$s\" title=\"Permalink to "
-"%4$s\" rel=\"bookmark\">link</a> para este artigo."
+"neste  %1$s, tagged %2$s. <br>Este &eacute; o <a href=\"%3$s\" title="
+"\"Permalink to %4$s\" rel=\"bookmark\">link</a> para este artigo."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/functions.php:351
+# @ piratenkleider
+#: functions.php:789
 #, php-format
 msgid ""
 "unter %1$s. <br><a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark"
@@ -234,7 +280,8 @@ msgstr ""
 "neste  %1$s. <br><a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark"
 "\">Link permanente</a> para o artigo."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/functions.php:353
+# @ piratenkleider
+#: functions.php:791
 #, php-format
 msgid ""
 "<a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">Permanenter "
@@ -243,340 +290,252 @@ msgstr ""
 "<a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">Link "
 "permanente</a> para o artigo."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/functions.php:670
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:814
+# @ piratenkleider
+#: functions.php:1027 functions.php:1041
+msgid "Kein Inhalt"
+msgstr "No content"
+
+# @ piratenkleider
+#: functions.php:1204 inc/constants.php:905
 msgid "Startseite"
 msgstr "Home"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/functions.php:689
+# @ piratenkleider
+#: functions.php:1223
 msgid "Artikel der Kategorie "
 msgstr "Artigos por categoria "
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/functions.php:742
-#: F:\www\projekte\WP-Theme-Piratenkleider/searchform.php:4
-msgid "Suche"
-msgstr "Pesquisar"
+# @ piratenkleider
+#: functions.php:1276
+#, fuzzy
+msgid "Suche nach "
+msgstr "Search for"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/functions.php:745
+# @ piratenkleider
+#: functions.php:1279
 msgid "Artikel mit Schlagwort "
 msgstr "Artigos marcados com "
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/functions.php:750
+# @ piratenkleider
+#: functions.php:1284
 msgid "Artikel von "
 msgstr "Artigos por "
 
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/functions.php:1047
+# @ piratenkleider
+#: functions.php:1407
 msgid "Diesen Beitrag anh&ouml;ren"
 msgstr "Audio output"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/functions.php:750
-msgid "Page"
-msgstr "P&aacute;gina"
+# @ piratenkleider
+#: functions.php:1461
+msgid "Download:"
+msgstr "Download:"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/header.php:126
+# @ piratenkleider
+#: header.php:106
 msgid "Zur Navigation springen."
 msgstr "Ir para o menu."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/header.php:127
+# @ piratenkleider
+#: header.php:107
 msgid "Zum Inhalt springen."
 msgstr "Ir para o conte&uacute;do."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/header.php:128
-msgid "Zur Suche springen."
-msgstr "Ir para a pesquisa."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/header.php:145
+# @ piratenkleider
+#: header.php:129
 msgid "Service-Navigation"
 msgstr "Atalhos: "
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/header.php:180
+# @ piratenkleider
+#: header.php:171
 msgid "Navigation"
 msgstr "Menu"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/header.php:201
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:598
+# @ piratenkleider
+#: header.php:192 inc/constants.php:825
 msgid "Sticker"
 msgstr "Etiquetas"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/home.php:17
-msgid "Aktuelle Artikel"
-msgstr "&Uacute;ltimos artigos"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/home.php:101
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop-author.php:8
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop-category.php:8
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop.php:8
-#: F:\www\projekte\WP-Theme-Piratenkleider/search.php:30
-msgid "Nichts gefunden"
-msgstr "Nada encontrado"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/home.php:103
-msgid ""
-"Es konnten keine Artikel gefunden werden. Bitte versuchen Sie es nochmal mit "
-"einer Suche."
-msgstr "Desculpe, mas nada foi encontrado."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/home.php:114
-msgid "Weitere Artikel"
-msgstr "Outros artigos"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/home.php:132
-msgid "&Auml;ltere Artikel"
-msgstr "Artigos antigos"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/home.php:146
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:833
-msgid "Kategorien"
-msgstr "Categorias"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/home.php:169
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:839
-msgid "Schlagworte"
-msgstr "Tags"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/impressum.php:19
-msgid "Impressum"
-msgstr "Imprimir"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/index.php:19
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop-author.php:19
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop-category.php:19
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop-search.php:12
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop-tag.php:20
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop.php:76
-#: F:\www\projekte\WP-Theme-Piratenkleider/page.php:42
+# @ piratenkleider
+#: index.php:38 loop-category.php:18 page.php:59
 msgid "Seiten:"
 msgstr "P&aacute;ginas:"
 
-#: /loop.php:19 /loop.php:38 /loop-author.php:16
-msgid "Permalink to %s"
-msgstr "Link permanente para %s"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop-author.php:9
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop-category.php:9
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop-tag.php:10
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop.php:9
+# @ piratenkleider
+#: loop-category.php:8 loop.php:11
 msgid "Vielleicht hilft eine Suche weiter?"
 msgstr "Quem sabe uma grande ajuda: Pesquisa?"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop-author.php:27
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop-category.php:27
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop-search.php:20
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop-tag.php:28
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop.php:103
+# @ piratenkleider
+#: author.php:99 category.php:102 loop-category.php:26 loop.php:67
+#: search.php:104 tag.php:97
 msgid "&larr; &Auml;ltere Beitr&auml;ge"
 msgstr "&larr; Posts mais antigos"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop-author.php:28
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop-category.php:28
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop-search.php:21
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop-tag.php:29
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop.php:104
+# @ piratenkleider
+#: author.php:100 category.php:103 loop-category.php:27 loop.php:68
+#: search.php:105 tag.php:98
 msgid "Neuere Beitr&auml;ge &rarr;"
 msgstr "Posts mais recentes &rarr;"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop-tag.php:9
-msgid "Nicht gefunden"
-msgstr "Nada encontrado"
-
-#: /loop.php:17 /loop.php:46
-msgid "gallery"
-msgstr "galeria"
-
-msgid "gallery category slug"
-msgstr "espaçador categoria galeria"
-
-#: /loop.php:53
-msgid "asides"
-msgstr "apartes"
-
-#: /loop.php:53
-msgid "asides category slug"
-msgstr "apartes espaçador categoria"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop.php:37
+# @ piratenkleider
+#: loop.php:39
 #, php-format
 msgid "Diese Galerie enth&auml;lt <a %1$s>%2$s photos</a>."
 msgstr "Esta galeria cont&eacute;m <a %1$s>%2$s fotos</a>."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop.php:46
+# @ piratenkleider
+#: loop.php:48
 msgid "Mehr Bildergalerien"
 msgstr "Mais galerias de imagens"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop.php:48
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop.php:63
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop.php:90
+# @ piratenkleider
+#: loop.php:50
 msgid "Hinterlasse einen Kommentar"
 msgstr "Deixe um coment&aacute;rio"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop.php:48
+# @ piratenkleider
+#: loop.php:50
 msgid "1 Comment"
 msgstr "1 coment&aacute;rio"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop.php:48
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop.php:63
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop.php:90
-msgid "% kommentare"
-msgstr "% coment&aacute;rios"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop.php:58
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop.php:75
-msgid "Weiterlesen"
-msgstr "Ler mais"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop.php:63
-msgid "Ein Kommentar"
-msgstr "Um coment&aacute;rio"
-
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/loop.php:63
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/loop.php:90
+# @ piratenkleider
+#: loop.php:50
 msgid "% Kommentare"
 msgstr "% Comments"
 
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/loop.php:80
-#, php-format
-msgid "ver&ouml;ffentlicht unter  %2$s"
-msgstr "publicado por %2$s"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop.php:87
-#, php-format
-msgid "Tagged %2$s"
-msgstr "Tagged %2$s"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/loop.php:90
-msgid "1 Kommentar"
-msgstr "1 Coment&aacute;rio"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/search.php:32
+# @ piratenkleider
+#: search.php:114
+#, fuzzy
 msgid ""
-"Es konnten keine Seiten oder Artikel gefunden werden, \n"
-"                            die zu der Sucheingabe passten.\n"
-"                            Bitte versuchen Sie es nochmal mit einer \n"
-"                            anderen Suche."
+"Es konnten keine Seiten oder Artikel gefunden werden, die zu der Sucheingabe "
+"passten. Bitte versuchen Sie es nochmal mit einer  anderen Suche."
 msgstr ""
-"N&atilde;o h&aacute; p&aacute;ginas ou artigos encontrados que combinem com "
-"a pesquisa. Por favor, tente novamente com outra pesquisa."
+"N&atilde;o foram encontradas(os) p&aacute;ginas ou artigos. Por favor, tente "
+"novamente com outra pesquisa."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/search.php:41
+# @ piratenkleider
+#: search.php:120
 msgid "Alternativ verwenden Sie einen der folgenden Links."
 msgstr "Como alternativa, use os links a seguir."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/search.php:46
+# @ piratenkleider
+#: search.php:125
 msgid "Archiv nach Monaten"
 msgstr "Arquivos por m&ecirc;s"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/search.php:51
+# @ piratenkleider
+#: search.php:130
 msgid "Artikel nach Schlagworten"
 msgstr "Artigos por tags"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/search.php:57
+# @ piratenkleider
+#: search.php:136
 msgid "&Uuml;bersicht aller Kategorien"
 msgstr "Todas as Categorias"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/searchform.php:7
+# @ piratenkleider
+#: header.php:158 searchform.php:2
+msgid "Suche"
+msgstr "Pesquisar"
+
+# @ piratenkleider
+#: header.php:160 searchform.php:5
 msgid "Suche nach"
 msgstr "Pesquisar por"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/searchform.php:8
-#: F:\www\projekte\WP-Theme-Piratenkleider/searchform.php:9
+# @ piratenkleider
+#: header.php:161 header.php:162 searchform.php:6 searchform.php:7
 msgid "Suchbegriff eingeben"
 msgstr "Digite o termo a pesquisar"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/searchform.php:10
+# @ piratenkleider
+#: header.php:163 searchform.php:8
 msgid "Suchen"
 msgstr "Pesquisar"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/sidebar-teaser.php:33
+# @ piratenkleider
+#: sidebar-teaser.php:31
 msgid "Aktuelle Themen"
 msgstr "T&oacute;picos Actuais"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/sidebar.php:13
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:700
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1143
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:210
+# @ piratenkleider
+#: inc/constants.php:1511 inc/constants.php:1788 inc/widgets.php:225
+#: sidebar.php:9
 msgid "Newsletter"
 msgstr "Newsletter"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/sidebar.php:15
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:165
+# @ piratenkleider
+#: inc/widgets.php:180 sidebar.php:11
 msgid "Zum Newsletter anmelden"
 msgstr "Assina a nossa newsletter"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/sidebar.php:16
-#: F:\www\projekte\WP-Theme-Piratenkleider/sidebar.php:17
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:166
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:167
+# @ piratenkleider
+#: inc/widgets.php:181 inc/widgets.php:182 sidebar.php:12 sidebar.php:13
 msgid "E-Mail-Adresse eingeben"
-msgstr "E-mail"
+msgstr "Introduza o endere&ccedil;o de e-mail"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/sidebar.php:18
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:168
+# @ piratenkleider
+#: inc/widgets.php:183 sidebar.php:14
 msgid "anmelden"
 msgstr "Login"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/sidebar.php:19
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:169
+# @ piratenkleider
+#: inc/widgets.php:184 sidebar.php:15
 msgid "Hinweis: Beim Aufruf wird der Webauftritt verlassen."
-msgstr "Nota: Quando clicar sair&aacute; do site"
+msgstr "Nota: Sair&aacute; do site"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/sidebar.php:131
-msgid "Es konnten keine Tweets geladen werden"
-msgstr "Não podem ser carregados os tweets"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/sidebar.php:148
-msgid "Uhr"
-msgstr "Relógio"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/single.php:68
+# @ piratenkleider
+#: single.php:109
 msgid "Weitere Artikel in diesem Themenkreis:"
 msgstr "Isto tamb&eacute;m pode lhe interessar:"
 
-#: /single.php:84
+#: single.php:125
 msgid "Keine Treffer"
 msgstr "Dados indispon&iacute;veis"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/spenden.php:17
-msgid "Spenden"
-msgstr "Doar"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/spenden.php:42
+# @ piratenkleider
+#: spenden.php:65
 msgid "Per &Uuml;berweisung spenden"
 msgstr "Doa&ccedil;&atilde;o por transfer&ecirc;ncia banc&aacute;ria"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/spenden.php:47
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:824
+# @ piratenkleider
+#: spenden.php:70
 msgid "Empf&auml;nger"
 msgstr "Destinat&aacute;rio"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/spenden.php:51
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:832
+# @ piratenkleider
+#: spenden.php:74
 msgid "Kontonummer"
 msgstr "N&uacute;mero da conta"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/spenden.php:55
+# @ piratenkleider
+#: spenden.php:78
 msgid "Bankleitzahl"
-msgstr "C&oacute;digo banc&aacute;rio"
+msgstr "C&oacute;digo identifica&ccedil;&atilde;o banc&aacute;ria"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/spenden.php:59
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:850
+# @ piratenkleider
+#: spenden.php:82
 msgid "Bank"
 msgstr "Banco"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/spenden.php:63
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:858
+# @ piratenkleider
+#: spenden.php:86
 msgid "IBAN"
 msgstr "IBAN"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/spenden.php:67
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:866
+# @ piratenkleider
+#: spenden.php:90
 msgid "BIC"
 msgstr "BIC"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/spenden.php:71
+# @ piratenkleider
+#: spenden.php:94
 msgid "Verwendungszweck"
-msgstr "Prop&oacute;sito"
+msgstr "Prop&oacute;sito para a transfer&ecirc;ncia"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/spenden.php:72
+# @ piratenkleider
+#: spenden.php:95
 msgid ""
 "Spende von Name, Vorname, Anschrift (ggf. mit Zusatz \"Stichwort\" \n"
 "            und einem konkreten Verwendungszweck)"
@@ -585,295 +544,86 @@ msgstr ""
 "necess&aacute;rio com \"palavra chave\" e um prop&oacute;sito espec&iacute;"
 "fico)"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/tag.php:11
+# @ piratenkleider
+#: tag.php:25 tag.php:34
 #, php-format
 msgid "Schlagwort %s"
 msgstr "Tag %s"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/tag.php:24
-msgid "&Uuml;bersicht &uuml;ber die Schlagworte"
-msgstr "Vis&atilde;o geral das tags"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:20
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:21
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:48
+# @ piratenkleider
+#: theme-options.php:37
 msgid "Takelage einstellen"
-msgstr "Definir opções"
+msgstr "Definir plataformas"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:24
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:25
-msgid "Segel setzen"
-msgstr "Definir campanhas"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:28
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:29
+# @ piratenkleider
+#: inc/constants.php:1868
 msgid "Captn & Crew"
-msgstr "Equipa"
+msgstr "Capit&atilde;o e a Equipa"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:31
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:32
-msgid "Kl&uuml;verbaum"
-msgstr "Design"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:51
+# @ piratenkleider
+#: theme-options.php:40
 msgid "Optionen wurden gespeichert."
-msgstr "Salvar op&ccedil;$otilde;es"
+msgstr "Op&ccedil;&otilde;es gravadas com sucesso."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:188
+# @ piratenkleider
+#: theme-options.php:374
 msgid "Optionen nicht definiert"
-msgstr "As op&ccedil;&otilde;es n&atilde;o est&atilde;o definidas"
+msgstr "Op&ccedil;&otilde;es n&atilde;o definidas"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:198
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:564
+# @ piratenkleider
+#: theme-options.php:383
 msgid "Optionen speichern"
 msgstr "Salvar op&ccedil;&otilde;es"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:310
-msgid " Segel setzen: Defaultbilder "
-msgstr "Definir campanhas: Imagens default"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:313
-msgid "Defaultbilder wurden gespeichert."
-msgstr "Imagens default gravadas."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:358
-msgid "Alternatives Sliderbild als URL"
-msgstr "Alternative slider image as URL"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:361
-msgid ""
-"URL inkl. http:// zum Bild. Dieses kann auch vorher &uuml;ber den "
-"Mediendialog hochgeladen worden sein."
-msgstr ""
-"URL da imagem (incluindo http://). A imagem pode ser carregado "
-"antecipadamente utilizando o diálogo de mídia."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:363
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:394
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:453
-msgid "Die Bilder sollten folgende Dimension haben: "
-msgstr "As imagens devem ter as seguintes dimens&otilde;es:"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:388
-msgid "Alternatives Seitenbild als URL"
-msgstr "Imagem da página alternativa como URL"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:391
-msgid ""
-"URL inkl. http:// zum Bild. Dieses kann auch vorher &uuml;ber den "
-"Mediendialog hochgeladen worden sein. "
-msgstr ""
-"URL da imagem (incluindo http://). A imagem pode ser carregado "
-"antecipadamente utilizando o diálogo de mídia."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:425
-msgid ""
-" Diese Bilder werden in der Sidebar rechts gezeigt, sofern dieses &uuml;ber "
-"die Optionen (vgl. Slider) auch eingeschaltet ist."
-msgstr ""
-"Estas imagens são mostradas na barra lateral direita, se a barra lateral "
-"está habilitado no menu de opções (compare com slide)."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:428
-msgid "Optionaler Ersatztitel"
-msgstr "T&iacute;tulo alternativo opcional"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:431
-msgid "Dieser Titel wird als Alternativ-Text verwendet. "
-msgstr "Este t&iacute;tulo &eacute; usado como texto alternativo."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:432
-msgid ""
-"Solange keine Verlinkung erfolgt, ist diese Angabe optional, da die "
-"Plakatbilder dann nur \"Schmuckbilder\" sind und keinen auf die Seite "
-"bezogenen Inhalt mitliefern."
-msgstr ""
-"Enquanto nenhuma vinculação ocorre, essa informação é opcional, como as "
-"imagens do cartaz, em seguida, apenas \"imagens de jóias\" e está incluído "
-"no lado nenhum conteúdo relacionado."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:436
-msgid "Optionale URL"
-msgstr "URL Optional"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:439
-msgid ""
-"Optionale Webadresse zur Verlinkung der Plakate mit einer Informationsseite"
-msgstr ""
-"URL opcional para ligar os cartazes para uma p&aacute;gina de informa&ccedil;"
-"&otilde;es"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:445
-msgid "Eigene Plakatbilder:"
-msgstr "Imagens de cartaz próprias:"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:448
-msgid "Adressen alternativer Plakatbilder"
-msgstr "Endere&ccedil;os de imagens de posters alternativos"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:451
-msgid ""
-"Angabe der URLs inkl. http:// zum Bild. Wenn es mehrere sind, werden die "
-"einzelnen Adressen durch Zeilenumbruch getrennt. "
-msgstr ""
-"URLs para as imagens. Se existir mais do que um, por favor, divida com uma "
-"quebra de linha."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:456
-msgid ""
-"Sollen die Bilder zus&auml;tzlich mit einem eigenen Titel und einer "
-"Webadresse versehen werden werden diese Angabe durch ein \"|\" zeichen in "
-"folgender Reihenfolge getrennt: <code>Bild URL|Titel|URL Webpage</code>"
-msgstr ""
-"As imagens devem tamb&eacute;m ser equipados com um t&iacute;tulo pr&oacute;"
-"prio e um link, você pode inseri-los aqui e dividindo o URL da imagem, "
-"t&iacute;tulo e URL do site com o caracter \"| \" assim: <code>URL da "
-"imagem  | Título | Site URL</ code>"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:458
-msgid "Beispiel: "
-msgstr "Exemplo:"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:461
-msgid ""
-"Wenn oben Defaultplakate angeklickt sind, erscheinen diese Bilder zus&auml;"
-"tzlich. Diese Bilder k&ouml;nnen auch vorher &uuml;ber den Mediendialog "
-"hochgeladen worden sein."
-msgstr ""
-"Se os posters default forem activados acima, estas imagens apareceram em "
-"adi&ccedil;&atilde;"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:469
-msgid "Symbolbild f&uuml;r 404 Seite"
-msgstr "Imagem simb&oacute;lica para a p&aacute;gina de 404"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:473
-msgid "URL f&uuml;r ein eigenes 404-Seitenbild."
-msgstr "URL para uma imagem para a p&atide;gina de 404"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:475
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:488
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:501
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:514
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:527
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:540
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:553
-msgid "Default:"
-msgstr "Default:"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:482
-msgid "Symbolbild f&uuml;r Kategorie Seite"
-msgstr "Imagem simb&oacute;lica para as páginas de categorias"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:486
-msgid "URL f&uuml;r ein eigenes Kategorien-Seitenbild."
-msgstr "URL para uma imagem para a página de categorias."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:495
-msgid "Symbolbild f&uuml;r Tag Seite"
-msgstr "Imagem simb&oacute;lica para as p&aacute;ginas de tags"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:499
-msgid "URL f&uuml;r ein eigenes Tag-Seitenbild."
-msgstr "URL para uma imagem para a p&aacute;gina de tags."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:508
-msgid "Symbolbild f&uuml;r Autoren Seite"
-msgstr "Imagem simb&oacute;lica para as p&aacute;ginas de autores"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:512
-msgid "URL f&uuml;r ein eigenes Autoren-Seitenbild."
-msgstr "URL da imagem para a p&aacute;gina dos autores."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:521
-msgid "Symbolbild f&uuml;r Archiv Seite"
-msgstr "Imagem simb&oacute;lica para as p&aacute;ginas de arquivo"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:525
-msgid "URL f&uuml;r ein eigenes Archiv-Seitenbild."
-msgstr "URL da imagem para a p&aacute;gina de arquivos."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:534
-msgid "Symbolbild f&uuml;r Suchergebnis-Seite"
-msgstr ""
-"Imagem simb&oacute;lica para as p&aacute;ginas de resultados de pesquisa"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:538
-msgid "URL f&uuml;r ein eigenes Suchergebnis-Seitenbild."
-msgstr "URL para uma imagem da página de resultados de pesquisa."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:547
-msgid "Symbolbild f&uuml;r Template-Seiten"
-msgstr "Imagem simbólica para páginas do template"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:551
-msgid "URL f&uuml;r ein Template-Seitenbild."
-msgstr "URL para uma imagem da página do template."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:644
-msgid " Captn & Crew: Kontaktinformationen setzen "
-msgstr "Equipa: Defeni&ccedil;&otilde;es de contacto"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:647
-msgid "Kontaktinformationen wurden gespeichert."
-msgstr "Contactos gravados."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:660
+# @ piratenkleider
+#: inc/constants.php:1872
 msgid "Impressumsangaben"
 msgstr "Detalhes legais"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:663
+# @ piratenkleider
+#: inc/constants.php:1876
 msgid "Verantwortliche/r"
 msgstr "Pessoa respons&aacute;vel"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:667
+# @ piratenkleider
+#: inc/constants.php:1877
 msgid ""
 "Verantwortliche/r gem&auml;&szlig; &sect; 5 TMG. <br>Zum Beispiel: "
 "<code>Martin Mustermann</code>"
 msgstr ""
-"Responsável de acordo com o &sect; 5 TMG. <br> Por exemplo: <code> A. N. "
-"Outros </ code>"
+"Respons&aacute;vel de acordo com o &sect; 5 TMG. <br> Por exemplo: <code> A. "
+"N. Outros </ code>"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:672
-msgid "Textbezeichnung Dienstanbieter"
-msgstr "Denomina&ccedil;&atilde;o do prestador de servi&ccedil;os"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:676
+# @ piratenkleider
+#: inc/constants.php:1884
 msgid "Textbezeichnung des Dienstanbieter des Webauftritts."
 msgstr "Denomina&ccedil;&atilde;o do prestador de servi&ccedil;os do site."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:677
-msgid ""
-"Beispiel: <code>Kreisverband Musterstadt der Piratenpartei Deutschland "
-"vertreten durch den Vorstand Martin Mustermann, Doris Fischer und Florian "
-"Meister.</code>"
-msgstr ""
-"Exemplo:  <code>Sec&ccedil;&atilde;o local do Partido Pirata na Cidade. "
-"Contatos responsáveis ​​são Vorstand Martin Mustermann, Doris Fischer e "
-"Florian Meister. </ Code>"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:685
+# @ piratenkleider
+#: inc/constants.php:1923
 msgid "Offizielle Postanschrift"
 msgstr "Endere&ccedil;o postal oficial"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:689
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:735
+# @ piratenkleider
+#: inc/constants.php:1928 inc/constants.php:1961
 msgid "Name oder Titel"
 msgstr "Nome ou t&iacute;tulo"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:693
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:739
+# @ piratenkleider
+#: inc/constants.php:1929 inc/constants.php:1962
 msgid ""
 "Anschrift: Titel (1. Zeile). <br>Zum Beispiel: <code>Piratenpartei</code>"
 msgstr ""
-"Endereço: Título (1 ª linha). <br> Por exemplo: <code>Partido Pirata</ code>"
+"Endere&ccedil;o: T&iacute;tulo (1. linha). <br> Por exemplo: <code>Partido "
+"Pirata</code>"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:698
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:744
+# @ piratenkleider
+#: inc/constants.php:1935 inc/constants.php:1968
 msgid "zu H&auml;nden"
 msgstr "&aacute; aten&ccedil;&atilde;o do"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:702
+# @ piratenkleider
+#: inc/constants.php:1936 inc/constants.php:1969
 msgid ""
 "Anschrift: Optionale Personenangabe (\"zu H&auml;nden\") <br>Zum Beispiel: "
 "<code>Martin Mustermann</code>"
@@ -881,93 +631,59 @@ msgstr ""
 "Endere&ccedil;o: dados pessoais opcionais (\"&aacute; aten&ccedil;&atilde;o "
 "do\")."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:707
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:753
+# @ piratenkleider
+#: inc/constants.php:1942 inc/constants.php:1975
 msgid "Strasse oder Postfach"
 msgstr "Rua ou caixa postal"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:711
+# @ piratenkleider
+#: inc/constants.php:1943 inc/constants.php:1976
 msgid ""
 "Anschrift: Strassenname und Nummer oder Postfachangabe oder freilassen "
 "<br>Zum Beispiel: <code>Unbesonnenheitsweg 123b</code>"
 msgstr "Endere&ccedil;o: nome da rua e n&uacute;mero ou caixa postal ou vazio."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:716
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:762
+# @ piratenkleider
+#: inc/constants.php:1949 inc/constants.php:1982
 msgid "PLZ und Stadt"
 msgstr "C&oacute;digo postal e cidade"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:720
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:766
+# @ piratenkleider
+#: inc/constants.php:1950 inc/constants.php:1983
 msgid ""
 "Anschrift: Postleitzahl gefolgt von Stadt<br>Zum Beispiel: <code>12345  Ankh-"
 "Morpork</code>"
 msgstr "Endere&ccedil;o: C&oacute;digo postal e cidade"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:730
+# @ piratenkleider
+#: inc/constants.php:1957
 msgid "Ladungsf&auml;hige Anschrift"
 msgstr "Endere&ccedil;o em ou ao qual podem ser notificados"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:733
-msgid ""
-"Optionale Angaben f&uuml;r Rechtssachen. Werden diese Angaben frei gelassen, "
-"werden die Daten der Postanschrift verwendet."
-msgstr ""
-"Informa&ccedil;&atilde;o opcional sobre detalhes legais. Se n&atilde;o "
-"preencher, as entradas de informações postais são utilizados."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:748
-msgid ""
-" Anschrift: Optionale Personenangabe (\"zu H&auml;nden\"). Sollte in der "
-"Regel dieselbe Person sein, die oben als verantwortliche Person f&uuml;r das "
-"Impressum definiert ist.<br> Zum Beispiel: <code>Martin Mustermann</code>"
-msgstr ""
-"Endere&ccedil;o: dados pessoais opcionais (\"&aacute; aten&ccedil;&atilde;o "
-"do\"). Geralmente deve ser a mesma pessoa, definidos como pessoa "
-"respons&aacute;vel."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:757
-msgid ""
-" Anschrift: Strassenname und Nummer oder Postfachangabe oder freilassen "
-"<br>Zum Beispiel: <code>Unbesonnenheitsweg 123b</code>"
-msgstr ""
-"Endere&ccedil;o: dados pessoais opcionais (\"&aacute; aten&ccedil;&atilde;o "
-"do\"). "
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:774
+# @ piratenkleider
+#: inc/constants.php:1889
 msgid "Offizielle E-Mailadresse"
-msgstr "E-mail oficial"
+msgstr "Endere&ccedil;o de e-mail oficial"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:778
-msgid "Feste Mailadresse f&uuml;r offizielle Kontakte.<br>Zum Beispiel: "
-msgstr ""
-"Endere&ccedil;o de e-mail constante para contacto oficial <br> Por exemplo:"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:784
+# @ piratenkleider
+#: inc/constants.php:1992
 msgid "Datenschutzbeauftragter"
 msgstr "Comiss&aacute;rio de protec&ccedil;&atilde;o de dados"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:787
-msgid ""
-"Optionale Angaben zu einem Datenschutzbeauftragten. Wenn dieser nicht "
-"angegeben wird, wird die E-Mail-Adresse des Bundesdatenschutzbeauftragten "
-"angegeben."
-msgstr ""
-"Informa&ccedil;&atilde;o opcional sobre um comiss&aacute;rio de "
-"seguran&ccedil;a de dados. Se n&atilde;o entrou, endere&ccedil;o de e-mail "
-"federal de seguran&ccedil;a de dados comiss&aacute;rio ser&aacute; mostrado."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:794
+# @ piratenkleider
+#: inc/constants.php:1997
 msgid "Name des DSB<br>Zum Beispiel: <code>Martin Mustermann</code>"
 msgstr ""
-"Nome do comiss&aacute;rio de seguran&ccedil;a de dados <br> Por exemplo: "
+"Nome do comiss&aacute;rio da seguran&ccedil;a dos dados <br> Por exemplo: "
 "<code> A. N. Outros </ code>"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:799
+# @ piratenkleider
+#: inc/constants.php:2003
 msgid "E-Mailadresse"
-msgstr "E-mail"
+msgstr "Endere&ccedil;o de e-mail"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:803
+# @ piratenkleider
+#: inc/constants.php:2004
 msgid ""
 "Feste Mailadresse f&uuml;r offizielle Kontakte.<br>Zum Beispiel:  "
 "<code>bundesbeauftragter@piraten-dsb.de</code>"
@@ -975,161 +691,99 @@ msgstr ""
 "Endere&ccedil;o de e-mail constante para contacto oficial <br/> Por exemplo: "
 "<code>Data-security-commissioner@pirate-party.co.uk</code>"
 
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/theme-options.php:828
+# @ piratenkleider
+#: inc/constants.php:1916
 msgid "Urheberrecht"
 msgstr "Copyright"
 
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/theme-options.php:830
+# @ piratenkleider
+#: inc/constants.php:1917
 msgid ""
 "Zus&auml;tzliche Angaben f&uuml;r den Abschnitt \"Verwendete Werke und "
 "Lizenzen innerhalb dieses Webauftritts\""
-msgstr "Informa&ccedil;&#245;es Adicionais"
+msgstr "Informa&ccedil;&otilde;es Adicionais"
 
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/theme-options.php:835
-msgid "Eine Angabe pro Zeile! "
-msgstr "Uma entrada por linha"
-
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/theme-options.php:841
-msgid "Spendenformulare"
-msgstr "Formulários de doa&ccedil;&otilde;es"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:815
-msgid ""
-"Optionale Angaben f&uuml;r Spendenformulare, die mit dem Seiten-Template "
-"\"Spenden\" erstellt werden."
-msgstr ""
-"Informa&ccedil;&atilde;o opcional para os formul&aacute;rios de doação "
-"criados com o modelo de página \"Doe\"."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:817
-msgid ""
-"<strong>Achtung:</strong> Dies ersetzt nicht das richtige Eingabeformular. "
-"Das Formular wird z.B. mit dem Plugin <em>Contact Form 7</em> erstellt und "
-"dann als Makro in den Textbereich der Seite hinzugef&uuml;gt."
-msgstr ""
-"<strong>Aten&ccedil;&atilde;o:</ strong> Isto n&atilde;o substitui a forma "
-"real. O formul&aacute;rio ser&aacute; criado por um plugin como <em>Contact "
-"Form 7</em>."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:819
-msgid ""
-"Die folgenden Daten werden nur dazu verwendet, die Tabelle f&uuml;r die  "
-"feststehenden Informationen aufzubauen."
-msgstr ""
-"As informa&ccedil;&otilde;es a seguir s&atilde;o usados ​​para gerar uma "
-"tabela na p&aacute;gina de destino."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:828
-msgid ""
-"Name des Empf&auml;ngers/Konto der Spenden f&uuml;r &Uuml;berweisungen. "
-msgstr ""
-"Nome do destinat&aacute;rio / doa&ccedil;&atilde;o conta para as "
-"transfer&ecirce;ncias banc&aacute;rias."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:836
-msgid "Kontonummer des Empf&auml;ngers"
-msgstr "Destinatários número de conta bancária"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:841
-msgid "BLZ"
-msgstr "N&uacute;mero de identifica&ccedil;&atilde;o banc&aacute;ria"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:845
-msgid "Die Bankleitzahl."
-msgstr "O N&uacute;mero de identifica&ccedil;&atilde;o banc&aacute;ria"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:854
-msgid "Ausgeschriebener Name der Bank"
-msgstr "Nome do banco completo"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:862
-msgid "Internationale Bank Account Nummer"
-msgstr ""
-"N&uacute;mero de identifica&ccedil;&atilde;o banc&aacute;ria internacional"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:870
-msgid "Business Identifier Code"
-msgstr "C&oacute;digo Identificador neg&oacute;cio"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:880
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:1114
-msgid "Speichern"
-msgstr "Salvar"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:925
-msgid " Kl&uuml;verbaum: Erweiterte Designeinstellungen "
-msgstr " Configura&ccedil;&otilde;es avan&ccedil;adas de design"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:928
-msgid "Designeinstellungen wurden gespeichert."
-msgstr "Configura&ccdeil;&otilde;es de design gravadas."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:947
-msgid ""
-"<b>Achtung:</b><br> Diese Einstellungen sollten nur in Ausnahmef&auml;llen "
-"ge&auml;ndert werden. <br>Bei einer falschen Nutzung k&ouml;nnen Eingaben "
-"die Gestaltung des Webauftritts sch&auml;digen."
-msgstr ""
-"<b> Aten&ccedil;&atilde;o: </ b> Essas configura&ccedil;&otilde;es s&oacute; "
-"devem ser alteradas em casos excepcionais. Quando alteradas de forma errada, "
-"as mesmas podem estragar o site."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:950
+# @ piratenkleider
+#: inc/constants.php:1693
 msgid "L&auml;nderfarbe aktivieren"
 msgstr "Alterar as cores conforme o pa&iacute;s"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:955
+# @ piratenkleider
+#: inc/constants.php:380
 msgid "Deutschland (Orange)"
 msgstr "Alemanha (Laranja)"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:956
+# @ piratenkleider
+#: inc/constants.php:381
 msgid "&Ouml;sterreich (Violett)"
 msgstr "&Aacute;ustria (Violeta)"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:957
+# @ piratenkleider
+#: inc/constants.php:382
 msgid "Luxemburg (Violett)"
 msgstr "Luxemburgo (Violeta)"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:958
-msgid "T&uuml;rkei (Cyan)"
-msgstr "Turkia (Turquesa)"
+# @ piratenkleider
+#: inc/constants.php:383
+#, fuzzy
+msgid "Ungarn (Violett)"
+msgstr "Luxemburgo (Violeta)"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:958
+# @ piratenkleider
+#: inc/constants.php:384
+msgid "T&uuml;rkei (Cyan)"
+msgstr "Turquia (Turquesa)"
+
+# @ piratenkleider
+#: inc/constants.php:385
+msgid "USA (Lila)"
+msgstr "USA (lila)"
+
+# @ piratenkleider
+#: theme-options.php:386
 msgid "Portugal (Green)"
 msgstr "Portugal (Verde)"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:962
+# @ piratenkleider
+#: inc/constants.php:1694
 msgid "Auswahl, welche l&auml;nderbezogene Farbvariante aktiviert werden soll."
 msgstr ""
 "Selec&ccedil;&atilde;o que pa&iacute;s variante de cor espec&iacute;fica "
 "deve ser activado."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:968
+# @ piratenkleider
+#: inc/constants.php:1700
 msgid "Stil der Schriftart &auml;ndern"
-msgstr "Mudar o estilo da fonte"
+msgstr "Mudar fonte"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:972
+# @ piratenkleider
+#: inc/constants.php:393
 msgid "Bebas Neue"
 msgstr "Bebas Neue"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:973
+# @ piratenkleider
+#: inc/constants.php:394
 msgid "Droid Sans"
 msgstr "Droid Sans"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:974
+# @ piratenkleider
+#: inc/constants.php:397
 msgid "Helvetica, Arial, sans-serif"
 msgstr "Helvetica, Arial, sans-serif"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:978
+# @ piratenkleider
+#: inc/constants.php:1701
 msgid ""
 "Auswahl, welcher Schriftstil f&uuml;r die Website verwendet werden soll."
 msgstr "Selecione o estilo da fonte para o local a ser utilizado."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:985
+# @ piratenkleider
+#: inc/constants.php:1707
 msgid "Small Screen Device Sichtbarkeit"
 msgstr "Visibilidade dispositivo de ecr&atilde; pequeno"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:989
+# @ piratenkleider
+#: inc/constants.php:1708
 msgid ""
 "F&uuml;r kleine Bildschirmaufl&ouml;sungen auch optionale Teile (Sticker, "
 "Slider) anzeigen."
@@ -1137,104 +791,20 @@ msgstr ""
 "Mostrar em resolu&ccedil;&otilde;es de ecrans pequenas as pe&ccedil;as "
 "opcionais (Etiquetas, slider)."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:994
+# @ piratenkleider
+#: inc/constants.php:1723
 msgid "H&ouml;he des Kopfbereiches ( .header )"
 msgstr "Altura do cabe&ccedil;alho ( .header )"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:1001
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:1016
-msgid "Vorgabe: "
-msgstr "Default;"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:1002
-msgid ""
-"Wenn dieser Wert sich von der Defaulteinstellung aus der CSS Datei "
-"piratenkleider.css (Zeile 1926) unterscheidet, wird er &uuml;ber ein Inline-"
-"CSS nachtr&auml;glich im Kopfteil des HTML-Documents ge&auml;ndert."
-msgstr ""
-"Se esta for diferente das configura&ccedil;&otilde;es padr&atilde;o, ele "
-"ser&aacute; definido como inline CSS no cabe&ccedil;alho do site."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:1004
-msgid ""
-"<b>Achtung:</b> Die Verkleinerung der H&ouml;he des Kopfteils ist nicht "
-"ungef&auml;hrlich. Zu beachten ist, dass der Kopfteil auch bei einer "
-"Vergr&ouml;&szlig;erung des Textes auf 200% noch gen&uuml;gend Platz haben "
-"muss!"
-msgstr ""
-"<b>Aviso:</b> Para definir uma altura menor pode ter efeitos ruins na "
-"apresentação no browser com um tamanho de texto grande."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:1008
+# @ piratenkleider
+#: inc/constants.php:1729
 msgid "Abstand des Brandingbereiches (=Logo) nach oben ( .header .branding )"
 msgstr ""
 "Espa&ccedil;amento entre a &aacute;rea de branding (logotipo =) e superior "
 "(. cabe&ccedil;alho. branding)"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:1015
-msgid ""
-"Das Logo hat einen Abstand nach oben. Diese kann &uuml;ber diese Angabe "
-"reduziert werden. "
-msgstr ""
-"O logotipo tem uma margem para o topo. Isto pode ser reduzida com esta "
-"declara&ccedil;&atilde;o."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:1019
-msgid ""
-"<b>Achtung:</b> Wenn Socialmedia-Icons und Linkmenu oben auch erscheinen, "
-"sollte dieser Abstand nicht zu klein sein, da diese Icons und  der Text der "
-"Links bei steigender Gr&ouml;&szlig;e nach Links zum Logo wandert und es so "
-"zu &Uuml;berlapplungen kommen k&ouml;nnte."
-msgstr ""
-"<b>Aten&ccedil;&atilde;o:</b> Se os &iacute;cones de m&iacute;dias sociais e "
-"no menu link tamb&eacute;m aparecem no topo esta margem n&atilde;o deve ser "
-"muito pequena, por estes &iacute;cones e texto do link."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:1025
-msgid "Hintergrund-Einstellungen im Kopfteil ( .header )"
-msgstr "Defini&ccedil;&otilde;es de background do cabe&ccedil;alho (.header)"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:1029
-msgid "background-color"
-msgstr "background-color"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:1036
-msgid "Wenn gesetzt, &auml;ndert die Default-Hintergrundfarbe ab."
-msgstr "Muda a cor de fundo padr&atilde;o, se existir."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:1041
-msgid "background-image"
-msgstr "background-image"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:1048
-msgid "Wenn gesetzt, &auml;ndert  das Hintergrundbild."
-msgstr "Altera&ccedil;&otilde;es imagem de fundo, se existir."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:1054
-msgid "background-position"
-msgstr "background-position"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:1061
-msgid "Wenn gesetzt, &auml;ndert die Position des Hintergrundbildes."
-msgstr ""
-"Altera&ccedil;&otilde;es posi&ccedil;&atilde;o da imagem de fundo, se "
-"existir."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:1067
-msgid "background-repeat"
-msgstr "background-repeat"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:1074
-msgid "Wenn gesetzt, &auml;ndert die Repeat-Eigenschaft des Hintergrundbildes."
-msgstr ""
-"Altera&ccedil;&otilde;es repetir o comportamento de imagem de fundo se "
-"existir."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:1086
-msgid "Eigene CSS-Anweisungen"
-msgstr "C&oacute;digo CSS pr&oacute;prio"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:1093
+# @ piratenkleider
+#: inc/constants.php:1737
 msgid ""
 "Eigene CSS-Anweisungen, die Inline im Kopfteil der Dokumente erg&auml;nzt "
 "werden"
@@ -1242,697 +812,1182 @@ msgstr ""
 "C&oacute;digo CSS pr&oacute;prio, que ser&aacute; alterada em linha no "
 "cabe&ccedil;alho do documento"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:1098
-msgid "Eigene HTML-Anweisungen"
-msgstr "C&oacute;digo HTML pr&oacute;prio"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:1105
-msgid ""
-"Eigene HTML-Anweisungen, die am Ende der Webseite, vor dem letzten &lt;/"
-"body&Gt;&lt;/html&gt; plaziert werden"
-msgstr ""
-"C&oacute;digo HTML pr&oacuteprio, que ser&aacute alterada no final da página "
-"web (antes do último &lt;/body&Gt;&lt;/html&gt;)."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/theme-options.php:1106
-msgid ""
-"<b>Achtung:</b> Fehlerhafter HTML-, JavaScript oder CSS-Code an dieser "
-"Stelle kann zu einem Nicht-Funktionieren der gesamt Website f&uuml;hren!<br /"
-">Der hier eingegebene Code wird nicht gefiltert oder kontrolliert."
-msgstr ""
-"<b>Aten&ccedil;&atilde;o:</b> HTML incorreto, c&oacute;digo JavaScript ou "
-"CSS neste momento poderia danificar o site."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/events/ecp-single-template.php:52
-msgid "Edit"
-msgstr "Editar"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:67
+# @ piratenkleider
+#: inc/constants.php:121
 msgid "Topthema"
 msgstr "Destaque"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:74
+# @ piratenkleider
+#: inc/constants.php:143
+#, fuzzy
 msgid ""
-"Deine E-Mail-Adresse wird nicht veröffentlicht. Erforderliche Felder sind "
-"markiert <span class=\"required\">*</span>"
+"Deine E-Mail-Adresse wird nicht ver&ouml;ffentlicht. Erforderliche Felder "
+"sind markiert <span class=\"required\">*</span>"
 msgstr ""
-"O seu endereço de email n&atilde;o ser&aacute; publicado. Campos "
+"O seu endere&ccedil;o de email n&atilde;o ser&aacute; publicado. Campos "
 "obrigat&oacute;rios s&ailde;o marcados com <span class=\"required\">*</span>"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:79
+# @ piratenkleider
+#: inc/constants.php:148
 msgid "Informiere dich"
 msgstr "Informa-te"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:80
+# @ piratenkleider
+#: inc/constants.php:149
 msgid "&uuml;ber unsere Themen &amp; Ziele!"
 msgstr "Sobre os nossos temas e objectivos!"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:84
+# @ piratenkleider
+#: inc/constants.php:153
 msgid "Unterst&uuml;tze uns"
 msgstr "Apoia-nos"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:85
+# @ piratenkleider
+#: inc/constants.php:154
 msgid "mit deinem Engagement!"
 msgstr "com o teu compromisso!"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:89
+# @ piratenkleider
+#: inc/constants.php:158
 msgid "Werde Pirat!"
 msgstr "Torna-te um pirata!"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:90
+# @ piratenkleider
+#: inc/constants.php:159
 msgid "jetzt Mitglied werden!"
 msgstr "Torna-te membro!"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:112
+# @ piratenkleider
+#: inc/constants.php:272
 msgid "Plakat Grundgesetz"
 msgstr "Poster Lei Fundamental"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:116
+# @ piratenkleider
+#: inc/constants.php:276
 msgid "Medien"
 msgstr "m&iacute;dia"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:120
+# @ piratenkleider
+#: inc/constants.php:280
 msgid "Mitmachen"
-msgstr "Junte-se"
+msgstr "Participa"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:124
+# @ piratenkleider
+#: inc/constants.php:284
 msgid "Piraten"
 msgstr "Piratas"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:128
+# @ piratenkleider
+#: inc/constants.php:288
 msgid "Plakate"
 msgstr "Posters"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:132
+# @ piratenkleider
+#: inc/constants.php:292
 msgid "Presse"
 msgstr "Imprensa"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:136
+# @ piratenkleider
+#: inc/constants.php:296
 msgid "Protest"
 msgstr "Protesto"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:140
+# @ piratenkleider
+#: inc/constants.php:300
 msgid "Datenschutz"
 msgstr "Pol&iacute;tica de Privacidade"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:144
+# @ piratenkleider
+#: inc/constants.php:304
 msgid "Aufzeichnung"
 msgstr "Grava&ccedil;&atilde;o"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:148
+# @ piratenkleider
+#: inc/constants.php:308
 msgid "Kampagne"
-msgstr "Campanha"
+msgstr "Action"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:152
+# @ piratenkleider
+#: inc/constants.php:312
 msgid "Kirche"
-msgstr "Igreja"
+msgstr "Religion"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:162
-msgid "Plakat LTWNRW12 A01"
-msgstr "Cartaz LTWNRW12 A01"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:166
-msgid "Plakat LTWNRW12_Plakat_B03"
-msgstr "Cartaz LTWNRW12_Plakat_B03"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:170
-msgid "Plakat LTWNRW12_Plakat_C01"
-msgstr "Cartaz LTWNRW12_Plakat_C01"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:174
-msgid "Plakat LTWNRW12_Plakat_D01"
-msgstr "Cartaz LTWNRW12_Plakat_D01"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:178
-msgid "Plakat LTWNRW12_Plakat_E01"
-msgstr "Cartaz LTWNRW12_Plakat_E01"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:182
-msgid "Plakat LTWNRW12_Plakat_F03"
-msgstr "Cartaz LTWNRW12_Plakat_F03"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:186
-msgid "Plakat LTWSH12_Echte-Mitbestimmung"
-msgstr "Cartaz LTWSH12_Echte-Mitbestimmung"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:190
-msgid "Plakat LTWSH12_Fehmarnbelt"
-msgstr "Cartaz LTWSH12_Fehmarnbelt"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:194
-msgid "Plakat LTWSH12_Freies-Wissen"
-msgstr "Cartaz LTWSH12_Freies-Wissen"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:198
-msgid "Plakat LTWSH12_Ich-will-so-leben"
-msgstr "Cartaz LTWSH12_Ich-will-so-leben"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:202
-msgid "Plakat LTWSH12_Inseln-allgemein"
-msgstr "Cartaz LTWSH12_Inseln-allgemein"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:206
-msgid "Plakat LTWSH12_Naechster-Halt"
-msgstr "Cartaz LTWSH12_Naechster-Halt"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:210
-msgid "Plakat LTWSH12_Orange_isst_gesund"
-msgstr "Cartaz LTWSH12_Orange_isst_gesund"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:214
-msgid "Plakat LTWSH12_Transparenz"
-msgstr "Cartaz LTWSH12_Transparenz"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:218
-msgid "Plakat LTWSH12_Trau-keinem-Plakat"
-msgstr "Cartaz LTWSH12_Trau-keinem-Plakat"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:222
-msgid "Plakat LTWSH12_Warum_haenge_ich_hier"
-msgstr "Cartaz LTWSH12_Warum_haenge_ich_hier"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:226
-msgid "Plakat LTWSH12_Wir_sind_Romantiker"
-msgstr "Cartaz LTWSH12_Wir_sind_Romantiker"
-
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:244
-msgid "Plakat LTWNDS13 \"Zarteste Versuchung\""
-msgstr ""
-
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:248
-msgid "Plakat LTWNDS13 \"Ich w&auml;hle es\""
-msgstr ""
-
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:252
-msgid "Plakat LTWNDS13 \"Der Slogan\""
-msgstr ""
-
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:256
-msgid "Plakat LTWNDS13 \"Entdecke dein Wahllokal\""
-msgstr ""
-
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:260
-msgid "Plakat LTWNDS13 \"Rettet die Wahlen\""
-msgstr ""
-
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:264
+# @ piratenkleider
+#: inc/constants.php:316
 #, fuzzy
-msgid "Plakat LTWNDS13 \"Ich will so leben, wie ich bin\""
-msgstr "Plakat LTWSH12_Ich-will-so-leben"
+msgid "Wiederstand"
+msgstr "Netherlands"
 
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:268
-msgid "Plakat LTWNDS13 \"B&uuml;rger w&uuml;rden w&auml;hlen gehen\""
-msgstr ""
-
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:272
-msgid "Plakat LTWNDS13 \"W&auml;hlen was verbindet\""
-msgstr ""
-
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:276
-msgid "Plakat LTWNDS13 \"W&auml;hlen ist geil\""
-msgstr ""
-
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:280
-msgid "Plakat LTWNDS13 \"Think different\""
-msgstr ""
-
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:284
-msgid "Plakat LTWNDS13 \"Alles andere ist Werbung\""
-msgstr ""
-
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:288
+# @ piratenkleider
+#: inc/constants.php:320
 #, fuzzy
-msgid "Plakat LTWNDS13 \"Vertrau keinem Plakat\""
-msgstr "Plakat LTWSH12_Trau-keinem-Plakat"
+msgid "Licht"
+msgstr "Direction"
 
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:296
+# @ piratenkleider
+#: inc/constants.php:324
+msgid "Laptop"
+msgstr "Laptop"
+
+# @ piratenkleider
+#: inc/constants.php:328
+msgid "Netzwerk / Server"
+msgstr "Network"
+
+# @ piratenkleider
+#: inc/constants.php:332
+#, fuzzy
+msgid "Piraten 2"
+msgstr "Pirates"
+
+# @ piratenkleider
+#: inc/constants.php:336
+#, fuzzy
+msgid "Piraten 3"
+msgstr "Pirates"
+
+# @ piratenkleider
+#: inc/constants.php:340
+#, fuzzy
+msgid "Piratenfahne"
+msgstr "Pirates"
+
+# @ piratenkleider
+#: inc/constants.php:344
+msgid "Server 1"
+msgstr "Server 1"
+
+# @ piratenkleider
+#: inc/constants.php:348
+msgid "Server 2"
+msgstr "Server 2"
+
+# @ piratenkleider
+#: inc/constants.php:360
+#, fuzzy
+msgid "Default"
+msgstr "Default:"
+
+# @ piratenkleider
+#: inc/constants.php:369
 msgid "Wiki"
 msgstr "Wiki"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:235
+# @ piratenkleider
+#: inc/constants.php:370
 msgid "Liquid Feedback"
 msgstr "Liquid Feedback"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:236
+# @ piratenkleider
+#: inc/constants.php:371
 msgid "Forum"
 msgstr "F&oacute;rum"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:237
+# @ piratenkleider
+#: inc/constants.php:372
 msgid "Flaschenpost"
 msgstr "Not&iacute;cias"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:246
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:279
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:331
+# @ piratenkleider
+#: inc/constants.php:415 inc/constants.php:448 inc/constants.php:505
 msgid "Deutschland"
 msgstr "Alemanha"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:247
+# @ piratenkleider
+#: inc/constants.php:416
 msgid "Piratenpartei Deutschland"
 msgstr "Partido Pirata Alem&atilde;o"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:250
+# @ piratenkleider
+#: inc/constants.php:419
 msgid "Baden-W&uuml;rttemberg"
-msgstr "Baden-W&uuml;rttemberg"
+msgstr "Baden-Wuerthemberg"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:251
+# @ piratenkleider
+#: inc/constants.php:420
 msgid "Bayern"
 msgstr "Bayern"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:252
+# @ piratenkleider
+#: inc/constants.php:421
 msgid "Berlin"
 msgstr "Berlim"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:253
+# @ piratenkleider
+#: inc/constants.php:422
 msgid "Brandenburg"
 msgstr "Brandenburg"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:254
+# @ piratenkleider
+#: inc/constants.php:423
 msgid "Bremen"
 msgstr "Bremen"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:255
+# @ piratenkleider
+#: inc/constants.php:424
 msgid "Hamburg"
 msgstr "Hamburgo"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:256
+# @ piratenkleider
+#: inc/constants.php:425
 msgid "Hessen"
 msgstr "Hesse"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:257
+# @ piratenkleider
+#: inc/constants.php:426
 msgid "Mecklenburg-Vorpommern"
 msgstr "Mecklenburg-Vorpommern"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:258
+# @ piratenkleider
+#: inc/constants.php:427
 msgid "Niedersachsen"
 msgstr "Niedersachsen"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:259
+# @ piratenkleider
+#: inc/constants.php:428
 msgid "Nordrhein-Westfalen"
 msgstr "Nordrhein-Westfalen"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:260
+# @ piratenkleider
+#: inc/constants.php:429
 msgid "Rheinland-Pfalz"
 msgstr "Rheinland-Pfalz"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:261
+# @ piratenkleider
+#: inc/constants.php:430
 msgid "Saarland"
 msgstr "Saarland"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:262
+# @ piratenkleider
+#: inc/constants.php:431
 msgid "Sachsen"
 msgstr "Sachsen"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:263
+# @ piratenkleider
+#: inc/constants.php:432
 msgid "Sachsen-Anhalt"
 msgstr "Sachsen-Anhalt"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:264
+# @ piratenkleider
+#: inc/constants.php:433
 msgid "Schleswig-Holstein"
 msgstr "Schleswig-Holstein"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:265
+# @ piratenkleider
+#: inc/constants.php:434
 msgid "Th&uuml;ringen"
 msgstr "Tur&iacute;ngia"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:268
+# @ piratenkleider
+#: inc/constants.php:437
 msgid "International"
 msgstr "Internacional"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:269
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:321
+# @ piratenkleider
+#: inc/constants.php:438 inc/constants.php:495
 msgid "Piratenparteien International"
 msgstr "Partido Pirata Internacional"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:272
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:324
+# @ piratenkleider
+#: inc/constants.php:441 inc/constants.php:498
 msgid "Argentinien"
 msgstr "Argentina"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:273
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:325
+# @ piratenkleider
+#: inc/constants.php:442 inc/constants.php:499
 msgid "Australien"
 msgstr "Austr&aacute;lia"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:274
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:326
+# @ piratenkleider
+#: inc/constants.php:443 inc/constants.php:500
 msgid "Belgien"
 msgstr "B&eacute;lgica"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:275
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:327
+# @ piratenkleider
+#: inc/constants.php:444 inc/constants.php:501
 msgid "Brasilien"
 msgstr "Brasil"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:276
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:328
+# @ piratenkleider
+#: inc/constants.php:445 inc/constants.php:502
 msgid "Bulgarien"
 msgstr "Bulg&aacute;ria"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:277
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:329
+# @ piratenkleider
+#: inc/constants.php:446 inc/constants.php:503
 msgid "Chile"
 msgstr "Chile"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:278
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:330
+# @ piratenkleider
+#: inc/constants.php:447 inc/constants.php:504
 msgid "D&auml;nemark"
 msgstr "Dinamarca"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:281
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:333
-msgid "Finnland"
-msgstr "Finl&acirce;ndia"
+# @ piratenkleider
+#: inc/constants.php:449 inc/constants.php:506
+#, fuzzy
+msgid "Estland"
+msgstr "Est&ocirc;nia"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:282
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:334
+# @ piratenkleider
+#: inc/constants.php:450 inc/constants.php:507
+msgid "Finnland"
+msgstr "Finl&acirc;ndia"
+
+# @ piratenkleider
+#: inc/constants.php:451 inc/constants.php:508
 msgid "Frankreich"
 msgstr "Fran&ccedil;a"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:283
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:335
+# @ piratenkleider
+#: inc/constants.php:452 inc/constants.php:509
 msgid "Griechenland"
 msgstr "Gr&eacute;cia"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:284
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:336
+# @ piratenkleider
+#: inc/constants.php:453 inc/constants.php:510
 msgid "Guatemala"
 msgstr "Guatemala"
 
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:346
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:401
+# @ piratenkleider
+#: inc/constants.php:454 inc/constants.php:511
 #, fuzzy
 msgid "Island"
-msgstr "Russia"
+msgstr "Isl&acirc;ndia"
 
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:347
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:402
+# @ piratenkleider
+#: inc/constants.php:455 inc/constants.php:512
 msgid "Israel"
-msgstr ""
+msgstr "Israel"
 
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:348
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:403
+# @ piratenkleider
+#: inc/constants.php:456 inc/constants.php:513
 msgid "Italien"
 msgstr "It&aacute;lia"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:286
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:338
+# @ piratenkleider
+#: inc/constants.php:457 inc/constants.php:514
 msgid "Kanada"
 msgstr "Canad&aacute;"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:287
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:339
+# @ piratenkleider
+#: inc/constants.php:458 inc/constants.php:515
 msgid "Kasachstan"
 msgstr "Cazaquist&atilde;o"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:288
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:340
+# @ piratenkleider
+#: inc/constants.php:459 inc/constants.php:516
 msgid "Kolumbien"
-msgstr "Col&ocirce;mbia"
+msgstr "Col&ocirc;mbia"
 
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:352
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:407
+# @ piratenkleider
+#: inc/constants.php:460 inc/constants.php:517
 #, fuzzy
 msgid "Kroatien"
-msgstr "Categories"
+msgstr "Categorias"
 
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:353
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:408
+# @ piratenkleider
+#: inc/constants.php:461 inc/constants.php:518
 msgid "Lettland"
 msgstr "L&aacute;tvia"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:290
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:342
+# @ piratenkleider
+#: inc/constants.php:462 inc/constants.php:519
 msgid "Litauen"
-msgstr "Litu&acirce;nia"
+msgstr "Litu&acirc;nia"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:291
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:343
+# @ piratenkleider
+#: inc/constants.php:463 inc/constants.php:520
 msgid "Luxemburg"
 msgstr "Luxemburgo"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:292
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:344
+# @ piratenkleider
+#: inc/constants.php:464 inc/constants.php:521
 msgid "Marokko"
 msgstr "Marrocos"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:293
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:345
+# @ piratenkleider
+#: inc/constants.php:465 inc/constants.php:522
 msgid "Mexiko"
 msgstr "M&eacute;xico"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:294
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:346
+# @ piratenkleider
+#: inc/constants.php:466 inc/constants.php:523
 msgid "Neuseeland"
-msgstr "Nova Zel&acirce;ndia"
+msgstr "Nova Zel&acirc;ndia"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:295
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:347
+# @ piratenkleider
+#: inc/constants.php:467 inc/constants.php:524
 msgid "Niederlande"
 msgstr "Holanda"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:296
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:348
+# @ piratenkleider
+#: inc/constants.php:468 inc/constants.php:525
+#, fuzzy
 msgid "&ouml;sterreich"
 msgstr "&Aacute;ustria"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:297
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:349
+# @ piratenkleider
+#: inc/constants.php:469 inc/constants.php:526
 msgid "Peru"
 msgstr "Peru"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:298
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:350
+# @ piratenkleider
+#: inc/constants.php:470 inc/constants.php:527
 msgid "Polen"
-msgstr "Pol&ocirce;nia"
+msgstr "Pol&ocirc;nia"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:299
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:351
+# @ piratenkleider
+#: inc/constants.php:471 inc/constants.php:528
 msgid "Portugal"
 msgstr "Portugal"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:300
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:352
+# @ piratenkleider
+#: inc/constants.php:472 inc/constants.php:529
 msgid "Rum&auml;nien"
-msgstr "Rom&ecirce;nia"
+msgstr "Rom&ecirc;nia"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:301
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:353
+# @ piratenkleider
+#: inc/constants.php:473 inc/constants.php:530
 msgid "Russland"
 msgstr "R&uacute;ssia"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:302
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:354
+# @ piratenkleider
+#: inc/constants.php:474 inc/constants.php:531
 msgid "Schweden"
 msgstr "Su&eacute;cia"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:303
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:355
+# @ piratenkleider
+#: inc/constants.php:475 inc/constants.php:532
 msgid "Schweiz"
 msgstr "Su&iacute;&ccedil;a"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:304
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:356
+# @ piratenkleider
+#: inc/constants.php:476 inc/constants.php:533
 msgid "Serbien"
 msgstr "S&eacute;rvia"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:305
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:357
+# @ piratenkleider
+#: inc/constants.php:477 inc/constants.php:534
 msgid "Slowakei"
 msgstr "Eslov&aacute;quia"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:306
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:358
+# @ piratenkleider
+#: inc/constants.php:478 inc/constants.php:535
 msgid "Slowenien"
-msgstr "Eslovenia"
+msgstr "Eslov&eacute;nia"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:307
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:359
+# @ piratenkleider
+#: inc/constants.php:479 inc/constants.php:536
 msgid "Spanien"
 msgstr "Espanha"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:308
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:360
+# @ piratenkleider
+#: inc/constants.php:480 inc/constants.php:537
 msgid "S&uuml;dkorea"
-msgstr "Cor&eacute;ia do Sul"
+msgstr "Coreia do Sul"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:309
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:361
+# @ piratenkleider
+#: inc/constants.php:481 inc/constants.php:538
 msgid "Tschechien"
-msgstr "Czechia"
+msgstr "Rep&uacute;blica Checa"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:310
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:362
+# @ piratenkleider
+#: inc/constants.php:482 inc/constants.php:539
 msgid "Tunesien"
 msgstr "Tun&iacute;sia"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:311
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:363
+# @ piratenkleider
+#: inc/constants.php:483 inc/constants.php:540
 msgid "T&uuml;rkei"
 msgstr "Turquia"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:312
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:364
+# @ piratenkleider
+#: inc/constants.php:484 inc/constants.php:541
 msgid "Ukraine"
-msgstr "Ucr&acirce;nia"
+msgstr "Ucr&acirc;nia"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:313
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:365
+# @ piratenkleider
+#: inc/constants.php:485 inc/constants.php:542
+#, fuzzy
+msgid "Ungarn"
+msgstr "United Kingdom"
+
+# @ piratenkleider
+#: inc/constants.php:486 inc/constants.php:543
 msgid "Uruguay"
 msgstr "Uruguai"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:314
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:366
+# @ piratenkleider
+#: inc/constants.php:487 inc/constants.php:544
 msgid "USA"
 msgstr "EUA"
 
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:379
+# @ piratenkleider
+#: inc/constants.php:488
 msgid "Vereinigtes K&ouml;nigreich"
-msgstr "United Kingdom"
+msgstr "Reino Unido"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:315
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:367
+# @ piratenkleider
+#: inc/constants.php:489 inc/constants.php:546
 msgid "Wei&szlig;russland"
 msgstr "Bielorr&uacute;ssia"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:316
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:368
+# @ piratenkleider
+#: inc/constants.php:490 inc/constants.php:547
 msgid "Zypern"
 msgstr "Chipre"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:320
+# @ piratenkleider
+#: inc/constants.php:494
 msgid "International (mit Flaggen)"
-msgstr "Internacional (com as bandeiras)"
+msgstr "Internacional (Bandeiras)"
 
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:434
-msgid "Vereinigtes Königreich"
+# @ piratenkleider
+#: inc/constants.php:545
+msgid "Vereinigtes K�nigreich"
 msgstr "United Kingdom"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:574
+# @ piratenkleider
+#: inc/constants.php:800
 msgid "Eintr&auml;ge"
 msgstr "Posts"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:582
+# @ piratenkleider
+#: inc/constants.php:809
 msgid "Kopfteil"
 msgstr "Cabe&ccedil;alho"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:586
+# @ piratenkleider
+#: inc/constants.php:813
 msgid "Linkmenu"
 msgstr "Link menu"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:587
+# @ piratenkleider
+#: inc/constants.php:814
 msgid ""
 "Linkmenu oben rechts, zwischen Social Media Icons und Suchmaske anzeigen"
 msgstr ""
 "Mostrar menu de liga&ccedil;&atilde;o entre os &iacute;cones de redes "
 "sociais e a procura no canto superior direito"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:592
+# @ piratenkleider
+#: inc/constants.php:819
 msgid "Suchmaske"
 msgstr "Formul&aacute;rio de procura"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:593
+# @ piratenkleider
+#: inc/constants.php:820
 msgid "Eingabemaske f&uuml;r Suche oben rechts anzeigen"
 msgstr "Mostrar formul&aacute;rio de pesquisa no canto superior direito"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:599
+# @ piratenkleider
+#: inc/constants.php:826
 msgid "Sticker anzeigen (Hinweistexte oder Grafiken im Kopfteil)"
-msgstr "Mostrar  (texto da nota ou gr&aacute;ficos no cabe&ccedil;alho)"
+msgstr "Mostrar (texto da nota ou gr&aacute;ficos no cabe&ccedil;alho)"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:604
+# @ piratenkleider
+#: inc/constants.php:831
 msgid "Sticker 1"
 msgstr "Sticker 1"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:608
+# @ piratenkleider
+#: inc/constants.php:835
 msgid "Sticker 1 (Text)"
 msgstr "Sticker 1 (Texto)"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:609
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:627
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:645
+# @ piratenkleider
+#: inc/constants.php:836 inc/constants.php:854 inc/constants.php:872
 msgid "Inhaltstext des Stickers (ggf. mit Inline-HTML)"
 msgstr ""
 "Conte&uacute;do do texto do Sticker (se necess&aacute;rio pode conter HTML)"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:615
+# @ piratenkleider
+#: inc/constants.php:842
 msgid "Sticker 1 (Adresse)"
 msgstr "Sticker 1 (Endere&ccedil;o)"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:616
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:634
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:652
+# @ piratenkleider
+#: inc/constants.php:843 inc/constants.php:861 inc/constants.php:879
 msgid "URL zu der verlinkt werden soll"
 msgstr "URL para ser ligada &aacute;"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:622
+# @ piratenkleider
+#: inc/constants.php:849
 msgid "Sticker 2"
 msgstr "Sticker 2"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:626
+# @ piratenkleider
+#: inc/constants.php:853
 msgid "Sticker 2 (Text)"
 msgstr "Sticker 2 (Texto)"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:633
+# @ piratenkleider
+#: inc/constants.php:860
 msgid "Sticker 2 (Adresse)"
 msgstr "Sticker 2 (Endere&ccedil;o)"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:640
+# @ piratenkleider
+#: inc/constants.php:867
 msgid "Sticker 3"
 msgstr "Sticker 3"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:644
+# @ piratenkleider
+#: inc/constants.php:871
 msgid "Sticker 3 (Text)"
 msgstr "Sticker 3 (Texto)"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:651
+# @ piratenkleider
+#: inc/constants.php:878
 msgid "Sticker 3 (Adresse)"
 msgstr "Sticker 3 (Endere&ccedil;o)"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:660
+# @ piratenkleider
+#: inc/constants.php:887
 msgid "Fu&szlig;teil"
 msgstr "Rodap&eacute;"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:664
+# @ piratenkleider
+#: inc/constants.php:891
 msgid "Parteilinks"
 msgstr "Links"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:665
+# @ piratenkleider
+#: inc/constants.php:892
 msgid ""
 "Im Fu&szlig;teil eine Liste von Links zu Seiten der Piratenpartei anzeigen"
 msgstr "Mostrar a lista de links dos Partidos Piratas no rodap&eacute;"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:670
+# @ piratenkleider
+#: inc/constants.php:897
 msgid "Bereich"
 msgstr "&Aacute;rea"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:671
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:338
+# @ piratenkleider
+#: inc/constants.php:898 inc/widgets.php:353
 msgid "Bereich oder Gliederung ausw&auml;hlen."
 msgstr "Selecione uma &aacute;rea ou estrutura."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:678
+# @ piratenkleider
+#: inc/constants.php:959 inc/constants.php:1193
+msgid "Beitr&auml;ge &uuml;ber ganze Breite"
+msgstr "Entradas mais de largura inteira"
+
+# @ piratenkleider
+#: inc/constants.php:960 inc/constants.php:1194
+msgid "Zahl der Beitr&auml;ge, die &uuml;ber die gesamte Inhaltsbreite gehen."
+msgstr "N&uacute;mero de artigos de enchimento a largura conte&uacute;do todo."
+
+# @ piratenkleider
+#: inc/constants.php:966 inc/constants.php:1200
+msgid "Beitr&auml;ge &uuml;ber halbe Breite"
+msgstr "Entradas mais de meia largura"
+
+# @ piratenkleider
+#: inc/constants.php:967 inc/constants.php:1201
+msgid ""
+"Zahl der Beitr&auml;ge, die in Spalten mit je zwei Beitr&auml;gen "
+"nebeneinander, angezeigt werden."
+msgstr "N&uacute;mero de artigos exibidos em duas colunas."
+
+# @ piratenkleider
+#: inc/constants.php:912
+msgid "Liste der Kategorien anzeigen"
+msgstr "Lista de Categorias"
+
+# @ piratenkleider
+#: inc/constants.php:918
+msgid "Liste der Schlagworte (Tagcloud) anzeigen"
+msgstr "Lista de tags (tag cloud) mostram"
+
+# @ piratenkleider
+#: inc/constants.php:923
+msgid "&auml;ltere Artikel"
+msgstr "Artigos mais velhos"
+
+# @ piratenkleider
+#: inc/constants.php:924
+msgid "Liste mit &auml;lteren Artikeln anzeigen"
+msgstr "Exibindo uma lista de artigos anteriores"
+
+# @ piratenkleider
+#: inc/constants.php:929
+msgid "Zahl &auml;ltere Artikel"
+msgstr "N&uacute;mero de artigos mais antigos"
+
+# @ piratenkleider
+#: inc/constants.php:930
+msgid "Anzahl der zu verlinkenden &auml;lteren Artikel."
+msgstr "N&uacute;mero de items para serem marcados como antigos."
+
+# @ piratenkleider
+#: inc/constants.php:936
+msgid "Bezeichnender Titel f&uuml;r Teaser"
+msgstr "Prazo para o teaser"
+
+# @ piratenkleider
+#: inc/constants.php:937
+msgid "Dieser Text wird oberhalb der Titel angezeigt."
+msgstr "Este texto &eacute; mostrado acima dos t&iacute;tulos"
+
+# @ piratenkleider
+#: inc/constants.php:942
+msgid "Textl&auml;nge"
+msgstr "Tamanho do texto"
+
+# @ piratenkleider
+#: inc/constants.php:943
+msgid "Maximale Textl&auml;nge des Titels im Teaser."
+msgstr "Comprimento t&iacute;tulo m&aacute;ximo no teaser."
+
+# @ piratenkleider
+#: inc/constants.php:948
+msgid "Wortzahl"
+msgstr "N&uacute;mero de palavras"
+
+# @ piratenkleider
+#: inc/constants.php:949
+msgid ""
+"Zahl der Worte im Teaser; Die maximale Textl&auml;nge begrenzt diesen Wert "
+"jedoch."
+msgstr ""
+"Contagem de palavras no t&iacute;tulo no teaser; no entanto, a dura&ccedil;"
+"&atilde;o m&aacute;xima de texto limita esse valor."
+
+# @ piratenkleider
+#: inc/constants.php:976 inc/constants.php:1208
+msgid "L&auml;nge des Teasertextes (Artikelauszug)"
+msgstr "Comprimento do excerto do texto"
+
+# @ piratenkleider
+#: inc/constants.php:977
+msgid ""
+"Maximale Textl&auml;nge f&uuml;r Artikelausz&uuml;ge auf der Startseite."
+msgstr ""
+"Comprimento do m&aacute;ximo do texto para trechos do artigo na p&aacute;"
+"gina inicial."
+
+# @ piratenkleider
+#: inc/constants.php:1066
+msgid "Slider"
+msgstr "Slider"
+
+# @ piratenkleider
+#: inc/constants.php:1070
+msgid "Aktivieren"
+msgstr "Activar"
+
+# @ piratenkleider
+#: inc/constants.php:1071
+msgid ""
+"Slider im Teaserbereich auf der Startseite aktivieren. <br>Die Auswahl der "
+"Plakatbilder kann unter den Defaultbildern angepasst werden."
+msgstr ""
+"Activar o Slider na sec&ccedil;&atilde;o de teaser, na home. <br> A "
+"selec&ccedil;&atilde;o de imagens de posters pode ser alteradas para as "
+"imagens default."
+
+# @ piratenkleider
+#: inc/constants.php:1078
+msgid "Kategorie"
+msgstr "Categoria"
+
+# @ piratenkleider
+#: inc/constants.php:1079
+msgid "Aus welcher Artikelkategorie sollen die Slider genommen werden."
+msgstr "Que categoria deve aparecer nos slides."
+
+# @ piratenkleider
+#: inc/constants.php:1085
+msgid "Maximale Anzahl der Artikel"
+msgstr "N&uacute;mero m&aacute;ximo de artigos."
+
+# @ piratenkleider
+#: inc/constants.php:1086
+msgid "Wieviele Slides sollen maximal gezeigt werden."
+msgstr "Quantos slides s&atilde;o mostrados no m&aacute;ximo"
+
+# @ piratenkleider
+#: inc/constants.php:1093
+msgid "Animationstyp"
+msgstr "Tipo de anima&ccedil;&atilde;o"
+
+# @ piratenkleider
+#: inc/constants.php:1094
+msgid "Wie soll der Slidewechsel optisch aussehen."
+msgstr "Qual deveria ser a mudan&ccedil;a deslizante parecer"
+
+# @ piratenkleider
+#: inc/constants.php:1102
+msgid "Richtung"
+msgstr "Direc&ccedil;&atilde;o"
+
+# @ piratenkleider
+#: inc/constants.php:1103
+msgid "Von wo sollen Bilder erscheinen."
+msgstr "De onde as imagens devem ser tomadas"
+
+# @ piratenkleider
+#: inc/constants.php:1110
+msgid "Dauer Bildwechsel"
+msgstr "Direc&ccedil;&atilde;o da altera&ccedil;&atilde;o das imagens"
+
+# @ piratenkleider
+#: inc/constants.php:1111
+msgid "Geschwindigkeit des Bildwechsels in Milisekunden."
+msgstr "Mudan&ccedil;a das imagens em Milisegundos"
+
+# @ piratenkleider
+#: inc/constants.php:1117
+msgid "Animationsdauer"
+msgstr "Dura&ccedil;&atilde;o da anima&ccedil;&atilde;o"
+
+# @ piratenkleider
+#: inc/constants.php:1118
+msgid ""
+"Geschwindigkeit der Animation/Fading beim Bild&uuml;bergang in Milisekunden."
+msgstr ""
+"Imagem de mudan&ccedil;a de velocidade de anima&ccedil;&atilde;o / "
+"desaparecendo em milissegundos"
+
+# @ piratenkleider
+#: inc/constants.php:1124
+msgid "Teaser-Darstellung"
+msgstr "Teaser de apresenta&ccedil;&atilde;o"
+
+# @ piratenkleider
+#: inc/constants.php:1125
+#, fuzzy
+msgid ""
+"Teaser mit gro&szlig;em Bild &uuml;ber gesamte Breite oder kleinem Thumbnail."
+msgstr ""
+"Teaser com uma imagem grande em uma pequena miniatura ou largura total."
+
+# @ piratenkleider
+#: inc/constants.php:1132 inc/constants.php:1323 inc/constants.php:1358
+#, fuzzy
+msgid "Defaultbild"
+msgstr "Default:"
+
+# @ piratenkleider
+#: inc/constants.php:1133
+msgid "Ersatz-Sliderbild f�r Seiten ohne eigenes Artikelbild."
+msgstr "Fallback slider picture for pages without thumbnail"
+
+# @ piratenkleider
+#: inc/constants.php:1140
+msgid "Externes Ersatzbild"
+msgstr "External fallback picture"
+
+# @ piratenkleider
+#: inc/constants.php:1141
+#, fuzzy
+msgid "URL f&uuml;r ein Ersatz-Sliderbild."
+msgstr "URL for a template page image."
+
+# @ piratenkleider
+#: inc/constants.php:1151
+#, fuzzy
+msgid "Seiten &amp; Artikel"
+msgstr "Further articles"
+
+# @ piratenkleider
+#: inc/constants.php:1156
+#, fuzzy
+msgid "Spezielle Eigenschaften"
+msgstr "Special pages"
+
+# @ piratenkleider
+#: inc/constants.php:1161
+msgid "Circle Player"
+msgstr "Circle Player"
+
+# @ piratenkleider
+#: inc/constants.php:1162
+msgid ""
+"Circle Player (HTML5 Player) f&uuml;r MP3/OGG-Dateien in einzelnen "
+"Beitr&auml;gen aktivieren."
+msgstr "Abre CirclePlayer (HTML5 Player) para MP3/OGG-files "
+
+# @ piratenkleider
+#: inc/constants.php:1170
+msgid "Disclaimer f&uuml;r (Gast-)Artikel"
+msgstr "Disclaimer"
+
+# @ piratenkleider
+#: inc/constants.php:1171
+msgid ""
+"Definiere ein Text als Disclaimer der bei Artikeln gezeigt werden kann. "
+"Disclaimer wird mit Custom Field show-post-disclaimer (= 0, 1,2,3) aktiviert."
+msgstr ""
+"Disclaimertext. Disclaimer will be activated by custom field show-post-"
+"disclaimer in values 0,1,2,3"
+
+# @ piratenkleider
+#: inc/constants.php:1303
+#, fuzzy
+msgid "Seitenbilder"
+msgstr "Site menu"
+
+# @ piratenkleider
+#: inc/constants.php:1308
+msgid "Defaultbilder f&uuml;r Seiten"
+msgstr "Imagens default para p&aacute;ginas"
+
+# @ piratenkleider
+#: inc/constants.php:1309
+msgid ""
+"Bilder f&uuml;r Seiten erzwingen, die von sich aus kein Artikelbild "
+"definiert haben. Wenn kein Artikelbild vorhanden ist, wird ein Defaultbild "
+"gezeigt."
+msgstr ""
+"Aplicar imagens para p&aacute;ginas sem imagem artigo. Se nenhuma imagem "
+"artigo &eacute; definido, uma imagem padr&atilde;o &eacute; mostrado."
+
+# @ piratenkleider
+#: inc/constants.php:1315 inc/constants.php:1350 inc/constants.php:1385
+#, fuzzy
+msgid "Gr&ouml;&szlig;e"
+msgstr "Footer"
+
+# @ piratenkleider
+#: inc/constants.php:1316
+msgid ""
+"Das Seitenbild kann in einem schmalen (150px) oder gro&szlig;en (240px) "
+"Ausschnitt dargestellt werden. "
+msgstr ""
+"You can display the page-thumbnail in small (150px) or in big sized (240px) "
+"exctract."
+
+# @ piratenkleider
+#: inc/constants.php:1324 inc/constants.php:1359
+msgid "Ersatzbild f�r Seiten ohne eigenes Artikelbild."
+msgstr "Fallback picture for pages without own thumbnail."
+
+# @ piratenkleider
+#: inc/constants.php:1331 inc/constants.php:1366 inc/constants.php:1590
+#: inc/constants.php:1623 inc/constants.php:1656
+msgid "URL"
+msgstr "URL"
+
+# @ piratenkleider
+#: inc/constants.php:1332
+#, fuzzy
+msgid "Webadresse f&uuml;r ein alternatives Seitenbild."
+msgstr "URL for a template page image."
+
+# @ piratenkleider
+#: inc/constants.php:1338
+msgid "Artikelbilder"
+msgstr "Thumbnails"
+
+# @ piratenkleider
+#: inc/constants.php:1343
+#, fuzzy
+msgid "Defaultbilder f&uuml;r Artikel"
+msgstr "Default images for pages"
+
+# @ piratenkleider
+#: inc/constants.php:1344
+#, fuzzy
+msgid ""
+"Bilder f&uuml;r Artikel erzwingen, die von sich aus kein Artikelbild "
+"definiert haben. Wenn kein Artikelbild vorhanden ist, wird ein Defaultbild "
+"gezeigt."
+msgstr ""
+"Enforce images for pages without article image. If no article image is set, "
+"a default image is shown."
+
+# @ piratenkleider
+#: inc/constants.php:1351
+msgid ""
+"Das Artikelbild kann in einem schmalen (150px) oder gro&szlig;en (240px) "
+"Ausschnitt dargestellt werden. "
+msgstr "Display thumbnail in a small (150px) or big sized (240px) viewporti"
+
+# @ piratenkleider
+#: inc/constants.php:1367
+#, fuzzy
+msgid "Webadresse f&uuml;r ein alternatives Artikelbild."
+msgstr "URL for an archive page image."
+
+# @ piratenkleider
+#: inc/constants.php:1374 inc/widgets.php:128
+#, fuzzy
+msgid "Indexseiten"
+msgstr "Tunisia"
+
+# @ piratenkleider
+#: inc/constants.php:1378
+msgid "Platzhalterbilder"
+msgstr "imagem de espa&ccedil;o reservado"
+
+# @ piratenkleider
+#: inc/constants.php:1379
+msgid ""
+"Platzhalterbilder bei Indexseiten zu Kategorien, Tags, Suche und Archiv "
+"anzeigen."
+msgstr ""
+"Mostrar imagens de espa&ccedil;o reservado nas p&aacute;ginas de &iacute;"
+"ndice de categorias, tags, procura e arquivamento."
+
+# @ piratenkleider
+#: inc/constants.php:1386
+msgid ""
+"Das Platzhalterbild kann in einem schmalen (150px) oder gro&szlig;en (240px) "
+"Ausschnitt dargestellt werden. "
+msgstr "Display thumbnail in a small (150px) or a big sized (240px) viewport. "
+
+# @ piratenkleider
+#: inc/constants.php:1394
+#, fuzzy
+msgid "Symbolbild f&uuml;r 404 Seite"
+msgstr "Imagem simb&oacute;lica para a p&aacute;gina de 404"
+
+# @ piratenkleider
+#: inc/constants.php:1395
+msgid "URL f&uuml;r ein eigenes 404-Seitenbild."
+msgstr "URL para uma imagem para a p&atide;gina de 404"
+
+# @ piratenkleider
+#: inc/constants.php:1401
+#, fuzzy
+msgid "Symbolbild f&uuml;r Kategorie Seite"
+msgstr "Imagem simb&oacute;lica para as p&aacute;ginas de categorias"
+
+# @ piratenkleider
+#: inc/constants.php:1402
+msgid "URL f&uuml;r ein eigenes Kategorien-Seitenbild."
+msgstr "URL para uma imagem para a p&aacute;gina de categorias."
+
+# @ piratenkleider
+#: inc/constants.php:1408
+#, fuzzy
+msgid "Symbolbild f&uuml;r Tag Seite"
+msgstr "Imagem simb&oacute;lica para as p&aacute;ginas de tags"
+
+# @ piratenkleider
+#: inc/constants.php:1409
+msgid "URL f&uuml;r ein eigenes Tag-Seitenbild."
+msgstr "URL para uma imagem para a p&aacute;gina de tags."
+
+# @ piratenkleider
+#: inc/constants.php:1415
+#, fuzzy
+msgid "Symbolbild f&uuml;r Autoren Seite"
+msgstr "Imagem simb&oacute;lica para as p&aacute;ginas de autores"
+
+# @ piratenkleider
+#: inc/constants.php:1416
+msgid "URL f&uuml;r ein eigenes Autoren-Seitenbild."
+msgstr "URL da imagem para a p&aacute;gina dos autores."
+
+# @ piratenkleider
+#: inc/constants.php:1422
+#, fuzzy
+msgid "Symbolbild f&uuml;r Archiv Seite"
+msgstr "Imagem simb&oacute;lica para as p&aacute;ginas de arquivo"
+
+# @ piratenkleider
+#: inc/constants.php:1423
+msgid "URL f&uuml;r ein eigenes Archiv-Seitenbild."
+msgstr "URL da imagem para a p&aacute;gina de arquivos."
+
+# @ piratenkleider
+#: inc/constants.php:1429
+#, fuzzy
+msgid "Symbolbild f&uuml;r Suchergebnis-Seite"
+msgstr ""
+"Imagem simb&oacute;lica para as p&aacute;ginas de resultados de pesquisa"
+
+# @ piratenkleider
+#: inc/constants.php:1430
+msgid "URL f&uuml;r ein eigenes Suchergebnis-Seitenbild."
+msgstr "URL para uma imagem da p&aacute;gina de resultados de pesquisa."
+
+# @ piratenkleider
+#: inc/constants.php:1436
+#, fuzzy
+msgid "Symbolbild f&uuml;r Template-Seiten"
+msgstr "Imagem simb&oacute;lica para p&aacute;ginas do template"
+
+# @ piratenkleider
+#: inc/constants.php:1437
+msgid "URL f&uuml;r ein Template-Seitenbild."
+msgstr "URL para uma imagem da p&aacute;gina do template."
+
+# @ piratenkleider
+#: inc/constants.php:1450
+#, fuzzy
+msgid "Antwortlinks"
+msgstr "Reply links on comments"
+
+# @ piratenkleider
+#: inc/constants.php:1451
+msgid ""
+"Bei der Anzeige von Kommentaren, wird unter diesen ein eigener Kommentarlink "
+"eingebaut, der das Antworten auf den Kommentar erlaubt. Dies kann zu einer "
+"Nutzung des Kommentarbereiches wie bei einem Forum f&uuml;hren, bei dem es "
+"zuletzt aber nicht mehr um den eigentlichen Beitrag geht."
+msgstr ""
+"Mostrar um link de resposta em cada coment&aacute;rio. Isso permite a "
+"se&ccedil;&atilde;o de coment&aacute;rios para ser usado como um f&oacute;"
+"rum, incluindo se desviar."
+
+# @ piratenkleider
+#: inc/constants.php:1464
+#, fuzzy
+msgid "Disclaimer"
+msgstr "Coment&aacute;rios"
+
+# @ piratenkleider
+#: inc/constants.php:1465
+msgid "Kurzer Hinweistext (ggf. Link) zu Regeln f&uuml;r Kommentare."
+msgstr "Texto descritivo curto (se link) com regras para coment&aacute;rios."
+
+# @ piratenkleider
+#: inc/constants.php:1470
+msgid "Kommentarbubble"
+msgstr "Coment&aacute;rio bolha"
+
+# @ piratenkleider
+#: inc/constants.php:1471
+msgid ""
+"Zeige den Kommentarbubble auch dann, wenn noch keine Kommentare abgegeben "
+"wurden"
+msgstr ""
+"Tamb&eacute;m mostram bolha coment&aacute;rio Se nenhum coment&aacute;rio "
+"dispon&iacute;vel."
+
+# @ piratenkleider
+#: inc/constants.php:1480
 msgid "Sidebar"
 msgstr "Sidebar"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:682
+# @ piratenkleider
+#: inc/constants.php:1484
 msgid "Seitenmenu"
 msgstr "Site menu"
 
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:801
+# @ piratenkleider
+#: inc/constants.php:1488
 #, fuzzy
 msgid "Gliederung"
 msgstr "Slider"
 
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:802
+# @ piratenkleider
+#: inc/constants.php:1489
 msgid ""
-"Das Menü kann nach Seiten-Hierarchie oder Menü-Hierarche gegliedert werden."
+"Das Men� kann nach Seiten-Hierarchie oder Men�-Hierarche gegliedert werden."
 msgstr "Menu can be displayed in hierarchical or in structural order"
 
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:809
+# @ piratenkleider
+#: inc/constants.php:1496
 msgid "Hierachische Struktur"
 msgstr "Estrutura hier&aacute;rquica"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:687
+# @ piratenkleider
+#: inc/constants.php:1497
 msgid ""
 "Bei der Anzeige von Seiten rechts in der Sidebar nur das aktuelle Submenu "
 "zeigen. Bei Deaktivierung wird das vollst&auml;ndige Men&uuml; gezeigt. Dies "
@@ -1942,11 +1997,13 @@ msgstr ""
 "p&aacute;ginas. Se desactivado, o menu completo ser&aacute; mostrado, o que "
 "n&atilde;o &eacute; recomendado para sites com muitas p&aacute;ginas."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:693
+# @ piratenkleider
+#: inc/constants.php:1503
 msgid "Offene Struktur"
 msgstr "Estrutura aberta"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:694
+# @ piratenkleider
+#: inc/constants.php:1504
 msgid ""
 "Men&uuml; mit allen Seiten in der Sidebar anzeigen, auch wenn diese nicht "
 "dem Hauptmenu zugeordnet und gegliedert sind"
@@ -1954,252 +2011,191 @@ msgstr ""
 "Menu de todas as p&aacute;ginas na barra lateral, mesmo que eles n&atilde;o "
 "estejam atribu&iacute;dos no menu principal ou organizados"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:701
+# @ piratenkleider
+#: inc/constants.php:1512
 msgid ""
 "Eingabemaske f&uuml;r den Eintrag in ein Newsletter (Mailingliste) anzeigen"
 msgstr "Entrada num boletim de not&iacute;cias (mailing list) Ver"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:706
-msgid "Plakatslider"
-msgstr "Slide de cartazes"
+# @ piratenkleider
+#: inc/constants.php:1517
+#, fuzzy
+msgid "Werbeplakate"
+msgstr "Posters"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:707
+# @ piratenkleider
+#: inc/constants.php:1521
+#, fuzzy
+msgid "Plakate aktivieren"
+msgstr "Activade poster slider"
+
+# @ piratenkleider
+#: inc/constants.php:1522
 msgid ""
 "Slider der Werbeplakate (rechte Sidebar-Spalte) werden angezeigt.<br>Die "
 "Auswahl der Plakatbilder kann unter den Defaultbildern angepasst werden"
 msgstr "Poster slider (right sidebar) is shown"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:712
+# @ piratenkleider
+#: inc/constants.php:1529
+#, fuzzy
+msgid "Plakatauswahl"
+msgstr "Posters"
+
+# @ piratenkleider
+#: inc/constants.php:1530
+#, fuzzy
+msgid ""
+"Diese Bilder werden in der Sidebar rechts gezeigt, sofern dieses &uuml;ber "
+"die Optionen (vgl. Slider) auch eingeschaltet ist."
+msgstr ""
+"Estas imagens s&atilde;o mostradas na barra lateral direita, se a barra "
+"lateral est&aacute; habilitado no menu de op&ccedil;&otilde;es (compare com "
+"slide)."
+
+# @ piratenkleider
+#: inc/constants.php:1537
+msgid "Optionaler Ersatztitel"
+msgstr "T&iacute;tulo alternativo opcional"
+
+# @ piratenkleider
+#: inc/constants.php:1538
+#, fuzzy
+msgid "Dieser Titel wird als Alternativ-Text verwendet."
+msgstr "Este t&iacute;tulo &eacute; usado como texto alternativo."
+
+# @ piratenkleider
+#: inc/constants.php:1544
+msgid "Optionale URL"
+msgstr "URL Optional"
+
+# @ piratenkleider
+#: inc/constants.php:1545
+#, fuzzy
+msgid ""
+"Optionale Webadresse zur Verlinkung der Plakate mit einer Informationsseite"
+msgstr ""
+"URL opcional para ligar os cartazes para uma p&aacute;gina de informa&ccedil;"
+"&otilde;es"
+
+# @ piratenkleider
+#: inc/constants.php:1551
+#, fuzzy
+msgid "Eigene Plakatbilder"
+msgstr "Imagens de cartaz pr&oacute;prias:"
+
+# @ piratenkleider
+#: inc/constants.php:1552
+#, fuzzy
+msgid "Adressen alternativer Plakatbilder.<br>"
+msgstr "Endere&ccedil;os de imagens de posters alternativos"
+
+# @ piratenkleider
+#: inc/constants.php:1553
+#, fuzzy
+msgid ""
+"Angabe der URLs inkl. http:// zum Bild. Wenn es mehrere sind, werden die "
+"einzelnen Adressen durch Zeilenumbruch getrennt."
+msgstr ""
+"URLs para as imagens. Se existir mais do que um, por favor, divida com uma "
+"quebra de linha."
+
+# @ piratenkleider
+#: inc/constants.php:1554
+msgid ""
+"Sollen die Bilder zus&auml;tzlich mit einem eigenen Titel und einer "
+"Webadresse versehen werden werden diese Angabe durch ein \"|\" zeichen in "
+"folgender Reihenfolge getrennt: <code>Bild URL|Titel|URL Webpage</code>"
+msgstr ""
+"As imagens devem tamb&eacute;m ser equipados com um t&iacute;tulo pr&oacute;"
+"prio e um link, voc&ecirc; pode inseri-los aqui e dividindo o URL da imagem, "
+"t&iacute;tulo e URL do site com o caracter \"| \" assim: <code>URL da "
+"imagem  | T&iacute;tulo | Site URL</code>"
+
+# @ piratenkleider
+#: inc/constants.php:1555
+#, fuzzy
+msgid "Beispiel:<br>"
+msgstr "Exemplo:"
+
+# @ piratenkleider
+#: inc/constants.php:1556
+msgid ""
+"<pre>http://www.piratenpartei.de/wp-content/uploads/2012/05/"
+"UrheberplakatSH283.jpg|Rechte f&uuml;r Urheber und Nutzer|http://www.kein-"
+"programm.de</pre><br>"
+msgstr ""
+"<pre>http://www.piratenpartei.de/wp-content/uploads/2012/05/"
+"UrheberplakatSH283.jpg|Rechte f&uuml;r Urheber und Nutzer|http://www.kein-"
+"programm.de</pre><br>"
+
+# @ piratenkleider
+#: inc/constants.php:1557
+msgid ""
+"Wenn oben Defaultplakate angeklickt sind, erscheinen diese Bilder zus&auml;"
+"tzlich. Diese Bilder k&ouml;nnen auch vorher &uuml;ber den Mediendialog "
+"hochgeladen worden sein."
+msgstr ""
+"Se os posters default forem activados acima, estas imagens apareceram em "
+"adi&ccedil;&atilde;"
+
+# @ piratenkleider
+#: inc/constants.php:1564
 msgid "Teaserlink 1"
 msgstr "Teaser link 1"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:716
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:749
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:782
+# @ piratenkleider
+#: inc/constants.php:1568 inc/constants.php:1601 inc/constants.php:1634
 msgid "Symbol"
 msgstr "S&iacute;mbolo"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:724
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:757
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:790
+# @ piratenkleider
+#: inc/constants.php:1576 inc/constants.php:1609 inc/constants.php:1642
 msgid "Titel"
 msgstr "T&iacute;tulo"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:725
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:758
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:791
+# @ piratenkleider
+#: inc/constants.php:1577 inc/constants.php:1610 inc/constants.php:1643
 msgid "Titelzeile des Teaserlinks"
 msgstr "T&iacute;tulo dos links do teaser"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:731
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:764
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:797
+# @ piratenkleider
+#: inc/constants.php:1583 inc/constants.php:1616 inc/constants.php:1649
 msgid "Untertitel"
 msgstr "Subt&iacute;tulo"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:732
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:765
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:798
+# @ piratenkleider
+#: inc/constants.php:1584 inc/constants.php:1617 inc/constants.php:1650
 msgid "Zweite Zeile des Teaserlinks"
 msgstr "Segunda linha dos links do teaser"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:738
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:771
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:804
-msgid "URL"
-msgstr "URL"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:739
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:772
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:805
+# @ piratenkleider
+#: inc/constants.php:1591 inc/constants.php:1624 inc/constants.php:1657
 msgid "Webadresse zu der verlinkt werden soll"
 msgstr "O endere&ccedil;o da Web ser&aacute; vinculado ao"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:745
+# @ piratenkleider
+#: inc/constants.php:1597
 msgid "Teaserlink 2"
 msgstr "Teaser link 2"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:778
+# @ piratenkleider
+#: inc/constants.php:1630
 msgid "Teaserlink 3"
 msgstr "Teaser link 3"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:818
-msgid "Beitr&auml;ge &uuml;ber ganze Breite"
-msgstr "Entradas mais de largura inteira"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:819
-msgid "Zahl der Beitr&auml;ge, die &uuml;ber die gesamte Inhaltsbreite gehen."
-msgstr "N&uacute;mero de artigos de enchimento a largura conte&uacute;do todo."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:825
-msgid "Beitr&auml;ge &uuml;ber halbe Breite"
-msgstr "Entradas mais de meia largura"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:826
-msgid ""
-"Zahl der Beitr&auml;ge, die in Spalten mit je zwei Beitr&auml;gen "
-"nebeneinander, angezeigt werden."
-msgstr "N&uacute;mero de artigos exibidos em duas colunas."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:834
-msgid "Liste der Kategorien anzeigen"
-msgstr "Lista de Categorias"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:840
-msgid "Liste der Schlagworte (Tagcloud) anzeigen"
-msgstr "Lista de tags (tag cloud) mostram"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:845
-msgid "&auml;ltere Artikel"
-msgstr "Artigos mais velhos"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:846
-msgid "Liste mit &auml;lteren Artikeln anzeigen"
-msgstr "Exibindo uma lista de artigos anteriores"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:851
-msgid "Zahl &auml;ltere Artikel"
-msgstr "N&uacute;mero de artigos mais antigos"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:852
-msgid "Anzahl der zu verlinkenden &auml;lteren Artikel."
-msgstr "N&uacute;mero de items para serem marcados como antigos."
-
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:980
-msgid "Thumbnails anstelle Datum"
-msgstr "Mostra Thumbnail inv&eacute;s da data"
-
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:981
-msgid ""
-"Wenn vorhanden, wird ein Thumbnail des ersten Bildes anstelle des Datums "
-"angezeigt"
-msgstr "If thumbnail exists, it will replace the current date"
-
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:990
-msgid "Slider"
-msgstr "Slider"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:863
-msgid "Aktivieren"
-msgstr "Activar"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:864
-msgid ""
-"Slider im Teaserbereich auf der Startseite aktivieren. <br>Die Auswahl der "
-"Plakatbilder kann unter den Defaultbildern angepasst werden."
-msgstr ""
-"Activar o Slider na sec&ccedil;&atilde;o de teaser, na home. <br> A "
-"selec&ccedil;&atilde;o de imagens de posters pode ser alteradas para as "
-"imagens default."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:871
-msgid "Kategorie"
-msgstr "Categoria"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:872
-msgid "Aus welcher Artikelkategorie sollen die Slider genommen werden."
-msgstr "Que categoria deve aparecer nos slides."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:878
-msgid "Maximale Anzahl der Artikel"
-msgstr "N&uacute;mero m&aacute;ximo de artigos."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:879
-msgid "Wieviele Slides sollen maximal gezeigt werden."
-msgstr "Quantos slides s&atilde;o mostrados no m&aacute;ximo"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:886
-msgid "Animationstyp"
-msgstr "Tipo de anima&ccedil;&atilde;o"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:887
-msgid "Wie soll der Slidewechsel optisch aussehen."
-msgstr "Qual deveria ser a mudan&ccedil;a deslizante parecer"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:895
-msgid "Richtung"
-msgstr "Direc&ccedil;&atilde;o"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:896
-msgid "Von wo sollen Bilder erscheinen."
-msgstr "De onde as imagens devem ser tomadas"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:903
-msgid "Dauer Bildwechsel"
-msgstr "Direc&ccedil;&atilde;o da altera&ccedil;&atilde;o das imagens"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:904
-msgid "Geschwindigkeit des Bildwechsels in Milisekunden."
-msgstr "Mudan&ccedil;a das imagens em Milisegundos"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:910
-msgid "Animationsdauer"
-msgstr "Dura&ccedil;&atilde;o da anima&ccedil;&atilde;o"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:911
-msgid ""
-"Geschwindigkeit der Animation/Fading beim Bild&uuml;bergang in Milisekunden."
-msgstr ""
-"Imagem de mudan&ccedil;a de velocidade de anima&ccedil;&atilde;o / "
-"desaparecendo em milissegundos"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:917
-msgid "Teaser-Darstellung"
-msgstr "Teaser de apresenta&ccedil;&atilde;o"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:918
-msgid "Teaser mit großem Bild über gesamte Breite oder kleinem Thumbnail."
-msgstr ""
-"Teaser com uma imagem grande em uma pequena miniatura ou largura total."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:926
-msgid "Bezeichnender Titel f&uuml;r Teaser"
-msgstr "Prazo para o teaser"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:927
-msgid "Dieser Text wird oberhalb der Titel angezeigt."
-msgstr "Este texto &eacute; mostrado acima dos t&iacute;tulos"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:932
-msgid "Textl&auml;nge"
-msgstr "Tamanho do texto"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:933
-msgid "Maximale Textl&auml;nge des Titels im Teaser."
-msgstr "Comprimento t&iacute;tulo m&aacute;ximo no teaser."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:938
-msgid "Wortzahl"
-msgstr "N&uacute;mero de palavras"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:939
-msgid ""
-"Zahl der Worte im Teaser; Die maximale Textl&auml;nge begrenzt diesen Wert "
-"jedoch."
-msgstr ""
-"Contagem de palavras no t&iacute;tulo no teaser; no entanto, a duração "
-"máxima de texto limita esse valor."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:944
-msgid "L&auml;nge des Teasertextes (Artikelauszug)"
-msgstr "Comprimento do excerto do texto"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:945
-msgid ""
-"Maximale Textl&auml;nge f&uuml;r Artikelausz&uuml;ge auf der Startseite."
-msgstr ""
-"Comprimento do m&aacute;ximo do texto para trechos do artigo na página "
-"inicial."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:953
+# @ piratenkleider
+#: inc/constants.php:1667
 msgid "Social Media"
 msgstr "Social Media"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:958
+# @ piratenkleider
+#: inc/constants.php:1672
 msgid "Position und Anzeige"
 msgstr "Posi&ccedil;&atilde;o e display"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:959
+# @ piratenkleider
+#: inc/constants.php:1673
 msgid ""
 "Die Auswahl werden die Social Media Buttons angezeigt. Dies kann entweder "
 "oben im Kopfteil oder links neben den Inhaltsbereich sein. <br>Hinweis: Es "
@@ -2212,210 +2208,147 @@ msgstr ""
 "bot&otilde;es s&atilde;o definidos para que os campos de endere&ccedil;os de "
 "entrada a seguir."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:960
+# @ piratenkleider
+#: inc/constants.php:1674
 msgid "Keine Social Media Buttons"
 msgstr "Nenhum bot&atilde;o de M&iacute;dia Social"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:960
+# @ piratenkleider
+#: inc/constants.php:1674
 msgid "Im Kopfteil"
 msgstr "No cabe&ccedil;alho"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:960
+# @ piratenkleider
+#: inc/constants.php:1674
 msgid "Links anzeigen"
 msgstr "Mostrar links"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:965
-msgid "Facebook"
-msgstr "Facebook"
+# @ piratenkleider
+#: inc/constants.php:1679
+#, fuzzy
+msgid "Social Media Plattformen"
+msgstr "Deactivate Social Media Buttons"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:966
-msgid "URL inkl. http:// zur Facebook Seite."
-msgstr "Facebook URI (incluindo http://)"
+# @ piratenkleider
+#: inc/constants.php:1755
+msgid "Sonstiges"
+msgstr "Outro"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:970
-msgid "Twitter"
-msgstr "Twitter"
+# @ piratenkleider
+#: inc/constants.php:1759
+msgid "Sidebar abblendbar"
+msgstr "Esconder sidebar"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:971
-msgid "URL inkl. http:// zur Twitter Seite."
-msgstr "Twitter URI (incluindo http://)"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:975
-msgid "Google Plus"
-msgstr "Google Plus"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:976
-msgid "URL inkl. http:// zur Google Plus Seite."
-msgstr "Google Plus URI (incluindo http://)"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:980
-msgid "Diaspora"
-msgstr "Diaspora"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:981
-msgid "URL inkl. http:// zur Diaspora Seite."
-msgstr "Diaspora URI (incluindo http://)"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:985
-msgid "Identica"
-msgstr "Identica"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:986
-msgid "URL inkl. http:// zur Identica Seite."
-msgstr "Identi.ca URI (incluindo http://)"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:990
-msgid "YouTube"
-msgstr "YouTube"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:991
-msgid "URL inkl. http:// zur YouTube Seite."
-msgstr "Youtube URI (incluindo http://)"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:995
-msgid "iTunes"
-msgstr "iTunes"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:996
-msgid "URL inkl. http:// zur iTunes Seite."
-msgstr "iTunes URI (incluindo http://)"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1000
-msgid "Flickr"
-msgstr "Flickr"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1001
-msgid "URL inkl. http:// zur Flickr Seite."
-msgstr "Flickr URI (incluindo http://)"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1005
-msgid "Delicious"
-msgstr "Delicious"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1006
-msgid "URL inkl. http:// zur Delicious Seite."
-msgstr "Delicio.us URI (incluindo http://)"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1010
-msgid "Flattr"
-msgstr "Flattr"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1011
-msgid "URL inkl. http:// zur Flattr Seite."
-msgstr "Flattr URI (incluindo http://)"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1015
-msgid "Feed"
-msgstr "Feed"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1016
+# @ piratenkleider
+#: inc/constants.php:1760
+#, fuzzy
 msgid ""
-"URL inkl. http:// zu einem RSS oder Atom Feed. Dies muss nicht unbedingt der "
-"von dieser Website sein, kann aber."
+"Benutzern via JavaScript die M&ouml;glichkeit geben, die Sidebar klein zu "
+"machen. <br>Hinweis: Der Status wird nicht gespeichert, um keine Cookies "
+"anzulegen; Die Funktion ist nicht sichtbar, wenn man kein JavaScript an hat. "
+"Desweiteren ist die Funktion nur aktiv, wenn die Bildschirmbreite gr&ouml;"
+"&szlig;er als 600 Pixel ist."
 msgstr ""
-"URL incluindo http:// para um feed RSS ou Atom. Isto n&atilde;o deve ser "
-"necessariamente o local deste, mas pode."
+"Utilizadores atrav&eacute;s de JavaScript que pode dar para fazer barra "
+"lateral pequena. <br> Nota: O estado n&atilde;o &eacute; armazenada de forma "
+"a n&atilde;o criar quaisquer cookies; A fun&ccedil;&atilde;o n&atilde;o "
+"&eacute; sichtbnar, se voc&ecirc; n&atilde;o tem JavaScript. Al&eacute;m "
+"disso, a fun&ccedil;&atilde;o s&oacute; est&aacute; activa quando a largura "
+"da tela &eacute; maior do que 600 pixels."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1020
-msgid "Twitter Sidebar-import"
-msgstr "Twitter Sidebar-import"
+# @ piratenkleider
+#: inc/constants.php:1765
+#, fuzzy
+msgid "Position der Sidebar"
+msgstr "Position and Display option"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1024
-msgid "Benutzername"
-msgstr "Nome de utilizador"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1025
+# @ piratenkleider
+#: inc/constants.php:1766
+#, fuzzy
 msgid ""
-"Der Twitter Benutzername. Wird zur Anzeige eines optionalen Twitter-Imports "
-"in der Sidebar verwendet."
-msgstr ""
-"O nome de utilizador do Twitter. Para exibir o importador de Tweets usado na "
-"barra lateral."
+"Sidebar rechts neben den Inhalt oder darunter positionieren. Wenn die "
+"Sidebar unter dem Inhalt positioniert wird, wird der Inhaltsbereich &uuml;"
+"ber die gesamte Breite gehen. Alternativ kann ein Custom Field \"fullsize\" "
+"definiert werden. Hat dies den Value 1, wird der Inhaltsbereich auf volle "
+"Seitenbreite dargestellt und die Sidebar nach unten verschoben"
+msgstr "Activate sitebar to the right or below content."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1030
-msgid "Anzahl"
-msgstr "N&uacute;mero"
+# @ piratenkleider
+#: inc/constants.php:1767
+msgid "Rechts (Standard)"
+msgstr "Right (Default)"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1031
-msgid "Wieviele Twittermeldungen sollen maximal gezeigt werden."
-msgstr "Quantas mensagens do Twitter est&atilde;o a ser mostrado acima."
+# @ piratenkleider
+#: inc/constants.php:1767
+msgid "Unter dem Inhalt"
+msgstr "Below content"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1038
-msgid "Tweet-Datum"
-msgstr "Dados Tweeter"
+# @ piratenkleider
+#: inc/constants.php:1772
+msgid "Fehlermeldung bei Login"
+msgstr "Mensagem Erro no Login"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1039
-msgid "Datum der Twittermeldung anzeigen."
-msgstr "Mostrar a data da mensagem no Twitter."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1045
-msgid "Twitter Cache"
-msgstr "Cache do Twitter"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1046
+# @ piratenkleider
+#: inc/constants.php:1773
 msgid ""
-"Zeit in Sekunden f&uuml;r den Twitter-Cache. Dieser Wert darf nicht kleiner "
-"als 10 Minuten (=600) sein."
-msgstr ""
-"Tempo em segundos para o Twitter cache. Este valor n&atilde;o &eacute; "
-"inferior a 10 minutos (= 600) a ser."
+"Option um die Fehlermeldung beim Login im Backend ein oder abzuschalten, mit "
+"der angezeigt wird, warum der Login fehlschlug."
+msgstr "Activar mensagens erro no &quot;login&quot; para os utilizadores."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1054
-msgid "Meta-Angaben"
-msgstr "Informa&ccedil;&atilde;o Meta"
+# @ piratenkleider
+#: inc/constants.php:1774
+#, fuzzy
+msgid "Fehlermeldung zeigen"
+msgstr "Show twitter date"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1058
-msgid "Autor"
-msgstr "Autor"
+# @ piratenkleider
+#: inc/constants.php:1774
+msgid "Keine Meldung"
+msgstr "Sem Mensagem"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1059
-msgid "Optionale Autor-Angabe in dem Meta-Tag jeder Seite."
-msgstr ""
-"Informa&ccedil;&otilde;es sobre o autor opcional em cada p&aacute;gina da "
-"tag meta."
+# @ piratenkleider
+#: inc/constants.php:1780
+#, fuzzy
+msgid "Linkicons anzeigen"
+msgstr "Show links"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1063
-msgid "Beschreibung"
-msgstr "Descri&ccedil;&atilde;o"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1064
+# @ piratenkleider
+#: inc/constants.php:1781
+#, fuzzy
 msgid ""
-"Optionale Beschreibungstext in dem Meta-Tag jeder Seite (f&uuml;r alle "
-"gleich). Sollte nicht mehr als 140 Zeichen lang sein, wenn gesetzt."
-msgstr ""
-"Descri&ccedil;&atilde;o opcional em cada p&aacute;gina da tag meta. N&atilde;"
-"o deve exceder 140 caracteres."
+"Bei der Anzeige von Links in Artikeln und Seiten werden bekannte Adressen "
+"und Dateitypen mit Icons erg�nzt."
+msgstr "Show and link authors in articles."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1068
-msgid "Schl&uuml;sselworte"
-msgstr "Keywords"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1069
+# @ piratenkleider
+#: inc/constants.php:1789
 msgid ""
-"Optionale Schl&uuml;sselworte in dem Meta-Tag jeder Seite (f&uuml;r alle "
-"gleich). Durch Komma getrennt. Schl&uuml;sselworte sollten tats&auml;chlich "
-"vorkommen."
-msgstr ""
-"Keywords opcionais em cada p&aacute;gina da tag meta. Separados por v&iacute;"
-"rgulas. Keywords devem realmente aparecer na p&aacute;gina."
+"URL, inkl. http://, zur Seite auf der man sich in Newsletter eingetragen "
+"werden kann."
+msgstr "URL (incluindo http://) para o formul&aacute;rio newletter."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1074
+# @ piratenkleider
+#: inc/constants.php:1797
 msgid "Anonymit&auml;t &amp; Sicherheit"
 msgstr "Anonimato e seguran&ccedil;a"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1078
+# @ piratenkleider
+#: inc/constants.php:1802
 msgid "Autoren anzeigen"
 msgstr "Mostrar autores"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1079
+# @ piratenkleider
+#: inc/constants.php:1803
 msgid "Bei der Anzeige von Artikeln den Autoren anzeigen und verlinken."
 msgstr "Mostrar e linkar autores nos artigos."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1084
+# @ piratenkleider
+#: inc/constants.php:1809
 msgid "Kommentarbenutzer anonymisieren"
 msgstr "Anonimizar coment&aacute;rios"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1085
+# @ piratenkleider
+#: inc/constants.php:1810
 msgid ""
 "IP-Adresse und der User-Agent-String geleert, die Eingabe von E-Mail-"
 "Adressen wird verhindert.<br> Diese Option deaktiviert auch die Avatar-"
@@ -2424,26 +2357,30 @@ msgid ""
 msgstr ""
 "Endere&ccedil;o IP e string user-agent vazio, a entrada de endere&ccedil;os "
 "de correio electr&oacute;nico ser&aacute; impedida. <br> Esta op&ccedil;"
-"&atilde;o também desativa a exibi&ccedil;&atilde;o e redefine a "
+"&atilde;o tamb&eacute;m desativa a exibi&ccedil;&atilde;o e redefine a "
 "configura&ccedil;&atilde;o do avatar em Configura&ccedil;&otilde;es comment-"
 "discuss&atilde;o para que os utilizadores n&atilde;o t&ecirc;m nomes e e-"
 "endere&ccedil;os de email tem de escrever mais."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1090
+# @ piratenkleider
+#: inc/constants.php:1816
 msgid "Selbstidentifikation"
 msgstr "A auto-identifica&ccedil;&atilde;o"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1091
+# @ piratenkleider
+#: inc/constants.php:1817
 msgid "Angebotene Kommentarfelder zur freiwilligen Selbstidentifikation"
 msgstr ""
 "Oferecido para volunt&aacute;rio Coment&aacute;rio campos auto-"
 "identifica&ccedil;&atilde;o"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1097
+# @ piratenkleider
+#: inc/constants.php:1824
 msgid "Avatare anzeigen"
 msgstr "Ver avatares"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1098
+# @ piratenkleider
+#: inc/constants.php:1825
 msgid ""
 "Bei Kommentaren werden Avatar-Bilder mit Hilfe von Gravatar oder anderen "
 "Diensten abgerufen. Dies erm&ouml;glicht allerdings theoretisch ein Tracking "
@@ -2453,170 +2390,59 @@ msgstr ""
 "usando servi&ccedil;os Gravatar e outros. No entanto, teoricamente, isso "
 "permite um acompanhamento desses servi&ccedil;os."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1104
-msgid "Sonstiges"
-msgstr "Outro"
+# @ piratenkleider
+#: inc/constants.php:1832
+msgid "Meta-Angaben"
+msgstr "Informa&ccedil;&atilde;o Meta"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1108
-msgid "Sidebar abblendbar"
-msgstr "Esconder sidebar"
+# @ piratenkleider
+#: inc/constants.php:1836
+msgid "Autor"
+msgstr "Autor"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1109
-msgid ""
-"Benutzern via JavaScript die M&ouml;glichkeit geben, die Sidebar klein zu "
-"machen. <br>Hinweis: Der Status wird nicht gespeichert, um keine Cookies "
-"anzulegen; Die Funktion ist nicht sichtbnar, wenn man kein JavaScript an "
-"hat. Desweiteren ist die Funktion nur aktiv, wenn die Bildschirmbreite "
-"gr&ouml;&szlig;er als 600 Pixel ist."
+# @ piratenkleider
+#: inc/constants.php:1837
+msgid "Optionale Autor-Angabe in dem Meta-Tag jeder Seite."
 msgstr ""
-"Utilizadores atrav&eacute;s de JavaScript que pode dar para fazer barra "
-"lateral pequena. <br> Nota: O estado n&atilde;o &eacute; armazenada de forma "
-"a n&atilde;o criar quaisquer cookies; A fun&ccedil;&atilde;o n&atilde;o "
-"&eacute; sichtbnar, se voc&ecirc; n&atilde;o tem JavaScript. Al&eacute;m "
-"disso, a fun&ccedil;&atilde;o s&oacute; est&aacute; activa quando a largura "
-"da tela &eacute; maior do que 600 pixels."
+"Informa&ccedil;&otilde;es sobre o autor opcional em cada p&aacute;gina da "
+"tag meta."
 
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:1245
-#, fuzzy
-msgid "Position der Sidebar"
-msgstr "Position and Display option"
+# @ piratenkleider
+#: inc/constants.php:1842
+msgid "Beschreibung"
+msgstr "Descri&ccedil;&atilde;o"
 
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:1246
+# @ piratenkleider
+#: inc/constants.php:1843
 msgid ""
-"Sidebar rechts neben den Inhalt oder darunter positionieren. Wenn die "
-"Sidebar unter dem Inhalt positioniert wird, wird der Inhaltsbereich &uuml;"
-"ber die gesamte Breite gehen."
-msgstr "Activate sitebar to the right or below content."
-
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:1247
-msgid "Rechts (Standard)"
-msgstr "Right (Default)"
-
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:1247
-msgid "Unter dem Inhalt"
-msgstr "Below content"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1114
-msgid "Antwortlinks auf Kommentare"
-msgstr "Links responder nos coment&aacute;rios"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1115
-msgid ""
-"Bei der Anzeige von Kommentaren, wird unter diesen ein eigener Kommentarlink "
-"eingebaut, der das Antworten auf den Kommentar erlaubt. Dies kann zu einer "
-"Nutzung des Kommentarbereiches wie bei einem Forum f&uuml;hren, bei dem es "
-"zuletzt aber nicht mehr um den eigentlichen Beitrag geht."
+"Optionale Beschreibungstext in dem Meta-Tag jeder Seite (f&uuml;r alle "
+"gleich). Sollte nicht mehr als 140 Zeichen lang sein, wenn gesetzt."
 msgstr ""
-"Mostrar um link de resposta em cada coment&aacute;rio. Isso permite a "
-"se&ccedil;&atilde;o de coment&aacute;rios para ser usado como um f&oacute;"
-"rum, incluindo se desviar."
+"Descri&ccedil;&atilde;o opcional em cada p&aacute;gina da tag meta. N&atilde;"
+"o deve exceder 140 caracteres."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1120
-msgid "Kommentar-Disclaimer"
-msgstr "Coment&aacute;rios"
+# @ piratenkleider
+#: inc/constants.php:1848
+msgid "Schl&uuml;sselworte"
+msgstr "Keywords"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1121
-msgid "Kurzer Hinweistext (ggf. Link) zu Regeln f&uuml;r Kommentare."
-msgstr "Texto descritivo curto (se link) com regras para coment&aacute;rios."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1125
-msgid "Defaultbilder f&uuml;r Seiten"
-msgstr "Imagens default para p&aacute;ginas"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1126
+# @ piratenkleider
+#: inc/constants.php:1849
 msgid ""
-"Bilder f&uuml;r Seiten erzwingen, die von sich aus kein Artikelbild "
-"definiert haben. Wenn kein Artikelbild vorhanden ist, wird ein Defaultbild "
-"gezeigt."
+"Optionale Schl&uuml;sselworte in dem Meta-Tag jeder Seite (f&uuml;r alle "
+"gleich). Durch Komma getrennt. Schl&uuml;sselworte sollten tats&auml;chlich "
+"vorkommen."
 msgstr ""
-"Aplicar imagens para p&aacute;ginas sem imagem artigo. Se nenhuma imagem "
-"artigo &eacute; definido, uma imagem padr&atilde;o &eacute; mostrado."
+"Keywords opcionais em cada p&aacute;gina da tag meta. Separados por v&iacute;"
+"rgulas. Keywords devem realmente aparecer na p&aacute;gina."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1131
-msgid "Platzhalterbilder"
-msgstr "imagem de espa&ccedil;o reservado"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1132
-msgid ""
-"Platzhalterbilder bei Indexseiten zu Kategorien, Tags, Suche und Archiv "
-"anzeigen."
-msgstr ""
-"Mostrar imagens de espa&ccedil;o reservado nas p&aacute;ginas de &iacute;"
-"ndice de categorias, tags, procura e arquivamento."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1137
-msgid "Kommentarbubble"
-msgstr "Coment&aacute;rio bolha"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1138
-msgid ""
-"Zeige den Kommentarbubble auch dann, wenn noch keine Kommentare abgegeben "
-"wurden"
-msgstr ""
-"Tamb&eacute;m mostram bolha coment&aacute;rio Se nenhum coment&aacute;rio "
-"dispon&iacute;vel."
-
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:1281
-msgid "Circle Player"
-msgstr ""
-
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:1282
-msgid ""
-"Circle Player (HTML5 Player) f&uuml;r MP3/OGG-Dateien in einzelnen "
-"Beitr&auml;gen aktivieren."
-msgstr "Abre CirclePlayer (HTML5 Player) para MP3/OGG-files "
-
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:1287
-msgid "Fehlermeldung bei Login"
-msgstr "Mensagem Erro no Login"
-
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:1288
-msgid ""
-"Option um die Fehlermeldung beim Login im Backend ein oder abzuschalten, mit "
-"der angezeigt wird, warum der Login fehlschlug."
-msgstr "Activar mensagens erro no &quot;login&quot; para os utilizadores."
-
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:1289
-#, fuzzy
-msgid "Fehlermeldung zeigen"
-msgstr "Show twitter date"
-
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:1289
-msgid "Keine Meldung"
-msgstr "Sem Mensagem"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/constants.php:1144
-msgid ""
-"URL, inkl. http://, zur Seite auf der man sich in Newsletter eingetragen "
-"werden kann."
-msgstr "URL (incluindo http://) para o formul&aacute;rio newletter."
-
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:1303
-msgid "Disclaimer f&uuml;r (Gast-)Artikel"
-msgstr "Disclaimer"
-
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:1304
-msgid ""
-"Definiere ein Text als Disclaimer der bei Artikeln gezeigt werden kann. "
-"Disclaimer wird mit Custom Field show-post-disclaimer (= 0, 1,2,3) aktiviert."
-msgstr ""
-"Disclaimertext. Disclaimer will be activated by custom field show-post-"
-"disclaimer in values 0,1,2,3"
-
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:1310
-#, fuzzy
-msgid "Kategoriedarstellung"
-msgstr "Teaser-Type"
-
-#: E:\work\WWW\web\wordpress-tokenbus.de\theme-arbeit\Piratenkleider/inc/constants.php:1311
-msgid "Kategorieseiten wie Startseite darstellen"
-msgstr "Display category pages like startpage"
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:12
+# @ piratenkleider
+#: inc/widgets.php:12
 msgid "Sidebar (Rechte Spalte)"
 msgstr "Sidebar (Coluna da direita)"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:14
+# @ piratenkleider
+#: inc/widgets.php:14
 msgid ""
 "Dieser Bereich befindet sich rechts vom Inhaltsbereich. \n"
 "                    Er ist geeignet f&uuml;r Werbeplakate, Hinweise und "
@@ -2630,11 +2456,13 @@ msgstr ""
 "estiver vazia, como uma alternativa alguns dos cartazes gerais padr&atilde;o "
 "s&atilde;o mostrados."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:25
+# @ piratenkleider
+#: inc/widgets.php:25
 msgid "Sidebar 2 (Rechts unter Plakaten)"
 msgstr "Sidebar 2 (Cartazes em baixo)"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:27
+# @ piratenkleider
+#: inc/widgets.php:27
 msgid ""
 "Dieser Bereich befindet sich rechts vom Inhaltsbereich.\n"
 "                    Er ist nach den Werbeplakaten positioniert, die &uuml;"
@@ -2644,11 +2472,13 @@ msgstr ""
 "Esta parte est&aacute; localizada &agrave; direito do conte&uacute;do e "
 "cartazes abaixo opcionais."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:38
+# @ piratenkleider
+#: inc/widgets.php:38
 msgid "Startseite: Sliderbereich"
 msgstr "Home: Slider"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:40
+# @ piratenkleider
+#: inc/widgets.php:40
 msgid ""
 "Bereich oberhalb der 3 Artikelbilder.\n"
 "                    Wenn leer, erscheinen hier wechselnden Bilder \n"
@@ -2659,51 +2489,28 @@ msgstr ""
 "p&aacute;gina o cursor ir&aacute; exibir artigos para fora da categoria que "
 "foi definida para o slider."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:52
+# @ piratenkleider
+#: inc/widgets.php:52
 msgid "Startseite: Rechter Aktionlinkbereich"
-msgstr "Home: links de acção no canto direito"
+msgstr "Home: links de ac&ccedil;&atilde;o no canto direito"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:54
-msgid ""
-"Dieser Bereich ist rechts neben den Slider\n"
-"                    und dem Hauptcontent positioniert. Wenn leer, werden "
-"hier\n"
-"                    die 3 Links zur Piratenwebsite gezeigt zum Mitmachen\n"
-"                    oder Spenden"
-msgstr ""
-"Esta parte est&aacute; localizada direita do controle deslizante. Se vazio, "
-"aqui um conjunto de tr&ecirce;s links de informa&ccedil;&otilde;es "
-"ser&aacute; exibida."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:69
+# @ piratenkleider
+#: inc/widgets.php:77
 msgid "Startseite: Links unten"
 msgstr "Home: Rodap&eacute; lado esquerdo"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:71
-msgid ""
-"Bereich links unterhalb der 3 Presseartikel. \n"
-"                        Wenn leer, werden hier weitere Artikel aus\n"
-"                        der Kategorie \"pm\" gezeigt. "
-msgstr ""
-"Posi&ccedil;&atilde;o abaixo os primeiros artigos da p&aacute;gina inicial."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:82
+# @ piratenkleider
+#: inc/widgets.php:88
 msgid "Startseite: Rechts unten"
 msgstr "Home: Rodap&eacute; lado direito"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:84
-msgid ""
-"Bereich rechts unterhalb der drei Presseartikel.\n"
-"                         Wenn leer, wird hier eine Schlagwortliste \n"
-"                         gezeigt."
-msgstr ""
-"Espa&ccedil;o abaixo e desde os primeiros artigos da p&aacute;gina inicial."
-
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:95
+# @ piratenkleider
+#: inc/widgets.php:99
 msgid "Fu&szlig;bereich: Linke Seite"
 msgstr "Rodap&eacute;: Coluna esquerda"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:97
+# @ piratenkleider
+#: inc/widgets.php:101
 msgid ""
 "Bereich im Fu&szlig;teil unter dem Haupttextbereich.\n"
 "                   Dieser Bereich eignet sich insbesondere f&uuml;r externe "
@@ -2722,11 +2529,13 @@ msgstr ""
 "atribu&iacute;do a esta barra lateral como um widget. Se vazio, nada "
 "ser&aacute; exibido."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:111
+# @ piratenkleider
+#: inc/widgets.php:115
 msgid "Fu&szlig;bereich: Rechte Spalte"
 msgstr "Rodap&eacute;: Coluna direita"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:113
+# @ piratenkleider
+#: inc/widgets.php:117
 msgid ""
 "Rechte Spalte im Fu&szlig;bereich. Wenn leer, erscheint hier das\n"
 "                    technische Menu (siehe Men&uuml;s). Wenn auch dieses "
@@ -2737,157 +2546,490 @@ msgstr ""
 "de t&eacute;cnico (ver menu). Embora este n&atilde;o esteja definido, o "
 "endere&ccedil;o do blog e o endere&ccedil;o do feed RSS aparecer&atilde;o"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:137
+# @ piratenkleider
+#: inc/widgets.php:152
 msgid "Piraten Newsletter"
 msgstr "Newsletter Pirata"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:138
+# @ piratenkleider
+#: inc/widgets.php:153
 msgid "Formular zur EIngabe einer Mailadresse zu einem Majordomolink angeben."
 msgstr ""
 "Ativar formul&aacute;rio para subscrever a Majordomolist (mailing list)."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:176
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:218
+# @ piratenkleider
+#: inc/widgets.php:191 inc/widgets.php:233
 msgid ""
 "Fehler: Adresse des Newsletter-Dienstes ist nicht eingetragen. Bitte geben "
 "Sie diese Adresse zun&auml;chst bei den Theme-Optionen an."
 msgstr ""
 "Erro: digite um endere&ccedil;o para o mordomo-lista em primeiro lugar."
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:222
+# @ piratenkleider
+#: inc/widgets.php:237
 msgid "Titel:"
 msgstr "T&iacute;tulo:"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:245
+# @ piratenkleider
+#: inc/widgets.php:260
 msgid "Piraten Linkliste"
 msgstr "Links Piratas"
 
-#: F:\www\projekte\WP-Theme-Piratenkleider/inc/widgets.php:246
+# @ piratenkleider
+#: inc/widgets.php:261
 msgid "Linkliste mit verschiedenen Gliederungen und Bereichen der Partei"
 msgstr "Links para as diferentes sec&ccedil;&otilde;s piratas"
 
-#~ msgid "England"
-#~ msgstr "United Kingdom"
+# @ piratenkleider
+#: comments.php:12
+#, php-format
+msgid "Ein Kommentar zu %2$s"
+msgid_plural "%1$s Kommentare zu %2$s"
+msgstr[0] "Um coment&aacute;rio de %2$s"
+msgstr[1] "%1$s coment&aacute;rios de %2$s"
 
-#~ msgid "Page %s"
-#~ msgstr "Page %s"
+# @ piratenkleider
+#: functions.php:754
+msgid "Ver&ouml;ffentlicht am"
+msgstr "Publicado a"
 
-#~ msgid " Takelage einstellen: Konfiguration "
-#~ msgstr "Set rigs: Configuration"
+# @ piratenkleider
+#: functions.php:770
+#, php-format
+msgid "<span class=\"meta-prep-author\">von</span> %1$s "
+msgstr "<span class=\"meta-prep-author\">por</span> %1$s "
 
-#~ msgid "Content (Inline-HTML)"
-#~ msgstr "Content (Inline-HTML)"
+# @ piratenkleider
+#: functions.php:773
+#, php-format
+msgid "Artikel von %s"
+msgstr "Artigo por %s"
 
-#~ msgid "Alternative Option:"
-#~ msgstr "Alternative option:"
+# @ piratenkleider
+#: inc/constants.php:173
+msgid "Zur&uuml;ck zur Startseite"
+msgstr "Back to startpage"
 
-#~ msgid "Seitenmen&uuml; in der Sidebar anzeigen."
-#~ msgstr "Show site menu in sidebar."
+# @ piratenkleider
+#: inc/constants.php:352
+msgid "Orange SG Gestaltung BTW13"
+msgstr "Orange Style SG Gestaltung BTW13"
 
-#~ msgid "Eingabemaske anzeigen"
-#~ msgstr "Show form"
+# @ piratenkleider
+#: inc/constants.php:356
+msgid "Blau SG Gestaltung BTW13"
+msgstr "Blue Style SG Gestaltung BTW13"
 
-#~ msgid "Plakatslider aktivieren"
-#~ msgstr "Activade poster slider"
+# @ piratenkleider
+#: inc/constants.php:395
+msgid "Awesome"
+msgstr "Awesome"
 
-#~ msgid ""
-#~ "URL inkl. http:// zur Facebook Seite<br>Zum Beispiel: <code>http://www."
-#~ "facebook.com/PiratenparteiDeutschland</code>"
-#~ msgstr ""
-#~ "Facebook URI (including http://)<br>For example: <code>http://www."
-#~ "facebook.com/PiratenparteiDeutschland</code>"
+# @ piratenkleider
+#: inc/constants.php:396
+msgid "Bebas &amp; Awesome"
+msgstr "Bebas &amp; Awesome"
 
-#~ msgid ""
-#~ "URL inkl. http:// zur Twitter Seite<br>Zum Beispiel: <code>https://"
-#~ "twitter.com/#!/piratenpartei</code>"
-#~ msgstr ""
-#~ "Twitter URI (including http://)<br>For example: <code>https://twitter.com/"
-#~ "#!/piratenpartei</code>"
+# @ piratenkleider
+#: inc/constants.php:405
+msgid "Default Piratenkleider"
+msgstr "Default Piratenkleider"
 
-#~ msgid ""
-#~ "URL inkl. http:// zur YouTube Seite<br>Zum Beispiel: <code>http://www."
-#~ "youtube.com/user/piratenpartei</code>"
-#~ msgstr ""
-#~ "Youtube URI (including http://)<br>For example: <code>http://www.youtube."
-#~ "com/user/piratenpartei</code>"
+# @ piratenkleider
+#: inc/constants.php:406
+msgid "Leeres Beispiel-CSS"
+msgstr "Empty sample css"
 
-#~ msgid ""
-#~ "URL inkl. http:// zur G+ Seite <br>Zum Beispiel: <code>https://plus."
-#~ "google.com/u/0/107862983960150496076/posts</code>"
-#~ msgstr ""
-#~ "Google+ URI (including http://)<br>For example: <code>https://plus.google."
-#~ "com/u/0/107862983960150496076/posts</code>"
+# @ piratenkleider
+#: inc/constants.php:407
+msgid "Scapegoat-Adaption (ALPHA!!!)"
+msgstr "Scapegoat design (alpha version)"
 
-#~ msgid ""
-#~ "URL inkl. http:// zur Diaspora Seite <br>Zum Beispiel: <code>https://"
-#~ "joindiaspora.com/u/piratenpartei</code>"
-#~ msgstr ""
-#~ "Diaspora* URI (including http://)<br>For example: <code>https://"
-#~ "joindiaspora.com/u/piratenpartei</code>"
+# @ piratenkleider
+#: inc/constants.php:955
+msgid "Gestaltung Textausz&uuml;ge"
+msgstr "Style for excerpts"
 
-#~ msgid ""
-#~ "URL inkl. http:// zur Identica Seite <br>Zum Beispiel:  <code>http://"
-#~ "identi.ca/piratenpartei</code>   "
-#~ msgstr ""
-#~ "Identi.ca URI (including http://)<br>For example: <code>http://identi.ca/"
-#~ "piratenpartei</code>   "
+# @ piratenkleider
+#: inc/constants.php:983 inc/constants.php:1026 inc/constants.php:1215
+#: inc/constants.php:1260
+msgid "Titel oben"
+msgstr "Titles on top"
 
-#~ msgid "Der reine Twitter Benutzername"
-#~ msgstr "Solely the Twitter nick"
+# @ piratenkleider
+#: inc/constants.php:984 inc/constants.php:1216
+msgid "Titel &uuml;ber Logo/Datumsbox und Text"
+msgstr "Title above logo or datebox and text"
 
-#~ msgid "Slider im Teaserbereich auf der Startseite aktivieren."
-#~ msgstr "Activate slider on start page"
+# @ piratenkleider
+#: inc/constants.php:990 inc/constants.php:1033 inc/constants.php:1222
+#: inc/constants.php:1267
+msgid "Symbolbild/Datumsbox"
+msgstr "Thumbnail or datebox"
 
-#~ msgid ""
-#~ "Die Auswahl der Plakatbilder kann unter den Defaultbildern angepasst "
-#~ "werden."
-#~ msgstr "You can chose the posters by the given default images"
+# @ piratenkleider
+#: inc/constants.php:991 inc/constants.php:1223
+msgid ""
+"Links des Textauszuges das Datum, das Artikelbild, ein Bild des Artikels "
+"oder ein verlinktes Video anzeigen; Abh�ngig vom Inhalt des Artikels."
+msgstr "Datebox, thumbnail or video is positioned left of the text content "
 
-#~ msgid "Wie lang darf der Titel insgesamt sein, bevor er gek&uuml;rzt wird"
-#~ msgstr "How long is the title permitted to be before it is shortened"
+# @ piratenkleider
+#: inc/constants.php:994 inc/constants.php:1037 inc/constants.php:1226
+#: inc/constants.php:1271
+msgid "Datumsbox anzeigen"
+msgstr "Show datebox"
 
-#~ msgid "Wortzahl des Titels im Teaser"
-#~ msgstr "Title word count in teaser"
+# @ piratenkleider
+#: inc/constants.php:995 inc/constants.php:1038 inc/constants.php:1227
+#: inc/constants.php:1272
+msgid ""
+"Reihenfolge: Artikelbild, erstes Bild, erstes Video oder Ersatzbild zeigen"
+msgstr ""
+"Order: Thumbnail, first picture in text, first linked youtube video or "
+"default picture"
 
-#~ msgid "Spezialseiten"
-#~ msgstr "Special pages"
+# @ piratenkleider
+#: inc/constants.php:996 inc/constants.php:1039 inc/constants.php:1228
+#: inc/constants.php:1273
+msgid ""
+"Reihenfolge: Erstes Bild, Artikelbild, erstes Video oder Ersatzbild zeigen"
+msgstr ""
+"Order: First picture in text, thumbnail, first youtube-video or default "
+"picture"
 
-#~ msgid "Author"
-#~ msgstr "Author"
+# @ piratenkleider
+#: inc/constants.php:997 inc/constants.php:1040 inc/constants.php:1229
+#: inc/constants.php:1274
+msgid ""
+"Reihenfolge: Erstes Video, Artikelbild, erstes Bild oder Ersatzbild zeigen"
+msgstr ""
+"order: First youtube video, thumbnail, first picture in text or default "
+"picture"
 
-#~ msgid "Description"
-#~ msgstr "Description"
+# @ piratenkleider
+#: inc/constants.php:998 inc/constants.php:1041 inc/constants.php:1230
+#: inc/constants.php:1275
+msgid ""
+"Reihenfolge: Erstes Video, erstes Bild, Artikelbild oder Ersatzbild zeigen"
+msgstr ""
+"Order: First youtube-video, first picture in text, thumbnail or default "
+"picture"
 
-#~ msgid "Keywords"
-#~ msgstr "Keywords"
+# @ piratenkleider
+#: inc/constants.php:999 inc/constants.php:1042 inc/constants.php:1231
+#: inc/constants.php:1276
+msgid "Nichts anzeigen"
+msgstr "Show nothing"
 
-#~ msgid ""
-#~ "Hinweis: Diese Angaben wirken auf alle Seiten und Artikel der Site. Dies "
-#~ "ist jedoch nicht immer sinnvoll (insbes. bei Keywords und Description). "
-#~ msgstr "Notice: This entries will be set for every page and article. "
+# @ piratenkleider
+#: inc/constants.php:1004 inc/constants.php:1048 inc/constants.php:1237
+#: inc/constants.php:1282
+msgid "Flie&szlig;ender Text"
+msgstr "Floating text"
 
-#~ msgid ""
-#~ "Sollten zudem SEO-Plugins, wie bspw. wpSEO oder andere im Einsatz sein, "
-#~ "sollten diese Angaben ebenfalls unausgef&uuml;llt bleiben.  "
-#~ msgstr ""
-#~ "If you are using SEO-plugins like wpSEO, it will be better to leave this "
-#~ "blank."
+# @ piratenkleider
+#: inc/constants.php:1005 inc/constants.php:1238
+msgid "Text umflie&szlig;t das Bild"
+msgstr "Text is floating to the picture"
 
-#~ msgid "Sicherheit &amp; Anonymit&auml;t"
-#~ msgstr "Security &amp; anonymity"
+# @ piratenkleider
+#: inc/constants.php:1011 inc/constants.php:1056 inc/constants.php:1245
+#: inc/constants.php:1289
+msgid "Datumszeile"
+msgstr "Line for date"
 
-#~ msgid ""
-#~ "IP-Adresse und der User-Agent-String geleert, die Eingabe von E-Mail-"
-#~ "Adressen wird verhindert"
-#~ msgstr ""
-#~ "IP address and user agent string emptied; entering e-mail addresses is "
-#~ "prohibited"
+# @ piratenkleider
+#: inc/constants.php:1012 inc/constants.php:1246
+msgid "Datumszeile vor dem Text, falls keine Datumsbox angezeigt wird"
+msgstr "Line for date before text. (only if no datebox is active)"
 
-#~ msgid "In diesem Fall angebotene Kommentarfelder:"
-#~ msgstr "commentary fields offered in this case:"
+# @ piratenkleider
+#: inc/constants.php:1019 inc/constants.php:1253
+msgid "L&auml;nge des Teasertextes"
+msgstr "Length of text"
 
-#~ msgid "Defaultbilder f&uuml;r Slider"
-#~ msgstr "Default images for slider"
+# @ piratenkleider
+#: inc/constants.php:1020 inc/constants.php:1254
+msgid ""
+"Maximale Textl&auml;nge f&uuml;r Artikelausz&uuml;ge (Bei Beitr&auml;gen "
+"&uuml;ber halbe Breite)."
+msgstr "Maximum length of text (at using half width extracts)"
 
-#~ msgid "Defaultplakate f&uuml;r Sidebar"
-#~ msgstr "Default posters for sidebar"
+# @ piratenkleider
+#: inc/constants.php:1027 inc/constants.php:1261
+msgid ""
+"Titel &uuml;ber Logo/Datumsbox und Text (Bei Beitr&auml;gen &uuml;ber halbe "
+"Breite)."
+msgstr "Title above logo or datebox and text (on extracts using half width)"
+
+# @ piratenkleider
+#: inc/constants.php:1057 inc/constants.php:1290
+msgid ""
+"Datumszeile vor dem Text, falls keine Datumsbox angezeigt wird (Bei "
+"Beitr&auml;gen &uuml;ber halbe Breite)."
+msgstr ""
+"Datebox above text. (only if no datebox is active; on articels with half "
+"width)"
+
+# @ piratenkleider
+#: inc/constants.php:1179
+msgid "Indexseiten (Kategorien, Tags und andere)"
+msgstr "Index pages (categories, tags, search results and others)"
+
+# @ piratenkleider
+#: inc/constants.php:1184
+msgid "Slider aktivieren"
+msgstr "Activate slider"
+
+# @ piratenkleider
+#: inc/constants.php:1185
+msgid "Kategorieseiten mit Slider wie auf Startseite darstellen"
+msgstr "Show Indexpages with slider like start page"
+
+# @ piratenkleider
+#: inc/constants.php:1209
+msgid "Maximale Textl&auml;nge f&uuml;r Artikelausz&uuml;ge"
+msgstr "Maximum text length for extracts"
+
+# @ piratenkleider
+#: inc/constants.php:1457
+msgid "Seiten"
+msgstr "Pages"
+
+# @ piratenkleider
+#: inc/constants.php:1458
+msgid "Kommentare auch auf Seiten (und nicht nur Artikeln) zulassen."
+msgstr "Allow comments on pages."
+
+# @ piratenkleider
+#: inc/constants.php:1688
+msgid "Design (Kl&uuml;verbaum)"
+msgstr "Design Options"
+
+# @ piratenkleider
+#: inc/constants.php:1713
+msgid "Grunddesign &auml;ndern"
+msgstr "Chance base design options"
+
+# @ piratenkleider
+#: inc/constants.php:1714
+msgid "Aktiviert ein alternatives Design f&uuml;r die gesamte Website."
+msgstr "Activates an alternative CSS style"
+
+# @ piratenkleider
+#: inc/constants.php:1715
+msgid ""
+"<br><strong>ACHTUNG: ALPHA-Status! Designs sind noch nicht fertig</strong>."
+msgstr "<br><strong>Notice: This is for experimental use only!</strong>"
+
+# @ piratenkleider
+#: inc/constants.php:1724
+msgid ""
+"Hinweis: Die Verkleinerung der H&ouml;he des Kopfteils ist nicht ungef&auml;"
+"hrlich. Zu beachten ist, dass der Kopfteil auch bei einer Vergr&ouml;&szlig;"
+"erung des Textes auf 200% noch gen&uuml;gend Platz haben muss!"
+msgstr ""
+"Notice: On lowering the height of the header people with big sized text "
+"fonts may get problems. "
+
+# @ piratenkleider
+#: inc/constants.php:1730
+msgid ""
+"Das Logo hat einen Abstand nach oben. Diese kann &uuml;ber diese Angabe "
+"reduziert werden."
+msgstr ""
+"O logotipo tem uma margem para o topo. Isto pode ser reduzida com esta "
+"declara&ccedil;&atilde;o."
+
+# @ piratenkleider
+#: inc/constants.php:1736
+msgid "CSS-Anweisungen"
+msgstr "CSS-Code"
+
+# @ piratenkleider
+#: inc/constants.php:1742
+msgid "HTML-Anweisungen"
+msgstr "HTML-Code"
+
+# @ piratenkleider
+#: inc/constants.php:1743
+msgid ""
+"Eigene HTML-Anweisungen, die am Ende der Webseite, vor dem letzten &lt;/"
+"body&gt;&lt;/html&gt; plaziert werden"
+msgstr ""
+"C&oacute;digo HTML pr&oacuteprio, que ser&aacute alterada no final da "
+"p&aacute;gina web (antes do &uacute;ltimo &lt;/body&Gt;&lt;/html&gt;)."
+
+# @ piratenkleider
+#: inc/constants.php:1744
+msgid ""
+"<br><b>Achtung:</b> Fehlerhafter HTML-, JavaScript oder CSS-Code an dieser "
+"Stelle kann zu einem Nicht-Funktionieren der gesamt Website f&uuml;hren!<br /"
+">Der hier eingegebene Code wird nicht gefiltert oder kontrolliert."
+msgstr ""
+"<b>Aten&ccedil;&atilde;o:</b> HTML incorreto, c&oacute;digo JavaScript ou "
+"CSS neste momento poderia danificar o site."
+
+# @ piratenkleider
+#: inc/constants.php:1856
+msgid ""
+"Metatag mit Keywords wird automatisch aus der Tagcloud erstellt. Wenn oben "
+"Keywords eingegeben wurden, werden diese erg&auml;nzt."
+msgstr ""
+"Create meta tag by keywords out of the tagcloud. If you add manually "
+"keywords above, they will be shown too."
+
+# @ piratenkleider
+#: inc/constants.php:1857
+msgid ""
+"Hinweis: Google und andere Suchmaschinen nutzen diesen Metatag bereits seit "
+"2009 nicht mehr."
+msgstr ""
+"Notice: Google and other modern search engine doesnt use meta tag keywords "
+"any longer."
+
+# @ piratenkleider
+#: inc/constants.php:1858
+msgid ""
+"Der Zweck dieser Funktion besteht darin, Pseudo-SEO-Experten ruhig zu "
+"halten :)"
+msgstr ""
+"(Use of this function is to get ride of annoying commnts of pseudo "
+"experts :) )"
+
+# @ piratenkleider
+#: inc/constants.php:1883
+msgid "Dienstanbieter"
+msgstr "Publicer"
+
+# @ piratenkleider
+#: inc/constants.php:1890
+msgid "Feste Mailadresse f&uuml;r offizielle Kontakte."
+msgstr "Mail address for official contacts"
+
+# @ piratenkleider
+#: inc/constants.php:1895
+msgid "Telefon"
+msgstr "Phone"
+
+# @ piratenkleider
+#: inc/constants.php:1896
+msgid "Telefonnummer mit Vorwahl."
+msgstr "Phone with country code."
+
+# @ piratenkleider
+#: inc/constants.php:1902
+msgid "Fax"
+msgstr "Fax"
+
+# @ piratenkleider
+#: inc/constants.php:1903
+msgid "Faxnummer mit Vorwahl"
+msgstr "Fax with country codes"
+
+# @ piratenkleider
+#: inc/constants.php:1909
+msgid "Rechtsvorschriften"
+msgstr "Laws "
+
+# @ piratenkleider
+#: inc/constants.php:1910
+msgid "Zeige Linkliste zu Rechtsvorschriften politischer Parteien"
+msgstr "Show links for laws about politican partys"
+
+# @ piratenkleider
+#: inc/widgets.php:54
+msgid ""
+"Dieser Bereich ist rechts neben den Slider und dem Hauptcontent "
+"positioniert. Wenn leer, werden hier\n"
+"                    die Links zur Piratenwebsite gezeigt die unter Optionen "
+"definiert sind."
+msgstr ""
+"This is located right of the slider and the main content. If emtpy, a list "
+"of links to sites will be displayed here, which you can define as teaser "
+"links at theme options."
+
+# @ piratenkleider
+#: inc/widgets.php:65
+msgid "Startseite: Introbereich"
+msgstr "Start page: Intro"
+
+# @ piratenkleider
+#: inc/widgets.php:67
+msgid ""
+"Introbereich unterhalb des Sliders bzw. Teasers auf der Startseite. Hier "
+"lassen sich beispielsweise fest stehende Begr&uuml;ssungen oder andere "
+"Widgets setzen, die noch vor dem eigentlichen Artikeln kommen."
+msgstr ""
+"Positioned below of slider and above main content. You can use this widget "
+"to define static texts or other content."
+
+# @ piratenkleider
+#: inc/widgets.php:79
+msgid ""
+"Bereich links unterhalb der Artikel. Wenn leer, werden hier weitere Artikel "
+"gezeigt. "
+msgstr ""
+"Widget below of article list. If emtpy a list of older articles will be "
+"shown, as defined in theme options."
+
+# @ piratenkleider
+#: inc/widgets.php:90
+msgid ""
+"Bereich rechts unterhalb der Artikel der Startseite. Wenn leer, wird hier "
+"eine Schlagwortliste gezeigt."
+msgstr ""
+"Widget right below of the article list. If empty a tagcloud will be placed "
+"here. "
+
+# @ piratenkleider
+#: inc/widgets.php:130
+msgid ""
+"Widgetbereich unterhalb des Artikelindex einer Kategorie-, Autoren- oder "
+"Tagseite"
+msgstr ""
+"Widget below of article index of a category, tag, author or search results "
+"page."
+
+# @ piratenkleider
+#: loop-category.php:15 loop.php:22 loop.php:40
+#, php-format
+msgid "Permalink to %s"
+msgstr "Link permanente para %s"
+
+# @ piratenkleider
+#: loop.php:20 loop.php:48
+msgctxt "gallery category slug"
+msgid "gallery"
+msgstr "galeria"
+
+# @ piratenkleider
+#: loop.php:48
+msgid "Zeige Artikel aus der Galerie"
+msgstr "Show articles of gallery"
+
+# @ piratenkleider
+#: theme-options.php:17 theme-options.php:18
+msgid "Piratenkleider Optionen"
+msgstr "Piratenkleider Options"
+
+# @ piratenkleider
+#: inc/constants.php:1034 inc/constants.php:1268
+msgid ""
+"Links des Textauszuges das Datum, das Artikelbild, ein Bild des Artikels "
+"oder ein verlinktes Video anzeigen; Abh�ngig vom Inhalt des Artikels. (Bei "
+"Beitr&auml;gen &uuml;ber halbe Breite)"
+msgstr ""
+"Show datebox, thumbnail or youtube video left of the text. (on articles in "
+"half width)"
+
+# @ piratenkleider
+#: inc/constants.php:1049 inc/constants.php:1283
+msgid ""
+"Text umflie&szlig;t das Bild (Bei Beitr&auml;gen &uuml;ber halbe Breite)"
+msgstr "Textflow around picture (on entrys with half width)"
+
+# @ piratenkleider
+msgid "Folgendes"
+msgstr "o seguinte"

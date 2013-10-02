@@ -13,6 +13,9 @@
     <div class="content-primary">
       <div class="skin">
 
+          <?php if ( is_active_sidebar( 'startpage-intro-area' ) ) { ?>
+                <?php dynamic_sidebar( 'startpage-intro-area' ); ?>
+            <?php } ?>          
           <h1 class="skip"><?php _e("Aktuelle Artikel", 'piratenkleider'); ?></h1>
           
       <?php
@@ -25,67 +28,12 @@
       while (have_posts() && $i<$numentries) : the_post();
       $i++;
       ob_start();
-      ?>
-
-      <div <?php post_class(); ?> id="post-<?php the_ID(); ?>" >
-        <div class="post-title">
-          <h2>
-            <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
-              <?php the_title(); ?>
-            </a>
-          </h2>
-        </div>
-        <div class="post-info">
-         <?php  $num_comments = get_comments_number();
-  
-          if (($num_comments>0) || ( $options['zeige_commentbubble_null'])) { ?>
-         <div class="commentbubble"> 
-            <?php 
-                if ($num_comments>0) {
-                   comments_popup_link( '0<span class="skip"> '. __( 'Kommentare', 'piratenkleider' ) .'</span>', '1<span class="skip"> '. __( 'Kommentar', 'piratenkleider' ) .'</span>', '%<span class="skip"> Kommentare</span>', 'comments-link', '%<span class="skip"> '. __( 'Kommentare', 'piratenkleider' ) .'</span>');           
+      if (( isset($options['num-article-startpage-fullwidth']))
+                && ($options['num-article-startpage-fullwidth']>=$i )) {
+		 piratenkleider_post_teaser($options['teaser-titleup'],$options['teaser-datebox'],$options['teaser-dateline'],$options['teaser_maxlength'],$options['teaser-thumbnail_fallback'],$options['teaser-floating']);
                 } else {
-                    // Wenn der Zeitraum abgelaufen ist UND keine Kommentare gegeben waren, dann
-                    // liefert die Funktion keinen Link, sondern nur den Text . Daher dieser
-                    // Woraround:
-                    $link = get_comments_link();
-                    echo '<a href="'.$link.'">0<span class="skip"> '. __( 'Kommentare', 'piratenkleider' ) .'</span></a>';
+		 piratenkleider_post_teaser($options['teaser-titleup-halfwidth'],$options['teaser-datebox-halfwidth'],$options['teaser-dateline-halfwidth'],$options['teaser-maxlength-halfwidth'],$options['teaser-thumbnail_fallback'],$options['teaser-floating-halfwidth']);
               }
-            ?>
-          </div> 
-          <?php } 
-
-          if ($options['aktiv-images-instead-date']) {                                                    
-            $firstpic = get_piratenkleider_firstpicture();
-            if (!empty($firstpic)) { ?>                       
-                <div class="infoimage">                    
-                        <?php echo $firstpic ?>
-                </div>
-            <?php } else { ?>                        
-                <div class="cal-icon">
-                    <span class="day"><?php the_time('j.'); ?></span>
-                    <span class="month"><?php the_time('m.'); ?></span>
-                    <span class="year"><?php the_time('Y'); ?></span>
-                </div>
-                <?php 
-            }
-          } else { ?>
-              <div class="cal-icon">
-                <span class="day"><?php the_time('j.'); ?></span>
-                <span class="month"><?php the_time('m.'); ?></span>
-                <span class="year"><?php the_time('Y'); ?></span>
-            </div>
-          <?php } ?>  
-            
-            
-            
-         
-        </div>
-        <div class="post-entry">
-        <?php echo get_piratenkleider_custom_excerpt(); ?>         
-        </div>
-      </div>
-
-      <?php 
       $output = ob_get_contents();
       ob_end_clean();
       if (isset($output)) {
@@ -99,8 +47,13 @@
         foreach($cols as $key => $col) {
             if (( isset($options['num-article-startpage-fullwidth']))
                 && ($options['num-article-startpage-fullwidth']>$key )) {
-                    echo '<div class="column0">' . $col . '<hr></div>';                              
+                    echo $col;                                               
                 } else {                                        
+                     if (( isset($options['num-article-startpage-fullwidth']))
+                            && ($options['num-article-startpage-fullwidth']==$key )
+                             && ($options['num-article-startpage-fullwidth']>0 )) {
+                         echo '<hr>';
+                        }                                              
                     echo '<div class="column'.$z.'">' . $col . '</div>';                            
                     $z++;
                     if ($z>2) {
@@ -113,8 +66,6 @@
       </div>
 
       
-      
-      
       <?php if ( ! have_posts() ) : ?>
        <h2><?php _e("Nichts gefunden", 'piratenkleider'); ?></h2>
         <p>
@@ -125,10 +76,7 @@
       <?php endif; ?>
 
            
-        
-      
       <div class="startpage-widget-area">
-
         <h2 class="skip"><?php _e("Weitere Artikel", 'piratenkleider'); ?></h2>
         <div class="first-startpage-widget-area">
           <div class="skin">
@@ -153,8 +101,7 @@
                     <?php 
                       }
                   }
-                  if ($options['aktiv-startseite-kategorien']==1) { 
-               ?>
+                  if ($options['aktiv-startseite-kategorien']==1) {  ?>
                 <div class="widget">
                     <h3><?php _e("Kategorien", 'piratenkleider'); ?></h3>
                     <ul>
@@ -182,7 +129,7 @@
                             <h3><?php _e("Schlagworte", 'piratenkleider'); ?></h3>
 
                             <div class="tagcloud">            
-                                <?php wp_tag_cloud(array('smallest'  => 14, 'largest'   => 28)); ?>
+                                <?php wp_tag_cloud(array('format' => 'list', 'smallest'  => 14, 'largest'   => 28)); ?>
                             </div>
                               
                     <?php  }  ?>

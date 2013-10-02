@@ -9,12 +9,83 @@
 */
 
 
+@media only screen and (max-width: 1024px) {
+    .section {
+        padding: 0 6px;
+    }
+     .content .startpage-widget-area, .first-startpage-widget-area ul li {
+         padding: 0 12px;
+     }
+    .content-aside .skin {
+        padding: 20px 1px;
+    }
+    .second-teaser-widget-area .skin, 
+    .sticker .skin, .ie7 .sticker .skin, 
+    .ie8 .sticker .skin {
+        padding: 10px 1px;
+    }
+    .content-aside .slidersidebar {
+        margin: 10px 1px;
+    }
+} 
 @media only screen and (max-width: 767px) {
+.row {
+  width: 100%;
+}     
+  .content-primary,  
+  .teaser .first-teaser-widget-area, 
+  .first-footer-widget-area {   
+    float: none;
+    width: 100%;
+    display: block;
+  }
+  
+  .content-aside, 
+  .teaser .second-teaser-widget-area, 
+  .second-footer-widget-area {
+   float: none;
+    width: 100%;
+     display: block;
+  }
+   .content-primary .columns {
+      float: none;
+      clear: both;
+  }
+  .content-primary .columns .column0,
+  .content-primary .columns .column1,
+  .content-primary .columns .column2 {
+    float: none;
+    width: 100%;
+    display: block;
+    clear: both;
+  }
+  .content-primary .columns .column2:before {
+	content: "";
+	display: block;
+	border: 0;
+	padding: 0;
+	margin-bottom: 15px;
+	margin-top: 5px;
+	background: url("../images/jolly.png") no-repeat center center;
+	height: 26px;
+  }
+  .content-primary .columns .column2 .post {
+    padding-left: 0px;
+  }
+    
+ .withvideo .ym-col1, 
+ .withvideo .ym-col3 {
+    float: none;
+    width: 100%;
+    margin: 0;
+}
+ 
+    
   .flexslider, 
   .flexslider img {       
         overflow: hidden;
    }   
-   .content-aside .flexslider {
+   .slidersidebar {
         height: auto;    
         margin-bottom: 10px;
     }
@@ -54,6 +125,7 @@
 
 
 @media only screen and (max-width: 600px) {
+  
     .header {
         display: block;
         height: auto;
@@ -81,12 +153,12 @@
         width: 100%;
         height: auto; 
     }
-    .sticker {
-        display: none;
-    }      
+    #wombat,
+    .sticker,
     .teaser {
         display: none;        
     }
+
     .nav-top {        
         display: block;
         position: relative;
@@ -135,7 +207,6 @@
        content: "a";
        clear: both; 
     }
-
     .nav-top div.menu-header {
         float: none;
         display: inline-block;
@@ -179,7 +250,7 @@
         position: absolute;
         display: block;
         position: static;
-        /*width: 100%; verificar se é necessário*/
+        /*width: 100%;*/
         display: block;
         border: 0px solid;
         background: #2d7dc5;
@@ -313,11 +384,7 @@
   .content-primary .switchoff, .content-primary .switchon {
       display: none;
   }
-    .content-aside {
-        width: 100%;
-        float: none;
-        min-height: 0;          
-    } 
+
     .content-primary .columns {
         float: none;
         clear: both;
@@ -352,23 +419,36 @@
         width: 100%;
         display: block;
     }
-    .content-aside .flexslider {
-        display: none;
-    }
+
 
     .content-primary .skin {
-       padding: 10px 5px 5px 5px; /*Valor prévio: 0*/
+       padding: 10px 5px 5px 5px;
     }
     .content-header,
     .content-header-big {
-        margin-left: 0px;
-     height: 11em;
+	margin: 0;
+	height: auto;
      overflow: hidden;
+	position: relative;
+	left: inherit;
+	top: inherit;     
+	min-height: 3em;	
     }
    .content-header h1,
    .content-header-big h1{
        z-index: 100;
-       top: 10px;
+	position: relative;
+	left: inherit;
+	top: inherit; 
+	padding: 10px;
+	width: 100%;
+	margin: 0;
+   }
+   .content .symbolbild {
+       background-size: auto 100px;      
+       top: 0;
+       left: 0;
+       position: absolute;
     }
     .single .post {
         padding: 10px;
@@ -410,9 +490,7 @@
     .footer .first-footer-widget-area,
     .footer .second-footer-widget-area {
         clear: both;
-        float: none;
         padding-top: 10px;
-        width: 100%;
         display: block;
     }
 
@@ -459,7 +537,7 @@
   .flexslider img {      
         overflow: hidden;
    }   
-   .content-aside .flexslider {
+  .slidersidebar {
         height: auto;    
         margin-bottom: 10px;
     }
@@ -473,6 +551,9 @@
       font-family: Helvetica, Arial, sans-serif;
       letter-spacing: 0px;
   }
+  .slidersidebar {
+ /*  display: none; */
+  }  
 }
 
    
