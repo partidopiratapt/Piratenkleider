@@ -13,56 +13,56 @@
 /* Tables should show empty cells. */
 table.table_list
 {
-	empty-cells: show;
+    empty-cells: show;
 }
 
 /* This division wraps the entire forum when a forum width is set. */
 div#wrapper
 {
-	margin: 0 auto;
-	width: 990px;
-	border-left: solid 1px #252525;
-	border-right: solid 1px #252525;
-	border-top: solid 1px #252525;
+    margin: 0 auto;
+    width: 990px;
+    border-left: solid 1px #252525;
+    border-right: solid 1px #252525;
+    border-top: solid 1px #252525;
 }
 
 /* We can style the different types of input buttons to be uniform throughout different browsers and their color themes.
-	.button_submit - covers input[type=submit], input[type=button], button[type=submit] and button[type=button] in all browsers
-	.button_reset  - covers input[type=reset] and button[type=reset] throughout all browsers
-	.input_check   - covers input[type=checkbox] throughout all browsers
-	.input_radio   - covers input[type=radio] throughout all browsers
-	.input_text    - covers input[type=text] throughout all browsers
-	.input_file    - covers input[type=file] throughout all browsers
+        .button_submit - covers input[type=submit], input[type=button], button[type=submit] and button[type=button] in all browsers
+        .button_reset  - covers input[type=reset] and button[type=reset] throughout all browsers
+        .input_check   - covers input[type=checkbox] throughout all browsers
+        .input_radio   - covers input[type=radio] throughout all browsers
+        .input_text    - covers input[type=text] throughout all browsers
+        .input_file    - covers input[type=file] throughout all browsers
 */
 
 /* Buttons should be styled a bit differently, in order to make them look more button'ish. */
 .button_submit, .button_reset
 {
-	border: 1px solid #aaa;
-	cursor: pointer;
-	font-weight: normal;
+    border: 1px solid #aaa;
+    cursor: pointer;
+    font-weight: normal;
 }
 
 .button_submit:hover, .button_reset:hover
 {
-	border: 1px solid #aaa;
+    border: 1px solid #aaa;
 }
 
 h3.catbg input.input_check
 {
-	margin: 9px 7px 0 7px;
+    margin: 9px 7px 0 7px;
 }
 
 /* Standard horizontal rule.. ([hr], etc.) */
 hr, .hrcolor
 {
-	height: 1px;
-	border: 0;
+    height: 1px;
+    border: 0;
 }
 /* Alternative for u tag */
 .underline
 {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* Common classes to easy styling.
@@ -70,94 +70,94 @@ hr, .hrcolor
 
 .floatright
 {
-	float: right;
+    float: right;
 }
 .floatleft
 {
-	float: left;
+    float: left;
 }
 
 .flow_auto
 {
-	overflow: auto;
+    overflow: auto;
 }
 .flow_hidden
 {
-	overflow: hidden;
+    overflow: hidden;
 }
 .flow_hidden .windowbg, .flow_hidden .windowbg2
 {
-	margin-top: 2px;
+    margin-top: 2px;
 }
 .clear
 {
-	clear: both;
+    clear: both;
 }
 .clear_left
 {
-	clear: left;
+    clear: left;
 }
 .clear_right
 {
-	clear: right;
+    clear: right;
 }
 
 /* Default font sizes: small (8pt), normal (10pt), and large (14pt). */
 .smalltext, tr.smalltext th
 {
-	font-size: 11px;
-	font-family: tahoma, sans-serif;
+    font-size: 11px;
+    font-family: tahoma, sans-serif;
 }
 .middletext
 {
-	font-size: 12px;
-	font-family: tahoma, sans-serif;
+    font-size: 12px;
+    font-family: tahoma, sans-serif;
 }
 .normaltext
 {
-	font-size: 16px;
-	line-height: 1.2em;
+    font-size: 16px;
+    line-height: 1.2em;
 }
 .largetext
 {
-	font-size: 18px;
+    font-size: 18px;
 }
 .centertext
 {
-	margin: 0 auto;
-	text-align: center;
+    margin: 0 auto;
+    text-align: center;
 }
 .righttext
 {
-	margin-left: auto;
-	margin-right: 0;
-	text-align: right;
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
 }
 .lefttext
 {
-	margin-left: 0;
-	margin-right: auto;
-	text-align: left;
+    margin-left: 0;
+    margin-right: auto;
+    text-align: left;
 }
 .double_height
 {
-	line-height: 2em;
+    line-height: 2em;
 }
 /* some common padding styles */
 .padding
 {
-	padding: 0.7em;
+    padding: 0.7em;
 }
 .main_section, .lower_padding
 {
-	padding-bottom: 0.5em;
+    padding-bottom: 0.5em;
 }
 /* a quick reset list class. */
 ul.reset, ul.reset li
 {
-	padding: 0;
-	margin: 0;
-	list-style: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 /* Some BBC related styles.
@@ -166,57 +166,57 @@ ul.reset, ul.reset li
 /* A quote, perhaps from another post. */
 blockquote.bbc_standard_quote, blockquote.bbc_alternate_quote
 {
-	font-size: 11px;
-	color: #3a3a3a;
-	line-height: 1.4em;
-	border-top: 1px solid #353535;
-	padding: 1.1em 1.4em;
-	margin: 0.1em 0 0.3em 0;
-	overflow: auto;
+    font-size: 11px;
+    color: #3a3a3a;
+    line-height: 1.4em;
+    border-top: 1px solid #353535;
+    padding: 1.1em 1.4em;
+    margin: 0.1em 0 0.3em 0;
+    overflow: auto;
 }
 
 /* Alterate blockquote stylings */
 blockquote.bbc_standard_quote
 {
-	/*background-color: #D3D3D3;*/
-	background-color: #BABABA;
+    /*background-color: #D3D3D3;*/
+    background-color: #BABABA;
     color: #1A1A1A;
 }
 blockquote.bbc_alternate_quote
 {
-	background-color: #EDEDED;
+    background-color: #EDEDED;
 }
 
 /* A code block - maybe PHP ;). */
 code.bbc_code
 {
-	display: block;
-	font-family: "dejavu sans mono", "monaco", "lucida console", "courier new", monospace;
-	font-size: x-small;
-	background: #ddd;
-	color: #3a3a3a;
-	border-top: 2px solid #252525;
-	line-height: 1.5em;
-	padding: 3px 1em;
-	overflow: auto;
-	white-space: pre;
-	/* Show a scrollbar after about 24 lines. */
-	max-height: 24em;
+    display: block;
+    font-family: "dejavu sans mono", "monaco", "lucida console", "courier new", monospace;
+    font-size: x-small;
+    background: #ddd;
+    color: #3a3a3a;
+    border-top: 2px solid #252525;
+    line-height: 1.5em;
+    padding: 3px 1em;
+    overflow: auto;
+    white-space: pre;
+    /* Show a scrollbar after about 24 lines. */
+    max-height: 24em;
 }
 
 /* The "Quote:" and "Code:" header parts... */
 .codeheader, .quoteheader
 {
-	color: #666;
-	font-size: 11px;
-	font-weight: bold;
-	padding: 0 0.3em;
+    color: #666;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 0 0.3em;
 }
 
 /* For links to change the code stuff... */
 .codeoperation
 {
-	font-weight: normal;
+    font-weight: normal;
 }
 
 /* Styling for BBC tags */
@@ -225,65 +225,65 @@ code.bbc_code
 }
 .bbc_size
 {
-	line-height: 1.4em;
+    line-height: 1.4em;
 }
 .bbc_color a
 {
-	color: inherit;
+    color: inherit;
 }
 .bbc_img
 {
-	border: 0;
+    border: 0;
 }
 .bbc_table
 {
-	font: inherit;
-	color: inherit;
+    font: inherit;
+    color: inherit;
 }
 .bbc_table td
 {
-	font: inherit;
-	color: inherit;
-	vertical-align: top;
+    font: inherit;
+    color: inherit;
+    vertical-align: top;
 }
 .bbc_u
 {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 .bbc_list
 {
-	text-align: left;
+    text-align: left;
 }
 .bbc_tt
 {
-	font-family: "dejavu sans mono", "monaco", "lucida console", "courier new", monospace;
+    font-family: "dejavu sans mono", "monaco", "lucida console", "courier new", monospace;
 }
 
 /* Generally, those [?] icons.  This makes your cursor a help icon. */
 .help
 {
-	cursor: help;
+    cursor: help;
 }
 
 /* /me uses this a lot. (emote, try typing /me in a post.) */
 .meaction
 {
-	color: red;
+    color: red;
 }
 
 /* Highlighted text - such as search results. */
 .highlight
 {
-	font-weight: bold;
-	color: #ff7200 !important;
-	font-size: 1.1em;
+    font-weight: bold;
+    color: #ff7200 !important;
+    font-size: 1.1em;
 }
 
 /* A more discreet highlight color, for selected membergroups etc. */
 .highlight2
 {
-	background-color: #D1E1EF;
-	color: #000 !important;
+    background-color: #D1E1EF;
+    color: #000 !important;
 }
 
 /* Generic, mostly color-related, classes.
@@ -291,731 +291,731 @@ code.bbc_code
 
 .titlebg, .titlebg2, tr.titlebg th, tr.titlebg td, tr.titlebg2 td
 {
-	font-size: 1em;
-	font-weight: bold;
+    font-size: 1em;
+    font-weight: bold;
 }
 .catbg, .catbg2, tr.catbg td, tr.catbg2 td, tr.catbg th, tr.catbg2 th
 {
-	font-size: 1em;
-	font-weight: bold;
+    font-size: 1em;
+    font-weight: bold;
 }
 
 /* adjust the table versions of headers */
 tr.titlebg th, tr.titlebg2 th, td.titlebg, td.titlebg2, tr.catbg th, tr.catbg2 th, td.catbg, td.catbg2
 {
-	padding: 0 6px;
+    padding: 0 6px;
 }
 .catbg select
 {
-	height: 1.5em;
-	font-size: 0.85em;
+    height: 1.5em;
+    font-size: 0.85em;
 }
 
 /* the page navigation area */
 .pagesection
 {
-	font-size: 0.9em;
-	padding: 0.2em;
-	overflow: hidden;
-	margin-bottom: 1px;
+    font-size: 0.9em;
+    padding: 0.2em;
+    overflow: hidden;
+    margin-bottom: 1px;
 }
 div.pagesection div.floatright input
 {
-	margin-top: 3px;
+    margin-top: 3px;
 }
 
 .pagelinks
 {
-	padding: 0.6em 0 0.4em 0;
+    padding: 0.6em 0 0.4em 0;
 }
 
 /* Colors for background of posts requiring approval */
 .approvebg
 {
-	color: #000;
-	background-color: #ffeaea;
+    color: #000;
+    background-color: #ffeaea;
 }
 .approvebg2
 {
-	color: #000;
-	background-color: #fff2f2;
+    color: #000;
+    background-color: #fff2f2;
 }
 
 /* Color for background of *topics* requiring approval */
 .approvetbg
 {
-	color: #000;
-	background-color: #e4a17c;
+    color: #000;
+    background-color: #e4a17c;
 }
 .approvetbg2
 {
-	color: #000;
-	background-color: #f3bd9f;
+    color: #000;
+    background-color: #f3bd9f;
 }
 
 /* Sticky topics get a different background */
 .stickybg
 {
-	background: #333;
+    background: #333;
 }
 .stickybg2
 {
-	background: #383838;
+    background: #383838;
 }
 
 /* Locked posts get a different shade, too! */
 .lockedbg
 {
-	background: #333;
-	font-style: italic;
+    background: #333;
+    font-style: italic;
 }
 .lockedbg2
 {
-	background: #383838;
-	font-style: italic;
+    background: #383838;
+    font-style: italic;
 }
 
 /* Posts and personal messages displayed throughout the forum. */
 .post, .personalmessage
 {
-	overflow: auto;
-	line-height: 1.4em;
-	padding: 0.1em 0;
+    overflow: auto;
+    line-height: 1.4em;
+    padding: 0.1em 0;
 }
 
 /* All the signatures used in the forum.  If your forum users use Mozilla, Opera, or Safari, you might add max-height here ;). */
 .signature, .attachments
 {
-	width: 98%;
-	overflow: auto;
-	clear: right;
-	padding: 1em 0 3px 0;
-	border-top: 1px solid #565656;
-	line-height: 1.4em;
-	font-size: 0.85em;
+    width: 98%;
+    overflow: auto;
+    clear: right;
+    padding: 1em 0 3px 0;
+    border-top: 1px solid #565656;
+    line-height: 1.4em;
+    font-size: 0.85em;
 }
 .custom_fields_above_signature
 {
-	width: 98%;
-	clear: right;
-	padding: 1em 0 3px 0;
-	border-top: 1px solid #565656;
-	line-height: 1.4em;
-	font-size: 0.85em;
+    width: 98%;
+    clear: right;
+    padding: 1em 0 3px 0;
+    border-top: 1px solid #565656;
+    line-height: 1.4em;
+    font-size: 0.85em;
 }
 
 /* Sometimes there will be an error when you post */
 .error
 {
-	color: red;
+    color: red;
 }
 
 /* Messages that somehow need to attract the attention. */
 .alert
 {
-	color: red;
+    color: red;
 }
 
 /* Calendar colors for birthdays, events and holidays */
 .birthday
 {
-	color: #920ac4;
+    color: #920ac4;
 }
 
 .event
 {
-	color: #078907;
+    color: #078907;
 }
 
 .holiday
 {
-	color: #000080;
+    color: #000080;
 }
 
 /* Colors for warnings */
 .warn_mute
 {
-	color: red;
+    color: red;
 }
 
 .warn_moderate
 {
-	color: #ffa500;
+    color: #ffa500;
 }
 
 .warn_watch, .success
 {
-	color: green;
+    color: green;
 }
 
 a.moderation_link, a.moderation_link:visited
 {
-	color: red;
-	font-weight: bold;
+    color: red;
+    font-weight: bold;
 }
 
 .openid_login
 {
-	background: white url(../images/openid.gif) no-repeat;
-	padding-left: 18px;
+    background: white url(../images/openid.gif) no-repeat;
+    padding-left: 18px;
 }
 
 /* a descriptive style */
 .description, .description_board, .plainbox
 {
-	padding: 0.5em 1em;
-	font-size: 0.9em;
-	line-height: 1.4em;
-	border: 1px solid #252525;
-	background: #212121;
-	margin: 0.2em 1px 1em 1px;
+    padding: 0.5em 1em;
+    font-size: 0.9em;
+    line-height: 1.4em;
+    border: 1px solid #252525;
+    background: #212121;
+    margin: 0.2em 1px 1em 1px;
 }
 .description_board
 {
-	margin: 1em 1px 0 1px;
+    margin: 1em 1px 0 1px;
 }
 
 /* an informative style */
 .information
 {
-	padding: 0.5em 1em;
-	font-size: 0.9em;
-	line-height: 1.3em;
-	border: 1px solid #282828;
-	background: #b9bf9b;
-	color: #333;
-	margin: 0.2em 1px 1em 1px;
+    padding: 0.5em 1em;
+    font-size: 0.9em;
+    line-height: 1.3em;
+    border: 1px solid #282828;
+    background: #b9bf9b;
+    color: #333;
+    margin: 0.2em 1px 1em 1px;
 }
 .information p
 {
-	padding: 1em;
-	margin: 0;
+    padding: 1em;
+    margin: 0;
 }
 p.para2
 {
-	padding: 1em 0 3.5em 0;
-	margin: 0;
+    padding: 1em 0 3.5em 0;
+    margin: 0;
 }
 /* AJAX notification bar
 ------------------------------------------------------- */
 #ajax_in_progress
 {
-	background: url(../images/theme/loadingbar.png) repeat-x;
-	color: #f96f00;
-	text-align: center;
-	font-size: 16pt;
-	padding: 8px;
-	width: 100%;
-	height: 66px;
-	line-height: 25px;
-	position: fixed;
-	top: 0;
-	left: 0;
+    background: url(../images/theme/loadingbar.png) repeat-x;
+    color: #f96f00;
+    text-align: center;
+    font-size: 16pt;
+    padding: 8px;
+    width: 100%;
+    height: 66px;
+    line-height: 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 #ajax_in_progress a
 {
-	color: orange;
-	text-decoration: underline;
-	font-size: smaller;
-	float: right;
-	margin-right: 20px;
+    color: orange;
+    text-decoration: underline;
+    font-size: smaller;
+    float: right;
+    margin-right: 20px;
 }
 
 /* Lists with settings use these a lot.
 ------------------------------------------------------- */
 dl.settings
 {
-	clear: right;
-	overflow: auto;
-	margin: 0 0 10px 0;
-	padding: 0;
+    clear: right;
+    overflow: auto;
+    margin: 0 0 10px 0;
+    padding: 0;
 }
 dl.settings dt
 {
-	width: 48%;
-	float: left;
-	margin: 0 0 10px 0;
-	padding: 0;
-	clear: both;
+    width: 48%;
+    float: left;
+    margin: 0 0 10px 0;
+    padding: 0;
+    clear: both;
 }
 dl.settings dt.settings_title
 {
-	width: 100%;
-	float: none;
-	margin: 0 0 10px 0;
-	padding: 5px 0 0 0;
-	font-weight: bold;
-	clear: both;
+    width: 100%;
+    float: none;
+    margin: 0 0 10px 0;
+    padding: 5px 0 0 0;
+    font-weight: bold;
+    clear: both;
 }
 dl.settings dt.windowbg
 {
-	width: 98%;
-	float: left;
-	margin: 0 0 3px 0;
-	padding: 0 0 5px 0;
-	clear: both;
+    width: 98%;
+    float: left;
+    margin: 0 0 3px 0;
+    padding: 0 0 5px 0;
+    clear: both;
 }
 dl.settings dd
 {
-	width: 48%;
-	float: left;
-	margin: 0 0 3px 0;
-	padding: 0;
+    width: 48%;
+    float: left;
+    margin: 0 0 3px 0;
+    padding: 0;
 }
 dl.settings img
 {
-	margin: 0 10px 0 0;
+    margin: 0 10px 0 0;
 }
 /* help icons */
 dl.settings dt a img
 {
-	position: relative;
-	top: 2px;
+    position: relative;
+    top: 2px;
 }
 
 /* Styles for rounded headers.
 ------------------------------------------------------- */
 h3.catbg, h3.catbg2, h3.titlebg, h4.titlebg, h4.catbg
 {
-	overflow: hidden;
-	height: 31px;
-	line-height: 31px;
-	font-size: 1em;
-	font-weight: bold;
+    overflow: hidden;
+    height: 31px;
+    line-height: 31px;
+    font-size: 1em;
+    font-weight: bold;
 }
 h3.catbg img.icon, h4.titlebg img.icon
 {
-	vertical-align: middle;
-	margin: -2px 5px 0 0;
+    vertical-align: middle;
+    margin: -2px 5px 0 0;
 }
 h4.catbg a.toggle img
 {
-	vertical-align: middle;
-	margin: -2px 5px 0 5px;
+    vertical-align: middle;
+    margin: -2px 5px 0 5px;
 }
 h4.catbg, h4.catbg2 , h3.catbg , h3.catbg2 , .table_list tbody.header td.catbg
 {
-	padding-right: 9px;
+    padding-right: 9px;
 }
 h4.titlebg, h3.titlebg
 {
-	padding-right: 9px;
+    padding-right: 9px;
 }
 h4.titlebg img.icon
 {
-	float: left;
-	margin: 5px 8px 0 0;
+    float: left;
+    margin: 5px 8px 0 0;
 }
 div.cat_bar
 {
-	/*padding-left: 9px;
-	height: 31px;*/
-	overflow: hidden;
-	margin-bottom: 1px;
-        width: 100%;
+    /*padding-left: 9px;
+    height: 31px;*/
+    overflow: hidden;
+    margin-bottom: 1px;
+    width: 100%;
 }
 div.cat_bar h3 {
     margin-top: 0em;
 }
 div.title_bar
 {
-	padding-left: 9px;
-	height: 31px;
-	overflow: hidden;
-	margin-bottom: 1px;
+    padding-left: 9px;
+    height: 31px;
+    overflow: hidden;
+    margin-bottom: 1px;
 }
 
 /* rounded bars needs a different background here */
 
 div.title_barIC
 {
-	padding-left: 9px;
-	height: 31px;
-	overflow: hidden;
-	margin-bottom: 1px;
+    padding-left: 9px;
+    height: 31px;
+    overflow: hidden;
+    margin-bottom: 1px;
 }
 #upshrinkHeaderIC p.pminfo
 {
-	margin: 0;
-	padding: 0.5em;
+    margin: 0;
+    padding: 0.5em;
 }
 img#upshrink_ic, img#newsupshrink
 {
-	float: right;
-	margin: 10px 5px 0 0;
+    float: right;
+    margin: 10px 5px 0 0;
 }
 table.table_list a.unreadlink, table.table_list a.collapse
 {
-	float: right;
+    float: right;
 }
 table.table_list a.collapse
 {
-	margin: 10px 5px 0 1em;
+    margin: 10px 5px 0 1em;
 }
 
 /* The half-round header bars for some tables. */
 .table_grid tr.catbg, .table_grid tr.titlebg
 {
-	font-size: 0.95em;
-	border-bottom: 1px solid #1a1a1a;
+    font-size: 0.95em;
+    border-bottom: 1px solid #1a1a1a;
 }
 .table_grid tr.catbg th, .table_grid tr.titlebg th
 {
-	height: 31px;
-	line-height: 31px;
+    height: 31px;
+    line-height: 31px;
 }
 .table_grid th.last_th input
 {
-	margin: 0 2px;
+    margin: 0 2px;
 }
 .table_grid th.lefttext
 {
-	padding: 0 0.7em;
+    padding: 0 0.7em;
 }
 
 /* a general table class */
 table.table_grid
 {
-	border-collapse: collapse;
-	margin-top: 0.1em;
+    border-collapse: collapse;
+    margin-top: 0.1em;
 }
 table.table_grid td
 {
-	padding: 5px;
-	border-bottom: 1px solid transparent;
-	border-right: 1px solid transparent;
+    padding: 5px;
+    border-bottom: 1px solid transparent;
+    border-right: 1px solid transparent;
 }
 
 /* GenericList */
 .additional_row
 {
-	padding: 0.5em 0 0.5em 0;
+    padding: 0.5em 0 0.5em 0;
 }
 table.table_grid thead tr.catbg th
 {
-	white-space: nowrap;
+    white-space: nowrap;
 }
 
 /* table_grid styles for Profile > Show Permissions. */
 #permissions table.table_grid  td
 {
-	padding: 0.4em 0.8em;
-	cursor: default;
+    padding: 0.4em 0.8em;
+    cursor: default;
 } 
 
 /* Common styles used to add corners to divisions.
 ------------------------------------------------------- */
 .windowbg span.topslice
 {
-	display: block;
-	padding-left: 20px;
-	background: url(../images/theme/main_block.png) 0 -30px no-repeat;
+    display: block;
+    padding-left: 20px;
+    background: url(../images/theme/main_block.png) 0 -30px no-repeat;
 }
 .windowbg span.topslice span
 {
-	display: block;
-	background: url(../images/theme/main_block.png) 100% -30px no-repeat;
-	height: 11px;
+    display: block;
+    background: url(../images/theme/main_block.png) 100% -30px no-repeat;
+    height: 11px;
 }
 .windowbg span.botslice
 {
-	display: block;
-	padding-left: 20px;
-	background: url(../images/theme/main_block.png) 0 -40px no-repeat;
-	font-size: 5px;
-	line-height: 5px;
-	margin-bottom: 0.2em;
+    display: block;
+    padding-left: 20px;
+    background: url(../images/theme/main_block.png) 0 -40px no-repeat;
+    font-size: 5px;
+    line-height: 5px;
+    margin-bottom: 0.2em;
 }
 .windowbg span.botslice span
 {
-	display: block;
-	background: url(../images/theme/main_block.png) 100% -40px no-repeat;
-	height: 11px;
+    display: block;
+    background: url(../images/theme/main_block.png) 100% -40px no-repeat;
+    height: 11px;
 }
 
 .windowbg2 span.topslice
 {
-	display: block;
-	padding-left: 20px;
-	background: url(../images/theme/main_block.png) 0 -60px no-repeat;
+    display: block;
+    padding-left: 20px;
+    background: url(../images/theme/main_block.png) 0 -60px no-repeat;
 }
 .windowbg2 span.topslice span
 {
-	display: block;
-	background: url(../images/theme/main_block.png) 100% -60px no-repeat;
-	height: 11px;
+    display: block;
+    background: url(../images/theme/main_block.png) 100% -60px no-repeat;
+    height: 11px;
 }
 .windowbg2 span.botslice
 {
-	display: block;
-	padding-left: 20px;
-	background: url(../images/theme/main_block.png) 0 -71px no-repeat;
-	font-size: 5px;
-	line-height: 5px;
-	margin-bottom: 0.2em;
+    display: block;
+    padding-left: 20px;
+    background: url(../images/theme/main_block.png) 0 -71px no-repeat;
+    font-size: 5px;
+    line-height: 5px;
+    margin-bottom: 0.2em;
 }
 .windowbg2 span.botslice span
 {
-	display: block;
-	background: url(../images/theme/main_block.png) 100% -71px no-repeat;
-	height: 11px;
+    display: block;
+    background: url(../images/theme/main_block.png) 100% -71px no-repeat;
+    height: 11px;
 }
 .approvebg span.topslice
 {
-	display: block;
-	padding-left: 20px;
-	background: url(../images/theme/main_block.png) 0 0 no-repeat;
+    display: block;
+    padding-left: 20px;
+    background: url(../images/theme/main_block.png) 0 0 no-repeat;
 }
 .approvebg span.topslice span
 {
-	display: block;
-	background: url(../images/theme/main_block.png) 100% 0 no-repeat;
-	height: 11px;
+    display: block;
+    background: url(../images/theme/main_block.png) 100% 0 no-repeat;
+    height: 11px;
 }
 .approvebg span.botslice
 {
-	display: block;
-	padding-left: 20px;
-	background: url(../images/theme/main_block.png) 0 -11px no-repeat;
-	margin-bottom: 0.2em;
+    display: block;
+    padding-left: 20px;
+    background: url(../images/theme/main_block.png) 0 -11px no-repeat;
+    margin-bottom: 0.2em;
 }
 .approvebg span.botslice span
 {
-	display: block;
-	background: url(../images/theme/main_block.png) 100% -11px no-repeat;
-	height: 11px;
+    display: block;
+    background: url(../images/theme/main_block.png) 100% -11px no-repeat;
+    height: 11px;
 }
 .postbg
 {
-	border-left: 1px solid #7f7f7f;
-	border-right: 1px solid #7f7f7f;
+    border-left: 1px solid #7f7f7f;
+    border-right: 1px solid #7f7f7f;
 }
 
 /* Used for sections that need somewhat larger corners.
 ----------------------------------------------------------- */
 .roundframe
 {
-	padding: 0 10px;
-	background: #222;
-	border-left: 1px solid #282828;
-	border-right: 1px solid #282828;
+    padding: 0 10px;
+    background: #222;
+    border-left: 1px solid #282828;
+    border-right: 1px solid #282828;
 }
 .roundframe dl, .roundframe dt, .roundframe p
 {
-	margin: 0;
+    margin: 0;
 }
 .roundframe p
 {
-	padding: 0.5em;
+    padding: 0.5em;
 }
 span.upperframe
 {
-	padding: 0;
-	display: block;
-	background: url(../images/theme/main_block.png) 0 -90px no-repeat;
-	padding-left: 20px;
+    padding: 0;
+    display: block;
+    background: url(../images/theme/main_block.png) 0 -90px no-repeat;
+    padding-left: 20px;
 }
 span.upperframe span
 {
-	padding: 0;
-	height: 12px;
-	display: block;
-	background: url(../images/theme/main_block.png) 100% -90px no-repeat;
+    padding: 0;
+    height: 12px;
+    display: block;
+    background: url(../images/theme/main_block.png) 100% -90px no-repeat;
 }
 span.lowerframe
 {
-	padding: 0;
-	display: block;
-	background: url(../images/theme/main_block.png) 0 -102px no-repeat;
-	padding-left: 20px;
+    padding: 0;
+    display: block;
+    background: url(../images/theme/main_block.png) 0 -102px no-repeat;
+    padding-left: 20px;
 }
 span.lowerframe span
 {
-	padding: 0;
-	height: 12px;
-	display: block;
-	background: url(../images/theme/main_block.png) 100% -102px no-repeat;
+    padding: 0;
+    height: 12px;
+    display: block;
+    background: url(../images/theme/main_block.png) 100% -102px no-repeat;
 }
 
 /* The main content area.
 ------------------------------------------------------- */
 .bbp_content
 {
-	padding: 0.5em 1.2em;
-	margin: 0;
-	border: none;
+    padding: 0.5em 1.2em;
+    margin: 0;
+    border: none;
 }
 .bbp_content p
 {
-	margin: 0 0 0.5em 0;
+    margin: 0 0 0.5em 0;
 }
 /* To simulate the real content size*/
 #preview_section .bbp_content {
     border-left: 1px dotted #696969;
     margin-left: 15em;
-	padding-right: 2em;
+    padding-right: 2em;
 }
 
 /* Styles used by the auto suggest control.
 ------------------------------------------------------- */
 .auto_suggest_div
 {
-	border: 1px solid #000;
-	position: absolute;
-	visibility: hidden;
+    border: 1px solid #000;
+    position: absolute;
+    visibility: hidden;
 }
 .auto_suggest_item
 {
-	background-color: #ddd;
+    background-color: #ddd;
 }
 .auto_suggest_item_hover
 {
-	background-color: #888;
-	cursor: pointer;
-	color: #eee;
+    background-color: #888;
+    cursor: pointer;
+    color: #eee;
 }
 
 /* Styles for the standard dropdown menus.
 ------------------------------------------------------- */
 #main_menu
 {
-	padding: 0 0.5em;
-	float: left;
-	margin: 0;
-	width: 98%;
+    padding: 0 0.5em;
+    float: left;
+    margin: 0;
+    width: 98%;
 }
 
 .dropmenu, .dropmenu ul
 {
-	list-style: none;
-	line-height: 1em;
-	padding: 0;
-	margin: 0;
+    list-style: none;
+    line-height: 1em;
+    padding: 0;
+    margin: 0;
 }
 .dropmenu
 {
-	padding: 0 0.5em;
+    padding: 0 0.5em;
 }
 .dropmenu a
 {
-	display: block;
-	color: #aaa;
-	text-decoration: none;
+    display: block;
+    color: #aaa;
+    text-decoration: none;
 }
 .dropmenu a span
 {
-	display: block;
-	padding: 0 0 0 5px;
-	font-size: 0.9em;
+    display: block;
+    padding: 0 0 0 5px;
+    font-size: 0.9em;
 }
 /* the background's first level only */
 .dropmenu li a.firstlevel
 {
-	margin-right: 8px;
+    margin-right: 8px;
 }
 .dropmenu li a.firstlevel span.firstlevel
 {
-	display: block;
-	position: relative;
-	left: -5px;
-	padding-left: 5px;
-	height: 22px;
-	line-height: 20px;
+    display: block;
+    position: relative;
+    left: -5px;
+    padding-left: 5px;
+    height: 22px;
+    line-height: 20px;
 }
 .dropmenu li
 {
-	float: left;
-	padding: 0;
-	margin: 0;
-	position: relative;
+    float: left;
+    padding: 0;
+    margin: 0;
+    position: relative;
 }
 .dropmenu li ul
 {
-	z-index: 90;
-	display: none;
-	position: absolute;
-	width: 19.2em;
-	font-weight: normal;
-	border-bottom: 1px solid #454545;
-	background: url(../images/theme/menu_gfx.png) 0 -100px no-repeat;
-	padding: 7px 0 0 0;
+    z-index: 90;
+    display: none;
+    position: absolute;
+    width: 19.2em;
+    font-weight: normal;
+    border-bottom: 1px solid #454545;
+    background: url(../images/theme/menu_gfx.png) 0 -100px no-repeat;
+    padding: 7px 0 0 0;
 }
 .dropmenu li li
 {
-	width: 19em;
-	margin: 0;
-	border-left: 1px solid #454545;
-	border-right: 1px solid #454545;
+    width: 19em;
+    margin: 0;
+    border-left: 1px solid #454545;
+    border-right: 1px solid #454545;
 }
 .dropmenu li li a span
 {
-	display: block;
-	padding: 8px;
+    display: block;
+    padding: 8px;
 }
 .dropmenu li ul ul
 {
-	margin: -1.8em 0 0 13em;
+    margin: -1.8em 0 0 13em;
 }
 
 /* the active button */
 .dropmenu li a.active
 {
-	background: url(../images/theme/menu_gfx.png) no-repeat 100% 0;
-	color: #fff;
-	font-weight: bold;
+    background: url(../images/theme/menu_gfx.png) no-repeat 100% 0;
+    color: #fff;
+    font-weight: bold;
 }
 .dropmenu li a.active span.firstlevel
 {
-	background: url(../images/theme/menu_gfx.png) no-repeat 0 0;
+    background: url(../images/theme/menu_gfx.png) no-repeat 0 0;
 }
 /* the hover effects */
 .dropmenu li a.firstlevel:hover, .dropmenu li:hover a.firstlevel
 {
-	background: url(../images/theme/menu_gfx.png) no-repeat 100% -30px;
-	color: #333;
-	cursor: pointer;
-	text-decoration: none;
+    background: url(../images/theme/menu_gfx.png) no-repeat 100% -30px;
+    color: #333;
+    cursor: pointer;
+    text-decoration: none;
 }
 .dropmenu li a.firstlevel:hover span.firstlevel, .dropmenu li:hover a.firstlevel span.firstlevel
 {
-	background: url(../images/theme/menu_gfx.png) no-repeat 0 -30px;
+    background: url(../images/theme/menu_gfx.png) no-repeat 0 -30px;
 }
 /* the hover effects on level2 and 3 */
 .dropmenu li li a:hover, .dropmenu li li:hover>a
 {
-	background: #353535;
-	color: #fff;
-	text-decoration: none;
+    background: #353535;
+    color: #fff;
+    text-decoration: none;
 }
 .dropmenu li:hover ul ul, .dropmenu li:hover ul ul ul
 {
-	top: -999em;
+    top: -999em;
 }
 .dropmenu li li:hover ul
 {
-	top: auto;
+    top: auto;
 }
 .dropmenu li:hover ul
 {
-	display: block;
+    display: block;
 }
 .dropmenu li li.additional_items
 {
-	background-color: #202020;
+    background-color: #202020;
 }
 
 /* The dropdown menu toggle image */
 #menu_toggle
 {
-	float: right;
-	margin-right: 10px;
-	padding-top: 3px;
+    float: right;
+    margin-right: 10px;
+    padding-top: 3px;
 }
 #menu_toggle span
 {
-	position: relative;
-	right: 5000px;
+    position: relative;
+    right: 5000px;
 }
 
 /* Styles for the standard button lists.
@@ -1023,163 +1023,163 @@ span.lowerframe span
 
 .buttonlist ul
 {
-	z-index: 100;
-	padding: 5px;
-	margin: 0 0.2em 5px 0;
+    z-index: 100;
+    padding: 5px;
+    margin: 0 0.2em 5px 0;
 }
 .buttonlist ul li
 {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
 }
 .buttonlist ul li a
 {
-	display: block;
-	font-size: 0.8em;
-	color: #bbb;
-	background: url(../images/theme/menu_gfx.png) no-repeat 0 -60px;
-	padding: 0;
-	margin-left: 12px;
-	text-transform: uppercase;
-	cursor: pointer;
+    display: block;
+    font-size: 0.8em;
+    color: #bbb;
+    background: url(../images/theme/menu_gfx.png) no-repeat 0 -60px;
+    padding: 0;
+    margin-left: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 .buttonlist ul li a:hover
 {
-	background: url(../images/theme/menu_gfx.png) no-repeat 0 0;
-	color: #fff;
-	text-decoration: none;
+    background: url(../images/theme/menu_gfx.png) no-repeat 0 0;
+    color: #fff;
+    text-decoration: none;
 }
 .buttonlist ul li a span
 {
-	background: url(../images/theme/menu_gfx.png) no-repeat 100% -60px;
-	display: block;
-	height: 24px;
-	line-height: 20px;
-	padding: 0 8px 0 0;
-	position: relative;
-	right: -8px;
+    background: url(../images/theme/menu_gfx.png) no-repeat 100% -60px;
+    display: block;
+    height: 24px;
+    line-height: 20px;
+    padding: 0 8px 0 0;
+    position: relative;
+    right: -8px;
 }
 .buttonlist ul li a:hover span
 {
-	background: url(../images/theme/menu_gfx.png) no-repeat 100% 0;
+    background: url(../images/theme/menu_gfx.png) no-repeat 100% 0;
 }
 /* the active one */
 .buttonlist ul li a.active
 {
-	background: url(../images/theme/menu_gfx.png) no-repeat 0 -30px;
-	color: #222;
-	font-weight: bold;
+    background: url(../images/theme/menu_gfx.png) no-repeat 0 -30px;
+    color: #222;
+    font-weight: bold;
 }
 .buttonlist ul li a.active span
 {
-	background: url(../images/theme/menu_gfx.png) no-repeat 100% -30px;
+    background: url(../images/theme/menu_gfx.png) no-repeat 100% -30px;
 }
 .buttonlist ul li a.active
 {
-	font-weight: bold;
+    font-weight: bold;
 }
 .buttonlist ul li a.active:hover
 {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 .align_top ul li a, .align_bottom ul li a
 {
-	margin: 0 12px 0 0;
+    margin: 0 12px 0 0;
 }
 
 #adm_submenus
 {
-	padding-left: 2em;
+    padding-left: 2em;
 }
 #adm_submenus, #adm_submenus ul
 {
-	height: 3em;
+    height: 3em;
 }
 
 h3, h4
 {
-	padding-bottom: 3px;
+    padding-bottom: 3px;
 }
 
 /* The navigation list (i.e. linktree) */
 .navigate_section
 {
-	padding: 0.5em;
-	margin: 0 0 0 0;
+    padding: 0.5em;
+    margin: 0 0 0 0;
 }
 .navigate_section ul
 {
-	display: block;
-	margin: 0;
-	font-size: 0.9em;
-	padding: 0.5em 0;
-	overflow: hidden;
-	list-style: none;
-	clear: both;
-	width: 100%;
+    display: block;
+    margin: 0;
+    font-size: 0.9em;
+    padding: 0.5em 0;
+    overflow: hidden;
+    list-style: none;
+    clear: both;
+    width: 100%;
 }
 .navigate_section ul li
 {
-	float: left;
-	padding: 0 0.5em 0 0;
-	font-size: 0.95em;
+    float: left;
+    padding: 0 0.5em 0 0;
+    font-size: 0.95em;
 }
 .navigate_section ul li a
 {
-	color: #eee;
+    color: #eee;
 }
 .navigate_section ul li.last
 {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 select.qaction, input.qaction
 {
-	font-size: 0.85em;
-	padding: 0;
+    font-size: 0.85em;
+    padding: 0;
 }
 #mlist table tbody td.windowbg2
 {
-	text-align: center;
+    text-align: center;
 }
 
 /* Styles for a typical table.
 ------------------------------------------------------- */
 table.table_list
 {
-	width: 100%;
+    width: 100%;
 }
 table.table_list p
 {
-	padding: 0;
-	margin: 0;
+    padding: 0;
+    margin: 0;
 }
 table.table_list td, table.table_list th
 {
-	padding: 5px;
+    padding: 5px;
 }
 table.table_list tbody.header td
 {
-	padding: 0;
+    padding: 0;
 }
 table.table_list tbody.bbp_content td.stats
 {
-	font-size: 90%;
-	width: 15%;
-	text-align: center;
+    font-size: 90%;
+    width: 15%;
+    text-align: center;
 }
 table.table_list tbody.bbp_content td.lastpost
 {
-	line-height: 1.3em;
-	font-size: 90%;
-	width: 24%;
+    line-height: 1.3em;
+    font-size: 90%;
+    width: 24%;
 }
 table.table_list tbody.bbp_content td.icon
 {
-	text-align: center;
-	width: 6%;
+    text-align: center;
+    width: 6%;
 }
 
 /* Styles for the board index.
@@ -1188,73 +1188,74 @@ table.table_list tbody.bbp_content td.icon
 /* the board title! */
 .table_list tbody.bbp_content td.bbp-forum-info a.subject
 {
-	font-weight: bold;
-	font-size: 110%;
+    font-weight: bold;
+    font-size: 110%;
 }
 .table_list tbody.bbp_content td.children
 {
-	color: #787878;
-	font-size: 85%;
+    color: #787878;
+    font-size: 85%;
 }
 p.moderators
 {
-	font-size: 0.8em;
-	font-family: verdana, sans-serif;
+    font-size: 0.8em;
+    font-family: verdana, sans-serif;
 }
 /* hide the table header/footer parts - but its here for those needing to style it */
 #boardindex_table .table_list thead, #boardindex_table .table_list tfoot
 {
-	display: none;
+    display: none;
 }
 
 /* the posting icons */
 #posting_icons
 {
-	padding: 0 1em 0.5em 1em;
-	margin: 0 0 1em 0;
-	line-height: 1em;
+    /*padding: 0 1em 0.5em 1em;
+    margin: 0 0 1em 0;
+    line-height: 1em;*/
+    width: 100%;
 }
 #posting_icons ul
 {
-	font-size: 0.8em;
+    font-size: 0.8em;
 }
 #posting_icons img
 {
-	vertical-align: middle;
-	margin: 0 0 0 4ex;
+    vertical-align: middle;
+    margin: 0 0 0 4ex;
 }
 #postbuttons_upper ul li a span
 {
-	line-height: 19px;
-	padding: 0 0 0 6px;
+    line-height: 19px;
+    padding: 0 0 0 6px;
 }
 .nextlinks
 {
-	text-align: right;
-	margin-top: -1px;
+    text-align: right;
+    margin-top: -1px;
 }
 .nextlinks_bottom
 {
-	clear: right;
-	text-align: right;
+    clear: right;
+    text-align: right;
 }
 .mark_read
 {
-	padding: 0 0.5em;
+    padding: 0 0.5em;
 }
 
 /* the newsfader */
 #newsfader
 {
-	margin: 0 2px;
+    margin: 0 2px;
 }
 #smfFadeScroller
 {
-	text-align: center;
-	padding: 0 2em;
-	overflow: auto;
-	margin: 1em 0;
-	color: #cccccc; /* shouldn't be shorthand style due to a JS bug in IE! */
+    text-align: center;
+    padding: 0 2em;
+    overflow: auto;
+    margin: 1em 0;
+    color: #cccccc; /* shouldn't be shorthand style due to a JS bug in IE! */
 }
 
 /* Styles for the info center on the board index.
@@ -1262,115 +1263,115 @@ p.moderators
 
 #upshrinkHeaderIC
 {
-	margin-top: 4px;
+    margin-top: 4px;
 }
 dl#ic_recentposts
 {
-	margin: 0 0 0.5em 0;
-	padding: 0.5em;
-	line-height: 1.3em;
+    margin: 0 0 0.5em 0;
+    padding: 0.5em;
+    line-height: 1.3em;
 }
 dl#ic_recentposts dt
 {
-	float: left;
+    float: left;
 }
 dl#ic_recentposts dd
 {
-	text-align: right;
+    text-align: right;
 }
 #upshrinkHeaderIC p
 {
-	margin: 0 0 0.5em 0;
-	padding: 0.5em;
+    margin: 0 0 0.5em 0;
+    padding: 0.5em;
 }
 #upshrinkHeaderIC p.last
 {
-	margin: 0;
-	padding: 0.5em;
-	border-top: 2px dotted #595959;
+    margin: 0;
+    padding: 0.5em;
+    border-top: 2px dotted #595959;
 }
 #upshrinkHeaderIC p.inline
 {
-	border: none;
-	margin: 0;
-	padding: 0.2em 0.5em 0.2em 0.5em;
+    border: none;
+    margin: 0;
+    padding: 0.2em 0.5em 0.2em 0.5em;
 }
 #upshrinkHeaderIC p.stats
 {
-	font-size: 1.1em;
-	padding-top: 8px;
+    font-size: 1.1em;
+    padding-top: 8px;
 }
 form#ic_login
 {
-	padding: 0.5em;
-	height: 2em;
+    padding: 0.5em;
+    height: 2em;
 }
 form#ic_login ul li
 {
-	margin: 0;
-	padding: 0;
-	float: left;
-	width: 20%;
-	text-align: center;
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 20%;
+    text-align: center;
 }
 form#ic_login ul li label
 {
-	display: block;
+    display: block;
 }
 
 /* the small stats */
 #index_common_stats
 {
-	display: block;
-	margin: 0 0 0.5em 0;
-	text-align: right;
-	font-size: 0.9em;
-	position: relative;
-	top: -20px;
-	line-height: 1px;
+    display: block;
+    margin: 0 0 0.5em 0;
+    text-align: right;
+    font-size: 0.9em;
+    position: relative;
+    top: -20px;
+    line-height: 1px;
 }
 
 img.new_posts
 {
-	padding: 0 0.1em;
+    padding: 0 0.1em;
 }
 /* Styles for the message (topic) index.
 ---------------------------------------------------- */
 div.table_frame .table_list
 {
-	border-collapse: collapse;
-	margin: 2px 0;
+    border-collapse: collapse;
+    margin: 2px 0;
 }
 .table_frame .table_list td.icon, .table_frame .table_list td.bbp-forum-info, .table_frame .table_list td.stats
 {
-	/*border-right: 2px solid #1a1a1a;*/
-	border: 1px solid #1a1a1a;
+    /*border-right: 2px solid #1a1a1a;*/
+    border: 1px solid #1a1a1a;
 }
 #messageindex
 {
-	clear: both;
+    clear: both;
 }
 /* the page navigation area */
 .childboards
 {
-	margin-bottom: 0.2em;
+    margin-bottom: 0.2em;
 }
 #childboards h3
 {
-	padding-bottom: 0;
+    padding-bottom: 0;
 }
 #childboards .table_list thead
 {
-	display: none;
+    display: none;
 }
 #childboards .table_list
 {
-	margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 .lastpost img
 {
-	float: right;
-	padding: 4px;
+    float: right;
+    padding: 4px;
 }
 
 /* Styles for the display template (topic view).
@@ -1378,251 +1379,251 @@ div.table_frame .table_list
 
 #postbuttons div.buttons
 {
-	padding: 0.5em;
-	width: 40%;
-	float: right;
+    padding: 0.5em;
+    width: 40%;
+    float: right;
 }
 #postbuttons div.middletext
 {
-	width: 60%;
+    width: 60%;
 }
 #postbuttons span
 {
-	display: block;
-	text-align: right;
+    display: block;
+    text-align: right;
 }
 #postbuttons span.lower
 {
-	clear: right;
+    clear: right;
 }
 #postbuttons .buttonlist
 {
-	float: right;
+    float: right;
 }
 #postbuttons #pagelinks
 {
-	padding-top: 1em;
+    padding-top: 1em;
 }
 #moderationbuttons
 {
-	overflow: hidden;
+    overflow: hidden;
 }
 /* Events */
 .linked_events
 {
-	padding: 1em 0;
+    padding: 1em 0;
 }
 .edit_event
 {
-	margin: 0 1em;
-	vertical-align: middle;
+    margin: 0 1em;
+    vertical-align: middle;
 }
 /* Poll question */
 #poll
 {
-	overflow: hidden;
+    overflow: hidden;
 }
 #poll .bbp_content
 {
-	padding: 0 1em;
+    padding: 0 1em;
 }
 h4#pollquestion
 {
-	padding: 0 0 0.5em 2em;
+    padding: 0 0 0.5em 2em;
 }
 
 /* Poll vote options */
 #poll_options ul.options
 {
-	border-top: 1px solid #565656;
-	padding: 1em 2.5em 0 2em;
-	margin: 0 0 1em 0;
+    border-top: 1px solid #565656;
+    padding: 1em 2.5em 0 2em;
+    margin: 0 0 1em 0;
 }
 #poll_options div.submitbutton
 {
-	border-bottom: 1px solid #565656;
-	clear: both;
-	padding: 0 0 1em 2em;
-	margin: 0 0 1em 0;
+    border-bottom: 1px solid #565656;
+    clear: both;
+    padding: 0 0 1em 2em;
+    margin: 0 0 1em 0;
 }
 
 /* Poll results */
 #poll_options dl.options
 {
-	border: solid #565656;
-	border-width: 1px 0;
-	padding: 1em 2.5em 1em 2em;
-	margin: 0 1em 1em 0;
-	line-height: 1.1em !important;
+    border: solid #565656;
+    border-width: 1px 0;
+    padding: 1em 2.5em 1em 2em;
+    margin: 0 1em 1em 0;
+    line-height: 1.1em !important;
 }
 
 #poll_options dl.options dt
 {
-	padding: 0.3em 0;
-	width: 30%;
-	float: left;
-	margin: 0;
-	clear: left;
+    padding: 0.3em 0;
+    width: 30%;
+    float: left;
+    margin: 0;
+    clear: left;
 }
 
 #poll_options dl.options .voted
 {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 #poll_options dl.options dd
 {
-	margin: 0 0 0 2em;
-	padding: 0.1em 0 0 0;
-	width: 60%;
-	max-width: 450px;
-	float: left;
+    margin: 0 0 0 2em;
+    padding: 0.1em 0 0 0;
+    width: 60%;
+    max-width: 450px;
+    float: left;
 }
 
 #poll_options dl.options .percentage
 {
-	display: block;
-	float: right;
-	padding: 0.2em 0 0.3em 0;
+    display: block;
+    float: right;
+    padding: 0.2em 0 0.3em 0;
 }
 
 /* Poll notices */
 #poll_options p
 {
-	margin: 0 1.5em 0.2em 1.5em;
-	padding: 0 0.5em 0.5em 0.5em;
+    margin: 0 1.5em 0.2em 1.5em;
+    padding: 0 0.5em 0.5em 0.5em;
 }
 
 div#pollmoderation
 {
-	margin: 0;
-	padding: 0;
-	overflow: auto;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
 }
 
 /* onto the posts */
 #forumposts
 {
-	clear: both;
+    clear: both;
 }
 #forumposts .cat_bar
 {
-	margin: 0 0 2px 0;
+    margin: 0 0 2px 0;
 }
 /* author and topic information */
 #forumposts h3 span#author
 {
-	margin: 0 1.7em 0 0;
+    margin: 0 1.7em 0 0;
 }
 #forumposts h3 img
 {
-	float: left;
-	margin: 0 0 0 0;
+    float: left;
+    margin: 0 0 0 0;
 }
 #forumposts h3.catbg
 {
-	margin-bottom: 3px;
+    margin-bottom: 3px;
 }
 p#whoisviewing
 {
-	margin: 0;
-	padding: 0.5em;
+    margin: 0;
+    padding: 0.5em;
 }
 /* poster and postarea + moderation area underneath */
 .post_wrapper
 {
-	float:left;
-	width:100%;
+    float:left;
+    width:100%;
 }
 .poster
 {
-	float: left;
-	width: 115px;
+    float: left;
+    width: 115px;
 }
 .postarea, .moderatorbar
 {
-	margin: 0 0 0 116px;
+    margin: 0 0 0 116px;
 }
 .postarea div.flow_hidden
 {
-	width: 100%;
+    width: 100%;
 }
 
 .moderatorbar
 {
-	clear: right;
+    clear: right;
 }
 /* poster details and list of items */
 .poster h4, .poster ul
 {
-	padding: 0;
-	margin: 0 1em 0 1.5em;
+    padding: 0;
+    margin: 0 1em 0 1.5em;
 }
 .poster h4
 {
-	margin: 0.2em 0 0.4em 1.1em;
-	font-size: 120%;
+    margin: 0.2em 0 0.4em 1.1em;
+    font-size: 120%;
 }
 .poster h4, .poster h4 a
 {
 }
 .poster ul ul
 {
-	margin: 0.3em 1em 0 0;
-	padding: 0;
+    margin: 0.3em 1em 0 0;
+    padding: 0;
 }
 .poster ul ul li
 {
-	display: inline;
+    display: inline;
 }
 .poster li.stars, .poster li.avatar, .poster li.blurb, li.postcount, li.im_icons ul
 {
-	margin-top: 0.5em;
+    margin-top: 0.5em;
 }
 .poster li.avatar
 {
-	overflow: hidden;
+    overflow: hidden;
 }
 .poster li.warning
 {
-	line-height: 1.2em;
-	padding-top: 1em;
+    line-height: 1.2em;
+    padding-top: 1em;
 }
 .poster li.warning a img
 {
-	vertical-align: bottom;
-	padding: 0 0.2em;
+    vertical-align: bottom;
+    padding: 0 0.2em;
 }
 .messageicon
 {
-	float: left;
-	margin: 0 0.5em 0 0;
+    float: left;
+    margin: 0 0.5em 0 0;
 }
 .messageicon img
 {
-	padding: 6px 3px;
+    padding: 6px 3px;
 }
 .keyinfo
 {
-	float: left;
-	width: 50%;
+    float: left;
+    width: 50%;
 }
 .modifybutton
 {
-	clear: right;
-	float: right;
-	margin: 8px 20px 10px 0;
-	text-align: right;
-	font: bold 0.85em arial, sans-serif;
-	color: #334466;	
+    clear: right;
+    float: right;
+    margin: 8px 20px 10px 0;
+    text-align: right;
+    font: bold 0.85em arial, sans-serif;
+    color: #334466;	
 }
 
 /* The quick buttons */
 div.quickbuttons_wrap
 {
-	padding: 0.2em 0;
-	width: 100%;
-	float: left;
+    padding: 0.2em 0;
+    width: 100%;
+    float: left;
 }
 
 .keyinfo h5 {
@@ -1631,116 +1632,116 @@ div.quickbuttons_wrap
 
 .flow_hidden ul.quickbuttons
 {
-	margin: 0 0 0 0;
-	clear: right;
-	float: right;
-	text-align: right;
-	font: bold 0.85em arial, sans-serif;
-        width: 50%;
+    margin: 0 0 0 0;
+    clear: right;
+    float: right;
+    text-align: right;
+    font: bold 0.85em arial, sans-serif;
+    width: 50%;
 }
 ul.quickbuttons li
 {
-	float: left;
-	display: inline;
-	margin: 0 0 0 11px;
+    float: left;
+    display: inline;
+    margin: 0 0 0 11px;
 }
 ul.quickbuttons li a
 {
-	/* padding: 0 0 0 20px;*/
-	display: block;
-	height: 20px;
-	line-height: 18px;
-	float: left;
+    /* padding: 0 0 0 20px;*/
+    display: block;
+    height: 20px;
+    line-height: 18px;
+    float: left;
 }
 ul.quickbuttons a:hover
 {
 }
 ul.quickbuttons li.quote_button
 {
-	background: url(../images/theme/quickbuttons.png) no-repeat 0 0;
+    background: url(../images/theme/quickbuttons.png) no-repeat 0 0;
 }
 ul.quickbuttons li.remove_button
 {
-	background: url(../images/theme/quickbuttons.png) no-repeat 0 -30px;
+    background: url(../images/theme/quickbuttons.png) no-repeat 0 -30px;
 }
 ul.quickbuttons li.modify_button
 {
-	background: url(../images/theme/quickbuttons.png) no-repeat 0 -60px;
+    background: url(../images/theme/quickbuttons.png) no-repeat 0 -60px;
 }
 ul.quickbuttons li.approve_button
 {
-	background: url(../images/theme/quickbuttons.png) no-repeat 0 -90px;
+    background: url(../images/theme/quickbuttons.png) no-repeat 0 -90px;
 }
 ul.quickbuttons li.restore_button
 {
-	background: url(../images/theme/quickbuttons.png) no-repeat 0 -120px;
+    background: url(../images/theme/quickbuttons.png) no-repeat 0 -120px;
 }
 ul.quickbuttons li.split_button
 {
-	background: url(../images/theme/quickbuttons.png) no-repeat 0 -150px;
+    background: url(../images/theme/quickbuttons.png) no-repeat 0 -150px;
 }
 ul.quickbuttons li.reply_button
 {
-	background: url(../images/theme/quickbuttons.png) no-repeat 0 -180px;
+    background: url(../images/theme/quickbuttons.png) no-repeat 0 -180px;
 }
 ul.quickbuttons li.reply_all_button
 {
-	background: url(../images/theme/quickbuttons.png) no-repeat 0 -180px;
+    background: url(../images/theme/quickbuttons.png) no-repeat 0 -180px;
 }
 ul.quickbuttons li.notify_button
 {
-	background: url(../images/theme/quickbuttons.png) no-repeat 0 -210px;
+    background: url(../images/theme/quickbuttons.png) no-repeat 0 -210px;
 }
 ul.quickbuttons li.inline_mod_check
 {
-	margin: 0 0 0 5px;
+    margin: 0 0 0 5px;
 }
 
 .post
 {
-	margin-top: 0.5em;
-	clear: right;
+    margin-top: 0.5em;
+    clear: right;
 }
 .inner
 {
-	padding: 1em 1em 1em 0;
-	margin: 0 1em 0 0;
-	border-top: 1px solid #565656;
+    padding: 1em 1em 1em 0;
+    margin: 0 1em 0 0;
+    border-top: 1px solid #565656;
 }
 .inner img.smiley
 {
-	vertical-align: bottom;
+    vertical-align: bottom;
 }
 #forumposts .modified
 {
-	float: left;
+    float: left;
 }
 #forumposts .reportlinks
 {
-	margin-right: 1.5em;
-	text-align: right;
-	clear: right;
+    margin-right: 1.5em;
+    text-align: right;
+    clear: right;
 }
 #forumposts .signature, .post .signature
 {
-	margin: 1em 0 0 0;
+    margin: 1em 0 0 0;
 }
 #forumposts span.botslice
 {
-	clear: both;
+    clear: both;
 }
 .attachments hr
 {
-	clear: both;
-	margin: 1em 0 1em 0;
+    clear: both;
+    margin: 1em 0 1em 0;
 }
 .attachments
 {
-	padding: 1em 0 2em 0;
+    padding: 1em 0 2em 0;
 }
 .attachments div
 {
-	padding: 0 0.5em;
+    padding: 0 0.5em;
 }
 
 /* Styles for the quick reply area.
@@ -1750,192 +1751,192 @@ ul.quickbuttons li.inline_mod_check
 
 #quickreplybox
 {
-	padding-bottom: 1px;
+    padding-bottom: 1px;
 }
 #quickReplyOptions .roundframe
 {
-	padding: 0 10%;
+    padding: 0 10%;
 }
 #quickReplyOptions form textarea
 {
-	height: 100px;
-	margin: 0.25em 0 1em 0;
+    height: 100px;
+    margin: 0.25em 0 1em 0;
 }
 /* The jump to box */
 #display_jump_to
 {
-	clear: both;
-	padding: 5px;
-	margin-top: 6px;
-	text-align: right;
+    clear: both;
+    padding: 5px;
+    margin-top: 6px;
+    text-align: right;
 }
 
 /* Separator of posts. More useful in the print stylesheet. */
 #forumposts .post_separator
 {
-	display: none;
+    display: none;
 }
 
 /* Styles for edit post section
 ---------------------------------------------------- */
 form#postmodify .roundframe
 {
-	padding: 0 12%;
+    padding: 0 12%;
 }
 #post_header, .postbox
 {
-	padding: 0.5em;
-	overflow: hidden;
+    padding: 0.5em;
+    overflow: hidden;
 }
 #post_header dt, .postbox dt
 {
-	float: left;
-	padding: 0;
-	width: 15%;
-	margin: .5em 0 0 0;
-	font-weight: bold;
+    float: left;
+    padding: 0;
+    width: 15%;
+    margin: .5em 0 0 0;
+    font-weight: bold;
 }
 #post_header dd, .postbox dd
 {
-	float: left;
-	padding: 0;
-	width: 83%;
-	margin: .3em 0;
+    float: left;
+    padding: 0;
+    width: 83%;
+    margin: .3em 0;
 }
 #post_header img
 {
-	vertical-align: middle;
+    vertical-align: middle;
 }
 ul.post_options
 {
-	margin: 0 0 0 1em;
-	padding: 0;
-	list-style: none;
-	overflow: hidden;
+    margin: 0 0 0 1em;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
 }
 ul.post_options li
 {
-	margin: 0.2em 0;
-	width: 49%;
-	float: left;
+    margin: 0.2em 0;
+    width: 49%;
+    float: left;
 }
 #postAdditionalOptionsHeader
 {
-	margin-top: 1em;
+    margin-top: 1em;
 }
 #postMoreOptions
 {
-	border-bottom: 1px solid #565656;
-	padding: 0.5em;
+    border-bottom: 1px solid #565656;
+    padding: 0.5em;
 }
 #postAttachment, #postAttachment2
 {
-	overflow: hidden;
-	margin: .5em 0;
-	padding: 0;
-	border-bottom: 1px solid #565656;
-	padding: 0.5em;
+    overflow: hidden;
+    margin: .5em 0;
+    padding: 0;
+    border-bottom: 1px solid #565656;
+    padding: 0.5em;
 }
 #postAttachment dd, #postAttachment2 dd
 {
-	margin: .3em 0 .3em 1em;
+    margin: .3em 0 .3em 1em;
 }
 #postAttachment dt, #postAttachment2 dt
 {
-	font-weight: bold;
+    font-weight: bold;
 }
 #postAttachment3
 {
-	margin-left: 1em;
+    margin-left: 1em;
 }
 #post_confirm_strip, #shortcuts
 {
-	padding: 1em 0 0 0;
+    padding: 1em 0 0 0;
 }
 .post_verification
 {
-	margin-top: .5em;
+    margin-top: .5em;
 }
 .post_verification #verification_control
 {
-	margin: .3em 0 .3em 1em;
+    margin: .3em 0 .3em 1em;
 }
 /* The BBC buttons */
 #bbcBox_message
 {
-	margin: 0.75em 0.5em;
+    margin: 0.75em 0.5em;
 }
 #bbcBox_message div
 {
-	margin: 0.2em 0;
-	vertical-align: top;
+    margin: 0.2em 0;
+    vertical-align: top;
 }
 #bbcBox_message div img
 {
-	margin: 0 1px 0 0;
-	vertical-align: top;
+    margin: 0 1px 0 0;
+    vertical-align: top;
 }
 #bbcBox_message select
 {
-	margin: 0 2px;
+    margin: 0 2px;
 }
 /* The smiley strip */
 #smileyBox_message
 {
-	margin: 0.5em;
+    margin: 0.5em;
 }
 
 /* Styles for edit event section
 ---------------------------------------------------- */
 #post_event .roundframe
 {
-	padding: 0 12%;
+    padding: 0 12%;
 }
 #post_event fieldset
 {
-	padding: 0.5em;
-	clear: both;
+    padding: 0.5em;
+    clear: both;
 }
 #post_event #event_main input
 {
-	margin: 0 0 1em 0;
-	float: left;
+    margin: 0 0 1em 0;
+    float: left;
 }
 #post_event #event_main div.smalltext
 {
-	width: 33em;
-	float: right;
+    width: 33em;
+    float: right;
 }
 #post_event div.event_options
 {
-	float: right;
+    float: right;
 }
 #post_event ul.event_main, ul.event_options
 {
-	padding: 0;
-	overflow: hidden;
+    padding: 0;
+    overflow: hidden;
 }
 #post_event ul.event_main li
 {
-	list-style-type: none;
-	margin: 0.2em 0;
-	width: 49%;
-	float: left;
+    list-style-type: none;
+    margin: 0.2em 0;
+    width: 49%;
+    float: left;
 }
 #post_event ul.event_options
 {
-	margin: 0;
-	padding: 0 0 .7em .7em;
+    margin: 0;
+    padding: 0 0 .7em .7em;
 }
 #post_event ul.event_options li
 {
-	list-style-type: none;
-	margin: 0;
-	float: left;
+    list-style-type: none;
+    margin: 0;
+    float: left;
 }
 #post_event #event_main select, #post_event ul.event_options li select, #post_event ul.event_options li .input_check
 {
-	margin: 0 1em 0 0;
+    margin: 0 1em 0 0;
 }
 
 /* Styles for edit poll section.
@@ -1943,48 +1944,48 @@ ul.post_options li
 
 #edit_poll
 {
-	overflow: hidden;
+    overflow: hidden;
 }
 #edit_poll fieldset
 {
-	padding: 0.5em;
-	clear: both;
-	overflow: hidden;
+    padding: 0.5em;
+    clear: both;
+    overflow: hidden;
 }
 #edit_poll fieldset input
 {
-	margin-left: 8.1em;
+    margin-left: 8.1em;
 }
 #edit_poll ul.poll_main li
 {
-	padding-left: 1em;
+    padding-left: 1em;
 }
 #edit_poll ul.poll_main input
 {
-	margin-left: 1em;
+    margin-left: 1em;
 }
 #edit_poll ul.poll_main, dl.poll_options
 {
-	overflow: hidden;
-	padding: 0 0 .7em .7em;
-	list-style: none;
+    overflow: hidden;
+    padding: 0 0 .7em .7em;
+    list-style: none;
 }
 #edit_poll ul.poll_main li
 {
-	margin: 0.2em 0;
+    margin: 0.2em 0;
 }
 #edit_poll dl.poll_options dt
 {
-	width: 33%;
-	padding: 0 0 0 1em;
+    width: 33%;
+    padding: 0 0 0 1em;
 }
 #edit_poll dl.poll_options dd
 {
-	width: 65%;
+    width: 65%;
 }
 #edit_poll dl.poll_options dd input
 {
-	margin-left: 0; 
+    margin-left: 0; 
 }
 
 /* Styles for the recent messages section.
@@ -1992,16 +1993,16 @@ ul.post_options li
 
 #readbuttons_top .pagelinks, #readbuttons .pagelinks
 {
-	padding-bottom: 1em;
-	width: 60%;
+    padding-bottom: 1em;
+    width: 60%;
 }
 #readbuttons .pagelinks
 {
-	padding-top: 1em;
+    padding-top: 1em;
 }
 #recent
 {
-	clear: both;
+    clear: both;
 }
 
 /* Styles for the move topic section.
@@ -2009,25 +2010,25 @@ ul.post_options li
 
 #move_topic dl
 {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 #move_topic dl.settings dt
 {
-	width: 40%;
+    width: 40%;
 }
 #move_topic dl.settings dd
 {
-	width: 59%;
+    width: 59%;
 }
 .move_topic
 {
-	width: 710px;
-	margin: auto;
-	text-align: left;
+    width: 710px;
+    margin: auto;
+    text-align: left;
 }
 div.move_topic fieldset
 {
-	padding: 0.5em;
+    padding: 0.5em;
 }
 
 /* Styles for the send topic section.
@@ -2035,20 +2036,20 @@ div.move_topic fieldset
 
 fieldset.send_topic
 {
-	border: none;
-	padding: 0.5em;
+    border: none;
+    padding: 0.5em;
 }
 dl.send_topic
 {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 dl.send_mail dt
 {
-	width: 35%;
+    width: 35%;
 }
 dl.send_mail dd
 {
-	width: 64%;
+    width: 64%;
 }
 
 /* Styles for the report topic section.
@@ -2056,15 +2057,15 @@ dl.send_mail dd
 
 #report_topic dl
 {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 #report_topic dl.settings dt
 {
-	width: 20%;
+    width: 20%;
 }
 #report_topic dl.settings dd
 {
-	width: 79%;
+    width: 79%;
 }
 
 /* Styles for the split topic section.
@@ -2072,313 +2073,313 @@ dl.send_mail dd
 
 div#selected, div#not_selected
 {
-	width: 49%;
+    width: 49%;
 }
 ul.split_messages li.windowbg, ul.split_messages li.windowbg2
 {
-	margin: 1px;
+    margin: 1px;
 }
 ul.split_messages li a.split_icon
 {
-	padding: 0 0.5em;
+    padding: 0 0.5em;
 }
 ul.split_messages div.post
 {
-	padding: 1em 0 0 0;
-	border-top: 1px solid #1a1a1a;
+    padding: 1em 0 0 0;
+    border-top: 1px solid #1a1a1a;
 }
 
 /* Styles for the merge topic section.
 ---------------------------------------------------- */
 ul.merge_topics li
 {
-	list-style-type: none;
+    list-style-type: none;
 }
 dl.merge_topic dt
 {
-	width: 25%;
+    width: 25%;
 }
 dl.merge_topic dd
 {
-	width: 74%;
+    width: 74%;
 }
 fieldset.merge_options
 {
-	clear: both;
+    clear: both;
 }
 .custom_subject
 {
-	margin: 0.5em 0;
+    margin: 0.5em 0;
 }
 
 /* Styles for the login areas.
 ------------------------------------------------------- */
 .login
 {
-	width: 540px;
-	margin: 0 auto;
+    width: 540px;
+    margin: 0 auto;
 }
 .login dl
 {
-	overflow: auto;
-	clear: right;
+    overflow: auto;
+    clear: right;
 }
 .login dt, .login dd
 {
-	margin: 0 0 0.4em 0;
-	width: 44%;
-	padding: 0.1em;
+    margin: 0 0 0.4em 0;
+    width: 44%;
+    padding: 0.1em;
 }
 .login dt
 {
-	float: left;
-	clear: both;
-	text-align: right;
-	font-weight: bold;
+    float: left;
+    clear: both;
+    text-align: right;
+    font-weight: bold;
 }
 .login dd
 {
-	width: 54%;
-	float: right;
-	text-align: left;
+    width: 54%;
+    float: right;
+    text-align: left;
 }
 .login p
 {
-	text-align: center;
+    text-align: center;
 }
 
 /* Styles for the registration section.
 ------------------------------------------------------- */
 .register_error
 {
-	border: 1px dashed red;
-	padding: 5px;
-	margin: 0 1ex 1ex 1ex;
+    border: 1px dashed red;
+    padding: 5px;
+    margin: 0 1ex 1ex 1ex;
 }
 .register_error span
 {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* Additional profile fields */
 dl.register_form
 {
-	margin: 0;
-	clear: right;
-	/* overflow: auto; */
+    margin: 0;
+    clear: right;
+    /* overflow: auto; */
 }
 
 dl.register_form dt
 {
-	font-weight: normal;
-	float: left;
-	clear: both;
-	width: 50%;
-	margin: 0.5em 0 0 0;
+    font-weight: normal;
+    float: left;
+    clear: both;
+    width: 50%;
+    margin: 0.5em 0 0 0;
 }
 
 dl.register_form dt strong
 {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 dl.register_form dt span
 {
-	display: block;
+    display: block;
 }
 
 dl.register_form dd
 {
-	float: left;
-	width: 49%;
-	margin: 0.5em 0 0 0;
+    float: left;
+    width: 49%;
+    margin: 0.5em 0 0 0;
 }
 
 #confirm_buttons
 {
-	text-align: center;
-	padding: 1em 0;
+    text-align: center;
+    padding: 1em 0;
 }
 
 .coppa_contact
 {
-	padding: 4px;
-	width: 32ex;
-	background-color: #fff;
-	color: #000;
-	margin-left: 5ex;
-	border: 1px solid #000;
+    padding: 4px;
+    width: 32ex;
+    background-color: #fff;
+    color: #000;
+    margin-left: 5ex;
+    border: 1px solid #000;
 }
 
 .valid_input
 {
-	background-color: #f5fff0;
+    background-color: #f5fff0;
 }
 .invalid_input
 {
-	background-color: #fff0f0;
+    background-color: #fff0f0;
 }
 
 /* Styles for maintenance mode.
 ------------------------------------------------------- */
 #maintenance_mode
 {
-	width: 75%;
-	min-width: 520px;
-	text-align: left;
+    width: 75%;
+    min-width: 520px;
+    text-align: left;
 }
 #maintenance_mode img.floatleft
 {
-	margin-right: 1em;
+    margin-right: 1em;
 }
 
 /* common for all admin sections */
 h3.titlebg img
 {
-	vertical-align: middle;
-	margin-right: 0.5em;
-	margin-top: -1px;
+    vertical-align: middle;
+    margin-right: 0.5em;
+    margin-top: -1px;
 }
 tr.titlebg td
 {
-	padding-left: 0.7em;
+    padding-left: 0.7em;
 }
 #admin_menu
 {
-	min-height: 2em;
-	padding-left: 0;
+    min-height: 2em;
+    padding-left: 0;
 }
 #admin_content
 {
-	clear: left;
-	padding-top: 0.5em;
+    clear: left;
+    padding-top: 0.5em;
 }
 /* Custom profile fields like to play with us some times. */
 #admin_content .custom_field
 {
-	margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 #admin_login .centertext
 {
-	padding: 1em;
+    padding: 1em;
 }
 #admin_login .centertext .error
 {
-	padding: 0 0 1em 0;
+    padding: 0 0 1em 0;
 }
 #admincenter{
-	
+
 }
 
 /* Styles for sidebar menus.
 ------------------------------------------------------- */
 .left_admmenu, .left_admmenu ul, .left_admmenu li
 {
-	padding: 0;
-	margin: 0;
-	list-style: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 #left_admsection
 {
-	width: 160px;
-	float: left;
-	padding-right: 10px;
+    width: 160px;
+    float: left;
+    padding-right: 10px;
 }
 .adm_section h4.titlebg
 {
-	font-size: 95%;
-	margin-bottom: 5px;
+    font-size: 95%;
+    margin-bottom: 5px;
 }
 #adm_container
 {
-	border-bottom: 1px solid #565656;
-	margin-bottom: 5px;
+    border-bottom: 1px solid #565656;
+    margin-bottom: 5px;
 }
 .left_admmenu li
 {
-	padding: 0 0 0 0.5em;
+    padding: 0 0 0 0.5em;
 }
 .left_admmenu
 {
-	margin-bottom: 0.5em;
+    margin-bottom: 0.5em;
 }
 #main_admsection
 {
-	margin-left: 172px;
-	overflow:auto;
+    margin-left: 172px;
+    overflow:auto;
 }
 
 tr.windowbg td, tr.windowbg2 td, tr.approvebg td, tr.highlight2 td
 {
-	padding: 0.3em 0.7em;
+    padding: 0.3em 0.7em;
 }
 #credits p
 {
-	padding: 0;
-	font-style: italic;
-	margin: 0;
+    padding: 0;
+    font-style: italic;
+    margin: 0;
 }
 
 /* Styles for generic tables.
 ------------------------------------------------------- */
 .topic_table table
 {
-	width: 100%;
+    width: 100%;
 }
 .topic_table .icon1, .topic_table .icon2, .topic_table .stats
 {
-	text-align: center;
+    text-align: center;
 }
 #topic_icons
 {
-	margin: 1em 0 0 0;
+    margin: 1em 0 0 0;
 }
 #topic_icons .description
 {
-	margin: 0;
+    margin: 0;
 }
 .topic_table table thead
 {
-	border-bottom: 1px solid #1a1a1a;
+    border-bottom: 1px solid #1a1a1a;
 }
 /* the subject column */
 .topic_table td
 {
-	font-size: 1em;
+    font-size: 1em;
 }
 .topic_table td.subject p, .topic_table td.stats
 {
-	font-size: 0.9em;
-	padding: 0;
-	margin: 0;
+    font-size: 0.9em;
+    padding: 0;
+    margin: 0;
 }
 .topic_table td.lastpost
 {
-	font-size: 0.9em;
-	line-height: 1.3em;
-	padding: 4px;
+    font-size: 0.9em;
+    line-height: 1.3em;
+    padding: 4px;
 }
 .topic_table td.stickybg2
 {
-	background-image: url(../images/icons/quick_sticky.gif);
-	background-repeat: no-repeat;
-	background-position: 98% 4px;
+    background-image: url(../images/icons/quick_sticky.gif);
+    background-repeat: no-repeat;
+    background-position: 98% 4px;
 }
 .topic_table td.lockedbg2
 {
-	background-image: url(../images/icons/quick_lock.gif);
-	background-repeat: no-repeat;
-	background-position: 98% 4px;
+    background-image: url(../images/icons/quick_lock.gif);
+    background-repeat: no-repeat;
+    background-position: 98% 4px;
 }
 .topic_table td.locked_sticky2
 {
-	background-image: url(../images/icons/quick_sticky_lock.gif);
-	background-repeat: no-repeat;
-	background-position: 98% 4px;
+    background-image: url(../images/icons/quick_sticky_lock.gif);
+    background-repeat: no-repeat;
+    background-position: 98% 4px;
 }
 .topic_table td.lastpost
 {
-	background-image: none;
+    background-image: none;
 }
 
 /* Styles for (fatal) errors.
@@ -2386,36 +2387,36 @@ tr.windowbg td, tr.windowbg2 td, tr.approvebg td, tr.highlight2 td
 
 #fatal_error
 {
-	width: 80%;
-	margin: auto;
+    width: 80%;
+    margin: auto;
 }
 
 .errorbox
 {
-	padding: 1em;
-	border: 1px solid #cc3344;
-	color: #000;
-	background-color: #ffe4e9;
-	margin-bottom: 1em;
+    padding: 1em;
+    border: 1px solid #cc3344;
+    color: #000;
+    background-color: #ffe4e9;
+    margin-bottom: 1em;
 }
 .errorbox h3
 {
-	padding: 0;
-	margin: 0;
-	font-size: 1.1em;
-	text-decoration: underline;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1em;
+    text-decoration: underline;
 }
 .errorbox p
 {
-	margin: 1em 0 0 0;
+    margin: 1em 0 0 0;
 }
 .errorbox p.alert
 {
-	padding: 0;
-	margin: 0;
-	float: left;
-	width: 1em;
-	font-size: 1.5em;
+    padding: 0;
+    margin: 0;
+    float: left;
+    width: 1em;
+    font-size: 1.5em;
 }
 
 /* Styles for the profile section.
@@ -2423,519 +2424,519 @@ tr.windowbg td, tr.windowbg2 td, tr.approvebg td, tr.highlight2 td
 
 dl
 {
-	overflow: auto;
-	margin: 0;
-	padding: 0;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
 }
 
 /* The basic user info on the left */
 #basicinfo
 {
-	width: 20%;
-	float: left;
+    width: 20%;
+    float: left;
 }
 #basicinfo .windowbg .bbp_content
 {
-	padding-left: 20px;
+    padding-left: 20px;
 }
 #detailedinfo
 {
-	width: 79.5%;
-	float: right;
+    width: 79.5%;
+    float: right;
 }
 #basicinfo h4
 {
-	font-size: 135%;
-	font-weight: 100;
-	line-height: 105%;
-	white-space: pre-wrap;
-	overflow: hidden;
+    font-size: 135%;
+    font-weight: 100;
+    line-height: 105%;
+    white-space: pre-wrap;
+    overflow: hidden;
 }
 #basicinfo h4 span.position
 {
-	font-size: 80%;
-	font-weight: 100;
-	display: block;
+    font-size: 80%;
+    font-weight: 100;
+    display: block;
 }
 #basicinfo img.avatar
 {
-	display: block;
-	margin: 10px 0 0 0;
+    display: block;
+    margin: 10px 0 0 0;
 }
 #basicinfo ul
 {
-	list-style-type: none;
-	margin: 10px 0 0 0;
+    list-style-type: none;
+    margin: 10px 0 0 0;
 }
 #basicinfo ul li
 {
-	display: block;
-	float: left;
-	margin-right: 5px;
-	height: 20px;
+    display: block;
+    float: left;
+    margin-right: 5px;
+    height: 20px;
 }
 #basicinfo span#userstatus
 {
-	display: block;
-	clear: both;
+    display: block;
+    clear: both;
 }
 #basicinfo span#userstatus img
 {
-	vertical-align: middle;
+    vertical-align: middle;
 }
 #detailedinfo div.bbp_content dl, #tracking div.bbp_content dl
 {
-	clear: right;
-	overflow: auto;
-	margin: 0 0 18px 0;
-	padding: 0 0 15px 0;
-	border-bottom: 1px #565656 solid;
+    clear: right;
+    overflow: auto;
+    margin: 0 0 18px 0;
+    padding: 0 0 15px 0;
+    border-bottom: 1px #565656 solid;
 }
 #detailedinfo div.bbp_content dt, #tracking div.bbp_content dt
 {
-	width: 35%;
-	float: left;
-	margin: 0 0 3px 0;
-	padding: 0;
-	font-weight: bold;
-	clear: both;
+    width: 35%;
+    float: left;
+    margin: 0 0 3px 0;
+    padding: 0;
+    font-weight: bold;
+    clear: both;
 }
 #detailedinfo div.bbp_content dd, #tracking div.bbp_content dd
 {
-	width: 65%;
-	float: left;
-	margin: 0 0 3px 0;
-	padding: 0;
+    width: 65%;
+    float: left;
+    margin: 0 0 3px 0;
+    padding: 0;
 }
 #detailedinfo div.bbp_content dl.noborder
 {
-	border-bottom: 0;
+    border-bottom: 0;
 }
 #detailedinfo div.bbp_content dt.clear
 {
-	width: 100%;
+    width: 100%;
 }
 .signature, .custom_fields_above_signature
 {
-	border-top: 1px #565656 solid;
+    border-top: 1px #565656 solid;
 }
 .signature h5
 {
-	font-size: 0.85em;
-	margin-bottom: 10px;
+    font-size: 0.85em;
+    margin-bottom: 10px;
 }
 #personal_picture
 {
-	display: block;
-	margin-bottom: 0.3em;
+    display: block;
+    margin-bottom: 0.3em;
 }
 #avatar_server_stored div
 {
-	float: left;
+    float: left;
 }
 
 #main_admsection #basicinfo, #main_admsection #detailedinfo
 {
-	width: 100%;
+    width: 100%;
 }
 #main_admsection #basicinfo h4
 {
-	float: left;
-	width: 35%;
+    float: left;
+    width: 35%;
 }
 #main_admsection #basicinfo img.avatar
 {
-	float: right;
-	vertical-align: top;
+    float: right;
+    vertical-align: top;
 }
 #main_admsection #basicinfo ul
 {
-	clear: left;
+    clear: left;
 }
 #main_admsection #basicinfo span#userstatus
 {
-	clear: left;
+    clear: left;
 }
 #main_admsection #basicinfo p#infolinks
 {
-	display: none;
-	clear: both;
+    display: none;
+    clear: both;
 }
 #main_admsection #basicinfo .botslice
 {
-	clear: both;
+    clear: both;
 }
 
 /* Simple feedback messages */
 div#profile_error, div#profile_success
 {
-	margin: 0 0 1em 0;
-	padding: 1em 2em;
-	border: 1px solid;
+    margin: 0 0 1em 0;
+    padding: 1em 2em;
+    border: 1px solid;
 }
 div#profile_error
 {
-	border-color: red;
-	color: red;
-	background: #fee;
+    border-color: red;
+    color: red;
+    background: #fee;
 }
 
 div#profile_error span
 {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 div#profile_success
 {
-	border-color: green;
-	color: green;
-	background: #efe;
+    border-color: green;
+    color: green;
+    background: #efe;
 }
 
 /* Profile statistics */
 #generalstats div.bbp_content dt
 {
-	width: 50%;
-	float: left;
-	margin: 0 0 3px 0;
-	padding: 0;
-	font-weight: bold;
-	clear: both;
+    width: 50%;
+    float: left;
+    margin: 0 0 3px 0;
+    padding: 0;
+    font-weight: bold;
+    clear: both;
 }
 #generalstats div.bbp_content dd
 {
-	width: 50%;
-	float: left;
-	margin: 0 0 3px 0;
-	padding: 0;
+    width: 50%;
+    float: left;
+    margin: 0 0 3px 0;
+    padding: 0;
 }
 
 /* Activity by time */
 #activitytime
 {
-	margin: 6px 0;
+    margin: 6px 0;
 }
 .activity_stats
 {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 .activity_stats li
 {
-	margin: 0;
-	padding: 0;
-	width: 4.16%;
-	float: left;
+    margin: 0;
+    padding: 0;
+    width: 4.16%;
+    float: left;
 }
 .activity_stats li span
 {
-	display: block;
-	border: solid #565656;
-	border-width: 1px 1px 0 0;
-	text-align: center;
+    display: block;
+    border: solid #565656;
+    border-width: 1px 1px 0 0;
+    text-align: center;
 }
 .activity_stats li.last span
 {
-	border-right: none;
+    border-right: none;
 }
 .activity_stats li div.bar
 {
-	margin: 0 auto;
-	width: 15px;
+    margin: 0 auto;
+    width: 15px;
 }
 .activity_stats li div.bar div
 {
-	background: #6294CE;
+    background: #6294CE;
 }
 .activity_stats li div.bar span
 {
-	position: absolute;
-	top: -1000em;
-	left: -1000em;
+    position: absolute;
+    top: -1000em;
+    left: -1000em;
 }
 
 /* Most popular boards by posts and activity */
 #popularposts
 {
-	width: 49.5%;
-	float: left;
+    width: 49.5%;
+    float: left;
 }
 #popularactivity
 {
-	width: 49.5%;
-	float: right;
+    width: 49.5%;
+    float: right;
 }
 
 #popularposts div.bbp_content dt, #popularactivity div.bbp_content dt
 {
-	width: 65%;
-	float: left;
-	margin: 0 0 3px 0;
-	padding: 0;
-	font-weight: bold;
-	clear: both;
+    width: 65%;
+    float: left;
+    margin: 0 0 3px 0;
+    padding: 0;
+    font-weight: bold;
+    clear: both;
 }
 #popularposts div.bbp_content dd, #popularactivity div.bbp_content dd
 {
-	width: 35%;
-	float: left;
-	margin: 0 0 3px 0;
-	padding: 0;
+    width: 35%;
+    float: left;
+    margin: 0 0 3px 0;
+    padding: 0;
 }
 
 .profile_pie
 {
-	background-image: url(../images/stats_pie.png);
-	float: left;
-	height: 20px;
-	width: 20px;
-	margin: 0 1em 0 0;
-	padding: 0;
-	text-indent: -1000em;
+    background-image: url(../images/stats_pie.png);
+    float: left;
+    height: 20px;
+    width: 20px;
+    margin: 0 1em 0 0;
+    padding: 0;
+    text-indent: -1000em;
 }
 
 /* View posts */
 .topic .time
 {
-	float: right;
+    float: right;
 }
 
 .counter
 {
-	margin: 0 0 0 0;
-	padding: 0.2em 0.5em 0.1em 0.2em;
-	font-size: 2.2em;
-	font-weight: bold;
-	color: #5f5f5f;
-	float: left;
+    margin: 0 0 0 0;
+    padding: 0.2em 0.5em 0.1em 0.2em;
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #5f5f5f;
+    float: left;
 }
 .list_posts
 {
-	border-top: 2px solid #7a7a7a;
-	padding-top: 12px;
-	margin-top: 6px;
-	overflow: auto;
+    border-top: 2px solid #7a7a7a;
+    padding-top: 12px;
+    margin-top: 6px;
+    overflow: auto;
 }
 
 .core_posts
 {
-	margin-bottom: 3px;
+    margin-bottom: 3px;
 }
 
 .topic h4
 {
-	margin: 3px 0;
+    margin: 3px 0;
 }
 
 .topic .post
 {
-	margin: 0 1em;
-	min-height: 80px;
-	height: auto !important;
-	width: 98%;
+    margin: 0 1em;
+    min-height: 80px;
+    height: auto !important;
+    width: 98%;
 }
 
 .topic .mod_icons
 {
-	text-align: right;
-	margin-right: 1em;
+    text-align: right;
+    margin-right: 1em;
 }
 
 #tracking div.bbp_content dl
 {
-	border-bottom: 0;
-	margin: 0;
-	padding: 0;
+    border-bottom: 0;
+    margin: 0;
+    padding: 0;
 }
 
 #creator dl
 {
-	margin: 0;
+    margin: 0;
 }
 #creator dt
 {
-	width: 40%;
-	float: left;
-	clear: both;
-	margin: 0 0 10px 0;
+    width: 40%;
+    float: left;
+    clear: both;
+    margin: 0 0 10px 0;
 }
 #creator dd
 {
-	float: left;
-	width: 55%;
-	margin: 0 0 10px 2px;
+    float: left;
+    width: 55%;
+    margin: 0 0 10px 2px;
 }
 
 .ignoreboards
 {
-	margin: 0 2%;
-	padding: 0;
-	width: 45%;
+    margin: 0 2%;
+    padding: 0;
+    width: 45%;
 }
 .ignoreboards a
 {
-	font-weight: bold;
-	border-bottom: 1px solid #c4c4c4;
-	padding: 0.1em 0;
+    font-weight: bold;
+    border-bottom: 1px solid #c4c4c4;
+    padding: 0.1em 0;
 }
 .ignoreboards a:hover
 {
-	text-decoration: none;
-	border-bottom: 1px solid #334466;
+    text-decoration: none;
+    border-bottom: 1px solid #334466;
 }
 .ignoreboards ul
 {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 .ignoreboards li
 {
-	list-style: none;
-	float: left;
-	clear: both;
+    list-style: none;
+    float: left;
+    clear: both;
 }
 .ignoreboards li.category
 {
-	margin: 0.7em 0 0 0;
-	width: 100%;
+    margin: 0.7em 0 0 0;
+    width: 100%;
 }
 .ignoreboards li ul
 {
-	margin: 0.2em 0 0 0;
+    margin: 0.2em 0 0 0;
 }
 .ignoreboards li.category ul li.board
 {
-	width: 93%;
+    width: 93%;
 }
 
 #theme_settings
 {
-	overflow: auto;
-	margin: 0;
-	padding: 0;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
 }
 
 #theme_settings li
 {
-	list-style: none;
-	margin: 10px 0;
-	padding: 0;
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
 }
 /* Paid Subscriptions */
 #paid_subscription
 {
-	width: 100%;
+    width: 100%;
 }
 #paid_subscription dl.settings
 {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 #paid_subscription dl.settings dd, #paid_subscription dl.settings dt
 {
-	margin-bottom: 4px;
+    margin-bottom: 4px;
 }
 /* Pick theme */
 #pick_theme
 {
-	width: 100%;
-	float: left;
+    width: 100%;
+    float: left;
 }
 /*Issue a warning*/
 #warn_body{
-	width: 80%;
-	font-size: 0.9em;
+    width: 80%;
+    font-size: 0.9em;
 }
 
 /* Styles for the statistics center.
 ------------------------------------------------- */
 #statistics
 {
-	padding: 0.5em 0;
+    padding: 0.5em 0;
 }
 #statistics div.title_bar
 {
-	margin: 4px 0 -2px 0;
+    margin: 4px 0 -2px 0;
 }
 #statistics h3.catbg
 {
-	text-align: center;
+    text-align: center;
 }
 #statistics div.bbp_content
 {
-	min-height: 210px;
+    min-height: 210px;
 }
 #statistics div.top_row
 {
-	min-height: 150px;
+    min-height: 150px;
 }
 #stats_left, #top_posters, #top_topics_replies, #top_topics_starter
 {
-	float: left;
-	width: 49.5%;
+    float: left;
+    width: 49.5%;
 }
 #stats_right, #top_boards, #top_topics_views, #most_online
 {
-	float: right;
-	width: 49.5%;
+    float: right;
+    width: 49.5%;
 }
 #statistics #stats th
 {
-	overflow:hidden;
+    overflow:hidden;
 }
 dl.stats
 {
-	clear: both;
-	overflow: hidden;
-	margin: 0;
-	padding: 0;
+    clear: both;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 dl.stats dt
 {
-	width: 49%;
-	float: left;
-	margin: 0 0 4px 0;
-	line-height: 16px;
-	padding: 0;
-	clear: both;
-	font-size: 1em;
+    width: 49%;
+    float: left;
+    margin: 0 0 4px 0;
+    line-height: 16px;
+    padding: 0;
+    clear: both;
+    font-size: 1em;
 }
 dl.stats dd
 {
-	text-align: right;
-	width: 50%;
-	font-size: 1em;
-	float: right;
-	margin: 0 0 4px 0;
-	line-height: 16px;
-	padding: 0;
+    text-align: right;
+    width: 50%;
+    font-size: 1em;
+    float: right;
+    margin: 0 0 4px 0;
+    line-height: 16px;
+    padding: 0;
 }
 .statsbar div.bar
 {
-	float: left;
-	background: url(../images/bar_stats.png) no-repeat;
-	display: block;
-	margin: 0 4px;
-	height: 16px;
+    float: left;
+    background: url(../images/bar_stats.png) no-repeat;
+    display: block;
+    margin: 0 4px;
+    height: 16px;
 }
 .statsbar div.bar div
 {
-	position: relative;
-	right: -4px;
-	padding: 0 4px 0 0;
-	background: url(../images/bar_stats.png) no-repeat 100%;
-	height: 16px;
+    position: relative;
+    right: -4px;
+    padding: 0 4px 0 0;
+    background: url(../images/bar_stats.png) no-repeat 100%;
+    height: 16px;
 }
 tr.windowbg2 th.stats_month
 {
-	width: 25%;
-	padding: 0 2em;
-	text-align: left;
+    width: 25%;
+    padding: 0 2em;
+    text-align: left;
 }
 tr.windowbg2 td.stats_day
 {
-	padding: 0 3.5em;
-	text-align: left;
+    padding: 0 3.5em;
+    text-align: left;
 }
 
 /* Styles for the personal messages section.
@@ -2943,263 +2944,263 @@ tr.windowbg2 td.stats_day
 
 #personal_messages h3 span#author, #personal_messages h3 span#topic_title
 {
-	float: left;
+    float: left;
 }
 #personal_messages h3 span#author
 {
-	margin: 0 0 0 0.5em;
+    margin: 0 0 0 0.5em;
 }
 #personal_messages h3 span#topic_title
 {
-	margin: 0 0 0 9em;
+    margin: 0 0 0 9em;
 }
 #personal_messages div.labels
 {
-	padding: 0 1em 0 0;
+    padding: 0 1em 0 0;
 }
 #personal_messages .capacity_bar
 {
-	background: #f0f4f7;
-	display: block;
-	margin: 0.5em 0 0 1em;
-	height: 1em;
-	border: 1px solid #adadad;
-	width: 10em;
+    background: #f0f4f7;
+    display: block;
+    margin: 0.5em 0 0 1em;
+    height: 1em;
+    border: 1px solid #adadad;
+    width: 10em;
 }
 #personal_messages .capacity_bar span
 {
-	border-right: 1px solid #adadad;
-	display: block;
-	height: 1em;
+    border-right: 1px solid #adadad;
+    display: block;
+    height: 1em;
 }
 #personal_messages .capacity_bar span.empty
 {
-	background: #a6d69d;
+    background: #a6d69d;
 }
 #personal_messages .capacity_bar span.filled
 {
-	background: #eea800;
+    background: #eea800;
 }
 #personal_messages .capacity_bar span.full
 {
-	background: #f10909;
+    background: #f10909;
 }
 #personal_messages .reportlinks
 {
-	padding: 0.5em 1.3em;
+    padding: 0.5em 1.3em;
 }
 #searchLabelsExpand li
 {
-	padding: 0.3em 0.5em;
+    padding: 0.3em 0.5em;
 }
 #manrules div.righttext
 {
-	padding: 0.3em 0.1em;
+    padding: 0.3em 0.1em;
 }
 dl.addrules dt.floatleft
 {
-	width: 15em;
-	color: #333;
-	padding: 0 1.25em 0.5em 1.25em;
+    width: 15em;
+    color: #333;
+    padding: 0 1.25em 0.5em 1.25em;
 }
 #addrule fieldset
 {
-	clear: both;
+    clear: both;
 }
 
 /* Styles for the calendar section.
 ------------------------------------------------- */
 .calendar_table
 {
-	margin-bottom: 0.7em;
+    margin-bottom: 0.7em;
 }
 
 /* Used to indicate the current day in the grid. */
 .calendar_today
 {
-	background-color: #333;
+    background-color: #333;
 }
 
 #month_grid
 {
-	width: 200px;
-	text-align: center;
-	float: left;
+    width: 200px;
+    text-align: center;
+    float: left;
 }
 #month_grid div.cat_bar
 {
-	height: 31px;
+    height: 31px;
 }
 #month_grid h3.catbg
 {
-	height: 31px;
-	line-height: 31px;
+    height: 31px;
+    line-height: 31px;
 }
 #month_grid table
 {
-	width: 200px;
+    width: 200px;
 }
 #main_grid table
 {
-	width: 100%;
-	padding-bottom: 4px;
+    width: 100%;
+    padding-bottom: 4px;
 }
 #main_grid table h3.catbg
 {
-	text-align: center;
-	height: 29px;
-	border-top: 2px solid #1a1a1a;
-	border-bottom: none;
+    text-align: center;
+    height: 29px;
+    border-top: 2px solid #1a1a1a;
+    border-bottom: none;
 }
 #main_grid table.weeklist td.windowbg
 {
-	text-align: center;
-	height: 49px;
-	width: 25px;
-	font-size: large;
-	padding: 0 7px;
-	border-bottom: 2px solid #1a1a1a;
+    text-align: center;
+    height: 49px;
+    width: 25px;
+    font-size: large;
+    padding: 0 7px;
+    border-bottom: 2px solid #1a1a1a;
 }
 #main_grid table.weeklist td.weekdays
 {
-	height: 49px;
-	width: 100%;
-	padding: 4px;
-	text-align: left;
-	vertical-align: middle;
-	border-bottom: 2px solid #1a1a1a;
+    height: 49px;
+    width: 100%;
+    padding: 4px;
+    text-align: left;
+    vertical-align: middle;
+    border-bottom: 2px solid #1a1a1a;
 }
 #main_grid h3.weekly
 {
-	text-align: center;
-	padding-left: 0;
-	font-size: large;
-	height: 29px;
+    text-align: center;
+    padding-left: 0;
+    font-size: large;
+    height: 29px;
 }
 #main_grid h3 span.floatleft, #main_grid h3 span.floatright
 {
-	display: block;
-	font-weight: bold;
+    display: block;
+    font-weight: bold;
 }
 #main_grid table th.days
 {
-	width: 14%;
-	padding: 4px 0;
+    width: 14%;
+    padding: 4px 0;
 }
 #main_grid table.weeklist h4.titlebg
 {
-	margin: 0 0 0 0;
-	height: 23px;
-	line-height: 27px;
+    margin: 0 0 0 0;
+    height: 23px;
+    line-height: 27px;
 }
 #main_grid table td.weeks
 {
-	vertical-align: middle;
-	text-align: center;
-	font-weight: bold;
-	font-size: large;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
 }
 #main_grid table td.days
 {
-	vertical-align: top;
-	text-align: center;
+    vertical-align: top;
+    text-align: center;
 }
 
 a.modify_event
 {
-	color: red;
+    color: red;
 }
 
 span.hidelink
 {
-	font-style: italic;
+    font-style: italic;
 }
 
 #calendar_navigation
 {
-	text-align: center;
+    text-align: center;
 }
 
 /* Styles for the memberlist section.
 ------------------------------------------------- */
 #mlist_search
 {
-	margin: auto;
-	width: 500px;
+    margin: auto;
+    width: 500px;
 }
 
 /* Styles for the basic search section.
 ------------------------------------------------- */
 #searchform, #simple_search p
 {
-	padding: 0.5em;
-	margin: 0;
+    padding: 0.5em;
+    margin: 0;
 }
 #simple_search, #simple_search p, #advanced_search
 {
-	text-align: center !important;
-	margin: 0;
+    text-align: center !important;
+    margin: 0;
 }
 #search_error
 {
-	font-style: italic;
-	padding: 0.3em 1em;
+    font-style: italic;
+    padding: 0.3em 1em;
 }
 #search_term_input
 {
-	font-size: 115%;
-	margin: 0 0 1em;
+    font-size: 115%;
+    margin: 0 0 1em;
 }
 
 /* Styles for the advanced search section.
 ------------------------------------------------- */
 #searchform fieldset
 {
-	text-align: left;
-	padding: 0;
-	border: none;
+    text-align: left;
+    padding: 0;
+    border: none;
 }
 #advanced_search dl#search_options
 {
-	margin: 0 auto;
-	width: 600px;
-	padding-top: 1em;
-	overflow: hidden;
+    margin: 0 auto;
+    width: 600px;
+    padding-top: 1em;
+    overflow: hidden;
 }
 #advanced_search dt
 {
-	clear: both;
-	float: left;
-	padding: 0.2em;
-	text-align: right;
-	width: 20%;
+    clear: both;
+    float: left;
+    padding: 0.2em;
+    text-align: right;
+    width: 20%;
 }
 #advanced_search dd
 {
-	width: 75%;
-	float: left;
-	padding: 0.2em;
-	margin: 0 0 0 0.5em;
-	text-align: left;
+    width: 75%;
+    float: left;
+    padding: 0.2em;
+    margin: 0 0 0 0.5em;
+    text-align: left;
 }
 #searchform p.clear
 {
-	clear: both;
+    clear: both;
 }
 
 /* Styles for the search results page.
 ------------------------------------------------- */
 .topic_table td blockquote, .topic_table td .quoteheader
 {
-	margin: 0.5em;
+    margin: 0.5em;
 }
 .search_results_posts
 {
-	overflow: hidden;
+    overflow: hidden;
 }
 .search_results_posts .buttons
 {
-	padding: 5px 1em 0 0;
+    padding: 5px 1em 0 0;
 }
 
 /* Styles for the help section.
@@ -3207,171 +3208,171 @@ span.hidelink
 
 #help_container
 {
-	margin: 4px 0 0 0;
-	padding: 0 0 8px 0;
+    margin: 4px 0 0 0;
+    padding: 0 0 8px 0;
 }
 #helpmain
 {
-	padding: 0 1em;
+    padding: 0 1em;
 }
 
 /* Samples should be easily distinguishable. */
 #helpmain .help_sample
 {
-	border: 1px solid #252525;
-	background: #1a1a1a;
-	padding: 1em;
-	overflow: auto;
-	margin-bottom: 1em;
+    border: 1px solid #252525;
+    background: #1a1a1a;
+    padding: 1em;
+    overflow: auto;
+    margin-bottom: 1em;
 }
 #helpmain .help_sample .navigate_section
 {
-	margin: 0;
+    margin: 0;
 }
 #helpmain .help_sample .navigate_section ul
 {
-	padding-top: 0;
-	border: none;
+    padding-top: 0;
+    border: none;
 }
 
 /* We need some air between the lines */
 #helpmain p
 {
-	margin: 0 0 1.5em 0;
-	line-height: 1.5em;
+    margin: 0 0 1.5em 0;
+    line-height: 1.5em;
 }
 #helpmain ol
 {
-	font-weight: bold;
-	list-style-type: disc;
-	margin-bottom: 1em;
-	margin-top: 1em;
-	line-height: 1.5em;
+    font-weight: bold;
+    list-style-type: disc;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    line-height: 1.5em;
 }
 #helpmain ol.la
 {
-	font-weight: normal;
-	list-style-type: circle;
-	margin: 0.5em 0 1em 0;
-	padding-left: 1.5em;
+    font-weight: normal;
+    list-style-type: circle;
+    margin: 0.5em 0 1em 0;
+    padding-left: 1.5em;
 }
 ul.basic_helplist
 {
-	padding: 0.8em 1.5em;
-	line-height: 1.5em;
+    padding: 0.8em 1.5em;
+    line-height: 1.5em;
 }
 #helpmain #messageindex
 {
-	clear: right;
+    clear: right;
 }
 
 /* Styles for print media.
 ------------------------------------------------------- */
 @media print
 {
-	#headerarea
-	{
-		display: none;
-	}
+    #headerarea
+    {
+        display: none;
+    }
 
-	.tborder
-	{
-		border: none;
-	}
+    .tborder
+    {
+        border: none;
+    }
 }
 
 .new_win{width: 400px; height: 400px;}
 
 /* MysticJade Styles */
 #topbar span {
-	padding-left: 15px;
-	/*color: #fff;*/
-	line-height: 30px;
+    padding-left: 15px;
+    /*color: #fff;*/
+    line-height: 30px;
 }
 #mainarea {
-	border-top: solid 1px #333;
-	background: #1a1a1a;
-	padding: 0 4px 10px;
+    border-top: solid 1px #333;
+    background: #1a1a1a;
+    padding: 0 4px 10px;
 }
 #toolbar {
-	height: 35px;
-	background: url(../images/custom/toolbar-bg.png) repeat-x;
-	position: relative;
+    height: 35px;
+    background: url(../images/custom/toolbar-bg.png) repeat-x;
+    position: relative;
 }
 #header_userinfo_search
 {
-background: #1a1a1a url(../images/custom/userinfo.png) 0 0 repeat-x;
+    background: #1a1a1a url(../images/custom/userinfo.png) 0 0 repeat-x;
 }
 #login_bar{
-	float:left;
+    float:left;
 }
 #openid_bar{
-	margin-left: 370px;
+    margin-left: 370px;
     padding: 17px 0 0 10px;
 }
 #userinfo {
-	
-	/*background: #1a1a1a url(../images/custom/userinfo.png) 0 0 repeat-x;*/
-	
-	color: #cdcdcd;
-	width: 650px;
-	float: left;
-	padding: 10px 0 10px 25px;
-	
+
+    /*background: #1a1a1a url(../images/custom/userinfo.png) 0 0 repeat-x;*/
+
+    color: #cdcdcd;
+    width: 650px;
+    float: left;
+    padding: 10px 0 10px 25px;
+
 }
 #userinfo2{
-	padding: 8px 0 0 0;
+    padding: 8px 0 0 0;
 }
 #searchfield {
-	/*background: url("../images/custom/searchfield.png") repeat-x scroll 0 0 #1A1A1A;*/
-	color: #cdcdcd;
-	text-align: right;
-	padding: 20px 25px 0px 5px;
-	height: 50px;
+    /*background: url("../images/custom/searchfield.png") repeat-x scroll 0 0 #1A1A1A;*/
+    color: #cdcdcd;
+    text-align: right;
+    padding: 20px 25px 0px 5px;
+    height: 50px;
 }
 #header {
-	position: relative;
-	height: 100px;
-	overflow: hidden;
-	background: #1a1a1a url(../images/custom/header-bg.png) repeat-x;
+    position: relative;
+    height: 100px;
+    overflow: hidden;
+    background: #1a1a1a url(../images/custom/header-bg.png) repeat-x;
 }
 #logo a {
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: block;
-	width: 400px;
-	height: 100px;
-	background: url(../images/custom/logo.png) no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 400px;
+    height: 100px;
+    background: url(../images/custom/logo.png) no-repeat;
 }
 #news {
-	position: absolute;
-	top: 10px;
-	right: 20px;
-	display: block;
-	width: 400px;
-	height: 90px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: block;
+    width: 400px;
+    height: 90px;
 }
 #news p {
-	padding: 8px;
-	margin: 0;
+    padding: 8px;
+    margin: 0;
 }
 #footer {
-	padding: 15px 0;
-	color: #b2b2b2;
-	background: #1d1d1d url(../images/custom/footer-bg.png) repeat-x;
-	border-top: solid 1px #252525;
-	text-align: center;
+    padding: 15px 0;
+    color: #b2b2b2;
+    background: #1d1d1d url(../images/custom/footer-bg.png) repeat-x;
+    border-top: solid 1px #252525;
+    text-align: center;
 }
 #footer a:link , #footer a:visited {
-	color: #869927;
+    color: #869927;
 }
 #footer a:hover {
-	color: #5f6b22;
+    color: #5f6b22;
 }
 .spoilerbody{
-	border: 1px dashed;
-	padding: 8px;
+    border: 1px dashed;
+    padding: 8px;
 }
 #recaptcha_area, #recaptcha_table {
     margin-left: auto;
@@ -3380,7 +3381,7 @@ background: #1a1a1a url(../images/custom/userinfo.png) 0 0 repeat-x;
 }
 .stats .yagam
 {
-	background-color: #232323;
+    background-color: #232323;
 }
 
 .gpbp_vote {
@@ -3395,13 +3396,13 @@ background: #1a1a1a url(../images/custom/userinfo.png) 0 0 repeat-x;
     display: block;
     width: 350px;
     height: 16px;
-	padding: 0px;
+    padding: 0px;
 }
 #share-post li{
     background: url(../images/share/share_sprite.png) no-repeat top left;
     display: block;
     float:left;
-	padding-right: 5px;
+    padding-right: 5px;
 }
 #share-post li a{
     display: block;
@@ -3452,71 +3453,71 @@ background: #1a1a1a url(../images/custom/userinfo.png) 0 0 repeat-x;
 -------------------------------------------------------------- */
 
 hr {
-	margin: 0 0 24px 0;
+    margin: 0 0 24px 0;
 }
 
 #bbpress-forums {
-	background: transparent;
-	clear: both;
-	margin-bottom: 20px;
-	overflow: hidden;
-	font-size: 12px;
+    background: transparent;
+    clear: both;
+    margin-bottom: 20px;
+    overflow: hidden;
+    font-size: 12px;
 }
 
 .even,
 ul.even {
-	background-color: #fff;
+    background-color: #fff;
 }
 
 .odd,
 ul.odd {
-	background-color: #fbfbfb;
+    background-color: #fbfbfb;
 }
 
 .reply-edit .reply {
-	float: none;
+    float: none;
 }
 
 .reply {
-	height: auto;
-	width: 100%;
+    height: auto;
+    width: 100%;
 }
 
 .bbp-forum-header,
 .bbp-topic-header,
 .bbp-reply-header {
-	background-color: #f4f4f4;
+    background-color: #f4f4f4;
 }
 
 .status-trash.even,
 .status-spam.even {
-	background-color: #fee;
+    background-color: #fee;
 }
 .status-trash.odd,
 .status-spam.odd {
-	background-color: #fdd;
+    background-color: #fdd;
 }
 
 .status-closed,
 .status-closed a {
-	color: #ccc;
+    color: #ccc;
 }
 
 ul {
-	background:  none;
-	list-style: none;
-	margin: 0;
-	padding: 0;
+    background:  none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 ul.bbp-threaded-replies {
-	margin-left: 50px;
+    margin-left: 50px;
 }
 
 li {
-	background: none;
-	margin: 0;
-	list-style: none;
+    background: none;
+    margin: 0;
+    list-style: none;
 }
 
 ul.bbp-lead-topic,
@@ -3524,137 +3525,137 @@ ul.bbp-topics,
 ul.bbp-forums,
 ul.bbp-replies,
 ul.bbp-search-results {
-	font-size: 12px;
-	overflow: hidden;
-	border: 1px solid #eee;
-	margin-bottom: 20px;
-	clear: both;
+    font-size: 12px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    margin-bottom: 20px;
+    clear: both;
 }
 
 li.bbp-header,
 li.bbp-body,
 li.bbp-footer {
-	clear: both;
+    clear: both;
 }
 
 li.bbp-header,
 li.bbp-footer {
-	background: #f3f3f3;
-	border-top: 1px solid #eee;
-	font-weight: bold;
-	padding: 8px;
-	text-align: center;
+    background: #f3f3f3;
+    border-top: 1px solid #eee;
+    font-weight: bold;
+    padding: 8px;
+    text-align: center;
 }
 
 li.bbp-header {
-	background: #eaeaea;
+    background: #eaeaea;
 }
 
 li.bbp-header ul {
-	overflow: hidden;
+    overflow: hidden;
 }
 
 .bbp-forums-list {
-	margin: 0 0 0 5px;
-	padding-left: 15px;
-	border-left: 1px solid #ddd;
+    margin: 0 0 0 5px;
+    padding-left: 15px;
+    border-left: 1px solid #ddd;
 }
 
 .bbp-forums-list li {
-	display: inline;
-	font-size: 11px;
+    display: inline;
+    font-size: 11px;
 }
 
 li.bbp-footer p {
-	margin: 0;
-	line-height: 1em;
+    margin: 0;
+    line-height: 1em;
 }
 
 li.bbp-forumbbp-forum-info,
 li.bbp-topic-title {
-	float: left;
-	text-align: left;
-	width: 55%;
+    float: left;
+    text-align: left;
+    width: 55%;
 }
 li.bbp-forum-topic-count,
 li.bbp-topic-voice-count,
 li.bbp-forum-reply-count,
 li.bbp-topic-reply-count {
-	float: left;
-	text-align: center;
-	width: 10%;
+    float: left;
+    text-align: center;
+    width: 10%;
 }
 
 li.bbp-forum-freshness,
 li.bbp-topic-freshness {
-	text-align: center;
-	float: left;
-	width: 22%;
+    text-align: center;
+    float: left;
+    width: 22%;
 }
 
 li.bbp-body ul.forum,
 li.bbp-body ul.topic {
-	border-top: 1px solid #eee;
-	overflow: hidden;
-	padding: 8px;
+    border-top: 1px solid #eee;
+    overflow: hidden;
+    padding: 8px;
 }
 
 li.bbp-header .bbp-topic.bbp_content span#subscription-toggle,
 li.bbp-header .bbp-topic.bbp_content span#favorite-toggle,
 li.bbp-header .bbp-reply.bbp_content span#subscription-toggle,
 li.bbp-header .bbp-reply.bbp_content span#favorite-toggle {
-	float: right;
+    float: right;
 }
 
 .bbp-forum-title h3,
 .bbp-topic-title h3,
 .bbp-reply-title h3 {
-	background: none;
-	border: none;
-	font-size: 16px;
- 	line-height: 1em;
- 	margin: 8px 0;
-	padding: 0;
-	text-transform: none;
+    background: none;
+    border: none;
+    font-size: 16px;
+    line-height: 1em;
+    margin: 8px 0;
+    padding: 0;
+    text-transform: none;
 }
 
 .bbp-forum-author,
 .bbp-topic-author,
 .bbp-reply-author {
-	float: left;
-	text-align: center;
-	width: 115px;
+    float: left;
+    text-align: center;
+    width: 115px;
 }
 
 .bbp-forum-author img.avatar,
 .bbp-topic-author img.avatar,
 .bbp-reply-author img.avatar {
-	border: none;
-	max-width: 80px;
-	padding: 0;
-	margin: 12px auto 0 auto;
-	float: none;
+    border: none;
+    max-width: 80px;
+    padding: 0;
+    margin: 12px auto 0 auto;
+    float: none;
 }
 
 .bbp-forum-author a.bbp-author-name,
 .bbp-topic-author a.bbp-author-name,
 .bbp-reply-author a.bbp-author-name {
-	margin: 0 12px;
-	word-break: break-word;
-	display: inline-block;
+    margin: 0 12px;
+    word-break: break-word;
+    display: inline-block;
 }
 
 .bbp-topic-author a.bbp-author-name,
 .bbp-reply-author a.bbp-author-name {
-	clear: left;
-	display: block;
+    clear: left;
+    display: block;
 }
 
 .bbp-forum-author .bbp-author-role,
 .bbp-topic-author .bbp-author-role,
 .bbp-reply-author .bbp-author-role {
-	font-size: 11px;
-	font-style: italic;
+    font-size: 11px;
+    font-style: italic;
 }
 
 li.bbp-header .bbp-search-author,
@@ -3665,10 +3666,10 @@ li.bbp-header .bbp-topic-author,
 li.bbp-footer .bbp-topic-author,
 li.bbp-header .bbp-reply-author,
 li.bbp-footer .bbp-reply-author {
-	float: left;
-	margin: 0;
-	padding: 0;
-	width: 120px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 120px;
 }
 
 li.bbp-header .bbp-search.bbp_content,
@@ -3679,32 +3680,32 @@ li.bbp-header .bbp-topic.bbp_content,
 li.bbp-footer .bbp-topic.bbp_content,
 li.bbp-header .bbp-reply.bbp_content,
 li.bbp-footer .bbp-reply.bbp_content {
-	margin-left: 140px;
-	padding: 0;
-	text-align: left;
+    margin-left: 140px;
+    padding: 0;
+    text-align: left;
 }
 
 .bbp-forum-header,
 .bbp-topic-header,
 .bbp-reply-header,
 li.bbp-body .hentry {
-	margin-bottom: 0;
-	overflow: hidden;
-	padding: 8px;
+    margin-bottom: 0;
+    overflow: hidden;
+    padding: 8px;
 }
 
 .bbp-forum-header,
 .bbp-topic-header,
 .bbp-reply-header {
-	border-top: 1px solid #ddd;
-	clear: both;
+    border-top: 1px solid #ddd;
+    clear: both;
 }
 
 span.bbp-author-ip {
-	font-family: 'Helvetica Neue', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
-	font-size: 11px;
-	font-weight: bold;
-	color: #aaa;
+    font-family: 'Helvetica Neue', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #aaa;
 }
 
 /* =Topic and reply.bbp_content
@@ -3714,23 +3715,23 @@ span.bbp-author-ip {
 .bbp-forum.bbp_content:after,
 .bbp-topic.bbp_content:after,
 .bbp-reply.bbp_content:after {
-	clear: both;
-        content: ".";
-	display: block;
-	float: none;
-	height: 0;
-	font-size: 0;
-	visibility: hidden;
+    clear: both;
+    content: ".";
+    display: block;
+    float: none;
+    height: 0;
+    font-size: 0;
+    visibility: hidden;
 }
 
 .bbp-topic.bbp_content a,
 .bbp-reply.bbp_content a {
-	background: none;
-	border: none;
-	display: inline;
-	font-weight: normal;
-	margin: 0;
-	padding: 0;
+    background: none;
+    border: none;
+    display: inline;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
 }
 
 .bbp-topic.bbp_content h1,
@@ -3745,372 +3746,372 @@ span.bbp-author-ip {
 .bbp-reply.bbp_content h5,
 .bbp-topic.bbp_content h6,
 .bbp-reply.bbp_content h6 {
-	clear: none;
-	line-height: 1em;
-	margin: 24px 0;
-	padding: 0;
+    clear: none;
+    line-height: 1em;
+    margin: 24px 0;
+    padding: 0;
 }
 
 .bbp-topic.bbp_content img,
 .bbp-reply.bbp_content img {
-	max-width: 100%;
+    max-width: 100%;
 }
 
 .bbp-topic.bbp_content ul,
 .bbp-reply.bbp_content ul,
 .bbp-topic.bbp_content ol,
 .bbp-reply.bbp_content ol {
-	margin: 0 15px 15px;
-	padding: 0;
+    margin: 0 15px 15px;
+    padding: 0;
 }
 
 .bbp-topic.bbp_content ul li,
 .bbp-reply.bbp_content ul li {
-	list-style-type: disc;
+    list-style-type: disc;
 }
 
 .bbp-topic.bbp_content ol li,
 .bbp-reply.bbp_content ol li {
-	list-style-type: decimal;
+    list-style-type: decimal;
 }
 
 .bbp-topic.bbp_content ol li li,
 .bbp-reply.bbp_content ol li li {
-	list-style-type: lower-alpha;
+    list-style-type: lower-alpha;
 }
 
 .bbp-topic.bbp_content ol li li li,
 .bbp-reply.bbp_content ol li li li {
-	list-style-type: upper-roman;
+    list-style-type: upper-roman;
 }
 
 .bbp-topic.bbp_content code,
 .bbp-reply.bbp_content code,
 .bbp-topic.bbp_content pre,
 .bbp-reply.bbp_content pre {
-	font-family: Inconsolata, Consolas, Monaco, Lucida Console, monospace;
-	display: inline-block;
-	background-color: #f9f9f9;
-	border: 1px solid #ddd;
-	padding: 0 5px;
-	overflow: scroll;
-	max-width: 95%;
-	vertical-align: middle;
-	margin-top: -3px;
+    font-family: Inconsolata, Consolas, Monaco, Lucida Console, monospace;
+    display: inline-block;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 0 5px;
+    overflow: scroll;
+    max-width: 95%;
+    vertical-align: middle;
+    margin-top: -3px;
 }
 
 .bbp-topic.bbp_content pre,
 .bbp-reply.bbp_content pre {
-	display: block;
-	line-height: 18px;
-	margin: 0 0 24px;
-	padding: 5px 10px;
-	white-space: pre;
-	overflow: auto;
+    display: block;
+    line-height: 18px;
+    margin: 0 0 24px;
+    padding: 5px 10px;
+    white-space: pre;
+    overflow: auto;
 }
 
 .bbp-topic.bbp_content pre code,
 .bbp-reply.bbp_content pre code {
-	display: block;
-	border: none;
-	padding: 0;
-	margin: 0;
-	background-color: transparent;
-	overflow-wrap: normal;
+    display: block;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    overflow-wrap: normal;
 }
 
 /* =Reply to
 -------------------------------------------------------------- */
 
 .bbp-reply-to {
-	margin-left: 130px;
-	padding: 12px 12px 12px 0;
-	text-align: right;
+    margin-left: 130px;
+    padding: 12px 12px 12px 0;
+    text-align: right;
 }
 
 #bbp-cancel-reply-to {
-	text-align: right;
+    text-align: right;
 }
 
 /* =Breadcrumb and Tags
 -------------------------------------------------------------- */
 
 .bbp-breadcrumb {
-	float: left;
+    float: left;
 }
 
 .bbp-breadcrumb,
 .bbp-topic-tags {
-	font-size: 12px;
+    font-size: 12px;
 }
 
 .bbp-breadcrumb p,
 .bbp-topic-tags p {
-	margin-bottom: 10px
+    margin-bottom: 10px
 }
 
 .bbp-topic-tags {
-	float: right;
+    float: right;
 }
 
 #bbp-topic-hot-tags {
-	clear: both;
+    clear: both;
 }
 
 /* =Search
 -------------------------------------------------------------- */
 
 #bbp-search-form {
-	clear: left;
+    clear: left;
 }
 
-	#bbp-search-form .hidden {
-		height: 0;
-		width: 0;
-		overflow: hidden;
-		position: absolute;
-		background: none;
-		left: -999em;
-	}
+#bbp-search-form .hidden {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    position: absolute;
+    background: none;
+    left: -999em;
+}
 
-	#bbp-search-form #bbp_search {
-		display: inline-block;
-		width: auto;
-	}
+#bbp-search-form #bbp_search {
+    display: inline-block;
+    width: auto;
+}
 
 .bbp-search-form {
-	float: right;
+    float: right;
 }
 
 /* =Admin Links
 -------------------------------------------------------------- */
 
 span.bbp-admin-links {
-	float: right;
-	color: #ddd;
+    float: right;
+    color: #ddd;
 }
 span.bbp-admin-links a {
-	color: #bbb;
-	font-weight: normal;
-	font-size: 10px;
-	text-transform: uppercase;
-	text-decoration: none;
+    color: #bbb;
+    font-weight: normal;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 fieldset span.bbp-admin-links {
-	float: left;
+    float: left;
 }
 tr td span.bbp-admin-links a:hover {
-	color: #ff4b33;
+    color: #ff4b33;
 }
 .bbp-topic-admin-links,
 .bbp-topic-counts {
-	width: 50%;
+    width: 50%;
 }
 
 .bbp-forum-header a.bbp-forum-permalink,
 .bbp-topic-header a.bbp-topic-permalink,
 .bbp-reply-header a.bbp-reply-permalink {
-	float: right;
-	margin-left: 10px;
-	color: #ccc;
+    float: right;
+    margin-left: 10px;
+    color: #ccc;
 }
 
 /* =Toggles
 -------------------------------------------------------------- */
 
 .bbp-topic-action #favorite-toggle a {
-	text-decoration: none;
-	padding: 0 3px 1px;
-	color: #7c7;
-	border: 1px solid #aca;
-	background-color: #dfd;
-	font-weight: bold;
-	font-size: 13px;
-	}
-	.bbp-topic-action #favorite-toggle a:hover {
-		color: #5a5;
-		border-color: #7c7;
-		background-color: #beb;
-	}
-	.bbp-topic-action #favorite-toggle span.is-favorite a {
-		color: #faa;
-		border: 1px solid #faa;
-		background-color: #fee;
-		}
-		.bbp-topic-action #favorite-toggle span.is-favorite a:hover {
-			color: #c88;
-			border-color: #c88;
-			background-color: #fdd;
-		}
+    text-decoration: none;
+    padding: 0 3px 1px;
+    color: #7c7;
+    border: 1px solid #aca;
+    background-color: #dfd;
+    font-weight: bold;
+    font-size: 13px;
+}
+.bbp-topic-action #favorite-toggle a:hover {
+    color: #5a5;
+    border-color: #7c7;
+    background-color: #beb;
+}
+.bbp-topic-action #favorite-toggle span.is-favorite a {
+    color: #faa;
+    border: 1px solid #faa;
+    background-color: #fee;
+}
+.bbp-topic-action #favorite-toggle span.is-favorite a:hover {
+    color: #c88;
+    border-color: #c88;
+    background-color: #fdd;
+}
 
 .bbp-topic-action #subscription-toggle a {
-	text-decoration: none;
-	padding: 0 3px 1px;
-	color: #7c7;
-	border: 1px solid #aca;
-	background-color: #dfd;
-	font-weight: bold;
-	font-size: 13px;
-	}
-	.bbp-topic-action #subscription-toggle a:hover {
-		color: #5a5;
-		border-color: #7c7;
-		background-color: #beb;
-	}
-	.bbp-topic-action #subscription-toggle span.is-subscribed a {
-		color: #faa;
-		border: 1px solid #faa;
-		background-color: #fee;
-		}
-		.bbp-topic-action #subscription-toggle span.is-subscribed a:hover {
-			color: #c88;
-			border-color: #c88;
-			background-color: #fdd;
-		}
+    text-decoration: none;
+    padding: 0 3px 1px;
+    color: #7c7;
+    border: 1px solid #aca;
+    background-color: #dfd;
+    font-weight: bold;
+    font-size: 13px;
+}
+.bbp-topic-action #subscription-toggle a:hover {
+    color: #5a5;
+    border-color: #7c7;
+    background-color: #beb;
+}
+.bbp-topic-action #subscription-toggle span.is-subscribed a {
+    color: #faa;
+    border: 1px solid #faa;
+    background-color: #fee;
+}
+.bbp-topic-action #subscription-toggle span.is-subscribed a:hover {
+    color: #c88;
+    border-color: #c88;
+    background-color: #fdd;
+}
 
 .bbp-forumbbp-forum-info .bbp-forum.bbp_content,
 p.bbp-topic-meta {
-	font-size: 11px;
-	margin: 5px 0 5px;
-	padding: 0;
-	word-wrap: break-word;
+    font-size: 11px;
+    margin: 5px 0 5px;
+    padding: 0;
+    word-wrap: break-word;
 }
 
 p.bbp-topic-meta span {
-	white-space: nowrap;
+    white-space: nowrap;
 }
 
 /* =Pagination
 -------------------------------------------------------------- */
 
 .bbp-pagination-count {
-	float: left;
-	border: 1px solid transparent;
+    float: left;
+    border: 1px solid transparent;
 }
 
 .bbp-pagination-links {
-	float: right;
-	list-style: none;
-	display: inline;
-	}
-	.bbp-pagination-links a,
-	.bbp-pagination-links span.current {
-		display: block;
-		float: left;
-		padding: 0px 5px;
-		margin-left: 5px;
-		border: 1px solid #efefef;
-		text-decoration: none;
-		}
-		.bbp-pagination-links a:hover,
-		.bbp-pagination-links span.current {
-			background: #eee;
-			opacity: 0.8;
-			border: 1px solid #ddd;
-		}
+    float: right;
+    list-style: none;
+    display: inline;
+}
+.bbp-pagination-links a,
+.bbp-pagination-links span.current {
+    display: block;
+    float: left;
+    padding: 0px 5px;
+    margin-left: 5px;
+    border: 1px solid #efefef;
+    text-decoration: none;
+}
+.bbp-pagination-links a:hover,
+.bbp-pagination-links span.current {
+    background: #eee;
+    opacity: 0.8;
+    border: 1px solid #ddd;
+}
 
-	.bbp-pagination-links span.dots {
-		display: block;
-		float: left;
-		padding: 1px 4px;
-		margin-left: 5px;
-	}
+.bbp-pagination-links span.dots {
+    display: block;
+    float: left;
+    padding: 1px 4px;
+    margin-left: 5px;
+}
 
 .bbp-pagination {
-	float: left;
-	width: 100%;
-	margin-bottom: 15px;
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
 }
 
 .bbp-topic-pagination {
-	display: inline-block;
-	margin-left: 5px;
-	margin-bottom: 2px;
-	}
-	.bbp-topic-pagination a {
-		font-size: 10px;
-		line-height: 10px;
-		padding: 1px 3px;
-		border: 1px solid #ddd;
-		text-decoration: none;
-	}
+    display: inline-block;
+    margin-left: 5px;
+    margin-bottom: 2px;
+}
+.bbp-topic-pagination a {
+    font-size: 10px;
+    line-height: 10px;
+    padding: 1px 3px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+}
 
 
 /* =Forms
 -------------------------------------------------------------- */
 
 fieldset.bbp-form {
-	clear: left;
+    clear: left;
 }
 
 fieldset.bbp-form {
-	border: 1px solid #eee;
-	padding: 10px 20px;
-	margin-bottom: 10px;
+    border: 1px solid #eee;
+    padding: 10px 20px;
+    margin-bottom: 10px;
 }
 
 fieldset.bbp-form legend {
-	padding: 5px;
+    padding: 5px;
 }
 
 fieldset.bbp-form label {
-	margin: 0;
-	display: inline-block;
+    margin: 0;
+    display: inline-block;
 }
 
 #bbp-edit-topic-tag.bbp-form fieldset.bbp-form label,
 #bbp-login fieldset label,
 #bbp-register fieldset label,
 #bbp-lost-pass fieldset label {
-	width: 100px;
+    width: 100px;
 }
 
 fieldset.bbp-form p,
 fieldset.bbp-form textarea,
 fieldset.bbp-form select,
 fieldset.bbp-form input {
-	margin: 0 0 8px;
+    margin: 0 0 8px;
 }
 
 textarea#bbp_reply.bbp_content,
 textarea#bbp_topic.bbp_content,
 textarea#bbp_forum.bbp_content {
-	width: 97%;
-	box-sizing: border-box;
+    width: 97%;
+    box-sizing: border-box;
 }
 
 textarea#bbp_forum.bbp_content {
-	height: 210px;
+    height: 210px;
 }
 
 fieldset.bbp-forum-form-attributes {
-	width: 200px;
+    width: 200px;
     float: right;
-	clear: none;
-	margin-left: 25px;
+    clear: none;
+    margin-left: 25px;
 }
 
 /**
  * Fix for too-long forum names, usually from conversion
  */
 fieldset select#bbp_forum_id {
-	max-width: 200px;
+    max-width: 200px;
 }
 
 .bbp-topic-form,
 .bbp-reply-form,
 .bbp-topic-tag-form {
-	clear: left;
+    clear: left;
 }
 .topic-edit .bbp-topic-form div.avatar img,
 .reply-edit .bbp-reply-form div.avatar img,
 .single-forum .bbp-topic-form div.avatar img,
 .single-reply .bbp-reply-form div.avatar img {
     margin-right: 0;
-	padding: 10px;
-	border: 1px solid #ddd;
-	line-height: 0;
-	background-color: #efefef;
+    padding: 10px;
+    border: 1px solid #ddd;
+    line-height: 0;
+    background-color: #efefef;
 }
 
 .page .bbp-reply-form code,
@@ -4119,207 +4120,207 @@ fieldset select#bbp_forum_id {
 .single-forum .bbp-topic-form code,
 .topic-edit .bbp-topic-form code,
 .reply-edit .bbp-reply-form code {
-	font-size: 10px;
-	background-color: #f0fff8;
-	border: 1px solid #CEEFE1;
-	display: block;
-	padding: 8px;
-	margin-top: 5px;
-	width: 369px;
+    font-size: 10px;
+    background-color: #f0fff8;
+    border: 1px solid #CEEFE1;
+    display: block;
+    padding: 8px;
+    margin-top: 5px;
+    width: 369px;
 }
 
 #merge_tag,
 #delete_tag {
-	display: inline;
+    display: inline;
 }
 
 .bbp-submit-wrapper {
-	margin-top: 15px;
-	float: right;
-	clear: both;
+    margin-top: 15px;
+    float: right;
+    clear: both;
 }
 
 p.form-allowed-tags {
-	width: 462px;
+    width: 462px;
 }
 
 /* =TinyMCE in themes
 -------------------------------------------------------------- */
 .bbp-the.bbp_content-wrapper {
-	margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .bbp-the.bbp_content-wrapper textarea.bbp-the.bbp_content {
-	width: 100%;
-	margin: 0;
-	font-size: 12px;
+    width: 100%;
+    margin: 0;
+    font-size: 12px;
 }
 
 .bbp-the.bbp_content-wrapper table,
 .bbp-the.bbp_content-wrapper tbody,
 .bbp-the.bbp_content-wrapper tr,
 .bbp-the.bbp_content-wrapper td {
-	border: none;
-	padding: 0;
-	margin: 0;
-	width: auto;
-	line-height: 1em;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    line-height: 1em;
 }
 
 .bbp-the.bbp_content-wrapper input {
-	font-size: 12px;
-	padding: 5px;
-	margin: 0 2px 0 0;
-	line-height: 1em;
+    font-size: 12px;
+    padding: 5px;
+    margin: 0 2px 0 0;
+    line-height: 1em;
 }
 
 .bbp-the.bbp_content-wrapper .quicktags-toolbar {
-	padding: 5px;
-	min-height: 26px;
+    padding: 5px;
+    min-height: 26px;
 }
 .bbp-the.bbp_content-wrapper .mceToolbar {
-	padding: 4px 4px 8px;
+    padding: 4px 4px 8px;
 }
 
 .wp-editor-container {
-	margin: 0;
-	padding: 0;
-	line-height: 0;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
 }
 
 .bbp-the.bbp_content-wrapper .mceStatusbar {
-	line-height: 16px;
+    line-height: 16px;
 }
 
 /* =Edit User
 -------------------------------------------------------------- */
 
 #bbp-your-profile fieldset {
-	padding: 20px 20px 0 20px;
+    padding: 20px 20px 0 20px;
 }
-	#bbp-your-profile fieldset div {
-		margin-bottom: 20px;
-		float: left;
-		width: 100%;
-		clear: left;
+#bbp-your-profile fieldset div {
+    margin-bottom: 20px;
+    float: left;
+    width: 100%;
+    clear: left;
 }
-	#bbp-your-profile fieldset select {
-		margin-bottom: 0;
+#bbp-your-profile fieldset select {
+    margin-bottom: 0;
 }
-	#bbp-your-profile fieldset input,
-	#bbp-your-profile fieldset textarea {
-	margin-bottom: 0;
-		width: 60%;
-		background: #f9f9f9;
-		border: 1px solid #ddd;
-		box-shadow: none;
-		padding: 5px 8px;
-		border-radius: 0;
-	}
-	#bbp-your-profile fieldset input:focus,
-	#bbp-your-profile fieldset textarea:focus {
-		border: 1px solid #ccc;
-		box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
-		outline-color: rgba(240,255,240,0.1);
+#bbp-your-profile fieldset input,
+#bbp-your-profile fieldset textarea {
+    margin-bottom: 0;
+    width: 60%;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: none;
+    padding: 5px 8px;
+    border-radius: 0;
 }
-	#bbp-your-profile fieldset.bbp-form input.checkbox {
-		width: auto;
-	}
-	#bbp-your-profile fieldset legend {
-		display: none;
-	}
-	#bbp-your-profile fieldset label[for] {
-		float: left;
-		width: 20%;
-		padding: 5px 20px 5px 0;
-		text-align: right;
-		cursor: pointer;
-	}
-	#bbp-your-profile fieldset dl label[for] {
-		text-align: left;
-		width: 60%;
-	}
-	#bbp-your-profile fieldset span.description {
-		margin: 5px 0 0 20%;
-		font-size: 12px;
-		font-style: italic;
-		float: left;
-		clear: left;
-		width: 60%;
-		padding: 5px 8px;
-		border: #cee1ef 1px solid;
-		background-color: #f0f8ff;
-	}
+#bbp-your-profile fieldset input:focus,
+#bbp-your-profile fieldset textarea:focus {
+    border: 1px solid #ccc;
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
+    outline-color: rgba(240,255,240,0.1);
+}
+#bbp-your-profile fieldset.bbp-form input.checkbox {
+    width: auto;
+}
+#bbp-your-profile fieldset legend {
+    display: none;
+}
+#bbp-your-profile fieldset label[for] {
+    float: left;
+    width: 20%;
+    padding: 5px 20px 5px 0;
+    text-align: right;
+    cursor: pointer;
+}
+#bbp-your-profile fieldset dl label[for] {
+    text-align: left;
+    width: 60%;
+}
+#bbp-your-profile fieldset span.description {
+    margin: 5px 0 0 20%;
+    font-size: 12px;
+    font-style: italic;
+    float: left;
+    clear: left;
+    width: 60%;
+    padding: 5px 8px;
+    border: #cee1ef 1px solid;
+    background-color: #f0f8ff;
+}
 
-	#bbp-your-profile fieldset fieldset {
-		margin: 0;
-	border: none;
-	padding: 0;
-		clear: none;
-		float: none;
-	}
-	#bbp-your-profile fieldset fieldset.password {
-		width: 60%;
-		display: inline;
-	}
-	#bbp-your-profile fieldset fieldset.password input,
-	#bbp-your-profile fieldset fieldset.password span {
-		width: 100%;
-	}
-	#bbp-your-profile fieldset fieldset.capabilities dl {
-		margin: 0;
-	}
-	#bbp-your-profile fieldset fieldset.password span.description {
-		margin-left: 0;
-		margin-bottom: 20px;
-	}
+#bbp-your-profile fieldset fieldset {
+    margin: 0;
+    border: none;
+    padding: 0;
+    clear: none;
+    float: none;
+}
+#bbp-your-profile fieldset fieldset.password {
+    width: 60%;
+    display: inline;
+}
+#bbp-your-profile fieldset fieldset.password input,
+#bbp-your-profile fieldset fieldset.password span {
+    width: 100%;
+}
+#bbp-your-profile fieldset fieldset.capabilities dl {
+    margin: 0;
+}
+#bbp-your-profile fieldset fieldset.password span.description {
+    margin-left: 0;
+    margin-bottom: 20px;
+}
 
-	#bbp-your-profile fieldset.submit button {
-		float: right;
-	}
+#bbp-your-profile fieldset.submit button {
+    float: right;
+}
 
 /* =Notices
 -------------------------------------------------------------- */
 
 .bbp-template-notice,
 .indicator-hint {
-	border-width: 1px;
-	border-style: solid;
-	padding: 0 0.6em;
-	margin: 5px 0 15px;
-	border-radius: 3px;
-	clear: both;
+    border-width: 1px;
+    border-style: solid;
+    padding: 0 0.6em;
+    margin: 5px 0 15px;
+    border-radius: 3px;
+    clear: both;
 }
 .bbp-template-notice a {
-	color: #555;
-	text-decoration: none;
+    color: #555;
+    text-decoration: none;
 }
-	.bbp-template-notice a:hover {
-		color: #000;
-	}
-	.bbp-template-noticebbp-forum-info {
-		border: #cee1ef 1px solid;
-		background-color: #f0f8ff;
-	}
-	.bbp-template-notice.important {
-		border: #e6db55 1px solid;
-		background-color: #fffbcc;
-	}
-	.bbp-template-notice.error,
-	.bbp-template-notice.warning {
-		background-color: #ffebe8;
-		border-color: #c00;
-	}
-	.bbp-template-notice.error a,
-	.bbp-template-notice.warning a {
-		color: #c00;
-	}
-	.bbp-template-notice p {
-		margin: 0.5em 0 6px 0 !important;
-		padding: 2px;
-		font-size: 12px;
-		line-height: 140%;
-	}
+.bbp-template-notice a:hover {
+    color: #000;
+}
+.bbp-template-noticebbp-forum-info {
+    border: #cee1ef 1px solid;
+    background-color: #f0f8ff;
+}
+.bbp-template-notice.important {
+    border: #e6db55 1px solid;
+    background-color: #fffbcc;
+}
+.bbp-template-notice.error,
+.bbp-template-notice.warning {
+    background-color: #ffebe8;
+    border-color: #c00;
+}
+.bbp-template-notice.error a,
+.bbp-template-notice.warning a {
+    color: #c00;
+}
+.bbp-template-notice p {
+    margin: 0.5em 0 6px 0 !important;
+    padding: 2px;
+    font-size: 12px;
+    line-height: 140%;
+}
 
 /* =Stickies
 -------------------------------------------------------------- */
@@ -4328,8 +4329,8 @@ p.form-allowed-tags {
 .bbp-topics ul.super-sticky,
 .bbp-topics ul.sticky,
 .bbp-forum.bbp_content ul.sticky {
-	background-color: #ffffe0 !important;
-	font-size: 1.1em;
+    background-color: #ffffe0 !important;
+    font-size: 1.1em;
 }
 
 /* =Revisions
@@ -4338,40 +4339,40 @@ p.form-allowed-tags {
 .bbp-topic.bbp_content ul.bbp-topic-revision-log,
 .bbp-reply.bbp_content ul.bbp-topic-revision-log,
 .bbp-reply.bbp_content ul.bbp-reply-revision-log {
-	border-top: 1px dotted #ddd;
-	width: 100%;
-	margin: 0;
-	padding: 8px 0 0 0;
-	font-size: 11px;
-	color: #aaa;
+    border-top: 1px dotted #ddd;
+    width: 100%;
+    margin: 0;
+    padding: 8px 0 0 0;
+    font-size: 11px;
+    color: #aaa;
 }
 
 .bbp-topic.bbp_content ul.bbp-topic-revision-log li,
 .bbp-reply.bbp_content ul.bbp-topic-revision-log li,
 .bbp-reply.bbp_content ul.bbp-reply-revision-log li {
-	list-style-type: none;
+    list-style-type: none;
 }
 
 /* =Widgets
 -------------------------------------------------------------- */
 
 .bbp-login-form fieldset legend {
-	display: none;
+    display: none;
 }
 
 .bbp-login-form .bbp-username input,
 .bbp-login-form .bbp-email input,
 .bbp-login-form .bbp-password input {
-	padding: 5px;
+    padding: 5px;
 }
 
 .bbp-login-form label {
-	width: 140px;
-	display: inline-block;
+    width: 140px;
+    display: inline-block;
 }
 
 #sidebar .bbp-login-form label {
-	width: 70px;
+    width: 70px;
 }
 
 .bbp-login-form .bbp-username,
@@ -4379,7 +4380,7 @@ p.form-allowed-tags {
 .bbp-login-form .bbp-password,
 .bbp-login-form .bbp-remember-me,
 .bbp-login-form .bbp-submit-wrapper {
-	margin-top: 10px;
+    margin-top: 10px;
 }
 
 .bbp-login-form .bbp-remember-me {
@@ -4387,27 +4388,27 @@ p.form-allowed-tags {
 }
 
 .bbp-login-form .bbp-submit-wrapper {
-	text-align: right;
+    text-align: right;
 }
 
 .bbp-login-form .bbp-login-links {
 }
 
 .bbp-login-form .bbp-login-links a {
-	float: left;
-	clear: left;
+    float: left;
+    clear: left;
 }
 
 .bbp-logged-in img.avatar {
-	float: left;
-	margin: 0 15px 0 0;
+    float: left;
+    margin: 0 15px 0 0;
 }
 
 .bbp-logged-in h4 {
-	font-weight: bold;
-	font-size: 1.3em;
-	clear: none;
-	margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.3em;
+    clear: none;
+    margin-bottom: 10px;
 }
 
 /* =Avatars
@@ -4419,13 +4420,13 @@ ul.bbp-topic-revision-log img.avatar,
 .bbp-template-notice img.avatar,
 .widget_display_topics img.avatar,
 .widget_display_replies img.avatar {
-	float: none;
-	margin-bottom: -7px;
-	border: 3px double #ddd;
+    float: none;
+    margin-bottom: -7px;
+    border: 3px double #ddd;
 }
 
 fieldset div.avatar {
-	float: right;
+    float: right;
 }
 
 /* =BuddyPress Activity Streams
@@ -4433,29 +4434,29 @@ fieldset div.avatar {
 
 .activity-list li.bbp_topic_create .activity.bbp_content .activity-inner,
 .activity-list li.bbp_reply_create .activity.bbp_content .activity-inner {
-	border-left: 2px solid #eaeaea;
-	margin-left: 5px;
-	padding-left: 10px;
+    border-left: 2px solid #eaeaea;
+    margin-left: 5px;
+    padding-left: 10px;
 }
 
 /* =User Pages
 -------------------------------------------------------------- */
 
 #bbp-user-wrapper {
-	float: left;
-	width: 100%;
+    float: left;
+    width: 100%;
 }
 
 .bbp-user-section {
-	overflow: visible;
+    overflow: visible;
 }
 
 #bbp-user-wrapper h2.entry-title {
-	font-size: 1.4em;
-	margin: 0;
-	padding-bottom: 10px;
-	padding-top: 0;
-	clear: none;
+    font-size: 1.4em;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 0;
+    clear: none;
 }
 
 #bbp-user-wrapper ul.bbp-lead-topic,
@@ -4463,304 +4464,91 @@ fieldset div.avatar {
 #bbp-user-wrapper ul.bbp-forums,
 #bbp-user-wrapper ul.bbp-replies,
 #bbp-user-wrapper fieldset.bbp-form {
-	clear: none;
+    clear: none;
 }
 
 #bbp-single-user-details {
-	margin: 0;
-	width: 150px;
-	float: left;
-	overflow: hidden;
+    margin: 0;
+    width: 150px;
+    float: left;
+    overflow: hidden;
 }
 
 #bbp-single-user-details #bbp-user-avatar {
-	margin: 0;
-	width: 150px;
+    margin: 0;
+    width: 150px;
 }
 
 #bbp-single-user-details #bbp-user-avatar img.avatar {
-	border: none;
-	height: 150px;
-	padding: 0;
-	margin: 0 0 20px 0;
-	width: 150px;
+    border: none;
+    height: 150px;
+    padding: 0;
+    margin: 0 0 20px 0;
+    width: 150px;
 }
 
 #bbp-single-user-details #bbp-user-description {
-	float: none;
-	margin-left: 180px;
+    float: none;
+    margin-left: 180px;
 }
 
 #bbp-single-user-details #bbp-user-navigation {
-	float: none;
-	margin: 0;
+    float: none;
+    margin: 0;
 }
 
 #bbp-single-user-details #bbp-user-navigation li {
-	margin: 0;
+    margin: 0;
 }
 
 #bbp-single-user-details #bbp-user-navigation a {
-	padding: 5px 8px;
-	display: block;
-	border: 1px solid transparent;
-	text-decoration: none;
+    padding: 5px 8px;
+    display: block;
+    border: 1px solid transparent;
+    text-decoration: none;
 }
 
 #bbp-single-user-details #bbp-user-navigation li.current a {
-	background: #eee;
-	opacity: 0.8;
+    background: #eee;
+    opacity: 0.8;
 }
 
 #bbp-user-body {
-	margin-left: 180px;
+    margin-left: 180px;
 }
 
 .my-account {
-	border-top: none;
-	padding-top: 0;
-	margin-bottom: 0;
+    border-top: none;
+    padding-top: 0;
+    margin-bottom: 0;
 }
 
 /* =User Capabilities
 -------------------------------------------------------------- */
 
 dl.bbp-user-capabilities {
-	display: inline-block;
-	vertical-align: top;
+    display: inline-block;
+    vertical-align: top;
 }
 
 dl.bbp-user-capabilities dt {
-	margin: 0 0 10px;
-	text-transform: capitalize;
+    margin: 0 0 10px;
+    text-transform: capitalize;
 }
 
 dl.bbp-user-capabilities dd {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 /* =BuddyPress Group Forums
 -------------------------------------------------------------- */
 
 div.row-actions {
-	font-size: 11px;
-	visibility: hidden;
+    font-size: 11px;
+    visibility: hidden;
 }
 
 li:hover > div.row-actions {
-	visibility: visible;
-}
-
-/*--------------------------------------------------------------
- Media Queries
---------------------------------------------------------------*/
-
-/* =Standard Mobile Landscape
--------------------------------------------------------------- */
-@media screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
-	-webkit-text-size-adjust: none;
-}
-@media only screen and (max-width: 480px) {
-	div.bbp-topic-tags {
-		clear: left;
-		float: left;
-	}
-	div.bbp-search-form input,
-	div.bbp-search-form button {
-		font-size: 11px;
-		padding: 2px;
-	}
-	li.bbp-forumbbp-forum-info,
-	li.bbp-topic-title {
-		width: 45%;
-	}
-	li.bbp-forum-topic-count,
-	li.bbp-forum-reply-count,
-	li.bbp-topic-voice-count,
-	li.bbp-topic-reply-count {
-		width: 15%;
-	}
-	span.bbp-reply-post-date {
-		float: left;
-	}
-	span.bbp-admin-links {
-		clear: left;
-		float: left;
-	}
-	.bbp-forums-list li {
-		display: block;
-		font-size: 11px;
-	}
-	.bbp-body .bbp-reply-author {
-		margin: -15px 10px 10px;
-		min-height: 100px;
-		padding-left: 80px;
-		position: relative;
-		text-align: left;
-		width: 100%;
-	}
-	.bbp-reply-author a.bbp-author-name {
-		clear: none;
-		display: inline-block;
-		margin-left: 0;
-		word-wrap: break-word;
-	}
-	.bbp-reply-author img.avatar {
-		position: absolute;
-		top: 15px;
-		left: 0;
-		width: 60px;
-		height: auto;
-	}
-	.bbp-reply-author .bbp-author-role {
-		font-size: 12px;
-		font-style: normal;
-	}
-	.bbp-body .bbp-reply.bbp_content {
-		clear: both;
-		margin: 10px;
-		padding: 0;
-	}
-	.bbp-reply.bbp_content p {
-		margin-bottom: 1em;
-	}
-	.bbp-submit-wrapper {
-		float: left;
-	}
-	fieldset.bbp-form {
-		padding: 0 10px 10px;
-	}
-	#bbp-user-body {
-		clear: both;
-		margin-left: 0;
-		word-wrap: break-word;
-	}
-}
-
-/* =Standard Mobile Portrait
--------------------------------------------------------------- */
-@media only screen and (max-width: 320px) {
-	div.bbp-search-form {
-		margin-bottom: 10px;
-	}
-	li.bbp-header li.bbp-forumbbp-forum-info,
-	li.bbp-body li.bbp-forumbbp-forum-info,
-	li.bbp-header li.bbp-topic-title,
-	li.bbp-body li.bbp-topic-title {
-		width: 100%;
-	}
-	li.bbp-header li.bbp-forumbbp-forum-info,
-	li.bbp-header li.bbp-topic-title {
-		text-align: center;
-		text-transform: uppercase;
-	}
-	li.bbp-header li.bbp-forum-topic-count,
-	li.bbp-header li.bbp-forum-reply-count,
-	li.bbp-body li.bbp-forum-topic-count,
-	li.bbp-body li.bbp-forum-reply-count,
-	li.bbp-header li.bbp-topic-voice-count,
-	li.bbp-header li.bbp-topic-reply-count,
-	li.bbp-body li.bbp-topic-voice-count,
-	li.bbp-body li.bbp-topic-reply-count {
-		width: 20%;
-	}
-	li.bbp-header li.bbp-forum-freshness,
-	li.bbp-body li.bbp-forum-freshness,
-	li.bbp-header li.bbp-topic-freshness,
-	li.bbp-body li.bbp-topic-freshness {
-		width: 58%;
-	}
-	li.bbp-body li.bbp-forum-topic-count,
-	li.bbp-body li.bbp-forum-reply-count,
-	li.bbp-body li.bbp-forum-freshness,
-	li.bbp-body li.bbp-topic-voice-count,
-	li.bbp-body li.bbp-topic-reply-count,
-	li.bbp-body li.bbp-topic-freshness {
-		margin-top: 7px;
-	}
-	li.bbp-header,
-	li.bbp-footer {
-		font-size: 10px;
-	}
-	li.bbp-header .bbp-reply-author {
-		text-align: left;
-		width: 25%;
-	}
-	li.bbp-header .bbp-reply.bbp_content {
-		margin-left: 25%;
-	}
-	.bbp-template-notice img.avatar,
-	p.bbp-topic-meta img.avatar {
-		width: 14px;
-		height: auto;
-	}
-	.bbp-the.bbp_content-wrapper .mceToolbar {
-		padding: 1px;
-	}
-	.bbp-the.bbp_content-wrapper .mceToolbar td {
-		width: 20px;
-		height: 20px;
-	}
-	.wp-editor-container {
-		width: 100%;
-		overflow: auto;
-	}
-	input#bbp_topic_title,
-	input#bbp_topic_tags {
-		width: 95%;
-	}
-}
-
-/* =Extra Small Mobile
--------------------------------------------------------------- */
-@media only screen and (max-width: 240px) {
-	li.bbp-header li.bbp-forum-topic-count,
-	li.bbp-header li.bbp-forum-reply-count,
-	li.bbp-body li.bbp-forum-topic-count,
-	li.bbp-body li.bbp-forum-reply-count,
-	li.bbp-header li.bbp-topic-voice-count,
-	li.bbp-header li.bbp-topic-reply-count,
-	li.bbp-body li.bbp-topic-voice-count,
-	li.bbp-body li.bbp-topic-reply-count,
-	li.bbp-footer .bbp-reply-author,
-	li.bbp-footer .bbp-reply.bbp_content {
-		width: 45%;
-	}
-	li.bbp-header li.bbp-forum-freshness,
-	li.bbp-body li.bbp-forum-freshness,
-	li.bbp-header li.bbp-topic-freshness,
-	li.bbp-body li.bbp-topic-freshness,
-	li.bbp-header .bbp-reply-author,
-	li.bbp-header .bbp-reply.bbp_content {
-		clear: both;
-		width: 100%;
-	}
-	li.bbp-header li.bbp-forum-freshness,
-	li.bbp-header li.bbp-topic-freshness {
-		text-align: center;
-	}
-	li.bbp-body li.bbp-topic-freshness,
-	li.bbp-header .bbp-reply.bbp_content {
-		margin-left: 0;
-	text-align: left;
-}
-	li.bbp-body li.bbp-topic-freshness p.bbp-topic-meta {
-		display: inline-block;
-	}
-	li.bbp-header {
-		overflow: hidden;
-	}
-	li.bbp-footer .bbp-reply.bbp_content {
-		display: inline-block;
-		margin-left: 0;
-	}
-	li.bbp-body .bbp-reply-author {
-		min-height: 60px;
-		padding-left: 60px;
-}
-	.bbp-reply-author img.avatar {
-		width: 40px;
-		height: auto;
-}
+    visibility: visible;
 }

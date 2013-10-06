@@ -24,7 +24,7 @@ global $options;
                 <?php while (have_posts()) : the_post(); ?>
                     <div id="forum-front" class="bbp-forum-front">
                         <div class="entry-content">
-                            <?php  the_content();  ?>
+                            <?php the_content(); ?>
                             <?php bbp_get_template_part('content', 'archive-forum'); ?>
                         </div>
                     </div><!-- #forum-front -->
