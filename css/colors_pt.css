@@ -280,7 +280,7 @@
         color: white;
     }
     .post .post-info .cal-icon {
-        background: #FFCC00;
+        /*background: #FFCC00;*/
         -moz-box-shadow: 1px 1px 2px #444444;
         -webkit-box-shadow: 1px 1px 2px #444444;
         box-shadow: 1px 1px 2px #444444; 
@@ -561,6 +561,10 @@
     .content-aside .skin {
         background: #8F9F00;
         background: rgba(143, 159, 0, 0.7); 
+    }
+    
+    .post-meta, .pubdateinfo {
+        color: #b3b3b3;
     }
 
 }
