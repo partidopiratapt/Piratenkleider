@@ -102,6 +102,9 @@
    if (isset($options['html-eigene-anweisungen'])
         && strlen(trim($options['html-eigene-anweisungen'])) > 0) {
        echo $options['html-eigene-anweisungen'];     
-   }  ?>       
+   }  ?>
+    <?php if(is_bbpress()) { ?>
+    <script type="text/javascript">toggle_visibility('new-topic-0');</script>
+    <?php } ?>
 </body>
 </html>

@@ -21,7 +21,7 @@
 
 					<div>
 
-						<div class="bbp-template-notice info">
+						<div class="bbp-template-notice bbp-info">
 							<p><?php _e( 'When you split a topic, you are slicing it in half starting with the reply you just selected. Choose to use that reply as a new topic with a new title, or merge those replies into an existing topic.', 'bbpress' ); ?></p>
 						</div>
 

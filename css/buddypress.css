@@ -1152,7 +1152,8 @@ div.content-header-big a.button {
 div.content-header-big div#message.info {
     line-height: 80%;
 }
-ul.item-list {
+.content ul.item-list {
+    margin: 0;
     width: 100%;
 }
 ul.item-list li {
@@ -1551,7 +1552,7 @@ div#content .padder {
 #create-group-form h3,
 a.button {
     line-height: 26px;
-    padding-bottom: 12px;
+    /*padding-bottom: 12px;*/
     margin-bottom: 5px;
 }
 body #group-create-tabs ul li span {

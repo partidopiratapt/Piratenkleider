@@ -21,7 +21,7 @@
 
 				<legend><?php _e( 'Rename', 'bbpress' ); ?></legend>
 
-				<div class="bbp-template-notice info">
+				<div class="bbp-template-notice bbp-info">
 					<p><?php _e( 'Leave the slug empty to have one automatically generated.', 'bbpress' ); ?></p>
 				</div>
 
@@ -87,7 +87,7 @@
 
 					<legend><?php _e( 'Delete', 'bbpress' ); ?></legend>
 
-					<div class="bbp-template-notice info">
+					<div class="bbp-template-notice bbp-info">
 						<p><?php _e( 'This does not delete your topics. Only the tag itself is deleted.', 'bbpress' ); ?></p>
 					</div>
 					<div class="bbp-template-notice">

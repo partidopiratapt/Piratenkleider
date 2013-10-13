@@ -25,7 +25,7 @@
 
 					<div>
 
-						<div class="bbp-template-notice info">
+						<div class="bbp-template-notice bbp-info">
 							<p><?php _e( 'You can either make this reply a new topic with a new title, or merge it into an existing topic.', 'bbpress' ); ?></p>
 						</div>
 

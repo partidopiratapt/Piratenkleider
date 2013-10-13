@@ -260,7 +260,7 @@
     .content-primary textarea:hover,
     .content-primary input[type="text"]:focus, 
     .content-primary textarea:focus {
-        border: 0;
+        border: 1px solid silver;
         background-color: #FFFFFF;
     }
     .content-primary .post-nav a {

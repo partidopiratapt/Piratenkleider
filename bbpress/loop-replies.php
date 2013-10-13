@@ -10,7 +10,6 @@
 <div id="forumposts">
     <div class="cat_bar">
         <h3>
-            <img src="http://www.forum.partidopiratapt.eu/Themes/mysticjade/images/topic/normal_post.gif" align="bottom" alt="">
             <span id="author"><?php _e('Author', 'bbpress'); ?></span>
             <?php if (!bbp_show_lead_topic()) : ?>
                 <?php _e('Posts', 'bbpress'); ?>
@@ -22,8 +21,14 @@
             <?php endif; ?>
         </h3>
     </div>
-    <?php while (bbp_replies()) : bbp_the_reply(); ?>
+    <?php
+    $i = 0;
+    while (bbp_replies()) : 
+        if ($i > 0) echo '<hr class="post_separator" />';
+        bbp_the_reply(); ?>
         <?php bbp_get_template_part('loop', 'single-reply'); ?>
-    <?php endwhile; ?>
+    <?php
+    $i++;
+    endwhile; ?>
 </div>
 <?php do_action('bbp_template_after_replies_loop'); ?>

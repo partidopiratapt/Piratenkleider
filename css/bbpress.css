@@ -324,11 +324,16 @@ div.pagesection div.floatright input
     margin-top: 3px;
 }
 
-.pagelinks
-{
+.pagelinks {
     padding: 0.6em 0 0.4em 0;
+    float: left;
 }
-
+.bbppu-mark-as-read {
+    float: right;
+    margin-bottom: 0;
+    width: 105px;
+    text-align: right;
+}
 /* Colors for background of posts requiring approval */
 .approvebg
 {
@@ -463,12 +468,8 @@ a.moderation_link, a.moderation_link:visited
 /* a descriptive style */
 .description, .description_board, .plainbox
 {
-    padding: 0.5em 1em;
     font-size: 0.9em;
     line-height: 1.4em;
-    border: 1px solid #252525;
-    background: #212121;
-    margin: 0.2em 1px 1em 1px;
 }
 .description_board
 {
@@ -617,6 +618,7 @@ div.cat_bar
 }
 div.cat_bar h3 {
     margin-top: 0em;
+    margin-left: 24px;
 }
 div.title_bar
 {
@@ -1150,6 +1152,7 @@ select.qaction, input.qaction
 table.table_list
 {
     width: 100%;
+    margin-bottom: 0;
 }
 table.table_list p
 {
@@ -1210,10 +1213,7 @@ p.moderators
 /* the posting icons */
 #posting_icons
 {
-    /*padding: 0 1em 0.5em 1em;
     margin: 0 0 1em 0;
-    line-height: 1em;*/
-    width: 100%;
 }
 #posting_icons ul
 {
@@ -1403,6 +1403,15 @@ div.table_frame .table_list
 #postbuttons #pagelinks
 {
     padding-top: 1em;
+}
+.page-numbers.current {
+    font-weight: bold;
+}
+.page-numbers.current:before {
+    content: "[";
+}
+.page-numbers.current:after {
+    content: "]";
 }
 #moderationbuttons
 {
@@ -1772,9 +1781,8 @@ ul.quickbuttons li.inline_mod_check
 }
 
 /* Separator of posts. More useful in the print stylesheet. */
-#forumposts .post_separator
-{
-    display: none;
+#forumposts .post_separator {
+    width: 100%;
 }
 
 /* Styles for edit post section
@@ -4292,7 +4300,6 @@ p.form-allowed-tags {
     clear: both;
 }
 .bbp-template-notice a {
-    color: #555;
     text-decoration: none;
 }
 .bbp-template-notice a:hover {
@@ -4315,6 +4322,12 @@ p.form-allowed-tags {
 .bbp-template-notice.warning a {
     color: #c00;
 }
+
+.bbp-template-notice.bbp-info {
+    border: #cee1ef 1px solid;
+    background-color: #f0f8ff;
+}
+
 .bbp-template-notice p {
     margin: 0.5em 0 6px 0 !important;
     padding: 2px;
@@ -4367,12 +4380,7 @@ p.form-allowed-tags {
 }
 
 .bbp-login-form label {
-    width: 140px;
     display: inline-block;
-}
-
-#sidebar .bbp-login-form label {
-    width: 70px;
 }
 
 .bbp-login-form .bbp-username,
@@ -4423,6 +4431,7 @@ ul.bbp-topic-revision-log img.avatar,
     float: none;
     margin-bottom: -7px;
     border: 3px double #ddd;
+    margin: 0 0 0 0;
 }
 
 fieldset div.avatar {
@@ -4551,4 +4560,13 @@ div.row-actions {
 
 li:hover > div.row-actions {
     visibility: visible;
+}
+
+.inner ul.bbp-topic-revision-log {
+    border-top: 1px dotted #ddd;
+    width: 100%;
+    margin: 0;
+    padding: 8px 0 0 0;
+    font-size: 11px;
+    color: #aaa;
 }

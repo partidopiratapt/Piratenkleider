@@ -24,7 +24,7 @@
 
 					<div>
 
-						<div class="bbp-template-notice info">
+						<div class="bbp-template-notice bbp-info">
 							<p><?php _e( 'Select the topic to merge this one into. The destination topic will remain the lead topic, and this one will change into a reply.', 'bbpress' ); ?></p>
 							<p><?php _e( 'To keep this topic as the lead, go to the other topic and use the merge tool from there instead.', 'bbpress' ); ?></p>
 						</div>

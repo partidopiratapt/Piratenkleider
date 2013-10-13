@@ -96,7 +96,7 @@ if (!function_exists("getTheContent")) {
          */
         else :
             ?>
-            <textarea id="bbp_<?php echo esc_attr($r['context']); ?>_content" class="<?php echo esc_attr($r['editor_class']); ?>" name="bbp_<?php echo esc_attr($r['context']); ?>_content" cols="60" rows="<?php echo esc_attr($r['textarea_rows']); ?>" tabindex="<?php echo esc_attr($r['tabindex']); ?>"><?php echo $post_content; ?></textarea>
+            <textarea id="bbp_<?php echo esc_attr($r['context']); ?>_content" class="<?php echo esc_attr($r['editor_class']); ?>" name="bbp_<?php echo esc_attr($r['context']); ?>_content" cols="120" rows="<?php echo esc_attr($r['textarea_rows']+12); ?>" tabindex="<?php echo esc_attr($r['tabindex']); ?>"><?php echo $post_content; ?></textarea>
         <?php
         endif;
 
@@ -116,8 +116,8 @@ if (!function_exists("getTheContent")) {
     <?php bbp_topic_tag_list(bbp_get_topic_id()); ?>
     <?php bbp_single_topic_description(array('topic_id' => bbp_get_topic_id())); ?>
 <?php endif; ?>
-        <?php if (bbp_current_user_can_access_create_topic_form()) : ?>
-    <div id="new-topic-<?php bbp_topic_id(); ?>" class="bbp-topic-form">
+        <?php if (bbp_current_user_can_access_create_topic_form()) : $id = bbp_get_topic_id(); ?>
+    <div id="new-topic-<?php echo $id; ?>" class="bbp-topic-form" style="">
         <form id="new-post" name="new-post" method="post" action="<?php the_permalink(); ?>">
                     <?php do_action('bbp_theme_before_topic_form'); ?>
             <fieldset class="bbp-form">
@@ -152,7 +152,7 @@ if (!function_exists("getTheContent")) {
                     <?php do_action('bbp_theme_before_topic_form_content'); ?>
                     <?php /* getTheContent(array('context' => 'topic'));*/ ?>
                     <div class="bbp-the-content-wrapper">
-                    <textarea id="bbp_<?php echo esc_attr('topic'); ?>_content" class="<?php echo esc_attr('bbp-the-content'); ?>" name="bbp_<?php echo esc_attr('topic'); ?>_content" cols="60" rows="<?php echo esc_attr('12'); ?>" tabindex="<?php echo esc_attr('107'); ?>"><?php echo piratenkleider_get_form_topic_content(); ?></textarea>
+                    <textarea id="bbp_<?php echo esc_attr('topic'); ?>_content" class="<?php echo esc_attr('bbp-the-content'); ?>" name="bbp_<?php echo esc_attr('topic'); ?>_content" cols="120" rows="<?php echo esc_attr('24'); ?>" tabindex="<?php echo esc_attr('107'); ?>" style="width: 100%;"><?php echo piratenkleider_get_form_topic_content(); ?></textarea>
                     </div>
     <?php do_action('bbp_theme_after_topic_form_content'); ?>
     <?php if (!( bbp_use_wp_editor() || current_user_can('unfiltered_html') )) : ?>
