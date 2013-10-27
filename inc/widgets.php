@@ -172,14 +172,6 @@ class Newsletter_Widget extends WP_Widget {
 		);
 	}
 
-	/**
-	 * Front-end display of widget.
-	 *
-	 * @see WP_Widget::widget()
-	 *
-	 * @param array $args     Widget arguments.
-	 * @param array $instance Saved values from database.
-	 */
 	public function widget( $args, $instance ) {            
 		extract( $args );
 		$title = apply_filters( 'widget_title', $instance['title'] );
@@ -212,16 +204,7 @@ class Newsletter_Widget extends WP_Widget {
                 
 	}
 
-	/**
-	 * Sanitize widget form values as they are saved.
-	 *
-	 * @see WP_Widget::update()
-	 *
-	 * @param array $new_instance Values just sent to be saved.
-	 * @param array $old_instance Previously saved values from database.
-	 *
-	 * @return array Updated safe values to be saved.
-	 */
+	
 	public function update( $new_instance, $old_instance ) {
 		$instance = array();
 		$instance['title'] = strip_tags( $new_instance['title'] );
@@ -229,11 +212,7 @@ class Newsletter_Widget extends WP_Widget {
 		return $instance;
 	}
 
-	/**
-	 * Back-end widget form.
-	 * @see WP_Widget::form()
-	 * @param array $instance Previously saved values from database.
-	 */
+	
 	public function form( $instance ) {
 	    global $defaultoptions;
 	   
@@ -286,14 +265,7 @@ class ParteiLinkliste_Widget extends WP_Widget {
 		);
 	}
 
-	/**
-	 * Front-end display of widget.
-	 *
-	 * @see WP_Widget::widget()
-	 *
-	 * @param array $args     Widget arguments.
-	 * @param array $instance Saved values from database.
-	 */
+	
 	public function widget( $args, $instance ) {            
 	    global $defaultoptions;
             extract( $args );
@@ -326,27 +298,14 @@ class ParteiLinkliste_Widget extends WP_Widget {
                 
 	}
 
-	/**
-	 * Sanitize widget form values as they are saved.
-	 *
-	 * @see WP_Widget::update()
-	 *
-	 * @param array $new_instance Values just sent to be saved.
-	 * @param array $old_instance Previously saved values from database.
-	 *
-	 * @return array Updated safe values to be saved.
-	 */
+	
 	public function update( $new_instance, $old_instance ) {
 		$instance = array();
                 $instance['bereich'] = strip_tags( $new_instance['bereich'] );
 		return $instance;
 	}
 
-	/**
-	 * Back-end widget form.
-	 * @see WP_Widget::form()
-	 * @param array $instance Previously saved values from database.
-	 */
+	
 	public function form( $instance ) {
 		global $defaultoptions;
                 if ( isset( $instance[ 'bereich' ] ) ) {

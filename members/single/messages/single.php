@@ -3,13 +3,6 @@
 	<?php if ( bp_thread_has_messages() ) : ?>
 		<h3 id="message-subject"><?php bp_the_thread_subject(); ?></h3>
 		<p id="message-recipients">
-			<span class="highlight">
-				<?php if ( !bp_get_the_thread_recipients() ) : ?>
-					<?php _e( 'You are alone in this conversation.', 'buddypress' ); ?>
-				<?php else : ?>
-					<?php printf( __( 'Conversation between %s and you.', 'buddypress' ), bp_get_the_thread_recipients() ); ?>
-				<?php endif; ?>
-			</span>
 			<a class="button confirm" href="<?php bp_the_thread_delete_link(); ?>" title="<?php _e( "Delete Message", "buddypress" ); ?>"><?php _e( 'Delete', 'buddypress' ); ?></a> &nbsp;
 		</p>
 		<?php do_action( 'bp_before_message_thread_list' ); ?>

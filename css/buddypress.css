@@ -586,7 +586,6 @@ ul.button-nav li.current a {
 .standard-form span.bp-label {
     display: block;
     font-weight: bold;
-    margin: 15px 0 5px 0;
 }
 .standard-form div.checkbox label,
 .standard-form div.radio label {
@@ -669,6 +668,9 @@ div#signup-avatar img {
 }
 .standard-form #profile-details-section {
     float: right;
+}
+.standard-form #security-section {
+    float: left;
 }
 .standard-form #blog-details-section {
     clear: left;
@@ -2487,4 +2489,10 @@ form#whats-new-form textarea:focus {
 #whats-new:focus {
     border-color: #3FBCF6 !important;
     outline-color: #3FBCF6;
+}
+
+.content-primary td.thread-avatar img {
+    min-width: 50px;
+    max-width: 50px;
+    height: 50px;
 }

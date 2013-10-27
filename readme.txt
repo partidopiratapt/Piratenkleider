@@ -2,7 +2,7 @@ Piratenkleider
 - Wordpress-Theme für Webauftritte der Piratenpartei 
 ====================================================
 
-Version 2.19.3 von Wolfgang Wiese (xwolf), 24. September 2013
+Version 2.19.8 von Wolfgang Wiese (xwolf), 24. Oktober 2013
 
 
 DOWNLOADS
@@ -527,3 +527,17 @@ Administrative Hinweise für Wordpress Theme-Editoren:
 21. Aufgrund der Beliebtheit der Wombat-Bilder wurden zwei Plakate zum
     Wahlkampf mit Wombats hinzugefügt und ein Wombat-Comicbild, welches
     zusätzlich und optional eingeschaltet werden kann (Unter "Sonstiges").
+
+22. Ab 2.19.7 wurden einige veraltete Plakatbilder entfernt und eine
+    Funktion zur Darstellung von Lesetipps auf der Startseite eingefügt.
+    Die Lesetipps müssen gesondert aktiviert werden.
+
+    Zur Darstellung einzelner Lesetipps oder einer Liste von diesen
+    innerhalb von Artikeln kann ein Shortcode [linktipps num="<num>"] verwendet werden
+    wobei <num> die Zahl der anzuzeigenden Lesetipps ist.
+    Ebenso kann die Kategorie der Linktipps eingegrenzt werden, wenn 
+    diese verwendet wurden: [linktipps cat="<name>"]
+
+    Für Artikel und Pages wurde eine neue Custom Field "piratenkleider_nosidebar"
+    eingefuegt. Wenn dieses gesetzt ist, wird die Sidebar weggelassen und
+    nicht nru ausgeblendet und nach unten verschoben.

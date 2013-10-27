@@ -2,6 +2,7 @@
   global $defaultoptions;
   global $options;
  
+  
   if ( $options['newsletter'] == "1" ){
      ?>                   
         <div class="newsletter">
@@ -17,11 +18,16 @@
         </div>
     <?php }
     
+    
   if ( is_active_sidebar( 'sidebar-widget-area' ) )  {
             dynamic_sidebar( 'sidebar-widget-area' );     
    }
   
 
+  
+
+
+   
    if ( $options['slider-defaultwerbeplakate'] == "1" ) {     
        if ( ((isset($options['plakate-src']) && (is_array($options['plakate-src'])))) || 
             ((isset($options['plakate-altadressen'])) && (strlen(trim($options['plakate-altadressen']))>5))
@@ -88,3 +94,6 @@
    if ( is_active_sidebar( 'sidebar-widget-area-afterplakate' ) )  {
           dynamic_sidebar( 'sidebar-widget-area-afterplakate' );     
    }
+ 
+        
+   

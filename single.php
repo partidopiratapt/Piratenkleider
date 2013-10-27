@@ -30,7 +30,9 @@
 		    echo '<div class="content-header">';
 		}
 		?>    		    		    		        
+		    <header>
 		   <h1 class="post-title"><span><?php the_title(); ?></span></h1>
+		    </header>    
 		   <div class="symbolbild"><img src="<?php echo $image_url ?>" title="">
 		   <?php if (isset($image_alt) && (strlen($image_alt)>1)) {
 		     echo '<div class="caption">'.$image_alt.'</div>';  
@@ -44,28 +46,20 @@
 	    <h1 class="post-title"><span><?php the_title(); ?></span></h1>
 	<?php } ?>
  
-        <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-  
+        <section <?php post_class(); ?> id="post-<?php the_ID(); ?>">
            <?php 
             if ( (isset($custom_fields['show-post-disclaimer']))
                  && ($custom_fields['show-post-disclaimer'][0]<>'') 
                  && ($options['post_disclaimer']<>'') 
                  && ( ($custom_fields['show-post-disclaimer'][0]==1) || ($custom_fields['show-post-disclaimer'][0]==3)) 
                 ) {
-                echo '<div class="disclaimer">';
-                echo $options['post_disclaimer'];
-                echo '</div>';
+		   echo '<div class="disclaimer">'.$options['post_disclaimer'].'</div>';
                 }
+		piratenkleider_post_datumsbox();  ?>  
 				
-		piratenkleider_post_datumsbox();		
-          ?>  
-        
-            
-          
-            
-          <div class="post-entry">
+	      <article class="post-entry">
             <?php the_content(); ?>
-          </div>
+	      </article>
              <?php 
             if ( (isset($custom_fields['show-post-disclaimer']))
                  &&   ($custom_fields['show-post-disclaimer'][0]<>'') 
@@ -77,7 +71,6 @@
                 echo '</div>';
                 }
           ?>  
-			
           <div class="post-meta"><p>
                <?php 
                 piratenkleider_post_pubdateinfo();    
@@ -87,9 +80,8 @@
                 ?>        
               </p>
           </div>
-	  
             <div><?php edit_post_link( __( 'Bearbeiten', 'piratenkleider' ), '', '' ); ?></div>
-          </div>
+        </section>
 	<div class="post-nav">
 		<ul>
 		<?php 
@@ -104,9 +96,8 @@
           <?php comments_template( '', true ); ?>
         </div>
 
+        <?php if (has_filter( 'related_posts_by_category')) { ?>  
         <div class="post-nav">
-            
-           <?php if (has_filter( 'related_posts_by_category')) { ?>   
           <h3><?php _e("Weitere Artikel in diesem Themenkreis:", 'piratenkleider'); ?></h3>
           <ul class="related">
             <?php do_action(
@@ -127,14 +118,19 @@
             )
             ) ?>
           </ul>
+	  </div>
           <?php } ?>
-        </div>
-
        
       </div>
         <?php endwhile; // end of the loop. ?>
       </div>
 
+    <?php 
+	$nosidebar = get_post_meta( get_the_ID(), 'piratenkleider_nosidebar', true ); 
+	if( !empty( $nosidebar ) && $nosidebar==1) {
+	    echo "<!-- no sidebar -->\n";
+	} else {
+	?>
     <div class="content-aside">
       <div class="skin">
        <h1 class="skip"><?php _e( 'Weitere Informationen', 'piratenkleider' ); ?></h1>
@@ -166,6 +162,7 @@
         ?>
         </div>
     </div>
+	<?php } ?>
   </div>
   <?php  get_piratenkleider_socialmediaicons(2); ?>
 </div>

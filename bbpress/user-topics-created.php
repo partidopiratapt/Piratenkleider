@@ -17,9 +17,9 @@
 
 			<?php if ( bbp_get_user_topics_started() ) : ?>
 
-				<?php bbp_get_template_part( 'pagination', 'topics' ); ?>
+				<?php bbp_get_template_part( 'pagination', 'user-topics' ); ?>
 				<?php bbp_get_template_part( 'loop',       'topics' ); ?>
-				<?php bbp_get_template_part( 'pagination', 'topics' ); ?>
+				<?php bbp_get_template_part( 'pagination', 'user-topics' ); ?>
 
 			<?php else : ?>
 

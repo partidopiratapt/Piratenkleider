@@ -4,7 +4,7 @@ Theme URI: http://piratenkleider.xwolf.de
 Description: Allgemeines Theme für Webauftritte der Piratenpartei
 Author: Wolfgang Wiese (xwolf)
 Author URI: http://www.xwolf.de 
-Version: 2.18.5
+Version: 2.19.8
 Tags: orange, two-columns, responsive, fluid-width
 License: CC-BY-SA 3.0 
 License URI: http://creativecommons.org/licenses/by-sa/3.0/de/deed.de
@@ -132,9 +132,11 @@ select, input, textarea, button {
     color: black; 
 }
 
+h1, h2, h3 {
+      font-weight: normal; 
+}
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: 9px;
-    font-weight: normal; 
 }
 
 h1, h2, h3, .bebas, .cifont {
@@ -1085,6 +1087,7 @@ div#searchform {
     display: block;
     margin: 10px auto;
 }
+
 .content ul {
     margin: 0 0 18px 25px;
 }
@@ -1332,8 +1335,8 @@ div#searchform {
     display: inline-block;
     padding: 10px 10px 15px;
     z-index: 1;
-    box-shadow: 0 1px 8px #999999;
-    margin: 0 0 20px -20px;
+    box-shadow: 2px 2px 8px #333;
+    margin: 0 0 20px;
     -webkit-transform: rotate(2deg);
     -moz-transform: rotate(2deg);
     -ms-transform: rotate(2deg);
@@ -1344,7 +1347,7 @@ div#searchform {
     -ms-transition: all 406ms ease-out 0s;
     -o-transition: all 406ms ease-out 0s;
     transition: all 406ms ease-out 0s;                    
-    max-width: 280px;
+    max-width: 300px;
 }
 .content-aside #steckbrief:hover,
 .content-aside #steckbrief:focus,
@@ -1518,6 +1521,22 @@ div#searchform {
     margin: 0;
 }
 
+.columns .column1 {
+    width: 50%; 
+}
+.columns .column1 .post {
+    padding-right: 20px; 
+}
+.columns .column2 {
+    width: 50%; 
+}
+.columns .column2 .post {
+    padding-left: 20px; 
+}
+.columns .column2 .post .cal-icon {
+    margin-left: 0; 
+}
+
 
 .post .post-info {
     position: relative;
@@ -1589,8 +1608,6 @@ div#searchform {
     line-height: 18px;
     white-space: nowrap;
 }
-
-
 
 .post .cal {
     margin-bottom: 5px;
@@ -1768,9 +1785,21 @@ img.wp-smiley {
     margin-bottom: 20px; }
 
 
-
-
-
+.linktipps h3.subtitle {
+    color: #444444;
+    font-size: 1.2em;
+    margin: 0;
+}
+.linktipps .post-entry p img {
+    float: left;
+    margin-right: 20px;
+}
+.linktipps .post-entry:after {
+    content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;
+} 
+.linktipps .linktipp-url {
+    margin-left: 10px;
+}
 
 .wp-caption {
     text-align: center;
@@ -2297,18 +2326,9 @@ img.wp-smiley {
 }
 
 
-.columns .column1 {
-    width: 50%; }
-.columns .column1 .post {
-    padding-right: 20px; }
-.columns .column2 {
-    width: 50%; }
-.columns .column2 .post {
-    padding-left: 20px; }
-.columns .column2 .post .cal-icon {
-    margin-left: 0; }
 
 
+    
 .footer {
     background: black url("../images/int/bg-tags_gray.jpg") -20% top fixed;
     overflow: hidden; 
@@ -2378,6 +2398,7 @@ img.wp-smiley {
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; 
 }
+
 
 /* Widgets --------------------------------------------------------------------*/
 .wpcf7-mail-sent-ok {
@@ -2605,6 +2626,7 @@ ul.social_share_privacy_area {
     border: none;
     text-shadow: 1px 1px 1px #333;
 }
+
 
 .post-entry .kraehennestplayer {
     float: right;
@@ -2968,9 +2990,6 @@ ul.socialmedia {
     display: none; 
 }
 
-
-
-
 .ie7 .nav-top ul, 
 .ie8 .nav-top ul {
     display: block; 
@@ -3296,7 +3315,6 @@ html[xmlns] .slides {
     display: inline-block;
 
 }
-
 .flexslider .flex-pauseplay:hover,
 .flexslider .flex-pauseplay:focus,
 .slidersidebar .flex-pauseplay:hover,
@@ -3663,6 +3681,7 @@ html[xmlns] .slides {
 .ym-save:before { content: "\2714"; }
 .ym-spark:before { content: "\2737"; }
 .ym-star:before { content: "\2605"; }
+
 
 
 .teaserlinks .symbol:before {

@@ -10,19 +10,5 @@
 ?>
 
 <?php do_action( 'bbp_template_before_pagination_loop' ); ?>
-
-<div class="bbp-pagination">
-	<div class="bbp-pagination-count">
-
-		<?php bbp_search_pagination_count(); ?>
-
-	</div>
-
-	<div class="bbp-pagination-links">
-
-		<?php bbp_search_pagination_links(); ?>
-
-	</div>
-</div>
-
+<div class="pagelinks"><?php $links = bbp_get_search_pagination_links(); if(!empty($links)) { ?>Páginas: <?php echo $links; } ?></div>
 <?php do_action( 'bbp_template_after_pagination_loop' ); ?>

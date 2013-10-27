@@ -25,6 +25,12 @@
       $numentries = $options['num-article-startpage-fullwidth'] + $options['num-article-startpage-halfwidth']; 
       $col_count = 3; 
       $cols = array();
+     
+     if ($options['aktiv-linktipps']) {
+	    global $wp_query;
+	    $args = array_merge( $wp_query->query, array( 'post_type' => array('linktipps','post') ) );
+	    query_posts( $args );
+     }
       while (have_posts() && $i<$numentries) : the_post();
       $i++;
       ob_start();

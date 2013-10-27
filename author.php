@@ -24,7 +24,6 @@
 		?>    		    		    		        
 		   <h1 class="post-title"><span><?php printf( __( '%s', 'piratenkleider' ), get_the_author() ); ?></span></h1>
 		   <div class="symbolbild"><img src="<?php echo $image_url ?>" title="">		  
-
 		   </div>
 		</div>  	
 	    <?php } ?>

@@ -1,90 +1,95 @@
-<?php get_template_part('page-header');
-do_action( 'bbp_before_main_content' );
-    $image_url = piratenkleider_get_cover(get_the_title(), get_the_ID());
-?>  
-<div class="skin">
-    <?php do_action('bp_before_attachment'); ?>
+<?php
+get_header();
+global $defaultoptions;
+global $options;
+?>
 
-    <div class="page" id="attachments-page" role="main">
+<div class="section content" id="main-content">
+    <div class="row">
+        <div class="content-primary">            
+            <?php
+            do_action( 'bbp_before_main_content' );
+            $image_url = piratenkleider_get_cover(get_the_title(), get_the_ID());
+            ?>  
+            <div class="skin">
+                <?php do_action('bp_before_attachment'); ?>
 
-        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                <div class="page" id="attachments-page" role="main">
 
-                <?php do_action('bp_before_blog_post'); ?>
+                    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-                <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                            <?php do_action('bp_before_blog_post'); ?>
 
-                    <div class="author-box">
-                        <?php echo get_avatar(get_the_author_meta('user_email'), '50'); ?>
-                        <p><?php printf(_x('by %s', 'Post written by...', 'buddypress'), str_replace('<a href=', '<a rel="author" href=', bp_core_get_userlink($post->post_author))); ?></p>
-                    </div>
+                            <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-                    <div class="post-content">
-                        <h2 class="posttitle"><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php _e('Permanent Link to', 'buddypress'); ?> <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+                                <div class="author-box">
+                                    <?php echo get_avatar(get_the_author_meta('user_email'), '50'); ?>
+                                    <p><?php printf(_x('by %s', 'Post written by...', 'buddypress'), str_replace('<a href=', '<a rel="author" href=', bp_core_get_userlink($post->post_author))); ?></p>
+                                </div>
 
-                        <p class="date">
-                            <?php the_date(); ?>
-                            <span class="post-utility alignright"><?php edit_post_link(__('Edit this entry', 'buddypress')); ?></span>
-                        </p>
+                                <div class="post-content">
+                                    <h2 class="posttitle"><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php _e('Permanent Link to', 'buddypress'); ?> <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
-                        <div class="entry">
-                            <?php echo wp_get_attachment_image($post->ID, 'large', false, array('class' => 'size-large aligncenter')); ?>
+                                    <p class="date">
+                                        <?php the_date(); ?>
+                                        <span class="post-utility alignright"><?php edit_post_link(__('Edit this entry', 'buddypress')); ?></span>
+                                    </p>
 
-                            <div class="entry-caption"><?php if (!empty($post->post_excerpt)) the_excerpt(); ?></div>
-                            <?php the_content(); ?>
-                        </div>
+                                    <div class="entry">
+                                        <?php echo wp_get_attachment_image($post->ID, 'large', false, array('class' => 'size-large aligncenter')); ?>
 
-                        <p class="postmetadata">
-                            <?php
-                            if (wp_attachment_is_image()) :
-                                $metadata = wp_get_attachment_metadata();
-										printf( __( 'Full size is %s pixels', 'buddypress' ),
-											sprintf( '<a href="%1$s" title="%2$s">%3$s &times; %4$s</a>',
-												wp_get_attachment_url(),
-												esc_attr( __( 'Link to full size image', 'buddypress' ) ),
-												$metadata['width'],
-												$metadata['height']
-                                        )
-                                );
-                            endif;
-                            ?>
-                            &nbsp;
-                        </p>
-                    </div>
+                                        <div class="entry-caption"><?php if (!empty($post->post_excerpt)) the_excerpt(); ?></div>
+                                        <?php the_content(); ?>
+                                    </div>
+
+                                    <p class="postmetadata">
+                                        <?php
+                                        if (wp_attachment_is_image()) :
+                                            $metadata = wp_get_attachment_metadata();
+                                            printf(__('Full size is %s pixels', 'buddypress'), sprintf('<a href="%1$s" title="%2$s">%3$s &times; %4$s</a>', wp_get_attachment_url(), esc_attr(__('Link to full size image', 'buddypress')), $metadata['width'], $metadata['height']
+                                                    )
+                                            );
+                                        endif;
+                                        ?>
+                                        &nbsp;
+                                    </p>
+                                </div>
+
+                            </div>
+
+        <?php do_action('bp_after_blog_post'); ?>
+
+        <?php comments_template(); ?>
+
+                        <?php
+                        endwhile;
+                    else:
+                        ?>
+
+                        <p><?php _e('Sorry, no attachments matched your criteria.', 'buddypress'); ?></p>
+
+                    <?php endif; ?>
 
                 </div>
 
-                <?php do_action('bp_after_blog_post'); ?>
+                    <?php do_action('bp_after_attachment'); ?>
 
-                <?php comments_template(); ?>
-
-            <?php endwhile;
-        else:
-            ?>
-
-            <p><?php _e('Sorry, no attachments matched your criteria.', 'buddypress'); ?></p>
-
-<?php endif; ?>
-
-    </div>
-
-<?php do_action('bp_after_attachment'); ?>
-
-</div>
-</div>
-    <div class="content-aside">
-        <div class="skin">      
-            <?php
-            if (!isset($options['aktiv-circleplayer']))
-                $options['aktiv-circleplayer'] = $defaultoptions['aktiv-circleplayer'];
-            if ($options['aktiv-circleplayer'] == 1) {
-                piratenkleider_echo_player();
-            }
-            get_sidebar('buddypress');
-            ?>
+            </div>
+        </div>
+        <div class="content-aside">
+            <div class="skin">      
+<?php
+if (!isset($options['aktiv-circleplayer']))
+    $options['aktiv-circleplayer'] = $defaultoptions['aktiv-circleplayer'];
+if ($options['aktiv-circleplayer'] == 1) {
+    piratenkleider_echo_player();
+}
+get_sidebar('buddypress');
+?>
+            </div>
         </div>
     </div>
-</div>
-<?php get_piratenkleider_socialmediaicons(2); ?>
+                <?php get_piratenkleider_socialmediaicons(2); ?>
 </div>
 
-<?php get_footer(); ?>
+    <?php get_footer(); ?>

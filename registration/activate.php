@@ -7,7 +7,7 @@ global $options;
     <div class="row">
         <div class="content-primary">            
             <?php
-            $image_url = piratenkleider_get_cover((bp_account_was_activated()) ? _e('Account Activated', 'buddypress') : _e('Activate your Account', 'buddypress'), get_the_ID());
+            $image_url = piratenkleider_get_cover((bp_account_was_activated()) ? __('Account Activated', 'buddypress') : __('Activate your Account', 'buddypress'), get_the_ID());
             ?>
             <div class="skin">
                 <?php do_action('bp_before_activation_page'); ?>

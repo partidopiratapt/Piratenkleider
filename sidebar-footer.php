@@ -2,13 +2,14 @@
     <div class="skin">
         <?php if (is_active_sidebar('first-footer-widget-area')) { ?>
             <?php dynamic_sidebar('first-footer-widget-area'); ?>
-        <?php
-        } else {
+        <?php } else { 
+            
 
             global $default_footerlink_liste;
             global $defaultoptions;
             global $options;
 
+           
             if ((is_array($default_footerlink_liste)) && ($options['default_footerlink_show'] == 1)) {
                 $bereich = $options['default_footerlink_key'];
                 if (!isset($default_footerlink_liste[$bereich]['sublist'])) {
@@ -18,8 +19,9 @@
                     $title = $default_footerlink_liste[$bereich]['title'];
                     $url = $default_footerlink_liste[$bereich]['url'];
 
+
                     if ((isset($url)) && (strlen($url) > 5)) {
-                        echo '<h2><a href="' . $url . '" target="_blank">' . $title . '</a></h2>';
+                            echo '<h2><a href="'.$url.'">'.$title.'</a></h2>';
                     } else {
                         echo "<h2>" . $title . "</h2>";
                     }
@@ -38,7 +40,10 @@
                     echo '</ul>';
                 }
             }
-        }
-        ?>
+        } ?>
+        
+        
+        
+        
     </div>
 </div>

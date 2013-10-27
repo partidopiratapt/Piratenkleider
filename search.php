@@ -1,5 +1,4 @@
-<?php
-get_header();
+<?php get_header();    
 global $options;
 global $wp_query;
 $cat_obj = $wp_query->get_queried_object();
@@ -9,6 +8,10 @@ $thisCatName = get_cat_name($thisCat);
 <div class="section content" id="main-content">
     <div class="row">
         <div class="content-primary">
+	
+	
+	
+	
             <?php
             $image_url = '';
             if (($options['aktiv-platzhalterbilder-indexseiten'] == 1) && (isset($options['src-default-symbolbild-search']))) {
@@ -27,14 +30,15 @@ $thisCatName = get_cat_name($thisCat);
             </div>
         </div>                                 
         <?php } ?>           
+	
         <div class="skin">
+	  
             <?php if (!(isset($image_url) && (strlen($image_url) > 4))) { ?>
                 <h1 class="post-title"><span><?php printf(__('Suchergebnisse f&uuml;r %s', 'piratenkleider'), '' . get_search_query() . ''); ?></span></h1>
             <?php }
 
 
-            if (have_posts()) :
-                ?>
+	    if ( have_posts() ) : ?>
                 <?php
                 /* Run the loop for the search to output the results.
                  * If you want to overload this in a child theme then include a file
@@ -55,7 +59,8 @@ $thisCatName = get_cat_name($thisCat);
                 while (have_posts() && $i < $numentries) : the_post();
                     $i++;
                     ob_start();
-                    if (( isset($options['category-num-article-fullwidth'])) && ($options['category-num-article-fullwidth'] >= $i )) {
+      if (( isset($options['category-num-article-fullwidth']))
+                && ($options['category-num-article-fullwidth']>=$i )) {
                         piratenkleider_post_teaser($options['category-teaser-titleup'], $options['category-teaser-datebox'], $options['category-teaser-dateline'], $options['category-teaser-maxlength'], $options['teaser-thumbnail_fallback'], $options['category-teaser-floating']);
                     } else {
                         piratenkleider_post_teaser($options['category-teaser-titleup-halfwidth'], $options['category-teaser-datebox-halfwidth'], $options['category-teaser-dateline-halfwidth'], $options['category-teaser-maxlength-halfwidth'], $options['teaser-thumbnail_fallback'], $options['category-teaser-floating-halfwidth']);
@@ -74,10 +79,13 @@ $thisCatName = get_cat_name($thisCat);
                     <?php
                     $z = 1;
                     foreach ($cols as $key => $col) {
-                        if (( isset($options['category-num-article-fullwidth'])) && ($options['category-num-article-fullwidth'] > $key )) {
+            if (( isset($options['category-num-article-fullwidth']))
+                && ($options['category-num-article-fullwidth']>$key )) {
                             echo $col;
                         } else {
-                            if (( isset($options['category-num-article-fullwidth'])) && ($options['category-num-article-fullwidth'] == $key ) && ($options['category-num-article-fullwidth'] > 0)) {
+                     if (( isset($options['category-num-article-fullwidth']))
+                            && ($options['category-num-article-fullwidth']==$key )
+                            && ($options['category-num-article-fullwidth']>0) ) {
                                 echo '<hr>';
                             }
                             echo '<div class="column' . $z . '">' . $col . '</div>';
@@ -130,9 +138,13 @@ $thisCatName = get_cat_name($thisCat);
     <?php wp_list_categories('title_li='); ?>                               
                     </ul>
                 </div>
+                        
+                        
             <?php endif; ?>
+
         </div>
     </div>
+
     <div class="content-aside">
         <div class="skin">        
             <h1 class="skip"><?php _e('Weitere Informationen', 'piratenkleider'); ?></h1>
@@ -142,4 +154,5 @@ $thisCatName = get_cat_name($thisCat);
 </div>
 <?php get_piratenkleider_socialmediaicons(2); ?>
 </div>
+
 <?php get_footer(); ?>

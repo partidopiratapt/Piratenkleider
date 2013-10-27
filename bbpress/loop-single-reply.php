@@ -36,9 +36,8 @@
                 </div>
                 <ul class="reset smalltext quickbuttons">
                     <?php
-                    $array = explode('|', bbp_get_reply_admin_links(array('before' => '', 'after' => '', 'sep' => '|', 'links' => array())));
+                    $array = explode('|', bbp_get_reply_admin_links(array('before' => '', 'after' => '', 'sep' => '|', 'links' => array('edit' => bbp_get_reply_edit_link(), 'move' => bbp_get_reply_move_link(), 'split' => bbp_get_topic_split_link(), 'trash' => bbp_get_reply_trash_link(), 'spam' => bbp_get_reply_spam_link()))));
                     foreach ($array as $value) {
-                        if ( $value != 'Reply')
                             echo '<li>' . $value . '</li>';
                     }
                     ?>

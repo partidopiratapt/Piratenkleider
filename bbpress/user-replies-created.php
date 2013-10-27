@@ -17,11 +17,11 @@
 
 			<?php if ( bbp_get_user_replies_created() ) : ?>
 
-				<?php bbp_get_template_part( 'pagination', 'replies' ); ?>
+				<?php bbp_get_template_part( 'pagination', 'user-replies' ); ?>
 
-				<?php bbp_get_template_part( 'loop',       'replies' ); ?>
+				<?php bbp_get_template_part( 'loop',       'user-replies' ); ?>
 
-				<?php bbp_get_template_part( 'pagination', 'replies' ); ?>
+				<?php bbp_get_template_part( 'pagination', 'user-replies' ); ?>
 
 			<?php else : ?>
 

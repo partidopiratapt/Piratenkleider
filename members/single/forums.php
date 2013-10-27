@@ -21,7 +21,7 @@
 	</ul>
 </div><!-- .item-list-tabs -->
 <?php
-if ( bp_is_current_action( 'favorites' ) ) :
+/*if ( bp_is_current_action( 'favorites' ) ) :
 	locate_template( array( 'members/single/forums/topics.php' ), true );
 else :
 	do_action( 'bp_before_member_forums_content' ); ?>
@@ -29,4 +29,4 @@ else :
 		<?php locate_template( array( 'forums/forums-loop.php' ), true ); ?>
 	</div>
 	<?php do_action( 'bp_after_member_forums_content' ); ?>
-<?php endif; ?>
+<?php endif;*/ ?>

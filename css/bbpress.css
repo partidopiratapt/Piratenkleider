@@ -3382,11 +3382,7 @@ ul.basic_helplist
     border: 1px dashed;
     padding: 8px;
 }
-#recaptcha_area, #recaptcha_table {
-    margin-left: auto;
-    margin-right: auto;
-    width: 318px !important;
-}
+
 .stats .yagam
 {
     background-color: #232323;
