@@ -3,7 +3,7 @@
  * BuddyPress - Users Profile
  *
  * @package BuddyPress
- * @subpackage bp-default
+ * @subpackage bp-legacy
  */
 ?>
 	<div class="item-list-tabs no-ajax" id="subnav" role="navigation">
@@ -13,19 +13,36 @@
 	</div><!-- .item-list-tabs -->
 <?php do_action( 'bp_before_profile_content' ); ?>
 <div class="profile" role="main">
-	<?php
-		// Profile Edit
-		if ( bp_is_current_action( 'edit' ) )
-			locate_template( array( 'members/single/profile/edit.php' ), true );
+
+<?php switch ( bp_current_action() ) :
+
+	// Edit
+	case 'edit'   :
+		bp_get_template_part( 'members/single/profile/edit' );
+		break;
+
 		// Change Avatar
-		elseif ( bp_is_current_action( 'change-avatar' ) )
-			locate_template( array( 'members/single/profile/change-avatar.php' ), true );
+	case 'change-avatar' :
+		bp_get_template_part( 'members/single/profile/change-avatar' );
+		break;
+
+	// Compose
+	case 'public' :
+
 		// Display XProfile
-		elseif ( bp_is_active( 'xprofile' ) )
-			locate_template( array( 'members/single/profile/profile-loop.php' ), true );
+		if ( bp_is_active( 'xprofile' ) )
+			bp_get_template_part( 'members/single/profile/profile-loop' );
+
 		// Display WordPress profile (fallback)
 		else
-			locate_template( array( 'members/single/profile/profile-wp.php' ), true );
-	?>
+			bp_get_template_part( 'members/single/profile/profile-wp' );
+
+		break;
+
+	// Any other
+	default :
+		bp_get_template_part( 'members/single/plugins' );
+		break;
+endswitch; ?>
 </div><!-- .profile -->
 <?php do_action( 'bp_after_profile_content' ); ?>

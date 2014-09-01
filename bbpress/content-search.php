@@ -11,9 +11,7 @@
 
 <div id="bbpress-forums">
 
-	<?php bbp_breadcrumb(); ?>
-
-	<?php bbp_set_query_name( 'bbp_search' ); ?>
+	<?php bbp_set_query_name( bbp_get_search_rewrite_id() ); ?>
 
 	<?php do_action( 'bbp_template_before_search' ); ?>
 

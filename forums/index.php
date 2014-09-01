@@ -14,6 +14,7 @@ global $options;
                 <?php if (!(isset($image_url) && (strlen($image_url) > 4))) { ?>
                     <h1 id="page-title"><span><?php _e('Forums Directory', 'buddypress'); ?></span></h1>
                 <?php } ?>
+<div id="buddypress">
                 <?php do_action('bp_before_directory_forums'); ?>
                 <form action="" method="post" id="forums-search-form" class="dir-form">
                     <h3><?php if (is_user_logged_in()) : ?> &nbsp;<a class="button show-hide-new" href="#new-topic" id="new-topic-button"><?php _e('New Topic', 'buddypress'); ?></a><?php endif; ?></h3>
@@ -48,7 +49,9 @@ global $options;
                         </ul>
                     </div>
                     <div id="forums-dir-list" class="forums dir-list" role="main">
-                        <?php locate_template(array('forums/forums-loop.php'), true); ?>
+
+			<?php bp_get_template_part( 'forums/forums-loop' ); ?>
+
                     </div>
                     <?php do_action('bp_directory_forums_content'); ?>
                     <?php wp_nonce_field('directory_forums', '_wpnonce-forums-filter'); ?>
@@ -80,8 +83,8 @@ global $options;
                                 </select><!-- #topic_group_id -->
                                 <?php do_action('groups_forum_new_topic_after'); ?>
                                 <div class="submit">
-                                    <input type="submit" name="submit_topic" id="submit" value="<?php _e('Post Topic', 'buddypress'); ?>" />
-                                    <input type="button" name="submit_topic_cancel" id="submit_topic_cancel" value="<?php _e('Cancel', 'buddypress'); ?>" />
+						<input type="submit" name="submit_topic" id="submit" value="<?php esc_attr_e( 'Post Topic', 'buddypress' ); ?>" />
+						<input type="button" name="submit_topic_cancel" id="submit_topic_cancel" value="<?php esc_attr_e( 'Cancel', 'buddypress' ); ?>" />
                                 </div>
                                 <?php wp_nonce_field('bp_forums_new_topic'); ?>
                             </form><!-- #forum-topic-form -->
@@ -94,6 +97,7 @@ global $options;
                 </div><!-- #new-topic-post -->
                 <?php do_action('bp_after_new_topic_form'); ?>
                 <?php do_action('bp_after_directory_forums_content'); ?>
+	</div>
             </div>
             <?php do_action('bp_after_directory_forums_page'); ?>
         </div>

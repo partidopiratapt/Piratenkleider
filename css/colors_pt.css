@@ -61,10 +61,8 @@
         background: #2d7dc5;
         color: white;
         border: 1px solid #2d7dc5;
-        text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.1);
         border-top: 1px solid #4e96d7;
         border-bottom: 1px solid #1a4872;
-        text-shadow: 0 -1px 0 #112e48;
         background-color: #2d7dc5;
         background-image: -moz-linear-gradient(top, #2d7dc5, #24639b);
         background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #2d7dc5), color-stop(1, #24639b));
@@ -206,9 +204,12 @@
     .second-teaser-widget-area li.recentcomments {
         color: white;
     }
+	.second-teaser-widget-area .skin{
+		 padding: 12px;
+	}
 
     .teaserlinks ul li {
-        background-color: brown;
+        background-color: #AA0000;
         color: white;
         box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 
@@ -226,7 +227,7 @@
     .teaserlinks ul li:hover,
     .teaserlinks ul li:focus{
         color: white;
-        background: none repeat scroll 0 0 green;
+        background: none repeat scroll 0 0 #930000;
     }
     .teaserlinks ul li a span {
         color: #ffffff;
@@ -561,7 +562,8 @@
     .content-aside .skin {
         background: #8F9F00;
         background: rgba(143, 159, 0, 0.7); 
-    }
+        padding: 20px 12px;
+	}
     
     .post-meta, .pubdateinfo {
         color: #b3b3b3;

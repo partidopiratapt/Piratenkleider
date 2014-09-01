@@ -44,4 +44,5 @@
 	</div>
 <?php do_action( 'bp_after_profile_field_content' ); ?>
 <?php do_action( 'bp_profile_field_buttons' ); ?>
+
 <?php do_action( 'bp_after_profile_loop_content' ); ?>

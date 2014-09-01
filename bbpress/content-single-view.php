@@ -10,7 +10,7 @@
 ?>
 
 <div id="bbpress-forums">
-	<?php bbp_set_query_name( 'bbp_view' ); ?>
+	<?php bbp_set_query_name( bbp_get_view_rewrite_id() ); ?>
 
 	<?php if ( bbp_view_query() ) : ?>
 

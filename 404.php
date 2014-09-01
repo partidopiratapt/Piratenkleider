@@ -23,7 +23,7 @@
 		   <h1 class="post-title"><span><?php _e("Seite nicht gefunden",'piratenkleider'); ?></span></h1>
 		   <div class="symbolbild"><img src="<?php echo $image_url ?>" title="">		  
 		    <div class="caption">  
-		     <p style="font-size: 2em;" class="bebas">404</p>                  
+		     <p style="font-size: 2em;" class="cifont">404</p>                  
 		     </div> 		  
 		   </div>
 		</div>  	
@@ -36,7 +36,7 @@
 	<?php } ?>
 	  
          <p>
-           <?php _e("Es konnten keine Seiten oder Artikel gefunden werden, die zu eingegebene Adresse passte. Bitte versuchen Sie es nochmal mit einer Suche.", 'piratenkleider'); ?>
+           <?php _e("Es konnten keine Seiten oder Artikel gefunden werden, die zu der eingegebenen Adresse passte. Bitte versuchen Sie es nochmal mit einer Suche.", 'piratenkleider'); ?>
          </p>              
 	 
          <?php get_search_form(); ?>

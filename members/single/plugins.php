@@ -1,4 +1,13 @@
 <?php
+/**
+ * BuddyPress - Users Plugins Template
+ *
+ * 3rd-party plugins should use this template to easily add template
+ * support to their plugins for the members component.
+ *
+ * @package BuddyPress
+ * @subpackage bp-legacy
+ */
 get_header();
 global $defaultoptions;
 global $options;
@@ -7,31 +16,42 @@ global $options;
     <div class="row">
         <div class="content-primary">            
             <div class="content-header-big">
-                <?php locate_template(array('members/single/member-header.php'), true); ?>
-                <div id="item-nav">
-                    <div class="item-list-tabs no-ajax" id="object-nav" role="navigation">
-                        <ul>
-                            <?php bp_get_displayed_user_nav(); ?>
-                            <?php do_action('bp_member_options_nav'); ?>
-                        </ul>
-                    </div>
-                </div><!-- #item-nav -->
+                <div id="buddypress">
+                    <div id="item-header" role="complementary">
+                        <?php locate_template(array('members/single/member-header.php'), true); ?>
+                    </div><!-- #item-header -->
+                    <div id="item-nav">
+                        <div class="item-list-tabs no-ajax" id="object-nav" role="navigation">
+                            <ul>
+                                <?php bp_get_displayed_user_nav(); ?>
+                                <?php do_action('bp_member_options_nav'); ?>
+                            </ul>
+                        </div>
+                    </div><!-- #item-nav -->
+                </div>
             </div><!-- #item-header -->
             <div class="skin">
-                <?php do_action('bp_before_member_plugin_template'); ?>
-                <div id="item-body" role="main">
-                    <?php do_action('bp_before_member_body'); ?>
-                    <div class="item-list-tabs no-ajax" id="subnav">
-                        <ul>
-                            <?php bp_get_options_nav(); ?>
-                            <?php do_action('bp_member_plugin_options_nav'); ?>
-                        </ul>
-                    </div><!-- .item-list-tabs -->
-                    <h3><?php do_action('bp_template_title'); ?></h3>
-                    <?php do_action('bp_template_content'); ?>
-                    <?php do_action('bp_after_member_body'); ?>
-                </div><!-- #item-body -->
-                <?php do_action('bp_after_member_plugin_template'); ?>
+                <div id="buddypress">
+                    <div id="item-body" role="main">
+                        <?php do_action('bp_before_member_plugin_template'); ?>
+
+                        <?php if (!bp_is_current_component_core()) : ?>
+
+                            <div class="item-list-tabs no-ajax" id="subnav">
+                                <ul>
+                                    <?php bp_get_options_nav(); ?>
+                                    <?php do_action('bp_member_plugin_options_nav'); ?>
+                                </ul>
+                            </div><!-- .item-list-tabs -->
+
+                        <?php endif; ?>
+
+                        <h3><?php do_action('bp_template_title'); ?></h3>
+                        <?php do_action('bp_template_content'); ?>
+
+                        <?php do_action('bp_after_member_plugin_template'); ?>
+                    </div>
+                </div><!-- #buddypress -->
             </div>
         </div>
         <div class="content-aside">

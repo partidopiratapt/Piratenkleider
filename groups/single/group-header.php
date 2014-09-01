@@ -15,8 +15,19 @@ do_action( 'bp_before_group_header' );
 		endif;
 	endif; ?>
 </div><!-- #item-actions -->
+
+<div id="item-header-avatar">
+	<a href="<?php bp_group_permalink(); ?>" title="<?php bp_group_name(); ?>">
+
+		<?php bp_group_avatar(); ?>
+
+	</a>
+</div><!-- #item-header-avatar -->
+
 <div id="item-header-content">
-	<span class="highlight"><?php bp_group_type(); ?></span> <span class="activity"><?php printf( __( 'active %s', 'buddypress' ), bp_get_group_last_active() ); ?></span>
+	<span class="highlight"><?php bp_group_type(); ?></span>
+	<span class="activity"><?php printf( __( 'active %s', 'buddypress' ), bp_get_group_last_active() ); ?></span>
+
 	<?php do_action( 'bp_before_group_header_meta' ); ?>
 	<div id="item-meta">
 		<?php bp_group_description(); ?>

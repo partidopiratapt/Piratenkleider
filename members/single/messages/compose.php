@@ -17,10 +17,11 @@
 	<input type="hidden" name="send_to_usernames" id="send-to-usernames" value="<?php bp_message_get_recipient_usernames(); ?>" class="<?php bp_message_get_recipient_usernames(); ?>" />
 	<?php do_action( 'bp_after_messages_compose_content' ); ?>
 	<div class="submit">
-		<input type="submit" value="<?php _e( "Send Message", 'buddypress' ); ?>" name="send" id="send" />
+		<input type="submit" value="<?php esc_attr_e( "Send Message", 'buddypress' ); ?>" name="send" id="send" />
 	</div>
 	<?php wp_nonce_field( 'messages_send_message' ); ?>
 </form>
 <script type="text/javascript">
 	document.getElementById("send-to-input").focus();
 </script>
+

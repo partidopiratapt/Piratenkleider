@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Archive Topic Content Part
  *

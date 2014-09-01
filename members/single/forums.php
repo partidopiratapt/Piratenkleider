@@ -3,7 +3,7 @@
  * BuddyPress - Users Forums
  *
  * @package BuddyPress
- * @subpackage bp-default
+ * @subpackage bp-legacy
  */
 ?>
 <div class="item-list-tabs no-ajax" id="subnav" role="navigation">
@@ -22,11 +22,11 @@
 </div><!-- .item-list-tabs -->
 <?php
 /*if ( bp_is_current_action( 'favorites' ) ) :
-	locate_template( array( 'members/single/forums/topics.php' ), true );
+	bp_get_template_part( 'members/single/forums/topics' );
 else :
 	do_action( 'bp_before_member_forums_content' ); ?>
 	<div class="forums myforums">
-		<?php locate_template( array( 'forums/forums-loop.php' ), true ); ?>
+		<?php bp_get_template_part( 'forums/forums-loop' ) ?>
 	</div>
 	<?php do_action( 'bp_after_member_forums_content' ); ?>
 <?php endif;*/ ?>

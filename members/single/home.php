@@ -7,45 +7,65 @@ global $options;
     <div class="row">
         <div class="content-primary">            
             <div class="content-header-big">
-                <?php locate_template(array('members/single/member-header.php'), true); ?>
-                <div id="item-nav">
-                    <div class="item-list-tabs no-ajax" id="object-nav" role="navigation">
-                        <ul>
-                            <?php bp_get_displayed_user_nav(); ?>
-                            <?php do_action('bp_member_options_nav'); ?>
-                        </ul>
-                    </div>
-                </div><!-- #item-nav -->
+                <div id="buddypress">
+                    <div id="item-header" role="complementary">
+                        <?php bp_get_template_part('members/single/member-header') ?>
+                    </div><!-- #item-header -->
+                    <div id="item-nav">
+                        <div class="item-list-tabs no-ajax" id="object-nav" role="navigation">
+                            <ul>
+                                <?php bp_get_displayed_user_nav(); ?>
+                                <?php do_action('bp_member_options_nav'); ?>
+                            </ul>
+                        </div>
+                    </div><!-- #item-nav -->
+                </div>
             </div><!-- #item-header -->
             <div class="skin">
-                <?php do_action('bp_before_member_home_content'); ?>
-                <div id="item-body">
-                    <?php
-                    do_action('bp_before_member_body');
-                    if (bp_is_user_activity() || !bp_current_component()) :
-                        locate_template(array('members/single/activity.php'), true);
-                    elseif (bp_is_user_blogs()) :
-                        locate_template(array('members/single/blogs.php'), true);
-                    elseif (bp_is_user_friends()) :
-                        locate_template(array('members/single/friends.php'), true);
-                    elseif (bp_is_user_groups()) :
-                        locate_template(array('members/single/groups.php'), true);
-                    elseif (bp_is_user_messages()) :
-                        locate_template(array('members/single/messages.php'), true);
-                    elseif (bp_is_user_profile()) :
-                        locate_template(array('members/single/profile.php'), true);
-                    elseif (bp_is_user_forums()) :
-                        //locate_template(array('members/single/forums.php'), true);
-                    elseif (bp_is_user_settings()) :
-                        locate_template(array('members/single/settings.php'), true);
-                    // If nothing sticks, load a generic template
-                    else :
-                        locate_template(array('members/single/plugins.php'), true);
-                    endif;
-                    do_action('bp_after_member_body');
-                    ?>
-                </div><!-- #item-body -->
-                <?php do_action('bp_after_member_home_content'); ?>
+                <div id="buddypress">
+                    <?php do_action('bp_before_member_home_content'); ?>
+                    <div id="item-body" role="main">
+                        <?php
+                        do_action('bp_before_member_body');
+                        if (bp_is_user_activity() || !bp_current_component()) :
+                            bp_get_template_part('members/single/activity');
+
+                        elseif (bp_is_user_blogs()) :
+                            bp_get_template_part('members/single/blogs');
+
+                        elseif (bp_is_user_friends()) :
+                            bp_get_template_part('members/single/friends');
+
+                        elseif (bp_is_user_groups()) :
+                            bp_get_template_part('members/single/groups');
+
+                        elseif (bp_is_user_messages()) :
+                            bp_get_template_part('members/single/messages');
+
+                        elseif (bp_is_user_profile()) :
+                            bp_get_template_part('members/single/profile');
+
+                        elseif (bp_is_user_forums()) :
+                            bp_get_template_part('members/single/forums');
+
+                        elseif (bp_is_user_notifications()) :
+                            bp_get_template_part('members/single/notifications');
+
+                        elseif (bp_is_user_settings()) :
+                            bp_get_template_part('members/single/settings');
+
+                        // If nothing sticks, load a generic template
+                        else :
+                            bp_get_template_part('members/single/plugins');
+
+                        endif;
+
+                        do_action('bp_after_member_body');
+                        ?>
+
+                    </div><!-- #item-body -->
+<?php do_action('bp_after_member_home_content'); ?>
+                </div><!-- #buddypress -->
             </div>
         </div>
         <div class="content-aside">
@@ -61,6 +81,6 @@ global $options;
             </div>
         </div>
     </div>
-    <?php get_piratenkleider_socialmediaicons(2); ?>
+<?php get_piratenkleider_socialmediaicons(2); ?>
 </div>
 <?php get_footer(); ?>

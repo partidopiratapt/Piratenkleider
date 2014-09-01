@@ -19,7 +19,7 @@
 
 <?php if ( bbp_current_user_can_access_create_reply_form() ) : ?>
 
-	<div id="new-reply" class="bbp-reply-form" style="display: none;">
+	<div id="new-reply-<?php bbp_topic_id(); ?>" class="bbp-reply-form" style="display: none;">
 
 		<form id="new-post" name="new-post" method="post" action="<?php the_permalink(); ?>">
 

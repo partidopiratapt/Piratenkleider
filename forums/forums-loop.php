@@ -2,10 +2,10 @@
 /**
  * BuddyPress - Forums Loop
  *
- * Querystring is set via AJAX in _inc/ajax.php - bp_dtheme_object_filter()
+ * Querystring is set via AJAX in _inc/ajax.php - bp_legacy_theme_object_filter()
  *
  * @package BuddyPress
- * @subpackage bp-default
+ * @subpackage bp-legacy
  */
 ?>
 <?php do_action( 'bp_before_forums_loop' ); ?>
@@ -32,7 +32,8 @@
 			<?php while ( bp_forum_topics() ) : bp_the_forum_topic(); ?>
 			<tr class="<?php bp_the_topic_css_class(); ?>">
         			<td class="td-title">
-					<a class="topic-title" href="<?php bp_the_topic_permalink(); ?>" title="<?php _e( 'Permanent link to this post', 'buddypress' ); ?>">
+					<a class="topic-title" href="<?php bp_the_topic_permalink(); ?>" title="<?php esc_attr_e( 'Permanent link to this post', 'buddypress' ); ?>">
+
 						<?php bp_the_topic_title(); ?>
 					</a>
 					<p class="topic-meta">
@@ -81,4 +82,5 @@
 		<p><?php _e( 'Sorry, there were no forum topics found.', 'buddypress' ); ?></p>
 	</div>
 <?php endif; ?>
+
 <?php do_action( 'bp_after_forums_loop' ); ?>

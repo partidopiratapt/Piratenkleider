@@ -34,8 +34,13 @@ global $defaultbilder_liste;
                     if (have_posts()) while (have_posts()) : the_post();
             echo "<li class='slide'>";
                             if ($options['teaser-type'] == 'big') {
+                $attribs = array(
+                  "credits" => $options['img-meta-credits'],
+                );
                                 echo '<div class="bigslider">';
                                 if (has_post_thumbnail()) {
+                    $thumbid = get_post_thumbnail_id(get_the_ID());
+                    $attribs = piratenkleider_get_image_attributs($thumbid);
                  the_post_thumbnail(array($defaultoptions['bigslider-thumb-width'],$defaultoptions['bigslider-thumb-height']),array('alt'=> ''));
                                 } else {
                     if ((isset($defaultbildsrc)) && (strlen(trim($defaultbildsrc))>2)) {  
@@ -45,12 +50,16 @@ global $defaultbilder_liste;
                         echo '<img src="'.$defaultbilder_liste[$randombild[0]]['src'].'" width="'.$defaultoptions['bigslider-thumb-width'].'" height="'.$defaultoptions['bigslider-thumb-height'].'" alt="">'; 
                                     }
                                 }
-                echo '<div class="caption"><p class="bebas">'.$subtitle.'</p>';
+                echo '<div class="caption"><p class="cifont">'.$subtitle.'</p>';
                                 echo "<h3><a href=";
                                 the_permalink();
                                 echo ">";
                                 echo short_title('&hellip;', $options['teaser-title-words'], $options['teaser-title-maxlength']);
                                 echo "</a></h3></div>";
+                
+                if (($options['teaser-showcredits']==1) && isset($attribs["credits"]) && (strlen($attribs["credits"])>1)) {
+		     echo '<div class="credits">'.$attribs["credits"].'</div>';  
+		} 
                                 echo "</div>";
                             } else {
                                 echo '<div class="textslider">';

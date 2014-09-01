@@ -3,16 +3,22 @@
  * BuddyPress - Users Header
  *
  * @package BuddyPress
- * @subpackage bp-default
+ * @subpackage bp-legacy
  */
 ?>
 <?php do_action( 'bp_before_member_header' ); ?>
 <h1 class="post-title"><span><?php bp_displayed_user_fullname(); ?></span></h1>
 <div id="item-header-avatar">
-		<?php bp_displayed_user_avatar( array('width' => 100, 'height' => 100, 'type' => 'full') ); ?>
+
+		<?php bp_displayed_user_avatar( 'width=100&height=100&type=full' ); ?>
+
 </div><!-- #item-header-avatar -->
 <div id="item-header-content">
-	<span class="user-nicename">@<?php bp_displayed_user_username(); ?></span>
+
+	<?php if ( bp_is_active( 'activity' ) && bp_activity_do_mentions() ) : ?>
+		<h2 class="user-nicename">@<?php bp_displayed_user_mentionname(); ?></h2>
+	<?php endif; ?>
+
 	<span class="activity"><?php bp_last_activity( bp_displayed_user_id() ); ?></span>
 	<?php do_action( 'bp_before_member_header_meta' ); ?>
 	<div id="item-meta">

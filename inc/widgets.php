@@ -11,10 +11,7 @@ function piratenkleider_widgets_init() {
         register_sidebar( array(
                 'name' => __( 'Sidebar (Rechte Spalte)', 'piratenkleider' ),
                 'id' => 'sidebar-widget-area',
-                'description' => __( 'Dieser Bereich befindet sich rechts vom Inhaltsbereich. 
-                    Er ist geeignet f&uuml;r Werbeplakate, Hinweise und &auml;hnliches.
-                    Wenn leer, werden als Alternative einige der allgemeinen Standardplakate 
-                    gezeigt.', 'piratenkleider' ),
+                'description' => __( 'Dieser Bereich befindet sich rechts vom Inhaltsbereich. Er ist geeignet f&uuml;r Werbeplakate, Hinweise und &auml;hnliches. Wenn leer, werden als Alternative einige der allgemeinen Standardplakate gezeigt.', 'piratenkleider' ),
                 'before_widget' => '<div class="widget">',
                 'after_widget' => '</div>',
                 'before_title' => '<h2>',
@@ -24,9 +21,7 @@ function piratenkleider_widgets_init() {
         register_sidebar( array(
                 'name' => __( 'Sidebar 2 (Rechts unter Plakaten)', 'piratenkleider' ),
                 'id' => 'sidebar-widget-area-afterplakate',
-                'description' => __( 'Dieser Bereich befindet sich rechts vom Inhaltsbereich.
-                    Er ist nach den Werbeplakaten positioniert, die &uuml;ber die 
-                    Optionen ein- oder abgeschaltet werden k&ouml;nnen.', 'piratenkleider' ),
+                'description' => __( 'Dieser Bereich befindet sich rechts vom Inhaltsbereich. Er ist nach den Werbeplakaten positioniert, die &uuml;ber die Optionen ein- oder abgeschaltet werden k&ouml;nnen.', 'piratenkleider' ),
                 'before_widget' => '<div class="widget">',
                 'after_widget' => '</div>',
                 'before_title' => '<h2>',
@@ -37,10 +32,7 @@ function piratenkleider_widgets_init() {
         register_sidebar( array(
                 'name' => __( 'Startseite: Sliderbereich', 'piratenkleider' ),
                 'id' => 'first-teaser-widget-area',
-                'description' => __( 'Bereich oberhalb der 3 Artikelbilder.
-                    Wenn leer, erscheinen hier wechselnden Bilder 
-                    und Verlinkung mit Artikeln der Kategorie "Slider". 
-                    Angezeigt werden die Artikelbilder.', 'piratenkleider' ),
+                'description' => __( 'Bereich oberhalb der 3 Artikelbilder. Wenn leer, erscheinen hier wechselnden Bilder und Verlinkung mit Artikeln der Kategorie "Slider". Angezeigt werden die Artikelbilder.', 'piratenkleider' ),
                 'before_widget' => '<div class="widget">',
                 'after_widget' => '</div>',
                 'before_title' => '<h3 class="widget-title">',
@@ -51,8 +43,7 @@ function piratenkleider_widgets_init() {
         register_sidebar( array(
                 'name' => __( 'Startseite: Rechter Aktionlinkbereich', 'piratenkleider' ),
                 'id' => 'second-teaser-widget-area',
-                'description' => __( 'Dieser Bereich ist rechts neben den Slider und dem Hauptcontent positioniert. Wenn leer, werden hier
-                    die Links zur Piratenwebsite gezeigt die unter Optionen definiert sind.', 'piratenkleider' ),
+                'description' => __( 'Dieser Bereich ist rechts neben den Slider und dem Hauptcontent positioniert. Wenn leer, werden hier die Links zur Piratenwebsite gezeigt die unter Optionen definiert sind.', 'piratenkleider' ),
                 'before_widget' => '<div class="widget">',
                 'after_widget' => '</div>',
                 'before_title' => '<h3 class="widget-title">',
@@ -98,12 +89,7 @@ function piratenkleider_widgets_init() {
         register_sidebar( array(
                 'name' => __( 'Fu&szlig;bereich: Linke Seite', 'piratenkleider' ),
                 'id' => 'first-footer-widget-area',
-                'description' => __( 'Bereich im Fu&szlig;teil unter dem Haupttextbereich.
-                   Dieser Bereich eignet sich insbesondere f&uuml;r externe Links zu
-                   anderen Piratenwebsites auf regionaler oder &uuml;beregionaler Ebene.
-                   Diese werden dann als Menu mit externen Links definiert und
-                   dann als Widget dieser Sidebar zugeordnet.
-                   Wenn leer, wird hier nichts angezeigt.', 'piratenkleider' ),
+                'description' => __( 'Bereich im Fu&szlig;teil unter dem Haupttextbereich. Dieser Bereich eignet sich insbesondere f&uuml;r externe Links zu anderen Piratenwebsites auf regionaler oder &uuml;beregionaler Ebene. Diese werden dann als Menu mit externen Links definiert und dann als Widget dieser Sidebar zugeordnet. Wenn leer, wird hier nichts angezeigt.', 'piratenkleider' ),
                 'before_widget' => '<div class="widget">',
                 'after_widget' => '</div>',
                 'before_title' => '<h2>',
@@ -114,9 +100,7 @@ function piratenkleider_widgets_init() {
         register_sidebar( array(
                 'name' => __( 'Fu&szlig;bereich: Rechte Spalte', 'piratenkleider' ),
                 'id' => 'second-footer-widget-area',
-                'description' => __( 'Rechte Spalte im Fu&szlig;bereich. Wenn leer, erscheint hier das
-                    technische Menu (siehe Men&uuml;s). Wenn auch dieses nicht definiert ist, wird 
-                    die Blogadresse und dessen RSS-Feedadresse gezeigt', 'piratenkleider' ),
+                'description' => __( 'Rechte Spalte im Fu&szlig;bereich. Wenn leer, erscheint hier das technische Menu (siehe Men&uuml;s). Wenn auch dieses nicht definiert ist, wird die Blogadresse und dessen RSS-Feedadresse gezeigt', 'piratenkleider' ),
                 'before_widget' => '<div class="widget">',
                 'after_widget' => '</div>',
                 'before_title' => '<h2>',
@@ -183,9 +167,11 @@ class Newsletter_Widget extends WP_Widget {
                  ?> 
                  
                         <form method="post" action="<?php echo $url; ?>">						
-                                <label for="email"><?php _e("Zum Newsletter anmelden", 'piratenkleider'); ?>
-                                <input type="text" name="email" value="<?php _e("E-Mail-Adresse eingeben", 'piratenkleider'); ?>" placeholder="<?php _e("E-Mail-Adresse eingeben", 'piratenkleider'); ?>"
-                                       onfocus="if(this.value=='<?php _e("E-Mail-Adresse eingeben", 'piratenkleider'); ?>')this.value='';" onblur="if(this.value=='')this.value='<?php _e("E-Mail-Adresse eingeben", 'piratenkleider'); ?>';">
+                                <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e("Zum Newsletter anmelden", 'piratenkleider'); ?>
+                                <input type="text" id="<?php echo $this->get_field_id( 'title' ); ?>" name="email" value="<?php _e("E-Mail-Adresse eingeben", 'piratenkleider'); ?>" 
+				       placeholder="<?php _e("E-Mail-Adresse eingeben", 'piratenkleider'); ?>"
+                                       onfocus="if(this.value=='<?php _e("E-Mail-Adresse eingeben", 'piratenkleider'); ?>')this.value='';" 
+				       onblur="if(this.value=='')this.value='<?php _e("E-Mail-Adresse eingeben", 'piratenkleider'); ?>';">
                                 <input type="submit" name="email-button" value="<?php _e("Anmelden", 'piratenkleider'); ?>" id="newslettersubmit">
 				</label>
 		    <?php 	    

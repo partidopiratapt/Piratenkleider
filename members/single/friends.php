@@ -3,7 +3,7 @@
  * BuddyPress - Users Friends
  *
  * @package BuddyPress
- * @subpackage bp-default
+ * @subpackage bp-legacy
  */
 ?>
 <div class="item-list-tabs no-ajax" id="subnav" role="navigation">
@@ -16,19 +16,35 @@
 					<option value="active"><?php _e( 'Last Active', 'buddypress' ); ?></option>
 					<option value="newest"><?php _e( 'Newest Registered', 'buddypress' ); ?></option>
 					<option value="alphabetical"><?php _e( 'Alphabetical', 'buddypress' ); ?></option>
-					<?php do_action( 'bp_member_blog_order_options' ); ?>
+
+					<?php do_action( 'bp_member_friends_order_options' ); ?>
+
 				</select>
 			</li>
 		<?php endif; ?>
 	</ul>
 </div>
 <?php
-if ( bp_is_current_action( 'requests' ) ) :
-	 locate_template( array( 'members/single/friends/requests.php' ), true );
-else :
+switch ( bp_current_action() ) :
+
+	// Home/My Friends
+	case 'my-friends' :
 	do_action( 'bp_before_member_friends_content' ); ?>
 	<div class="members friends">
-		<?php locate_template( array( 'members/members-loop.php' ), true ); ?>
+
+			<?php bp_get_template_part( 'members/members-loop' ) ?>
+
 	</div><!-- .members.friends -->
-	<?php do_action( 'bp_after_member_friends_content' ); ?>
-<?php endif; ?>
+
+		<?php do_action( 'bp_after_member_friends_content' );
+		break;
+
+	case 'requests' :
+		bp_get_template_part( 'members/single/friends/requests' );
+		break;
+
+	// Any other
+	default :
+		bp_get_template_part( 'members/single/plugins' );
+		break;
+endswitch;

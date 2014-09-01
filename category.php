@@ -50,6 +50,7 @@
      
       global $query_string;
       query_posts( $query_string . '&cat=$thisCat' );
+ 
       while (have_posts() && $i<$numentries) : the_post();
       $i++;
       ob_start();

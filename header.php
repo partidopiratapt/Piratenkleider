@@ -8,8 +8,21 @@
         <?php
         global $defaultoptions;
         global $options;
+?>  
+    <title><?php wp_title( '|', true, 'right' ); ?></title> 
+        <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="pingback" href="<?php bloginfo( 'pingback_url' ) ?>">    
+        <?php
+        wp_head();
+        bp_head();
+        bbp_head();
+        ?>
 
+        <!--[if lte IE 7]>
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/yaml/core/iehacks.min.css" type="text/css"/>
+        <![endif]-->
 
+<?php 
         $cssadd = '';
    if (isset($options['css-default-header-height'])
         && ($options['css-default-header-height'] > 0)    
@@ -31,7 +44,6 @@
         <meta charset="<?php bloginfo('charset'); ?>">
         <!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=9"> <![endif]-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title><?php wp_title('|', true, 'right'); ?></title>
 <?php
 if ((isset( $options['meta-description'] )) && ( strlen(trim($options['meta-description']))>1 )) { ?>
             <meta name="description" content="<?php echo $options['meta-description'] ?>">
@@ -39,20 +51,9 @@ if ((isset( $options['meta-description'] )) && ( strlen(trim($options['meta-desc
 if ((isset( $options['meta-author'] )) && ( strlen(trim($options['meta-author']))>1 )) { ?>
             <meta name="author" content="<?php echo $options['meta-author'] ?>">
 <?php }
-    piratenkleider_keywords(); ?>    
+    piratenkleider_addmetatags(); ?>    
         <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/apple-touch-icon.png">
         <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
-        <link rel="profile" href="http://gmpg.org/xfn/11" />
-        <?php
-        wp_head();
-        bp_head();
-        bbp_head();
-        echo '  <link rel="pingback" href="' . get_bloginfo('pingback_url') . '">';
-        ?>
-
-        <!--[if lte IE 7]>
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/yaml/core/iehacks.min.css" type="text/css"/>
-        <![endif]-->
 
 <?php if ((isset($cssadd)) && (strlen(trim($cssadd))>1)) {
             echo "<style type=\"text/css\">\n";
@@ -108,10 +109,10 @@ if ((isset( $options['meta-author'] )) && ( strlen(trim($options['meta-author'])
                 <div class="branding">
                     <?php if (!is_home()) { ?>
                         <a href="<?php echo home_url('/'); ?>" title="<?php echo $defaultoptions['default_text_title_home_backlink']; ?>" rel="home" class="logo">
-                        <?php } ?>                                                             
+                        <?php } else { ?> <div class="logo"> <?php } ?>                                                            
                                 <h1><img src="<?php header_image(); ?>" alt="<?php bloginfo( 'name' ); ?>"></h1>
                             <?php                                
-                              if ( ! is_home() ) { ?> </a>  <?php } 
+                              if ( ! is_home() ) { ?> </a>  <?php } else { ?> </div> <?php }
                               if (strlen(trim(get_bloginfo( 'description' )))>1) { ?> 
                         <p class="description slogan"><?php bloginfo('description'); ?></p>
                     <?php } ?>
@@ -128,7 +129,6 @@ if ((isset( $options['meta-author'] )) && ( strlen(trim($options['meta-author'])
                             wp_nav_menu(array('container_class' => 'menu-header', 'theme_location' => 'top'));
                         } else {
                             global $default_toplink_liste;
-
                                         if (is_array($default_toplink_liste)) {     ?>
                                 <div class="menu-header">
                                     <ul id="menu-topmenu" class="menu">
@@ -219,7 +219,7 @@ if ((isset( $options['meta-author'] )) && ( strlen(trim($options['meta-author'])
                 <?php } ?>
             </div>
         </div>
-
+	<?php if ($options['zeige_breadcrump']==1) { ?>
         <div class="section breadcrumbs">
             <div class="row">
                 <div class="skin">
@@ -227,7 +227,7 @@ if ((isset( $options['meta-author'] )) && ( strlen(trim($options['meta-author'])
                 </div>
             </div>
         </div>
-
+	<?php } ?>
 
         <div class="chrome-container">
 

@@ -1,9 +1,11 @@
 <?php
 do_action( 'bp_before_group_forum_content' );
 if ( bp_is_group_forum_topic_edit() ) :
-	locate_template( array( 'groups/single/forum/edit.php' ), true );
+	bp_get_template_part( 'groups/single/forum/edit' );
+
 elseif ( bp_is_group_forum_topic() ) :
-	locate_template( array( 'groups/single/forum/topic.php' ), true );
+	bp_get_template_part( 'groups/single/forum/topic' );
+
 else : ?>
 	<div class="item-list-tabs no-ajax" id="subnav" role="navigation">
 		<ul>
@@ -30,7 +32,9 @@ else : ?>
 		</ul>
 	</div>
 	<div class="forums single-forum" role="main">
-		<?php locate_template( array( 'forums/forums-loop.php' ), true ); ?>
+
+		<?php bp_get_template_part( 'forums/forums-loop' ) ?>
+
 	</div><!-- .forums.single-forum -->
 <?php endif; ?>
 <?php do_action( 'bp_after_group_forum_content' ); ?>
@@ -52,10 +56,13 @@ else : ?>
 				<input type="text" name="topic_tags" id="topic_tags" value="" />
 				<?php do_action( 'bp_after_group_forum_post_new' ); ?>
 				<div class="submit">
-					<input type="submit" name="submit_topic" id="submit" value="<?php _e( 'Post Topic', 'buddypress' ); ?>" />
+					<input type="submit" name="submit_topic" id="submit" value="<?php esc_attr_e( 'Post Topic', 'buddypress' ); ?>" />
 				</div>
 				<?php wp_nonce_field( 'bp_forums_new_topic' ); ?>
 			</div><!-- #new-topic-post -->
 		</form><!-- #forum-topic-form -->
+
 	<?php endif; ?>
-<?php endif; ?>
+
+	<?php endif; ?>
+

@@ -8,7 +8,10 @@ global $options;
         <div class="content-primary">            
             <?php if (bp_has_groups()) : while (bp_groups()) : bp_the_group(); ?>
                     <div class="content-header-big">
-                        <?php locate_template(array('groups/single/group-header.php'), true); ?>
+                        <div id="buddypress">
+                        <div id="item-header" role="complementary">
+                        <?php bp_get_template_part( 'groups/single/group-header' ); ?>
+                            </div><!-- #item-header -->
                         <div id="item-nav">
                             <div class="item-list-tabs no-ajax" id="object-nav" role="navigation">
                                 <ul>
@@ -17,15 +20,14 @@ global $options;
                                 </ul>
                             </div>
                         </div><!-- #item-nav -->
+                        </div>
                     </div><!-- #item-header -->
                     <div class="skin">
                         <?php do_action('bp_before_group_plugin_template'); ?>
-                        <div id="item-body">
-                            <?php do_action('bp_before_group_body'); ?>
+                        
                             <?php do_action('bp_template_content'); ?>
-                            <?php do_action('bp_after_group_body'); ?>
-                        </div><!-- #item-body -->
-                        <?php do_action('bp_after_group_plugin_template'); ?>
+                        
+                        <?php do_action( 'bp_after_group_plugin_template' ); ?>
                     </div>
                     <?php
                 endwhile;

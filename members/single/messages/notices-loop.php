@@ -27,7 +27,7 @@
 				<?php do_action( 'bp_notices_list_item' ); ?>
 				<td width="10%">
 					<a class="button" href="<?php bp_message_activate_deactivate_link(); ?>" class="confirm"><?php bp_message_activate_deactivate_text(); ?></a>
-					<a class="button" href="<?php bp_message_notice_delete_link(); ?>" class="confirm" title="<?php _e( "Delete Message", "buddypress" ); ?>">x</a>
+					<a class="button" href="<?php bp_message_notice_delete_link(); ?>" class="confirm" title="<?php esc_attr_e( "Delete Message", "buddypress" ); ?>">x</a>
 				</td>
 			</tr>
 		<?php endwhile; ?>

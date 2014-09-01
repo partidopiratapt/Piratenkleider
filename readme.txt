@@ -2,7 +2,7 @@ Piratenkleider
 - Wordpress-Theme für Webauftritte der Piratenpartei 
 ====================================================
 
-Version 2.19.8 von Wolfgang Wiese (xwolf), 24. Oktober 2013
+Version 2.21 von Wolfgang Wiese (xwolf), 26. Dezember 2013
 
 
 DOWNLOADS
@@ -72,14 +72,6 @@ VORVERSION
 Dieses Theme basiert auf die Wordpress-Basisvorlage von Korbinian Polk.  
 Das alte Original von @korbinian kann auf Github gefunden werden: 
  https://github.com/korbinian/Piratenkleider
-
-PIRATENKLEIDER-GP
-
-Martin Stoppler (http://www.stoppe-gp.de/) pflegt einen Branch von
-Piratenkleider 2.x mit eigenen weiteren Modifikationen. Wesentliche
-Funktionen seines Branches werden regelmässig mit diesen Zweig
-gemergt:
- https://github.com/PiratenGP/Piratenkleider-GP
 
 
 
@@ -541,3 +533,21 @@ Administrative Hinweise für Wordpress Theme-Editoren:
     Für Artikel und Pages wurde eine neue Custom Field "piratenkleider_nosidebar"
     eingefuegt. Wenn dieses gesetzt ist, wird die Sidebar weggelassen und
     nicht nru ausgeblendet und nach unten verschoben.
+
+23. Ab der version 2.19.10 ist das Hochladen und Aktivieren eigenes CSS-Dateien
+    möglich; Somit kann man auch ohne Wechsel des Themes das komplette Design
+    ändern. 
+    Alle Designer die hiermit neue Piratenwebsites mit eigenen Designs
+    erstellen werden gebeten, die neuen CSS-Dateien bereitzustellen, so
+    dass sie hier in diesem Theme mit als ALternativdesigns aufgenommen
+    werden können.
+
+24. Ab Version 2.20 ist dei Scapegoat-Designadaption in einem gebrauchsfähigen 
+    Format. Wichtig dabei: Farbkombis sind abzuschalten.
+
+25. Ab version 2.20.2 werden neue Schriften und ein alternativer Style fuer
+    Mediensites eingebracht.
+    Neue Schriften: Linux Libertine (Open Font Lizenz).
+    Zudem wurde das Layout zur Unterstützung der Plugins Liveblog und 
+    WP Liveticker angepasst.
+    Plugin-CSS wurde in der neuen CSS-Datei css/pluginsupport.css ausgelagert.

@@ -3,8 +3,6 @@
  */
 
 jQuery(document).ready(function($){
- 
-
     var custom_uploader;
 
     $('.upload_image_button').click(function(e) {
@@ -15,10 +13,10 @@ jQuery(document).ready(function($){
         var idtitle = button.attr('id').replace('image_url_button', 'title'); 
 	
         //If the uploader object has already been created, reopen the dialog
-        if (custom_uploader) {
-            custom_uploader.open();
-            return;
-        }
+    //    if (custom_uploader) {
+    //        custom_uploader.open();
+    //        return;
+    //    }
  
         //Extend the wp.media object
         custom_uploader = wp.media.frames.file_frame = wp.media({
@@ -41,10 +39,7 @@ jQuery(document).ready(function($){
  
         //Open the uploader dialog
         custom_uploader.open();
- 
     });
- 
- 
 });
 
 /*
@@ -91,6 +86,50 @@ jQuery(document).ready(function($){
         $(this).parent().siblings('#linktipp_image').val('');  
         $(this).parent().siblings('#linktipp_imgid').val('');  
         $(this).parent().siblings('#linktipp_image-show').attr('src', defaultImage);
+        return false;  
+    });  
+    
+    
+});
+
+/*
+ * Attaches the image uploader to the input field
+ */
+jQuery(document).ready(function($){
+   var custom_uploader;
+
+    $('.file-upload').click(function(e) {
+        e.preventDefault();
+        var button = $(this);
+        var id = button.attr('id').replace('_button', '');
+
+        //If the uploader object has already been created, reopen the dialog
+        if (custom_uploader) {
+            custom_uploader.open();
+            return;
+        }
+ 
+        //Extend the wp.media object
+        custom_uploader = wp.media.frames.file_frame = wp.media({
+            title: 'Datei',
+            button: { text:'Datei auswaehlen' },
+            multiple: false
+        });
+ 
+        //When a file is selected, grab the URL and set it as the text field's value
+        custom_uploader.on('select', function() {
+            var attachment = custom_uploader.state().get('selection').first().toJSON();            
+            $('.file-upload-val-'+id).val(attachment.id);   
+            $('#file-upload-display-'+id).val(attachment.url); 
+            
+        });
+ 
+        //Open the uploader dialog
+        custom_uploader.open(); 
+    });
+    $('.file_clear_button').click(function() {  
+        $(this).parent().siblings('.file-upload-display-value').val('');  
+        $(this).parent().siblings('.file-upload-input-value').val('');  
         return false;  
     });  
     

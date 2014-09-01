@@ -3,7 +3,21 @@
 	<?php if ( bp_thread_has_messages() ) : ?>
 		<h3 id="message-subject"><?php bp_the_thread_subject(); ?></h3>
 		<p id="message-recipients">
-			<a class="button confirm" href="<?php bp_the_thread_delete_link(); ?>" title="<?php _e( "Delete Message", "buddypress" ); ?>"><?php _e( 'Delete', 'buddypress' ); ?></a> &nbsp;
+			<span class="highlight">
+
+				<?php if ( !bp_get_the_thread_recipients() ) : ?>
+
+					<?php _e( 'You are alone in this conversation.', 'buddypress' ); ?>
+
+				<?php else : ?>
+
+					<?php printf( __( 'Conversation between %s and you.', 'buddypress' ), bp_get_the_thread_recipients() ); ?>
+
+				<?php endif; ?>
+
+			</span>
+
+			<a class="button confirm" href="<?php bp_the_thread_delete_link(); ?>" title="<?php esc_attr_e( "Delete Message", "buddypress" ); ?>"><?php _e( 'Delete', 'buddypress' ); ?></a> &nbsp;
 		</p>
 		<?php do_action( 'bp_before_message_thread_list' ); ?>
 		<?php while ( bp_thread_messages() ) : bp_thread_the_message(); ?>
@@ -11,7 +25,19 @@
 				<div class="message-metadata">
 					<?php do_action( 'bp_before_message_meta' ); ?>
 					<?php bp_the_thread_message_sender_avatar( 'type=thumb&width=30&height=30' ); ?>
-					<strong><a href="<?php bp_the_thread_message_sender_link(); ?>" title="<?php bp_the_thread_message_sender_name(); ?>"><?php bp_the_thread_message_sender_name(); ?></a> <span class="activity"><?php bp_the_thread_message_time_since(); ?></span></strong>
+
+					<?php if ( bp_get_the_thread_message_sender_link() ) : ?>
+
+						<strong><a href="<?php bp_the_thread_message_sender_link(); ?>" title="<?php bp_the_thread_message_sender_name(); ?>"><?php bp_the_thread_message_sender_name(); ?></a></strong>
+
+					<?php else : ?>
+
+						<strong><?php bp_the_thread_message_sender_name(); ?></strong>
+
+					<?php endif; ?>
+
+					<span class="activity"><?php bp_the_thread_message_time_since(); ?></span>
+
 					<?php do_action( 'bp_after_message_meta' ); ?>
 				</div><!-- .message-metadata -->
 				<?php do_action( 'bp_before_message_content' ); ?>
@@ -39,7 +65,7 @@
 					<textarea name="content" id="message_content" rows="15" cols="40"></textarea>
 					<?php do_action( 'bp_after_message_reply_box' ); ?>
 					<div class="submit">
-						<input type="submit" name="send" value="<?php _e( 'Send Reply', 'buddypress' ); ?>" id="send_reply_button"/>
+						<input type="submit" name="send" value="<?php esc_attr_e( 'Send Reply', 'buddypress' ); ?>" id="send_reply_button"/>
 					</div>
 					<input type="hidden" id="thread_id" name="thread_id" value="<?php bp_the_thread_id(); ?>" />
 					<input type="hidden" id="messages_order" name="messages_order" value="<?php bp_thread_messages_order(); ?>" />

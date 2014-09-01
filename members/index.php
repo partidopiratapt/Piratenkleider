@@ -10,20 +10,29 @@ global $options;
             $image_url = piratenkleider_get_cover(__('Members Directory', 'buddypress'), get_the_ID());
             ?>
             <div class="skin">
+<?php do_action( 'bp_before_directory_members_page' ); ?>
+
+<div id="buddypress">
                 <?php do_action('bp_before_directory_members'); ?>
                 <?php if (!(isset($image_url) && (strlen($image_url) > 4))) { ?>
                     <h1 id="page-title"><span><?php _e('Members Directory', 'buddypress'); ?></span></h1>
                 <?php } ?>
-                <form action="" method="post" id="members-directory-form" class="dir-form">
+                
                     <?php do_action('bp_before_directory_members_content'); ?>
                     <div id="members-dir-search" class="dir-search" role="search">
                         <?php bp_directory_members_search_form(); ?>
                     </div><!-- #members-dir-search -->
+
+	<?php do_action( 'bp_before_directory_members_tabs' ); ?>
+
+	<form action="" method="post" id="members-directory-form" class="dir-form">
+
                     <div class="item-list-tabs" role="navigation">
                         <ul>
-                            <li class="selected" id="members-all"><a href="<?php echo trailingslashit(bp_get_root_domain() . '/' . bp_get_members_root_slug()); ?>"><?php printf(__('All Members <span>%s</span>', 'buddypress'), bp_get_total_member_count()); ?></a></li>
+				<li class="selected" id="members-all"><a href="<?php bp_members_directory_permalink(); ?>"><?php printf( __( 'All Members <span>%s</span>', 'buddypress' ), bp_get_total_member_count() ); ?></a></li>
+
                             <?php if (is_user_logged_in() && bp_is_active('friends') && bp_get_total_friend_count(bp_loggedin_user_id())) : ?>
-                                <li id="members-personal"><a href="<?php echo bp_loggedin_user_domain() . bp_get_friends_slug() . '/my-friends/' ?>"><?php printf(__('My Friends <span>%s</span>', 'buddypress'), bp_get_total_friend_count(bp_loggedin_user_id())); ?></a></li>
+					<li id="members-personal"><a href="<?php echo bp_loggedin_user_domain() . bp_get_friends_slug() . '/my-friends/'; ?>"><?php printf( __( 'My Friends <span>%s</span>', 'buddypress' ), bp_get_total_friend_count( bp_loggedin_user_id() ) ); ?></a></li>
                             <?php endif; ?>
                             <?php do_action('bp_members_directory_member_types'); ?>
                         </ul>
@@ -45,13 +54,16 @@ global $options;
                         </ul>
                     </div>
                     <div id="members-dir-list" class="members dir-list">
-                        <?php locate_template(array('members/members-loop.php'), true); ?>
+			<?php bp_get_template_part( 'members/members-loop' ); ?>
                     </div><!-- #members-dir-list -->
                     <?php do_action('bp_directory_members_content'); ?>
                     <?php wp_nonce_field('directory_members', '_wpnonce-member-filter'); ?>
                     <?php do_action('bp_after_directory_members_content'); ?>
                 </form><!-- #members-directory-form -->
                 <?php do_action('bp_after_directory_members'); ?>
+</div><!-- #buddypress -->
+
+<?php do_action( 'bp_after_directory_members_page' ); ?>
             </div>
         </div>
         <div class="content-aside">

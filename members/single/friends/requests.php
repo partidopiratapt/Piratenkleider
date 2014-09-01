@@ -41,4 +41,5 @@
 		<p><?php _e( 'You have no pending friendship requests.', 'buddypress' ); ?></p>
 	</div>
 <?php endif;?>
+
 <?php do_action( 'bp_after_member_friend_requests_content' ); ?>

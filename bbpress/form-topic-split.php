@@ -9,6 +9,7 @@
 
 ?>
 
+<div id="bbpress-forums">
 	<?php if ( is_user_logged_in() && current_user_can( 'edit_topic', bbp_get_topic_id() ) ) : ?>
 
 		<div id="split-topic-<?php bbp_topic_id(); ?>" class="bbp-topic-split">
@@ -50,8 +51,7 @@
 											'post_parent' => bbp_get_topic_forum_id( bbp_get_topic_id() ),
 											'selected'    => -1,
 											'exclude'     => bbp_get_topic_id(),
-											'select_id'   => 'bbp_destination_topic',
-											'none_found'  => __( 'No other topics found!', 'bbpress' )
+											'select_id'   => 'bbp_destination_topic'
 										) );
 									?>
 

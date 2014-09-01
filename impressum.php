@@ -19,11 +19,14 @@
 	<?php
 	    $image_url = '';
 	    $image_alt = '';
+             $attribs = array(
+                "credits" => $options['img-meta-credits'],
+            );
 	    if (has_post_thumbnail()) { 
 		$thumbid = get_post_thumbnail_id(get_the_ID());
 		$image_url_data = wp_get_attachment_image_src( $thumbid, 'full');
 		$image_url = $image_url_data[0];
-		$image_alt = trim(strip_tags( get_post_meta($thumbid, '_wp_attachment_image_alt', true) ));
+		$attribs = piratenkleider_get_image_attributs($thumbid);
 			
 	    } else {
 		if (($options['aktiv-platzhalterbilder-indexseiten']==1) && (isset($options['src-default-symbolbild']))) {  
@@ -40,8 +43,8 @@
          ?>
 		   <h1 class="post-title"><span><?php the_title(); ?></span></h1>
 		   <div class="symbolbild"><img src="<?php echo $image_url ?>" title="">
-		   <?php if (isset($image_alt) && (strlen($image_alt)>1)) {
-		     echo '<div class="caption">'.$image_alt.'</div>';  
+		    <?php if (isset($attribs["credits"]) && (strlen($attribs["credits"])>1)) {
+		     echo '<div class="caption">'.$attribs["credits"].'</div>';  
 		   }  ?>
       </div>
 		</div>  	
@@ -255,7 +258,10 @@ stehen s&auml;mtliche Werke dieses Angebots unter einer
     ?>
     <li><a class="extern" href="<?php echo $theme_data['URI']; ?>">Wordpress Theme <?php echo $theme_data->Name; ?></a>, Version <?php echo $theme_data->Version; ?>
     (Lizenziert unter der Creative Commons Namensnennung 3.0 Deutschland Lizenz</a>)  </li>
-    <li><a class="extern" href="http://wiki.piratenpartei.de/Grafiken">Wallpaper und Bildmaterial der Piratenpartei Deutschland</a> (Lizenziert unter der Creative Commons Namensnennung 3.0 Deutschland Lizenz</a>)</li>    
+    <li>Fotos und Symbolbilder von Tobias M. Eckrich 
+	(Lizenziert unter der Creative Commons Namensnennung 3.0 Deutschland Lizenz</a>)</li> 
+    <li><a class="extern" href="http://wiki.piratenpartei.de/Grafiken">Wallpaper und Bildmaterial der Piratenpartei Deutschland</a> 
+	(Lizenziert unter der Creative Commons Namensnennung 3.0 Deutschland Lizenz</a>)</li>    
     <?php
 
 	$lizenzen = explode("\n", $options['lizenzen']);
@@ -273,8 +279,6 @@ stehen s&auml;mtliche Werke dieses Angebots unter einer
     <p>
         Das Wordpress-Theme <a class="extern" href="http://www.piratenkleider.de">Piratenkleider</a> wurde entwickelt von:     
     </p>
-    
-   
     <ul>
         <li>Wolfgang Wiese</a> (Neuprogrammierung, Neudesign, CSS, Barrierefreiheit, Dokumentation, Features nach Version 1.1)</li>
         <li>Korbinian Polk, Simon Stützer, Bernd Schreiner (Erstes Grunddesign und Erstellung eines Childtheme von TwentyTen)</li>               
@@ -332,7 +336,7 @@ Browsers speichern und auswerten.
 <br>
 Bei der Einbindung von Inhalten, bei denen die Möglichkeit besteht,
 Tracking zu umgehen, wird dieses genutzt. Beispielsweise bei der Nutzung
-von youtube-nocookie.com anstelle von youtube.com für die
+von youtube-nocookie.com anstelle von youtube.com f&uuml;r die
 Einbindung von Videos.
 </p>
 

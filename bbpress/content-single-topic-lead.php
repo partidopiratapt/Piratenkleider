@@ -7,25 +7,19 @@
  */
 ?>
 <?php do_action( 'bbp_template_before_lead_topic' ); ?>
-    <table class="bbp-lead-topic" id="bbp-topic-<?php bbp_topic_id(); ?>">
-		<thead>
+    <table class="bbp-lead-topic" id="bbp-topic-<?php bbp_topic_id(); ?>-lead">
+		<thead class="bbp-header">
 			<tr>
 				<th class="bbp-topic-author"><?php _e( 'Creator', 'bbpress' ); ?></th>
 				<th class="bbp-topic-content">
 					<?php _e( 'Topic', 'bbpress' ); ?>
-					<?php bbp_user_subscribe_link(); ?>
-					<?php bbp_user_favorites_link(); ?>
+					<?php bbp_topic_subscription_link(); ?>
+					<?php bbp_topic_favorite_link(); ?>
 				</th>
 			</tr>
 		</thead>
-		<tfoot>
-			<tr>
-				<td colspan="2">
-					<?php bbp_topic_admin_links(); ?>
-				</td>
-			</tr>
-		</tfoot>
-		<tbody>
+
+		<tbody class="bbp-body">
 			<tr class="bbp-topic-header">
 				<td colspan="2">
 					<?php printf( __( '%1$s at %2$s', 'bbpress' ), get_the_date(), esc_attr( get_the_time() ) ); ?>
@@ -40,8 +34,17 @@
 					<?php endif; ?>
 				</td>
 				<td class="bbp-topic-content">
+<?php do_action( 'bbp_theme_before_topic_content' ); ?>
 					<?php bbp_topic_content(); ?>
+<?php do_action( 'bbp_theme_after_topic_content' ); ?>
 				</td>
 			</tr><!-- #post-<?php bbp_topic_id(); ?> -->
 		</tbody>
+		<tfoot class="bbp-footer">
+			<tr>
+				<td colspan="2">
+					<?php bbp_topic_admin_links(); ?>
+				</td>
+			</tr>
+		</tfoot>
 	</table><!-- #bbp-topic-<?php bbp_topic_id(); ?> -->

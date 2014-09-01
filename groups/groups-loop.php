@@ -2,10 +2,10 @@
 /**
  * BuddyPress - Groups Loop
  *
- * Querystring is set via AJAX in _inc/ajax.php - bp_dtheme_object_filter()
+ * Querystring is set via AJAX in _inc/ajax.php - bp_legacy_theme_object_filter()
  *
  * @package BuddyPress
- * @subpackage bp-default
+ * @subpackage bp-legacy
  */
 ?>
 <?php do_action( 'bp_before_groups_loop' ); ?>
@@ -21,7 +21,8 @@
 	<?php do_action( 'bp_before_directory_groups_list' ); ?>
 	<ul id="groups-list" class="item-list" role="main">
 	<?php while ( bp_groups() ) : bp_the_group(); ?>
-		<li>
+
+		<li <?php bp_group_class(); ?>>
 			<div class="item-avatar">
 				<a href="<?php bp_group_permalink(); ?>"><?php bp_group_avatar( 'type=thumb&width=50&height=50' ); ?></a>
 			</div>
@@ -55,4 +56,5 @@
 		<p><?php _e( 'There were no groups found.', 'buddypress' ); ?></p>
 	</div>
 <?php endif; ?>
+
 <?php do_action( 'bp_after_groups_loop' ); ?>

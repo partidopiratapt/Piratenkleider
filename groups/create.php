@@ -13,8 +13,13 @@ global $options;
                 <?php if (!(isset($image_url) && (strlen($image_url) > 4))) { ?>
                     <h1 id="page-title"><span><?php _e('Create a Group', 'buddypress'); ?></span></h1>
                 <?php } ?>
+<?php do_action( 'bp_before_create_group_page' ); ?>
+
+<div id="buddypress">
+
+	<?php do_action( 'bp_before_create_group_content_template' ); ?>
     <form action="<?php bp_group_creation_form_action(); ?>" method="post" id="create-group-form" class="standard-form" enctype="multipart/form-data">
-        <h3><a class="button" href="<?php echo trailingslashit( bp_get_root_domain() . '/' . bp_get_groups_root_slug() ); ?>"><?php _e( 'Groups Directory', 'buddypress' ); ?></a></h3>
+
         <?php do_action('bp_before_create_group'); ?>
         <div class="item-list-tabs no-ajax" id="group-create-tabs" role="navigation">
             <ul>
@@ -26,10 +31,17 @@ global $options;
             <?php /* Group creation step 1: Basic group details */ ?>
             <?php if (bp_is_group_creation_step('group-details')) : ?>
                 <?php do_action('bp_before_group_details_creation_step'); ?>
+
+				<div>
                 <label for="group-name"><?php _e('Group Name (required)', 'buddypress'); ?></label>
                 <input type="text" name="group-name" id="group-name" aria-required="true" value="<?php bp_new_group_name(); ?>" />
+				</div>
+
+				<div>
                 <label for="group-desc"><?php _e('Group Description (required)', 'buddypress'); ?></label>
                 <textarea name="group-desc" id="group-desc" aria-required="true"><?php bp_new_group_description(); ?></textarea>
+				</div>
+
                 <?php
                 do_action('bp_after_group_details_creation_step');
                 do_action('groups_custom_group_fields_editable'); // @Deprecated
@@ -106,19 +118,24 @@ global $options;
                         <p><?php _e("Upload an image to use as an avatar for this group. The image will be shown on the main group page, and in search results.", 'buddypress'); ?></p>
                         <p>
                             <input type="file" name="file" id="file" />
-                            <input type="submit" name="upload" id="upload" value="<?php _e('Upload Image', 'buddypress'); ?>" />
+							<input type="submit" name="upload" id="upload" value="<?php esc_attr_e( 'Upload Image', 'buddypress' ); ?>" />
                             <input type="hidden" name="action" id="action" value="bp_avatar_upload" />
                         </p>
                         <p><?php _e('To skip the avatar upload process, hit the "Next Step" button.', 'buddypress'); ?></p>
                     </div><!-- .main-column -->
                 <?php endif; ?>
     <?php if ('crop-image' == bp_get_avatar_admin_step()) : ?>
-                    <h3><?php _e('Crop Group Avatar', 'buddypress'); ?></h3>
-                    <img src="<?php bp_avatar_to_crop(); ?>" id="avatar-to-crop" class="avatar" alt="<?php _e('Avatar to crop', 'buddypress'); ?>" />
+
+					<h4><?php _e( 'Crop Group Avatar', 'buddypress' ); ?></h4>
+
+					<img src="<?php bp_avatar_to_crop(); ?>" id="avatar-to-crop" class="avatar" alt="<?php esc_attr_e( 'Avatar to crop', 'buddypress' ); ?>" />
+
                     <div id="avatar-crop-pane">
-                        <img src="<?php bp_avatar_to_crop(); ?>" id="avatar-crop-preview" class="avatar" alt="<?php _e('Avatar preview', 'buddypress'); ?>" />
+						<img src="<?php bp_avatar_to_crop(); ?>" id="avatar-crop-preview" class="avatar" alt="<?php esc_attr_e( 'Avatar preview', 'buddypress' ); ?>" />
                     </div>
-                    <input type="submit" name="avatar-crop-submit" id="avatar-crop-submit" value="<?php _e('Crop Image', 'buddypress'); ?>" />
+
+					<input type="submit" name="avatar-crop-submit" id="avatar-crop-submit" value="<?php esc_attr_e( 'Crop Image', 'buddypress' ); ?>" />
+
                     <input type="hidden" name="image_src" id="image_src" value="<?php bp_avatar_to_crop_src(); ?>" />
                     <input type="hidden" name="upload" id="upload" />
                     <input type="hidden" id="x" name="x" />
@@ -176,19 +193,27 @@ global $options;
                 <div class="submit" id="previous-next">
                     <?php /* Previous Button */ ?>
     <?php if (!bp_is_first_group_creation_step()) : ?>
-                        <input type="button" value="<?php _e('Back to Previous Step', 'buddypress'); ?>" id="group-creation-previous" name="previous" onclick="location.href='<?php bp_group_creation_previous_link(); ?>'" />
+
+						<input type="button" value="<?php esc_attr_e( 'Back to Previous Step', 'buddypress' ); ?>" id="group-creation-previous" name="previous" onclick="location.href='<?php bp_group_creation_previous_link(); ?>'" />
+
                     <?php endif; ?>
                     <?php /* Next Button */ ?>
     <?php if (!bp_is_last_group_creation_step() && !bp_is_first_group_creation_step()) : ?>
-                        <input type="submit" value="<?php _e('Next Step', 'buddypress'); ?>" id="group-creation-next" name="save" />
+
+						<input type="submit" value="<?php esc_attr_e( 'Next Step', 'buddypress' ); ?>" id="group-creation-next" name="save" />
+
                     <?php endif; ?>
                     <?php /* Create Button */ ?>
     <?php if (bp_is_first_group_creation_step()) : ?>
-                        <input type="submit" value="<?php _e('Create Group and Continue', 'buddypress'); ?>" id="group-creation-create" name="save" />
+
+						<input type="submit" value="<?php esc_attr_e( 'Create Group and Continue', 'buddypress' ); ?>" id="group-creation-create" name="save" />
+
                     <?php endif; ?>
                     <?php /* Finish Button */ ?>
     <?php if (bp_is_last_group_creation_step()) : ?>
-                        <input type="submit" value="<?php _e('Finish', 'buddypress'); ?>" id="group-creation-finish" name="save" />
+
+						<input type="submit" value="<?php esc_attr_e( 'Finish', 'buddypress' ); ?>" id="group-creation-finish" name="save" />
+
     <?php endif; ?>
                 </div>
             <?php endif; ?>
@@ -200,8 +225,10 @@ global $options;
 <?php do_action('bp_after_create_group'); ?>
     </form>
 <?php do_action('bp_after_create_group_content_template'); ?>
-</div>
-</div>
+				</div>
+<?php do_action( 'bp_after_create_group_page' ); ?>
+		</div>
+	</div>
     <div class="content-aside">
         <div class="skin">      
             <?php
