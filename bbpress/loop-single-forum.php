@@ -30,7 +30,7 @@ if (get_option('permalink_structure')) {
     </td>
 
     <td class="bbp-forum-info">
-        <a class="bbp-forum-title" href="<?php bbp_forum_permalink(); ?>" title="<?php bbp_forum_title(); ?>"><?php bbp_forum_title(); ?></a>&nbsp; <a href="<?php echo $url; ?>">
+        <a class="bbp-forum-title-a" href="<?php bbp_forum_permalink(); ?>" title="<?php bbp_forum_title(); ?>"><?php bbp_forum_title(); ?></a>&nbsp; <a href="<?php echo $url; ?>">
             <img style="margin: 0 0 0 0;" title="rss" width="12" height="12" src="<?php echo get_template_directory_uri() ?>/images/social-media/feed-24x24.png">
         </a>
         <p><?php
